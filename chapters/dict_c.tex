@@ -1,0 +1,333 @@
+\chapter{C}
+\label{chap:c}
+
+\term{Calculus}
+The study of limits, derivatives, integrals, and infinite series, divided into differential and integral calculus.
+
+\term{C*-algebra}
+A Banach algebra over the complex numbers with an involution $*$ satisfying $\|a^*a\| = \|a\|^2$; the mathematical framework for quantum mechanics.
+
+\term{Cantor--Bernstein Theorem}
+If there are injections $f: A \to B$ and $g: B \to A$, then there is a bijection between $A$ and $B$. Consequently, two sets have equal cardinality as soon as each injects into the other, so cardinalities can be compared using injections alone. The theorem is also called the Schröder--Bernstein theorem.
+
+\term{Cantor's Paradox}
+The assumption of a universal set $V$ of all sets yields a contradiction: by Cantor's theorem $|\mathcal{P}(V)| > |V|$, yet $\mathcal{P}(V)$ is a set and hence a member of $V$. It shows there is no set of all sets and motivates the ZF axioms.
+
+\term{Cantor's Theorem}
+For every set $X$, the power set $\mathcal{P}(X)$ has strictly greater cardinality than $X$: there is no surjection $X \to \mathcal{P}(X)$. The proof is Cantor's diagonal argument, which shows that no list $x_1, x_2, \ldots$ of elements can cover $\mathcal{P}(X)$. Since $\mathbb{R}$ has the same cardinality as $\mathcal{P}(\mathbb{N})$, the uncountability of the reals follows as a corollary.
+
+\term{Cardinality}
+The size of a set, measured by the number of its elements; two sets have equal cardinality when a bijection exists between them.
+
+\term{Cartesian Product}
+The set $A \times B = \{(a,b) : a \in A, b \in B\}$ of all ordered pairs with first coordinate in $A$ and second in $B$.
+
+\term{Casorati--Weierstrass Theorem}
+If $f$ has an isolated essential singularity at $z_0$, then the image of every punctured neighbourhood of $z_0$ is dense in $\mathbb{C}$: near an essential singularity the function comes arbitrarily close to every complex value. This contrasts sharply with removable singularities, where $f$ has a finite limit, and with poles, where $|f(z)| \to \infty$.
+
+\term{Category}
+A mathematical structure consisting of objects and morphisms between them, together with an associative composition law and identity morphisms.
+
+\term{Category Theory}
+The abstract study of mathematical structures and the structure-preserving maps between them, via categories, functors, and natural transformations.
+
+\term{Cauchy--Kovalevskaya Theorem}
+The classical local existence and uniqueness theorem for analytic partial differential equations. A first-order system of PDEs with analytic coefficients and analytic initial data, written in the normal form $\partial_t u_i = F_i(x, t, u, \nabla u)$, has a unique analytic solution in a neighbourhood of the initial surface $t = 0$. It establishes that analytic Cauchy problems are locally well-posed, though it says nothing about the smoothing behaviour of non-analytic equations.
+
+\term{Cauchy--Schwarz Inequality}
+In any inner product space, $|\langle u, v \rangle|^2 \leq \langle u, u \rangle \langle v, v \rangle$ with equality iff $u$ and $v$ are linearly dependent. For vectors in $\mathbb{R}^n$: $(\sum a_i b_i)^2 \leq (\sum a_i^2)(\sum b_i^2)$. For integrals: $(\int fg)^2 \leq \int f^2 \cdot \int g^2$. Fundamental to analysis, it implies the triangle inequality and defines the notion of angle in abstract inner product spaces.
+
+\term{Cauchy Sequence}
+A sequence $(x_n)$ in a metric space is Cauchy if for every $\epsilon > 0$ there exists $N$ such that $d(x_n, x_m) < \epsilon$ for all $n, m \geq N$. A metric space is complete iff every Cauchy sequence converges. The real numbers are complete, but $\mathbb{Q}$ is not: the sequence $3, 3.1, 3.14, 3.141, \ldots$ approximating $\pi$ is Cauchy but has no limit in $\mathbb{Q}$.
+
+\term{Cauchy's Integral Formula}
+If $f$ is holomorphic on a simply connected domain $D$ and $\gamma$ is a positively oriented simple closed curve in $D$, then for any $a$ inside $\gamma$: $f(a) = \frac{1}{2\pi i} \oint_\gamma \frac{f(z)}{z-a}\,dz$. This formula shows that holomorphic functions are infinitely differentiable and completely determined by their values on any closed curve. All higher derivatives follow: $f^{(n)}(a) = \frac{n!}{2\pi i} \oint_\gamma \frac{f(z)}{(z-a)^{n+1}}\,dz$.
+
+\term{Cauchy's Integral Theorem}
+If $f$ is holomorphic on a simply connected domain $D$ and $\gamma$ is any closed curve contained in $D$, then $\oint_\gamma f(z)\,dz = 0$. By homotopy invariance the integral vanishes as long as $\gamma$ is null-homotopic in the domain of holomorphy, so holomorphic functions have path-independent contour integrals. As the foundation of contour integration, the theorem leads to Cauchy's integral formula and the residue theorem.
+
+\term{Cauchy's Theorem}
+If $f$ is holomorphic on a simply connected domain $D$ and $\gamma$ is a closed curve in $D$, then $\oint_\gamma f(z)\,dz = 0$. This is the foundation of complex analysis. It generalises the Fundamental Theorem of Calculus: path independence of integrals of analytic functions. Consequences include Liouville's theorem, the Maximum Modulus Principle, and the Identity Theorem.
+
+\term{Cayley's Theorem}
+Every group $G$ is isomorphic to a subgroup of the symmetric group $S_G$ acting on $G$ by left multiplication. Thus every abstract group is a permutation group. For a finite group of order $n$, this embeds $G$ into $S_n$. This result, due to Arthur Cayley (1854), justifies the study of permutation groups as the primary tool for understanding all groups.
+
+\term{Cayley--Hamilton Theorem}
+Every square matrix satisfies its own characteristic equation: if $p(\lambda) = \det(A - \lambda I)$, then $p(A) = 0$. For a $2 \times 2$ matrix $A = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$, this gives $A^2 - (a+d)A + (ad-bc)I = 0$. The theorem allows matrix powers to be reduced and is used in computing matrix functions and solving systems of linear differential equations.
+
+\term{Center (Group Theory)}
+The center of a group $G$ is $Z(G) = \{g \in G : gh = hg \text{ for all } h \in G\}$. It is a normal subgroup of $G$. For a non-abelian group, the center may be trivial: $Z(S_n) = \{e\}$ for $n \geq 3$. The center measures how far a group is from being abelian. If $G/Z(G)$ is cyclic, then $G$ is abelian.
+
+\term{Central Limit Theorem}
+If $X_1, X_2, \ldots, X_n$ are independent identically distributed random variables with mean $\mu$ and variance $\sigma^2$, then $\frac{\bar{X}_n - \mu}{\sigma/\sqrt{n}}$ converges in distribution to the standard normal $\mathcal{N}(0,1)$ as $n \to \infty$. This explains why the normal distribution is ubiquitous: sums and averages of independent random variables tend toward normality regardless of the original distribution.
+
+\term{Centralizer}
+The subgroup of elements that commute with a given element of a group: $C_G(a) = \{g \in G : ga = ag\}$.
+
+\term{Chain Rule}
+If $f: \mathbb{R}^n \to \mathbb{R}^m$ and $g: \mathbb{R}^m \to \mathbb{R}^p$ are differentiable, then the derivative of $g \circ f$ is $D(g \circ f)(x) = Dg(f(x)) \cdot Df(x)$, the product of Jacobian matrices. In single-variable calculus: $\frac{d}{dx} g(f(x)) = g'(f(x)) \cdot f'(x)$. The chain rule is the fundamental differentiation rule for composite functions.
+
+\term{Chaos}
+The sensitive dependence on initial conditions exhibited by some deterministic dynamical systems, in which nearby trajectories separate exponentially.
+
+\term{Characteristic Function}
+(Probability) The function $\varphi_X(t) = E[e^{itX}]$ of a random variable $X$, which determines its distribution uniquely.
+
+\term{Characteristic Polynomial}
+The polynomial $\det(\lambda I - A)$ of a square matrix $A$, whose roots are the eigenvalues.
+
+\term{Chebyshev Polynomials}
+The Chebyshev polynomials $T_n(x)$ are defined by $T_n(\cos \theta) = \cos(n\theta)$. They satisfy the recurrence $T_0(x) = 1$, $T_1(x) = x$, $T_{n+1}(x) = 2xT_n(x) - T_{n-1}(x)$. On $[-1,1]$, $|T_n(x)| \leq 1$. They are optimal for polynomial interpolation (minimising the Runge phenomenon) and appear in numerical analysis, approximation theory, and the solution of differential equations.
+
+\term{Chebyshev's Inequality}
+For a random variable $X$ with mean $\mu$ and finite variance $\sigma^2$, $P(|X - \mu| \geq k\sigma) \leq \frac{1}{k^2}$ for any $k > 0$. This gives a universal bound on tail probabilities. For any distribution, at least 75\% of values lie within 2 standard deviations of the mean, and at least 89\% within 3 standard deviations.
+
+\term{Chern Classes}
+Characteristic classes associated with complex vector bundles over a base space $X$. The total Chern class is $c(E) = 1 + c_1(E) + c_2(E) + \cdots \in H^*(X; \mathbb{Z})$. The first Chern class $c_1$ of a line bundle corresponds to the Euler class and measures topological twisting. Chern classes are fundamental in differential geometry, topology, and mathematical physics, particularly in the Atiyah--Singer Index Theorem.
+
+\term{Chern--Weil Theory}
+A method for constructing characteristic classes (Chern, Pontryagin, Euler) of vector bundles using curvature forms. Given a connection $\nabla$ on a bundle $E$ with curvature $\Omega$, one forms invariant polynomials in $\Omega$ whose cohomology classes are independent of the connection. This bridges differential geometry and topology, realising topological invariants via geometric data.
+
+\term{Chinese Remainder Theorem}
+If the moduli $m_1, \ldots, m_k$ are pairwise coprime, then the system of congruences $x \equiv a_i \pmod{m_i}$ has a unique solution modulo $m_1 \cdots m_k$. Ring-theoretically this is the statement $R/(ab) \cong R/(a) \times R/(b)$ for coprime ideals $a$ and $b$ of a ring $R$; for $R = \mathbb{Z}$ it recovers the classical version. It is a workhorse of integer arithmetic, allowing computations modulo a product to be reduced to its smaller coprime factors.
+
+\term{Christoffel Symbols}
+Coefficients $\Gamma^k_{ij}$ describing the Levi-Civita connection on a Riemannian manifold with metric $g_{ij}$: $\Gamma^k_{ij} = \frac{1}{2} g^{kl}(\partial_i g_{jl} + \partial_j g_{il} - \partial_l g_{ij})$. They appear in the geodesic equation $\ddot{x}^k + \Gamma^k_{ij}\dot{x}^i\dot{x}^j = 0$ and in the covariant derivative $\nabla_i v^j = \partial_i v^j + \Gamma^j_{ik}v^k$. They are not tensors but transform in a controlled way under coordinate changes.
+
+\term{Church--Turing Thesis}
+The thesis that every function computable by an algorithm is computable by a Turing machine, and vice versa; equivalently, that effective computability coincides with computability by the lambda calculus or by general recursive functions. It pins down the informal notion of computability in a precise mathematical form. Since it identifies an intuitive concept with a formal one, it is a thesis rather than a proved theorem, although the equivalence among the various formal models is a theorem.
+
+\term{Classical Solution}
+A solution of a differential equation that is differentiable as many times as required by the equation.
+
+\term{Classification of Surfaces}
+Every closed connected surface is homeomorphic to a sphere with $g$ handles (orientable case) or with $k$ crosscaps (non-orientable case); equivalently, to a connected sum of $g$ tori or of $k$ projective planes. Thus a closed surface is determined up to homeomorphism by whether it is orientable and by a single integer invariant, the genus.
+
+\term{Clebsch--Gordan Coefficients}
+Coefficients expressing the coupling of two angular momenta in quantum mechanics. The product of two irreducible representations of $SU(2)$ with spins $j_1$ and $j_2$ decomposes as $\bigoplus_{j=|j_1-j_2|}^{j_1+j_2} j$. The Clebsch--Gordan coefficients $\langle j_1 m_1 j_2 m_2 | jm \rangle$ give the expansion of coupled basis states in terms of product basis states. They are real numbers tabulated in standard references.
+
+\term{Closed Graph Theorem}
+The theorem that a linear map between Banach spaces with a closed graph is bounded (continuous).
+
+\term{Closed Map}
+A function $f: X \to Y$ between topological spaces is closed if the image of every closed set in $X$ is closed in $Y$. A continuous bijection from a compact space to a Hausdorff space is a closed map, hence a homeomorphism. The projection $\mathbb{R} \times [0,1] \to \mathbb{R}$ is closed, but $\mathbb{R} \times (0,1) \to \mathbb{R}$ is not: the hyperbola $\{(x, 1/x) : x > 0\}$ is closed in the domain but maps to $(0, \infty)$, which is not closed.
+
+\term{Closed Set}
+A subset $C$ of a topological space is closed if its complement is open. Equivalently, $C$ contains all its limit points. In $\mathbb{R}$ with the standard topology, closed sets include intervals $[a,b]$, finite sets, and the Cantor set. The closed sets are precisely the intersections of families of closed intervals, forming a topology dual to the open sets.
+
+\term{Closure Operator}
+A closure operator on a set $X$ is a function $\operatorname{cl}: \mathcal{P}(X) \to \mathcal{P}(X)$ satisfying: $A \subseteq \operatorname{cl}(A)$, $A \subseteq B \implies \operatorname{cl}(A) \subseteq \operatorname{cl}(B)$, and $\operatorname{cl}(\operatorname{cl}(A)) = \operatorname{cl}(A)$. The topological closure, the algebraic closure in field theory, and the subgroup generated by a set are all closure operators.
+
+\term{Cluster Point (Accumulation Point)}
+A point $x$ is a cluster point of a sequence $(x_n)$ if every neighbourhood of $x$ contains infinitely many terms of the sequence. A point $p$ is a cluster point of a set $S$ if every neighbourhood of $p$ contains a point of $S$ distinct from $p$. For sequences in compact spaces, every sequence has a cluster point (Bolzano--Weierstrass).
+
+\term{Coarea Formula}
+A generalisation of Fubini's theorem for integrals over level sets. If $f: \mathbb{R}^n \to \mathbb{R}^m$ is smooth with $n \geq m$ and $g: \mathbb{R}^n \to [0,\infty)$ is integrable, then $\int_{\mathbb{R}^n} g(x) J_m f(x)\,dx = \int_{\mathbb{R}^m} \left(\int_{f^{-1}(y)} g\,d\mathcal{H}^{n-m}\right) dy$, where $J_m f$ is the Jacobian determinant of $f$. Used in geometric measure theory and the study of Sobolev functions.
+
+\term{Coastline Paradox}
+The measured length of a coastline, border, or other natural boundary increases without bound as the measuring unit shrinks, because the curve has detail at every scale. Coastlines are fractal-like, with length depending on the scale of measurement rather than being an intrinsic property.
+
+\term{Cobordism}
+Two closed oriented manifolds $M$ and $N$ of dimension $n$ are cobordant if there exists a compact oriented manifold $W$ of dimension $n+1$ whose boundary is $M \sqcup (-N)$. Cobordism is an equivalence relation, and the cobordism classes form the cobordism ring $\Omega_n^{SO}$. Thom computed this ring, showing $\Omega_*^{SO} \otimes \mathbb{Q}$ is a polynomial algebra generated by complex projective spaces $\mathbb{CP}^{2k}$.
+
+\term{Code (Error-Correcting)}
+A code is a subset $C \subseteq \Sigma^n$ of words of length $n$ over an alphabet $\Sigma$. The Hamming distance $d(u,v)$ counts positions where $u$ and $v$ differ. The minimum distance $d_{\min}$ determines error-correcting capability: a code with $d_{\min} = 2t+1$ can correct up to $t$ errors. The Hamming code $(7,4)$ has $d_{\min} = 3$ and corrects single-bit errors.
+
+\term{Codomain}
+The set into which a function maps; the target set, which contains the range as a subset.
+
+\term{Coefficient of Variation}
+The coefficient of variation is $CV = \sigma/\mu$, the ratio of standard deviation to mean. It is a dimensionless measure of dispersion, useful for comparing variability across datasets with different units or scales. A $CV > 1$ indicates high relative variability; a $CV < 0.1$ indicates low relative variability.
+
+\term{Combination}
+An unordered selection of $k$ elements from a set of $n$, counted by the binomial coefficient $\binom{n}{k}$.
+
+\term{Coherence (Category Theory)}
+Coherence theorems in category theory state that all diagrams built from the structural natural isomorphisms (associator, unitors, braiding) commute. Mac Lane's coherence theorem for monoidal categories asserts that any two parallel morphisms built from associators and unitors are equal. This justifies suppressing parentheses in monoidal categories without ambiguity.
+
+\term{Cohomology}
+Cohomology is the contravariant functor $H^n(X; G)$ associated to a topological space $X$ and coefficient group $G$, computed from the dual of the singular chain complex. Unlike homology, cohomology carries a natural ring structure (the cup product), making $H^*(X) = \bigoplus H^n(X)$ a graded ring. Cohomology is more computable than homology in many cases and carries richer structure.
+
+\term{Commutative Algebra}
+The study of commutative rings, their ideals, and modules, forming the algebraic foundation of algebraic geometry and number theory.
+
+\term{Compact Operator}
+A bounded linear operator $T: X \to Y$ between Banach spaces is compact if the image of the unit ball is relatively compact (its closure is compact). Equivalently, for every bounded sequence $(x_n)$, the sequence $(Tx_n)$ has a convergent subsequence. Compact operators generalise matrices to infinite dimensions; the spectral theory of compact operators closely mirrors finite-dimensional linear algebra.
+
+\term{Compact Space}
+A topological space is compact if every open cover has a finite subcover. In $\mathbb{R}^n$, compact is equivalent to closed and bounded (Heine--Borel theorem). Compactness generalises finiteness: continuous functions on compact spaces attain maximum and minimum values, and compact spaces are quasi-compact and Hausdorff exactly when they are normal. The Tychonoff theorem states that arbitrary products of compact spaces are compact.
+
+\term{Compactness Theorem}
+In first-order logic, a set of sentences has a model if and only if every finite subset of it has a model; the substantive direction is that finite satisfiability forces satisfiability of the whole set. It follows from Gödel's completeness theorem and implies the Löwenheim--Skolem theorems and the existence of nonstandard models of arithmetic. Compactness is widely used to transfer finite results to infinite settings, as when the four-colour theorem for finite planar graphs is extended to infinite graphs.
+
+\term{Completeness (Metric Space)}
+A metric space $(X,d)$ is complete if every Cauchy sequence in $X$ converges to a point in $X$. The real numbers are complete; the rationals are not. The completion of a metric space $X$ is a complete metric space $\hat{X}$ containing $X$ as a dense subspace, unique up to isometry. The reals are the completion of the rationals.
+
+\term{Complex Number}
+A complex number is $z = a + bi$ where $a, b \in \mathbb{R}$ and $i^2 = -1$. The complex plane $\mathbb{C}$ is identified with $\mathbb{R}^2$. The modulus is $|z| = \sqrt{a^2+b^2}$ and the argument is $\arg(z) = \arctan(b/a)$. Complex numbers form an algebraically closed field: every non-constant polynomial has a root in $\mathbb{C}$ (Fundamental Theorem of Algebra).
+
+\term{Composition Series}
+A composition series of a group $G$ is a finite chain $G = G_0 \triangleright G_1 \triangleright \cdots \triangleright G_n = \{e\}$ where each $G_{i+1}$ is a maximal normal subgroup of $G_i$, so each factor $G_i/G_{i+1}$ is simple. The Jordan--Hölder theorem states that any two composition series have the same length and the same multiset of simple factors (up to isomorphism).
+
+\term{Concave Function}
+A function $f$ satisfying $f(tx + (1-t)y) \geq tf(x) + (1-t)f(y)$ for $0 \leq t \leq 1$; its graph lies above its chords.
+
+\term{Concentration of Measure}
+In high-dimensional spaces, most of the volume (or measure) concentrates near the boundary or equator. For the unit sphere $S^{n-1} \subset \mathbb{R}^n$, the measure of an $\epsilon$-neighbourhood of the equator $\{x : |x_1| \leq \epsilon\}$ approaches 1 as $n \to \infty$. Lévy's lemma quantifies this: Lipschitz functions on $S^n$ are nearly constant. Concentration of measure is foundational in asymptotic geometric analysis and probability.
+
+\term{Conditional Expectation}
+The expectation of a random variable given information about another, $E[X \mid \mathcal{F}]$, itself a random variable measurable with respect to the conditioning $\sigma$-algebra.
+
+\term{Conditional Probability}
+The conditional probability of $A$ given $B$ is $P(A|B) = \frac{P(A \cap B)}{P(B)}$ for $P(B) > 0$. Bayes' theorem relates conditional probabilities: $P(A|B) = \frac{P(B|A)P(A)}{P(B)}$. Conditional expectation $E[X|Y]$ is a random variable measurable with respect to $\sigma(Y)$ satisfying $\int_A X\,dP = \int_A E[X|Y]\,dP$ for all $A \in \sigma(Y)$.
+
+\term{Conditioning}
+The sensitivity of the output of a numerical problem to small changes in its input, measured by the condition number.
+
+\term{Condorcet Paradox}
+Even when each voter's preferences are transitive, majority voting can produce a cycle: A beats B, B beats C, C beats A. It shows majority rule need not yield a consistent social ordering and motivates Condorcet's impossibility results.
+
+\term{Cone}
+A solid with a circular base and a single vertex, or in convex geometry the set of all non-negative scalar multiples of a given set.
+
+\term{Conformal Map}
+A holomorphic function $f: D \to \mathbb{C}$ is conformal at $z_0$ if $f'(z_0) \neq 0$. Conformal maps preserve angles (in magnitude and orientation) between curves. By the Riemann Mapping Theorem, every simply connected proper open subset of $\mathbb{C}$ is conformally equivalent to the unit disk. Conformal maps are used in fluid dynamics, electrostatics, and cartography.
+
+\term{Conjugate}
+The complex conjugate $\bar{z}$ of $z = x + iy$ is $x - iy$. Conjugate elements of a group are related by conjugation $g \mapsto aga^{-1}$.
+
+\term{Connected Space}
+A topological space is connected if it cannot be written as the union of two non-empty disjoint open sets. A space is path-connected if any two points can be joined by a continuous path. Path-connected implies connected, but not conversely (the topologist's sine curve is connected but not path-connected). The interval $[0,1]$ is connected; the Cantor set is totally disconnected.
+
+\term{Connectedness}
+A topological space is connected if it cannot be written as the union of two disjoint non-empty open sets.
+
+\term{Connection}
+A structure on a manifold or vector bundle governing parallel transport and defining covariant differentiation.
+
+\term{Consistency}
+The property of a numerical scheme that its truncation error tends to zero as the mesh is refined.
+
+\term{Continuous Function}
+A function $f: X \to Y$ between topological spaces is continuous if the preimage of every open set in $Y$ is open in $X$. Equivalently, for every $x \in X$ and every neighbourhood $V$ of $f(x)$, there exists a neighbourhood $U$ of $x$ with $f(U) \subseteq V$. In metric spaces, continuity is equivalent to the $\epsilon$--$\delta$ definition.
+
+\term{Continuum}
+A connected compact metric space; often used loosely for the real line as an uncountable continuum.
+
+\term{Continuum Hypothesis}
+The assertion that there is no set whose cardinality lies strictly between the countable and the continuum: no $X$ satisfies $|\mathbb{N}| < |X| < |\mathbb{R}|$. Gödel showed the hypothesis is consistent with ZFC by constructing the constructible universe $L$, and Cohen proved its negation consistent by the method of forcing. Hence the continuum hypothesis is independent of the ZFC axioms.
+
+\term{Contour Integral}
+The integral of a function along a curve in the complex plane, $\int_\gamma f(z)\,dz$.
+
+\term{Contraction Mapping Principle}
+Also called the Banach Fixed-Point Theorem. If $(X,d)$ is a complete metric space and $T: X \to X$ satisfies $d(Tx, Ty) \leq c\, d(x,y)$ for some $0 \leq c < 1$, then $T$ has a unique fixed point, and the iterates $x_{n+1} = Tx_n$ converge to it for any starting point $x_0$. This is the foundation for existence-uniqueness proofs in ODEs, integral equations, and numerical analysis.
+
+\term{Contradiction}
+A statement that is false under all interpretations. Proof by contradiction assumes the negation of a claim and derives an impossibility.
+
+\term{Convergence in Distribution}
+The convergence of a sequence of random variables such that their cumulative distribution functions converge at all continuity points; the weakest of the common modes of convergence.
+
+\term{Convergence in Probability}
+The convergence of a sequence of random variables $X_n$ to $X$ such that $P(|X_n - X| > \epsilon) \to 0$ for every $\epsilon > 0$.
+
+\term{Convergence (Mode of)}
+Modes of convergence for sequences of random variables: (a) Almost sure: $P(\lim X_n = X) = 1$. (b) In probability: $P(|X_n - X| > \epsilon) \to 0$ for all $\epsilon > 0$. (c) In $L^p$: $E[|X_n - X|^p] \to 0$. (d) In distribution: $F_{X_n}(x) \to F_X(x)$ at continuity points. Implications: a.s. $\implies$ probability $\implies$ distribution; $L^p$ convergence $\implies$ probability convergence.
+
+\term{Convergent Series}
+An infinite series whose sequence of partial sums has a finite limit, called its sum.
+
+\term{Convex Function}
+A function $f: I \to \mathbb{R}$ on an interval $I$ is convex if $f(tx + (1-t)y) \leq tf(x) + (1-t)f(y)$ for all $x,y \in I$ and $t \in [0,1]$. Equivalently, the epigraph $\{(x,y) : y \geq f(x)\}$ is a convex set. A twice-differentiable function is convex iff $f''(x) \geq 0$. Jensen's inequality states $f(E[X]) \leq E[f(X)]$ for convex $f$.
+
+\term{Convex Hull}
+The convex hull of a set $S \subseteq \mathbb{R}^n$ is the smallest convex set containing $S$, equivalently the set of all convex combinations $\sum \lambda_i x_i$ with $x_i \in S$, $\lambda_i \geq 0$, $\sum \lambda_i = 1$. Carathéodory's theorem states that any point in the convex hull of $S \subset \mathbb{R}^n$ is a convex combination of at most $n+1$ points of $S$.
+
+\term{Convex Optimization}
+The minimization of a convex function over a convex set, for which every local optimum is global.
+
+\term{Convex Set}
+A set $C$ in a vector space is convex if for any $x, y \in C$, the line segment $[x,y] = \{tx + (1-t)y : 0 \leq t \leq 1\}$ lies entirely in $C$. Examples: balls, half-spaces, simplices, the positive orthant. The intersection of convex sets is convex. A function is convex iff its epigraph is a convex set. Convex sets are central to optimisation and functional analysis.
+
+\term{Coordinate Chart}
+A coordinate chart on a manifold $M$ is a pair $(U, \varphi)$ where $U \subset M$ is open and $\varphi: U \to \mathbb{R}^n$ is a homeomorphism onto an open subset of $\mathbb{R}^n$. An atlas is a collection of charts whose domains cover $M$. The transition maps $\varphi_\beta \circ \varphi_\alpha^{-1}$ between overlapping charts must be smooth for a smooth manifold.
+
+\term{Corollary}
+A proposition that follows almost immediately from a previously proved theorem.
+
+\term{Correlation Coefficient}
+The Pearson correlation coefficient between random variables $X$ and $Y$ is $\rho_{XY} = \frac{\operatorname{Cov}(X,Y)}{\sigma_X \sigma_Y}$, measuring linear dependence with values in $[-1,1]$. $\rho = 1$ means perfect positive linear relationship; $\rho = -1$ means perfect negative; $\rho = 0$ means no linear relationship. Note: zero correlation does not imply independence.
+
+\term{Correspondence Theorem}
+For a group homomorphism $f: G \to H$, the lattice of subgroups of $G$ containing $\ker f$ corresponds bijectively, under $K \mapsto f(K)$, to the lattice of subgroups of the image $f(G)$, and this correspondence preserves inclusions, normality, and quotients. The same statement holds for rings and modules, where ideals or submodules containing the kernel correspond to those of the image. It reduces the study of a quotient $G/N$ to the subgroups of $G$ that contain $N$.
+
+\term{Coset}
+If $H$ is a subgroup of $G$ and $g \in G$, the left coset is $gH = \{gh : h \in H\}$ and the right coset is $Hg = \{hg : h \in H\}$. Left cosets partition $G$ into disjoint sets of equal size $|H|$. Lagrange's theorem states $[G:H] = |G|/|H|$. A subgroup is normal iff left and right cosets coincide.
+
+\term{Cotangent Bundle}
+The cotangent bundle $T^*M$ of a manifold $M$ is the disjoint union of cotangent spaces $T^*_p M = (T_p M)^*$ over all points $p \in M$. It is a $2n$-dimensional manifold when $\dim M = n$. The cotangent bundle carries a canonical symplectic form $d\theta$ where $\theta$ is the tautological 1-form. It is the natural phase space in classical mechanics.
+
+\term{Cotangent Space}
+The dual space of the tangent space, whose elements are covectors and which carries the differentials of functions.
+
+\term{Countable Set}
+A set that is in bijection with a subset of the natural numbers. Finite sets and $\mathbb{N}$ itself are countable; $\mathbb{R}$ is not.
+
+\term{Counterexample}
+An example that disproves a conjecture or proposition.
+
+\term{Covariance}
+The measure $\operatorname{Cov}(X,Y) = E[(X - EX)(Y - EY)]$ of the joint variability of two random variables.
+
+\term{Covariant Derivative}
+A derivative operator on a manifold that is linear, satisfies the Leibniz rule, and is compatible with the connection.
+
+\term{Covering Space}
+A space $\tilde{X}$ with a surjective local homeomorphism $p: \tilde{X} \to X$ over which every point has an evenly covered neighbourhood.
+
+\term{Cramer's Rule}
+For a linear system $Ax = b$ with $\det(A) \neq 0$, the unique solution is $x_i = \frac{\det(A_i)}{\det(A)}$, where $A_i$ is $A$ with column $i$ replaced by $b$. Cramer's rule is theoretically important but numerically impractical for large systems due to the cost of computing determinants. It is useful for symbolic computation and proving theoretical results.
+
+\term{Critical Point}
+A point where the gradient of a differentiable function vanishes, or where its derivative does not exist.
+
+\term{Crofton Formula}
+The Crofton formula relates the length of a curve to the measure of lines intersecting it. In the plane, the length of a rectifiable curve $\gamma$ is $\frac{1}{2} \iint n(\gamma \cap \ell)\, d\mu(\ell)$, where $n(\gamma \cap \ell)$ counts intersection points and $d\mu$ is the invariant measure on lines. This is a special case of the kinematic formula in integral geometry.
+
+\term{Cross Product}
+The vector product $a \times b$ of two vectors in $\mathbb{R}^3$, perpendicular to both with magnitude $|a||b|\sin\theta$.
+
+\term{Cross Ratio}
+For four distinct points $z_1, z_2, z_3, z_4$ on the Riemann sphere, the cross ratio is $(z_1, z_2; z_3, z_4) = \frac{(z_1-z_3)(z_2-z_4)}{(z_1-z_4)(z_2-z_3)}$. It is invariant under Möbius transformations. Four points are concyclic or collinear iff their cross ratio is real. The cross ratio characterises projective equivalence of quadruples of points.
+
+\term{Curry's Paradox}
+In a system with self-reference and ordinary logical rules, the sentence "If this sentence is true, then X" forces X to be true for any proposition X. It shows that naive self-reference combined with implication (unlike the Liar) can prove arbitrary statements, and plays a role in discussions of paraconsistent logic.
+
+\term{Curvature}
+The rate at which a curve or surface deviates from being straight or flat, measured by the radius of the osculating circle.
+
+\term{Curvature Tensor}
+The Riemann curvature tensor $R^a_{\ bcd}$ measuring the failure of parallel transport to commute, from which Ricci and scalar curvature are derived.
+
+\term{Cycle}
+A closed path in a graph with no repeated vertices, or an element of the quotient group $Z_n/B_n$ in homology.
+
+\term{Cyclotomic Field}
+The $n$-th cyclotomic field is $\mathbb{Q}(\zeta_n)$ where $\zeta_n = e^{2\pi i/n}$ is a primitive $n$-th root of unity. It is a Galois extension of $\mathbb{Q}$ with Galois group $(\mathbb{Z}/n\mathbb{Z})^\times$, abelian of order $\varphi(n)$. Cyclotomic fields are central to algebraic number theory; Kummer used them to study Fermat's Last Theorem via cyclotomic units and ideal class groups.
+
+\term{Cyclotomic Polynomial}
+The $n$-th cyclotomic polynomial $\Phi_n(x)$ is the minimal polynomial of a primitive $n$-th root of unity over $\mathbb{Q}$. It satisfies $x^n - 1 = \prod_{d|n} \Phi_d(x)$. The degree is $\Phi_n(x) = \prod_{1 \leq k \leq n, \gcd(k,n)=1} (x - e^{2\pi i k/n})$, with degree $\varphi(n)$. For prime $p$, $\Phi_p(x) = x^{p-1} + x^{p-2} + \cdots + x + 1$.
+
+\term{Cylinder (Topology)}
+The topological cylinder is $S^1 \times \mathbb{R}$, homeomorphic to $\mathbb{R}^2 \setminus \{0\}$. More generally, the cylinder over a space $X$ is $X \times [0,1]$. The cylinder is used to define homotopy: a homotopy between $f$ and $g$ is a continuous map $H: X \times [0,1] \to Y$ with $H(x,0) = f(x)$ and $H(x,1) = g(x)$.
+
+\term{Cyclic Group}
+A cyclic group is a group generated by a single element: $G = \langle g \rangle = \{g^n : n \in \mathbb{Z}\}$. Every cyclic group is abelian. A finite cyclic group of order $n$ is isomorphic to $\mathbb{Z}/n\mathbb{Z}$. The subgroups of $\mathbb{Z}/n\mathbb{Z}$ are precisely $\langle d \rangle$ for each divisor $d$ of $n$. Cyclic groups are the simplest infinite family of groups.
+
+\term{Cyclic Homology}
+Cyclic homology $HC_*(A)$ is a homology theory for associative algebras, introduced by Connes (1985). It is related to Hochschild homology via the Connes exact sequence: $\cdots \to HC_{n-2}(A) \to HH_n(A) \to HC_n(A) \to HC_{n-1}(A) \to \cdots$. Cyclic homology computes invariants of non-commutative spaces and appears in index theory and deformation quantisation.
+
+\term{Cylinder Set}
+In measure theory on product spaces, a cylinder set is a set of the form $\{x \in X^I : (x_{i_1}, \ldots, x_{i_n}) \in B\}$ where $B$ is measurable in the finite product. Cylinder sets generate the product $\sigma$-algebra. Kolmogorov's extension theorem uses cylinder sets to construct measures on infinite product spaces from consistent finite-dimensional distributions.
+

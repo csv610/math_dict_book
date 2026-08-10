@@ -1,0 +1,249 @@
+\chapter{D}
+\label{chap:d}
+
+\term{Darboux's Theorem}
+If $f$ is differentiable on $[a,b]$, then $f'$ has the intermediate value property: for any $y$ between $f'(a)$ and $f'(b)$, there exists $c \in (a,b)$ with $f'(c) = y$. Unlike general functions, derivatives need not be continuous, but they cannot have jump discontinuities. This theorem is fundamental in real analysis and demonstrates that derivatives, while not necessarily continuous, still satisfy a mean value property.
+
+\term{Darboux Sum}
+An approximation of an integral using step functions that bound the function from above or below; their common refinement is used in Riemann integration.
+
+\term{Decidable}
+A property or problem for which an algorithm always terminates with the correct yes/no answer.
+
+\term{Decision Problem}
+A problem whose answer is yes or no, studied in computability and complexity theory.
+
+\term{Decomposable}
+Capable of being split into simpler components, as a vector or module written as a direct sum of non-zero pieces.
+
+\term{Dedekind Cut}
+A Dedekind cut partitions the rationals $\mathbb{Q}$ into two non-empty sets $(A, B)$ such that every element of $A$ is less than every element of $B$, and $A$ has no greatest element. Each cut defines a real number. This construction provides a rigorous foundation for the real numbers, establishing completeness without appealing to geometric intuition.
+
+\term{Dedekind Domain}
+An integral domain in which every nonzero proper ideal factors uniquely into prime ideals. Equivalently, a Noetherian integrally closed domain of Krull dimension 1. The ring of integers $\mathcal{O}_K$ of a number field $K$ is always a Dedekind domain. Unique factorisation of elements may fail, but unique factorisation of ideals holds.
+
+\term{Dedekind Eta Function}
+The Dedekind eta function is $\eta(\tau) = e^{\pi i \tau/12} \prod_{n=1}^{\infty}(1 - e^{2\pi i n \tau})$ for $\tau$ in the upper half-plane. It is a modular form of weight $1/2$ satisfying $\eta(-1/\tau) = \sqrt{\tau/i}\,\eta(\tau)$. The eta function appears in partition theory, string theory, and the theory of vertex operator algebras.
+
+\term{Dedekind's Axiom}
+The completeness property of the real numbers: every non-empty bounded-above subset has a least upper bound.
+
+\term{Definite Integral}
+The quantity $\int_a^b f(x)\,dx$ measuring the signed area under $f$ between $a$ and $b$.
+
+\term{Deformation Retract}
+A subspace $A$ of $X$ is a deformation retract if there exists a homotopy $H: X \times [0,1] \to X$ with $H(x,0) = x$, $H(x,1) \in A$, and $H(a,t) = a$ for all $a \in A$, $t \in [0,1]$. The circle $S^1$ is a deformation retract of the punctured plane $\mathbb{R}^2 \setminus \{0\}$ via radial projection. Homotopy equivalent spaces share the same homotopy groups.
+
+\term{Delaunay Triangulation}
+Given a finite set of points in the plane, the Delaunay triangulation is a triangulation such that no point lies inside the circumcircle of any triangle. Equivalently, the Voronoi cells form a dual graph. Delaunay triangulations maximise the minimum angle, avoiding skinny triangles, making them ideal for finite element methods and surface reconstruction.
+
+\term{Delta Method}
+In statistics, the delta method approximates the distribution of a function of an asymptotically normal random variable. If $\sqrt{n}(X_n - \theta) \xrightarrow{d} N(0, \sigma^2)$ and $g$ is differentiable at $\theta$, then $\sqrt{n}(g(X_n) - g(\theta)) \xrightarrow{d} N(0, [g'(\theta)]^2\sigma^2)$. It is widely used for deriving standard errors of transformed estimators.
+
+\term{Delta System Lemma}
+Also called the Sunflower Lemma. Every uncountable family of finite sets contains an uncountable delta system: a subfamily where pairwise intersections are all equal to a fixed set (the kernel). This combinatorial principle, due to Erdős and Rado, is used in set theory, topology, and combinatorics. A delta system of size $\kappa$ with kernel $K$ consists of sets $\{A_i\}_{i \in \kappa}$ with $A_i \cap A_j = K$ for $i \neq j$.
+
+\term{De Moivre's Formula}
+The identity $(\cos \theta + i \sin \theta)^n = \cos(n\theta) + i\sin(n\theta)$.
+
+\term{Dense Set}
+A subset $D$ of a topological space $X$ is dense if its closure is $X$: every non-empty open set intersects $D$. The rationals $\mathbb{Q}$ are dense in $\mathbb{R}$; the polynomials are dense in $C[a,b]$ by the Weierstrass approximation theorem. A separable space is one containing a countable dense subset.
+
+\term{Derivation (Algebra)}
+A derivation on a commutative algebra $A$ over a ring $R$ is an $R$-linear map $d: A \to A$ satisfying the Leibniz rule: $d(ab) = d(a)b + ad(b)$. The set of all derivations forms a Lie algebra under the bracket $[d_1, d_2] = d_1 \circ d_2 - d_2 \circ d_1$. Vector fields on manifolds are derivations on the algebra of smooth functions.
+
+\term{Derivation (Differential Geometry)}
+A derivation on the algebra $C^\infty(M)$ of smooth functions on a manifold $M$ is a linear map $D$ satisfying $D(fg) = D(f)g + fD(g)$. The space of derivations is naturally identified with the tangent bundle $TM$. At each point $p$, derivations correspond to tangent vectors, giving an intrinsic definition of the tangent space.
+
+\term{Derivative}
+The derivative $f'(x_0) = \lim_{h \to 0} \frac{f(x_0+h) - f(x_0)}{h}$ measures the instantaneous rate of change of $f$ at $x_0$. For functions of several variables, the derivative is the linear map represented by the Jacobian matrix. The derivative is fundamental to calculus, appearing in the Fundamental Theorem, Taylor's theorem, and the study of differential equations.
+
+\term{Derived Functor}
+The functor $R^n F$ obtained by applying a left-exact functor to a resolution, measuring the failure of exactness.
+
+\term{Desargues' Theorem}
+Two triangles are in perspective from a point if and only if they are in perspective from a line. Given triangles $ABC$ and $A'B'C'$, if the lines $AA'$, $BB'$, $CC'$ are concurrent, then the intersections of corresponding sides $AB \cap A'B'$, $BC \cap B'C'$, $CA \cap C'A'$ are collinear. This fundamental theorem of projective geometry holds in any projective space of dimension at least 3.
+
+\term{Descartes' Rule of Signs}
+For a polynomial $p(x)$ with real coefficients, the number of positive real roots (counting multiplicity) is at most the number of sign changes in the sequence of coefficients, and differs from it by an even number. Applying the rule to $p(-x)$ gives information about negative roots. This provides a bound on the number of real zeros without finding them explicitly.
+
+\term{Descent (Algebraic Geometry)}
+Descent theory studies when objects defined locally on a cover glue to form a global object. For a morphism $f: Y \to X$, a descent datum on a sheaf or bundle over $Y$ consists of isomorphisms satisfying a cocycle condition on $Y \times_X Y$. Descent is effective for faithfully flat morphisms (Grothendieck's theorem), forming the basis of étale cohomology.
+
+\term{Determinant}
+The determinant $\det(A)$ of a square matrix $A$ is a scalar value characterising the linear transformation represented by $A$. It equals the product of eigenvalues, measures the volume scaling factor, and determines invertibility: $A$ is invertible iff $\det(A) \neq 0$. Key properties: $\det(AB) = \det(A)\det(B)$, $\det(A^T) = \det(A)$, $\det(A^{-1}) = 1/\det(A)$.
+
+\term{Deterministic}
+A process whose outcome is fully determined by its initial state, with no randomness involved.
+
+\term{Deterministic Algorithm}
+An algorithm is deterministic if its behaviour is completely determined by its input, with no randomness. Every step produces a unique output for a given input. This contrasts with probabilistic algorithms, which use random bits. Deterministic algorithms are analysed for worst-case and average-case complexity; many problems admit efficient deterministic solutions (P) while others may require randomness.
+
+\term{Diagonal Argument}
+Cantor's diagonal argument proves that $\mathbb{R}$ is uncountable. Suppose $r_1, r_2, \ldots$ lists all reals in $[0,1]$. Construct $x$ by changing the $n$-th decimal digit of $r_n$. Then $x$ differs from every $r_n$, contradicting the assumption. The same argument shows $|\mathcal{P}(\mathbb{N})| > |\mathbb{N}|$ and appears in Turing's proof of the undecidability of the halting problem.
+
+\term{Diagonalisation (Logic)}
+Diagonalisation in computability theory constructs an object that differs from every member of a given list. Turing's diagonal argument shows the halting problem is undecidable: assume a machine $H$ decides halting; construct $D$ that does the opposite of $H$ on its own description. $D$ cannot be decided by $H$, contradiction. This technique underlies Gödel's incompleteness theorems.
+
+\term{Diagonal Matrix}
+A square matrix whose only non-zero entries lie on the main diagonal.
+
+\term{Diagonalizability}
+The property of a linear operator of having a basis of eigenvectors, so that it is similar to a diagonal matrix.
+
+\term{Difference Equation}
+A recurrence relation expressing a sequence term as a function of earlier terms, the discrete analogue of a differential equation.
+
+\term{Differential}
+The linear part $\mathrm{d}f$ of the change of a differentiable function, mapping tangent vectors to tangent vectors.
+
+\term{Differential Equation}
+An equation relating an unknown function to its derivatives, such as $y'' + y = 0$.
+
+\term{Differential Form}
+An antisymmetric tensor field $\omega$ of type $(0,k)$, integrated over oriented submanifolds.
+
+\term{Differential Geometry}
+The study of smooth manifolds and the calculus, metrics, and curvatures defined on them.
+
+\term{Differential Topology}
+The study of differentiable manifolds and smooth maps between them, focusing on properties invariant under diffeomorphism.
+
+\term{Differentiation}
+The process of computing the derivative, measuring the instantaneous rate of change of a function.
+
+\term{Dilworth's Theorem}
+In a finite partially ordered set, the minimum number of chains needed to cover the elements equals the size of the largest antichain. For a poset $P$, a chain is a totally ordered subset and an antichain is a set of pairwise incomparable elements. The dual form (Mirsky's theorem) states that the minimum number of antichains needed to cover $P$ equals the size of the largest chain. Dilworth's theorem applies to scheduling problems where tasks are subject to precedence constraints.
+
+\term{Digraph}
+A directed graph, whose edges have an orientation from one vertex to another.
+
+\term{Dihedral Group}
+The dihedral group $D_n$ is the symmetry group of a regular $n$-gon, of order $2n$. It is generated by a rotation $r$ of order $n$ and a reflection $s$ of order 2, with relation $srs = r^{-1}$. For $n = 3$, $D_3 \cong S_3$. Dihedral groups are the simplest non-abelian groups (for $n \geq 3$) and appear in geometry, chemistry (molecular symmetry), and group theory.
+
+\term{Dimension}
+The number of coordinates needed to describe a space; for a vector space, the size of a basis.
+
+\term{Directed Graph}
+A directed graph (digraph) $D = (V, A)$ consists of vertices $V$ and ordered pairs of vertices called arcs or directed edges. The out-degree $d^+(v)$ counts arcs leaving $v$; the in-degree $d^-(v)$ counts arcs entering $v$. A directed graph is strongly connected if there is a directed path between any ordered pair of vertices. Digraphs model networks, precedence constraints, and state machines.
+
+\term{Direct Sum}
+The coproduct construction for abelian groups or vector spaces, $V \oplus W$, whose elements are pairs $(v, w)$ with componentwise operations.
+
+\term{Dirac Delta Function}
+The Dirac delta $\delta(x)$ is a generalised function with $\delta(x) = 0$ for $x \neq 0$ and $\int_{-\infty}^{\infty} \delta(x)\,dx = 1$. Formally, $\delta(x) = \lim_{\epsilon \to 0} \frac{1}{\epsilon}\phi(x/\epsilon)$ for any nascent delta function $\phi$. It satisfies $\int f(x)\delta(x-a)\,dx = f(a)$. The delta function is the identity element for convolution and the derivative of the Heaviside step function.
+
+\term{Dirac Measure}
+The probability measure $\delta_a$ concentrated at a single point $a$, with $\delta_a(\{a\}) = 1$.
+
+\term{Dirichlet Boundary Condition}
+A Dirichlet boundary condition specifies the value of a solution on the boundary of a domain: $u(x) = g(x)$ for $x \in \partial\Omega$. For the Laplace equation $\Delta u = 0$ on $\Omega$, the Dirichlet problem has a unique solution if $g$ is continuous (Perron's method). Dirichlet conditions model fixed temperature on a boundary in heat flow, or fixed displacement in elasticity.
+
+\term{Dirichlet L-function}
+The series $L(s, \chi) = \sum_{n=1}^\infty \chi(n)/n^s$ built from a Dirichlet character $\chi$, central to the theory of primes in arithmetic progressions.
+
+\term{Dirichlet's Approximation Theorem}
+For any real number $\alpha$ and any positive integer $N$, there exist integers $p, q$ with $1 \leq q \leq N$ such that $|\alpha - p/q| < 1/(qN) \leq 1/N^2$. This implies infinitely many rational approximations satisfying $|\alpha - p/q| < 1/q^2$. The theorem follows from the pigeonhole principle applied to fractional parts $\{\alpha\}, \{2\alpha\}, \ldots, \{N\alpha\}$.
+
+\term{Dirichlet's Theorem on Arithmetic Progressions}
+For any coprime integers $a, d$, the arithmetic progression $a, a+d, a+2d, \ldots$ contains infinitely many primes. Dirichlet proved this (1837) using $L$-functions: $L(s, \chi) = \sum_{n=1}^{\infty} \chi(n)n^{-s}$ for Dirichlet characters $\chi$ modulo $d$, showing $L(1, \chi) \neq 0$. The proof introduced analytic methods into number theory.
+
+\term{Dirichlet's Unit Theorem}
+In a number field $K$ with $r_1$ real embeddings and $2r_2$ complex embeddings, the unit group $\mathcal{O}_K^*$ of the ring of integers is isomorphic to $\mu_K \times \mathbb{Z}^{r_1 + r_2 - 1}$, where $\mu_K$ is the finite cyclic group of roots of unity in $K$. The rank $r_1 + r_2 - 1$ is the unit rank. For $\mathbb{Q}(\sqrt{2})$, the fundamental unit is $1 + \sqrt{2}$.
+
+\term{Discontinuity}
+A point at which a function is not continuous, classified as removable, jump, or essential.
+
+\term{Discrete Topology}
+The discrete topology on a set $X$ declares every subset open. Every function from a discrete space is continuous. Every subset is also closed, so the space is zero-dimensional and totally disconnected. The discrete topology is the finest possible topology; it makes $X$ a metric space with the discrete metric $d(x,y) = 1$ for $x \neq y$.
+
+\term{Discriminant (Number Field)}
+The discriminant $d_K$ of a number field $K$ is the determinant of the trace form: $d_K = \det(\operatorname{Tr}_{K/\mathbb{Q}}(\omega_i \omega_j))$ for an integral basis $\{\omega_i\}$. It measures the arithmetic complexity of $K$. The discriminant of $\mathbb{Q}(\sqrt{d})$ for square-free $d$ is $d$ if $d \equiv 1 \pmod 4$ and $4d$ otherwise. Only finitely many fields have discriminant below any given bound.
+
+\term{Discriminant (Polynomial)}
+The discriminant of a polynomial $p(x) = a_n \prod(x - \alpha_i)$ is $\Delta = a_n^{2n-2} \prod_{i < j}(\alpha_i - \alpha_j)^2$. It vanishes iff $p$ has a repeated root. For a quadratic $ax^2 + bx + c$, $\Delta = b^2 - 4ac$. For a cubic $x^3 + px + q$, $\Delta = -4p^3 - 27q^2$. The discriminant measures the "separation" of roots and appears in Galois theory.
+
+\term{Disk (Topology)}
+The closed disk $D^n = \{x \in \mathbb{R}^n : \|x\| \leq 1\}$ is the standard model for an $n$-dimensional ball. $D^2$ is the unit disk in the plane, homeomorphic to any compact convex set with non-empty interior. The disk is contractible: the identity map is homotopic to a constant map. By the Brouwer fixed-point theorem, every continuous map $D^n \to D^n$ has a fixed point.
+
+\term{Displacement Map}
+A displacement map in numerical analysis refers to a matrix representation where a matrix $A$ satisfies $A - S A S^{-1} = uv^T$ for a shift matrix $S$ and vectors $u, v$. Displacement rank measures how far a matrix is from being Toeplitz or circulant. Structured matrices with low displacement rank admit fast algorithms for inversion and eigenvalue computation.
+
+\term{Distribution}
+(Probability) The rule assigning probabilities to the values or intervals of a random variable.
+
+\term{Distribution Theory}
+The theory of generalised functions, or distributions, constructed by duality with spaces of test functions.
+
+\term{Distributional Solution}
+A solution of a PDE in the sense of distributions, tested against smooth compactly supported functions.
+
+\term{Divergence}
+The divergence $\operatorname{div} \mathbf{F} = \nabla \cdot \mathbf{F} = \sum \frac{\partial F_i}{\partial x_i}$ measures the net outflow of a vector field per unit volume at a point. The divergence theorem (Gauss's theorem) relates the flux through a closed surface to the integral of divergence over the enclosed volume: $\int_V \nabla \cdot \mathbf{F}\,dV = \oint_{\partial V} \mathbf{F} \cdot d\mathbf{S}$.
+
+\term{Divergence Theorem}
+Also called Gauss's theorem or Ostrogradsky's theorem. For a smoothly bounded region $V \subset \mathbb{R}^n$ and a $C^1$ vector field $\mathbf{F}$ on $V$: $\int_V \nabla \cdot \mathbf{F}\,dV = \oint_{\partial V} \mathbf{F} \cdot \mathbf{n}\,dS$, where $\mathbf{n}$ is the outward unit normal. This generalises the fundamental theorem of calculus to higher dimensions and is fundamental to physics (electromagnetism, fluid dynamics).
+
+\term{Divergent Series}
+A series whose partial sums do not converge to a finite limit.
+
+\term{Divisible Group}
+An abelian group $G$ is divisible if for every $g \in G$ and positive integer $n$, there exists $h \in G$ with $nh = g$. Examples: $\mathbb{Q}/\mathbb{Z}$, $\mathbb{Q}$, and the circle group $\mathbb{R}/\mathbb{Z}$. Divisible groups are injective objects in the category of abelian groups: every abelian group embeds in a divisible group. The classification of divisible groups is simple: they are direct sums of copies of $\mathbb{Q}$ and $\mathbb{Z}(p^\infty)$.
+
+\term{Division Algorithm}
+For integers $a$ and $b > 0$, there exist unique integers $q$ (quotient) and $r$ (remainder) such that $a = bq + r$ with $0 \leq r < b$. This fundamental result underlies the Euclidean algorithm for computing GCDs. The division algorithm generalises to polynomials over a field: for $f, g \neq 0$, there exist unique $q, r$ with $\deg(r) < \deg(g)$ and $f = gq + r$.
+
+\term{Dixon's Theorem (Hypergeometric Series)}
+Dixon's theorem evaluates the well-poised hypergeometric series $_3F_2(\alpha, \beta, \gamma; 1+\alpha-\beta, 1+\alpha-\gamma; 1)$ when $\operatorname{Re}(\alpha + 1 - \beta - \gamma) > 0$: $_3F_2 = \frac{\Gamma(1+\alpha/2)\Gamma(1+\alpha-\beta)\Gamma(1+\alpha-\gamma)\Gamma(1+\alpha/2-\beta-\gamma)}{\Gamma(1+\alpha)\Gamma(1+\alpha/2-\beta)\Gamma(1+\alpha/2-\gamma)\Gamma(1+\alpha-\beta-\gamma)}$. It is a cornerstone of hypergeometric identity theory.
+
+\term{Doctrine of Natural Deduction}
+Natural deduction is a proof calculus developed by Gerhard Gentzen (1934) and Jakob Jakobsson. It uses introduction and elimination rules for each logical connective, organising proofs in tree form. The deduction theorem states that $\Gamma, A \vdash B$ iff $\Gamma \vdash A \to B$. Natural deduction is the basis for proof assistants (Coq, Isabelle) and type theory.
+
+\term{Dodecahedron}
+The regular dodecahedron is one of the five Platonic solids, with 12 regular pentagonal faces, 20 vertices, and 30 edges. Its symmetry group is $A_5 \times \mathbb{Z}/2\mathbb{Z}$ of order 120. The dodecahedron is dual to the icosahedron. Its vertices can be placed at coordinates involving the golden ratio $\phi = (1+\sqrt{5})/2$, e.g., $(\pm 1, \pm 1, \pm 1)$ and $(0, \pm \phi, \pm 1/\phi)$ and permutations.
+
+\term{Doob's Optional Stopping Theorem}
+For a martingale $X_n$ and a stopping time $T$, under appropriate conditions we have $\mathbb{E}[X_T] = \mathbb{E}[X_0]$. The theorem holds when $T$ is bounded, or when $X$ is uniformly integrable and $T$ is almost surely finite. This formalises the fair-games interpretation of martingales: no strategy of stopping at a random time can improve expected winnings. The theorem is central in martingale theory, harmonic analysis, and mathematical finance.
+
+\term{Domain}
+The set of inputs on which a function is defined, or an integral domain when discussing rings.
+
+\term{Dominated Convergence Theorem}
+If $f_n \to f$ pointwise almost everywhere and $|f_n| \leq g$ for an integrable $g$, then $f$ is integrable and $\lim_{n \to \infty} \int f_n\,d\mu = \int f\,d\mu$. It is the standard interchange theorem of limit and integral in measure theory, used whenever one must pass a limit under the integral sign. The dominating function $g$ is essential: without it, e.g. $f_n = n\chi_{(0,1/n)}$ on $[0,1]$, the conclusion fails.
+
+\term{Dominator Tree}
+In a directed graph with start vertex $s$, vertex $d$ dominates vertex $v$ if every path from $s$ to $v$ passes through $d$. The dominator tree represents the dominance relation: the parent of $v$ is its immediate dominator. Applications include compiler optimisation (program dependence graphs), flow analysis, and finding critical points in control flow graphs.
+
+\term{Donsker Invariance Principle}
+For independent identically distributed random variables $X_1, X_2, \ldots$ with mean $0$ and variance $\sigma^2$, the scaled random walk $W_n(t) = \frac{1}{\sigma\sqrt{n}} \sum_{k=1}^{\lfloor nt \rfloor} X_k$, linearly interpolated to a continuous process on $[0,1]$, converges weakly to standard Brownian motion. This is the functional central limit theorem. Convergence holds in distribution on $C[0,1]$, so by the continuous mapping theorem the maximum $\sup_{0 \le t \le 1} W_n(t)$ and other continuous functionals converge to the corresponding functionals of Brownian motion.
+
+\term{Dot Product}
+The scalar $a \cdot b = \sum a_i b_i = |a||b|\cos\theta$ in Euclidean space.
+
+\term{Douady--Earle Extension}
+The Douady--Earle extension is a canonical extension of a continuous map $f: S^1 \to S^1$ to a diffeomorphism of the disk $D^2$, constructed using the centre of mass in the Poincaré disk model. It is equivariant under Möbius transformations and provides a smooth solution to the extension problem in Teichmüller theory. Used in the construction of the Euler class of the group of diffeomorphisms of the circle.
+
+\term{Double Cover}
+A double cover of a topological space $X$ is a 2-to-1 continuous map $p: Y \to X$ that is a covering map. The universal double cover of $\mathbb{R}P^n$ is $S^n$. The Möbius strip double covers the Klein bottle. Double covers correspond to index-2 subgroups of the fundamental group via the Galois correspondence for covering spaces.
+
+\term{Duality}
+A correspondence between two theories or objects that reverses structure, such as the duality between a vector space and its dual.
+
+\term{Dual Norm}
+The dual norm of a norm $\|\cdot\|$ on a vector space $V$ is $\|f\|_* = \sup\{f(v) : \|v\| \leq 1\}$ for $f \in V^*$. By the Hahn--Banach theorem, the dual norm is attained. The dual of the $\ell^p$ norm is the $\ell^q$ norm where $1/p + 1/q = 1$. For $p = 2$, the dual norm equals the original norm (self-dual). Dual norms appear in convex analysis and optimisation.
+
+\term{Dual Operator}
+The operator $T'$ on the dual space induced by $T$, with $(T'\phi)(x) = \phi(Tx)$.
+
+\term{Dual Problem}
+The optimization problem associated with the primal, whose optimum bounds the primal optimum under duality.
+
+\term{Dual Space}
+The dual space $V^*$ of a vector space $V$ is the space of all linear functionals $f: V \to \mathbb{F}$. For finite-dimensional $V$, $\dim V^* = \dim V$, and $V$ is canonically isomorphic to $V^{**}$ (the double dual). For infinite-dimensional spaces, the algebraic dual is much larger than $V$. The continuous dual $X'$ of a normed space $X$ is fundamental in functional analysis.
+
+\term{Duplication Formula (Gamma Function)}
+Legendre's duplication formula states $\Gamma(z)\Gamma(z + 1/2) = 2^{1-2z}\sqrt{\pi}\,\Gamma(2z)$. This generalises to the multiplication theorem: $\prod_{k=0}^{n-1} \Gamma(z + k/n) = (2\pi)^{(n-1)/2} n^{1/2-nz} \Gamma(nz)$. The duplication formula is essential in evaluating Gamma function values and appears in the theory of beta integrals and special functions.
+
+\term{Dynamical System}
+A space together with a rule, such as an iteration or differential equation, describing how points evolve over time.
+

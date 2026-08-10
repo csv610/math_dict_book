@@ -1,0 +1,365 @@
+\chapter{I}
+\label{chap:i}
+
+\term{Ideal (Ring Theory)}
+A subset $I$ of a ring $R$ is a left ideal if $(I, +)$ is a subgroup and $r \in R, a \in I \implies ra \in I$. A right ideal is defined similarly, and a two-sided ideal satisfies both. In a commutative ring, all ideals are two-sided. The quotient $R/I$ is a ring iff $I$ is two-sided.
+
+\term{Idempotent Element}
+An element $e$ of a ring or semigroup is idempotent if $e^2 = e$. In a ring, $0$ and $1$ are always idempotent. Idempotents are used to decompose rings into direct sums: if $e$ is idempotent, $R = eR \oplus (1-e)R$.
+
+\term{Identity Element}
+An element $e$ in a set $S$ with a binary operation $\cdot$ such that $e \cdot a = a \cdot e = a$ for all $a \in S$. In group theory, the identity is unique. In category theory, an identity morphism $\text{id}_X: X \to X$ exists for every object.
+
+\term{Identity Theorem}
+Two holomorphic functions on a connected domain that agree on a set with a limit point in the domain are identical. It is the uniqueness principle behind analytic continuation: a holomorphic function is determined by its values on any set with an accumulation point. The real-analytic analogue fails, since nonzero $C^\infty$ bump functions can vanish on an open set without being identically zero.
+
+\term{Idempotent Matrix}
+A square matrix $P$ such that $P^2 = P$. Every idempotent matrix is a projection onto its column space along its null space. The eigenvalues of $P$ are only $0$ and $1$, and $P$ is always diagonalisable.
+
+\term{Iff}
+Abbreviation for "if and only if", denoting logical equivalence between two statements.
+
+\term{Image}
+The set of all values attained by a function, $f(A) = \{f(x) : x \in A\}$, also called the range.
+
+\term{Imaginary Number}
+A complex number of the form $bi$ where $b \in \mathbb{R}$ and $i^2 = -1$. The set of purely imaginary numbers is the imaginary axis in the complex plane. They are essential for solving equations like $x^2 + 1 = 0$.
+
+\term{Imaginary Unit}
+The number $i$ defined by $i^2 = -1$. It allows for the construction of the field of complex numbers $\mathbb{C}$. In physics, $i$ often appears in the Schrödinger equation and Fourier transforms.
+
+\term{Immersion}
+A smooth map $f: M \to N$ between manifolds such that the differential $df_p$ is injective at every point $p \in M$. Unlike embeddings, immersions may have self-intersections. An immersed manifold is the image of an immersion.
+
+\term{Implication}
+A logical connective $P \Rightarrow Q$ true except when $P$ is true and $Q$ is false.
+
+\term{Improper Fraction}
+A fraction whose numerator is greater than or equal to its denominator.
+
+\term{Improper Integral}
+An integral over an unbounded interval or involving an unbounded integrand. For $\int_a^\infty f(x)\,dx$, it is defined as $\lim_{b \to \infty} \int_a^b f(x)\,dx$. Convergence is tested using the comparison test or the integral test.
+
+\term{Implicit Function Theorem}
+Given a smooth map $F: \mathbb{R}^{n+m} \to \mathbb{R}^m$, if the partial Jacobian $\partial F/\partial y$ is invertible at $(x_0, y_0)$, there exists a unique smooth function $y = g(x)$ locally such that $F(x, g(x)) = 0$. This is fundamental in differential geometry and optimization.
+
+\term{In-degree}
+In a directed graph, the in-degree of a vertex $v$ is the number of edges pointing into $v$. In a regular tournament, all vertices have the same in-degree. The sum of in-degrees equals the sum of out-degrees, both equaling the total number of edges.
+
+\term{Incenter}
+The center of the incircle of a triangle, formed by the intersection of the internal angle bisectors. It is always equidistant from the three sides. The incenter is always located in the interior of the triangle.
+
+\term{Incircle}
+The largest circle that can be inscribed within a triangle, tangent to all three sides. Its radius $r$ is given by $r = \text{Area}/s$ where $s$ is the semi-perimeter.
+
+\term{Independence}
+(Probability) Two events are independent if $P(A \cap B) = P(A)P(B)$; two random variables are independent if their joint distribution factors.
+
+\term{Inscribed Angle}
+An angle formed by two chords that share an endpoint on a circle's circumference. An inscribed angle is always half the measure of the central angle subtending the same arc.
+
+\term{Inscribed Circle}
+Also known as the incircle. A circle that is tangent to all sides of a polygon. Only some polygons (like all triangles) possess an inscribed circle.
+
+\term{Index (Group Theory)}
+The number of cosets of a subgroup $H$ in $G$, denoted $[G:H]$. If $G$ is finite, $[G:H] = |G|/|H|$ (Lagrange's Theorem). The index measures the relative size of the subgroup.
+
+\term{Index (Complex Analysis)}
+Also called the winding number. For a closed curve $\gamma$ and a point $a \notin \gamma$, $\text{ind}_\gamma(a) = \frac{1}{2\pi i} \oint_\gamma \frac{dz}{z-a}$, counting the number of times $\gamma$ winds around $a$.
+
+\term{Index (Fixed Point)}
+A topological invariant assigned to a fixed point of a map $f: M \to M$. The sum of indices of all fixed points equals the Euler characteristic $\chi(M)$ by the Poincaré--Hopf Theorem.
+
+\term{Indicator Function}
+A function $\mathbb{1}_A(x)$ that is $1$ if $x \in A$ and $0$ otherwise. Also called the characteristic function in set theory. $\int \mathbb{1}_A \, d\mu = \mu(A)$.
+
+\term{Inductive Proof}
+A method of proof where a statement $P(n)$ is proved for a base case $n_0$, and then the implication $P(k) \implies P(k+1)$ is proved. This establishes $P(n)$ for all $n \geq n_0$.
+
+\term{Induction (Mathematical)}
+The logical principle that if a property holds for $0$ and for $n+1$ whenever it holds for $n$, it holds for all natural numbers. Strong induction allows using all values $m < n$ to prove $P(n)$.
+
+\term{Inductive Limit}
+In category theory, the colimit of a directed system of objects. For a sequence of nested spaces $X_1 \subseteq X_2 \subseteq \cdots$, the inductive limit is their union $\bigcup X_i$. It is the categorical dual of the projective limit.
+
+\term{Inertia Tensor}
+A matrix $I_{ij} = \int \rho (r^2 \delta_{ij} - r_i r_j) \, dV$ describing the distribution of mass of a rigid body relative to an axis. It determines the angular velocity $\boldsymbol{\omega}$ given angular momentum $\mathbf{L} = I\boldsymbol{\omega}$.
+
+\term{Inequation}
+A statement asserting that two expressions are not equal, typically using $\leq$ or $\geq$. Solving an inequation involves finding the set of values for which the inequality holds.
+
+\term{Inference}
+The derivation of a conclusion from premises according to the rules of logic.
+
+\term{Infimum}
+The greatest lower bound of a set, denoted $\inf S$.
+
+\term{Infinite Set}
+A set that is not finite; it cannot be placed in bijection with any $\{1, \ldots, n\}$. A set is infinite iff it has a proper subset with the same cardinality (Dedekind-infinite).
+
+\term{Infinite Series}
+The limit of a sequence of partial sums $\sum_{n=1}^\infty a_n$. A series converges if the limit of partial sums exists; otherwise, it diverges. Tests for convergence include the ratio test and root test.
+
+\term{Infinite Product}
+The limit of a sequence of partial products $\prod_{n=1}^\infty (1+a_n)$. It converges to a non-zero value iff $\sum a_n$ converges absolutely. Used in the Weierstrass product theorem.
+
+\term{Infinite Dimensional Space}
+A vector space that does not have a finite basis. Examples include $L^p$ spaces and the space of all polynomials. Such spaces require topology to define convergence and continuity of operators.
+
+\term{Infinitesimal}
+A quantity considered to be closer to zero than any standard real number, but not zero. In non-standard analysis, infinitesimals are formal elements of the hyperreal numbers ${}^*\mathbb{R}$.
+
+\term{Infinitesimal Generator}
+For a strongly continuous semigroup $T_t$ on a Banach space, the operator $A = \lim_{t \to 0} \frac{T_t - I}{t}$ defined on the domain where the limit exists. It represents the rate of change at $t=0$.
+
+\term{Infinity}
+A quantity larger than every finite number, denoted $\infty$, handled rigorously through limits and cardinalities.
+
+\term{Information Entropy}
+In information theory, $H(X) = -\sum p_i \log p_i$ measures the average uncertainty or information content of a random variable. It is maximised for a uniform distribution.
+
+\term{Information Theory}
+The mathematical study of the quantification, storage, and communication of information, founded by Claude Shannon (1948). Key concepts include entropy, mutual information, and channel capacity.
+
+\term{Information Gain}
+The reduction in entropy achieved by splitting a dataset on a specific attribute. Used in decision tree algorithms like ID3 and C4.5 to select the best feature for splitting.
+
+\term{Information Geometry}
+The study of probability distributions as points on a manifold, where the metric is given by the Fisher information matrix. It applies differential geometry to statistical inference.
+
+\term{Initial Condition}
+Data specifying the state of a dynamical system at an initial time, used to select a unique solution of an ODE.
+
+\term{Initial-value Problem}
+A differential equation together with the value of the solution and its derivatives at a starting time.
+
+\term{Injective}
+A function mapping distinct inputs to distinct outputs, $f(a) = f(b) \Rightarrow a = b$. Also called one-to-one.
+
+\term{Injective Function}
+A function $f: X \to Y$ such that $f(x_1) = f(x_2) \implies x_1 = x_2$. Also called a one-to-one function. An injective function has a left inverse.
+
+\term{Injective Module}
+A module $M$ such that any embedding $M \subseteq N$ splits. Equivalently, the functor $\operatorname{Hom}(-, M)$ is exact. Every module can be embedded into an injective module.
+
+\term{Injective Hull}
+The smallest injective module containing a given module $M$, denoted $E(M)$. It is the unique (up to isomorphism) essential extension of $M$ that is injective.
+
+\term{Injective Limit}
+Another name for the inductive limit (colimit) of a directed system. It describes the smallest object that contains all objects in the system consistently.
+
+\term{Inner Automorphism}
+An automorphism of the form $g \mapsto aga^{-1}$ induced by conjugation by a fixed element $a$.
+
+\term{Inner Product Space}
+A vector space equipped with an inner product $\langle \cdot, \cdot \rangle$, a positive-definite sesquilinear form. It allows for the definition of angles and lengths (norms).
+
+\term{Inner Product}
+A mapping $\langle \cdot, \cdot \rangle: V \times V \to \mathbb{F}$ that is linear in the first argument, conjugate symmetric, and positive definite. It generalises the dot product in $\mathbb{R}^n$.
+
+\term{Inseparable Extension}
+An algebraic extension $L/K$ where some element has a minimal polynomial with multiple roots in its splitting field. This occurs only in characteristic $p > 0$.
+
+\term{Inseparable Polynomial}
+A polynomial that has multiple roots in its splitting field. For a field of characteristic $p$, a polynomial is inseparable iff it is a function of $x^p$.
+
+\term{Inspection Paradox}
+The phenomenon that an interval encountered by random sampling tends to be longer than the average interval: for example, the average wait for a bus that you arrive to is longer than the theoretical average headway. It is a manifestation of length-biased sampling in renewal theory.
+
+\term{Integers}
+The set $\mathbb{Z} = \{\ldots, -2, -1, 0, 1, 2, \ldots\}$. They form a commutative ring and a Euclidean domain. The additive group is $\mathbb{Z}$, and the multiplicative group of units is $\{\pm 1\}$.
+
+\term{Integer Partition}
+A way of writing a positive integer $n$ as a sum of positive integers, where order does not matter. The number of partitions $p(n)$ grows exponentially.
+
+\term{Integer Programming}
+A mathematical optimization problem where some or all variables are restricted to be integers. Many such problems are NP-hard, often solved using branch-and-bound or cutting-plane methods.
+
+\term{Integral}
+The limit of a sum of function values over a domain. The Riemann integral is defined via partitions; the Lebesgue integral via measurable sets.
+
+\term{Integral Calculus}
+The branch of calculus dealing with the computation of integrals and the area under curves, linked to differential calculus via the Fundamental Theorem of Calculus.
+
+\term{Integral Equation}
+An equation where an unknown function $f(x)$ appears under an integral sign. Common types include Fredholm equations (fixed limits) and Volterra equations (variable limits).
+
+\term{Integral Curve}
+A curve $\gamma(t)$ that is tangent to a vector field $V$ at every point: $\dot{\gamma}(t) = V(\gamma(t))$. It is a solution to a system of first-order ODEs.
+
+\term{Integral Manifold}
+A submanifold whose tangent space at every point is the subspace specified by a distribution. By Frobenius' Theorem, a distribution is integrable iff it is involutive.
+
+\term{Integrability}
+In analysis, the property of a function $f$ having a finite integral $\int |f| < \infty$. In dynamics, a system is integrable if it has enough conserved quantities to be solvable.
+
+\term{Integrable Function}
+A function $f$ for which the integral $\int f$ exists and is finite. In the Lebesgue sense, $f$ is integrable iff $\int |f| \, d\mu < \infty$.
+
+\term{Integrable System}
+A dynamical system with as many independent constants of motion as degrees of freedom. Their trajectories are confined to invariant tori (Liouville-Arnold theorem).
+
+\term{Integrating Factor}
+A function $\mu(x,y)$ used to multiply a non-exact differential equation to make it exact, enabling the search for a potential function.
+
+\term{Integration by Parts}
+A technique derived from the product rule: $\int u\,dv = uv - \int v\,du$. Used extensively for evaluating integrals of products of functions.
+
+\term{Integration by Substitution}
+A method for simplifying integrals by changing variables, based on the chain rule. It transforms the integral $\int f(g(x))g'(x)\,dx$ into $\int f(u)\,du$.
+
+\term{Integral Operator}
+An operator $T$ defined by $(Tf)(x) = \int_a^b K(x,y) f(y)\,dy$. The function $K(x,y)$ is the kernel. Many such operators are compact on $L^2$.
+
+\term{Integral Transform}
+An operator that maps a function to another via an integral, e.g., Fourier, Laplace, and Mellin transforms. They convert differential equations into algebraic equations.
+
+\term{Integral Domain}
+A commutative ring with no zero divisors (i.e., $ab=0 \implies a=0$ or $b=0$). Every field is an integral domain. $\mathbb{Z}$ is the prototypical example.
+
+\term{Integral Basis}
+A basis for the ring of integers $\mathcal{O}_K$ of a number field $K$ as a $\mathbb{Z}$-module. If $\{\omega_i\}$ is an integral basis, every $\alpha \in \mathcal{O}_K$ is $\sum a_i \omega_i$ with $a_i \in \mathbb{Z}$.
+
+\term{Integral Closure}
+For a subring $R \subseteq S$, the set of elements in $S$ that are roots of monic polynomials in $R[x]$. $S$ is integrally closed if $S$ equals its closure in its fraction field.
+
+\term{Integrally Closed Domain}
+An integral domain that is equal to its integral closure in its field of fractions. Examples include UFDs and Dedekind domains.
+
+\term{Integer-valued Polynomial}
+A polynomial $p(x) \in \mathbb{Q}[x]$ such that $p(n) \in \mathbb{Z}$ for all $n \in \mathbb{Z}$. The binomial coefficients $\binom{x}{k}$ form a basis for such polynomials.
+
+\term{Interior (Topology)}
+The interior of a set $S$, denoted $\operatorname{int}(S)$, is the union of all open sets contained in $S$. It consists of all interior points of $S$.
+
+\term{Interior Point}
+A point $x \in S$ such that there exists an open neighborhood $U$ with $x \in U \subseteq S$.
+
+\term{Interior Product}
+An operation that contracts a vector field $X$ with a differential $k$-form $\omega$, resulting in a $(k-1)$-form: $\iota_X \omega$. It is a derivation on the exterior algebra.
+
+\term{Interior Point Method}
+A class of algorithms for linear and non-linear programming that approach the optimal solution from the interior of the feasible region using barrier functions.
+
+\term{Intermediate Value Theorem}
+If $f$ is continuous on $[a,b]$ and $y$ is between $f(a)$ and $f(b)$, there exists $c \in (a,b)$ with $f(c) = y$. A fundamental result in real analysis.
+
+\term{Intercept (Curve)}
+The points where a curve intersects the coordinate axes. For a function $y=f(x)$, the $y$-intercept is $f(0)$ and the $x$-intercepts are the roots of $f(x)=0$.
+
+\term{Interpolation}
+The process of constructing a function that passes through a discrete set of points. Linear, spline, and polynomial interpolations are common.
+
+\term{Interpolating Polynomial}
+The unique polynomial of degree at most $n-1$ that passes through $n$ given points. It can be constructed using Lagrange or Newton forms.
+
+\term{Interpolation Error}
+The difference between the actual function and its interpolant. For polynomials, it is bounded by a term involving the $(n+1)$-th derivative of the function.
+
+\term{Interpolation Formula}
+A general expression for an interpolant, such as the Lagrange formula $\sum y_i L_i(x)$ or the Newton divided-difference formula.
+
+\term{Interquartile Range}
+In statistics, the difference between the 75th and 25th percentiles ($Q_3 - Q_1$). It measures the spread of the middle 50\% of a distribution.
+
+\term{Interval (Analysis)}
+A connected subset of $\mathbb{R}$. Closed intervals $[a,b]$ are compact; open intervals $(a,b)$ are open. Intervals are the building blocks of the Borel $\sigma$-algebra.
+
+\term{Interval Arithmetic}
+A method for computing with intervals $[a,b]$ rather than point values, used to bound rounding errors and prove inequalities rigorously.
+
+\term{Inverse Function}
+A function $f^{-1}$ such that $f^{-1}(f(x)) = x$ and $f(f^{-1}(y)) = y$. $f$ must be bijective for $f^{-1}$ to exist on the whole codomain.
+
+\term{Inverse Map}
+A synonym for the inverse function in category theory or topology. A map $f: X \to Y$ is an isomorphism iff it has an inverse map $f^{-1}: Y \to X$.
+
+\term{Inverse Element}
+In a group, the element $g^{-1}$ such that $g \cdot g^{-1} = e$. In a ring, the multiplicative inverse $u^{-1}$ such that $u u^{-1} = 1$.
+
+\term{Inverse Operator}
+An operator $T^{-1}$ such that $T T^{-1} = T^{-1} T = I$. For matrices, this is the inverse matrix. In functional analysis, the inverse is often a bounded operator.
+
+\term{Inverse Matrix}
+A square matrix $A^{-1}$ such that $A A^{-1} = I$. It exists iff $\det(A) \neq 0$. The inverse is computed via the adjugate matrix or Gaussian elimination.
+
+\term{Inverse Transform}
+An operation that recovers the original function from its transform, e.g., the Inverse Fourier Transform $f(x) = \int \hat{f}(\xi) e^{2\pi i x \xi} \, d\xi$.
+
+\term{Inverse Problem}
+A problem where the goal is to determine the cause (e.g., a source) from the observed effects (e.g., the field). Often ill-posed and requires regularisation.
+
+\term{Inverse Limit}
+The categorical limit of a projective system of objects. It is the dual of the inductive limit. Examples include the $p$-adic integers $\mathbb{Z}_p = \varprojlim \mathbb{Z}/p^n\mathbb{Z}$.
+
+\term{Invariant (Algebra)}
+An expression or property that remains unchanged under a group action. For example, the determinant of a matrix is invariant under basis change.
+
+\term{Invariant (Geometry)}
+A property of a geometric object that is preserved under a group of transformations, such as distance under isometry or angle under conformal mapping.
+
+\term{Invariant (Topology)}
+A property of a space preserved under homeomorphism, such as the Euler characteristic or fundamental group. If two spaces have different invariants, they are not homeomorphic.
+
+\term{Invariant Subspace}
+A subspace $W \subseteq V$ such that $T(W) \subseteq W$ for a linear operator $T$. The goal of many decomposition theorems (e.g., Jordan form) is to find a basis of invariant subspaces.
+
+\term{Invariant Measure}
+A measure $\mu$ on a space $X$ that is preserved by a transformation $T$: $\mu(T^{-1} A) = \mu(A)$ for all measurable $A$. Ergodic theory studies these measures.
+
+\term{Invariant Set}
+A set $S$ in a dynamical system such that if $x \in S$, then $f(x) \in S$ for all time. Examples include attractors and unstable manifolds.
+
+\term{Invariant Ring}
+The ring of all polynomials $p \in K[x_1, \ldots, x_n]$ that are invariant under the action of a group $G$. The study of such rings is the core of invariant theory.
+
+\term{Invariant Theory}
+The branch of algebra studying polynomial invariants. Classical invariant theory focuses on SL(n) and GL(n) acting on tensors.
+
+\term{Inverse Square Law}
+A physical law stating that a specified physical quantity is inversely proportional to the square of the distance from the source, e.g., Newton's law of gravity.
+
+\term{Involutive Distribution}
+A distribution $D$ such that for any two vector fields $X, Y \in D$, their Lie bracket $[X, Y]$ is also in $D$. By Frobenius' Theorem, such distributions are integrable.
+
+\term{Involution (Group Theory)}
+An element $g$ of a group such that $g^2 = e$ (and $g \neq e$). The set of involutions often plays a key role in the classification of finite simple groups.
+
+\term{Involution (Algebra)}
+An antiautomorphism $\ast: A \to A$ of an algebra such that $(a^\ast)^\ast = a$ and $(ab)^\ast = b^\ast a^\ast$. C*-algebras are defined via such involutions.
+
+\term{Involutory Matrix}
+A square matrix $A$ such that $A^2 = I$. Such matrices represent reflections in geometry and have eigenvalues $\pm 1$.
+
+\term{Icosahedron}
+A regular polyhedron with 20 equilateral triangular faces, 12 vertices, and 30 edges. It is one of the five Platonic solids.
+
+\term{Icosahedral Group}
+The symmetry group of the regular icosahedron, which is isomorphic to the alternating group $A_5$ (for rotational symmetries) or $A_5 \times \mathbb{Z}/2\mathbb{Z}$.
+
+\term{Irrational Number}
+A real number that is not rational, i.e. not expressible as a ratio of integers, such as $\sqrt{2}$ or $\pi$.
+
+\term{Irreducible}
+An element of a ring that cannot be written as a product of two non-units; an irreducible polynomial cannot be factored over the ground field.
+
+\term{Isolated Point}
+A point of a set having a neighbourhood containing no other points of the set.
+
+\term{Isomorphism}
+A bijective map $f: X \to Y$ that preserves the structure of the objects. In groups, $f(ab) = f(a)f(b)$. In topology, it is a homeomorphism.
+
+\term{Isometry}
+A distance-preserving map between metric spaces: $d(f(x), f(y)) = d(x,y)$. Isometries are always injective. Examples include translations, rotations, and reflections.
+
+\term{Isoperimetric Inequality}
+The inequality $4\pi A \leq L^2$ relating the area $A$ of a plane region to its perimeter $L$, with equality for circles.
+
+\term{Isothermal Coordinates}
+Local coordinates in which a surface's metric takes the conformal form $\lambda^2(dx^2 + dy^2)$.
+
+\term{Iteration}
+The repeated application of a function or process; in numerical analysis, the basis of fixed-point methods.
+
+\term{Iterative Method}
+A numerical method that generates successive approximations converging to the solution.

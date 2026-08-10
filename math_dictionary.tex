@@ -1,0 +1,146 @@
+\documentclass[11pt,twocolumn,twoside]{book}
+
+\usepackage[margin=0.75in,top=1in,bottom=1in,headheight=14pt]{geometry}
+\usepackage{titlesec}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{booktabs}
+\usepackage{microtype}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{textcomp}
+\usepackage{sectsty}
+\usepackage{parskip}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\makeindex
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\textit{\leftmark}}
+\fancyhead[RO]{\textit{\leftmark}}
+\fancyfoot[LE,RO]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue!60!black,
+    urlcolor=blue!60!black,
+    citecolor=blue!60!black,
+}
+
+\chapterfont{\centering\LARGE\bfseries\color{blue!70!black}}
+\sectionfont{\Large\bfseries\color{blue!70!black}}
+\subsectionfont{\normalsize\bfseries\color{blue!50!black}}
+
+\newcommand{\term}[1]{\hypertarget{#1}{}{\raggedright\noindent\textbf{\large\textcolor{MidnightBlue}{#1}}\index{#1}\par}\nobreak\vspace{1pt}\noindent\ignorespaces}
+\newcommand{\pronun}[1]{}
+\newcommand{\abbrev}[1]{\textsc{#1}}
+
+\definecolor{MidnightBlue}{RGB}{25,25,112}
+
+\raggedbottom
+\sloppy
+\setlength{\emergencystretch}{3em}
+
+\setlength{\columnsep}{0.3in}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+
+\title{\textbf{\Huge Mathematical Dictionary}\\[0.5em]
+\Large Terms, Theorems, and Concepts --- A--Z Entries}
+\author{Chaman Singh Verma}
+\date{\today}
+
+\begin{document}
+
+\onecolumn
+\frontmatter
+\maketitle
+\newpage
+\thispagestyle{empty}
+\vspace*{\fill}
+
+%\begin{center}
+%\includegraphics[width=0.6\textwidth]{frontpage.png}
+%\end{center}
+
+\vspace*{\fill}
+\newpage
+
+\thispagestyle{fancy}
+
+\chapter*{Preface}
+\addcontentsline{toc}{chapter}{Preface}
+
+\noindent Mathematical dictionaries have traditionally been arranged alphabetically, an arrangement well suited for looking up an unfamiliar term when one already knows its name. But mathematics is not learned alphabetically, nor is it practised that way. A topologist thinking through a homotopy argument reaches for topological terms, not a mixture of topology wedged between tensor analysis and Thom's first isotopy lemma.
+
+\medskip
+
+\noindent This dictionary is organised alphabetically within chapters covering the broad areas of mathematics: Algebra, Analysis, Geometry, Topology, Number Theory, and Applied Mathematics. Each chapter contains terms listed alphabetically. The result is a reference that mirrors the structure of mathematical knowledge itself, with cross-references redirecting the reader from variant names and alternative spellings to the main entry.
+
+\medskip
+
+\noindent The entries are drawn from classical and modern mathematical literature. Each entry is written in a concise single-line format, with the term displayed in bold blue and automatically indexed. The dictionary runs to over 1600 entries across A--Z chapters, covering foundational concepts through advanced theory.
+
+\medskip
+
+\noindent This work is a living document. The LaTeX source is designed to be easily extended, corrected, and reorganised. Contributions, corrections, and suggestions are welcome.
+
+\medskip
+
+\noindent\textit{Chaman Singh Verma}
+
+
+\chapter*{Mathematical Disclaimer}
+\addcontentsline{toc}{chapter}{Mathematical Disclaimer}
+
+\noindent \textbf{Educational and Reference Purpose Only}: This publication, \textit{Mathematical Dictionary}, is prepared and compiled strictly for educational, academic, historical, and reference purposes. It is intended for mathematics students, educators, and researchers.
+
+\medskip
+
+\noindent \textbf{No Pedagogical Claims}: The definitions and theorems presented herein are standard mathematical facts drawn from established literature. They do not constitute pedagogical recommendations or curriculum guidance.
+
+\medskip
+
+\noindent \textbf{Limitation of Liability}: Neither the author nor the publishers accept any legal responsibility or liability for any errors, omissions, or interpretive outcomes resulting from the use or application of any information presented in this work.
+
+\newpage
+\tableofcontents
+\twocolumn
+\mainmatter
+
+\input{chapters/dict_a.tex}
+\input{chapters/dict_b.tex}
+\input{chapters/dict_c.tex}
+\input{chapters/dict_d.tex}
+\input{chapters/dict_e.tex}
+\input{chapters/dict_f.tex}
+\input{chapters/dict_g.tex}
+\input{chapters/dict_h.tex}
+\input{chapters/dict_i.tex}
+\input{chapters/dict_j.tex}
+\input{chapters/dict_k.tex}
+\input{chapters/dict_l.tex}
+\input{chapters/dict_m.tex}
+\input{chapters/dict_n.tex}
+\input{chapters/dict_o.tex}
+\input{chapters/dict_p.tex}
+\input{chapters/dict_q.tex}
+\input{chapters/dict_r.tex}
+\input{chapters/dict_s.tex}
+\input{chapters/dict_t.tex}
+\input{chapters/dict_u.tex}
+\input{chapters/dict_v.tex}
+\input{chapters/dict_w.tex}
+\input{chapters/dict_x.tex}
+\input{chapters/dict_y.tex}
+\input{chapters/dict_z.tex}
+
+\end{document}

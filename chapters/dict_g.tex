@@ -1,0 +1,170 @@
+\chapter{G}
+\label{chap:g}
+
+\term{Gabriel's Horn}
+The surface of revolution of $y = 1/x$ for $x \geq 1$ about the $x$-axis. Its volume is finite (equal to $\pi$) but its surface area is infinite, so the horn can be filled with a finite amount of paint while no finite amount suffices to cover it. It illustrates that volume and area behave independently and connects to improper integrals and convergence.
+
+\term{Galois Extension}
+A normal, separable field extension; the fixed field of its full automorphism group.
+
+\term{Galois Group}
+The Galois group $\operatorname{Gal}(L/K)$ of a field extension $L/K$ is the group of field automorphisms of $L$ that fix $K$ pointwise. For a finite Galois extension, $|\operatorname{Gal}(L/K)| = [L:K]$. The Fundamental Theorem of Galois Theory gives an inclusion-reversing bijection between intermediate fields and subgroups. The Galois group of a polynomial is the Galois group of its splitting field; solvability by radicals corresponds to solvability of the Galois group.
+
+\term{Galois Theory}
+Galois theory, developed by \'Evariste Galois (1811--1832), links field theory and group theory. For a finite Galois extension $L/K$ with group $G = \operatorname{Gal}(L/K)$, intermediate fields $K \subseteq M \subseteq L$ correspond bijectively to subgroups $H \leq G$ via $M \mapsto \operatorname{Gal}(L/M)$ and $H \mapsto L^H$ (fixed field). Normal subgroups correspond to Galois subextensions. A polynomial is solvable by radicals iff its Galois group is solvable. This resolved the classical problem of solving polynomials of degree $\geq 5$.
+
+\term{Game Theory}
+Game theory studies strategic interactions between rational agents. A game consists of players, strategies, and payoffs. Nash equilibrium is a strategy profile where no player can improve by unilaterally deviating. Every finite game has a mixed-strategy Nash equilibrium. The minimax theorem for zero-sum games states $\max_x \min_y u(x,y) = \min_y \max_x u(x,y)$. Cooperative game theory studies coalitions and the core, Shapley value. Applications span economics, biology, computer science, and political science.
+
+\term{Gamma Function}
+The function $\Gamma(s) = \int_0^\infty t^{s-1} e^{-t}\, dt$ generalising the factorial: $\Gamma(n+1) = n!$.
+
+\term{Gâteaux Derivative}
+The directional derivative of a map between normed spaces, defined by a limit along a line.
+
+\term{Gaussian Curvature}
+The Gaussian curvature $K$ of a surface at a point is the product of the principal curvatures $\kappa_1 \kappa_2$. Equivalently, $K = \det(dN)$ where $N$ is the Gauss map. For a surface in $\mathbb{R}^3$, $K = \frac{LN - M^2}{EG - F^2}$ using the first and second fundamental forms. By Theorema Egregium, $K$ is intrinsic (depends only on the first fundamental form). The Gauss--Bonnet theorem: $\int_S K\,dA = 2\pi\chi(S)$. Positive curvature: sphere; zero: plane, cylinder; negative: saddle, hyperbolic plane.
+
+\term{Gaussian Distribution (Normal Distribution)}
+The normal distribution $\mathcal{N}(\mu, \sigma^2)$ has density $\frac{1}{\sqrt{2\pi\sigma^2}} e^{-(x-\mu)^2/(2\sigma^2)}$. It is the unique distribution with maximum entropy given mean and variance. The Central Limit Theorem: sums of i.i.d. random variables converge to normal. Standard normal has $\mu=0, \sigma=1$. Properties: symmetric, $68\%/95\%/99.7\%$ within $1/2/3$ standard deviations. Multivariate normal: $\mathcal{N}(\boldsymbol{\mu}, \Sigma)$ with density involving $\det(\Sigma)$ and Mahalanobis distance.
+
+\term{Gaussian Elimination}
+Gaussian elimination solves linear systems $Ax = b$ by reducing $A$ to row echelon form using elementary row operations: (1) swap rows, (2) multiply row by non-zero scalar, (3) add multiple of one row to another. The LU decomposition $A = LU$ (lower and upper triangular) captures the elimination steps. Pivoting (partial, complete) improves numerical stability. Complexity: $O(n^3)$ for $n \times n$ matrices. Back substitution then solves $Ux = L^{-1}b$.
+
+\term{Gaussian Integers}
+The Gaussian integers $\mathbb{Z}[i] = \{a+bi : a,b \in \mathbb{Z}\}$ form a Euclidean domain with norm $N(a+bi) = a^2+b^2$. They are a UFD; primes are either rational primes $p \equiv 3 \pmod{4}$ (remain prime), $p \equiv 1 \pmod{4}$ (split as $p = \pi \bar{\pi}$), or $2 = -i(1+i)^2$ (ramifies). The units are $\{\pm 1, \pm i\}$. Gaussian integers are used to prove Fermat's two-square theorem: $p = x^2+y^2$ iff $p \equiv 1 \pmod{4}$.
+
+\term{Gauss--Bonnet Theorem}
+The Gauss--Bonnet theorem for a compact 2-manifold $S$ without boundary: $\int_S K\,dA = 2\pi\chi(S)$, where $K$ is Gaussian curvature and $\chi$ is Euler characteristic. For a surface with boundary, $\int_S K\,dA + \int_{\partial S} k_g\,ds = 2\pi\chi(S)$ where $k_g$ is geodesic curvature. This links local geometry (curvature) to global topology (Euler characteristic). For polyhedral surfaces, curvature concentrates at vertices: angle defect $2\pi - \sum \theta_i$.
+
+\term{Gauss's Law (Electrostatics)}
+Gauss's law states that the electric flux through a closed surface is proportional to the enclosed charge: $\oint_S \mathbf{E} \cdot d\mathbf{A} = Q_{\text{enc}}/\varepsilon_0$. In differential form: $\nabla \cdot \mathbf{E} = \rho/\varepsilon_0$. This is one of Maxwell's equations. It implies the field of a point charge $Q$ is $\mathbf{E} = \frac{Q}{4\pi\varepsilon_0 r^2} \hat{\mathbf{r}}$ (Coulomb's law). Gauss's law is a powerful tool for calculating fields of symmetric charge distributions.
+
+\term{Gauss's Theorem (Divergence Theorem)}
+The divergence theorem (Gauss's theorem): $\int_V (\nabla \cdot \mathbf{F})\,dV = \oint_{\partial V} \mathbf{F} \cdot d\mathbf{S}$ for a vector field $\mathbf{F}$ on a volume $V$ with boundary $\partial V$. This relates volume integral of divergence to surface integral of flux. In coordinates: $\int_V \frac{\partial F^i}{\partial x^i}\,dV = \int_{\partial V} F^i n_i\,dS$. Special cases: Green's identities in PDE theory, Gauss's law in electromagnetism. Generalises to manifolds via Stokes' theorem.
+
+\term{Generalized Eigenspace}
+The subspace $\ker (A - \lambda I)^m$ for sufficiently large $m$, spanned by the generalized eigenvectors of $A$ for the eigenvalue $\lambda$.
+
+\term{Generator}
+An element whose orbit under a group action produces the whole set; also the single element generating a cyclic group.
+
+\term{Genus}
+The number of handles of a surface, or the dimension of the space of holomorphic differentials on a Riemann surface.
+
+\term{Geodesic}
+A geodesic is a curve $\gamma(t)$ that parallel-transports its own tangent vector: $\nabla_{\dot{\gamma}} \dot{\gamma} = 0$. In coordinates: $\ddot{\gamma}^k + \Gamma^k_{ij} \dot{\gamma}^i \dot{\gamma}^j = 0$. Geodesics are locally length-minimising curves (but not globally). On a sphere, great circles are geodesics; on a plane, straight lines. The exponential map $\exp_p(v) = \gamma_v(1)$ maps tangent vectors to geodesic endpoints. The geodesic flow is Hamiltonian on the cotangent bundle.
+
+\term{Geometric Distribution}
+The distribution of the number of trials needed for the first success in repeated Bernoulli trials, $P(X = k) = (1-p)^{k-1}p$.
+
+\term{Geometric Mean}
+The $n$-th root of the product of $n$ numbers, $(\prod a_i)^{1/n}$, appropriate for multiplicative data.
+
+\term{Geometric Measure Theory}
+Geometric measure theory studies geometric properties of sets via measure theory. Key objects: rectifiable sets, currents (generalised surfaces), varifolds (unoriented surfaces). Federer--Fleming deformation theorem: any integral current can be deformed into a polyhedral current. The coarea formula relates integrals over level sets to integrals over the domain. Applications: minimal surfaces, Plateau's problem, image processing, calculus of variations. The isoperimetric inequality: among sets of given volume, the ball minimises surface area.
+
+\term{Geometric Series}
+A series of the form $\sum_{n=0}^\infty ar^n$, converging to $a/(1-r)$ when $|r| < 1$.
+
+\term{Geometry of Numbers}
+Geometry of numbers, initiated by Minkowski, studies lattice points in convex bodies. Minkowski's theorem: a centrally symmetric convex body in $\mathbb{R}^n$ with volume $> 2^n \det(\Lambda)$ contains a non-zero lattice point of $\Lambda$. Applications: Minkowski's bound for class numbers, Dirichlet's unit theorem, lattice basis reduction (LLL algorithm). The successive minima $\lambda_i$ are the radii of the smallest balls containing $i$ linearly independent lattice points.
+
+\term{Gergonne Point}
+The point of concurrency of the lines from each vertex of a triangle to the touch point of the incircle on the opposite side.
+
+\term{Gibbs Measure}
+The Gibbs measure (or Gibbs distribution) on a configuration space is $\mu(\sigma) = \frac{1}{Z} e^{-\beta H(\sigma)}$ where $H$ is a Hamiltonian (energy function), $\beta = 1/kT$ is inverse temperature, and $Z = \sum e^{-\beta H}$ is the partition function. It maximises entropy for given expected energy. The Gibbs measure is the equilibrium state of a statistical mechanical system. Phase transitions correspond to non-analyticities in the free energy $-\frac{1}{\beta} \log Z$. Examples: Ising model, Potts model, lattice gas.
+
+\term{Girard's Theorem}
+Girard's theorem (spherical trigonometry): the area of a spherical triangle on a unit sphere is its spherical excess $A = \alpha + \beta + \gamma - \pi$, where $\alpha, \beta, \gamma$ are interior angles. On a sphere of radius $R$, area $= R^2(\alpha + \beta + \gamma - \pi)$. The sum of angles exceeds $\pi$; the excess is proportional to area. This contrasts with Euclidean geometry where $\alpha + \beta + \gamma = \pi$ always.
+
+\term{Global Minimum}
+The smallest value attained by a function over its entire domain.
+
+\term{Gödel's Completeness Theorem}
+Gödel's completeness theorem (1929): first-order logic is complete. A formula is provable from a set of axioms iff it is true in every model of those axioms. Equivalently, a theory is consistent iff it has a model. This is distinct from the incompleteness theorem (1931). The proof constructs a model from a maximal consistent set of formulas using the Lindenbaum--Henkin method. Compactness theorem: a set of sentences has a model iff every finite subset does.
+
+\term{Gödel's Incompleteness Theorems}
+First Incompleteness Theorem (1931): Any consistent formal system containing Peano arithmetic is incomplete: there are true statements about natural numbers unprovable in the system. Second Incompleteness Theorem: No such system can prove its own consistency. Gödel constructed a statement ``I am not provable'' using self-reference via G\"odel numbering. These theorems showed the limitations of Hilbert's program to formalise all mathematics.
+
+\term{Goldbach's Conjecture}
+Goldbach's conjecture (1742): every even integer $n \geq 4$ is the sum of two primes. The weak Goldbach conjecture (every odd $n \geq 7$ is sum of three primes) was proved by Helfgott (2013). The strong conjecture remains open. Vinogradov (1937) proved all sufficiently large odd integers are sum of three primes. Chen (1973) proved every sufficiently large even integer is sum of a prime and a number with at most two prime factors. Computational verification up to $4 \times 10^{18}$.
+
+\term{Golden Ratio}
+The number $\varphi = (1+\sqrt{5})/2 \approx 1.618$ satisfying $\varphi = 1 + 1/\varphi$, appearing throughout geometry and art.
+
+\term{Gradient}
+The gradient $\nabla f$ of a scalar function $f: \mathbb{R}^n \to \mathbb{R}$ is the vector of partial derivatives $(\partial f/\partial x_1, \ldots, \partial f/\partial x_n)$. It points in the direction of steepest ascent and its magnitude is the maximum directional derivative: $D_u f = \nabla f \cdot u$. For a differentiable function, $df = \nabla f \cdot dx$. The gradient is orthogonal to level sets. On a Riemannian manifold, $\nabla f$ is the vector field dual to $df$ via the metric: $\langle \nabla f, X \rangle = df(X)$.
+
+\term{Gradient Descent}
+The iterative optimization method $x_{k+1} = x_k - \alpha \nabla f(x_k)$ that moves opposite the gradient.
+
+\term{Gradient Vector}
+The vector of first partial derivatives $\nabla f = (\partial f/\partial x_1, \ldots, \partial f/\partial x_n)$, pointing in the direction of steepest ascent.
+
+\term{Graph}
+A mathematical structure of vertices and edges, either undirected or directed, modelling pairwise relations.
+
+\term{Graph Laplacian}
+The matrix $L = D - A$ for a graph, whose spectrum encodes connectivity and is used in spectral graph theory and clustering.
+
+\term{Graph Theory}
+The branch of mathematics studying graphs and their properties, applications, and algorithms.
+
+\term{Grassmannian}
+The Grassmannian $\operatorname{Gr}(k,n)$ (or $\operatorname{Gr}(k,V)$) is the space of all $k$-dimensional subspaces of an $n$-dimensional vector space $V$. It is a smooth projective variety of dimension $k(n-k)$. The Pl\"ucker embedding $\operatorname{Gr}(k,n) \hookrightarrow \mathbb{P}(\bigwedge^k V)$ maps a subspace to its Pl\"ucker coordinates (minors of a $k \times n$ matrix). The cohomology ring $H^*(\operatorname{Gr}(k,n); \mathbb{Z})$ is generated by Schubert classes. Grassmannians classify vector bundles and appear in quantum cohomology and mirror symmetry.
+
+\term{Gray Code}
+A Gray code is an ordering of $2^n$ binary strings of length $n$ such that adjacent strings differ in exactly one bit. The binary-reflected Gray code is constructed recursively: $G_1 = (0,1)$; $G_{n+1} = (0G_n, 1 \text{reverse}(G_n))$. Gray codes minimise transitions in analog-to-digital conversion, solve the Chinese rings puzzle, and generate Hamiltonian cycles on hypercubes. The $k$-th Gray code is $k \oplus \lfloor k/2 \rfloor$.
+
+\term{Green's Function}
+The Green's function $G(x,y)$ for a linear differential operator $L$ satisfies $L G(x,y) = \delta(x-y)$ with appropriate boundary conditions. The solution to $L u = f$ is $u(x) = \int G(x,y) f(y)\,dy$. For the Laplacian on $\mathbb{R}^n$, $G(x,y) = \frac{1}{n(n-2)\omega_n} |x-y|^{2-n}$ ($n \geq 3$) or $\frac{1}{2\pi} \log |x-y|$ ($n=2$). Green's functions are fundamental in PDE theory, potential theory, and quantum field theory (propagators).
+
+\term{Green's Identity}
+Green's identity is obtained by combining the divergence theorem with the product rule: $\iint_D (u \Delta v)\,dA = \oint_{\partial D} u (\nabla v) \cdot \mathbf{n}\,ds - \iint_D \nabla u \cdot \nabla v\,dA$. It relates a double integral of a Laplacian to boundary integrals, converting domain data into boundary data. This makes it central to boundary value problems for the Laplacian, where it produces weak formulations and uniqueness arguments. It also underlies the construction and use of Green's functions.
+
+\term{Green's Theorem}
+Green's theorem in the plane: $\oint_C (P\,dx + Q\,dy) = \iint_D \left(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right) dx\,dy$ for a simple closed curve $C$ bounding region $D$. This is the 2D case of Stokes' theorem. The circulation form relates line integral of a vector field to area integral of its curl: $\oint_C \mathbf{F} \cdot d\mathbf{r} = \iint_D (\nabla \times \mathbf{F}) \cdot \mathbf{k}\,dA$. The flux form: $\oint_C \mathbf{F} \cdot \mathbf{n}\,ds = \iint_D \nabla \cdot \mathbf{F}\,dA$. Fundamental in vector calculus and fluid dynamics.
+
+\term{Gromov–Hausdorff Distance}
+A distance between compact metric spaces, measuring how far two spaces are from being isometric.
+
+\term{Group Action}
+A group action of $G$ on a set $X$ is a map $G \times X \to X$, $(g,x) \mapsto g \cdot x$, satisfying $e \cdot x = x$ and $(gh) \cdot x = g \cdot (h \cdot x)$. Equivalently, a homomorphism $G \to \operatorname{Sym}(X)$. Orbit of $x$: $G \cdot x = \{g \cdot x : g \in G\}$; stabiliser: $G_x = \{g : g \cdot x = x\}$. Orbit-stabiliser theorem: $|G \cdot x| = [G : G_x]$. The class equation: $|X| = \sum [G : G_{x_i}]$. Burnside's lemma: number of orbits $= \frac{1}{|G|} \sum_{g \in G} |X^g|$.
+
+\term{Group (Algebra)}
+A group $(G, \cdot)$ is a set with an associative binary operation, an identity element $e$, and inverses: $\forall g \in G,\; \exists g^{-1} : g \cdot g^{-1} = e$. Groups capture symmetry. Examples: symmetric group $S_n$, cyclic group $\mathbb{Z}/n\mathbb{Z}$, general linear group $\operatorname{GL}(n,\mathbb{R})$, fundamental group $\pi_1(X)$. Finite simple groups classified into 18 infinite families and 26 sporadic groups. The classification theorem (2004) is a monumental achievement.
+
+\term{Group Cohomology}
+Group cohomology $H^*(G, M)$ for a group $G$ and $G$-module $M$ is derived functors of the fixed-point functor $M \mapsto M^G$. It can be computed from the bar resolution or the standard resolution. $H^1(G, M) = Z^1/B^1$ classifies crossed homomorphisms modulo principal ones. $H^2(G, M)$ classifies group extensions $1 \to M \to E \to G \to 1$ with $M$ abelian. Tate cohomology $\hat{H}^*(G, M)$ combines homology and cohomology for finite groups.
+
+\term{Group Homomorphism}
+A map between groups preserving the operation, $f(ab) = f(a)f(b)$.
+
+\term{Group Representation}
+A representation of a group $G$ on a vector space $V$ is a homomorphism $\rho: G \to \operatorname{GL}(V)$. Characters $\chi(g) = \operatorname{tr}(\rho(g))$ are central. Irreducible representations of finite groups are finite-dimensional and completely reducible (Maschke's theorem). The character table encodes all irreducible characters. Orthogonality relations: $\frac{1}{|G|} \sum_{g \in G} \chi_i(g) \overline{\chi_j(g)} = \delta_{ij}$. Representations of Lie groups and algebras are central to physics (standard model, particle classification).
+
+\term{Group Theory}
+The study of groups and their actions, symmetries, and representations.
+
+\term{Grothendieck Duality}
+The generalisation of Serre duality to coherent sheaves on arbitrary schemes, via a dualising complex.
+
+\term{Grothendieck Group}
+The Grothendieck group $K_0(\mathcal{C})$ of an additive category $\mathcal{C}$ is the abelian group generated by isomorphism classes $[X]$ of objects with relations $[X] = [Y] + [Z]$ for every short exact sequence $0 \to Y \to X \to Z \to 0$. For a ring $R$, $K_0(R)$ is built from finitely generated projective modules. $K_0(\text{Var}_k)$ is generated by varieties with $[X] = [Y] + [X \setminus Y]$ for closed $Y \subset X$. Grothendieck groups are universal for additive invariants (Euler characteristic, rank, Chern classes).
+
+\term{Grothendieck Topology}
+A Grothendieck topology on a category $\mathcal{C}$ specifies covering families $\{U_i \to U\}$ satisfying: (1) isomorphisms are covers, (2) pullbacks of covers are covers, (3) composites of covers are covers. This generalises the notion of open covers from topological spaces. A site is a category with a Grothendieck topology. Sheaves on sites define cohomology (étale, fppf, fpqc, crystalline). Grothendieck topologies are the foundation of modern algebraic geometry and the Weil conjectures.
+
+\term{Grothendieck's Six Operations}
+Grothendieck's six operations in derived categories of sheaves: $f_*$ (pushforward), $f^*$ (pullback), $f_!$ (proper pushforward), $f^!$ (exceptional pullback), $\otimes$ (tensor product), $\mathcal{H}om$ (internal hom). These functors satisfy adjunctions: $f^* \dashv f_*$, $f_! \dashv f^!$. The formalism unifies Poincar\'e duality, Verdier duality, and the Grothendieck trace formula. It is the language of modern cohomology theories (étale, $\ell$-adic, perverse sheaves).
+
+\term{Grunsky Coefficients}
+The Grunsky coefficients $c_{mn}$ of a univalent function $f(z) = z + a_2 z^2 + \cdots$ on the unit disk are defined by $\log \frac{f(z) - f(w)}{z-w} = -\sum_{m,n \geq 1} c_{mn} z^m w^n$. The Grunsky inequalities state that the matrix $(c_{mn})$ is positive semi-definite. They provide necessary and sufficient conditions for univalence and are used in the proof of the Bieberbach conjecture ($|a_n| \leq n$ for univalent functions).
+
+\term{G\"urtler's Theorem}
+G\"urtler's theorem in differential geometry: a complete Riemannian manifold with non-positive sectional curvature is diffeomorphic to $\mathbb{R}^n$ (Hadamard--Cartan theorem). More generally, if the manifold has no conjugate points, the universal cover is diffeomorphic to $\mathbb{R}^n$. This relates global topology to curvature assumptions. The theorem is fundamental in comparison geometry and the study of CAT(0) spaces.
+
+\term{Gyrovector Space}
+A gyrovector space (Ungar, 2001) is an algebraic structure for hyperbolic geometry analogous to vector spaces for Euclidean geometry. It has ``gyrovector addition'' $\oplus$ (not associative but gyroassociative) and scalar multiplication. The gyrogroup axioms include the gyrocommutative law $a \oplus b = \operatorname{gyr}[a,b](b \oplus a)$ where $\operatorname{gyr}$ is the Thomas precession. Gyrovector spaces provide a vector-like formalism for Einstein's velocity addition in special relativity.

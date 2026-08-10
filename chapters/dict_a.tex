@@ -1,6 +1,9 @@
 \chapter*{A}
 \label{chap:a}
 
+\term{Abelian Category}
+A category in which every hom-set is an abelian group and composition is bilinear, and in which every morphism has a kernel and a cokernel. In such categories the isomorphism theorems hold and every morphism factors through its image. The categories of abelian groups, of modules over a ring, and of sheaves of abelian groups on a space are all abelian, while general preadditive categories need not be. Abelian categories are the natural setting for homological algebra, where exact sequences, kernels, and cokernels behave as in the module case.
+
 \term{Abelian Group}
 A group in which the group operation is commutative, so $ab = ba$ for all elements $a, b$. Abelian groups are the additive groups of rings, modules, and vector spaces.
 
@@ -12,6 +15,9 @@ A social phenomenon in which a group makes a decision contrary to the private pr
 
 \term{Absolute Convergence}
 A property of a series $\sum a_n$ for which $\sum |a_n|$ converges. An absolutely convergent series is unconditionally convergent, meaning its sum is independent of the order of its terms.
+
+\term{Absolutely Continuous}
+A function $f$ on $[a,b]$ is absolutely continuous if for every $\varepsilon > 0$ there is $\delta > 0$ such that the total variation of $f$ over finitely many disjoint subintervals of total length less than $\delta$ is less than $\varepsilon$. By the fundamental theorem of calculus, such functions are exactly those with $f(x) = f(a) + \int_a^x g(t)\,dt$ for a Lebesgue integrable $g$. A measure $\mu$ is absolutely continuous with respect to $\nu$, written $\mu \ll \nu$, if every $\nu$-null set is $\mu$-null; then the Radon--Nikodym theorem yields a density $g$ with $\mu = g\nu$.
 
 \term{Absorbing Element}
 An element $z$ of a set with a binary operation such that $z \ast x = x \ast z = z$ for every element $x$. Zero is the absorbing element for multiplication.
@@ -33,6 +39,9 @@ The operator $A^*$ associated with a linear map $A$ between inner product spaces
 
 \term{Adjunction}
 A pair of functors $F \dashv G$ with a natural bijection $\operatorname{Hom}(FX, Y) \cong \operatorname{Hom}(X, GY)$, a fundamental concept in category theory.
+
+\term{Albanese}
+The Albanese variety of a complex algebraic variety $X$ is the universal abelian variety arising as the target of the Albanese morphism $\mathrm{alb}_X : X \to \mathrm{Alb}(X)$, a covariant analogue of the Jacobian and Picard constructions built from the space of global holomorphic $1$-forms. It is characterized by the universal property that every morphism from $X$ to an abelian variety factors through it. For a smooth projective curve the Albanese variety is canonically isomorphic to its Jacobian, and the Albanese morphism recovers the Abel--Jacobi map.
 
 \term{Algebra}
 A vector space equipped with a bilinear multiplication. Also the branch of mathematics studying symbolic manipulation and the structures built from sets and operations.
@@ -94,11 +103,17 @@ The theorem that $\frac{1}{2\pi i}\int_\gamma \frac{f'(z)}{f(z)}\,dz = N - P$, w
 \term{Arrow's Impossibility Theorem}
 A theorem stating that with at least three alternatives, no social welfare function can simultaneously satisfy unanimity, independence of irrelevant alternatives, and non-dictatorship. It shows that no fair, consistent voting method exists for aggregating individual preferences, and it is a central result of welfare economics.
 
+\term{Artinian Ring}
+A ring in which every descending chain of left ideals stabilizes, so the descending chain condition holds on left ideals. By Hopkins's theorem a left Artinian ring is left Noetherian and its Jacobson radical is nilpotent, a result with no analogue for general Noetherian rings. Finite rings, matrix rings over division rings, and finite products of these are Artinian, while polynomial rings and most integral domains are not. Artinian rings play a central role in noncommutative ring theory, where the Artinian simple rings are exactly the matrix rings over division rings.
+
 \term{Arzelà--Ascoli Theorem}
 A criterion for a family of continuous functions on a compact metric space to be relatively compact in the uniform topology: it suffices that the family be equicontinuous and pointwise bounded. Consequently, a sequence of continuous functions on a compact metric space that is equicontinuous and pointwise bounded has a uniformly convergent subsequence, and $C(X)$ is compact in the uniform topology under these hypotheses.
 
 \term{Asymptote}
 A line that a curve approaches arbitrarily closely but does not in general meet, describing the behaviour of the curve at infinity.
+
+\term{Automorphic Form}
+A smooth function on a symmetric space, or more generally on the adelic points of a reductive group, that is invariant up to a fixed factor under the left action of an arithmetic or congruence subgroup. Classical modular forms are the case of weight $k$ on the upper half-plane, transforming as $f\bigl(\frac{az+b}{cz+d}\bigr) = (cz+d)^k f(z)$. Automorphic forms generate automorphic representations by right translation, and their Hecke eigenvalues are tied to $L$-functions, making them central objects in the Langlands program.
 
 \term{Automorphism}
 An isomorphism from a mathematical structure to itself. The set of automorphisms of a structure forms a group under composition.

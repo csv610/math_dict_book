@@ -13,6 +13,9 @@ A synonym for function; a rule associating to each element of one set an element
 \term{Markov Chain}
 A stochastic process where the probability of transitioning to the next state depends only on the current state and not on the sequence of events that preceded it (the Markov property).
 
+\term{Markov Chain Monte Carlo}
+A class of algorithms that sample from a target distribution $\pi$ by simulating an ergodic Markov chain whose stationary distribution is $\pi$. Standard variants are the Metropolis--Hastings algorithm and Gibbs sampling; convergence is assessed through diagnostics applied to the simulated chain. MCMC is the dominant computational tool in Bayesian inference, where posterior distributions rarely admit closed forms.
+
 \term{Markov Process}
 A stochastic process in which the future evolution depends on the past only through the present state.
 
@@ -27,6 +30,9 @@ A submartingale that is bounded in $L^1$ converges almost surely to an integrabl
 
 \term{Mathematics}
 The abstract science of number, quantity, structure, space, and change, developed through rigorous logical deduction.
+
+\term{Matroid}
+A finite matroid is a ground set $E$ with a family of independent subsets satisfying the hereditary property and the exchange axiom. Bases, circuits, and the rank function give equivalent axiomatizations; duality and representability over fields are central notions. The greedy algorithm yields a maximum-weight basis precisely for matroids. Matroids axiomatize linear independence in vector spaces and cycle-free subgraphs in graphs, linking combinatorics with optimization and algebraic geometry.
 
 \term{Matrix}
 A rectangular array of numbers, symbols, or expressions arranged in rows and columns. Matrices are used to represent linear transformations and solve systems of linear equations.
@@ -100,6 +106,9 @@ A non-orientable surface with only one side and one boundary component. It can b
 \term{Model (Logic)}
 A structure that satisfies the axioms of a given formal theory. A statement is "true in a model" if the interpretation of the statement in that structure is true.
 
+\term{Model Theory}
+The branch of mathematical logic that studies structures and the first-order theories describing them. Central tools include the compactness theorem, the Löwenheim--Skolem theorems, elementary equivalence, saturated models, and type spaces. Morley's categoricity theorem and stability theory classify theories through the spectrum of their models. Model theory has deep applications in algebra, real and $p$-adic geometry, and analytic number theory.
+
 \term{Modular Arithmetic}
 A system of arithmetic for integers, where numbers "wrap around" upon reaching a certain value, the modulus. It is fundamental to number theory, cryptography (e.g., RSA), and computer science.
 
@@ -112,6 +121,9 @@ The group $\operatorname{PSL}(2, \mathbb{Z})$ of $2 \times 2$ integer matrices w
 \term{Module}
 A generalization of a vector space where the scalars come from a ring $R$ instead of a field. A left $R$-module $M$ is an abelian group equipped with a scalar multiplication $R \times M \to M$ satisfying specific axioms.
 
+\term{Moduli Space}
+A space, scheme, stack, or analytic space whose points parametrize isomorphism classes of geometric objects, such as algebraic curves, vector bundles, or varieties. A coarse moduli space may lack a universal family, whereas a fine moduli space carries one; stacks are needed when objects have nontrivial automorphisms. Deformation theory describes the local structure of moduli spaces. Examples include the moduli $\mathcal{M}_g$ of curves and the moduli of elliptic curves.
+
 \term{Modulus of Continuity}
 The function $\omega(\delta) = \sup_{|x-y|<\delta} |f(x)-f(y)|$ measuring the uniform continuity of $f$.
 
@@ -120,6 +132,9 @@ A quantity that describes the shape of a probability distribution. The first mom
 
 \term{Moment Generating Function}
 A function $M_X(t) = \mathbb{E}[e^{tX}]$ that encodes all the moments of a random variable $X$. The $n$-th derivative of $M_X(t)$ at $t=0$ gives the $n$-th moment.
+
+\term{Monad}
+In category theory, a monad on a category $\mathcal{C}$ is an endofunctor $T$ with natural transformations $\eta: \mathrm{id} \to T$ (the unit) and $\mu: T^2 \to T$ (the multiplication) satisfying associativity and unit laws. Monads formalize algebraic theories and, in computer science, computational effects such as exceptions and state. Every adjunction induces a monad; the Eilenberg--Moore and Kleisli categories recover algebras and free algebras, respectively.
 
 \term{Monoid}
 A semigroup with an identity element. Equivalently, a set $S$ with an associative binary operation $\cdot$ and an element $e$ such that $e \cdot a = a \cdot e = a$ for all $a \in S$.
@@ -147,6 +162,9 @@ A generalization of the inverse of a matrix to non-square matrices. For any matr
 
 \term{Morphism}
 A general arrow between two objects $X$ and $Y$ in a category. Depending on the category, a morphism could be a function, a linear map, a continuous map, or a group homomorphism.
+
+\term{Morse Theory}
+Morse theory studies a smooth manifold $M$ through a Morse function $f: M \to \mathbb{R}$ whose critical points are non-degenerate. The Morse lemma gives a normal form near each critical point, and $M$ admits a handle decomposition producing a CW structure; the Morse inequalities bound its homology in terms of the critical points of each index. Infinite-dimensional variants, including Morse--Witten and Floer theory, underlie modern symplectic and gauge theory.
 
 \term{Multigrid Method}
 A numerical method that accelerates iterative solvers by working on multiple grid resolutions.

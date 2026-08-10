@@ -49,6 +49,9 @@ The number of positions at which the corresponding symbols of two strings of equ
 \term{Hankel Transform}
 An integral transform of the form $F(r) = \int_0^\infty f(t) J_n(rt)\, t\, dt$, where $J_n$ is a Bessel function of the first kind. It is the Fourier transform adapted to radial symmetry.
 
+\term{Hardy Space}
+For $0 < p \leq \infty$, the Hardy space $H^p$ consists of the holomorphic functions $f$ on the unit disk whose boundary values on the unit circle belong to $L^p$; the radial limits $f^*(e^{i\theta}) = \lim_{r \to 1} f(re^{i\theta})$ exist almost everywhere. Every $f \in H^p$ factors uniquely as an inner function times an outer function, and $H^2$ is a Hilbert space isometric to $\ell^2$ via Taylor coefficients. Carleson measures characterise the bounded embeddings of $H^p$ into $L^p(\mu)$, and Carleson's corona theorem describes the maximal ideals of $H^\infty$. Analogous spaces on the upper half-plane give the standard boundary-value setting.
+
 \term{Harmonic Analysis}
 The study of how signals or functions can be represented as sums of basic waves (sinusoids), primarily via Fourier series and Fourier transforms.
 
@@ -72,6 +75,9 @@ A way of assigning a dimension to a set (including fractals) that can be non-int
 
 \term{Hausdorff Distance}
 A measure of how far two subsets of a metric space are from each other. It is the maximum distance from a point in one set to the nearest point in the other set.
+
+\term{Hausdorff Measure}
+The $s$-dimensional Hausdorff measure of a subset $E$ of a metric space is $\mathcal{H}^s(E) = \lim_{\delta \to 0} \inf \left\{\sum_i (\operatorname{diam} U_i)^s\right\}$, where the infimum is taken over all countable covers of $E$ by sets $U_i$ of diameter at most $\delta$. On $\mathbb{R}^n$, $\mathcal{H}^n$ is a constant multiple of Lebesgue measure, and $\mathcal{H}^0$ is counting measure. Hausdorff measure is countably additive on Borel sets, invariant under isometries and scales by $r^s$ under dilation by $r$. The infimum of $s$ with $\mathcal{H}^s(E) = 0$ is the Hausdorff dimension, central to geometric measure theory and the study of fractals.
 
 \term{Hausdorff Paradox}
 A unit sphere $S^2$ can be decomposed into finitely many disjoint pieces which, by rotations alone, can be reassembled into two copies of the sphere (one possibly together with a countable set). It is a precursor of the Banach--Tarski paradox and similarly depends on the axiom of choice and non-measurable sets.
@@ -177,6 +183,9 @@ A complex-valued function of a complex variable that is complex-differentiable i
 
 \term{Holonomy}
 The group of linear transformations obtained by parallel transport of tangent vectors around closed loops on a manifold. It encodes curvature.
+
+\term{Hom Functor}
+The Hom functor is the bifunctor $\operatorname{Hom}: \mathcal{C}^{\mathrm{op}} \times \mathcal{C} \to \mathbf{Set}$, sending $(A,B)$ to the set $\operatorname{Hom}_{\mathcal{C}}(A,B)$ and acting on morphisms by pre- and post-composition. Over a ring $R$, $\operatorname{Hom}_R(M,-)$ is covariant and $\operatorname{Hom}_R(-,M)$ contravariant, both left exact; their right derived functors are the Ext groups $\operatorname{Ext}^n_R$, classifying extensions of modules and measuring failure of projectivity and injectivity. A contravariant functor $F$ represented by an object $A$ satisfies $F \cong \operatorname{Hom}(-,A)$, and Yoneda's lemma identifies natural transformations $\operatorname{Hom}(-,A) \Rightarrow F$ with the elements of $F(A)$, showing that objects are determined up to isomorphism by the functors they represent.
 
 \term{Homeomorphism}
 A continuous bijection $f: X \to Y$ whose inverse $f^{-1}$ is also continuous. Two spaces are homeomorphic if there exists a homeomorphism between them, meaning they are topologically identical.

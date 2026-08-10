@@ -4,6 +4,9 @@
 \term{Calculus}
 The study of limits, derivatives, integrals, and infinite series, divided into differential and integral calculus.
 
+\term{Calculus of Variations}
+The branch of analysis concerned with minimizing or maximizing functionals, maps from a space of functions to $\mathbb{R}$, such as $J(y) = \int_a^b F(x, y, y')\,dx$. Critical points satisfy the Euler--Lagrange equations $\frac{\partial F}{\partial y} - \frac{d}{dx}\frac{\partial F}{\partial y'} = 0$. The classical brachistochrone problem motivated the subject, and Noether's theorem ties symmetries to conservation laws. Extrema are classified as weak or strong. It underlies optimal control theory and provides variational formulations of elliptic PDEs.
+
 \term{C*-algebra}
 A Banach algebra over the complex numbers with an involution $*$ satisfying $\|a^*a\| = \|a\|^2$; the mathematical framework for quantum mechanics.
 
@@ -64,11 +67,17 @@ If $X_1, X_2, \ldots, X_n$ are independent identically distributed random variab
 \term{Centralizer}
 The subgroup of elements that commute with a given element of a group: $C_G(a) = \{g \in G : ga = ag\}$.
 
+\term{Chain Complex}
+A sequence of abelian groups or modules $A_* = \cdots \to A_{n+1} \xrightarrow{d_{n+1}} A_n \xrightarrow{d_n} A_{n-1} \to \cdots$ with $d_n \circ d_{n+1} = 0$, so that $\operatorname{im} d_{n+1} \subseteq \ker d_n$. The homology $H_n(A_*) = \ker d_n / \operatorname{im} d_{n+1}$ measures how far the sequence is from exact. Exact sequences have vanishing homology; quasi-isomorphisms are chain maps inducing isomorphisms on homology, and the mapping cone encodes the homological features of a map. Chain complexes are the central objects of homological algebra, with complexes of sheaves arising in algebraic geometry.
+
 \term{Chain Rule}
 If $f: \mathbb{R}^n \to \mathbb{R}^m$ and $g: \mathbb{R}^m \to \mathbb{R}^p$ are differentiable, then the derivative of $g \circ f$ is $D(g \circ f)(x) = Dg(f(x)) \cdot Df(x)$, the product of Jacobian matrices. In single-variable calculus: $\frac{d}{dx} g(f(x)) = g'(f(x)) \cdot f'(x)$. The chain rule is the fundamental differentiation rule for composite functions.
 
 \term{Chaos}
 The sensitive dependence on initial conditions exhibited by some deterministic dynamical systems, in which nearby trajectories separate exponentially.
+
+\term{Characteristic Class}
+A characteristic class assigns to each vector bundle $E \to X$ a cohomology class $c(E) \in H^*(X)$ that is natural: $c(f^*E) = f^*c(E)$. Important examples are the Chern classes $c_i$ for complex bundles, the Pontryagin and Stiefel--Whitney classes for real bundles, and the Euler class. The Whitney sum formula governs behaviour under direct sums. Characteristic classes obstruct triviality of bundles and, in obstruction theory, the existence of sections; they also enter index theory, as in the Atiyah--Singer index theorem.
 
 \term{Characteristic Function}
 (Probability) The function $\varphi_X(t) = E[e^{itX}]$ of a random variable $X$, which determines its distribution uniquely.
@@ -103,8 +112,14 @@ Coefficients $\Gamma^k_{ij}$ describing the Levi--Civita connection on a Riemann
 \term{Church--Turing Thesis}
 The thesis that every function computable by an algorithm is computable by a Turing machine, and vice versa; equivalently, that effective computability coincides with computability by the lambda calculus or by general recursive functions. It pins down the informal notion of computability in a precise mathematical form. Since it identifies an intuitive concept with a formal one, it is a thesis rather than a proved theorem, although the equivalence among the various formal models is a theorem.
 
+\term{Class Field Theory}
+The classification of abelian extensions of number fields and local fields: for a number field $K$, finite abelian extensions $L/K$ correspond to open subgroups of the idele class group, and the Galois group $G(L/K)$ is isomorphic, via the reciprocity map, to the corresponding quotient. Artin reciprocity generalizes quadratic and higher reciprocity laws; the Hilbert class field, the maximal abelian unramified extension of $K$, has Galois group isomorphic to the ideal class group. The Kronecker--Weber theorem, that every abelian extension of $\mathbb{Q}$ is cyclotomic, is the base case.
+
 \term{Classical Solution}
 A solution of a differential equation that is differentiable as many times as required by the equation.
+
+\term{Classification of Finite Simple Groups}
+The complete classification, assembled over decades in tens of thousands of published pages, asserts that every finite simple group is one of: a cyclic group $\mathbb{Z}/p\mathbb{Z}$ of prime order, an alternating group $A_n$ ($n \geq 5$), a member of one of the infinite families of groups of Lie type, or one of the 26 sporadic groups culminating in the Monster. Its consequences are far-reaching: structural theorems for all finite groups, such as the Odd Order Theorem, follow from it, and the classification underpins much of modern group theory.
 
 \term{Classification of Surfaces}
 Every closed connected surface is homeomorphic to a sphere with $g$ handles (orientable case) or with $k$ crosscaps (non-orientable case); equivalently, to a connected sum of $g$ tori or of $k$ projective planes. Thus a closed surface is determined up to homeomorphism by whether it is orientable and by a single integer invariant, the genus.
@@ -139,6 +154,9 @@ Two closed oriented manifolds $M$ and $N$ of dimension $n$ are cobordant if ther
 \term{Code (Error-Correcting)}
 A code is a subset $C \subseteq \Sigma^n$ of words of length $n$ over an alphabet $\Sigma$. The Hamming distance $d(u,v)$ counts positions where $u$ and $v$ differ. The minimum distance $d_{\min}$ determines error-correcting capability: a code with $d_{\min} = 2t+1$ can correct up to $t$ errors. The Hamming code $(7,4)$ has $d_{\min} = 3$ and corrects single-bit errors.
 
+\term{Coding Theory}
+The study of error-detecting and error-correcting codes, subsets $C$ of $\Sigma^n$ chosen so that distinct codewords stay far apart in Hamming distance. Linear codes over finite fields are vector subspaces with parameters $[n,k,d]$, and their minimum distance determines error-correcting capability. Bounds such as the Hamming, Singleton, and Gilbert--Varshamov bounds constrain the achievable parameters. Constructions over finite fields, including Reed--Solomon codes, connect coding theory to cryptography, design theory, and algebraic geometry.
+
 \term{Codomain}
 The set into which a function maps; the target set, which contains the range as a subset.
 
@@ -148,11 +166,17 @@ The coefficient of variation is $CV = \sigma/\mu$, the ratio of standard deviati
 \term{Combination}
 An unordered selection of $k$ elements from a set of $n$, counted by the binomial coefficient $\binom{n}{k}$.
 
+\term{Cofibration}
+A continuous map $i: A \to X$ of topological spaces possessing the homotopy extension property: any homotopy of $i(a)$ extends to a homotopy of all of $X$ fixing $A$. Every map $f$ factors as a homotopy equivalence followed by a cofibration via the mapping cylinder. In model categories, cofibrations form one of the three classes of distinguished maps; cofibrant objects are those whose map from the initial object is a cofibration, and cofibrant replacement resolves objects up to weak equivalence. The notion is dual to fibrations.
+
 \term{Coherence (Category Theory)}
 Coherence theorems in category theory state that all diagrams built from the structural natural isomorphisms (associator, unitors, braiding) commute. Mac Lane's coherence theorem for monoidal categories asserts that any two parallel morphisms built from associators and unitors are equal. This justifies suppressing parentheses in monoidal categories without ambiguity.
 
 \term{Cohomology}
 Cohomology is the contravariant functor $H^n(X; G)$ associated to a topological space $X$ and coefficient group $G$, computed from the dual of the singular chain complex. Unlike homology, cohomology carries a natural ring structure (the cup product), making $H^*(X) = \bigoplus H^n(X)$ a graded ring. Cohomology is more computable than homology in many cases and carries richer structure.
+
+\term{Colimit}
+A categorical construction dual to a limit: the colimit of a diagram $D: J \to \mathcal{C}$ is the universal cocone, an object $\operatorname{colim} D$ with maps $D_j \to \operatorname{colim} D$ through which every other cocone factors uniquely. Direct limits, pushouts, and coproducts are special cases. Colimits of sets and modules exist and are built from generators and relations. The construction is a left adjoint to the diagonal functor, and filtered colimits commute with finite limits in categories such as modules.
 
 \term{Commutative Algebra}
 The study of commutative rings, their ideals, and modules, forming the algebraic foundation of algebraic geometry and number theory.
@@ -168,6 +192,12 @@ In first-order logic, a set of sentences has a model if and only if every finite
 
 \term{Completeness (Metric Space)}
 A metric space $(X,d)$ is complete if every Cauchy sequence in $X$ converges to a point in $X$. The real numbers are complete; the rationals are not. The completion of a metric space $X$ is a complete metric space $\hat{X}$ containing $X$ as a dense subspace, unique up to isometry. The reals are the completion of the rationals.
+
+\term{Complexity Class}
+A set of decision problems solvable within prescribed resource bounds, such as time or space as functions of input length. Major classes include $\mathsf{P}$, $\mathsf{NP}$, $\mathsf{PSPACE}$, and $\mathsf{EXP}$. Reductions order problems by difficulty; a problem is complete for a class if it lies in the class and every member reduces to it, as in NP-completeness. Hierarchy theorems show the corresponding time and space classes are strictly increasing. Whether $\mathsf{P} = \mathsf{NP}$ remains open.
+
+\term{Complex Manifold}
+A real manifold of even dimension with an atlas whose transition functions are biholomorphic, modeled on open subsets of $\mathbb{C}^n$ with holomorphic coordinate changes. Complex manifolds carry a holomorphic tangent bundle and Dolbeault cohomology groups $H^{p,q}$. Riemann surfaces, the complex dimension-one case, and complex projective space $\mathbb{CP}^n$ are the primary examples. An almost-complex structure is a pointwise condition that is integrable exactly when the Nijenhuis tensor vanishes, by the Newlander--Nirenberg theorem.
 
 \term{Complex Number}
 A complex number is $z = a + bi$ where $a, b \in \mathbb{R}$ and $i^2 = -1$. The complex plane $\mathbb{C}$ is identified with $\mathbb{R}^2$. The modulus is $|z| = \sqrt{a^2+b^2}$ and the argument is $\arg(z) = \arctan(b/a)$. Complex numbers form an algebraically closed field: every non-constant polynomial has a root in $\mathbb{C}$ (Fundamental Theorem of Algebra).
@@ -252,6 +282,9 @@ The convex hull of a set $S \subseteq \mathbb{R}^n$ is the smallest convex set c
 
 \term{Convex Optimization}
 The minimization of a convex function over a convex set, for which every local optimum is global.
+
+\term{Convex Polytope}
+The convex hull of finitely many points in $\mathbb{R}^n$, equivalently a bounded intersection of finitely many closed half-spaces by the Minkowski--Weyl theorem. Its faces form a lattice: vertices, edges, and facets are the 0-, 1-, and $(n-1)$-dimensional faces, encoded by the $f$-vector. The polar, or dual, polytope reverses the face lattice. Euler's formula $V - E + F = 2$ holds in three dimensions. Polytopes are central to linear programming and combinatorial geometry.
 
 \term{Convex Set}
 A set $C$ in a vector space is convex if for any $x, y \in C$, the line segment $[x,y] = \{tx + (1-t)y : 0 \leq t \leq 1\}$ lies entirely in $C$. Examples: balls, half-spaces, simplices, the positive orthant. The intersection of convex sets is convex. A function is convex iff its epigraph is a convex set. Convex sets are central to optimisation and functional analysis.

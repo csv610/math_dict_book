@@ -88,6 +88,9 @@ A set equipped with an associative binary operation. Unlike a group, a semi-grou
 \term{Semi-norm}
 A function that satisfies all the properties of a norm except for the identity of indiscernibles (i.e., $\|v\|=0$ does not imply $v=0$). It is used to define the topology of certain function spaces.
 
+\term{Semidirect Product}
+A group $G$ is a semidirect product $N \rtimes H$ when $N$ is normal, $H$ is a subgroup, $G = NH$, and $N \cap H = \{e\}$; $H$ acts on $N$ by automorphisms and multiplication is given by $(n_1,h_1)(n_2,h_2) = (n_1 h_1 \cdot n_2, h_1 h_2)$. The group then splits over $N$. Semidirect products classify groups with a prescribed normal factor: dihedral groups $D_{2n}$, the symmetric group $S_n = \mathbb{Z}/2\mathbb{Z} \ltimes A_n$, and the affine group of $\mathbb{R}^n$ are standard examples.
+
 \term{Separable Space}
 A topological space that contains a countable dense subset. For example, $\mathbb{R}$ is separable because $\mathbb{Q}$ is a countable dense subset.
 
@@ -118,6 +121,9 @@ A collection of subsets of a set closed under complements and countable unions, 
 \term{Sigmoid Function}
 A mathematical function having a characteristic "S"-shaped curve. The most common is the logistic function $f(x) = 1/(1+e^{-x})$, used in neural networks and population modeling.
 
+\term{Signed Measure}
+A countably additive set function on a measurable space taking values in $\mathbb{R} \cup \{-\infty, +\infty\}$, with at most one of the two infinite values. By the Hahn decomposition the space splits into a positive and a negative set for $\nu$; the Jordan decomposition then writes $\nu = \nu^+ - \nu^-$ as the difference of mutually singular nonnegative measures. The total variation $|\nu| = \nu^+ + \nu^-$ is itself a measure. Signed measures arise in the Radon--Nikodym theorem and in duality for $L^p$ spaces.
+
 \term{Simplex}
 The generalization of a triangle to any dimension. An $n$-simplex is the convex hull of $n+1$ affinely independent points. A 0-simplex is a point, a 1-simplex is a line segment, and a 2-simplex is a triangle.
 
@@ -132,6 +138,9 @@ In the theory of Lie algebras, a root that cannot be written as a sum of two oth
 
 \term{Simpson's Paradox}
 A trend that holds in each separate subgroup of data can be reversed when the subgroups are pooled together. It arises from lurking or confounding variables and unequal group sizes; the classic example is a treatment that looks better for every patient group yet worse overall.
+
+\term{Singular Integral}
+An operator of the form $Tf(x) = \operatorname{p.v.}\int_{\mathbb{R}^n} K(x-y) f(y) \, dy$, where the kernel $K$ is homogeneous of degree $-n$ and has zero mean on the unit sphere; the principal value handles the singularity at $y = x$. The Hilbert transform on $\mathbb{R}$ and the Riesz transforms on $\mathbb{R}^n$ are the basic examples. By the Calderón--Zygmund theory such operators are bounded on $L^p$ for $1 < p < \infty$, making them central to elliptic PDE and harmonic analysis.
 
 \term{Singular Matrix}
 A square matrix that is not invertible, which occurs if and only if its determinant is zero. A singular matrix has a non-trivial kernel.
@@ -169,6 +178,12 @@ A solution of a PDE that lies in a Sobolev space, defined through weak derivativ
 \term{Sobolev Space}
 The space $W^{k,p}$ of functions whose weak derivatives up to order $k$ lie in $L^p$, the natural function space of PDE theory.
 
+\term{Soluble Group}
+A group possessing a finite subnormal series $1 = G_0 \triangleleft G_1 \triangleleft \cdots \triangleleft G_n = G$ with each quotient $G_i/G_{i-1}$ abelian; equivalently, the derived series terminates at the trivial subgroup. By the Feit--Thompson theorem every group of odd order is solvable. Soluble groups are precisely those finite groups whose composition factors are cyclic of prime order, connect to radicals and to the solvability of polynomials by radicals, and are closely related to nilpotent groups.
+
+\term{Solvable by Radicals}
+A polynomial equation $f(x) = 0$ over $\mathbb{Q}$ is solvable by radicals when its roots can be expressed from rational numbers using only $+$, $-$, $\times$, $\div$, and extraction of $n$-th roots. Galois's theorem characterizes this: $f$ is solvable by radicals if and only if its Galois group is a soluble group. Consequently the general quintic is not solvable by radicals, since $S_5$ is not soluble, resolving the classical problem of solving equations by radicals.
+
 \term{Sorgenfrey Line}
 The real line equipped with the lower-limit topology, where basis elements are half-open intervals $[a, b)$. It is a classic example of a space that is normal but not second-countable.
 
@@ -180,6 +195,9 @@ A numerical method that expands the solution in global basis functions such as t
 
 \term{Spectral Radius}
 The maximum absolute value of the eigenvalues of a square matrix $A$. It determines the convergence of the power series $(I-A)^{-1} = \sum A^k$.
+
+\term{Spectral Sequence}
+A bookkeeping device in homological algebra that computes (co)homology through successive approximations. Starting from an initial page such as $E_0$ or $E_2$, each page $E_r$ is a complex with differential $d_r$, and $E_{r+1}$ is the homology of $E_r$; under mild conditions the pages converge to a limit $E_\infty$, the associated graded of the target, called the abutment. Examples include the Grothendieck spectral sequence for composite functors, the Leray--Serre sequence of a fibration, the Atiyah--Hirzebruch sequence in topological K-theory, and the Adams spectral sequence in stable homotopy.
 
 \term{Spectral Theorem}
 A result stating that every symmetric matrix (or more generally, every normal operator on a Hilbert space) can be diagonalized by an orthonormal basis of eigenvectors.
@@ -195,6 +213,9 @@ A set of special functions defined on the surface of a sphere. They are the angu
 
 \term{Spherical Geometry}
 A non-Euclidean geometry where the "lines" are great circles on a sphere. In this geometry, the sum of the angles of a triangle is always greater than $180^\circ$.
+
+\term{Splitting Field}
+The smallest field extension of $K$ over which a given polynomial $f$ factors into linear factors; equivalently, the extension generated by all the roots of $f$ over $K$. It always exists and is unique up to isomorphism over $K$. Every splitting field is a normal, and hence a Galois, extension when it is separable; the automorphism group of the splitting field of $f$ is its Galois group. The splitting field of $x^n - 1$ is the cyclotomic extension with Galois group $(\mathbb{Z}/n\mathbb{Z})^\times$.
 
 \term{Spanning Tree}
 A subgraph of a connected graph that is a tree and includes all the vertices of the original graph. Every connected graph has at least one spanning tree.
@@ -238,11 +259,17 @@ A stochastic process whose statistical properties (mean, variance, autocorrelati
 \term{Stationary Point}
 A point where the derivative of a function is zero. It is a candidate for a local maximum, minimum, or saddle point.
 
+\term{Statistical Inference}
+The discipline concerned with drawing conclusions about a population from sample data. Point estimation seeks estimators that are unbiased and efficient, with the Cramér--Rao bound giving the best achievable variance and maximum likelihood estimators a leading method. Hypothesis testing is governed by the Neyman--Pearson lemma and likelihood ratio tests, and interval estimation produces confidence intervals. Bayesian inference treats parameters as random variables and updates prior beliefs via Bayes' theorem. It provides the mathematical foundations of modern statistics.
+
 \term{Statistics}
 The science of collecting, analyzing, interpreting, and presenting empirical data to make inferences about a population.
 
 \term{Steady State}
 A solution of a dynamical system that does not change with time, such as a fixed point of an iteration.
+
+\term{Stochastic Calculus}
+The calculus of integration for stochastic processes, generalizing the Itô integral to integration against general semimartingales. Its core tools are the Itô formula, martingales, quadratic variation, stochastic differential equations, and the Girsanov transformation for changing the probability measure. It gives rigorous meaning to noise-driven dynamics and underpins mathematical finance, where asset prices are modeled by geometric Brownian motion, and the general theory of diffusion processes.
 
 \term{Stochastic Integral}
 The integral of a stochastic process with respect to a semimartingale, defined in the sense of Itô or Stratonovich.

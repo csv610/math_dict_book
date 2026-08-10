@@ -34,6 +34,9 @@ The phrase "the smallest positive integer not definable in fewer than twenty wor
 \term{Bertrand's Paradox}
 Different natural procedures for choosing a "random chord" of a circle (by endpoint, by midpoint, by distance from center) yield different probabilities for a chord being longer than a side of the inscribed equilateral triangle. It highlights the ambiguity of uniform randomness without a precise specification.
 
+\term{Besov Space}
+A scale of function spaces $B^s_{p,q}$, with smoothness $s \in \mathbb{R}$ and $1 \le p, q \le \infty$, whose norms measure smoothness through the $\ell^q$ norm over dyadic scales of the $\ell^p$ norms of the Littlewood--Paley or wavelet blocks of $f$. Sobolev spaces sit inside the scale, with $W^{k,p} = B^k_{p,p}$ for integer $k$ in many settings, and Besov spaces interpolate between them. They are the natural spaces for the regularity theory of PDEs, for Fourier restriction estimates, and for nonlinear approximation in harmonic analysis.
+
 \term{Bessel Function}
 The solutions $J_n$ and $Y_n$ of Bessel's differential equation $x^2 y'' + x y' + (x^2 - n^2) y = 0$. They are used to solve boundary value problems in cylindrical coordinates.
 
@@ -61,8 +64,14 @@ The expansion $(x + y)^n = \sum_{k=0}^n \binom{n}{k} x^{n-k} y^k$. It generalise
 \term{Bipartite Graph}
 A graph whose vertices can be partitioned into two sets such that every edge joins a vertex in one set to a vertex in the other. Bipartite graphs have no odd cycles.
 
+\term{Birch--Swinnerton-Dyer Conjecture}
+The conjecture asserting that for an elliptic curve $E$ over $\mathbb{Q}$ the order of vanishing of its Hasse--Weil $L$-function $L(E,s)$ at $s=1$, the analytic rank, equals the rank of the finitely generated abelian group $E(\mathbb{Q})$, the Mordell--Weil group. It further predicts the leading coefficient of $L(E,s)$ at $s=1$ in terms of the regulator, the Tate--Shafarevich group, and the Tamagawa numbers. Verified in many rank-zero and rank-one cases, it is one of the seven Millennium Prize Problems and remains open in general.
+
 \term{Birthday Paradox}
 With only 23 people in a room the probability that two share a birthday exceeds $1/2$, and with 70 it exceeds $0.999$, far smaller than intuition suggests. The exact value is $1 - \prod_{k=0}^{n-1}(365-k)/365$.
+
+\term{Borel Measure}
+A measure defined on the Borel $\sigma$-algebra of a topological space. On Polish spaces and on locally compact Hausdorff spaces, finite Borel measures are inner regular on open sets and outer regular on Borel sets, and regular measures coincide with tight ones. Lebesgue measure restricted to the Borel sets of $\mathbb{R}^n$ is the fundamental example. By the Riesz representation theorem, positive linear functionals on compactly supported continuous functions correspond bijectively to regular Borel measures.
 
 \term{Borel Set}
 A set that can be obtained from open sets by countably many operations of union, intersection, and complement. Borel sets are measurable for every measure on the reals.
@@ -84,6 +93,9 @@ A differential equation together with conditions imposed on the solution at the 
 
 \term{Bounded Function}
 A function whose image is contained in a bounded interval, so there exist $m, M$ with $m \leq f(x) \leq M$ for all $x$ in its domain.
+
+\term{Bounded Linear Operator}
+A linear map $T : X \to Y$ between normed spaces that is continuous, equivalently bounded: there is $C$ with $\|Tx\|_Y \le C\|x\|_X$ for all $x$, so $T$ is bounded on the unit ball and $\|T\| = \sup_{\|x\| \le 1}\|Tx\|$ defines the operator norm. The space of such operators between Banach spaces is a Banach space. The Banach--Steinhaus theorem, the open mapping theorem, and the bounded inverse theorem are fundamental consequences of these hypotheses, and the continuous adjoint $T^*$ exists whenever the spaces are normed.
 
 \term{Boy or Girl Paradox}
 The answer to the probability question about two children changes depending on how the information "one is a girl" is obtained: if a random child is a girl the probability of two girls is $1/2$, but if "at least one is a girl" is asserted it is $1/3$. The difference is a subtlety of conditional probability.

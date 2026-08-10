@@ -1,6 +1,9 @@
 \chapter*{P}
 \label{chap:p}
 
+\term{P vs NP}
+The central open problem of theoretical computer science, asking whether every problem whose solutions are checkable in polynomial time (the class NP) can also be solved in polynomial time (the class P). Since P $\subseteq$ NP, the question is whether the inclusion is strict; $P = NP$ would make finding solutions essentially as easy as checking them. The theory of NP-completeness, the hardest problems in NP to which all others reduce, shows that proving $P \neq NP$ is equivalent to showing that any one such problem is not in P. The problem underpins cryptography and optimization and is one of the Clay Millennium Prize Problems.
+
 \term{P-adic Number}
 Elements of the field $\mathbb{Q}_p$, constructed as the completion of the rational numbers $\mathbb{Q}$ with respect to the $p$-adic valuation $|x|_p = p^{-v_p(x)}$. These numbers are fundamental in modern number theory and arithmetic geometry.
 
@@ -10,11 +13,17 @@ A function $v_p: \mathbb{Q} \to \mathbb{Z} \cup \{\infty\}$ where $v_p(n)$ is th
 \term{Painter's Paradox}
 The observation connected with Gabriel's horn: the horn can be filled with a finite volume of paint, yet covering its surface seems to require an infinite amount. Under an idealized model with paint of no thickness the two statements conflict; in practice a finite film of paint on an infinite area still uses infinite volume, and the paradox highlights the difference between surface area and volume.
 
+\term{Paley--Wiener}
+The Paley--Wiener theorem characterizes entire functions of exponential type: a function $f$ is the restriction to $\mathbb{R}$ of an entire function of exponential type $\tau$ if and only if its Fourier transform has support in $[-\tau, \tau]$. Equivalently, the Fourier transform of a compactly supported function or distribution is an entire function of exponential type growing at most like $e^{\tau |z|}$. The theorem extends to tempered distributions and underlies the theory of Paley--Wiener spaces of bandlimited signals in sampling theory and harmonic analysis.
+
 \term{Palindromic Sequence}
 A sequence of symbols or numbers that reads the same forwards and backwards. In combinatorics on words, the study of palindromes relates to the structure of free monoids and Sturmian words.
 
 \term{Parabolic PDE}
 A partial differential equation of heat type, with one distinguished direction of time and smoothing evolution.
+
+\term{Paracompact}
+A topological space $X$ is paracompact if every open cover of $X$ admits a locally finite refinement, meaning an open refinement in which each point lies in only finitely many members. Paracompact Hausdorff spaces admit partitions of unity subordinate to any open cover, which is essential for defining smooth partitions of unity on manifolds and for gluing local constructions. Metric spaces and CW complexes are paracompact. Paracompactness plays a central role in sheaf theory, differential topology, and the construction of integrals on manifolds.
 
 \term{Parallelepiped}
 A three-dimensional figure whose six faces are all parallelograms. Its volume is given by the absolute value of the scalar triple product: $V = | \mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) |$.
@@ -39,6 +48,9 @@ The equality $\sum |a_n|^2 = \int |f|^2$ relating the Fourier coefficients of a 
 
 \term{Partial Derivative}
 The derivative of a multivariable function with respect to one variable, while holding all other variables constant. It measures the rate of change along a specific coordinate axis.
+
+\term{Partial Differential Equation}
+A partial differential equation (PDE) is an equation relating an unknown function $u$ of several variables to its partial derivatives, of the form $F(x, u, \partial u/\partial x_i, \partial^2 u/\partial x_i \partial x_j, \ldots) = 0$. Second-order linear equations are classified by the sign of their principal symbol as elliptic, parabolic, or hyperbolic, each with its own existence, uniqueness, and regularity theory. A problem is well-posed in the sense of Hadamard when a solution exists, is unique, and depends continuously on the data. Weak solutions and Sobolev spaces are central tools in the analysis of PDEs.
 
 \term{Partial Fraction}
 The decomposition of a rational function into a sum of simpler rational terms, useful for integration.
@@ -91,11 +103,17 @@ In classical mechanics, a space in which all possible states of a system are rep
 \term{Phi ($\phi$) (Golden Ratio)}
 The irrational number $\phi = \frac{1+\sqrt{5}}{2} \approx 1.618$, which is the positive solution to $x^2 - x - 1 = 0$. It appears in the geometry of pentagons, the Fibonacci sequence, and phyllotaxis.
 
+\term{Picard Theorem}
+Picard's theorems concern the range of holomorphic functions. The little Picard theorem states that a nonconstant entire function omits at most one complex value, so every other value is attained. The great Picard theorem states that a holomorphic function in a punctured neighborhood of an essential singularity assumes every complex value infinitely often in every neighborhood of the singularity, with at most one exception. These results vastly strengthen Casorati--Weierstrass and are deep consequences of the theory of normal families; Nevanlinna theory refines them in the study of meromorphic functions.
+
 \term{Picard--Lindelöf Theorem}
 For the initial value problem $y' = f(x,y)$, $y(x_0) = y_0$, if $f$ is continuous in $x$ and Lipschitz continuous in $y$, then a unique solution exists on some interval about $x_0$. The proof typically proceeds via the contraction mapping principle applied to a space of continuous functions.
 
 \term{Pigeonhole Principle}
 A combinatorial principle stating that if $n$ items are put into $m$ containers, with $n > m$, then at least one container must contain more than one item.
+
+\term{Planar Graph}
+A graph that can be drawn in the plane so that its edges meet only at common endpoints. Kuratowski's theorem characterizes planar graphs as those containing neither $K_5$ nor $K_{3,3}$ as a minor (equivalently, as a topological minor). A connected planar graph satisfies Euler's formula $V - E + F = 2$ relating vertices, edges, and faces. Every planar graph is 4-colorable, the four-color theorem. Planarity testing, dual graphs, and planar embeddings matter in graph drawing, network design, and algorithmic graph theory.
 
 \term{Pointwise Convergence}
 A sequence of functions $f_n$ converges pointwise to $f$ on a set $S$ if for every $x \in S$, the sequence of values $f_n(x)$ converges to $f(x)$. This is a weaker condition than uniform convergence.
@@ -114,6 +132,9 @@ A relationship between the sum of values of a function at integers and the sum o
 
 \term{Polytope}
 The generalization of a polygon (2D) and polyhedron (3D) to $n$ dimensions. A convex polytope is the convex hull of a finite set of points in $\mathbb{R}^n$.
+
+\term{Polyhedron}
+In Euclidean geometry, a three-dimensional solid bounded by flat polygonal faces, the higher-dimensional analogue of a polygon. More generally a polyhedron is a union of finitely many convex polytopes in $\mathbb{R}^n$. Convex polyhedra are studied through the theory of polytopes, with Euler's formula $V - E + F = 2$ for convex solids relating vertices, edges, and faces. Regular and vertex-transitive polyhedra include the five Platonic solids, the classification of which dates to antiquity and reappears in symmetry and group theory.
 
 \term{Polynomial}
 An expression consisting of variables and coefficients, using only addition, subtraction, multiplication, and non-negative integer exponents of variables.
@@ -166,6 +187,9 @@ An assignment of data to open sets together with restriction maps, compatible wi
 \term{Primal Problem}
 The original optimization problem, to which a dual problem is associated.
 
+\term{Primality Test}
+An algorithm deciding whether a given integer $n$ is prime. Trial division is simple but exponential in the number of digits; probabilistic tests such as Miller--Rabin and Solovay--Strassen determine primality quickly with small error probability. The AKS algorithm, announced in 2002, gives the first deterministic polynomial-time primality test, unconditionally proving primality in time polynomial in $\log n$. Primality testing is distinct from integer factorization and is central to public-key cryptography, where large primes are generated for RSA and related schemes.
+
 \term{Prime Ideal}
 An ideal $P$ such that $ab \in P$ implies $a \in P$ or $b \in P$; the quotient ring is an integral domain.
 
@@ -193,6 +217,9 @@ The function $f$ such that $P(a \leq X \leq b) = \int_a^b f(x)\,dx$ for a contin
 \term{Probability Space}
 A mathematical triple $(\Omega, \mathcal{F}, P)$ consisting of a sample space $\Omega$, a $\sigma$-algebra $\mathcal{F}$ of events, and a probability measure $P$.
 
+\term{Product Measure}
+Given measure spaces $(X, \mathcal{A}, \mu)$ and $(Y, \mathcal{B}, \nu)$, the product measure $\mu \times \nu$ on $X \times Y$ is constructed from the outer measure generated by the measurable rectangles $A \times B$. Fubini and Tonelli theorems justify interchanging integrals over the factors. In probability, product measures model independent random variables, and the Kolmogorov extension theorem constructs infinite product measures for arbitrary collections of random variables, underlying stochastic processes.
+
 \term{Product Space}
 The Cartesian product of two or more sets, spaces, or groups, equipped with the product structure (e.g., the product topology or product measure).
 
@@ -204,6 +231,9 @@ A linear operator $P: V \to V$ such that $P^2 = P$. It decomposes the space $V$ 
 
 \term{Projective Geometry}
 The study of geometric properties that are invariant under projective transformations. It extends Euclidean geometry by adding "points at infinity."
+
+\term{Projective Module}
+An $R$-module $P$ is projective if the functor $\operatorname{Hom}_R(P, -)$ is exact, meaning every epimorphism $M \to N$ induces a surjection $\operatorname{Hom}_R(P, M) \to \operatorname{Hom}_R(P, N)$. Equivalently, $P$ is a direct summand of a free module, or the image of an idempotent endomorphism of a free module. Projective modules give projective resolutions and the derived functor Ext; over a commutative ring, Bass's theorem characterizes the projective generation of modules, and the Serre--Swan correspondence relates finitely generated projective modules over the ring of smooth functions on a manifold to vector bundles.
 
 \term{Projective Space}
 The set of all lines passing through the origin in a vector space $\mathbb{R}^{n+1}$. It is denoted $\mathbb{P}^n(\mathbb{R})$ and can be viewed as the quotient of $\mathbb{R}^{n+1} \setminus \{0\}$ by the equivalence $v \sim \lambda v$.

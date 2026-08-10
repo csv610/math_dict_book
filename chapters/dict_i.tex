@@ -4,6 +4,9 @@
 \term{Ideal (Ring Theory)}
 A subset $I$ of a ring $R$ is a left ideal if $(I, +)$ is a subgroup and $r \in R, a \in I \implies ra \in I$. A right ideal is defined similarly, and a two-sided ideal satisfies both. In a commutative ring, all ideals are two-sided. The quotient $R/I$ is a ring iff $I$ is two-sided.
 
+\term{Ideal Class Group}
+The quotient of the group of fractional ideals of the ring of integers of a number field by the subgroup of principal fractional ideals. It measures the failure of unique factorization: its order, the class number, is finite by Minkowski's bound on ideal norms, and the ring of integers has unique factorization iff the class group is trivial. The class group is central in algebraic number theory: unramified abelian extensions are governed by class field theory, and the class group appears as the Galois group of the Hilbert class field of the number field.
+
 \term{Idempotent Element}
 An element $e$ of a ring or semigroup is idempotent if $e^2 = e$. In a ring, $0$ and $1$ are always idempotent. Idempotents are used to decompose rings into direct sums: if $e$ is idempotent, $R = eR \oplus (1-e)R$.
 
@@ -259,8 +262,14 @@ The difference between the actual function and its interpolant. For polynomials,
 \term{Interpolation Formula}
 A general expression for an interpolant, such as the Lagrange formula $\sum y_i L_i(x)$ or the Newton divided-difference formula.
 
+\term{Interpolation Space}
+Spaces arising in interpolation theory, the study of how a linear operator bounded on two Banach spaces behaves on intermediate spaces. The real method, built on the $K$-functional, and the complex method construct the intermediate spaces $(A_0, A_1)_{\theta,q}$ and $[A_0, A_1]_\theta$ between a pair of Banach spaces. Interpolation inequalities such as the Riesz--Thorin theorem bound the norm of an operator on the interpolant in terms of its endpoint norms. Sobolev spaces and $L^p$ spaces arise as real interpolation spaces, and the theory is essential in harmonic analysis and the regularity theory of PDEs.
+
 \term{Interquartile Range}
 In statistics, the difference between the 75th and 25th percentiles ($Q_3 - Q_1$). It measures the spread of the middle 50\% of a distribution.
+
+\term{Intersection Theory}
+The study of the intersection of subvarieties and cycles on a scheme, whose equivalence classes form the Chow ring, graded by codimension, with the intersection product corresponding to proper intersection of cycles. Rational equivalence, Chow groups, and the pushforward and pullback of cycles are the basic structures. Chern classes of vector bundles are computed via intersections with zero loci, and the theory governs enumerative geometry and birational geometry, connecting to algebraic K-theory through the relation between Chow groups and K-cohomology.
 
 \term{Interval (Analysis)}
 A connected subset of $\mathbb{R}$. Closed intervals $[a,b]$ are compact; open intervals $(a,b)$ are open. Intervals are the building blocks of the Borel $\sigma$-algebra.
@@ -363,3 +372,6 @@ The repeated application of a function or process; in numerical analysis, the ba
 
 \term{Iterative Method}
 A numerical method that generates successive approximations converging to the solution.
+
+\term{Itô Calculus}
+The stochastic calculus for semimartingales, centered on the Itô integral of predictable processes with respect to martingales such as Brownian motion. Itô's formula is the change-of-variables rule, whose second-order term is the quadratic variation $[X,X]_t$, and it is the source of stochastic differential equations, whose solutions are diffusions governed by their generators. Unlike the Stratonovich integral, the Itô integral is an isometry and a martingale. Itô calculus is the foundation of the theory of diffusions and of mathematical finance through the Itô isometry and Itô's lemma.

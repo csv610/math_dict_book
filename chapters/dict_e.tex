@@ -19,6 +19,9 @@ An eigenvector of a linear transformation $T$ corresponding to eigenvalue $\lamb
 \term{Eilenberg--Steenrod Axioms}
 The Eilenberg--Steenrod axioms characterise ordinary homology and cohomology theories on the category of CW pairs: (1) homotopy invariance, (2) exactness of the long exact sequence of a pair, (3) excision, (4) additivity over disjoint unions, (5) normalisation on a point. Any two theories satisfying these axioms are naturally isomorphic. These axioms (1952) provided the first rigorous framework for homology.
 
+\term{Eilenberg--MacLane Space}
+For an abelian group $G$ and integer $n \geq 1$, the Eilenberg--MacLane space $K(G,n)$ is a CW complex whose homotopy groups vanish except $\pi_n(K(G,n)) \cong G$. It represents cohomology: for any CW complex $X$ there is a natural bijection $H^n(X;G) \cong [X, K(G,n)]$ between cohomology classes and homotopy classes of maps into $K(G,n)$. These spaces exist and are unique up to homotopy, and they play a central role in obstruction theory, where the obstructions to extending maps and sections live in cohomology with coefficients in the relevant homotopy groups, and in the theory of cohomology operations.
+
 \term{Elementary Function}
 A function built from polynomials, exponentials, logarithms, trigonometric functions, and their inverses under finitely many operations and compositions.
 
@@ -30,6 +33,9 @@ The conic section defined by the set of points whose sum of distances to two foc
 
 \term{Elliptic Curve}
 A smooth projective curve of genus 1 with equation $y^2 = x^3 + ax + b$, carrying an abelian group law; central to number theory and cryptography.
+
+\term{Elliptic Curve Cryptography}
+Elliptic curve cryptography is a public-key cryptosystem whose security rests on the elliptic curve discrete logarithm problem: given points $P$ and $Q = [k]P$ on an elliptic curve over a finite field, recover $k$. For a general curve no sub-exponential algorithm is known, whereas the index calculus attacks finite fields, so elliptic curve systems achieve security comparable to RSA with much smaller keys: a 256-bit curve offers the security of a 3072-bit RSA modulus. Standardised constructions include key exchange (ECDH) and digital signatures (ECDSA), together with efficient curve models such as Montgomery and twisted Edwards curves that resist side-channel attacks.
 
 \term{Elliptic Function}
 A meromorphic doubly periodic function on the complex plane, such as the Weierstrass $\wp$ function.
@@ -52,6 +58,9 @@ A homomorphism from a mathematical structure to itself.
 \term{Enumeration}
 The process of listing all elements of a set, or assigning natural numbers to them.
 
+\term{Entire Function}
+An entire function is a holomorphic function defined on all of $\mathbb{C}$. Liouville's theorem states that a bounded entire function is constant, giving the fundamental theorem of algebra. Every entire function admits a Weierstrass factorization as a product over its zeros times an exponential factor; for functions of finite order, the Hadamard factorization theorem makes this canonical, and the growth is quantified by the order and type. Examples include polynomials, $\exp$, $\sin$, and $\cos$. Entire functions are central to complex analysis and value distribution theory (Nevanlinna theory), and their zeros control the gamma and zeta functions.
+
 \term{Envelope}
 A curve tangent to every member of a family of curves.
 
@@ -63,6 +72,9 @@ The relation between objects that are identical, satisfying reflexivity, symmetr
 
 \term{Equivalence Relation}
 An equivalence relation on a set $X$ is a binary relation $\sim$ that is reflexive ($x \sim x$), symmetric ($x \sim y \implies y \sim x$), and transitive ($x \sim y \land y \sim z \implies x \sim z$). Equivalence relations partition $X$ into equivalence classes $[x] = \{y \in X : y \sim x\}$. The quotient set $X/{\sim}$ is the set of all equivalence classes. Examples: congruence modulo $n$, isomorphism of structures, homotopy of maps.
+
+\term{Equivalence of Categories}
+An equivalence of categories consists of functors $F: \mathcal{C} \to \mathcal{D}$ and $G: \mathcal{D} \to \mathcal{C}$ together with natural isomorphisms $GF \cong \mathrm{id}_{\mathcal{C}}$ and $FG \cong \mathrm{id}_{\mathcal{D}}$. Equivalent categories are interchangeable for all categorical purposes: any construction preserved by composition with $F$ or $G$ holds in both, such as the existence of limits, coproducts, and adjoints. Finite-dimensional vector spaces over a field are equivalent to the category of matrices over that field, and rings with equivalent module categories are Morita equivalent. By Yoneda's lemma, a category is essentially determined up to equivalence by its representable functors.
 
 \term{Equivalent}
 Related by an equivalence relation; two statements are logically equivalent if each implies the other.

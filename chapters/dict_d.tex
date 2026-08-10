@@ -70,6 +70,9 @@ For a polynomial $p(x)$ with real coefficients, the number of positive real root
 \term{Descent (Algebraic Geometry)}
 Descent theory studies when objects defined locally on a cover glue to form a global object. For a morphism $f: Y \to X$, a descent datum on a sheaf or bundle over $Y$ consists of isomorphisms satisfying a cocycle condition on $Y \times_X Y$. Descent is effective for faithfully flat morphisms (Grothendieck's theorem), forming the basis of étale cohomology.
 
+\term{Design Theory}
+Design theory studies block designs: collections of $b$ subsets (blocks) of a $v$-element point set such that each point lies in exactly $r$ blocks and each pair of points lies in exactly $\lambda$ blocks, giving a balanced incomplete block design with parameters $v, b, r, k, \lambda$. Fisher's inequality asserts $b \geq v$ for every nontrivial BIBD. Steiner systems and finite projective planes are extremal examples, often constructed from finite fields via difference sets. Designs are used in experimental design, coding theory, and the construction of error-correcting codes.
+
 \term{Determinant}
 The determinant $\det(A)$ of a square matrix $A$ is a scalar value characterising the linear transformation represented by $A$. It equals the product of eigenvalues, measures the volume scaling factor, and determines invertibility: $A$ is invertible iff $\det(A) \neq 0$. Key properties: $\det(AB) = \det(A)\det(B)$, $\det(A^T) = \det(A)$, $\det(A^{-1}) = 1/\det(A)$.
 
@@ -124,6 +127,9 @@ The dihedral group $D_n$ is the symmetry group of a regular $n$-gon, of order $2
 \term{Dimension}
 The number of coordinates needed to describe a space; for a vector space, the size of a basis.
 
+\term{Dimension Theory}
+Dimension theory studies the notion of dimension for topological spaces and rings. For separable metrizable spaces, the small inductive, large inductive, and Lebesgue covering dimensions coincide; the covering dimension of $X$ is the least $n$ such that every open cover has an open refinement in which each point lies in at most $n+1$ sets. The Menger--Nöbeling theorem embeds every separable metrizable space of dimension $n$ in $\mathbb{R}^{2n+1}$, and dimension is a homeomorphism invariant. For commutative rings, the Krull dimension is the supremum of lengths of chains of prime ideals.
+
 \term{Directed Graph}
 A directed graph (digraph) $D = (V, A)$ consists of vertices $V$ and ordered pairs of vertices called arcs or directed edges. The out-degree $d^+(v)$ counts arcs leaving $v$; the in-degree $d^-(v)$ counts arcs entering $v$. A directed graph is strongly connected if there is a directed path between any ordered pair of vertices. Digraphs model networks, precedence constraints, and state machines.
 
@@ -142,6 +148,9 @@ A Dirichlet boundary condition specifies the value of a solution on the boundary
 \term{Dirichlet L-function}
 The series $L(s, \chi) = \sum_{n=1}^\infty \chi(n)/n^s$ built from a Dirichlet character $\chi$, central to the theory of primes in arithmetic progressions.
 
+\term{Dirichlet Series}
+A Dirichlet series is a series of the form $\sum_{n=1}^{\infty} a_n n^{-s}$, where $a_n$ is typically an arithmetic function such as a Dirichlet character. It has an abscissa of convergence $\sigma_c$: the series converges absolutely for $\operatorname{Re}(s) > \sigma_c$ and defines an analytic function there. Dirichlet $L$-functions $L(s,\chi) = \sum_{n=1}^\infty \chi(n)n^{-s}$ admit Euler products and functional equations; Perron's formula expresses partial sums $\sum_{n \leq x} a_n$ as an integral of the series over a vertical line. Dirichlet series are central to analytic number theory, including the distribution of primes in arithmetic progressions and the Riemann zeta function.
+
 \term{Dirichlet's Approximation Theorem}
 For any real number $\alpha$ and any positive integer $N$, there exist integers $p, q$ with $1 \leq q \leq N$ such that $|\alpha - p/q| < 1/(qN) \leq 1/N^2$. This implies infinitely many rational approximations satisfying $|\alpha - p/q| < 1/q^2$. The theorem follows from the pigeonhole principle applied to fractional parts $\{\alpha\}, \{2\alpha\}, \ldots, \{N\alpha\}$.
 
@@ -156,6 +165,9 @@ A point at which a function is not continuous, classified as removable, jump, or
 
 \term{Discrete Topology}
 The discrete topology on a set $X$ declares every subset open. Every function from a discrete space is continuous. Every subset is also closed, so the space is zero-dimensional and totally disconnected. The discrete topology is the finest possible topology; it makes $X$ a metric space with the discrete metric $d(x,y) = 1$ for $x \neq y$.
+
+\term{Discrete Logarithm}
+Given a cyclic group $G$ with generator $g$ and an element $h = g^x$, the discrete logarithm problem asks for $x$, which is unique modulo the order of $g$. For the multiplicative group of a finite field or the group of rational points of an elliptic curve, the problem is believed hard: no polynomial-time algorithm is known, and this hardness underpins the Diffie--Hellman key exchange and elliptic curve cryptography. Known algorithms include baby-step giant-step and Pollard's rho method, both of square-root time complexity, and the index calculus, which is effective in finite fields but not in general elliptic curve groups.
 
 \term{Discriminant (Number Field)}
 The discriminant $d_K$ of a number field $K$ is the determinant of the trace form: $d_K = \det(\operatorname{Tr}_{K/\mathbb{Q}}(\omega_i \omega_j))$ for an integral basis $\{\omega_i\}$. It measures the arithmetic complexity of $K$. The discriminant of $\mathbb{Q}(\sqrt{d})$ for square-free $d$ is $d$ if $d \equiv 1 \pmod 4$ and $4d$ otherwise. Only finitely many fields have discriminant below any given bound.

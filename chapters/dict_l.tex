@@ -19,11 +19,20 @@ A formal system in mathematical logic for expressing computation based on functi
 \term{Lambda-term}
 The basic object of the lambda calculus, which can be a variable, an abstraction $\lambda x. M$, or an application $(M N)$.
 
+\term{Langlands Program}
+A vast network of conjectures, initiated by Robert Langlands in 1967, connecting automorphic forms and representations of reductive groups over global fields to Galois representations and motives. The central reciprocity conjecture, the Langlands correspondence, predicts that $L$-functions of automorphic representations match those of Galois representations, and functoriality asserts functorial transfer between reductive groups. Its local version concerns representations of $p$-adic groups, and it generalizes Artin's conjecture on holomorphy, providing the framework for modularity results such as the proof of Fermat's Last Theorem.
+
 \term{Laplace Transform}
 An integral transform that converts a function of time $f(t)$ into a function of complex frequency $s$: $\mathcal{L}\{f(t)\} = \int_0^\infty e^{-st} f(t)\,dt$. It transforms differential equations into algebraic equations.
 
 \term{Laplacian}
 The divergence of the gradient of a scalar field, $\Delta f = \nabla^2 f = \sum \frac{\partial^2 f}{\partial x_i^2}$. In physics, it describes diffusion, heat flow, and the Poisson equation.
+
+\term{Large Cardinals}
+Very large infinite cardinals whose existence cannot be proved in ZFC and whose consistency implies the consistency of ZFC, arranged in a hierarchy of consistency strength. They include inaccessible cardinals, measurable cardinals, Woodin cardinals, and supercompact cardinals. Their theory measures the strength of set-theoretic statements, interacts with the axiom of determinacy and with forcing, and features in inner model theory, where the existence of such cardinals reflects deep structure of the universe of sets beyond the usual cumulative hierarchy.
+
+\term{Large Deviations Principle}
+The asymptotic description of rare events: a sequence of probability measures $P_n$ satisfies a large deviations principle with rate function $I$ if $P_n(A) \approx \exp(-n \inf_{x \in A} I(x))$ for suitable sets $A$, where $I \geq 0$ is lower semicontinuous with compact sublevel sets. Cramér's theorem gives the rate function for empirical means of i.i.d. variables, and Sanov's theorem for empirical measures. Varadhan's lemma computes limits of normalized logarithmic expectations. The theory underpins statistics and statistical mechanics.
 
 \term{Lattice (Algebra)}
 A partially ordered set in which every two elements have a unique supremum (join $\vee$) and infimum (meet $\wedge$). Distributive lattices and modular lattices are important subclasses.
@@ -103,6 +112,9 @@ A generalization of a Lie algebra that is $\mathbb{Z}_2$-graded (even and odd pa
 \term{Limit}
 The value a function or sequence approaches as its argument approaches a given point, formalised with $\epsilon$--$\delta$ arguments.
 
+\term{Limit (Category Theory)}
+A limit of a diagram $F: J \to C$ is a cone $(L, \pi_j)$ over $F$ that is universal: every other cone factors uniquely through $L$. Limits encompass products, pullbacks, equalizers, and inverse limits. A category with all small limits is complete, and limits are computed objectwise in functor categories. Right adjoints preserve limits, and their existence is governed by the adjoint functor theorems. Limits are the dual of colimits and central to universal constructions; this is distinct from the analytic notion of a limit in calculus.
+
 \term{Limit Point}
 A point that is the limit of a sequence of distinct elements of a set; also called an accumulation point.
 
@@ -117,6 +129,9 @@ A topological space in which every open cover has a countable subcover. Every se
 
 \term{Line}
 A one-dimensional object with zero thickness extending without end in both directions; in a projective plane, the dual of a point.
+
+\term{Line Bundle}
+A vector bundle of rank 1, holomorphic, algebraic, or topological, whose fibres are one-dimensional vector spaces. Its sections are locally functions up to scaling, and the zero locus of a section of a line bundle defines a divisor; conversely, divisors give rise to line bundles, so that isomorphism classes form the Picard group under tensor product. The first Chern class $c_1$ classifies topological line bundles, and very ample line bundles give projective embeddings, as in the Kodaira embedding theorem.
 
 \term{Line Integral}
 The integral of a function or vector field along a curve, $\int_C f\, ds$ or $\int_C F \cdot dr$.
@@ -163,6 +178,9 @@ Every bounded entire holomorphic function is constant. It follows from Cauchy's 
 \term{Local Compactness}
 The property of a topological space in which every point has a compact neighbourhood.
 
+\term{Local Field}
+A locally compact, non-discrete topological field: the real or complex numbers, a finite extension of the field $\mathbb{Q}_p$ of $p$-adic numbers, or a finite extension of the field $\mathbb{F}_q((t))$ of formal Laurent series over a finite field. Every non-archimedean local field carries a discrete valuation and a finite residue field. Local class field theory describes abelian extensions of local fields, Tate duality governs local Galois cohomology, and Haar measure on the additive group provides the local structure underlying the adèles.
+
 \term{Local Homeomorphism}
 A map $f: X \to Y$ such that for every point $x \in X$, there exists an open neighborhood $U$ of $x$ such that $f|_U$ is a homeomorphism onto an open set in $Y$.
 
@@ -174,6 +192,9 @@ A point $x_0$ such that $f(x) \leq f(x_0)$ for all $x$ in some open neighborhood
 
 \term{Local Ring}
 A ring with exactly one maximal ideal. In algebraic geometry, the local ring of a point on a variety consists of functions defined in a neighborhood of that point.
+
+\term{Localization}
+The process of formally adjoining inverses of a multiplicatively closed subset $S$ of a commutative ring $R$, producing the ring of fractions $S^{-1}R$; localization at the complement of a prime ideal $\mathfrak{p}$ yields the local ring $R_{\mathfrak{p}}$. For modules, localization is exact and compatible with tensor products. Geometrically, localization corresponds to restricting sheaves to an open set, expressing the local behaviour of a variety at a point. The notion generalizes to the localization of a category, formally inverting a class of morphisms, as in the construction of derived categories.
 
 \term{Logarithm}
 The inverse operation to exponentiation. The natural logarithm $\ln x$ is the integral $\int_1^x \frac{1}{t}\,dt$.

@@ -55,6 +55,9 @@ An increasing sequence of subobjects $\mathcal{F}_0 \subseteq \mathcal{F}_1 \sub
 \term{Final Object}
 In category theory, a final (or terminal) object is an object $T$ such that for every object $X$ there exists a unique morphism $X \to T$. In the category of sets, the final object is any singleton $\{*\}$. In the category of groups, it is the trivial group. Final objects are unique up to unique isomorphism. Dually, an initial object has a unique morphism from it to every object.
 
+\term{Finite Field}
+A finite field is a field with finitely many elements; its cardinality is necessarily a prime power $p^n$ and its characteristic is $p$. For every prime power $q = p^n$ there exists a field $\mathbb{F}_q$ with $q$ elements, unique up to isomorphism, namely the splitting field of $x^q - x$ over $\mathbb{F}_p$. The multiplicative group $\mathbb{F}_q^\times$ is cyclic, and a generator is a primitive element. The Frobenius automorphism $x \mapsto x^p$ generates the Galois group of $\mathbb{F}_q$ over $\mathbb{F}_p$. Finite fields underlie coding theory (Reed--Solomon and BCH codes), cryptography (elliptic curves, discrete logarithms), and pseudorandom generation.
+
 \term{Finite Group}
 A group with finitely many elements; its order is the number of elements.
 
@@ -87,6 +90,9 @@ A fixed point of a function $f: X \to X$ is a point $x$ with $f(x) = x$. The Bro
 
 \term{Fixed-Point Theorem}
 A theorem guaranteeing the existence of a point $x$ with $f(x) = x$ for a class of maps, such as the Banach contraction and Brouwer theorems.
+
+\term{Flat Module}
+An $R$-module $M$ is flat if the functor $-\otimes_R M$ is exact, or equivalently preserves injective homomorphisms. Flatness is a local property: over a commutative ring, $M$ is flat iff $M_{\mathfrak{p}}$ is flat over $R_{\mathfrak{p}}$ at all primes $\mathfrak{p}$, and over a local ring flat modules are free. Projective modules are flat, and over an integral domain a flat module is torsion-free. Faithful flatness means $-\otimes_R M$ is conservative; it is equivalent to $\mathrm{Tor}_1^R(N,M) = 0$ for all $N$. In algebraic geometry, flat morphisms are those whose fibers vary continuously, and faithfully flat descent governs glueing of sheaves and modules.
 
 \term{Flatness}
 A property of modules: $M$ is flat if tensoring with $M$ is exact; a generalisation of being torsion-free.

@@ -2,119 +2,119 @@
 \label{chap:v}
 
 \term{Valuation}
-A function $v$ on a field $K$ that assigns a value in an ordered abelian group, satisfying $v(xy) = v(x) + v(y)$ and $v(x+y) \geq \min(v(x), v(y))$. Examples include the $p$-adic valuation on $\mathbb{Q}$.
+A valuation assigns elements of a field values in an ordered group so that $v(xy)=v(x)+v(y)$ and $v(x+y)\geq\min(v(x),v(y))$. \par\noindent\textbf{Applications:} valuations measure divisibility and size in number theory and define $p$-adic fields.
 
 \term{Value (Logic)}
-An assignment of truth values (e.g., True or False) to the variables of a logical formula. In multi-valued logic, a formula can take more than two possible values.
+A logical value is an assignment, such as true or false, to a formula or its variables. Multi-valued logics allow additional values. \par\noindent\textbf{Applications:} logical values support formal reasoning, digital circuits, and program verification.
 
 \term{Vandermonde Matrix}
-A matrix $V$ where each row is a geometric progression: $V_{ij} = x_j^{i-1}$. Its determinant is the product of all differences $(x_j - x_i)$, and it is invertible iff all $x_i$ are distinct.
+A Vandermonde matrix has entries $V_{ij}=x_j^{i-1}$, so each column contains powers of one number. Its determinant is nonzero exactly when the $x_j$ are distinct. \par\noindent\textbf{Applications:} it supports polynomial interpolation, coding, and signal reconstruction.
 
 \term{Van Kampen's Theorem}
-A result in algebraic topology that expresses the fundamental group of a space $X = U \cup V$ as the pushout of the fundamental groups of $U$ and $V$ over their intersection $U \cap V$.
+Van Kampen's theorem computes the fundamental group of a space made from overlapping path-connected pieces using the groups of the pieces and their intersection. \par\noindent\textbf{Applications:} it calculates loops in spaces assembled from simpler parts.
 
 \term{Variation}
-A measure of the total vertical oscillation of a function. A function has bounded variation on $[a,b]$ if the supremum of $\sum |f(x_{i+1}) - f(x_i)|$ over all partitions is finite.
+The variation of a function measures its total accumulated change. It has bounded variation on an interval when the supremum of partition sums of absolute changes is finite. \par\noindent\textbf{Applications:} bounded variation supports integration, signal analysis, and functions with jumps.
 
 \term{Variational Formulation}
-The weak formulation of a PDE as an equation in a Hilbert space, such as $\int \nabla u \cdot \nabla v = \int f v$, which is the basis of the finite-element method.
+A variational formulation rewrites a PDE as an integral equation for a class of test functions, such as $\int\nabla u\cdot\nabla v=\int fv$. \par\noindent\textbf{Applications:} it provides weak solutions and is the foundation of finite-element methods.
 
 \term{Variational Inequality}
-The inequality $F(x^*) \cdot (x - x^*) \geq 0$ for all $x$ in the feasible set, characterising equilibria in optimization and game theory.
+A variational inequality requires a candidate $x^*$ to satisfy $F(x^*)\cdot(x-x^*)\geq0$ for every feasible $x$. \par\noindent\textbf{Applications:} variational inequalities model constrained optimization, contact mechanics, traffic flow, and games.
 
 \term{Variational Method}
-A technique for finding the extrema of a functional (such as an integral) by considering small perturbations of the candidate function. It is the basis for the Euler--Lagrange equations.
+A variational method finds extrema of a functional by studying small changes to a candidate function. \par\noindent\textbf{Applications:} it derives Euler--Lagrange equations and models mechanics, optics, and PDEs.
 
 \term{Vector}
-An element of a vector space. In $\mathbb{R}^n$, a vector is an ordered tuple of $n$ real numbers, representing a quantity with both magnitude and direction.
+A vector is an element of a vector space; in $\mathbb R^n$ it is an ordered list of real numbers. \par\noindent\textbf{Applications:} vectors represent displacement, velocity, forces, data features, and directions.
 
 \term{Vector Field}
-An assignment of a vector to each point of a manifold or region in $\mathbb{R}^n$. In physics, vector fields represent quantities like electric fields or fluid velocity.
+A vector field assigns a vector smoothly or regularly to each point of a region or manifold. \par\noindent\textbf{Applications:} vector fields model velocity, electric and magnetic fields, flows, and gradients.
 
 \term{Vector Space}
-A set $V$ equipped with addition and scalar multiplication that satisfies eight axioms (associativity, commutativity, distributive laws, etc.). It is the fundamental structure of linear algebra.
+A vector space is a set with addition and scalar multiplication satisfying the standard linearity axioms. \par\noindent\textbf{Applications:} vector spaces provide the language for linear equations, geometry, data analysis, and quantum states.
 
 \term{Vector Bundle}
-A topological construction where each point of a base space $B$ is associated with a vector space $V$ (the fiber), such that the local structure is a product $U \times V$.
+A vector bundle assigns a vector space to each point of a base space and locally looks like a product $U\times V$. \par\noindent\textbf{Applications:} vector bundles describe tangent spaces, fields, constraints, and characteristic classes.
 
 \term{Vectorization}
-The operation of converting a matrix into a column vector by stacking its columns one on top of another. It is used to transform matrix equations into vector equations.
+Vectorization converts a matrix into a column vector by stacking its columns. \par\noindent\textbf{Applications:} it turns matrix equations into linear vector equations and is used in statistics, optimization, and numerical linear algebra.
 
 \term{Velocity}
-The rate of change of position with respect to time, the derivative of the position vector.
+Velocity is the derivative of position with respect to time, including both speed and direction. \par\noindent\textbf{Applications:} velocity describes motion, fluid flow, trajectories, and dynamical systems.
 
 \term{Verification}
-The process of formally checking that a proof or computation is correct.
+Verification is the process of checking that a proof, algorithm, or computation satisfies its stated requirements. \par\noindent\textbf{Applications:} verification supports reliable software, formal mathematics, and safety-critical systems.
 
 \term{Vertex (Graph Theory)}
-A fundamental unit of a graph, also called a node. A graph $G=(V,E)$ consists of a set of vertices $V$ and a set of edges $E$ connecting them.
+A vertex is a node of a graph, and edges connect pairs of vertices. \par\noindent\textbf{Applications:} vertices represent locations, people, states, or data items in network models.
 
 \term{Vertex Cover}
-A set of vertices in a graph such that every edge of the graph is incident to at least one vertex in the set. Finding the minimum vertex cover is an NP-hard problem.
+A vertex cover is a set of vertices meeting every edge. A minimum vertex cover has the smallest possible size. \par\noindent\textbf{Applications:} vertex cover models facility placement, monitoring, and network protection.
 
 \term{Vertex Degree}
-The number of edges incident to a vertex in a graph. In a directed graph, this is split into in-degree and out-degree.
+The degree of a vertex is the number of incident edges. In a directed graph it is separated into in-degree and out-degree. \par\noindent\textbf{Applications:} degree measures connectivity, traffic, influence, and network load.
 
 \term{Vertex Connectivity}
-The minimum number of vertices whose removal disconnects the graph. A graph is $k$-connected if it remains connected after removing any $k-1$ vertices.
+Vertex connectivity is the minimum number of vertices whose removal disconnects a graph or leaves one vertex. \par\noindent\textbf{Applications:} it measures network robustness and resistance to failures.
 
 \term{Vertex (Polytope)}
-A 0-dimensional face of a polytope. A vertex is a point that cannot be expressed as a convex combination of any other points in the polytope.
+A vertex of a polytope is a zero-dimensional face and cannot be written as a nontrivial convex combination of other points. \par\noindent\textbf{Applications:} vertices determine feasible corners in linear programming and polyhedral geometry.
 
 \term{Valued Field}
-A field equipped with a valuation. The study of valued fields is central to number theory and the construction of completions like the $p$-adics.
+A valued field is a field together with a valuation that measures size or divisibility. \par\noindent\textbf{Applications:} valued fields support $p$-adic analysis, number theory, and algebraic geometry.
 
 \term{Variety (Algebraic)}
-The set of common zeros of a collection of polynomials in $\mathbb{A}^n$ or $\mathbb{P}^n$. Varieties are the primary objects of study in algebraic geometry.
+An algebraic variety is a set defined by polynomial equations, in affine or projective space, together with its geometric structure. \par\noindent\textbf{Applications:} varieties encode solution sets in algebraic geometry, number theory, and robotics.
 
 \term{Varifold}
-A generalization of a submanifold that allows for the study of surfaces with singularities, using the tools of geometric measure theory.
+A varifold is a measure-theoretic object that generalizes a submanifold and can include singular or nonsmooth surfaces. \par\noindent\textbf{Applications:} varifolds are used in geometric measure theory and the analysis of minimal surfaces.
 
 \term{Vect}
-In category theory, the category whose objects are vector spaces over a fixed field and whose morphisms are linear maps.
+\textsc{Vect} is the category whose objects are vector spaces over a fixed field and whose morphisms are linear maps. \par\noindent\textbf{Applications:} it provides a standard setting for linear algebra, tensor products, and representation theory.
 
 \term{Vertical}
-At right angles to the horizontal; a vertical line has undefined slope.
+Vertical describes a direction perpendicular to the horizontal; a vertical line has undefined slope in Cartesian coordinates. \par\noindent\textbf{Applications:} vertical and horizontal directions organize geometry, graphs, and physical measurements.
 
 \term{Violation}
-An instance where a rule, inequality, or constraint fails to hold for a particular case.
+A violation is a case in which a rule, inequality, or constraint is not satisfied. \par\noindent\textbf{Applications:} violations identify errors, infeasible solutions, and failures of physical or statistical assumptions.
 
 \term{Visualisation}
-The representation of mathematical objects or data by geometric figures to aid understanding.
+Visualization represents mathematical objects or data with diagrams, plots, or geometric models. \par\noindent\textbf{Applications:} visualization reveals patterns, structure, uncertainty, and relationships in mathematics and data science.
 
 \term{Voronoi Diagram}
-A partition of a plane into regions based on distance to a specific set of seed points. For each seed, the Voronoi cell consists of all points closer to that seed than to any other.
+A Voronoi diagram partitions a space into cells according to the nearest seed point. \par\noindent\textbf{Applications:} it supports nearest-neighbor search, facility planning, geographic analysis, and biology.
 
 \term{Voronoi Cell}
-The convex polytope consisting of all points in space closer to a given seed $p_i$ than to any other seed in a set.
+A Voronoi cell is the region of points at least as close to one seed as to every other seed. \par\noindent\textbf{Applications:} cells define service areas, nearest-site regions, and spatial influence zones.
 
 \term{V-polytope}
-A polytope defined as the convex hull of a finite set of vertices (V-representation), as opposed to an H-polytope defined by a set of linear inequalities.
+A V-polytope is represented as the convex hull of finitely many vertices. \par\noindent\textbf{Applications:} V-representations describe feasible regions and support conversion between geometric and inequality descriptions.
 
 \term{Variance}
-The second central moment of a random variable, $\operatorname{Var}(X) = \mathbb{E}[(X - \mu)^2]$. It measures the dispersion of a distribution around its mean.
+Variance is the expected squared distance from a random variable to its mean, $\operatorname{Var}(X)=\mathbb E[(X-\mu)^2]$. \par\noindent\textbf{Applications:} variance measures uncertainty and spread in statistics, finance, experiments, and quality control.
 
 \term{V-statistic}
-A V-statistic is an average of a function over all ordered tuples of observations, allowing repeated observations. For a kernel $h$ of $m$ variables, it has the form $n^{-m}\sum h(X_{i_1},\ldots,X_{i_m})$, where the sum ranges over all indices. Applications: V-statistics estimate moments, dependence measures, and goodness-of-fit quantities from data.
+A V-statistic is an average of a function over all ordered tuples of observations, allowing repeated observations. For a kernel $h$ of $m$ variables, it has the form $n^{-m}\sum h(X_{i_1},\ldots,X_{i_m})$, where the sum ranges over all indices. \par\noindent\textbf{Applications:} V-statistics estimate moments, dependence measures, and goodness-of-fit quantities from data.
 
 \term{V-fold Cross Validation}
-A technique in machine learning where a dataset is split into $V$ folds; the model is trained on $V-1$ folds and tested on the remaining one, repeating this process $V$ times.
+V-fold cross-validation divides data into $V$ parts, trains on $V-1$ parts, and tests on the remaining part, repeating the process. \par\noindent\textbf{Applications:} it estimates predictive performance and helps choose models or hyperparameters.
 
 \term{Vanishing Point}
-In projective geometry, the point where parallel lines in 3D space appear to converge when projected onto a 2D plane.
+A vanishing point is the projective image where a family of parallel lines appears to meet in a perspective drawing. \par\noindent\textbf{Applications:} vanishing points support computer vision, photography, architecture, and 3D reconstruction.
 
 \term{Vanishing Theorem}
-A result in complex geometry or topology stating that certain cohomology groups of a sheaf or manifold are zero, often as a consequence of positivity conditions (e.g., Kodaira vanishing).
+A vanishing theorem states that specified cohomology groups are zero under suitable geometric or positivity conditions. \par\noindent\textbf{Applications:} vanishing theorems simplify classification and existence questions in algebraic and complex geometry.
 
 \term{V-norm}
-A specific type of norm used in the study of certain operator algebras or sequence spaces, often related to the $L^p$ norms.
+A V-norm is a context-dependent norm used to measure elements in an operator algebra or sequence space. \par\noindent\textbf{Applications:} such norms quantify size and convergence in functional analysis.
 
 \term{von Neumann Algebra}
-A C*-algebra that is also closed in the weak operator topology; equivalently, the algebra of operators commuting with the commutant of a Hilbert space representation.
+A von Neumann algebra is a *-algebra of bounded operators on a Hilbert space that is closed in the weak operator topology. \par\noindent\textbf{Applications:} it models observables in quantum theory and supports operator algebras and noncommutative probability.
 \term{Shortest Path}
-A path between two vertices in a weighted graph that minimises the sum of edge weights. Dijkstra's algorithm solves the single-source shortest path problem in graphs with non-negative weights. The Bellman--Ford algorithm handles negative weights and detects negative cycles. In unweighted graphs, breadth-first search finds shortest paths.
+A shortest path minimizes the total edge weight between two graph vertices. \par\noindent\textbf{Applications:} shortest-path algorithms route networks, plan transport, navigate maps, and optimize logistics.
 \term{Universal Property}
-A characterisation of an object by the unique existence of morphisms making certain diagrams commute, rather than by an explicit construction. Universal properties define objects up to unique isomorphism. Examples include products, coproducts, free objects, completions, and adjoints. Category theory is built on the language of universal properties.
+A universal property characterizes an object by a unique mapping condition rather than by a particular construction. \par\noindent\textbf{Applications:} products, free objects, tensor products, and completions are defined canonically this way.
 
 \term{Vitali Set}
-A subset of the real numbers that is not Lebesgue measurable, constructed by Vitali using the axiom of choice. The construction partitions $\mathbb{R}$ into equivalence classes under the relation $x \sim y \iff x - y \in \mathbb{Q}$, selects one representative from each class in $[0,1]$, and translates by rationals to produce disjoint copies. If the set were measurable, translation invariance of Lebesgue measure would lead to a contradiction.
+A Vitali set is a subset of the real numbers that cannot be assigned a translation-invariant Lebesgue measure. Its construction uses the axiom of choice to select representatives of rational-translation classes. \par\noindent\textbf{Applications:} it demonstrates limits of measure and the role of choice in analysis.

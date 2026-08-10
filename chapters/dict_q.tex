@@ -2,133 +2,133 @@
 \label{chap:q}
 
 \term{Q-analog}
-A generalization of a mathematical expression where a parameter $q$ is introduced such that the original expression is recovered as $q \to 1$. A classic example is the $q$-binomial coefficient.
+A $q$-analog introduces a parameter $q$ into a formula so that the classical expression is recovered as $q\to1$. The $q$-binomial coefficient is a standard example. \par\noindent\textbf{Applications:} $q$-analogs occur in combinatorics, number theory, statistical mechanics, and quantum algebra.
 
 \term{Q-matrix}
-In the theory of continuous-time Markov chains, the transition rate matrix $Q$ is defined such that the off-diagonal entries $q_{ij}$ are transition rates and the row sums are zero: $q_{ii} = -\sum_{j \neq i} q_{ij}$.
+For a continuous-time Markov chain, a $Q$-matrix has nonnegative off-diagonal transition rates and row sums zero, so $q_{ii}=-\sum_{j\ne i}q_{ij}$. \par\noindent\textbf{Applications:} $Q$-matrices describe queues, reliability systems, population models, and chemical reaction networks.
 
 \term{Q-series}
-A power series in the variable $q = e^{2\pi i \tau}$, typically used in the theory of modular forms and partitions. The generating function for $p(n)$ is a famous example of a $q$-series.
+A $q$-series is a power series in $q$, often with coefficients encoding arithmetic or combinatorial data. The generating function for integer partitions is a famous example. \par\noindent\textbf{Applications:} $q$-series support partition theory, modular forms, combinatorics, and statistical mechanics.
 
 \term{Quadratic Equation}
-An equation of the form $ax^2 + bx + c = 0$ where $a \neq 0$. The solutions are given by the quadratic formula $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$.
+A quadratic equation has the form $ax^2+bx+c=0$ with $a\ne0$. Its roots are $x=(-b\pm\sqrt{b^2-4ac})/(2a)$, and the discriminant determines whether the roots are real or complex. \par\noindent\textbf{Applications:} quadratic equations model trajectories, optimization, geometry, and basic physical laws.
 
 \term{Quadratic Form}
-A homogeneous polynomial of degree two, expressed as $Q(v) = v^T A v$ for a symmetric matrix $A$. It is used to classify conic sections and determine the nature of critical points via the Hessian matrix.
+A quadratic form is a homogeneous degree-two expression $Q(v)=v^{\mathsf T}Av$, with $A$ taken symmetric. Its definiteness describes curvature and its level sets include ellipses, hyperbolas, and higher-dimensional analogues. \par\noindent\textbf{Applications:} quadratic forms appear in optimization, energy, statistics, geometry, and number theory.
 
 \term{Quadratic Reciprocity}
-A fundamental theorem in number theory stating that for two distinct odd primes $p$ and $q$, the Legendre symbol $\left(\frac{p}{q}\right)\left(\frac{q}{p}\right) = (-1)^{\frac{p-1}{2} \frac{q-1}{2}}$. It relates the solvability of $x^2 \equiv p \pmod{q}$ to $x^2 \equiv q \pmod{p}$.
+For distinct odd primes $p$ and $q$, quadratic reciprocity states that $\left(\frac{p}{q}\right)\left(\frac{q}{p}\right)=(-1)^{\frac{p-1}{2}\frac{q-1}{2}}$. It relates whether $p$ is a square modulo $q$ to whether $q$ is a square modulo $p$. \par\noindent\textbf{Applications:} it makes quadratic-residue calculations efficient and supports number theory and cryptography.
 
 \term{Quadratic Residue}
-An integer $a$ for which the congruence $x^2 \equiv a \pmod{p}$ has a solution.
+An integer $a$ is a quadratic residue modulo a prime $p$ if $x^2\equiv a\pmod p$ has a solution. Otherwise it is a nonresidue. \par\noindent\textbf{Applications:} quadratic residues support modular arithmetic, primality tests, cryptography, and number-theoretic reciprocity.
 
 \term{Quadrature}
-The process of calculating the area under a curve, often via numerical approximation. Gaussian quadrature is a highly efficient method that chooses optimal evaluation points (nodes) and weights to integrate polynomials exactly.
+Quadrature means evaluating a definite integral, often by a weighted numerical sum. Gaussian quadrature chooses nodes and weights to integrate polynomials of high degree exactly. \par\noindent\textbf{Applications:} quadrature is used in simulation, probability, finite elements, and engineering computation.
 
 \term{Quadrature Domain}
-A bounded domain $\Omega \subset \mathbb{C}$ such that the integral of every integrable holomorphic function over $\Omega$ is equal to a finite sum of values of the function and its derivatives at specific points.
+A quadrature domain is a bounded complex domain for which integrals of suitable holomorphic functions equal a finite combination of function values and derivatives at specified points. \par\noindent\textbf{Applications:} quadrature domains connect complex analysis with exact integration and potential-flow models.
 
 \term{Quadrature Rule}
-A specific formula used to numerically approximate a definite integral, such as the Trapezoidal rule, Simpson's rule, or the more general Gaussian quadrature weights.
+A quadrature rule approximates an integral by a weighted sum of function values, such as the trapezoidal, Simpson, or Gaussian rule. Accuracy depends on smoothness and node placement. \par\noindent\textbf{Applications:} quadrature rules evaluate integrals when elementary antiderivatives are unavailable.
 
 \term{Qualitative}
-Describing properties of a solution or system without exact computation, such as stability or long-term behaviour.
+Qualitative analysis describes properties such as stability, boundedness, or long-term behavior without finding an exact formula. \par\noindent\textbf{Applications:} it provides useful conclusions for dynamical systems, differential equations, and models that cannot be solved explicitly.
 
 \term{Qualitative Analysis}
-An approach to mathematics (especially ODEs and dynamical systems) that focuses on the behavior of solutions (e.g., stability, limit cycles) without attempting to find an explicit closed-form solution.
+Qualitative analysis studies features such as stability, equilibria, limit cycles, and long-term behavior without finding an explicit formula. \par\noindent\textbf{Applications:} it analyzes ODEs, dynamical systems, population models, and physical systems that are not exactly solvable.
 
 \term{Quantifier}
-A logical operator such as $\forall$ (for all) or $\exists$ (there exists) governing the scope of a variable in a formula.
+A quantifier specifies how widely a statement applies. The universal quantifier $\forall$ means “for every,” and the existential quantifier $\exists$ means “for at least one.” \par\noindent\textbf{Applications:} quantifiers express mathematical definitions, theorems, specifications, and computer-verification statements.
 
 \term{Quantile}
-A cut point dividing the range of a probability distribution into contiguous intervals with equal probabilities. The 0.5 quantile is the median; 0.25 and 0.75 quantiles are the first and third quartiles.
+A quantile is a cutoff dividing a distribution so that a specified fraction of observations lies below it. The $0.5$ quantile is the median, and the $0.25$ and $0.75$ quantiles define the quartiles. \par\noindent\textbf{Applications:} quantiles summarize skewed data, define thresholds, and support robust statistics.
 
 \term{Quantile Function}
-The inverse of the cumulative distribution function, $Q(p) = \inf\{x : F(x) \geq p\}$.
+The quantile function is $Q(p)=\inf\{x:F(x)\geq p\}$, where $F$ is a cumulative distribution function. It returns a value below which a fraction $p$ of the distribution lies. \par\noindent\textbf{Applications:} quantile functions support simulation, risk thresholds, confidence intervals, and robust summaries.
 
 \term{Quantitative}
-Relating to amounts and measurement, expressed numerically.
+Quantitative information is expressed through numbers, measurements, or numerical relationships. \par\noindent\textbf{Applications:} quantitative descriptions support modeling, comparison, prediction, experiments, and data-driven decision-making.
 
 \term{Quantitative Analysis}
-The branch of mathematics and statistics that uses numerical data and mathematical models to identify patterns and make predictions.
+Quantitative analysis uses numerical data, mathematical models, and statistical methods to describe patterns and make predictions. \par\noindent\textbf{Applications:} it supports finance, engineering, epidemiology, experimentation, and data-driven policy.
 
 \term{Quantity}
-A measurable or countable amount; the object of study of arithmetic and algebra.
+A quantity is a measurable or countable amount, such as length, mass, probability, or number. Quantities may be represented by numbers with units or by abstract algebraic elements. \par\noindent\textbf{Applications:} quantities provide the variables and parameters used in scientific models and measurements.
 
 \term{Quantum State}
-A unit vector (or a ray in a Hilbert space) that completely describes the state of a quantum system. The probability of measuring an observable is given by the Born rule $|\langle \psi | \phi \rangle|^2$.
+A quantum state is a unit vector, or physically a ray, in a Hilbert space. Measurement probabilities are determined by squared inner products, such as $|\langle\psi\mid\phi\rangle|^2$. \par\noindent\textbf{Applications:} quantum states describe qubits, atoms, molecules, quantum computation, and quantum communication.
 
 \term{Quarter}
-One fourth of a whole, or a quadrant of the plane.
+A quarter is one fourth of a whole. In the plane, a quadrant is one of the four regions determined by the coordinate axes. \par\noindent\textbf{Applications:} quarters and quadrants organize fractions, angles, coordinate geometry, and seasonal or financial data.
 
 \term{Quarter-turn Symmetry}
-A rotational symmetry of $90^\circ$ (or $\pi/2$ radians) about a center point. An object with quarter-turn symmetry is invariant under the group $\mathbb{Z}/4\mathbb{Z}$.
+Quarter-turn symmetry means that a $90$-degree rotation leaves an object unchanged. Repeating the rotation gives the cyclic group of order four. \par\noindent\textbf{Applications:} this symmetry appears in tilings, logos, crystal patterns, image processing, and geometric design.
 
 \term{Quasicoherent Sheaf}
-An $\mathcal{O}_X$-module on a scheme $X$ that is locally a cokernel of a morphism of free sheaves, equivalently locally associated to a module over an affine ring. The category of quasicoherent sheaves is closed under kernels, cokernels, and extensions, and global sections are computed via Čech cohomology. It includes ideal sheaves and structure sheaves, and contains the coherent sheaves as a subcategory.
+A quasicoherent sheaf is a sheaf of modules that locally corresponds to a module over the coordinate ring of an affine piece. It is the natural sheaf-theoretic form of algebraic data on a scheme. \par\noindent\textbf{Applications:} quasicoherent sheaves describe functions, ideals, vector bundles, and cohomology in algebraic geometry.
 
 \term{Quasiconcave Function}
-A function $f$ whose superlevel sets $\{x : f(x) \geq \alpha\}$ are all convex. It is the negative of a quasi-convex function.
+A function is quasiconcave when every superlevel set $\{x:f(x)\geq\alpha\}$ is convex. It is useful for functions whose high-value regions have no gaps. \par\noindent\textbf{Applications:} quasiconcavity appears in economics, utility theory, location problems, and optimization.
 
 \term{Quasiconformal Map}
-A homeomorphism between domains in the complex plane that generalizes conformal maps by allowing a bounded amount of "eccentricity." It maps infinitesimal circles to infinitesimal ellipses with bounded aspect ratio.
+A quasiconformal map is a homeomorphism that may distort angles but has uniformly bounded eccentricity. Infinitesimal circles become ellipses whose axis ratio is controlled. \par\noindent\textbf{Applications:} quasiconformal maps are used in complex analysis, geometric topology, image registration, and shape deformation.
 
 \term{Quasi-convex Function}
-A function $f$ whose sublevel sets $\{x : f(x) \leq \alpha\}$ are all convex sets. Every convex function is quasi-convex, but the converse is not true. They are important in optimization for functions that may not be strictly convex.
+A function is quasiconvex when every sublevel set $\{x:f(x)\leq\alpha\}$ is convex. Every convex function is quasiconvex, but not conversely. \par\noindent\textbf{Applications:} quasiconvexity supports optimization when objectives are not strictly convex.
 
 \term{Quasigroup}
-A set with a binary operation in which division is always possible, so equations $a \ast x = b$ are uniquely solvable.
+A quasigroup is a set with a binary operation for which both $a*x=b$ and $y*a=b$ have unique solutions. It need not be associative or have an identity. \par\noindent\textbf{Applications:} quasigroups appear in algebraic combinatorics, Latin squares, coding, and cryptographic constructions.
 
 \term{Quasi-isomorphism}
-A morphism between chain complexes that induces an isomorphism on all homology groups. In the derived category, quasi-isomorphisms are inverted to treat complexes as equivalent if they have the same homology.
+A quasi-isomorphism is a map of chain complexes that induces isomorphisms on all homology groups. Derived categories invert these maps, treating complexes with the same homological information as equivalent. \par\noindent\textbf{Applications:} quasi-isomorphisms simplify homological algebra, derived geometry, and algebraic topology.
 
 \term{Quasilinear}
-An equation linear in its highest-order derivative terms but nonlinear in the lower terms.
+A quasilinear differential equation is linear in its highest-order derivatives but may be nonlinear in lower-order terms or coefficients. \par\noindent\textbf{Applications:} quasilinear equations model fluid flow, waves, transport, and nonlinear continuum mechanics.
 
 \term{Quasi-metric Space}
-A generalization of a metric space where the symmetry axiom $d(x,y) = d(y,x)$ is dropped. These are used in the study of asymmetric distance, such as walking uphill vs. downhill.
+A quasi-metric space has a distance-like function satisfying nonnegativity, identity, and the triangle inequality but not necessarily symmetry. Thus traveling from $x$ to $y$ may have a different cost from traveling back. \par\noindent\textbf{Applications:} quasi-metrics model directed networks, transportation costs, computer science, and asymmetric geometry.
 
 \term{Quasi-Newton Method}
-An optimization method that approximates the Hessian from gradient differences, such as the BFGS method.
+A quasi-Newton method updates an approximation to the Hessian or its inverse using changes in gradients, rather than computing second derivatives directly. BFGS is a standard example. \par\noindent\textbf{Applications:} quasi-Newton methods solve smooth optimization problems in statistics, machine learning, and engineering.
 
 \term{Quasi-periodic Function}
-A function that can be approximated by a finite sum of periodic functions with incommensurate frequencies. Unlike periodic functions, they never exactly repeat, but they return arbitrarily close to their initial values.
+A quasiperiodic function combines oscillations with incommensurate frequencies. It does not repeat exactly, but its values can return arbitrarily close to previous states. \par\noindent\textbf{Applications:} quasiperiodicity models celestial motion, oscillators, solid-state systems, and dynamical systems.
 
 \term{Quasi-random Sequence}
-A sequence of points in a unit cube that is more uniformly distributed than a random sequence. Low-discrepancy sequences (like the Sobol or Halton sequences) are used in Quasi-Monte Carlo integration.
+A quasirandom sequence is a low-discrepancy sequence designed to cover a region uniformly rather than randomly. Sobol and Halton sequences are common examples. \par\noindent\textbf{Applications:} quasirandom sequences improve numerical integration, uncertainty quantification, finance, and computer graphics.
 
 \term{Quaternion Algebra}
-The study of algebras over a field that generalize the quaternions. A quaternion algebra is a central simple algebra of dimension 4 over its center.
+A quaternion algebra is a four-dimensional central simple algebra over its center that generalizes the usual quaternions. Its multiplication may be described by generators and relations, and it need not be a division algebra over every field. \par\noindent\textbf{Applications:} quaternion algebras are used in number theory, quadratic forms, arithmetic geometry, and the study of rotations.
 
 \term{Quaternion Norm}
-The norm of a quaternion $q = a + bi + cj + dk$ is $|q| = \sqrt{a^2 + b^2 + c^2 + d^2}$. It is a multiplicative norm, meaning $|q_1 q_2| = |q_1| |q_2|$.
+A quaternion norm is defined for $q=a+bi+cj+dk$ by $|q|=\sqrt{a^2+b^2+c^2+d^2}$. It is multiplicative: $|q_1q_2|=|q_1||q_2|$. \par\noindent\textbf{Applications:} the norm supports inversion, numerical stability, and rotation computations.
 
 \term{Quaternions}
-A non-commutative division algebra $\mathbb{H}$ extending complex numbers, with basis $\{1, i, j, k\}$ such that $i^2 = j^2 = k^2 = ijk = -1$. They are used to represent 3D rotations and are fundamental in computer graphics and theoretical physics.
+A quaternion is an element of the noncommutative division algebra with basis $1,i,j,k$ and relations $i^2=j^2=k^2=ijk=-1$. Unit quaternions represent spatial rotations without the singularities of some angle-coordinate systems. \par\noindent\textbf{Applications:} quaternions are used in computer graphics, robotics, aerospace, and physics.
 
 \term{Quine}
-A program that outputs a copy of its own source code as its complete output, with no external input. Quines exist for any sufficiently expressive programming language and are related to fixed-point arguments such as the recursion theorem in computability theory; named after W. V. O. Quine, echoing his work on self-reference.
+A quine is a program that prints its own source code without reading it as external input. It is constructed using quotation and self-reference. \par\noindent\textbf{Applications:} quines illustrate recursion, fixed-point theorems, programming-language semantics, and computability.
 
 \term{Quintic}
-A polynomial or equation of degree 5; the general quintic is not solvable by radicals.
+A quintic is a polynomial of degree five. Some quintics are solvable by radicals, but the general quintic is not. \par\noindent\textbf{Applications:} quintics illustrate polynomial classification and the role of Galois groups.
 
 \term{Quintic Equation}
-A polynomial equation of degree five. The Abel-Ruffini theorem states that there is no general algebraic solution (using radicals) for all quintic equations, unlike quadratic, cubic, and quartic equations.
+A quintic equation is a polynomial equation of degree five. The Abel--Ruffini theorem states that no formula using radicals solves every quintic, although particular quintics can be solvable. \par\noindent\textbf{Applications:} quintics illustrate the limits of symbolic algebra and the role of Galois theory in polynomial equations.
 
 \term{Quotient Group}
-Given a group $G$ and a normal subgroup $N$, the quotient group $G/N$ is the set of cosets of $N$ in $G$ with the operation $(aN)(bN) = (ab)N$. It represents the structure of $G$ "modulo" $N$.
+If $N$ is normal in $G$, the quotient group $G/N$ consists of cosets with $(aN)(bN)=(ab)N$. It treats elements differing by $N$ as equivalent. \par\noindent\textbf{Applications:} quotient groups describe reduced symmetries, congruences, and the structure of homomorphisms.
 
 \term{Quotient Manifold}
-A manifold formed by the quotient of a manifold $M$ by a discrete group $G$ acting freely and properly discontinuously. The resulting space $M/G$ inherits a smooth structure.
+A quotient manifold is formed by identifying points of a manifold under a free, properly discontinuous group action. The quotient inherits a smooth structure, as in a torus obtained from a plane by lattice translations. \par\noindent\textbf{Applications:} quotient manifolds model periodic geometry, covering spaces, and symmetry reductions.
 
 \term{Quotient Map}
-A surjective map $f: X \to Y$ such that a subset $U \subseteq Y$ is open iff $f^{-1}(U)$ is open in $X$. Every quotient map is continuous and open-ish, and it is used to define the quotient topology.
+A quotient map is a surjective map $f:X\to Y$ such that $U\subseteq Y$ is open exactly when $f^{-1}(U)$ is open in $X$. It creates the quotient topology and is continuous, but need not be open. \par\noindent\textbf{Applications:} quotient maps construct circles, projective spaces, and glued topological spaces.
 
 \term{Quotient Ring}
-For a ring $R$ and a two-sided ideal $I$, the quotient ring $R/I$ is the set of cosets $\{r + I : r \in R\}$. It allows for the construction of new rings, such as the field $\mathbb{C} \cong \mathbb{R}[x]/(x^2 + 1)$.
+For a two-sided ideal $I$ of a ring $R$, the quotient ring $R/I$ consists of cosets $r+I$ with induced addition and multiplication. For example, $\mathbb C\cong\mathbb R[x]/(x^2+1)$. \par\noindent\textbf{Applications:} quotient rings encode congruences, construct fields, and define algebraic varieties.
 
 \term{Quotient Space}
-In topology, the space $X/\sim$ formed by identifying points of $X$ according to an equivalence relation $\sim$. The quotient map $q: X \to X/\sim$ is continuous, and the space inherits the quotient topology.
+A quotient space $X/{\sim}$ is formed by identifying points related by an equivalence relation. The quotient map sends each point to its equivalence class. \par\noindent\textbf{Applications:} quotient spaces construct tori, projective spaces, and spaces obtained by gluing boundaries.
 
 \term{Quotient Topology}
-The finest topology on the quotient of a space by an equivalence relation that makes the quotient map continuous.
+The quotient topology on $Y=X/{\sim}$ is the finest topology for which the quotient map $q:X\to Y$ is continuous; equivalently, $U\subseteq Y$ is open when $q^{-1}(U)$ is open. \par\noindent\textbf{Applications:} it formalizes gluing and identification in topology and geometry.

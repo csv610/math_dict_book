@@ -2,127 +2,127 @@
 \label{chap:b}
 
 \term{Backward Stability}
-A numerical algorithm is backward stable if its computed answer is the exact answer to a nearby problem. In symbols, the output for input $x$ is the exact result for $x+\Delta x$, where $\|\Delta x\|$ is small compared with $\|x\|$. Applications: backward stability explains why matrix algorithms can be trusted even when round-off error is unavoidable.
+A numerical algorithm is backward stable if its computed answer is the exact answer to a nearby problem. In symbols, the output for input $x$ is the exact result for $x+\Delta x$, where $\|\Delta x\|$ is small compared with $\|x\|$. \par\noindent\textbf{Applications:} backward stability explains why matrix algorithms can be trusted even when round-off error is unavoidable.
 
 \term{Baire Category Theorem}
-The Baire category theorem says that a complete metric space cannot be built as a countable union of thin sets, called nowhere-dense sets. Equivalently, a countable intersection of open dense sets is dense. Applications: it proves that certain objects exist in analysis and supports the uniform boundedness and open mapping theorems.
+The Baire category theorem says that a complete metric space cannot be built as a countable union of thin sets, called nowhere-dense sets. Equivalently, a countable intersection of open dense sets is dense. \par\noindent\textbf{Applications:} it proves that certain objects exist in analysis and supports the uniform boundedness and open mapping theorems.
 
 \term{Banach Fixed-Point Theorem}
-If a map on a complete metric space brings points strictly closer together, then it has exactly one fixed point, and repeated iteration converges to it. This is also called the contraction mapping principle. Applications: it proves existence and uniqueness of solutions to equations and gives a practical iteration method for finding them.
+If a map on a complete metric space brings points strictly closer together, then it has exactly one fixed point, and repeated iteration converges to it. This is also called the contraction mapping principle. \par\noindent\textbf{Applications:} it proves existence and uniqueness of solutions to equations and gives a practical iteration method for finding them.
 
 \term{Banach Space}
-A Banach space is a normed vector space in which every Cauchy sequence converges to a point in the space. Completeness means that a calculation whose successive approximations become arbitrarily close does not leave the space. Applications: Banach spaces provide the setting for infinite-dimensional approximation, integral equations, optimization, and differential equations.
+A Banach space is a normed vector space in which every Cauchy sequence converges to a point in the space. Completeness means that a calculation whose successive approximations become arbitrarily close does not leave the space. \par\noindent\textbf{Applications:} Banach spaces provide the setting for infinite-dimensional approximation, integral equations, optimization, and differential equations.
 
 \term{Banach--Steinhaus Theorem}
-The uniform boundedness principle says that a family of bounded linear operators on a Banach space is uniformly bounded on the unit ball if each individual vector is sent to a bounded family of values. Its proof uses the Baire category theorem. Applications: it prevents hidden blow-up in families of approximation operators and is useful in functional analysis and numerical methods.
+The uniform boundedness principle says that a family of bounded linear operators on a Banach space is uniformly bounded on the unit ball if each individual vector is sent to a bounded family of values. Its proof uses the Baire category theorem. \par\noindent\textbf{Applications:} it prevents hidden blow-up in families of approximation operators and is useful in functional analysis and numerical methods.
 
 \term{Banach--Tarski Paradox}
-Using a finite number of non-measurable pieces and rigid motions, a solid ball in three-dimensional space can be reassembled into two balls of the same size. This does not violate conservation of volume because the pieces have no well-defined volume; the construction uses the axiom of choice. Applications: the paradox clarifies the limits of assigning volume to arbitrary sets and the role of symmetry in measure theory.
+Using a finite number of non-measurable pieces and rigid motions, a solid ball in three-dimensional space can be reassembled into two balls of the same size. This does not violate conservation of volume because the pieces have no well-defined volume; the construction uses the axiom of choice. \par\noindent\textbf{Applications:} the paradox clarifies the limits of assigning volume to arbitrary sets and the role of symmetry in measure theory.
 
 \term{Base Case}
-The base case is the first statement checked in a proof by mathematical induction. After it is established, an induction step shows that truth for one integer implies truth for the next. Applications: base cases are essential in recursive algorithms, proofs about sequences, and definitions of data structures.
+The base case is the first statement checked in a proof by mathematical induction. After it is established, an induction step shows that truth for one integer implies truth for the next. \par\noindent\textbf{Applications:} base cases are essential in recursive algorithms, proofs about sequences, and definitions of data structures.
 
 \term{Basis}
-A basis of a vector space is a linearly independent set that spans the whole space. Every vector has one and only one finite linear combination of basis vectors. Applications: coordinates, Fourier expansions, finite-element methods, and computer graphics all represent objects using a suitable basis.
+A basis of a vector space is a linearly independent set that spans the whole space. Every vector has one and only one finite linear combination of basis vectors. \par\noindent\textbf{Applications:} coordinates, Fourier expansions, finite-element methods, and computer graphics all represent objects using a suitable basis.
 
 \term{Bayes' Theorem}
-Bayes' theorem relates conditional probabilities: $P(A\mid B)=P(B\mid A)P(A)/P(B)$ when $P(B)>0$. It updates the probability of a hypothesis after new evidence is observed. Applications: Bayesian statistics, medical diagnosis, spam filtering, fault detection, and machine learning use this update rule.
+Bayes' theorem relates conditional probabilities: $P(A\mid B)=P(B\mid A)P(A)/P(B)$ when $P(B)>0$. It updates the probability of a hypothesis after new evidence is observed. \par\noindent\textbf{Applications:} Bayesian statistics, medical diagnosis, spam filtering, fault detection, and machine learning use this update rule.
 
 \term{Bernoulli Numbers}
-The Bernoulli numbers $B_n$ are defined by $x/(e^x-1)=\sum_{n\ge0}B_nx^n/n!$. They occur in formulas for sums of powers and in the Euler--Maclaurin formula. Applications: they improve numerical integration and connect combinatorics with special values of the Riemann zeta function.
+The Bernoulli numbers $B_n$ are defined by $x/(e^x-1)=\sum_{n\ge0}B_nx^n/n!$. They occur in formulas for sums of powers and in the Euler--Maclaurin formula. \par\noindent\textbf{Applications:} they improve numerical integration and connect combinatorics with special values of the Riemann zeta function.
 
 \term{Bernoulli Trial}
-A Bernoulli trial is an experiment with two possible outcomes, usually called success and failure, with probabilities $p$ and $1-p$. Independent repetitions form a Bernoulli process. Applications: Bernoulli trials model yes/no tests, defective/nondefective items, clicks, infections, and binary classification outcomes.
+A Bernoulli trial is an experiment with two possible outcomes, usually called success and failure, with probabilities $p$ and $1-p$. Independent repetitions form a Bernoulli process. \par\noindent\textbf{Applications:} Bernoulli trials model yes/no tests, defective/nondefective items, clicks, infections, and binary classification outcomes.
 
 \term{Berry's Paradox}
-Berry's paradox arises from the phrase “the smallest positive integer not definable in fewer than twenty words.” The phrase appears to define such an integer in fewer than twenty words, creating a contradiction between informal language and formal definitions. Applications: it motivates precise languages in logic, computer science, and the study of what can be described or computed.
+Berry's paradox arises from the phrase “the smallest positive integer not definable in fewer than twenty words.” The phrase appears to define such an integer in fewer than twenty words, creating a contradiction between informal language and formal definitions. \par\noindent\textbf{Applications:} it motivates precise languages in logic, computer science, and the study of what can be described or computed.
 
 \term{Bertrand's Paradox}
-Bertrand's paradox shows that the probability of a randomly chosen chord of a circle being longer than a side of an inscribed equilateral triangle depends on how “random chord” is defined. Applications: it teaches that a probability model must specify its sampling procedure, a principle important in statistics, simulation, and scientific experiments.
+Bertrand's paradox shows that the probability of a randomly chosen chord of a circle being longer than a side of an inscribed equilateral triangle depends on how “random chord” is defined. \par\noindent\textbf{Applications:} it teaches that a probability model must specify its sampling procedure, a principle important in statistics, simulation, and scientific experiments.
 
 \term{Besov Space}
-Besov spaces $B^s_{p,q}$ measure the smoothness of functions using how their detail changes across scales. The parameter $s$ describes smoothness, while $p$ and $q$ describe size and how different scales are combined; Sobolev spaces are important special cases. Applications: Besov spaces are used in partial differential equations, wavelet compression, image denoising, and nonlinear approximation.
+Besov spaces $B^s_{p,q}$ measure the smoothness of functions using how their detail changes across scales. The parameter $s$ describes smoothness, while $p$ and $q$ describe size and how different scales are combined; Sobolev spaces are important special cases. \par\noindent\textbf{Applications:} Besov spaces are used in partial differential equations, wavelet compression, image denoising, and nonlinear approximation.
 
 \term{Bessel Function}
-Bessel functions solve the differential equation $x^2y''+xy'+(x^2-n^2)y=0$. The functions $J_n$ and $Y_n$ are its standard independent solutions. Applications: they describe vibrations of circular membranes, heat flow in cylinders, electromagnetic waves, and acoustic modes.
+Bessel functions solve the differential equation $x^2y''+xy'+(x^2-n^2)y=0$. The functions $J_n$ and $Y_n$ are its standard independent solutions. \par\noindent\textbf{Applications:} they describe vibrations of circular membranes, heat flow in cylinders, electromagnetic waves, and acoustic modes.
 
 \term{Bijection}
-A bijection is a function that is both one-to-one and onto: every input has a different output, and every target is reached exactly once. A bijection proves that two sets have the same number of elements, even when they are infinite. Applications: bijections are used in counting, data encoding, coordinate changes, and proofs about infinite sets.
+A bijection is a function that is both one-to-one and onto: every input has a different output, and every target is reached exactly once. A bijection proves that two sets have the same number of elements, even when they are infinite. \par\noindent\textbf{Applications:} bijections are used in counting, data encoding, coordinate changes, and proofs about infinite sets.
 
 \term{Bilinear Form}
-A bilinear form is a function $B:V\times W\to k$ that is linear in each input when the other is held fixed. Inner products and matrix expressions $x^TAy$ are examples. Applications: bilinear forms describe energy, angles, quadratic optimization, finite-element models, and the geometry of conic sections.
+A bilinear form is a function $B:V\times W\to k$ that is linear in each input when the other is held fixed. Inner products and matrix expressions $x^TAy$ are examples. \par\noindent\textbf{Applications:} bilinear forms describe energy, angles, quadratic optimization, finite-element models, and the geometry of conic sections.
 
 \term{Binary Operation}
-A binary operation combines two elements of a set and returns an element of the same set: $*:S\times S\to S$. Addition and multiplication are examples, but the operation need not be commutative or associative. Applications: binary operations define the basic structure of groups, rings, logic gates, and algebraic data types.
+A binary operation combines two elements of a set and returns an element of the same set: $*:S\times S\to S$. Addition and multiplication are examples, but the operation need not be commutative or associative. \par\noindent\textbf{Applications:} binary operations define the basic structure of groups, rings, logic gates, and algebraic data types.
 
 \term{Binary Relation}
-A binary relation between sets $A$ and $B$ is a collection of ordered pairs $(a,b)$ describing which elements are related. A function is a special relation in which each $a$ is paired with exactly one $b$. Applications: relations represent networks, database links, ordering, logical statements, and allowable transitions in algorithms.
+A binary relation between sets $A$ and $B$ is a collection of ordered pairs $(a,b)$ describing which elements are related. A function is a special relation in which each $a$ is paired with exactly one $b$. \par\noindent\textbf{Applications:} relations represent networks, database links, ordering, logical statements, and allowable transitions in algorithms.
 
 \term{Binomial Coefficient}
-The binomial coefficient $\binom nk=n!/[k!(n-k)!]$ counts the ways to choose $k$ objects from $n$ without regard to order. It is also the coefficient of $x^ky^{n-k}$ in $(x+y)^n$. Applications: binomial coefficients occur in probability, combinatorics, polynomial expansion, and error-correcting codes.
+The binomial coefficient $\binom nk=n!/[k!(n-k)!]$ counts the ways to choose $k$ objects from $n$ without regard to order. It is also the coefficient of $x^ky^{n-k}$ in $(x+y)^n$. \par\noindent\textbf{Applications:} binomial coefficients occur in probability, combinatorics, polynomial expansion, and error-correcting codes.
 
 \term{Binomial Distribution}
-The binomial distribution gives the probability of $k$ successes in $n$ independent Bernoulli trials: $P(X=k)=\binom nkp^k(1-p)^{n-k}$. Its parameters are the number of trials $n$ and success probability $p$. Applications: it models counts such as successful tests, conversions, defects, and disease cases in a fixed sample.
+The binomial distribution gives the probability of $k$ successes in $n$ independent Bernoulli trials: $P(X=k)=\binom nkp^k(1-p)^{n-k}$. Its parameters are the number of trials $n$ and success probability $p$. \par\noindent\textbf{Applications:} it models counts such as successful tests, conversions, defects, and disease cases in a fixed sample.
 
 \term{Binomial Theorem}
-The binomial theorem expands $(x+y)^n$ as $\sum_{k=0}^n\binom nkx^{n-k}y^k$. It converts a power of a sum into a sum of simpler terms. Applications: it is used in algebra, probability, numerical approximations, and the derivation of many combinatorial identities.
+The binomial theorem expands $(x+y)^n$ as $\sum_{k=0}^n\binom nkx^{n-k}y^k$. It converts a power of a sum into a sum of simpler terms. \par\noindent\textbf{Applications:} it is used in algebra, probability, numerical approximations, and the derivation of many combinatorial identities.
 
 \term{Bipartite Graph}
-A bipartite graph has its vertices divided into two sets, with every edge joining the two different sets. It has no odd-length cycle. Applications: bipartite graphs model job assignments, matching students to projects, network flow, recommendation systems, and molecular structures.
+A bipartite graph has its vertices divided into two sets, with every edge joining the two different sets. It has no odd-length cycle. \par\noindent\textbf{Applications:} bipartite graphs model job assignments, matching students to projects, network flow, recommendation systems, and molecular structures.
 
 \term{Birch--Swinnerton-Dyer Conjecture}
-For an elliptic curve $E$ over $\mathbb Q$, this conjecture relates the number of independent rational points on $E$ to how many times its $L$-function vanishes at $s=1$. It also predicts the leading coefficient using arithmetic quantities such as the regulator and Tate--Shafarevich group. Applications: it links analytic formulas with rational solutions and guides research in arithmetic geometry.
+For an elliptic curve $E$ over $\mathbb Q$, this conjecture relates the number of independent rational points on $E$ to how many times its $L$-function vanishes at $s=1$. It also predicts the leading coefficient using arithmetic quantities such as the regulator and Tate--Shafarevich group. \par\noindent\textbf{Applications:} it links analytic formulas with rational solutions and guides research in arithmetic geometry.
 
 \term{Birthday Paradox}
-In a group of 23 people, the probability that two share a birthday is already greater than $1/2$, assuming 365 equally likely birthdays. The probability of no match among $n$ people is $\prod_{k=0}^{n-1}(365-k)/365$. Applications: the effect is important in collision probabilities, hash tables, computer security, and the design of identifiers.
+In a group of 23 people, the probability that two share a birthday is already greater than $1/2$, assuming 365 equally likely birthdays. The probability of no match among $n$ people is $\prod_{k=0}^{n-1}(365-k)/365$. \par\noindent\textbf{Applications:} the effect is important in collision probabilities, hash tables, computer security, and the design of identifiers.
 
 \term{Borel--Cantelli Lemmas}
-If events $E_n$ satisfy $\sum P(E_n)<\infty$, then with probability one only finitely many of them occur. If the events are independent and $\sum P(E_n)=\infty$, then infinitely many occur with probability one. Applications: these lemmas test whether rare events eventually stop occurring and help prove convergence in probability theory.
+If events $E_n$ satisfy $\sum P(E_n)<\infty$, then with probability one only finitely many of them occur. If the events are independent and $\sum P(E_n)=\infty$, then infinitely many occur with probability one. \par\noindent\textbf{Applications:} these lemmas test whether rare events eventually stop occurring and help prove convergence in probability theory.
 
 \term{Borel Measure}
-A Borel measure assigns sizes or probabilities to Borel sets, the sets generated from open sets by countable unions, intersections, and complements. On familiar spaces such as $\mathbb R^n$, it includes the usual notions of length, area, and volume. Applications: Borel measures form the foundation of probability, integration, and geometric measurement.
+A Borel measure assigns sizes or probabilities to Borel sets, the sets generated from open sets by countable unions, intersections, and complements. On familiar spaces such as $\mathbb R^n$, it includes the usual notions of length, area, and volume. \par\noindent\textbf{Applications:} Borel measures form the foundation of probability, integration, and geometric measurement.
 
 \term{Borel Set}
-A Borel set is built from open sets using countable unions, countable intersections, and complements. The Borel sets form the smallest $\sigma$-algebra containing all open sets. Applications: intervals, regions, and countable combinations of them can be assigned probabilities or measures in analysis and statistics.
+A Borel set is built from open sets using countable unions, countable intersections, and complements. The Borel sets form the smallest $\sigma$-algebra containing all open sets. \par\noindent\textbf{Applications:} intervals, regions, and countable combinations of them can be assigned probabilities or measures in analysis and statistics.
 
 \term{Borsuk--Ulam Theorem}
-Every continuous map from the sphere $S^n$ to $\mathbb R^n$ gives the same value at some pair of opposite points. For $n=2$, one consequence is that at some pair of antipodal points on Earth, temperature and atmospheric pressure are simultaneously equal. Applications: the theorem supports fair-division results such as the ham-sandwich theorem and studies of continuous data on spheres.
+Every continuous map from the sphere $S^n$ to $\mathbb R^n$ gives the same value at some pair of opposite points. For $n=2$, one consequence is that at some pair of antipodal points on Earth, temperature and atmospheric pressure are simultaneously equal. \par\noindent\textbf{Applications:} the theorem supports fair-division results such as the ham-sandwich theorem and studies of continuous data on spheres.
 
 \term{Bound}
-A bound is a number that limits a set, sequence, or function from above or below. A set is bounded if it has both an upper and a lower bound. Applications: bounds control error, guarantee stability, establish convergence, and quantify worst-case performance in algorithms.
+A bound is a number that limits a set, sequence, or function from above or below. A set is bounded if it has both an upper and a lower bound. \par\noindent\textbf{Applications:} bounds control error, guarantee stability, establish convergence, and quantify worst-case performance in algorithms.
 
 \term{Boundary}
-The boundary of a set $S$ consists of points whose every neighborhood meets both $S$ and its complement. For an interval $[0,1]$, the boundary is $\{0,1\}$. Applications: boundaries specify interfaces, constraints, and edge conditions in geometry, image processing, and differential equations.
+The boundary of a set $S$ consists of points whose every neighborhood meets both $S$ and its complement. For an interval $[0,1]$, the boundary is $\{0,1\}$. \par\noindent\textbf{Applications:} boundaries specify interfaces, constraints, and edge conditions in geometry, image processing, and differential equations.
 
 \term{Boundary-value Problem}
-A boundary-value problem asks for a solution of a differential equation subject to conditions on the boundary of a domain, such as fixed values (Dirichlet conditions) or fixed normal derivatives (Neumann conditions). Applications: it models temperature in a solid, vibration of a membrane, fluid flow, and electrostatic fields.
+A boundary-value problem asks for a solution of a differential equation subject to conditions on the boundary of a domain, such as fixed values (Dirichlet conditions) or fixed normal derivatives (Neumann conditions). \par\noindent\textbf{Applications:} it models temperature in a solid, vibration of a membrane, fluid flow, and electrostatic fields.
 
 \term{Bounded Function}
-A function is bounded if all its values lie between two fixed numbers: $m\le f(x)\le M$. For example, sine is bounded between $-1$ and $1$. Applications: boundedness prevents uncontrolled output and is used in stability analysis, probability, optimization, and signal processing.
+A function is bounded if all its values lie between two fixed numbers: $m\le f(x)\le M$. For example, sine is bounded between $-1$ and $1$. \par\noindent\textbf{Applications:} boundedness prevents uncontrolled output and is used in stability analysis, probability, optimization, and signal processing.
 
 \term{Bounded Linear Operator}
-A linear map $T:X\to Y$ between normed spaces is bounded if $\|Tx\|\le C\|x\|$ for some constant $C$. For linear maps, boundedness is equivalent to continuity, and $\|T\|=\sup_{\|x\|\le1}\|Tx\|$ measures the largest amplification. Applications: operator norms quantify sensitivity in differential equations, numerical linear algebra, and signal transformations.
+A linear map $T:X\to Y$ between normed spaces is bounded if $\|Tx\|\le C\|x\|$ for some constant $C$. For linear maps, boundedness is equivalent to continuity, and $\|T\|=\sup_{\|x\|\le1}\|Tx\|$ measures the largest amplification. \par\noindent\textbf{Applications:} operator norms quantify sensitivity in differential equations, numerical linear algebra, and signal transformations.
 
 \term{Boy or Girl Paradox}
-The probability that two children are both girls depends on how the information “at least one is a girl” was obtained. Under the usual equally likely interpretation it is $1/3$, while choosing a random child and finding that child is a girl gives $1/2$. Applications: the paradox teaches careful conditioning, which is essential in medical testing, surveys, and statistical reporting.
+The probability that two children are both girls depends on how the information “at least one is a girl” was obtained. Under the usual equally likely interpretation it is $1/3$, while choosing a random child and finding that child is a girl gives $1/2$. \par\noindent\textbf{Applications:} the paradox teaches careful conditioning, which is essential in medical testing, surveys, and statistical reporting.
 
 \term{Braess's Paradox}
-Adding a road to a congested network can make every traveller's journey longer because selfish route choices can create a worse equilibrium. Applications: the paradox informs traffic planning, communication networks, supply chains, and the design of systems where local decisions affect global performance.
+Adding a road to a congested network can make every traveller's journey longer because selfish route choices can create a worse equilibrium. \par\noindent\textbf{Applications:} the paradox informs traffic planning, communication networks, supply chains, and the design of systems where local decisions affect global performance.
 
 \term{Branch Point}
-A branch point is a point around which a multi-valued complex function, such as $\sqrt z$ or $\log z$, cannot be made single-valued and continuous without choosing a branch cut. Going once around the point may change the value. Applications: branch points occur in complex integration, wave propagation, fluid flow, and mathematical physics.
+A branch point is a point around which a multi-valued complex function, such as $\sqrt z$ or $\log z$, cannot be made single-valued and continuous without choosing a branch cut. Going once around the point may change the value. \par\noindent\textbf{Applications:} branch points occur in complex integration, wave propagation, fluid flow, and mathematical physics.
 
 \term{Brouwer Fixed-Point Theorem}
-Every continuous map from a closed ball in $\mathbb R^n$ to itself has at least one fixed point $f(x)=x$. Continuity and the fact that the map stays inside the ball are essential. Applications: the theorem proves equilibrium existence in economics and game theory and helps establish solutions of nonlinear equations.
+Every continuous map from a closed ball in $\mathbb R^n$ to itself has at least one fixed point $f(x)=x$. Continuity and the fact that the map stays inside the ball are essential. \par\noindent\textbf{Applications:} the theorem proves equilibrium existence in economics and game theory and helps establish solutions of nonlinear equations.
 
 \term{Brownian Motion}
-Brownian motion is a continuous random process whose independent increments are normally distributed and whose variance grows with elapsed time. It is the mathematical model of random diffusion. Applications: it models molecular motion, particle diffusion, financial price models, heat transport, and stochastic differential equations.
+Brownian motion is a continuous random process whose independent increments are normally distributed and whose variance grows with elapsed time. It is the mathematical model of random diffusion. \par\noindent\textbf{Applications:} it models molecular motion, particle diffusion, financial price models, heat transport, and stochastic differential equations.
 
 \term{Burali--Forti Paradox}
-The collection of all ordinal numbers cannot be a set: if it were, it would have an ordinal larger than every ordinal in the collection, including itself. This contradiction helped motivate modern axioms that distinguish sets from proper classes. Applications: it clarifies the foundations of set theory and prevents uncontrolled definitions of “the set of everything.”
+The collection of all ordinal numbers cannot be a set: if it were, it would have an ordinal larger than every ordinal in the collection, including itself. This contradiction helped motivate modern axioms that distinguish sets from proper classes. \par\noindent\textbf{Applications:} it clarifies the foundations of set theory and prevents uncontrolled definitions of “the set of everything.”
 
 \term{Burnside's Lemma}
-If a finite group $G$ acts on a finite set $X$, the number of distinct orbits is $|X/G|=|G|^{-1}\sum_{g\in G}|X^g|$, where $X^g$ is the set fixed by $g$. It counts objects while treating symmetric copies as the same. Applications: it counts necklaces, colorings, chemical structures, and configurations under rotation or reflection.
+If a finite group $G$ acts on a finite set $X$, the number of distinct orbits is $|X/G|=|G|^{-1}\sum_{g\in G}|X^g|$, where $X^g$ is the set fixed by $g$. It counts objects while treating symmetric copies as the same. \par\noindent\textbf{Applications:} it counts necklaces, colorings, chemical structures, and configurations under rotation or reflection.
 
 \term{Busy Beaver}
-The Busy Beaver function gives the largest number of steps, or ones written, by any halting Turing machine with a fixed number of states. It grows faster than every computable function and therefore cannot itself be computed by an algorithm. Applications: Busy Beaver illustrates the limits of computation, undecidability, and the difference between simple programs and predictable behavior.
+The Busy Beaver function gives the largest number of steps, or ones written, by any halting Turing machine with a fixed number of states. It grows faster than every computable function and therefore cannot itself be computed by an algorithm. \par\noindent\textbf{Applications:} Busy Beaver illustrates the limits of computation, undecidability, and the difference between simple programs and predictable behavior.

@@ -2,118 +2,138 @@
 \label{chap:j}
 
 \term{Jacobi Identity}
-For a Lie algebra, $[X,[Y,Z]] + [Y,[Z,X]] + [Z,[X,Y]] = 0$.
+For a Lie algebra, the bracket satisfies
+\[
+[X,[Y,Z]]+[Y,[Z,X]]+[Z,[X,Y]]=0.
+\]
+This identity expresses the compatibility between the bracket and the action of one infinitesimal symmetry on another. \par\noindent\textbf{Applications:} it guarantees consistent Lie-algebra calculations and appears in rotations, differential equations, gauge theory, and mechanics.
 
 \term{Jacobi Symbol}
-A generalization of the Legendre symbol to composite denominators, written $(\frac{a}{n})$.
+The Jacobi symbol $(\frac an)$ extends the Legendre symbol to an odd positive composite denominator. If $n=\prod p_i^{e_i}$, it is defined as $\prod(\frac a{p_i})^{e_i}$. It is useful for testing some quadratic-residue conditions, although a value $1$ does not by itself guarantee that $a$ is a square modulo $n$. \par\noindent\textbf{Applications:} it supports modular arithmetic, primality tests, and computational number theory.
 
 \term{Jacobian Matrix}
-The matrix containing all first-order partial derivatives of a vector-valued function $f: \mathbb{R}^n \to \mathbb{R}^m$. It provides the best linear approximation to the function at a given point and is central to the Inverse Function Theorem.
+For $f:\mathbb R^n\to\mathbb R^m$, the Jacobian matrix contains the first partial derivatives, $J_f=(\partial f_i/\partial x_j)$. Near a point, it gives the best first-order linear approximation $f(x+h)\approx f(x)+J_f(x)h$. \par\noindent\textbf{Applications:} Jacobians are used in nonlinear equation solving, sensitivity analysis, coordinate changes, robotics, and machine learning.
 
 \term{Jacobian Determinant}
-The determinant of the Jacobian matrix for a map $f: \mathbb{R}^n \to \mathbb{R}^n$. It represents the local volume scaling factor of the transformation and is used in the change of variables formula for multiple integrals.
+The Jacobian determinant is $\det J_f$ for a map $f:\mathbb R^n\to\mathbb R^n$. Its absolute value gives the local volume-scaling factor. In a change of variables, $\int f(x)\,dx=\int f(g(u))|\det J_g(u)|\,du$. \par\noindent\textbf{Applications:} it is essential in multiple integration, probability-density transformations, mechanics, and coordinate geometry.
 
 \term{Jacobian Variety}
-An abelian variety attached to a compact Riemann surface, parametrizing line bundles of degree zero.
+The Jacobian of a compact Riemann surface or algebraic curve is an abelian variety whose points represent degree-zero line bundles, or divisor classes. For a genus-$g$ curve it has dimension $g$. \par\noindent\textbf{Applications:} Jacobians encode curve arithmetic, support the study of Abelian integrals, and are important in algebraic geometry and cryptography.
 
 \term{Jacobson Radical}
-The intersection of all maximal left ideals of a ring $R$, or equivalently, the intersection of all maximal right ideals. It consists of elements that annihilate all simple left $R$-modules. A ring is semisimple iff its Jacobson radical is zero.
+The Jacobson radical $J(R)$ is the intersection of all maximal left ideals of a ring; equivalently, it consists of elements acting as zero on every simple module. It measures the part of a ring invisible to simple representations. A ring is semisimple when its radical is zero. \par\noindent\textbf{Applications:} it separates solvable or nilpotent behavior from the semisimple part of an algebra.
 
 \term{Jaccard Index}
 A measure of similarity between two sets $A$ and $B$, defined as the size of the intersection divided by the size of the union: $J(A,B) = |A \cap B| / |A \cup B|$. Used extensively in ecology, data science, and clustering.
 
 \term{Jensen's Formula}
-The identity $\int_0^1 \log|f(e^{2\pi i t})|\, dt = \log|f(0)| + \sum \log(1/|a_k|)$ relating a holomorphic function to its zeros in the unit disk.
+Jensen's formula relates the average of $\log|f|$ on a circle to the value at the center and the zeros inside it. For a suitable holomorphic $f$ with zeros $a_k$ in the unit disk,
+\[
+\int_0^1\log|f(e^{2\pi it})|\,dt=\log|f(0)|+\sum_k\log\frac1{|a_k|}.
+\]
+\par\noindent\textbf{Applications:} it counts zeros and connects growth of holomorphic functions with their zero sets.
 
 \term{Jensen's Inequality}
-For a convex function $f$, the value of the function at the average is less than or equal to the average of the function values: $f(\mathbb{E}[X]) \leq \mathbb{E}[f(X)]$. This is a fundamental result in probability and optimization.
+If $f$ is convex and the expectations exist, Jensen's inequality gives $f(\mathbb E[X])\leq\mathbb E[f(X)]$. Convexity means that averaging inputs cannot produce a larger value than averaging their function values. \par\noindent\textbf{Applications:} it proves bounds in probability and statistics, supports risk analysis, and explains why convex optimization is tractable.
 
 \term{Jet}
-In differential geometry, a jet is an equivalence class of functions that agree up to a certain order of differentiation at a point. An $k$-jet at $p$ captures the Taylor polynomial of degree $k$ of the function at $p$.
+Two functions have the same $k$-jet at a point if all their derivatives through order $k$ agree there. A $k$-jet records the corresponding Taylor data without recording the functions away from the point. \par\noindent\textbf{Applications:} jets describe local behavior, formulate differential equations geometrically, and organize higher-order approximations.
 
 \term{Jet Bundle}
-A bundle whose fibers are the jets of sections of another bundle. It provides a geometric framework for studying partial differential equations, as a PDE can be viewed as a sub-bundle of a jet bundle.
+A jet bundle has as its fiber the $k$-jets of local sections of another bundle. A differential equation can then be viewed as a subset or submanifold in a jet bundle, with solutions represented by prolonged sections. \par\noindent\textbf{Applications:} jet bundles provide a coordinate-independent language for PDEs, symmetries, and variational calculus.
 
 \term{Jet Space}
 The space of all possible jets of a given order. It generalizes the notion of tangent space by including information about higher-order derivatives.
 
 \term{J-invariant}
-A modular invariant of elliptic curves, $j(\tau) = 1728 \frac{g_2^3}{g_2^3 - 27g_3^2}$, which classifies elliptic curves over $\mathbb{C}$ up to isomorphism. Two curves are isomorphic iff they have the same $j$-invariant.
+The $j$-invariant is a modular invariant of an elliptic curve. In one convention,
+\[
+j=1728\frac{g_2^3}{g_2^3-27g_3^2}.
+\]
+Over $\mathbb C$, two elliptic curves are isomorphic exactly when their $j$-invariants agree. \par\noindent\textbf{Applications:} it classifies complex elliptic curves and appears in modular forms, Diophantine equations, and elliptic-curve cryptography.
 
 \term{Joint Distribution}
-A probability distribution that describes the simultaneous behavior of two or more random variables. It is specified by a joint probability mass function (discrete) or a joint probability density function (continuous).
+A joint distribution describes the simultaneous behavior of two or more random variables. It may be given by a joint mass function in the discrete case or a joint density in the continuous case. Marginal distributions are obtained by summing or integrating over the other variables. \par\noindent\textbf{Applications:} joint models describe dependence in experiments, finance, measurement, and statistical prediction.
 
 \term{Joint Entropy}
-The entropy $H(X,Y)$ of a pair of random variables, measuring the combined uncertainty.
+The joint entropy of discrete variables is $H(X,Y)=-\sum_{x,y}p(x,y)\log p(x,y)$. It measures uncertainty about the pair, while conditional entropy satisfies $H(X,Y)=H(X)+H(Y\mid X)$. \par\noindent\textbf{Applications:} joint entropy supports data compression, mutual information, communication theory, and feature-dependence analysis.
 
 \term{Joint Probability Distribution}
 The probability distribution of a set of random variables. For variables $X$ and $Y$, it is $P(X \leq x, Y \leq y)$. Marginal distributions are obtained by integrating (or summing) over the other variables.
 
 \term{Joint Spectral Radius}
-The maximum asymptotic growth rate of products of matrices from a finite set $\mathcal{M}$. It is defined as $\rho(\mathcal{M}) = \lim_{k \to \infty} \max_{A_i \in \mathcal{M}} \|A_k \cdots A_1\|^{1/k}$. Used in stability analysis of switched linear systems.
+For a finite set of matrices $\mathcal M$, the joint spectral radius is the maximal asymptotic growth rate of products:
+\[
+\rho(\mathcal M)=\lim_{k\to\infty}\max_{A_i\in\mathcal M}\|A_k\cdots A_1\|^{1/k}.
+\]
+It is independent of the chosen compatible matrix norm. \par\noindent\textbf{Applications:} it tests stability of switched systems, iterated function systems, wavelets, and constrained control processes.
 
 \term{Jordan Algebra}
-A non-associative algebra where the product satisfies $xy = yx$ and the Jordan identity $(xy)x^2 = x(yx^2)$. Originally motivated by the observables in quantum mechanics.
+A Jordan algebra is a commutative, generally non-associative algebra satisfying $(xy)x^2=x(yx^2)$. The product records compatible observables rather than the full order of physical operations. \par\noindent\textbf{Applications:} Jordan algebras model observables in quantum mechanics and appear in symmetric cones, optimization, and Lie theory.
 
 \term{Jordan Block}
-A square matrix in Jordan normal form with a single eigenvalue $\lambda$ on the diagonal and $1$s on the super-diagonal. It represents the simplest possible structure for a linear operator that cannot be diagonalized.
+A Jordan block $J_k(\lambda)$ has $\lambda$ on the diagonal, $1$ on the superdiagonal, and zeros elsewhere. It represents a chain of generalized eigenvectors when an operator cannot be diagonalized. \par\noindent\textbf{Applications:} Jordan blocks determine powers and exponentials of matrices and therefore solutions of linear differential systems.
 
 \term{Jordan Canonical Form}
-The block-diagonal normal form of a matrix over an algebraically closed field, consisting of Jordan blocks for each eigenvalue.
+Jordan canonical form writes a square matrix over an algebraically closed field as a block-diagonal matrix of Jordan blocks. It exposes eigenvalues and the sizes of generalized-eigenvector chains. \par\noindent\textbf{Applications:} it analyzes matrix powers, exponentials, recurrence relations, and linear dynamical systems.
 
 \term{Jordan Normal Form}
 A block-diagonal matrix where each block is a Jordan block. Every square matrix over an algebraically closed field is similar to a matrix in Jordan normal form, unique up to the ordering of the blocks.
 
 \term{Jordan Curve Theorem}
-A fundamental result in topology stating that every simple closed curve in the plane divides the plane into exactly two regions: an "inside" (bounded) and an "outside" (unbounded).
+The Jordan curve theorem states that every simple closed curve in the plane separates the plane into exactly two connected components, one bounded inside and one unbounded outside, with the curve as their common boundary. \par\noindent\textbf{Applications:} it underlies planar geometry, contour algorithms, region filling, and topological reasoning about boundaries.
 
 \term{Jordan Decomposition}
-The decomposition of a linear operator into a diagonalizable part and a nilpotent part.
+For a suitable linear operator, Jordan decomposition writes $T=S+N$, where $S$ is diagonalizable, $N$ is nilpotent, and $SN=NS$. The two parts separately describe eigenvalue behavior and the finite-length generalized-eigenvector effect. \par\noindent\textbf{Applications:} it simplifies matrix functions, differential equations, and representation-theoretic calculations.
 
 \term{Jordan Domain}
-A bounded region in the complex plane whose boundary is a Jordan curve. By the Riemann Mapping Theorem, any Jordan domain is conformally equivalent to the unit disk.
+A Jordan domain is a bounded planar region whose boundary is a Jordan curve. Its boundary is a simple closed curve, so the region has a well-defined inside. If the domain is simply connected and proper, the Riemann mapping theorem maps it conformally to the disk. \par\noindent\textbf{Applications:} Jordan domains are used in contour integration, conformal mapping, and boundary-value problems.
 
 \term{Jordan Measure}
-A generalization of the concept of area/volume to sets in $\mathbb{R}^n$, defined via the difference between inner and outer approximations by finite unions of rectangles. A set is Jordan measurable iff its boundary has measure zero.
+Jordan measure defines volume using finite unions of rectangles and their inner and outer approximations. A bounded set is Jordan measurable exactly when its boundary has Lebesgue measure zero. \par\noindent\textbf{Applications:} it formalizes elementary area and volume calculations and clarifies when Riemann integration applies.
 
 \term{Jordan--Brouwer Separation Theorem}
-A generalization of the Jordan Curve Theorem to higher dimensions: a topological sphere $S^{n-1}$ embedded in $\mathbb{R}^n$ divides the space into two connected components.
+The Jordan--Brouwer separation theorem states that an embedded sphere $S^{n-1}$ in $\mathbb R^n$ separates the space into exactly two connected components, an inside and an outside. This generalizes the Jordan curve theorem. \par\noindent\textbf{Applications:} it supports topology of boundaries, solid geometry, mesh algorithms, and the classification of embedded surfaces.
 
 \term{Jordan--Hölder Theorem}
-A theorem in group theory stating that any two composition series of a finite group are equivalent: they have the same length and isomorphic composition factors.
+The Jordan--Hölder theorem says that any two composition series of a finite group have the same length and the same simple factor groups, up to order and isomorphism. The factors need not determine the group completely, but they provide a canonical list of building blocks. \par\noindent\textbf{Applications:} it supports classification and comparison of finite groups and modules.
 
 \term{Jordan--von Neumann Theorem}
-A characterization of Hilbert spaces: a normed space is a Hilbert space iff its norm satisfies the parallelogram law: $2(\|x\|^2 + \|y\|^2) = \|x+y\|^2 + \|x-y\|^2$.
+A norm comes from an inner product if and only if it satisfies the parallelogram law
+\[
+2(\|x\|^2+\|y\|^2)=\|x+y\|^2+\|x-y\|^2.
+\]
+Thus the theorem identifies when a normed space has genuine Euclidean geometry. \par\noindent\textbf{Applications:} it distinguishes Hilbert-space methods from general normed-space methods in approximation, optimization, and functional analysis.
 
 \term{J-homomorphism}
-A map from the homotopy groups of a Lie group to the stable homotopy groups of spheres. It is used in algebraic topology to study the stable stems of the sphere spectrum.
+The $J$-homomorphism maps homotopy information from a Lie group, especially an orthogonal group, into the stable homotopy groups of spheres. It compares vector-bundle data with sphere-shaped topological data. \par\noindent\textbf{Applications:} it is a central tool in stable homotopy theory and the study of vector bundles and characteristic classes.
 
 \term{Join (Lattice Theory)}
-The least upper bound of two elements in a lattice, denoted $a \vee b$. It is the smallest element $x$ such that $a \leq x$ and $b \leq x$.
+In a lattice, the join $a\vee b$ is the least upper bound of $a$ and $b$: it is the smallest element $x$ with $a\leq x$ and $b\leq x$. In a power-set lattice it is ordinary union. \par\noindent\textbf{Applications:} joins combine subspaces, propositions, sets, and states in ordered systems.
 
 \term{Join (Geometry)}
-The operation of creating a line, plane, or subspace that contains two given subspaces. For two points $P, Q$, the join is the unique line passing through both.
+The geometric join of two subspaces is the smallest subspace containing both. For distinct points $P,Q$, it is the line through them; for two compatible lines, it may be their containing plane. \par\noindent\textbf{Applications:} joins are basic in projective geometry, incidence computations, interpolation, and computational geometry.
 
 \term{Join Semilattice}
-A partially ordered set in which every pair of elements has a least upper bound.
+A join semilattice is a partially ordered set in which every pair $a,b$ has a least upper bound, written $a\vee b$. It captures a notion of combining two pieces of information while remaining minimal. \par\noindent\textbf{Applications:} join semilattices model logical combination, dataflow analysis, type systems, and hierarchical classification.
 
 \term{Joukowski Transform}
-The conformal map $w = z + 1/z$, used in aerodynamics.
+The Joukowski transform is the complex map $w=z+1/z$. Away from its critical points it is conformal, and it maps suitable circles in the $z$-plane to airfoil-like curves in the $w$-plane. \par\noindent\textbf{Applications:} it gives an idealized model for airflow around wings and illustrates conformal mapping in complex analysis.
 
 \term{Julia Set}
-In complex dynamics, the set of points where the iterates of a holomorphic function $f$ do not form a normal family. It often exhibits fractal structure and is the boundary of the Fatou set.
+For iteration of a complex map such as $f(z)=z^2+c$, the Julia set is the boundary separating stable and unstable behavior. Equivalently, it is where the iterates fail to form a normal family. \par\noindent\textbf{Applications:} Julia sets illustrate fractal geometry, sensitive dependence, dynamical systems, and computer visualization.
 
 \term{Jump Discontinuity}
-A type of discontinuity where the left-hand and right-hand limits of a function exist but are not equal. The "jump" is the difference between these two limits.
+A function has a jump discontinuity at $c$ when the one-sided limits exist but differ: $\lim_{x\to c^-}f(x)\ne\lim_{x\to c^+}f(x)$. The difference is the jump size. \par\noindent\textbf{Applications:} jumps model switching, shocks, digital signals, and piecewise physical laws.
 
 \term{Jump Function}
 A step function whose value changes discontinuously at a set of points.
 
 \term{Jump Process}
-A stochastic process that evolves by taking discrete jumps at random times, rather than moving continuously. Examples include the Poisson process and Markov jump processes.
+A jump process changes state at random times rather than continuously. A Poisson process counts random arrivals, while a Markov jump process changes among states with transition rates. \par\noindent\textbf{Applications:} jump processes model queues, failures, epidemics, financial events, chemical reactions, and communication traffic.
 
 \term{Junction}
-A point of a graph where three or more edges meet.
+A junction is a vertex or point where three or more edges, paths, or channels meet. In a graph it is a high-connectivity location, while in a physical network it may be a branching node. \par\noindent\textbf{Applications:} junctions represent intersections in road networks, switches in circuits, and branching in transport or communication systems.
 
 \term{J-spectrum}
-In operator theory, the part of the spectrum of a $J$-self-adjoint operator that is invariant under the action of the fundamental symmetry $J$.
+For an operator self-adjoint with respect to an indefinite inner product defined by a fundamental symmetry $J$, the $J$-spectrum records spectral behavior compatible with that symmetry. The precise definition depends on the operator class and the chosen indefinite metric. \par\noindent\textbf{Applications:} $J$-spectral methods study stability and wave or quantum systems with non-positive energy forms.

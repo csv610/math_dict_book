@@ -5,10 +5,10 @@
 The surface of revolution of $y = 1/x$ for $x \geq 1$ about the $x$-axis. Its volume is finite (equal to $\pi$) but its surface area is infinite, so the horn can be filled with a finite amount of paint while no finite amount suffices to cover it. It illustrates that volume and area behave independently and connects to improper integrals and convergence.
 
 \term{GAGA}
-Serre's comparison principle asserting that for complex projective varieties the coherent analytic sheaves and their cohomology coincide with their algebraic counterparts; the Riemann existence theorem arises as a special case. The theorem bridges algebraic and analytic geometry, showing that the categories of algebraic and analytic coherent sheaves are equivalent and that the corresponding algebraic and analytic cohomology spaces are canonically isomorphic.
+GAGA (``Géométrie Algébrique et Géométrie Analytique'') compares algebraic geometry over the complex numbers with complex analytic geometry. For a complex projective variety, many algebraic and analytic objects correspond, and their cohomology agrees. \par\noindent\textbf{Applications:} this bridge lets methods from complex analysis and topology be used to study polynomial equations and algebraic varieties.
 
 \term{Galois Extension}
-A normal, separable field extension; the fixed field of its full automorphism group.
+A field extension $L/K$ is Galois when it is algebraic, normal, and separable. Informally, every polynomial over $K$ that has one root in $L$ has all of its roots in $L$, and the roots are related by automorphisms that fix $K$. \par\noindent\textbf{Applications:} Galois extensions turn questions about polynomial equations into questions about symmetry groups.
 
 \term{Galois Group}
 The Galois group $\operatorname{Gal}(L/K)$ of a field extension $L/K$ is the group of field automorphisms of $L$ that fix $K$ pointwise. For a finite Galois extension, $|\operatorname{Gal}(L/K)| = [L:K]$. The Fundamental Theorem of Galois Theory gives an inclusion-reversing bijection between intermediate fields and subgroups. The Galois group of a polynomial is the Galois group of its splitting field; solvability by radicals corresponds to solvability of the Galois group.
@@ -23,10 +23,18 @@ Galois theory, developed by \'Evariste Galois (1811--1832), links field theory a
 Game theory studies strategic interactions between rational agents. A game consists of players, strategies, and payoffs. Nash equilibrium is a strategy profile where no player can improve by unilaterally deviating. Every finite game has a mixed-strategy Nash equilibrium. The minimax theorem for zero-sum games states $\max_x \min_y u(x,y) = \min_y \max_x u(x,y)$. Cooperative game theory studies coalitions and the core, Shapley value. Applications span economics, biology, computer science, and political science.
 
 \term{Gamma Function}
-The function $\Gamma(s) = \int_0^\infty t^{s-1} e^{-t}\, dt$ generalising the factorial: $\Gamma(n+1) = n!$.
+For $\operatorname{Re}(s)>0$, the Gamma function is
+\[
+\Gamma(s)=\int_0^\infty t^{s-1}e^{-t}\,dt.
+\]
+It extends the factorial to non-integer values because $\Gamma(n+1)=n!$ for non-negative integers. \par\noindent\textbf{Applications:} it appears in probability distributions, statistics, differential equations, and mathematical physics.
 
 \term{Gâteaux Derivative}
-The directional derivative of a map between normed spaces, defined by a limit along a line.
+The Gâteaux derivative of $F$ at $x$ in the direction $h$ is
+\[
+\lim_{t\to 0}\frac{F(x+th)-F(x)}{t},
+\]
+when the limit exists. It tests change along one direction and is weaker than the Fréchet derivative, which requires one approximation to work uniformly in all directions. \par\noindent\textbf{Applications:} it is used in variational calculus, optimization, and partial differential equations.
 
 \term{Gauge Theory}
 Gauge theory is the study of connections and curvature on principal bundles, whose fields are governed by invariance under gauge transformations, the group of vertical automorphisms of the bundle. Its central equations are the Yang--Mills equations, with finite-energy solutions on four-manifolds given by instantons; the moduli space of anti-self-dual connections yields the Donaldson invariants of smooth four-manifolds. Gauge theory provides the mathematical formulation of the standard model of particle physics.
@@ -47,7 +55,7 @@ The Gaussian integers $\mathbb{Z}[i] = \{a+bi : a,b \in \mathbb{Z}\}$ form a Euc
 A Gaussian process is a stochastic process all of whose finite-dimensional distributions are multivariate normal, so it is determined by a mean function $m(x)$ and a covariance kernel $k(x,y)$. Sample paths are continuous under regularity conditions on $k$, and the process is intimately tied to the reproducing kernel Hilbert space it generates. Gaussian process regression performs Bayesian inference over functions in machine learning. Canonical examples include Brownian motion and the Ornstein--Uhlenbeck process.
 
 \term{Gaussian Quadrature}
-A highly efficient numerical integration method that selects optimal sample points (nodes) and weights to exactly integrate polynomials of a certain degree. For example, Gauss--Legendre quadrature uses roots of Legendre polynomials to provide the best possible accuracy for a given number of points over a finite interval.
+A numerical integration method that chooses sample points (nodes) and weights so that polynomials up to a specified degree are integrated exactly. For example, Gauss--Legendre quadrature uses roots of Legendre polynomials on a finite interval. \par\noindent\textbf{Applications:} it estimates difficult integrals in engineering, physics, probability, and finite-element computations with relatively few function evaluations.
 
 \term{Gauss--Bonnet Theorem}
 The Gauss--Bonnet theorem for a compact 2-manifold $S$ without boundary: $\int_S K\,dA = 2\pi\chi(S)$, where $K$ is Gaussian curvature and $\chi$ is Euler characteristic. For a surface with boundary, $\int_S K\,dA + \int_{\partial S} k_g\,ds = 2\pi\chi(S)$ where $k_g$ is geodesic curvature. This links local geometry (curvature) to global topology (Euler characteristic). For polyhedral surfaces, curvature concentrates at vertices: angle defect $2\pi - \sum \theta_i$.
@@ -59,37 +67,45 @@ Gauss's law states that the electric flux through a closed surface is proportion
 The divergence theorem (Gauss's theorem): $\int_V (\nabla \cdot \mathbf{F})\,dV = \oint_{\partial V} \mathbf{F} \cdot d\mathbf{S}$ for a vector field $\mathbf{F}$ on a volume $V$ with boundary $\partial V$. This relates volume integral of divergence to surface integral of flux. In coordinates: $\int_V \frac{\partial F^i}{\partial x^i}\,dV = \int_{\partial V} F^i n_i\,dS$. Special cases: Green's identities in PDE theory, Gauss's law in electromagnetism. Generalises to manifolds via Stokes' theorem.
 
 \term{Gelfand Triple}
-A Gelfand triple, or rigged Hilbert space, is a chain $\Phi \subset H \subset \Phi^*$ in which $\Phi$ is a nuclear space densely and continuously embedded in a Hilbert space $H$, and $\Phi^*$ is the dual of $\Phi$ containing $H$. It provides the functional-analytic setting for the Schwartz distributions and, via the nuclear spectral theorem, for generalized eigenfunctions of self-adjoint operators, enabling a spectral decomposition where eigenvalues may lie in the continuous spectrum.
+A Gelfand triple, or rigged Hilbert space, is a chain $\Phi\subset H\subset\Phi^*$ in which test functions in $\Phi$ sit densely inside a Hilbert space $H$, while $\Phi^*$ contains generalized functions such as distributions. It extends ordinary inner-product methods to situations with continuous spectra and generalized eigenvectors. \par\noindent\textbf{Applications:} it is used in partial differential equations, quantum mechanics, and the mathematical treatment of Fourier transforms and distributions.
 
 \term{Generalized Eigenspace}
-The subspace $\ker (A - \lambda I)^m$ for sufficiently large $m$, spanned by the generalized eigenvectors of $A$ for the eigenvalue $\lambda$.
+For an eigenvalue $\lambda$, the generalized eigenspace is $\ker(A-\lambda I)^m$ for sufficiently large $m$. It contains the ordinary eigenvectors and the additional vectors needed to describe Jordan blocks when an operator is not diagonalizable. \par\noindent\textbf{Applications:} it describes repeated eigenvalues and helps solve systems of linear differential equations.
 
 \term{Generator}
-An element whose orbit under a group action produces the whole set; also the single element generating a cyclic group.
+A generator is an element or set of elements from which all elements of a structure are produced using its allowed operations. For example, $1$ generates the additive group of integers, while one element can generate every member of a cyclic group. \par\noindent\textbf{Applications:} generators give compact descriptions of groups, symmetries, error-correcting codes, and algorithms.
 
 \term{Genus}
-The number of handles of a surface, or the dimension of the space of holomorphic differentials on a Riemann surface.
+The genus of an orientable surface is its number of handles: a sphere has genus $0$ and a torus has genus $1$. For a compact Riemann surface, it also equals the complex dimension of its space of holomorphic $1$-forms. \par\noindent\textbf{Applications:} genus classifies surfaces and appears in topology, algebraic curves, and mesh or shape analysis.
 
 \term{Geodesic}
-A geodesic is a curve $\gamma(t)$ that parallel-transports its own tangent vector: $\nabla_{\dot{\gamma}} \dot{\gamma} = 0$. In coordinates: $\ddot{\gamma}^k + \Gamma^k_{ij} \dot{\gamma}^i \dot{\gamma}^j = 0$. Geodesics are locally length-minimising curves (but not globally). On a sphere, great circles are geodesics; on a plane, straight lines. The exponential map $\exp_p(v) = \gamma_v(1)$ maps tangent vectors to geodesic endpoints. The geodesic flow is Hamiltonian on the cotangent bundle.
+A geodesic is a curve $\gamma(t)$ whose tangent vector is parallel transported along itself, so $\nabla_{\dot\gamma}\dot\gamma=0$. Geodesics are locally shortest paths, although they need not be globally shortest. Straight lines in a plane and great circles on a sphere are examples. \par\noindent\textbf{Applications:} geodesics describe travel on curved surfaces, shortest paths in robotics, and the motion of freely falling objects in general relativity.
 
 \term{Geometric Distribution}
-The distribution of the number of trials needed for the first success in repeated Bernoulli trials, $P(X = k) = (1-p)^{k-1}p$.
+If independent Bernoulli trials have success probability $p$, the number $X$ of trials until the first success has
+\[
+P(X=k)=(1-p)^{k-1}p,\qquad k=1,2,\ldots.
+\]
+It is a discrete model for a waiting time and has the memoryless property. \par\noindent\textbf{Applications:} it models repeated tests, failures before success, and the number of attempts required by a simple service or communication system.
 
 \term{Geometric Mean}
-The $n$-th root of the product of $n$ numbers, $(\prod a_i)^{1/n}$, appropriate for multiplicative data.
+For positive values $a_1,\ldots,a_n$, the geometric mean is
+\[
+\left(\prod_{i=1}^n a_i\right)^{1/n}.
+\]
+It is appropriate when values combine multiplicatively, such as percentage changes or ratios, rather than additively. \par\noindent\textbf{Applications:} it summarizes investment returns, growth rates, index numbers, and relative performance.
 
 \term{Geometric Measure Theory}
-Geometric measure theory studies geometric properties of sets via measure theory. Key objects: rectifiable sets, currents (generalised surfaces), varifolds (unoriented surfaces). Federer--Fleming deformation theorem: any integral current can be deformed into a polyhedral current. The coarea formula relates integrals over level sets to integrals over the domain. Applications: minimal surfaces, Plateau's problem, image processing, calculus of variations. The isoperimetric inequality: among sets of given volume, the ball minimises surface area.
+Geometric measure theory studies geometric properties of sets via measure theory. Key objects: rectifiable sets, currents (generalised surfaces), varifolds (unoriented surfaces). Federer--Fleming deformation theorem: any integral current can be deformed into a polyhedral current. The coarea formula relates integrals over level sets to integrals over the domain. \par\noindent\textbf{Applications:} minimal surfaces, Plateau's problem, image processing, calculus of variations. The isoperimetric inequality: among sets of given volume, the ball minimises surface area.
 
 \term{Geometric Series}
-A series of the form $\sum_{n=0}^\infty ar^n$, converging to $a/(1-r)$ when $|r| < 1$.
+The geometric series $\sum_{n=0}^{\infty} ar^n$ converges to $a/(1-r)$ when $|r|<1$ and diverges when $|r|\geq 1$ unless a trivial case applies. \par\noindent\textbf{Applications:} it models repeated discounts, compound growth, probabilities, and the accumulation of successive error terms.
 
 \term{Geometry of Numbers}
-Geometry of numbers, initiated by Minkowski, studies lattice points in convex bodies. Minkowski's theorem: a centrally symmetric convex body in $\mathbb{R}^n$ with volume $> 2^n \det(\Lambda)$ contains a non-zero lattice point of $\Lambda$. Applications: Minkowski's bound for class numbers, Dirichlet's unit theorem, lattice basis reduction (LLL algorithm). The successive minima $\lambda_i$ are the radii of the smallest balls containing $i$ linearly independent lattice points.
+Geometry of numbers, initiated by Minkowski, studies lattice points in convex bodies. Minkowski's theorem: a centrally symmetric convex body in $\mathbb{R}^n$ with volume $> 2^n \det(\Lambda)$ contains a non-zero lattice point of $\Lambda$. \par\noindent\textbf{Applications:} Minkowski's bound for class numbers, Dirichlet's unit theorem, lattice basis reduction (LLL algorithm). The successive minima $\lambda_i$ are the radii of the smallest balls containing $i$ linearly independent lattice points.
 
 \term{Gergonne Point}
-The point of concurrency of the lines from each vertex of a triangle to the touch point of the incircle on the opposite side.
+The Gergonne point is the concurrency point of the three lines joining each vertex of a triangle to the point where the incircle touches the opposite side. It is a notable triangle center obtained from tangency. \par\noindent\textbf{Applications:} it is used in triangle geometry and illustrates how metric information can produce important incidence points.
 
 \term{Gibbs Measure}
 The Gibbs measure (or Gibbs distribution) on a configuration space is $\mu(\sigma) = \frac{1}{Z} e^{-\beta H(\sigma)}$ where $H$ is a Hamiltonian (energy function), $\beta = 1/kT$ is inverse temperature, and $Z = \sum e^{-\beta H}$ is the partition function. It maximises entropy for given expected energy. The Gibbs measure is the equilibrium state of a statistical mechanical system. Phase transitions correspond to non-analyticities in the free energy $-\frac{1}{\beta} \log Z$. Examples: Ising model, Potts model, lattice gas.
@@ -98,7 +114,7 @@ The Gibbs measure (or Gibbs distribution) on a configuration space is $\mu(\sigm
 Girard's theorem (spherical trigonometry): the area of a spherical triangle on a unit sphere is its spherical excess $A = \alpha + \beta + \gamma - \pi$, where $\alpha, \beta, \gamma$ are interior angles. On a sphere of radius $R$, area $= R^2(\alpha + \beta + \gamma - \pi)$. The sum of angles exceeds $\pi$; the excess is proportional to area. This contrasts with Euclidean geometry where $\alpha + \beta + \gamma = \pi$ always.
 
 \term{Global Minimum}
-The smallest value attained by a function over its entire domain.
+A global minimum is the smallest value a function attains on its entire domain: $x^*$ is a global minimizer if $f(x^*)\leq f(x)$ for every allowed $x$. A local minimum only compares nearby points, so it need not be global. \par\noindent\textbf{Applications:} global minima represent best feasible designs, lowest-energy states, and optimal parameter choices.
 
 \term{Gödel's Completeness Theorem}
 Gödel's completeness theorem (1929): first-order logic is complete. A formula is provable from a set of axioms iff it is true in every model of those axioms. Equivalently, a theory is consistent iff it has a model. This is distinct from the incompleteness theorem (1931). The proof constructs a model from a maximal consistent set of formulas using the Lindenbaum--Henkin method. Compactness theorem: a set of sentences has a model iff every finite subset does.
@@ -113,28 +129,32 @@ A method of assigning a unique natural number to each symbol, formula, and proof
 Goldbach's conjecture (1742): every even integer $n \geq 4$ is the sum of two primes. The weak Goldbach conjecture (every odd $n \geq 7$ is sum of three primes) was proved by Helfgott (2013). The strong conjecture remains open. Vinogradov (1937) proved all sufficiently large odd integers are sum of three primes. Chen (1973) proved every sufficiently large even integer is sum of a prime and a number with at most two prime factors. Computational verification up to $4 \times 10^{18}$.
 
 \term{Golden Ratio}
-The number $\varphi = (1+\sqrt{5})/2 \approx 1.618$ satisfying $\varphi = 1 + 1/\varphi$, appearing throughout geometry and art.
+The golden ratio is $\varphi=(1+\sqrt5)/2\approx1.618$, satisfying $\varphi=1+1/\varphi$. Ratios of consecutive Fibonacci numbers approach $\varphi$, and it arises naturally in pentagonal geometry. \par\noindent\textbf{Applications:} it is useful in recurrence analysis, geometric constructions, and examples of limiting growth ratios.
 
 \term{Gradient}
 The gradient $\nabla f$ of a scalar function $f: \mathbb{R}^n \to \mathbb{R}$ is the vector of partial derivatives $(\partial f/\partial x_1, \ldots, \partial f/\partial x_n)$. It points in the direction of steepest ascent and its magnitude is the maximum directional derivative: $D_u f = \nabla f \cdot u$. For a differentiable function, $df = \nabla f \cdot dx$. The gradient is orthogonal to level sets. On a Riemannian manifold, $\nabla f$ is the vector field dual to $df$ via the metric: $\langle \nabla f, X \rangle = df(X)$.
 
 \term{Gradient Descent}
-The iterative optimization method $x_{k+1} = x_k - \alpha \nabla f(x_k)$ that moves opposite the gradient.
+Gradient descent uses
+\[
+x_{k+1}=x_k-\alpha_k\nabla f(x_k)
+\]
+to move toward lower values of $f$. With suitable step sizes and convexity or smoothness assumptions it can converge to a minimizer; otherwise it may stop at only a local or stationary point. \par\noindent\textbf{Applications:} it is central to machine learning, regression, inverse problems, and engineering design.
 
 \term{Gradient Vector}
-The vector of first partial derivatives $\nabla f = (\partial f/\partial x_1, \ldots, \partial f/\partial x_n)$, pointing in the direction of steepest ascent.
+The gradient vector is $\nabla f=(\partial f/\partial x_1,\ldots,\partial f/\partial x_n)$. It points in the direction of steepest local increase and is perpendicular to a level set of $f$. \par\noindent\textbf{Applications:} it measures local sensitivity and supplies the direction used by optimization methods.
 
 \term{Graph}
-A mathematical structure of vertices and edges, either undirected or directed, modelling pairwise relations.
+A graph consists of vertices and edges that represent pairwise relationships. Edges may be directed or undirected and may carry weights such as distance, cost, or capacity. \par\noindent\textbf{Applications:} graphs model roads, social networks, circuits, dependencies, communication systems, and recommendation systems.
 
 \term{Graph Coloring}
 A graph coloring is an assignment of colors to the vertices (or edges) of a graph such that adjacent vertices receive distinct colors. The chromatic number $\chi(G)$ is the least number of colors needed; the four-color theorem asserts $\chi(G) \leq 4$ for every planar graph, while Brooks' theorem bounds $\chi(G) \leq \Delta(G)$ unless $G$ is a complete graph or an odd cycle. Determining the chromatic number is NP-hard, yet coloring problems arise in scheduling and register allocation.
 
 \term{Graph Laplacian}
-The matrix $L = D - A$ for a graph, whose spectrum encodes connectivity and is used in spectral graph theory and clustering.
+For a graph, the Laplacian matrix is $L=D-A$, where $D$ is the degree matrix and $A$ is the adjacency matrix. The vector $Lx$ records differences between a value at a vertex and values at its neighbors; its zero eigenvalues reflect connected components. \par\noindent\textbf{Applications:} graph Laplacians support clustering, network diffusion, image segmentation, and semi-supervised learning.
 
 \term{Graph Theory}
-The branch of mathematics studying graphs and their properties, applications, and algorithms.
+Graph theory studies vertices and edges and the connections between them. A graph can represent a road map, a social network, a circuit, or dependencies between tasks. \par\noindent\textbf{Applications:} graph algorithms solve routing, scheduling, matching, network design, recommendation, and molecular-structure problems.
 
 \term{Grassmannian}
 The Grassmannian $\operatorname{Gr}(k,n)$ (or $\operatorname{Gr}(k,V)$) is the space of all $k$-dimensional subspaces of an $n$-dimensional vector space $V$. It is a smooth projective variety of dimension $k(n-k)$. The Pl\"ucker embedding $\operatorname{Gr}(k,n) \hookrightarrow \mathbb{P}(\bigwedge^k V)$ maps a subspace to its Pl\"ucker coordinates (minors of a $k \times n$ matrix). The cohomology ring $H^*(\operatorname{Gr}(k,n); \mathbb{Z})$ is generated by Schubert classes. Grassmannians classify vector bundles and appear in quantum cohomology and mirror symmetry.
@@ -155,10 +175,10 @@ Green's identity is obtained by combining the divergence theorem with the produc
 Green's theorem in the plane: $\oint_C (P\,dx + Q\,dy) = \iint_D \left(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right) dx\,dy$ for a simple closed curve $C$ bounding region $D$. This is the 2D case of Stokes' theorem. The circulation form relates line integral of a vector field to area integral of its curl: $\oint_C \mathbf{F} \cdot d\mathbf{r} = \iint_D (\nabla \times \mathbf{F}) \cdot \mathbf{k}\,dA$. The flux form: $\oint_C \mathbf{F} \cdot \mathbf{n}\,ds = \iint_D \nabla \cdot \mathbf{F}\,dA$. Fundamental in vector calculus and fluid dynamics.
 
 \term{Gromov--Hausdorff Distance}
-A distance between compact metric spaces, measuring how far two spaces are from being isometric.
+The Gromov--Hausdorff distance measures how close two compact metric spaces are after allowing them to be embedded into a common metric space. Distance zero means that the spaces are isometric. \par\noindent\textbf{Applications:} it compares shapes and geometric data when the spaces do not come with a fixed coordinate system.
 
 \term{Group Action}
-A group action of $G$ on a set $X$ is a map $G \times X \to X$, $(g,x) \mapsto g \cdot x$, satisfying $e \cdot x = x$ and $(gh) \cdot x = g \cdot (h \cdot x)$. Equivalently, a homomorphism $G \to \operatorname{Sym}(X)$. Orbit of $x$: $G \cdot x = \{g \cdot x : g \in G\}$; stabiliser: $G_x = \{g : g \cdot x = x\}$. Orbit-stabiliser theorem: $|G \cdot x| = [G : G_x]$. The class equation: $|X| = \sum [G : G_{x_i}]$. Burnside's lemma: number of orbits $= \frac{1}{|G|} \sum_{g \in G} |X^g|$.
+A group action of $G$ on a set $X$ assigns to each $g\in G$ a transformation of $X$ so that identity does nothing and products act in sequence: $e\cdot x=x$ and $(gh)\cdot x=g\cdot(h\cdot x)$. The orbit of $x$ is $G\cdot x=\{g\cdot x:g\in G\}$, while the stabilizer is $G_x=\{g:g\cdot x=x\}$. For finite groups, the orbit--stabilizer theorem gives $|G\cdot x|=[G:G_x]$, and Burnside's lemma counts orbits by averaging fixed points. \par\noindent\textbf{Applications:} group actions organize symmetries of objects, count distinct configurations, and describe permutations in geometry, chemistry, and combinatorics.
 
 \term{Group (Algebra)}
 A group $(G, \cdot)$ is a set with an associative binary operation, an identity element $e$, and inverses: $\forall g \in G,\; \exists g^{-1} : g \cdot g^{-1} = e$. Groups capture symmetry. Examples: symmetric group $S_n$, cyclic group $\mathbb{Z}/n\mathbb{Z}$, general linear group $\operatorname{GL}(n,\mathbb{R})$, fundamental group $\pi_1(X)$. Finite simple groups classified into 18 infinite families and 26 sporadic groups. The classification theorem (2004) is a monumental achievement.
@@ -167,16 +187,16 @@ A group $(G, \cdot)$ is a set with an associative binary operation, an identity 
 Group cohomology $H^*(G, M)$ for a group $G$ and $G$-module $M$ is derived functors of the fixed-point functor $M \mapsto M^G$. It can be computed from the bar resolution or the standard resolution. $H^1(G, M) = Z^1/B^1$ classifies crossed homomorphisms modulo principal ones. $H^2(G, M)$ classifies group extensions $1 \to M \to E \to G \to 1$ with $M$ abelian. Tate cohomology $\hat{H}^*(G, M)$ combines homology and cohomology for finite groups.
 
 \term{Group Homomorphism}
-A map between groups preserving the operation, $f(ab) = f(a)f(b)$.
+A map $f:G\to H$ between groups is a homomorphism if $f(ab)=f(a)f(b)$ for all $a,b\in G$. It preserves the identity and inverses automatically. \par\noindent\textbf{Applications:} homomorphisms transfer symmetry information, define quotient groups, and provide structure-preserving transformations and invariants.
 
 \term{Group Representation}
 A representation of a group $G$ on a vector space $V$ is a homomorphism $\rho: G \to \operatorname{GL}(V)$. Characters $\chi(g) = \operatorname{tr}(\rho(g))$ are central. Irreducible representations of finite groups are finite-dimensional and completely reducible (Maschke's theorem). The character table encodes all irreducible characters. Orthogonality relations: $\frac{1}{|G|} \sum_{g \in G} \chi_i(g) \overline{\chi_j(g)} = \delta_{ij}$. Representations of Lie groups and algebras are central to physics (standard model, particle classification).
 
 \term{Group Theory}
-The study of groups and their actions, symmetries, and representations.
+Group theory studies groups, their subgroups, actions, and representations. It provides a common language for symmetry and composition of operations. \par\noindent\textbf{Applications:} it models molecular and crystal symmetry, permutations, coding, cryptography, and particle physics.
 
 \term{Grothendieck Duality}
-The generalisation of Serre duality to coherent sheaves on arbitrary schemes, via a dualising complex.
+Grothendieck duality generalizes Serre duality and integration by parts to maps between algebraic or geometric spaces. It uses a dualizing complex to relate pushforwards, cohomology, and homomorphisms of sheaves. \par\noindent\textbf{Applications:} it computes cohomology and extension groups in algebraic geometry, especially for proper maps.
 
 \term{Grothendieck Group}
 The Grothendieck group $K_0(\mathcal{C})$ of an additive category $\mathcal{C}$ is the abelian group generated by isomorphism classes $[X]$ of objects with relations $[X] = [Y] + [Z]$ for every short exact sequence $0 \to Y \to X \to Z \to 0$. For a ring $R$, $K_0(R)$ is built from finitely generated projective modules. $K_0(\text{Var}_k)$ is generated by varieties with $[X] = [Y] + [X \setminus Y]$ for closed $Y \subset X$. Grothendieck groups are universal for additive invariants (Euler characteristic, rank, Chern classes).
@@ -202,7 +222,6 @@ A gyrovector space (Ungar, 2001) is an algebraic structure for hyperbolic geomet
 \term{Gysin Sequence}
 The Gysin sequence is the long exact sequence in cohomology associated to a sphere bundle $S^k \to E \to B$ (or, dually, to a smooth closed embedding), relating the cohomology of the total space, the base, and the fiber. It takes the form $\cdots \to H^i(E) \to H^{i-k}(B) \xrightarrow{e} H^{i+1}(B) \to H^{i+1}(E) \to \cdots$, where $e$ is the cup product with the Euler class, the Gysin homomorphism. It is used for sphere bundles, links, and projective bundles.
 \term{Articulation Point}
-See Cut Vertex. An articulation point or cut vertex is a vertex whose removal increases the number of connected components. The term is standard in graph theory and network analysis.
+See Cut Vertex. An articulation point or cut vertex is a vertex whose removal increases the number of connected components. \par\noindent\textbf{Applications:} it identifies single points of failure in communication, transport, and dependency networks.
 \term{Canonical Transformation}
-A change of coordinates in phase space that preserves the form of Hamilton's equations. In symplectic geometry, a canonical transformation is a symplectomorphism: a diffeomorphism $\phi$ such that $\phi^*\omega = \omega$, where $\omega = \sum dq_i \wedge dp_i$ is the standard symplectic form. Generating functions provide concrete realisations.
-
+A change of coordinates in phase space that preserves the form of Hamilton's equations. In symplectic geometry, it is a diffeomorphism $\phi$ satisfying $\phi^*\omega=\omega$, where $\omega=\sum dq_i\wedge dp_i$. \par\noindent\textbf{Applications:} canonical transformations simplify mechanics problems, identify conserved quantities, and connect different Hamiltonian descriptions.

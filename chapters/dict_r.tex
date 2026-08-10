@@ -2,238 +2,238 @@
 \label{chap:r}
 
 \term{Radius of Convergence}
-The distance $R$ from the center of a power series within which the series converges absolutely. For $z$ such that $|z-c| < R$, the series converges; for $|z-c| > R$, it diverges. It is often computed using the Cauchy-Hadamard formula.
+The radius of convergence is the distance $R$ from the center of a power series within which it converges absolutely. For $|z-c|<R$ it converges, and for $|z-c|>R$ it diverges. \par\noindent\textbf{Applications:} it determines where Taylor expansions can be used in analysis, physics, and numerical computation.
 
 \term{Radon--Nikodym Theorem}
-A fundamental result in measure theory stating that for two $\sigma$-finite measures $\mu$ and $\nu$ on the same measurable space, if $\nu$ is absolutely continuous with respect to $\mu$, there exists a unique (up to $\mu$-almost everywhere) non-negative measurable function $f$ such that $\nu(A) = \int_A f \, d\mu$.
+The Radon--Nikodym theorem states that if a $\sigma$-finite measure $\nu$ is absolutely continuous with respect to $\mu$, then $\nu(A)=\int_A f\,d\mu$ for a unique function $f$ up to $\mu$-almost everywhere equality. \par\noindent\textbf{Applications:} the derivative $f$ represents densities in probability, statistics, and mathematical finance.
 
 \term{Riemann–Stieltjes Integral}
-A generalization of the Riemann integral where integration is with respect to a function of bounded variation $\alpha$ rather than the identity: $\int_a^b f\,d\alpha$. When $\alpha(x) = x$, it reduces to the ordinary Riemann integral. The Riemann–Stieltjes integral is used in probability theory to express expectations and in the study of distributions.
+The Riemann--Stieltjes integral integrates $f$ with respect to a function of bounded variation $\alpha$, written $\int_a^b f\,d\alpha$. Taking $\alpha(x)=x$ gives the ordinary Riemann integral. \par\noindent\textbf{Applications:} it represents expectations, cumulative distributions, and systems with point masses.
 
 \term{Radon Transform}
-An integral transform that maps a function on $\mathbb{R}^n$ to the set of its integrals over all hyperplanes. It is the mathematical basis for Computerized Tomography (CT) scans, allowing the reconstruction of an object from its projections.
+The Radon transform maps a function on $\mathbb R^n$ to its integrals over hyperplanes. It records projections from many directions and can be inverted under suitable conditions. \par\noindent\textbf{Applications:} it is the mathematical basis of CT reconstruction and other imaging methods.
 
 \term{Radical (Ring Theory)}
-The intersection of all maximal ideals of a ring, known as the Jacobson radical. More generally, the nilradical is the intersection of all prime ideals and consists of all nilpotent elements.
+In ring theory, a radical is an ideal that records elements with a specified form of algebraic degeneracy. The Jacobson radical is the intersection of maximal ideals, while the nilradical is the set of nilpotent elements. \par\noindent\textbf{Applications:} radicals help classify rings and analyze modules and algebraic varieties.
 
 \term{Radical (Number Theory)}
-For a positive integer $n$, the radical $\operatorname{rad}(n)$ is the product of the distinct prime numbers dividing $n$. The $abc$ conjecture relates the sum of three coprime integers to the radical of their product.
+For a positive integer $n$, the number-theoretic radical $\operatorname{rad}(n)$ is the product of the distinct primes dividing $n$. \par\noindent\textbf{Applications:} it measures the square-free part of an integer and appears in Diophantine equations and the $abc$ conjecture.
 
 \term{Radon Measure}
-A Borel measure that is finite on compact sets and regular in the sense of inner and outer approximation by compact and open sets.
+A Radon measure is a Borel measure that is finite on compact sets and can be approximated regularly by compact and open sets. \par\noindent\textbf{Applications:} Radon measures provide a reliable framework for integration on locally compact spaces and for probability models.
 
 \term{Ramsey's Theorem}
-Any sufficiently large complete graph whose edges are colored with finitely many colors contains a monochromatic clique of any prescribed size $k$. The infinite version states that every edge-coloring of the complete graph on $\mathbb{N}$ with finitely many colors has an infinite monochromatic clique. The Ramsey numbers $R(k,l)$ are the smallest $n$ such that every red-blue coloring of $K_n$ contains a red $K_k$ or a blue $K_l$.
+Ramsey's theorem states that every sufficiently large finitely colored complete graph contains a monochromatic complete subgraph of any prescribed size. The numbers $R(k,l)$ give the smallest size needed for red or blue structure. \par\noindent\textbf{Applications:} it explains unavoidable patterns in networks, scheduling, and combinatorial design.
 
 \term{Random}
-Governed by chance rather than deterministic rules, described by probability distributions.
+Random describes outcomes governed by chance and modeled by probability distributions. Randomness does not mean that the behavior is necessarily patternless; it means that individual outcomes cannot be predicted with certainty. \par\noindent\textbf{Applications:} random models support sampling, simulation, risk analysis, and statistical inference.
 
 \term{Random Walk}
-A stochastic process that describes a path consisting of a succession of random steps on some mathematical structure (such as the integer lattice $\mathbb{Z}^d$). The behavior of random walks is central to the study of diffusion and Brownian motion.
+A random walk is a stochastic process formed by successive random steps, such as steps on the lattice $\mathbb Z^d$. Its long-term behavior depends on the step distribution and the underlying space. \par\noindent\textbf{Applications:} random walks model diffusion, search algorithms, ranking, and financial movement.
 
 \term{Random Variable}
-A measurable function $X: \Omega \to \mathbb{R}$ from a probability space to the real numbers. It assigns a numerical value to each outcome of a random experiment.
+A random variable is a measurable function from a probability space to numerical values. It assigns a value to each outcome while allowing probabilities to be computed for ranges of values. \par\noindent\textbf{Applications:} random variables are the basic objects of statistics, probability models, and uncertainty quantification.
 
 \term{Rank}
-The dimension of the image of a linear map, or the size of the largest non-vanishing minor of a matrix.
+The rank of a linear map is the dimension of its image. For a matrix, it is also the maximum number of linearly independent rows or columns. \par\noindent\textbf{Applications:} rank measures information, identifies solvability, and supports regression and data reduction.
 
 \term{Rank (Linear Algebra)}
-The dimension of the column space (or row space) of a matrix. It represents the maximum number of linearly independent columns or rows. The rank-nullity theorem relates the rank to the dimension of the kernel.
+The rank of a matrix is the dimension of its column space, equivalently its row space. It counts the independent directions represented by the matrix. \par\noindent\textbf{Applications:} matrix rank is used in linear systems, least squares, compression, and machine learning.
 
 \term{Rank (Group Theory)}
-For a free group, the rank is the cardinality of its generating set. For an abelian group, the rank is the size of the largest linearly independent subset over $\mathbb{Z}$.
+In group theory, rank measures the minimum size of a generating set in settings where that notion is well defined. For a finitely generated abelian group, it counts the independent infinite-order generators. \par\noindent\textbf{Applications:} group rank describes algebraic complexity in topology and geometric group theory.
 
 \term{Rank--Nullity Theorem}
-For a linear map $T: V \to W$ between finite-dimensional vector spaces, $\dim V = \operatorname{rank}(T) + \operatorname{nullity}(T)$, where the rank is the dimension of the image of $T$ and the nullity is the dimension of its kernel. As a consequence, a square matrix is invertible if and only if its rank equals its size, equivalently if and only if its kernel is trivial. The theorem follows from the first isomorphism theorem.
+The rank--nullity theorem states that for a linear map $T:V\to W$, $\dim V=\operatorname{rank}(T)+\operatorname{nullity}(T)$. The rank measures the output directions and the nullity measures the lost input directions. \par\noindent\textbf{Applications:} it tests invertibility and explains degrees of freedom in linear models.
 
 \term{Rational Function}
-A ratio of two polynomials, $f(x) = P(x)/Q(x)$, defined where $Q(x) \neq 0$.
+A rational function is a ratio $f(x)=P(x)/Q(x)$ of two polynomials, defined where $Q(x)\ne0$. Its graph may have poles or removable holes. \par\noindent\textbf{Applications:} rational functions model transfer functions, interpolation, asymptotic behavior, and algebraic curves.
 
 \term{Rational Root Theorem}
-A theorem stating that if a polynomial with integer coefficients has a rational root $p/q$ (in lowest terms), then $p$ must be a divisor of the constant term and $q$ must be a divisor of the leading coefficient.
+The rational root theorem states that if an integer-coefficient polynomial has a root $p/q$ in lowest terms, then $p$ divides the constant term and $q$ divides the leading coefficient. \par\noindent\textbf{Applications:} it gives a finite list of candidates for exact polynomial factorization.
 
 \term{Rayleigh Quotient}
-For a Hermitian matrix $A$ and a non-zero vector $x$, the quotient $R(A,x) = \frac{x^* A x}{x^* x}$. The maximum and minimum values of the Rayleigh quotient are the largest and smallest eigenvalues of $A$.
+For a Hermitian matrix $A$ and nonzero vector $x$, the Rayleigh quotient is $R(A,x)=\frac{x^*Ax}{x^*x}$. Its maximum and minimum are the largest and smallest eigenvalues of $A$. \par\noindent\textbf{Applications:} it estimates eigenvalues and appears in vibration analysis, stability, and principal-component methods.
 
 \term{Ricci Curvature}
-The contraction of the Riemann curvature tensor, $\operatorname{Ric}_{ab} = R^c_{\ acb}$, central to the Einstein field equations.
+Ricci curvature is a contraction of the Riemann curvature tensor, written locally as $\operatorname{Ric}_{ab}=R^c_{\ acb}$. It summarizes how volumes and geodesics deviate from their flat-space behavior. \par\noindent\textbf{Applications:} it is central to general relativity and geometric analysis.
 
 \term{Rice's Theorem}
-Any non-trivial semantic property of partial recursive functions is undecidable, meaning the set of indices of the functions possessing the property cannot be decided by an algorithm. It generalizes the undecidability of the halting problem, which concerns the specific property of halting. It shows that essentially every interesting question about the behavior of programs is undecidable.
+Rice's theorem states that every nontrivial semantic property of partial computable functions is undecidable. A property is semantic when it concerns what a program computes rather than how it is written. \par\noindent\textbf{Applications:} the theorem sets limits on automatic program analysis and verification.
 
 \term{Richard's Paradox}
-A number defined as differing from the $n$-th number definable by a finite English phrase in its $n$-th decimal place. Such a number both is and is not definable by a finite phrase, a contradiction. It shows the notions of definability and enumeration are subtle and relates to diagonalization and the arithmetization of syntax in computability theory.
+Richard's paradox constructs a number by changing the $n$th decimal digit of the $n$th number described by a finite phrase. The apparent contradiction shows that informal language cannot safely enumerate all definitions. \par\noindent\textbf{Applications:} it motivates formal languages, diagonal arguments, and the study of definability.
 
 \term{Real Analysis}
-The branch of analysis dealing with real-valued functions, sequences, limits, and measure on the real line.
+Real analysis studies limits, sequences, functions, integration, and measure on the real numbers. It supplies precise definitions for continuity, convergence, and approximation. \par\noindent\textbf{Applications:} real analysis underlies differential equations, probability, optimization, and numerical analysis.
 
 \term{Real Line}
-The set $\mathbb{R}$ of real numbers viewed as a one-dimensional continuum.
+The real line is the ordered set $\mathbb R$ of real numbers viewed as a one-dimensional continuum. It has no gaps and provides the usual setting for limits and intervals. \par\noindent\textbf{Applications:} it represents measured quantities, time, position, and scalar state variables.
 
 \term{Reciprocal}
-The multiplicative inverse of a number $x$, denoted $1/x$ or $x^{-1}$, such that $x \cdot (1/x) = 1$. In $\mathbb{Z}/n\mathbb{Z}$, an element has a reciprocal iff it is coprime to $n$.
+The reciprocal of a nonzero number $x$ is its multiplicative inverse $1/x$, satisfying $x(1/x)=1$. In $\mathbb Z/n\mathbb Z$, an element has a reciprocal exactly when it is coprime to $n$. \par\noindent\textbf{Applications:} reciprocals support division, rates, unit conversion, and modular cryptography.
 
 \term{Recurrence Relation}
-An equation that defines a sequence where each term is a function of the preceding terms. Examples include the Fibonacci sequence $F_n = F_{n-1} + F_{n-2}$ and the factorial recurrence $n! = n \cdot (n-1)!$.
+A recurrence relation defines sequence terms from earlier terms, such as $F_n=F_{n-1}+F_{n-2}$. Initial values are needed to determine a specific sequence. \par\noindent\textbf{Applications:} recurrences model population growth, algorithms, financial schedules, and discrete dynamical systems.
 
 \term{Recursive}
-A definition or algorithm that refers to itself with smaller inputs, terminating at a base case.
+Recursive means that a definition or algorithm refers to itself on smaller inputs and eventually reaches a base case. \par\noindent\textbf{Applications:} recursion expresses divide-and-conquer algorithms, inductive definitions, trees, and generated sequences.
 
 \term{Recursive Function}
-A function computable by an algorithm: it can be defined from the basic functions (zero, successor, projections) by composition, primitive recursion, and minimization. By the Church--Turing thesis this class coincides with the Turing-computable and lambda-definable functions. A set is recursive if its characteristic function is recursive, and recursively enumerable if it is the domain of a partial recursive function. The notion underlies Gödel's incompleteness theorems and the undecidability results of computability theory.
+A recursive function is a function computable by a finite algorithm, equivalently by standard formal models such as Turing machines. A recursive set has a computable characteristic function, while a recursively enumerable set may only have an algorithm that lists its members. \par\noindent\textbf{Applications:} recursive functions define the limits of effective computation and support logic and programming-language theory.
 
 \term{Reducible Polynomial}
-A polynomial that can be factored into the product of two or more non-constant polynomials over the same field. A polynomial that is not reducible is called irreducible.
+A polynomial is reducible over a field if it factors into two nonconstant polynomials over that field. Otherwise it is irreducible. \par\noindent\textbf{Applications:} factorization supports solving polynomial equations, constructing field extensions, and coding algebraic data.
 
 \term{Reduction (Algebra)}
-The process of simplifying a mathematical object or mapping it to a simpler structure, such as reducing a polynomial modulo another polynomial or reducing a ring modulo an ideal.
+Reduction is the process of replacing an object by a simpler but equivalent or controlled form, such as reducing a polynomial modulo another polynomial. \par\noindent\textbf{Applications:} reductions simplify algebraic calculations, prove computational hardness, and construct quotient structures.
 
 \term{Reflection (Geometry)}
-An isometry that maps every point $P$ to a point $P'$ such that the line segment $PP'$ is perpendicularly bisected by a fixed hyperplane (the mirror).
+A reflection is an isometry that sends each point to its mirror image across a fixed line, plane, or hyperplane. It preserves distances and reverses orientation. \par\noindent\textbf{Applications:} reflections describe symmetry, image transformations, crystallography, and geometric algorithms.
 
 \term{Reflexive Space}
-A Banach space $X$ for which the canonical evaluation map $X \to X^{**}$, $x \mapsto \operatorname{ev}_x$, is surjective, so that $X$ is canonically isomorphic to its double dual. By the Eberlein--Šmulian theorem, $X$ is reflexive if and only if its closed unit ball is weakly compact. Hilbert spaces and $L^p$ for $1 < p < \infty$ are reflexive, whereas $L^1$, $L^\infty$, and $c_0$ are not. Reflexivity is central to weak compactness, variational methods, and the geometry of Banach spaces.
+A Banach space is reflexive when its natural map into its double dual is onto, so the space is canonically isomorphic to its double dual. Equivalently, its closed unit ball is weakly compact. \par\noindent\textbf{Applications:} reflexivity provides compactness tools for variational problems, optimization, and functional analysis.
 
 \term{Regular Expression}
-A sequence of characters that defines a search pattern, primarily used in formal language theory to describe regular languages. They are equivalent to finite automata.
+A regular expression is a symbolic pattern describing a regular language, using operations such as concatenation, choice, and repetition. It can be recognized by a finite automaton. \par\noindent\textbf{Applications:} regular expressions support text search, lexical analysis, validation, and data extraction.
 
 \term{Regular Graph}
-A graph where each vertex has the same number of neighbors; that is, every vertex has the same degree. A $k$-regular graph is one where every vertex has degree $k$.
+A regular graph is a graph in which every vertex has the same degree. A $k$-regular graph has degree $k$ at every vertex. \par\noindent\textbf{Applications:} regular graphs model balanced networks and support designs in coding, communication, and combinatorics.
 
 \term{Regular Language}
-A language that can be recognized by a finite automaton or described by a regular expression. They form the lowest level of the Chomsky hierarchy.
+A regular language is a set of finite strings recognized by a finite automaton or described by a regular expression. It has limited memory requirements. \par\noindent\textbf{Applications:} regular languages define tokens in compilers, search patterns, and simple communication protocols.
 
 \term{Regular Sequence}
-In commutative algebra, a sequence of elements $a_1, \ldots, a_n$ in a ring $R$ such that $a_1$ is not a zero-divisor in $R$, and each $a_i$ is not a zero-divisor in $R/(a_1, \ldots, a_{i-1})$.
+In a ring, a regular sequence $a_1,\ldots,a_n$ consists of elements where each $a_i$ is not a zero-divisor after the preceding elements have been factored out. \par\noindent\textbf{Applications:} regular sequences measure algebraic independence and define complete intersections in algebraic geometry.
 
 \term{Regular Space}
-A topological space where for every closed set $F$ and point $x \notin F$, there exist disjoint open sets $U$ and $V$ such that $x \in U$ and $F \subseteq V$.
+A regular space is a topological space in which a point and a disjoint closed set can be separated by disjoint open sets. \par\noindent\textbf{Applications:} regularity supplies enough separation to construct continuous functions and study compactness.
 
 \term{Relation (Set Theory)}
-A subset of the Cartesian product $X \times Y$ of two sets. A relation is a function if every element of $X$ is related to exactly one element of $Y$.
+A relation from $X$ to $Y$ is a subset of $X\times Y$ that records which elements are connected. It is a function when each element of $X$ is related to exactly one element of $Y$. \par\noindent\textbf{Applications:} relations represent order, reachability, database links, and logical constraints.
 
 \term{Relatively Prime}
-Two integers whose greatest common divisor is 1, also called coprime.
+Two integers are relatively prime, or coprime, when their greatest common divisor is $1$. \par\noindent\textbf{Applications:} coprimality controls modular inverses, reduced fractions, primitive lattice points, and public-key cryptography.
 
 \term{Remainder Theorem}
-A result stating that the remainder of the division of a polynomial $f(x)$ by $(x-a)$ is equal to $f(a)$.
+The remainder theorem states that dividing a polynomial $f(x)$ by $x-a$ leaves remainder $f(a)$. \par\noindent\textbf{Applications:} it tests roots and quickly evaluates remainders during polynomial factorization.
 
 \term{Renormalisation}
-A technique for controlling infinities in quantum field theory by redefining parameters.
+Renormalisation is a method for replacing divergent intermediate quantities by scale-dependent parameters that produce finite predictions. \par\noindent\textbf{Applications:} it is central to quantum field theory and also informs critical phenomena and statistical mechanics.
 
 \term{Representation (Group Theory)}
-A homomorphism $\rho: G \to \operatorname{GL}(V)$ from a group $G$ to the general linear group of a vector space $V$. It allows the study of groups via the linear algebra of matrices.
+A group representation is a homomorphism $\rho:G\to\operatorname{GL}(V)$ that realizes group elements as invertible linear maps. \par\noindent\textbf{Applications:} representations turn symmetry questions into matrix and linear-algebra problems in physics, chemistry, and harmonic analysis.
 
 \term{Representation Theory}
-The study of homomorphisms from groups, algebras, or rings into endomorphism rings, and of their modules.
+Representation theory studies how groups, algebras, and related structures act by linear transformations. \par\noindent\textbf{Applications:} it classifies symmetries in quantum mechanics, molecular spectra, geometry, and signal analysis.
 
 \term{Residue}
-The coefficient $a_{-1}$ in the Laurent expansion of a meromorphic function at a pole.
+The residue of a meromorphic function at an isolated singularity is the coefficient of $(z-z_0)^{-1}$ in its Laurent expansion. \par\noindent\textbf{Applications:} residues evaluate contour integrals and many real integrals in complex analysis.
 
 \term{Residue (Complex Analysis)}
-The coefficient $a_{-1}$ of the $(z-z_0)^{-1}$ term in the Laurent series expansion of a function $f$ around a singularity $z_0$. The Residue Theorem allows for the evaluation of contour integrals via residues.
+The residue at $z_0$ is the coefficient of $(z-z_0)^{-1}$ in the Laurent expansion of $f$. It captures the part of the singularity that contributes to a contour integral. \par\noindent\textbf{Applications:} residues are used in complex integration, asymptotics, and inverse transforms.
 
 \term{Residue Theorem}
-For a meromorphic function $f$ on a domain $D$ and a closed curve $\gamma$ in $D$ that does not pass through any pole of $f$, the contour integral equals $\int_\gamma f(z) \, dz = 2\pi i \sum \operatorname{Res}(f, z_k)$, summed over the poles $z_k$ inside $\gamma$. The identity assumes $\gamma$ is traversed counterclockwise; traversing it with the opposite orientation changes the sign. It is frequently used to evaluate real integrals by closing the contour in the complex plane.
+The residue theorem states that for a positively oriented closed curve avoiding the poles, $\int_\gamma f(z)\,dz=2\pi i\sum\operatorname{Res}(f,z_k)$ over the enclosed poles. Reversing orientation changes the sign. \par\noindent\textbf{Applications:} it evaluates contour integrals and difficult real integrals.
 
 \term{Resolution of Singularities}
-The problem of eliminating the singular locus of an algebraic variety by a birational morphism from a smooth variety. Hironaka's theorem shows that every algebraic variety over a field of characteristic zero admits a resolution by repeated blow-ups along smooth subvarieties, with strong local and global control. In positive characteristic, existence remains open in general, and the analytic analogue for complex-analytic spaces was settled by Hironaka. Resolutions are essential to intersection theory, mixed Hodge theory, and the study of cohomology.
+Resolution of singularities replaces a singular algebraic variety by a smooth variety related to it through a birational map. In characteristic zero this can be achieved by controlled blow-ups. \par\noindent\textbf{Applications:} resolutions make intersection theory, cohomology, and geometric classification more manageable.
 
 \term{Resultant}
-A polynomial expression involving the coefficients of two polynomials that vanishes if and only if the polynomials share a common root.
+The resultant is a polynomial in the coefficients of two polynomials that vanishes exactly when they share a root over an algebraic closure. \par\noindent\textbf{Applications:} resultants eliminate variables and test common roots without explicitly solving the polynomials.
 
 \term{Retraction (Topology)}
-A continuous map $r: X \to A$ from a space $X$ to a subspace $A$ such that $r(a) = a$ for all $a \in A$. A subspace $A$ is a retract of $X$ if such a map exists.
+A retraction is a continuous map $r:X\to A$ that fixes every point of the subspace $A$. Then $A$ is called a retract of $X$. \par\noindent\textbf{Applications:} retractions simplify topology, prove non-embedding results, and define deformation arguments.
 
 \term{Reverse Polish Notation}
-A postfix notation for writing mathematical expressions where operators follow their operands. It eliminates the need for parentheses in evaluation.
+Reverse Polish notation writes operators after their operands, so expressions can be evaluated without parentheses. \par\noindent\textbf{Applications:} it simplifies stack-based calculators, compilers, and expression parsers.
 
 \term{Riemann Mapping Theorem}
-Every simply connected, proper open subset of the complex plane is conformally equivalent to the unit disk. Since conformal equivalence is transitive, any two such domains are conformally equivalent to each other, so there are no conformal invariants distinguishing them. The boundary behavior of the mapping is subtle, and extending it to the boundary requires assumptions on the regularity of the domain's boundary.
+The Riemann mapping theorem states that every simply connected proper open subset of the complex plane is conformally equivalent to the unit disk. \par\noindent\textbf{Applications:} it transfers complex-analytic problems to a standard domain and supports potential-flow and boundary-value calculations.
 
 \term{Riemann Sum}
-A method for approximating the definite integral of a function by summing the areas of thin rectangles. As the width of the rectangles tends to zero, the sum converges to the integral.
+A Riemann sum approximates an integral by adding the areas of thin rectangles whose heights are function values. Under suitable hypotheses, the sum converges as the mesh width tends to zero. \par\noindent\textbf{Applications:} Riemann sums provide the foundation for integration and numerical quadrature.
 
 \term{Riemann Surface}
-A one-dimensional complex manifold. They provide a natural setting for studying multi-valued functions (like $\sqrt{z}$ or $\log z$) by treating them as single-valued functions on a multi-sheeted surface.
+A Riemann surface is a one-dimensional complex manifold. It turns multivalued expressions such as $\sqrt z$ and $\log z$ into single-valued functions on a suitable surface. \par\noindent\textbf{Applications:} Riemann surfaces support complex analysis, algebraic curves, and mathematical physics.
 
 \term{Riemann Zeta Function}
-The function $\zeta(s) = \sum_{n=1}^\infty n^{-s}$, defined for $\operatorname{Re}(s) > 1$ and analytically continued to the whole complex plane. The Riemann Hypothesis conjectures that all non-trivial zeros lie on the line $\operatorname{Re}(s) = 1/2$.
+The Riemann zeta function is $\zeta(s)=\sum_{n=1}^\infty n^{-s}$ for $\operatorname{Re}(s)>1$, extended meromorphically to the complex plane. Its zeros encode information about prime numbers. \par\noindent\textbf{Applications:} it connects prime distribution, analytic number theory, and spectral models.
 
 \term{Riemann--Hilbert Problem}
-The problem of finding a holomorphic function with a prescribed jump across a given contour. It is central to the study of integrable systems and orthogonal polynomials.
+The Riemann--Hilbert problem seeks a holomorphic function with a prescribed jump across a contour and specified behavior at infinity. \par\noindent\textbf{Applications:} it solves problems in integrable systems, orthogonal polynomials, random matrices, and asymptotic analysis.
 
 \term{Riemannian Manifold}
-A smooth manifold equipped with a Riemannian metric, which is a smooth choice of a positive-definite inner product on each tangent space.
+A Riemannian manifold is a smooth manifold with a smoothly varying positive-definite inner product on each tangent space. The metric defines lengths, angles, and geodesics. \par\noindent\textbf{Applications:} Riemannian manifolds model curved physical spaces and are fundamental in geometry and relativity.
 
 \term{Riemannian Metric}
-A smooth positive definite inner product on each tangent space of a manifold, enabling the measurement of lengths, distances, and angles.
+A Riemannian metric assigns a positive-definite inner product smoothly to every tangent space of a manifold. It determines lengths, angles, areas, and distances. \par\noindent\textbf{Applications:} metrics support geometric modeling, optimization on manifolds, and general relativity.
 
 \term{Ring (Algebra)}
-A set equipped with two binary operations (addition and multiplication) such that it is an abelian group under addition and a semigroup under multiplication, with multiplication distributing over addition.
+A ring is a set with addition and multiplication such that addition forms an abelian group, multiplication is associative, and multiplication distributes over addition. Some conventions also require a multiplicative identity. \par\noindent\textbf{Applications:} rings organize integers, polynomials, matrices, and algebraic structures used in coding and cryptography.
 
 \term{Ring of Integers}
-The integral closure of $\mathbb{Z}$ in a number field $K$, denoted $\mathcal{O}_K$; it consists of the algebraic integers of $K$. It is a Dedekind domain, so ideals factor uniquely into products of prime ideals even though elements need not factor uniquely. Its unit group, discriminant, and ideal class group govern much of algebraic number theory, with the class group measuring the failure of unique factorization. The Gaussian integers $\mathbb{Z}[i]$ and the Eisenstein integers $\mathbb{Z}[\omega]$ are the basic examples.
+The ring of integers $\mathcal O_K$ of a number field $K$ is the set of elements of $K$ that satisfy monic polynomials with integer coefficients. Its ideals factor uniquely into prime ideals, even when elements do not factor uniquely. \par\noindent\textbf{Applications:} rings of integers support algebraic number theory, Diophantine equations, and algebraic cryptography.
 
 \term{Riesz Representation Theorem}
-A theorem stating that every continuous linear functional on a Hilbert space $H$ can be represented as an inner product with a unique vector $y \in H$: $f(x) = \langle x, y \rangle$.
+The Riesz representation theorem states that every continuous linear functional on a Hilbert space has the form $f(x)=\langle x,y\rangle$ for a unique vector $y$. \par\noindent\textbf{Applications:} it identifies dual spaces and supports weak formulations of differential equations.
 
 \term{Riesz Space}
-A vector lattice that is also a vector space over $\mathbb{R}$, where the order structure is compatible with the linear structure.
+A Riesz space is a real vector space equipped with an order in which vectors have lattice operations such as maximum and minimum. \par\noindent\textbf{Applications:} Riesz spaces model ordered functions and support integration and operator theory.
 
 \term{Root (Polynomial)}
-A value $r$ such that $f(r) = 0$ for a polynomial $f(x)$. The Fundamental Theorem of Algebra states that every non-constant complex polynomial has at least one root.
+A root of a polynomial $f$ is a value $r$ for which $f(r)=0$. Over the complex numbers, every nonconstant polynomial has a root. \par\noindent\textbf{Applications:} roots determine factors, equilibria, resonances, and solutions of algebraic models.
 
 \term{Root Mean Square}
-The quantity $\sqrt{\frac{1}{n}\sum x_i^2}$, the quadratic mean of a set of numbers.
+The root mean square of $x_1,\ldots,x_n$ is $\sqrt{\frac1n\sum_i x_i^2}$. It measures magnitude while giving greater weight to large values. \par\noindent\textbf{Applications:} RMS is used for signal amplitude, vibration, electrical voltage, and error measurement.
 
 \term{Ross--Littlewood Paradox}
-A supertask in which at step $n$ ten balls (numbered $10n-9$ through $10n$) are added and ball $n$ is removed. Although the urn grows by nine balls at each finite step, after infinitely many steps every ball has been removed, so the urn is empty. The resolution turns on the limit of the indicator functions being pointwise zero.
+The Ross--Littlewood paradox considers an urn in which balls are added and removed during infinitely many steps. The urn contains many balls after every finite step, yet each particular ball is eventually removed. \par\noindent\textbf{Applications:} it illustrates subtleties of infinite processes, limits, and interchange of operations.
 
 \term{Rotational Symmetry}
-A property of a geometric figure that remains unchanged after a rotation by a certain angle about a fixed point.
+Rotational symmetry means that a figure is unchanged after rotation through a specified angle about a fixed point. \par\noindent\textbf{Applications:} it guides geometric design, crystallography, robotics, and pattern recognition.
 
 \term{Rotation Matrix}
-A square matrix $R$ that preserves lengths and orientation in $\mathbb{R}^n$. In 2D, it is given by $\begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}$.
+A rotation matrix is an orthogonal matrix with determinant $1$ that preserves lengths and orientation. In two dimensions it rotates vectors through an angle $\theta$. \par\noindent\textbf{Applications:} rotation matrices describe rigid-body motion, computer graphics, robotics, and coordinate changes.
 
 \term{Rolle's Theorem}
-If a real-valued function $f$ is continuous on $[a, b]$, differentiable on $(a, b)$, and $f(a) = f(b)$, then there exists at least one $c \in (a, b)$ such that $f'(c) = 0$. It is the basis for the Mean Value Theorem.
+Rolle's theorem states that if $f$ is continuous on $[a,b]$, differentiable on $(a,b)$, and $f(a)=f(b)$, then some $c\in(a,b)$ satisfies $f'(c)=0$. \par\noindent\textbf{Applications:} it proves the mean value theorem and helps locate stationary points.
 
 \term{Rouché's Theorem}
-The theorem that if $|f| < |g|$ on a closed curve, then $f$ and $f + g$ have the same number of zeros inside the curve.
+Rouché's theorem states that if $|f|<|g|$ on a closed contour, then $f$ and $f+g$ have the same number of zeros inside it, counted with multiplicity. \par\noindent\textbf{Applications:} it counts complex roots without solving the polynomial explicitly.
 
 \term{Rough Path Theory}
-A generalization of stochastic calculus that allows for the integration of functions against paths that are too irregular for classical Ito or Stratonovich calculus.
+Rough path theory defines integration and differential equations for paths too irregular for ordinary calculus, including many stochastic paths. \par\noindent\textbf{Applications:} it provides a pathwise framework for stochastic differential equations, signal analysis, and control.
 
 \term{Round-off Error}
-The error introduced by representing real numbers with finite precision in floating-point arithmetic.
+Round-off error is the difference caused by representing exact real numbers with finite-precision arithmetic. It can accumulate during long computations or cancellation. \par\noindent\textbf{Applications:} analyzing round-off error is essential for reliable numerical algorithms and scientific software.
 
 \term{Row Echelon Form}
-A matrix representation where all non-zero rows are below any rows of all zeros, and the leading coefficient of a non-zero row is to the right of the leading coefficient of the row above it.
+Row echelon form is a matrix form in which zero rows are at the bottom and each leading entry lies to the right of the leading entry above it. \par\noindent\textbf{Applications:} Gaussian elimination uses it to solve systems and determine rank.
 
 \term{Rudin--Shapiro Sequence}
-A binary sequence with a low autocorrelation, constructed recursively. It is used in the study of the distribution of polynomials with coefficients in $\{-1, 1\}$.
+The Rudin--Shapiro sequence is a recursively defined binary sequence with controlled autocorrelation. \par\noindent\textbf{Applications:} it is studied in harmonic analysis, signal design, and the behavior of polynomials with signs $\{-1,1\}$.
 
 \term{Ruler}
-A straightedge used in classical constructions; with compass, the tools of Euclidean construction.
+A ruler is a straightedge used to draw lines and compare or measure lengths. In classical geometry it is paired with a compass for constructions. \par\noindent\textbf{Applications:} rulers support surveying, technical drawing, geometry, and calibration.
 
 \term{Runge--Kutta Method}
-A family of iterative methods used for the numerical solution of ordinary differential equations. They provide a higher-order approximation of the solution than the simple Euler method.
+Runge--Kutta methods approximate solutions of ordinary differential equations by combining several slope evaluations at each step. Higher-order versions improve accuracy without requiring higher derivatives. \par\noindent\textbf{Applications:} they simulate motion, chemical reactions, circuits, and dynamical systems.
 
 \term{Runge's Theorem}
-Runge's theorem says that a function holomorphic near a compact set can be uniformly approximated there by rational functions whose poles lie in the allowed complementary components. If the complement of the compact set is connected, polynomials are enough. Applications: the theorem replaces analytic functions by simpler expressions for approximation and numerical computation.
+Runge's theorem says that a function holomorphic near a compact set can be uniformly approximated there by rational functions whose poles lie in the allowed complementary components. If the complement of the compact set is connected, polynomials are enough. \par\noindent\textbf{Applications:} the theorem replaces analytic functions by simpler expressions for approximation and numerical computation.
 
 \term{Russell's Paradox}
-The set $R = \{x : x \notin x\}$ of sets that do not contain themselves cannot consistently be asked whether $R \in R$: each answer implies the other. Discovered by Russell in 1901, it undermined naive set theory and motivated the axioms of ZFC and Russell's theory of types. The "barber paradox" is its everyday analogue.
+Russell's paradox considers the collection of all sets that do not contain themselves. Asking whether this collection contains itself produces a contradiction. \par\noindent\textbf{Applications:} the paradox motivated axiomatic set theory and careful foundations for mathematics.
 
 \term{R-module}
-A module over a ring $R$. If $R$ is a field, an $R$-module is simply a vector space.
+An $R$-module is an abelian group on which a ring $R$ acts compatibly with addition. When $R$ is a field, it is a vector space. \par\noindent\textbf{Applications:} modules generalize vector spaces and organize linear equations, ideals, and algebraic invariants.
 
 \term{R-linear map}
-A map between two $R$-modules that preserves the $R$-action: $f(ax+by) = af(x) + bf(y)$ for $a, b \in R$.
+A map between $R$-modules is $R$-linear when $f(ax+by)=af(x)+bf(y)$ for $a,b\in R$. \par\noindent\textbf{Applications:} linear maps preserve module structure and represent transformations in algebra, coding, and systems theory.
 \term{Prime Distribution}
-The study of how prime numbers are distributed among the integers. The Prime Number Theorem states that $\pi(x) \sim x/\log x$, where $\pi(x)$ counts primes up to $x$. The Riemann hypothesis, if true, gives the sharpest possible error term: $\pi(x) = \operatorname{Li}(x) + O(\sqrt{x}\log x)$. Prime gaps, arithmetic progressions, and the distribution of primes in short intervals are active areas of research.
+Prime distribution studies how prime numbers occur among the integers. The prime number theorem gives the leading estimate $\pi(x)\sim x/\log x$. \par\noindent\textbf{Applications:} prime distribution supports analytic number theory and the security analysis of public-key cryptography.
 \term{Riemann Hypothesis}
-The conjecture that all non-trivial zeros of the Riemann zeta function $\zeta(s)$ lie on the critical line $\operatorname{Re}(s) = 1/2$. Proved for infinitely many zeros and verified for the first trillions, it remains open. The hypothesis is equivalent to sharp bounds on the error term in the Prime Number Theorem and has far-reaching consequences for number theory, random matrix theory, and quantum chaos.
+The Riemann hypothesis conjectures that every nontrivial zero of $\zeta(s)$ lies on $\operatorname{Re}(s)=1/2$. It remains unproved and would imply strong bounds on the error in prime-counting estimates. \par\noindent\textbf{Applications:} it guides research in number theory, spectral theory, and mathematical physics.
 \term{Ramsey Theory}
-A branch of combinatorics asserting that complete disorder is impossible: for any given order and any partition of the objects being studied, there is a monochromatic structured subobject. Ramsey's theorem guarantees a monochromatic complete subgraph in any edge-colouring of a sufficiently large complete graph. Other results include van der Waerden's theorem on arithmetic progressions and the Erdős--Szekeres theorem on monotone subsequences.
+A branch of combinatorics showing that sufficiently large systems contain ordered substructures under any finite coloring or partition. Ramsey's theorem guarantees monochromatic complete subgraphs in large enough complete graphs. \par\noindent\textbf{Applications:} Ramsey theory studies unavoidable patterns in networks, schedules, coding, and discrete mathematics.

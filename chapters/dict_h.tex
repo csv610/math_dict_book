@@ -2,40 +2,40 @@
 \label{chap:h}
 
 \term{Haar Measure}
-A translation-invariant measure on a locally compact topological group. Such a measure exists and is unique up to a positive scalar factor.
+A Haar measure is a measure on a locally compact topological group that is unchanged by translation. It exists and is unique up to multiplication by a positive constant. On $\mathbb{R}^n$ it is ordinary Lebesgue measure, while on a finite group it is counting measure. \par\noindent\textbf{Applications:} Haar measure allows integration and probability to be defined consistently on groups and is fundamental in harmonic analysis and representation theory.
 
 \term{Hadamard Factorization Theorem}
-The theorem stating that any entire function of finite order can be expressed as a product involving its zeros times an exponential polynomial. It generalises the Weierstrass product theorem.
+The Hadamard factorization theorem expresses an entire function of finite order as a product built from its zeros, multiplied by an exponential factor. The factor records growth that is not determined by the zeros. It generalizes the Weierstrass product theorem. \par\noindent\textbf{Applications:} it helps classify entire functions and appears in complex analysis, differential equations, and spectral theory.
 
 \term{Hadamard Matrix}
-A square matrix whose entries are either $+1$ or $-1$ and whose rows are mutually orthogonal. Such matrices are used in error-correcting codes and signal processing.
+A Hadamard matrix is a square matrix with entries $\pm1$ whose rows are mutually orthogonal, so $HH^{\mathsf T}=nI$ for an $n\times n$ matrix. Orthogonality lets the rows carry separate signals with little interference. \par\noindent\textbf{Applications:} Hadamard matrices are used in error-correcting codes, fast transforms, experimental design, and signal processing.
 
 \term{Hadamard Product}
-The element-wise product of two matrices of the same dimensions, where $(A \circ B)_{ij} = A_{ij} B_{ij}$. It is also known as the Schur product.
+The Hadamard product, or Schur product, multiplies matrices entry by entry: $(A\circ B)_{ij}=A_{ij}B_{ij}$. It differs from ordinary matrix multiplication. The Schur product theorem says that the Hadamard product of positive semidefinite matrices is positive semidefinite. \par\noindent\textbf{Applications:} it is used for masks, covariance matrices, image processing, and kernel methods.
 
 \term{Hahn--Banach Theorem}
-A fundamental result in functional analysis stating that a bounded linear functional on a subspace of a normed vector space can be extended to the whole space without increasing its norm.
+The Hahn--Banach theorem says that a bounded linear functional defined on a subspace of a normed vector space can be extended to the whole space without increasing its norm. Geometrically, it also provides separating hyperplanes for disjoint convex sets. \par\noindent\textbf{Applications:} it supplies duality tools in optimization, functional analysis, and the study of weak convergence.
 
 \term{Hairy Ball Theorem}
 Every continuous tangent vector field on an even-dimensional sphere must vanish somewhere; equivalently, there is no continuous non-vanishing field of tangent vectors on $S^{2n}$. It is often summarized as ``you cannot comb a hairy ball flat.'' A consequence is that at any moment the wind must be calm at some point on Earth. Odd-dimensional spheres do admit non-vanishing tangent vector fields.
 
 \term{Half-plane}
-A region in $\mathbb{R}^2$ bounded by a line, consisting of all points on one side of the line.
+A half-plane is one of the two regions into which a line divides $\mathbb{R}^2$, including or excluding the boundary according to the inequality used. For example, $ax+by\leq c$ defines a closed half-plane. \par\noindent\textbf{Applications:} half-planes describe linear constraints in optimization, feasible regions, and geometric algorithms.
 
 \term{Half-space}
-A region in $\mathbb{R}^n$ bounded by a hyperplane.
+A half-space is one of the two regions into which a hyperplane divides $\mathbb{R}^n$, such as $\{x:a\cdot x\leq b\}$. It is the basic building block of a convex polyhedron. \par\noindent\textbf{Applications:} half-spaces model linear inequalities in optimization, classification, and computational geometry.
 
 \term{Hall's Marriage Theorem}
-A combinatorial theorem giving a necessary and sufficient condition for a finite family of sets to have a system of distinct representatives: the union of any $k$ sets must contain at least $k$ elements.
+Hall's marriage theorem states that a finite family of sets $A_1,\ldots,A_n$ has distinct representatives $a_i\in A_i$ exactly when every subfamily of $k$ sets has a union containing at least $k$ elements. This is a matching criterion for bipartite graphs. \par\noindent\textbf{Applications:} it solves assignment, scheduling, school-choice, and resource-allocation problems.
 
 \term{Halting Problem}
 The problem of deciding, given a program and its input, whether the program eventually halts. Turing proved that it is undecidable: no algorithm solves it in all cases. The proof uses a diagonalization argument, constructing a program that halts exactly when the purported decider claims it does not. It is the classic undecidable problem and the starting point for the theory of computability.
 
 \term{Heine--Borel Theorem}
-In $\mathbb{R}^n$, a subset is compact if and only if it is closed and bounded. This characterisation links a topological property (compactness) to metric properties (closedness and boundedness) and is essential for proving the existence of extrema for continuous functions.
+In $\mathbb{R}^n$, a set is compact if and only if it is closed and bounded. Compactness gives strong existence properties: every continuous function on a compact set is bounded and attains its maximum and minimum. \par\noindent\textbf{Applications:} the theorem is used to justify solutions of optimization problems and convergence arguments in analysis.
 
 \term{Hamiltonian (Mechanics)}
-A function $H(p, q, t)$ representing the total energy of a system. The evolution of the system is governed by Hamilton's equations: $\dot{q} = \frac{\partial H}{\partial p}$ and $\dot{p} = -\frac{\partial H}{\partial q}$.
+A Hamiltonian $H(p,q,t)$ is a function of position or generalized coordinates $q$, momenta $p$, and possibly time. The motion is governed by Hamilton's equations, $\dot q=\partial H/\partial p$ and $\dot p=-\partial H/\partial q$. When $H$ has no explicit time dependence, it is often conserved. \par\noindent\textbf{Applications:} Hamiltonians organize classical mechanics, optics, statistical mechanics, and the transition to quantum mechanics.
 
 \term{Hamiltonian Cycle}
 A cycle in a graph that visits each vertex exactly once; a Hamiltonian path is the corresponding notion without return to the starting vertex. Dirac's theorem asserts that a graph on $n \geq 3$ vertices with minimum degree at least $n/2$ is Hamiltonian, and Ore's theorem generalises it to the condition $d(u)+d(v) \geq n$ for every pair of non-adjacent vertices. Deciding whether a graph contains a Hamiltonian cycle is NP-complete, and the traveling salesman problem asks for a Hamiltonian cycle of minimum total weight in an edge-weighted complete graph.
@@ -44,43 +44,47 @@ A cycle in a graph that visits each vertex exactly once; a Hamiltonian path is t
 In quantum mechanics, the operator $\hat{H}$ corresponding to the total energy of the system. The time-independent Schrödinger equation is $\hat{H} \psi = E \psi$.
 
 \term{Hamiltonian System}
-A dynamical system governed by Hamilton's equations $\dot{q} = \frac{\partial H}{\partial p}$ and $\dot{p} = -\frac{\partial H}{\partial q}$.
+A Hamiltonian system is a dynamical system with coordinates $(q,p)$ whose evolution satisfies Hamilton's equations $\dot q=\partial H/\partial p$ and $\dot p=-\partial H/\partial q$. Its flow preserves the symplectic structure of phase space, which constrains how volumes and trajectories evolve. \par\noindent\textbf{Applications:} such systems model celestial mechanics, molecular dynamics, waves, and control systems.
 
 \term{Hamming Code}
-A family of linear error-correcting codes that can detect up to two-bit errors and correct one-bit errors. The (7,4) Hamming code is a prototypical example.
+A Hamming code is a linear error-correcting code that adds check bits to data. The $(7,4)$ code stores four data bits in seven bits, corrects any one-bit error, and detects many two-bit errors. Its parity checks locate the erroneous position through a syndrome. \par\noindent\textbf{Applications:} Hamming codes illustrate reliable data storage and communication with limited redundancy.
 
 \term{Hamming Distance}
-The number of positions at which the corresponding symbols of two strings of equal length are different. It is used in information theory to measure error rates.
+The Hamming distance between two equal-length strings is the number of positions in which they differ. For example, the distance between $10110$ and $10011$ is $2$. \par\noindent\textbf{Applications:} it measures transmission errors and determines how many errors an error-correcting code can detect or correct.
 
 \term{Hankel Transform}
-An integral transform of the form $F(r) = \int_0^\infty f(t) J_n(rt)\, t\, dt$, where $J_n$ is a Bessel function of the first kind. It is the Fourier transform adapted to radial symmetry.
+A Hankel transform has the form $F(r)=\int_0^\infty f(t)J_n(rt)t\,dt$, where $J_n$ is a Bessel function. It is a Fourier transform adapted to functions with radial or cylindrical symmetry. \par\noindent\textbf{Applications:} it simplifies wave, heat, and electrostatic problems in circular geometries and is used in imaging and signal processing.
 
 \term{Hardy Space}
 For $0 < p \leq \infty$, the Hardy space $H^p$ consists of the holomorphic functions $f$ on the unit disk whose boundary values on the unit circle belong to $L^p$; the radial limits $f^*(e^{i\theta}) = \lim_{r \to 1} f(re^{i\theta})$ exist almost everywhere. Every $f \in H^p$ factors uniquely as an inner function times an outer function, and $H^2$ is a Hilbert space isometric to $\ell^2$ via Taylor coefficients. Carleson measures characterise the bounded embeddings of $H^p$ into $L^p(\mu)$, and Carleson's corona theorem describes the maximal ideals of $H^\infty$. Analogous spaces on the upper half-plane give the standard boundary-value setting.
 
 \term{Harmonic Analysis}
-The study of how signals or functions can be represented as sums of basic waves (sinusoids), primarily via Fourier series and Fourier transforms.
+Harmonic analysis studies how functions and signals can be decomposed into basic oscillations, using Fourier series, Fourier transforms, and related transforms. It also examines how these decompositions behave under translation and scaling. \par\noindent\textbf{Applications:} it underlies audio and image compression, filtering, communications, PDEs, and quantum mechanics.
 
 \term{Harmonic Function}
-A function $u$ that satisfies Laplace's equation $\Delta u = 0$. Such functions are smooth and satisfy the mean value property.
+A harmonic function satisfies Laplace's equation $\Delta u=0$. In a region, its value at the center of a ball equals the average of its values on the boundary, so it cannot have a strict interior maximum or minimum unless it is constant. \par\noindent\textbf{Applications:} harmonic functions describe steady temperature, gravitational and electric potentials, and fluid flow.
 
 \term{Harmonic Mean}
-The reciprocal of the arithmetic mean of the reciprocals of a set of values: $H = n / (\sum 1/x_i)$. It is typically used for average rates.
+For positive values $x_1,\ldots,x_n$, the harmonic mean is $H=n/(\sum_i1/x_i)$. It gives more weight to small values than the arithmetic mean, so it is appropriate for averaging rates when the same distance or task is performed at different speeds. \par\noindent\textbf{Applications:} it is used for average speeds, ratios, and performance measures such as precision and recall.
 
 \term{Harmonic Number}
-The sum of the reciprocals of the first $n$ positive integers: $H_n = \sum_{k=1}^n 1/k$. The harmonic numbers grow like $\ln n + \gamma$, where $\gamma$ is Euler's constant.
+The $n$th harmonic number is $H_n=\sum_{k=1}^n1/k$. Although the terms become small, $H_n$ grows without bound, with $H_n=\ln n+\gamma+o(1)$. \par\noindent\textbf{Applications:} harmonic numbers occur in algorithm analysis, expected values in random processes, and the study of series and asymptotic estimates.
 
 \term{Harmonic Series}
-The divergent infinite series $\sum_{n=1}^\infty \frac{1}{n}$. Although the terms tend to zero, the sum grows logarithmically.
+The harmonic series $\sum_{n=1}^{\infty}1/n$ diverges, even though its individual terms tend to zero. Its partial sums grow approximately like $\ln n$. \par\noindent\textbf{Applications:} it is a basic test case showing that termwise convergence to zero is not sufficient for convergence of a series.
 
 \term{Harnack's Inequality}
 An inequality bounding the ratio of values of a positive harmonic function at two points in terms of a constant depending only on the domain. It implies that positive harmonic functions on connected domains satisfy a strong form of rigidity.
 
 \term{Hausdorff Dimension}
-A way of assigning a dimension to a set (including fractals) that can be non-integer. It is defined via the $s$-dimensional Hausdorff measure.
+Hausdorff dimension extends the idea of dimension to irregular sets and fractals. It is the critical exponent at which the $s$-dimensional Hausdorff measure changes from infinite to zero. A line has dimension $1$, a plane has dimension $2$, and some fractals have non-integer dimension. \par\noindent\textbf{Applications:} it quantifies roughness, scaling, and complexity in dynamical systems, geometry, and data analysis.
 
 \term{Hausdorff Distance}
-A measure of how far two subsets of a metric space are from each other. It is the maximum distance from a point in one set to the nearest point in the other set.
+For compact subsets $A,B$ of a metric space, the Hausdorff distance is
+\[
+d_H(A,B)=\max\{\sup_{a\in A}d(a,B),\sup_{b\in B}d(b,A)\}.
+\]
+It measures the largest mismatch between the two sets. \par\noindent\textbf{Applications:} it compares shapes, contours, point clouds, and approximations produced by geometric algorithms.
 
 \term{Hausdorff Measure}
 The $s$-dimensional Hausdorff measure of a subset $E$ of a metric space is $\mathcal{H}^s(E) = \lim_{\delta \to 0} \inf \left\{\sum_i (\operatorname{diam} U_i)^s\right\}$, where the infimum is taken over all countable covers of $E$ by sets $U_i$ of diameter at most $\delta$. On $\mathbb{R}^n$, $\mathcal{H}^n$ is a constant multiple of Lebesgue measure, and $\mathcal{H}^0$ is counting measure. Hausdorff measure is countably additive on Borel sets, invariant under isometries and scales by $r^s$ under dilation by $r$. The infimum of $s$ with $\mathcal{H}^s(E) = 0$ is the Hausdorff dimension, central to geometric measure theory and the study of fractals.
@@ -89,13 +93,13 @@ The $s$-dimensional Hausdorff measure of a subset $E$ of a metric space is $\mat
 A unit sphere $S^2$ can be decomposed into finitely many disjoint pieces which, by rotations alone, can be reassembled into two copies of the sphere (one possibly together with a countable set). It is a precursor of the Banach--Tarski paradox and similarly depends on the axiom of choice and non-measurable sets.
 
 \term{Hausdorff Space}
-A topological space in which any two distinct points can be separated by disjoint open neighborhoods. Most "natural" spaces in analysis and geometry are Hausdorff.
+A topological space is Hausdorff if any two distinct points have disjoint open neighborhoods. This condition ensures that limits of sequences, when they exist in the relevant setting, are unique. \par\noindent\textbf{Applications:} Hausdorff spaces provide the standard setting for analysis, geometry, and the separation of distinct states or configurations.
 
 \term{Heat Equation}
-The partial differential equation $\frac{\partial u}{\partial t} = \alpha \nabla^2 u$ describing the diffusion of heat through a medium.
+The heat equation $\partial u/\partial t=\alpha\nabla^2u$ describes diffusion of temperature or another quantity through a medium. The constant $\alpha>0$ measures diffusivity, and boundary or initial conditions determine the solution. \par\noindent\textbf{Applications:} it models heat conduction, diffusion of chemicals, smoothing of images, and probabilistic Brownian motion.
 
 \term{Heaviside Step Function}
-A function $\text{H}(x)$ that is $0$ for $x < 0$ and $1$ for $x \geq 0$. It is used to model switches in circuit theory and is the integral of the Dirac delta function.
+The Heaviside step function is $H(x)=0$ for $x<0$ and $H(x)=1$ for $x>0$; its value at $0$ is chosen by convention. In the distributional sense, its derivative is the Dirac delta. \par\noindent\textbf{Applications:} it models switching, delayed signals, sudden loads, and piecewise forcing in differential equations.
 
 \term{Hecke Operator}
 The operator $T_n$ acting on spaces of modular forms via the double coset decomposition of $\operatorname{GL}_2$, or explicitly by $T_n f(\tau) = \sum_{ad=n,\, 0 \leq b < d} f\left(\frac{a\tau+b}{d}\right)$ for level-one forms. The operators $T_n$ commute and are normal for the Petersson inner product, so cusp forms admit a basis of simultaneous Hecke eigenforms whose Fourier coefficients are multiplicative, $a_{mn} = a_m a_n$ for $\gcd(m,n)=1$. This multiplicativity yields Euler products for the associated Hecke $L$-functions. Via the correspondence of Eichler--Shimura, Hecke operators mediate the bridge from modular forms to Galois representations, underpinning the Langlands program.
@@ -104,16 +108,20 @@ The operator $T_n$ acting on spaces of modular forms via the double coset decomp
 A topological space formed by attaching several copies of the unit interval to a single common endpoint. It is used as a counterexample in the study of metric spaces.
 
 \term{Heegner Number}
-A number $d$ such that the imaginary quadratic field $\mathbb{Q}(\sqrt{-d})$ has class number 1. There are exactly nine such numbers: 1, 2, 3, 7, 11, 19, 43, 67, 163.
+A Heegner number is a positive integer $d$ for which the imaginary quadratic field $\mathbb{Q}(\sqrt{-d})$ has class number $1$. The nine values are $1,2,3,7,11,19,43,67,163$. Class number $1$ means that ideals factor uniquely in the appropriate ring of integers. \par\noindent\textbf{Applications:} Heegner numbers connect algebraic number theory with elliptic curves, modular forms, and explicit Diophantine equations.
 
 \term{Heisenberg Group}
-A Lie group of $3 \times 3$ upper triangular matrices with ones on the diagonal. It is the simplest non-abelian nilpotent Lie group and is central to quantum mechanics.
+The Heisenberg group consists of matrices
+\[
+\begin{pmatrix}1&x&z\\0&1&y\\0&0&1\end{pmatrix},\qquad x,y,z\in\mathbb{R}.
+\]
+It is non-abelian: the order of multiplication matters, and its commutator records the central coordinate. \par\noindent\textbf{Applications:} it models the position--momentum commutation relations of quantum mechanics and appears in harmonic analysis and signal processing.
 
 \term{Helly's Theorem}
-A result in convex geometry stating that if every $d+1$ elements of a collection of convex sets in $\mathbb{R}^d$ have a common intersection, then the entire collection has a common intersection.
+Helly's theorem says that a finite collection of convex sets in $\mathbb{R}^d$ has a common point if every subcollection of at most $d+1$ sets has a common point. A global intersection is therefore certified by small local checks. \par\noindent\textbf{Applications:} it supports feasibility tests in convex optimization, geometric databases, and sensor-location problems.
 
 \term{Hensel's Lemma}
-A result in number theory stating that if a polynomial has a simple root modulo a prime $p$, then it has a unique root modulo $p^k$ for every $k$, obtained by successive lifting.
+Hensel's lemma lifts solutions from modular arithmetic to higher powers of a prime. If $f(a)\equiv0\pmod p$ and $f'(a)\not\equiv0\pmod p$, then the root lifts uniquely to a root modulo $p^k$ for every $k\geq1$. \par\noindent\textbf{Applications:} it solves polynomial congruences, studies $p$-adic numbers, and factors polynomials over local fields.
 
 \term{Hereditary Property}
 A property of a class of graphs or structures such that if a structure has the property, then all its substructures (e.g., induced subgraphs) also have it.
@@ -122,43 +130,43 @@ A property of a class of graphs or structures such that if a structure has the p
 A ring where every ideal is a projective module. In such rings, the global dimension is at most 1.
 
 \term{Hermite Normal Form}
-A canonical integer matrix form obtained by column operations, in which the matrix is upper triangular with non-negative off-diagonal entries. It is used in lattice theory and integer linear programming.
+Hermite normal form is a canonical form for an integer matrix obtained by integer-preserving column or row operations. For a full-rank matrix it is triangular with controlled non-negative entries, so it represents the same lattice in a standard way. \par\noindent\textbf{Applications:} it solves integer linear systems, computes lattice bases, and supports integer programming and cryptography.
 
 \term{Hermite Polynomials}
-A sequence of orthogonal polynomials $H_n(x)$ that arise in the solution of the quantum harmonic oscillator and in probability theory.
+Hermite polynomials form an orthogonal sequence with respect to a Gaussian weight. One common convention is $H_n(x)=(-1)^ne^{x^2}\frac{d^n}{dx^n}e^{-x^2}$. They are eigenfunctions of a second-order differential operator. \par\noindent\textbf{Applications:} they describe the quantum harmonic oscillator, Gaussian random variables, spectral methods, and signal expansions.
 
 \term{Hermitian Form}
-A sesquilinear form $h$ on a complex vector space satisfying $h(u,v) = \overline{h(v,u)}$. A positive definite Hermitian form is an inner product.
+A Hermitian form on a complex vector space is a sesquilinear form satisfying $h(u,v)=\overline{h(v,u)}$. If $h(v,v)>0$ for every nonzero $v$, it is a complex inner product. \par\noindent\textbf{Applications:} Hermitian forms define lengths and angles in complex spaces and describe energy, covariance, and quantum-mechanical observables.
 
 \term{Hermitian Matrix}
-A complex square matrix $A$ that is equal to its own conjugate transpose: $A = A^*$. All eigenvalues of a Hermitian matrix are real.
+A complex square matrix is Hermitian if $A=A^*$, its conjugate transpose. The spectral theorem says it has real eigenvalues and an orthonormal basis of eigenvectors. \par\noindent\textbf{Applications:} Hermitian matrices represent covariance and energy matrices, support stable numerical algorithms, and model observables in quantum mechanics.
 
 \term{Hessian}
 See \term{Hessian Matrix}.
 
 \term{Hessian Matrix}
-The square matrix of second-order partial derivatives of a scalar-valued function. It is used to determine if a critical point is a local maximum, minimum, or saddle point.
+For a twice-differentiable scalar function, the Hessian is the matrix of second partial derivatives, $\nabla^2f=(\partial^2f/\partial x_i\partial x_j)$. At a critical point, a positive-definite Hessian indicates a strict local minimum, while a negative-definite one indicates a strict local maximum; an indefinite Hessian indicates a saddle. \par\noindent\textbf{Applications:} Hessians measure curvature in optimization, stability analysis, statistics, and mechanics.
 
 \term{Heuristics}
-Practical methods or "rules of thumb" used in problem solving that may not be guaranteed to find an optimal solution but often find a "good enough" one in a reasonable time.
+Heuristics are practical rules or strategies that search for useful solutions without guaranteeing an optimum or a proof of correctness in every case. Their value is often measured by solution quality and computation time. \par\noindent\textbf{Applications:} heuristics guide route planning, scheduling, combinatorial optimization, and search problems that are too large for exhaustive methods.
 
 \term{Hilbert Basis Theorem}
-The theorem that the polynomial ring $R[x_1, \ldots, x_n]$ over a Noetherian ring $R$ is itself Noetherian.
+The Hilbert basis theorem states that if $R$ is Noetherian, then the polynomial ring $R[x_1,\ldots,x_n]$ is also Noetherian. Equivalently, every ideal in this ring is finitely generated. \par\noindent\textbf{Applications:} it guarantees finite algebraic descriptions and is a foundation for algebraic geometry, Gröbner-basis methods, and polynomial ideal computation.
 
 \term{Hilbert Curve}
 A space-filling curve that maps the unit interval $[0,1]$ onto the unit square $[0,1]^2$ continuously. It is a fractal curve.
 
 \term{Hilbert Space}
-A complete inner product space. They generalize Euclidean space to infinite dimensions and are the primary setting for quantum mechanics.
+A Hilbert space is a complete inner-product space. Completeness ensures that Cauchy sequences converge within the space, extending Euclidean geometry to infinite dimensions. \par\noindent\textbf{Applications:} Hilbert spaces are the natural setting for Fourier series, PDEs, least-squares approximation, quantum mechanics, and statistical learning.
 
 \term{Hilbert Transform}
-An integral transform that shifts the phase of every frequency component of a signal by $90^\circ$. It is used to create the analytic signal in communications.
+The Hilbert transform shifts the phase of each frequency component by approximately $90^\circ$ and is defined, in the principal-value sense, by a singular integral. Combining a signal with its Hilbert transform produces an analytic signal with an instantaneous amplitude and phase. \par\noindent\textbf{Applications:} it is used in communications, envelope detection, radar, speech analysis, and signal demodulation.
 
 \term{Hilbert's Nullstellensatz}
 A fundamental theorem in algebraic geometry relating ideals in polynomial rings to the zero-sets (varieties) they define. It states that every ideal in $k[x_1, \ldots, x_n]$ is the radical of the ideal of its zero-set.
 
 \term{Hilbert's Tenth Problem}
-The problem of determining whether a given Diophantine equation has a solution in integers. This was proven undecidable by Yuri Matiyasevich in 1970.
+Hilbert's tenth problem asked for an algorithm deciding whether an integer-coefficient polynomial equation has an integer solution. Matiyasevich, building on work by Davis, Putnam, and Robinson, proved in 1970 that no such algorithm exists. \par\noindent\textbf{Applications:} the result marks a fundamental limit on automated equation solving and connects number theory with computability.
 
 \term{Hilbert--Schmidt Norm}
 The norm of a linear operator $T$ on a Hilbert space defined by $\|T\|_{HS}^2 = \sum \|Te_i\|^2$ for any orthonormal basis $\{e_i\}$.
@@ -179,10 +187,10 @@ A polynomial $P(n)$ such that for sufficiently large $n$, $P(n)$ equals the dime
 The cohomology $\mathrm{HH}^n(A,M)$ of an associative algebra $A$ with coefficients in an $A$-bimodule $M$, defined as the cohomology of the Hochschild complex $C^n(A,M) = \operatorname{Hom}_k(A^{\otimes n}, M)$ with differential built from the multiplication of $A$. The group $\mathrm{HH}^2(A,A)$ classifies infinitesimal deformations of $A$, with obstructions in $\mathrm{HH}^3$. For smooth algebras the Hochschild--Kostant--Rosenberg theorem identifies $\mathrm{HH}^n(A,A)$ with polyvector fields $\bigwedge^n \operatorname{Der}_k(A)$, and the theory connects to Kähler differentials. Hochschild homology and cohomology are central to deformation theory, cyclic cohomology, and noncommutative geometry.
 
 \term{Hodge Star Operator}
-A linear isomorphism between $k$-forms and $(n-k)$-forms on an $n$-dimensional oriented Riemannian manifold. It is used to define the adjoint of the exterior derivative.
+On an oriented Riemannian $n$-manifold, the Hodge star maps a $k$-form to an $(n-k)$-form by comparing their wedge product with the volume form. It defines the codifferential, the adjoint of the exterior derivative, and the Hodge Laplacian. \par\noindent\textbf{Applications:} it expresses divergence, curl, and electromagnetic duality in coordinate-free form.
 
 \term{Hodge Theory}
-The study of the cohomology of compact Kähler manifolds. The Hodge decomposition $H^k(X, \mathbb{C}) = \bigoplus_{p+q=k} H^{p,q}(X)$ relates the topology of the manifold to its complex structure.
+Hodge theory studies differential forms, cohomology, and harmonic representatives on Riemannian and especially Kähler manifolds. For a compact Kähler manifold, $H^k(X,\mathbb C)=\bigoplus_{p+q=k}H^{p,q}(X)$ relates topology to complex structure. \par\noindent\textbf{Applications:} it extracts geometric information from cohomology and is used in algebraic geometry, topology, and mathematical physics.
 
 \term{Hodge-Laplacian}
 The operator $\Delta = d\delta + \delta d$ acting on differential forms. The kernel of this operator consists of the harmonic forms.
@@ -194,25 +202,25 @@ A fractal pattern representing the energy spectrum of an electron in a 2D lattic
 A space of functions whose differences are controlled by a power of the distance, i.e. functions satisfying $|f(x) - f(y)| \leq C |x - y|^\alpha$ for some $0 < \alpha \leq 1$.
 
 \term{Hölder's Inequality}
-The inequality $\int |fg| \leq \|f\|_p \|g\|_q$ for $1/p + 1/q = 1$, $p, q \geq 1$. It generalises the Cauchy--Schwarz inequality, which is the case $p = q = 2$.
+Hölder's inequality states that $\int|fg|\leq\|f\|_p\|g\|_q$ when $p,q\geq1$ and $1/p+1/q=1$. The case $p=q=2$ is the Cauchy--Schwarz inequality. \par\noindent\textbf{Applications:} it bounds integrals and products in probability, Fourier analysis, PDE estimates, and the theory of $L^p$ spaces.
 
 \term{Holomorphic Function}
-A complex-valued function of a complex variable that is complex-differentiable in a neighborhood of every point in its domain.
+A holomorphic function is complex-differentiable in a neighborhood of every point in its domain. This stronger form of differentiability implies a power-series expansion and strong integral identities. \par\noindent\textbf{Applications:} holomorphic functions model complex potentials, fluid flow, conformal maps, and frequency-domain solutions of differential equations.
 
 \term{Holonomy}
-The group of linear transformations obtained by parallel transport of tangent vectors around closed loops on a manifold. It encodes curvature.
+Holonomy is the group of transformations obtained by parallel transporting vectors or other geometric data around closed loops. Nontrivial holonomy measures how curvature causes a vector to return changed. \par\noindent\textbf{Applications:} holonomy detects geometric structure, classifies special Riemannian manifolds, and appears in gauge theory and general relativity.
 
 \term{Hom Functor}
 The Hom functor is the bifunctor $\operatorname{Hom}: \mathcal{C}^{\mathrm{op}} \times \mathcal{C} \to \mathbf{Set}$, sending $(A,B)$ to the set $\operatorname{Hom}_{\mathcal{C}}(A,B)$ and acting on morphisms by pre- and post-composition. Over a ring $R$, $\operatorname{Hom}_R(M,-)$ is covariant and $\operatorname{Hom}_R(-,M)$ contravariant, both left exact; their right derived functors are the Ext groups $\operatorname{Ext}^n_R$, classifying extensions of modules and measuring failure of projectivity and injectivity. A contravariant functor $F$ represented by an object $A$ satisfies $F \cong \operatorname{Hom}(-,A)$, and Yoneda's lemma identifies natural transformations $\operatorname{Hom}(-,A) \Rightarrow F$ with the elements of $F(A)$, showing that objects are determined up to isomorphism by the functors they represent.
 
 \term{Homeomorphism}
-A continuous bijection $f: X \to Y$ whose inverse $f^{-1}$ is also continuous. Two spaces are homeomorphic if there exists a homeomorphism between them, meaning they are topologically identical.
+A homeomorphism is a bijection $f:X\to Y$ such that both $f$ and $f^{-1}$ are continuous. It means that the spaces have the same topology: they can be stretched or bent without cutting or gluing. \par\noindent\textbf{Applications:} homeomorphisms classify shapes in topology and identify when two meshes or configuration spaces have the same qualitative structure.
 
 \term{Homogeneous Coordinate}
 A system of coordinates used in projective geometry to represent a point in $\mathbb{P}^n$ as a vector in $\mathbb{R}^{n+1}$, where two vectors represent the same point if they are scalar multiples.
 
 \term{Homogeneous Polynomial}
-A polynomial where every term has the same total degree. For example, $x^2 + xy + y^2$ is homogeneous of degree 2.
+A homogeneous polynomial has the same total degree in every term; for example, $x^2+xy+y^2$ has degree $2$. It satisfies $p(tx)=t^d p(x)$ when its degree is $d$. \par\noindent\textbf{Applications:} homogeneous polynomials describe projective varieties, scaling laws, quadratic forms, and leading terms in approximations.
 
 \term{Homogeneous Space}
 A space with a transitive action of a Lie group, so that any point can be moved to any other by a group element. Examples include spheres and Grassmannians.
@@ -221,13 +229,13 @@ A space with a transitive action of a Lie group, so that any point can be moved 
 The branch of algebra studying chain complexes, exact sequences, and derived functors, unifying algebraic topology and homological invariants.
 
 \term{Homology}
-A tool in algebraic topology used to count the "holes" of different dimensions in a space. For a CW complex, the $n$-th homology group $H_n(X)$ describes the $n$-dimensional cycles that are not boundaries.
+Homology assigns algebraic groups $H_n(X)$ to a space to record holes of different dimensions. An $n$-cycle is a closed $n$-dimensional object, and homology identifies cycles that differ by a boundary. \par\noindent\textbf{Applications:} homology detects connected components, loops, and voids in topology and is used in computational topology and data analysis.
 
 \term{Homomorphism}
 A map between two algebraic structures (like groups, rings, or vector spaces) that preserves the operations. For groups $G$ and $H$, $f(ab) = f(a)f(b)$.
 
 \term{Homotopy}
-A continuous deformation between two continuous maps $f, g: X \to Y$. Two maps are homotopic if one can be continuously transformed into the other.
+Two maps $f,g:X\to Y$ are homotopic if there is a continuous deformation $F(x,t)$ from $f(x)$ to $g(x)$ as $t$ runs from $0$ to $1$. Homotopy records shape-level information while ignoring continuous bending. \par\noindent\textbf{Applications:} it classifies paths and spaces, supports obstruction theory, and is used in robotics to study collision-free motions.
 
 \term{Homotopy Category}
 The category whose objects are topological spaces and whose morphisms are homotopy classes of continuous maps.
@@ -242,13 +250,13 @@ The group $\pi_n(X)$ of based homotopy classes of maps $S^n \to X$. The fundamen
 A bialgebra equipped with an antipode, generalizing the group algebra of a group. They are central to the study of quantum groups and tensor categories.
 
 \term{Hopf Fibration}
-A fiber bundle $S^3 \to S^2$ where the fibers are circles $S^1$. It provides a way to view the 3-sphere as a collection of circles over a 2-sphere.
+The Hopf fibration is a fiber bundle $S^1\to S^3\to S^2$: every point of the 2-sphere has a circular fiber, and these fibers are linked in $S^3$. It is a central example of a nontrivial bundle. \par\noindent\textbf{Applications:} it illustrates fiber bundles, characteristic classes, and the topology of spheres and appears in geometry and theoretical physics.
 
 \term{Hopf Link}
 The simplest non-trivial link, consisting of two circles interlocked once.
 
 \term{Hopf--Rinow Theorem}
-A theorem stating that for a Riemannian manifold, geodesic completeness is equivalent to metric completeness.
+For a connected Riemannian manifold, the Hopf--Rinow theorem equates metric completeness, geodesic completeness, and the existence of minimizing geodesics between points. Closed and bounded metric balls are then compact. \par\noindent\textbf{Applications:} it provides the existence and extension results needed in Riemannian geometry and geometric mechanics.
 
 \term{Hopfian Group}
 A group $G$ that is not isomorphic to any of its proper quotients. Every finite group is Hopfian.
@@ -263,7 +271,7 @@ A topological space $X$ equipped with a continuous binary operation that is homo
 A theorem relating the first non-vanishing homotopy group of a space to its homology group: if $\pi_i(X) = 0$ for $i < n$ with $n \geq 2$, then $\pi_n(X) \cong H_n(X)$.
 
 \term{Hurwitz Zeta Function}
-The function $\zeta(s, a) = \sum_{n=0}^\infty (n + a)^{-s}$, which generalises the Riemann zeta function $\zeta(s) = \zeta(s, 1)$.
+For suitable $s$ and $a>0$, the Hurwitz zeta function is $\zeta(s,a)=\sum_{n=0}^{\infty}(n+a)^{-s}$. It extends meromorphically in $s$ and reduces to the Riemann zeta function when $a=1$. \par\noindent\textbf{Applications:} it appears in analytic number theory, spectral sums, lattice problems, and formulas involving the Gamma function.
 
 \term{Hyperbolic Cosine (cosh)}
 The hyperbolic function defined as $\cosh x = \frac{e^x + e^{-x}}{2}$. It satisfies $\cosh^2 x - \sinh^2 x = 1$.
@@ -275,10 +283,10 @@ A second-order PDE whose characteristic equation has two distinct real character
 The functions $\sinh$, $\cosh$, and $\tanh$, defined in terms of exponentials and analogous to the trigonometric functions. They are the functions of a unit hyperbola rather than a circle.
 
 \term{Hyperbolic Geometry}
-A non-Euclidean geometry where the parallel postulate is replaced: through a point not on a line, there are at least two distinct lines parallel to the given line.
+Hyperbolic geometry is a non-Euclidean geometry of constant negative curvature. Through a point not on a line there are infinitely many non-intersecting lines, and the angles of a triangle sum to less than $\pi$. \par\noindent\textbf{Applications:} it models navigation on negatively curved spaces, geometric group theory, conformal mapping, and some network and graphics problems.
 
 \term{Hyperbolic Group}
-A finitely generated group whose Cayley graph is a hyperbolic metric space in the sense of Gromov.
+A hyperbolic group is a finitely generated group whose Cayley graph is negatively curved in Gromov's coarse sense: geodesic triangles are uniformly thin. This property controls the large-scale geometry of the group without requiring a smooth metric. \par\noindent\textbf{Applications:} hyperbolic groups connect algebra with geometry, topology, algorithms, and the study of groups acting on curved spaces.
 
 \term{Hyperbolic Paraboloid}
 A doubly ruled surface that looks like a saddle. It is defined by the equation $z = x^2/a^2 - y^2/b^2$.
@@ -287,7 +295,7 @@ A doubly ruled surface that looks like a saddle. It is defined by the equation $
 The hyperbolic function defined as $\sinh x = \frac{e^x - e^{-x}}{2}$. It is the analogue of the sine function for hyperbolic geometry.
 
 \term{Hyperbolic Space}
-The standard model for hyperbolic geometry, such as the Poincaré disk or the upper half-plane. It has constant sectional curvature $-1$.
+Hyperbolic space is the standard complete simply connected geometry of constant sectional curvature $-1$. The Poincaré disk and upper half-plane are conformal models, so angles are represented correctly even though distances are distorted in the picture. \par\noindent\textbf{Applications:} it provides models for non-Euclidean geometry, complex analysis, relativity, and geometric group theory.
 
 \term{Hyperbolic Tangent (tanh)}
 The hyperbolic function $\tanh x = \frac{\sinh x}{\cosh x}$, used extensively as an activation function in neural networks.
@@ -302,25 +310,25 @@ An algebraic curve of genus at least 2 that admits a degree-two map to the proje
 The function ${}_2F_1(a, b; c; z) = \sum_{n=0}^\infty \frac{(a)_n (b)_n}{(c)_n n!} z^n$, where $(x)_n$ is the Pochhammer symbol. It specialises to many elementary functions and orthogonal polynomials.
 
 \term{Hypergraph}
-A generalisation of a graph in which edges, called hyperedges, may connect any number of vertices.
+A hypergraph generalizes a graph by allowing a hyperedge to contain any number of vertices rather than exactly two. It represents group relationships that cannot be reduced to pairwise links. \par\noindent\textbf{Applications:} hypergraphs model database relations, co-authorship, chemical interactions, set systems, and higher-order networks.
 
 \term{Hyperplane}
-An $(n-1)$-dimensional subspace of an $n$-dimensional vector space. In $\mathbb{R}^3$, a hyperplane is a 2D plane.
+A hyperplane is an $(n-1)$-dimensional affine or linear subspace of an $n$-dimensional space. In $\mathbb{R}^3$ it is an ordinary plane, and it can be written as $a\cdot x=b$ with $a\ne0$. \par\noindent\textbf{Applications:} hyperplanes define linear decision boundaries, constraints, projections, and separating surfaces in optimization and machine learning.
 
 \term{Hyperplane Arrangement}
 A finite collection of hyperplanes in a vector space. The study of the topology of the complement of such an arrangement is central to the theory of braid groups.
 
 \term{Hyperreal Number}
-An extension of the real numbers that includes infinitesimals and infinite numbers, used in non-standard analysis.
+The hyperreal numbers extend $\mathbb{R}$ with infinitesimal and infinitely large numbers while preserving first-order statements through the transfer principle. Nonstandard analysis uses them to give a rigorous meaning to calculations with infinitesimals. \par\noindent\textbf{Applications:} they provide an alternative foundation for limits, derivatives, integrals, and probability.
 
 \term{Hypersphere}
-The set of all points in $\mathbb{R}^n$ at a constant distance from a fixed center.
+A hypersphere is the set of points in $\mathbb{R}^n$ at a fixed distance $r$ from a center $c$, namely $\{x:\|x-c\|=r\}$. It has dimension $n-1$; the circle and ordinary sphere are the cases $n=2$ and $n=3$. \par\noindent\textbf{Applications:} hyperspheres occur in geometry, statistics, clustering, optimization, and high-dimensional probability.
 
 \term{Hypersurface}
 A manifold of dimension $n-1$ embedded in a manifold of dimension $n$.
 
 \term{Hypervolume}
-The $n$-dimensional volume of a region in $\mathbb{R}^n$ for $n > 3$.
+Hypervolume is the $n$-dimensional measure of a region in $\mathbb{R}^n$, especially for $n>3$. For example, an $n$-dimensional ball of radius $r$ has volume $\pi^{n/2}r^n/\Gamma(n/2+1)$. \par\noindent\textbf{Applications:} hypervolume measures feasible regions, uncertainty sets, and dominated regions in high-dimensional optimization.
 
 \term{Gauge Symmetry}
 A redundancy in the mathematical description of a physical system: different field configurations related by a gauge transformation represent the same physical state. Gauge symmetries are the organising principle of the Standard Model, with $U(1)$ governing electromagnetism, $SU(2)$ the weak force, and $SU(3)$ the strong force. Yang--Mills theory generalises Maxwell's equations to non-abelian gauge groups.
@@ -329,4 +337,4 @@ A redundancy in the mathematical description of a physical system: different fie
 A method of extending a functor along another functor, universal in the sense of an adjunction. Left and right Kan extensions generalise the notions of left and right adjoints, colimits, and limits. Given $F: \mathcal{C} \to \mathcal{D}$ and $K: \mathcal{C} \to \mathcal{E}$, the left Kan extension $\operatorname{Lan}_K F: \mathcal{E} \to \mathcal{D}$ is the universal functor equipped with a natural transformation $F \Rightarrow \operatorname{Lan}_K F \circ K$.
 
 \term{Contravariant Functor}
-A functor $F: \mathcal{C} \to \mathcal{D}$ that reverses the direction of morphisms: $F(g \circ f) = F(g) \circ F(f)$. Equivalently, a covariant functor from $\mathcal{C}^{\operatorname{op}}$ to $\mathcal{D}$. The contravariant Hom functor $\operatorname{Hom}(-, A)$ and the dual space functor $V \mapsto V^*$ are fundamental examples. Contravariant functors appear throughout algebra and topology, particularly in cohomology theory.
+A contravariant functor reverses arrows: it sends $f:X\to Y$ to $F(f):F(Y)\to F(X)$ and reverses composition. Equivalently, it is a covariant functor from the opposite category. Examples include $\operatorname{Hom}(-,A)$ and the dual-space map $V\mapsto V^*$. \par\noindent\textbf{Applications:} contravariant functors organize cohomology, duality, and pullback constructions in algebra and topology.

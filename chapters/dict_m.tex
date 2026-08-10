@@ -2,178 +2,182 @@
 \label{chap:m}
 
 \term{Maclaurin Series}
-The Taylor series of a function at $x = 0$: $f(x) = \sum_{n=0}^\infty \frac{f^{(n)}(0)}{n!} x^n$.
+The Maclaurin series is the Taylor expansion at zero:
+\[
+f(x)=\sum_{n=0}^{\infty}\frac{f^{(n)}(0)}{n!}x^n,
+\]
+when the series converges to $f$. \par\noindent\textbf{Applications:} it approximates functions, solves differential equations, and supports error estimates in scientific computing.
 
 \term{Manifold}
-A topological space that locally resembles Euclidean space $\mathbb{R}^n$. For every point $p$, there exists a neighborhood $U$ and a homeomorphism $\varphi: U \to \mathbb{R}^n$. Manifolds can be smooth, Riemannian, complex, or symplectic.
+A manifold is a space that locally looks like $\mathbb R^n$: every point has a neighborhood with coordinates in an open subset of $\mathbb R^n$. Extra structure can make it smooth, Riemannian, complex, or symplectic. \par\noindent\textbf{Applications:} manifolds model curved surfaces, configuration spaces, spacetime, and data with nonlinear geometry.
 
 \term{Metric Tensor}
-A symmetric, non-degenerate $(0, 2)$-tensor field on a manifold that defines an inner product on each tangent space, allowing the measurement of lengths, angles, and volumes.
+A metric tensor is a smoothly varying inner product on tangent spaces. It measures lengths, angles, distances, areas, and volumes and determines geodesics and curvature. \par\noindent\textbf{Applications:} metric tensors describe physical spacetime, curved surfaces, mechanics, and geometric statistics.
 
 \term{Map}
-A synonym for function; a rule associating to each element of one set an element of another.
+A map or function assigns each input in a domain exactly one output in a codomain. Depending on context it may preserve structure, such as addition, distance, or multiplication. \par\noindent\textbf{Applications:} maps represent transformations, models, coordinate changes, and input-output relationships.
 
 \term{Markov Chain}
-A stochastic process where the probability of transitioning to the next state depends only on the current state and not on the sequence of events that preceded it (the Markov property).
+A Markov chain is a sequence of random states whose next-state distribution depends only on the current state. Its transition matrix $P$ satisfies $P_{ij}=P(X_{n+1}=j\mid X_n=i)$. \par\noindent\textbf{Applications:} Markov chains model queues, web ranking, weather, genetics, inventory, and discrete decision systems.
 
 \term{Markov Chain Monte Carlo}
-A class of algorithms that sample from a target distribution $\pi$ by simulating an ergodic Markov chain whose stationary distribution is $\pi$. Standard variants are the Metropolis--Hastings algorithm and Gibbs sampling; convergence is assessed through diagnostics applied to the simulated chain. MCMC is the dominant computational tool in Bayesian inference, where posterior distributions rarely admit closed forms.
+Markov chain Monte Carlo (MCMC) samples from a target distribution $\pi$ by simulating a Markov chain whose stationary distribution is $\pi$. Metropolis--Hastings and Gibbs sampling are standard methods; burn-in, mixing, and effective sample size must be assessed. \par\noindent\textbf{Applications:} MCMC is central to Bayesian inference, statistical physics, uncertainty quantification, and models with intractable integrals.
 
 \term{Markov Process}
-A stochastic process in which the future evolution depends on the past only through the present state.
+A Markov process has the property that, conditional on its present state, its future is independent of its past. Markov chains use discrete time and states, while diffusion and jump processes give continuous-time examples. \par\noindent\textbf{Applications:} Markov processes model evolving systems in finance, biology, queues, physics, and control.
 
 \term{Markov Property}
 The property that the future state of a process depends only on its present state, not on its history. This "memoryless" property is the core of Markov processes.
 
 \term{Martingale}
-A sequence of random variables where the conditional expectation of the next value, given all prior values, is equal to the current value. It models a "fair game" in gambling.
+A process $(X_n)$ is a martingale with respect to information $(\mathcal F_n)$ if $\mathbb E[|X_n|]<\infty$ and $\mathbb E[X_{n+1}\mid\mathcal F_n]=X_n$. Its current value is the best conditional prediction of the next value. \par\noindent\textbf{Applications:} martingales model fair games, financial prices, stochastic integrals, and convergence arguments.
 
 \term{Martingale Convergence Theorem}
 A submartingale that is bounded in $L^1$ converges almost surely to an integrable limit. For martingales, $L^1$-boundedness guarantees almost sure convergence, with convergence in $L^1$ under uniform integrability. It underlies the almost sure convergence of branching processes, reversed martingales, and many limit theorems in probability.
 
 \term{Mathematics}
-The abstract science of number, quantity, structure, space, and change, developed through rigorous logical deduction.
+Mathematics studies quantity, structure, space, change, and uncertainty through precise definitions, logical deduction, and proof. It provides both abstract theories and practical models. \par\noindent\textbf{Applications:} mathematics supports every quantitative science, including engineering, computing, economics, medicine, and physics.
 
 \term{Matroid}
-A finite matroid is a ground set $E$ with a family of independent subsets satisfying the hereditary property and the exchange axiom. Bases, circuits, and the rank function give equivalent axiomatizations; duality and representability over fields are central notions. The greedy algorithm yields a maximum-weight basis precisely for matroids. Matroids axiomatize linear independence in vector spaces and cycle-free subgraphs in graphs, linking combinatorics with optimization and algebraic geometry.
+A matroid abstracts independence. It consists of a finite ground set and independent subsets satisfying heredity and an exchange rule. Vector-space linear independence and edge sets of forests in graphs are examples. \par\noindent\textbf{Applications:} matroids explain why greedy algorithms solve certain optimization problems and connect combinatorics, network design, and algebra.
 
 \term{Matrix}
-A rectangular array of numbers, symbols, or expressions arranged in rows and columns. Matrices are used to represent linear transformations and solve systems of linear equations.
+A matrix is a rectangular array representing a linear map once bases are chosen. Matrix operations encode composition, systems of equations, and changes of coordinates. \par\noindent\textbf{Applications:} matrices are used in simulations, graphics, statistics, networks, control, and machine learning.
 
 \term{Matrix Multiplication}
-The operation $(AB)_{ij} = \sum_k A_{ik} B_{kj}$, associative but generally not commutative.
+For compatible matrices, $(AB)_{ij}=\sum_kA_{ik}B_{kj}$. Multiplication is associative but usually not commutative because it represents composition of linear maps. \par\noindent\textbf{Applications:} it combines transformations, propagates network relationships, and drives numerical algorithms and neural-network layers.
 
 \term{Matrix Norm}
-A function $\|\cdot\|$ that assigns a non-negative real number to a matrix, measuring its "size" or "length." Common norms include the Frobenius norm and the operator norm (spectral norm).
+A matrix norm measures matrix size and satisfies positivity, homogeneity, the triangle inequality, and usually $\|AB\|\leq\|A\|\|B\|$. The Frobenius norm sums squared entries; the operator norm measures maximum stretching. \par\noindent\textbf{Applications:} norms quantify errors, conditioning, stability, and convergence of matrix algorithms.
 
 \term{Maximal Ideal}
-A proper ideal contained in no larger proper ideal; the quotient ring by a maximal ideal is a field.
+A maximal ideal is a proper ideal not contained in any larger proper ideal. The quotient $R/I$ is a field exactly when $I$ is maximal. \par\noindent\textbf{Applications:} maximal ideals identify points of algebraic varieties, construct fields, and analyze ring homomorphisms.
 
 \term{Maximum Flow Problem}
-The problem of finding the maximum amount of flow that can be sent from a source node to a sink node in a network with capacity constraints on the edges. Solved by the Ford-Fulkerson algorithm.
+The maximum-flow problem sends as much material as possible from a source to a sink while respecting edge capacities and flow conservation at intermediate vertices. The max-flow min-cut theorem equates the optimum with the capacity of a smallest separating cut. \par\noindent\textbf{Applications:} routing, communication bandwidth, transportation, matching, and supply chains.
 
 \term{Maximum Likelihood Estimator (MLE)}
-An estimator of a population parameter that maximizes the likelihood function, meaning it finds the parameter value that makes the observed data most probable.
+The maximum likelihood estimator chooses the parameter $\hat\theta$ maximizing $L(\theta)=p(data\mid\theta)$. Under regularity conditions it is often consistent and approximately normal for large samples, but it can be biased or unstable in small samples. \par\noindent\textbf{Applications:} MLE fits statistical, biological, reliability, and machine-learning models.
 
 \term{Maximum Modulus Principle}
-If a holomorphic function is nonconstant, its modulus cannot have a local maximum at an interior point of its domain. If a maximum exists on the closure of a bounded domain, it occurs on the boundary. Applications: the principle gives bounds for analytic functions and helps prove uniqueness results such as the Schwarz lemma.
+If a holomorphic function is nonconstant, its modulus cannot have a local maximum at an interior point of its domain. If a maximum exists on the closure of a bounded domain, it occurs on the boundary. \par\noindent\textbf{Applications:} the principle gives bounds for analytic functions and helps prove uniqueness results such as the Schwarz lemma.
 
 \term{Maximum Principle}
-For harmonic or holomorphic functions, the property that a non-constant function attains no interior maximum.
+The maximum principle says that a nonconstant harmonic or holomorphic function cannot attain a maximum at an interior point under the usual hypotheses. Boundary data therefore control the interior. \par\noindent\textbf{Applications:} it proves uniqueness and stability for boundary-value problems and bounds physical potentials.
 
 \term{Mayer--Vietoris}
 The long exact sequence relating the homology of a union $X = A \cup B$ to the homology of the pieces and their intersection: $\cdots \to H_n(A \cap B) \to H_n(A) \oplus H_n(B) \to H_n(X) \to H_{n-1}(A \cap B) \to \cdots$. Together with excision, the Mayer--Vietoris sequence is the fundamental computational tool for computing homology of spaces built from simpler pieces; it has analogous formulations for cohomology and for sheaves.
 
 \term{Mean Value Theorem}
-The theorem that for a differentiable $f$ on $[a,b]$ there exists $c$ with $f'(c) = \frac{f(b)-f(a)}{b-a}$.
+If $f$ is continuous on $[a,b]$ and differentiable inside, some $c\in(a,b)$ satisfies $f'(c)=\frac{f(b)-f(a)}{b-a}$. At one point, instantaneous rate equals average rate. \par\noindent\textbf{Applications:} it proves error bounds, monotonicity, uniqueness, and estimates for numerical approximations.
 
 \term{Measure}
-A function $\mu$ that assigns a non-negative real number to subsets of a set, satisfying $\mu(\emptyset) = 0$ and countable additivity. Measure theory provides a rigorous foundation for integration (the Lebesgue integral).
+A measure assigns nonnegative size to measurable sets, with $\mu(\emptyset)=0$ and countable additivity for disjoint unions. It generalizes length, area, probability, and volume. \par\noindent\textbf{Applications:} measures provide the foundation for Lebesgue integration, probability theory, ergodic theory, and geometric analysis.
 
 \term{Measure Theory}
-The study of measures and their associated integrals. It generalizes the notion of length, area, and volume to more abstract sets, allowing for the integration of highly discontinuous functions.
+Measure theory studies measurable sets, measures, and integrals. It extends length, area, and volume to abstract spaces and handles limits and discontinuous functions systematically. \par\noindent\textbf{Applications:} it underlies probability, modern analysis, stochastic processes, PDEs, and mathematical statistics.
 
 \term{Mellin Transform}
-An integral transform that maps a function $f(x)$ to a complex function $F(s) = \int_0^\infty x^{s-1} f(x)\,dx$. It is closely related to the Laplace transform and appears in the study of zeta functions.
+The Mellin transform is $F(s)=\int_0^\infty x^{s-1}f(x)\,dx$. It converts multiplicative scaling into translation in transform space and is closely related to the Laplace transform. \par\noindent\textbf{Applications:} it analyzes asymptotic behavior, scale-invariant systems, special functions, and zeta functions.
 
 \term{Member}
 An element of a set; the objects contained in a set.
 
 \term{Menger's Theorem}
-In a finite graph, the maximum number of internally vertex-disjoint paths between two non-adjacent vertices equals the minimum number of vertices needed to separate them. The edge version states the analogous equality for edge-disjoint paths and edge cuts. Both are special cases of the max-flow min-cut theorem, and Menger's theorem is often proved via flow arguments.
+Menger's theorem states that the maximum number of internally vertex-disjoint paths between two vertices equals the minimum number of vertices whose removal separates them. An edge version equates edge-disjoint paths with minimum edge cuts. \par\noindent\textbf{Applications:} it measures network connectivity and identifies the number of independent routes or failures a network can tolerate.
 
 \term{Meromorphic Function}
-A function that is holomorphic on a domain except at isolated poles.
+A meromorphic function is holomorphic except at isolated poles, where it may tend to infinity like a finite negative power. Locally it is a quotient of holomorphic functions. \par\noindent\textbf{Applications:} meromorphic functions support residue calculus, differential equations, complex dynamical systems, and analytic number theory.
 
 \term{Method of Characteristics}
-A technique for solving first-order quasilinear partial differential equations by reducing them to systems of ordinary differential equations along characteristic curves. The solution is transported along the characteristics, whose crossing can lead to shocks and the breakdown of smooth solutions. The method underlies the theory of the Hamilton--Jacobi equation and of hyperbolic conservation laws.
+The method of characteristics solves certain first-order PDEs by following curves along which the PDE becomes an ODE. Information is transported along these characteristic curves; crossing characteristics can create shocks or loss of smoothness. \par\noindent\textbf{Applications:} it models wave and transport equations, fluid flow, traffic, and conservation laws.
 
 \term{Metric Space}
-A set $X$ equipped with a distance function $d: X \times X \to [0, \infty)$ satisfying identity of indiscernibles, symmetry, and the triangle inequality. It provides a formal framework for the concepts of limit, continuity, and compactness.
+A metric space is a set with a distance $d$ satisfying nonnegativity, identity of indiscernibles, symmetry, and the triangle inequality. These axioms define convergence, continuity, compactness, and completeness beyond Euclidean space. \par\noindent\textbf{Applications:} metric spaces model physical distance, function spaces, data sets, and optimization landscapes.
 
 \term{Microlocal Analysis}
-The refined analysis of partial differential equations in phase space, combining spectral and geometric methods.
+Microlocal analysis studies functions and distributions simultaneously by location and frequency in phase space. It tracks singularities and their propagation rather than only measuring global smoothness. \par\noindent\textbf{Applications:} it analyzes wave fronts, PDE regularity, scattering, inverse problems, and imaging.
 
 \term{Minimal Polynomial}
-The unique monic polynomial $p(x)$ of smallest degree such that $p(A) = 0$ for a linear operator $A$. Every eigenvalue of $A$ is a root of its minimal polynomial.
+The minimal polynomial of an operator $A$ is the unique monic polynomial of least degree satisfying $p(A)=0$. It divides every annihilating polynomial and has the same distinct roots as the characteristic polynomial. \par\noindent\textbf{Applications:} it determines diagonalizability, reduces matrix powers, and simplifies linear differential systems.
 
 \term{Minimal Spanning Tree}
-In a weighted connected graph, a spanning tree with the minimum possible total edge weight. Examples include algorithms like Prim's and Kruskal's.
+In a connected weighted graph, a minimum spanning tree connects every vertex without cycles and has the smallest total edge weight. Kruskal's and Prim's algorithms find one efficiently. \par\noindent\textbf{Applications:} it designs inexpensive communication, electrical, road, and pipeline networks.
 
 \term{Minkowski Space}
-A four-dimensional Lorentzian manifold used in special relativity to model spacetime, with a metric signature $(-,+,+,+)$ or $(+,-,-,-)$. It preserves the spacetime interval between events.
+Minkowski space is four-dimensional spacetime with a flat Lorentzian metric, commonly $(-,+,+,+)$. Lorentz transformations preserve the interval between events, distinguishing timelike, lightlike, and spacelike separations. \par\noindent\textbf{Applications:} it is the geometric framework of special relativity and electromagnetism.
 
 \term{Minkowski Sum}
-The set of all possible sums of vectors from two sets $A$ and $B$: $A \oplus B = \{a + b : a \in A, b \in B\}$. In geometry, it is used to create "offset" surfaces and in collision detection algorithms.
+The Minkowski sum of sets is $A\oplus B=\{a+b:a\in A,b\in B\}$. Adding a disk to a shape creates an offset or thickened shape, and convexity is preserved. \par\noindent\textbf{Applications:} it supports collision detection, robot motion planning, mathematical morphology, and convex geometry.
 
 \term{Möbius Inversion Formula}
-A result in number theory that allows one to recover a function $f(n)$ from its summatory function $g(n) = \sum_{d|n} f(d)$ using the Möbius function $\mu(n)$.
+If $g(n)=\sum_{d\mid n}f(d)$, Möbius inversion recovers $f(n)=\sum_{d\mid n}\mu(d)g(n/d)$, where $\mu$ is the Möbius function. \par\noindent\textbf{Applications:} it separates divisor-sum data, counts primitive objects, and appears in number theory and combinatorial enumeration.
 
 \term{Möbius Strip}
-A non-orientable surface with only one side and one boundary component. It can be constructed by taking a strip of paper and joining the ends with a half-twist.
+A Möbius strip is formed by joining the ends of a strip after a half-twist. It has one side and one boundary component and is non-orientable. \par\noindent\textbf{Applications:} it is a standard topological example and illustrates orientation, boundary, embeddings, and quotient spaces.
 
 \term{Model Category}
 A category with three distinguished classes of morphisms, the weak equivalences, cofibrations, and fibrations, satisfying the model axioms of Quillen. It provides an abstract framework for homotopy theory in which the localization of the category at the weak equivalences is the homotopy category. Model structures exist for topological spaces, simplicial sets, and chain complexes, and model categories formalize derived functors.
 
 \term{Model (Logic)}
-A structure that satisfies the axioms of a given formal theory. A statement is "true in a model" if the interpretation of the statement in that structure is true.
+A model of a formal theory is a mathematical structure in which all the theory's axioms hold. A sentence is true in the model when its interpretation is true there. \par\noindent\textbf{Applications:} models connect formal logic with algebra, geometry, databases, and the study of what axioms can or cannot determine.
 
 \term{Model Theory}
 The branch of mathematical logic that studies structures and the first-order theories describing them. Central tools include the compactness theorem, the Löwenheim--Skolem theorems, elementary equivalence, saturated models, and type spaces. Morley's categoricity theorem and stability theory classify theories through the spectrum of their models. Model theory has deep applications in algebra, real and $p$-adic geometry, and analytic number theory.
 
 \term{Modular Arithmetic}
-A system of arithmetic for integers, where numbers "wrap around" upon reaching a certain value, the modulus. It is fundamental to number theory, cryptography (e.g., RSA), and computer science.
+Modular arithmetic identifies integers that have the same remainder modulo $n$; calculations effectively wrap around after $n$. For example, $17\equiv5\pmod{12}$. \par\noindent\textbf{Applications:} it supports clocks, checksums, cryptography such as RSA, pseudorandom generators, and computer algorithms.
 
 \term{Modular Form}
-A modular form of weight $k$ is a holomorphic function $f$ on the upper half-plane satisfying $f((az+b)/(cz+d))=(cz+d)^k f(z)$ for matrices in the modular group, together with a suitable holomorphy condition at the cusps. Applications: Fourier coefficients of modular forms encode arithmetic information and appear in the study of elliptic curves and number theory.
+A modular form of weight $k$ is a holomorphic function on the upper half-plane satisfying $f((az+b)/(cz+d))=(cz+d)^kf(z)$ for matrices in the modular group, together with controlled behavior at cusps. Its Fourier coefficients often carry arithmetic information. \par\noindent\textbf{Applications:} modular forms connect elliptic curves, $L$-functions, partition formulas, and number theory.
 
 \term{Modular Group}
-The modular group is $\operatorname{PSL}(2,\mathbb{Z})=\operatorname{SL}(2,\mathbb{Z})/\{I,-I\}$. Here $\operatorname{SL}(2,\mathbb{Z})$ consists of the $2\times2$ integer matrices with determinant $1$, and the quotient identifies a matrix with its negative. It acts on the upper half-plane by $z\mapsto(az+b)/(cz+d)$. Applications: this symmetry is fundamental in modular forms, elliptic curves, and arithmetic geometry.
+The modular group is $\operatorname{PSL}(2,\mathbb{Z})=\operatorname{SL}(2,\mathbb{Z})/\{I,-I\}$. Here $\operatorname{SL}(2,\mathbb{Z})$ consists of the $2\times2$ integer matrices with determinant $1$, and the quotient identifies a matrix with its negative. It acts on the upper half-plane by $z\mapsto(az+b)/(cz+d)$. \par\noindent\textbf{Applications:} this symmetry is fundamental in modular forms, elliptic curves, and arithmetic geometry.
 
 \term{Module}
-A generalization of a vector space where the scalars come from a ring $R$ instead of a field. A left $R$-module $M$ is an abelian group equipped with a scalar multiplication $R \times M \to M$ satisfying specific axioms.
+A module is like a vector space whose scalars come from a ring rather than a field. It is an abelian group with scalar multiplication satisfying distributive and associative laws. Modules may lack bases or unique coordinates. \par\noindent\textbf{Applications:} modules unify linear algebra, integer equations, representations, coding, and algebraic geometry.
 
 \term{Moduli Space}
 A space, scheme, stack, or analytic space whose points parametrize isomorphism classes of geometric objects, such as algebraic curves, vector bundles, or varieties. A coarse moduli space may lack a universal family, whereas a fine moduli space carries one; stacks are needed when objects have nontrivial automorphisms. Deformation theory describes the local structure of moduli spaces. Examples include the moduli $\mathcal{M}_g$ of curves and the moduli of elliptic curves.
 
 \term{Modulus of Continuity}
-The function $\omega(\delta) = \sup_{|x-y|<\delta} |f(x)-f(y)|$ measuring the uniform continuity of $f$.
+The modulus of continuity is $\omega(\delta)=\sup_{|x-y|<\delta}|f(x)-f(y)|$. It quantifies the largest change in $f$ over inputs separated by less than $\delta$; $\omega(\delta)\to0$ is uniform continuity. \par\noindent\textbf{Applications:} it gives approximation errors, regularity estimates, and stability bounds in numerical analysis and PDEs.
 
 \term{Moment (Statistics)}
-A moment is a numerical summary of a probability distribution. The raw $k$th moment is $\mathbb{E}[X^k]$, while the $k$th central moment is $\mathbb{E}[(X-\mu)^k]$. The second central moment is the variance; standardized third and fourth central moments describe skewness and kurtosis. Applications: moments summarize location, spread, asymmetry, and tail behavior in data analysis.
+A moment is a numerical summary of a probability distribution. The raw $k$th moment is $\mathbb{E}[X^k]$, while the $k$th central moment is $\mathbb{E}[(X-\mu)^k]$. The second central moment is the variance; standardized third and fourth central moments describe skewness and kurtosis. \par\noindent\textbf{Applications:} moments summarize location, spread, asymmetry, and tail behavior in data analysis.
 
 \term{Moment Generating Function}
-A function $M_X(t) = \mathbb{E}[e^{tX}]$ that encodes all the moments of a random variable $X$. The $n$-th derivative of $M_X(t)$ at $t=0$ gives the $n$-th moment.
+The moment-generating function is $M_X(t)=\mathbb E[e^{tX}]$ when finite near $0$. Its derivatives satisfy $M_X^{(n)}(0)=\mathbb E[X^n]$. \par\noindent\textbf{Applications:} it identifies distributions, computes sums of independent variables, and derives means, variances, and concentration bounds.
 
 \term{Monad}
 In category theory, a monad on a category $\mathcal{C}$ is an endofunctor $T$ with natural transformations $\eta: \mathrm{id} \to T$ (the unit) and $\mu: T^2 \to T$ (the multiplication) satisfying associativity and unit laws. Monads formalize algebraic theories and, in computer science, computational effects such as exceptions and state. Every adjunction induces a monad; the Eilenberg--Moore and Kleisli categories recover algebras and free algebras, respectively.
 
 \term{Monoid}
-A semigroup with an identity element. Equivalently, a set $S$ with an associative binary operation $\cdot$ and an element $e$ such that $e \cdot a = a \cdot e = a$ for all $a \in S$.
+A monoid is a set with an associative operation and an identity element. Unlike a group, its elements need not have inverses. Examples include strings under concatenation and functions under composition. \par\noindent\textbf{Applications:} monoids model sequences, computation, formal languages, and repeated processes.
 
 \term{Monoidal Category}
-A category equipped with a bifunctor $\otimes: \mathcal{C} \times \mathcal{C} \to \mathcal{C}$ (the tensor product) and a unit object $I$, satisfying coherence conditions. They model structures like tensor products of vector spaces.
+A monoidal category has a tensor-like product $\otimes$, a unit object, and coherent associativity and unit isomorphisms. It abstracts tensor products of vector spaces and composition of systems. \par\noindent\textbf{Applications:} monoidal categories organize quantum processes, programming semantics, representation theory, and algebraic topology.
 
 \term{Monomial}
-An algebraic expression consisting of a product of variables raised to non-negative integer powers, optionally multiplied by a coefficient. A polynomial is a sum of monomials.
+A monomial is a coefficient times variables raised to nonnegative integer powers, such as $3x^2y$. A polynomial is a finite sum of monomials. \par\noindent\textbf{Applications:} monomials form the basis for polynomial algebra, Gröbner-basis computations, numerical approximation, and multivariable models.
 
 \term{Monomorphism}
-In category theory, a morphism $f: X \to Y$ that is left-cancellable: $f \circ g = f \circ h \implies g = h$. In the category of sets, monomorphisms are exactly the injective functions.
+A monomorphism is a morphism $f:X\to Y$ that can be cancelled on the left: $f\circ g=f\circ h$ implies $g=h$. In sets it is exactly an injective function, though in other categories it need not look like literal inclusion. \par\noindent\textbf{Applications:} monomorphisms formalize embeddings and subobjects in algebra and geometry.
 
 \term{Monotone Convergence Theorem}
-A fundamental result in analysis: if a sequence of real numbers is monotonically increasing and bounded above, it must converge to its supremum.
+For measurable functions $0\leq f_n\uparrow f$, the monotone convergence theorem states $\int f_n\,d\mu\to\int f\,d\mu$. This is stronger than the elementary theorem about bounded increasing real sequences. \par\noindent\textbf{Applications:} it justifies exchanging limits and integrals in probability and measure theory.
 
 \term{Monotone Function}
-A function that is either non-decreasing or non-increasing throughout its domain.
+A monotone function is nondecreasing or nonincreasing: $x\leq y$ implies $f(x)\leq f(y)$ or $f(x)\geq f(y)$. Monotone functions have one-sided limits and only countably many jumps on an interval. \par\noindent\textbf{Applications:} they model cumulative quantities, threshold rules, optimization constraints, and distribution functions.
 
 \term{Monty Hall Problem}
-A probability puzzle based on a game show: after you pick one of three doors, the host opens a losing door and offers you the chance to switch. Switching wins with probability 2/3 and sticking wins with probability 1/3, contrary to the intuition that both are equal; the host's action conveys information about the winning door.
+In the Monty Hall problem, after a contestant chooses one of three doors, a host who knows the prize opens a different losing door. Switching then wins with probability $2/3$, while staying wins with $1/3$, because the host's action is informative rather than random. \par\noindent\textbf{Applications:} it illustrates conditional probability, Bayesian updating, and the importance of modeling information.
 
 \term{Moore--Penrose Pseudoinverse}
-A generalization of the inverse of a matrix to non-square matrices. For any matrix $A$, the pseudoinverse $A^+$ is the unique matrix satisfying four specific conditions, including $AA^+A = A$.
+The Moore--Penrose pseudoinverse $A^+$ extends inversion to rectangular or singular matrices. It gives the least-squares solution of $Ax\approx b$ with minimum norm and is characterized by four Penrose equations, including $AA^+A=A$. \par\noindent\textbf{Applications:} it supports regression, inverse problems, signal reconstruction, and rank-deficient systems.
 
 \term{Morphism}
-A general arrow between two objects $X$ and $Y$ in a category. Depending on the category, a morphism could be a function, a linear map, a continuous map, or a group homomorphism.
+A morphism is a structure-preserving arrow between objects in a category. It may be a function, linear map, continuous map, or group homomorphism depending on the category. \par\noindent\textbf{Applications:} morphisms provide a common language for transformations, equivalence, composition, and universal constructions.
 
 \term{Morse Theory}
 Morse theory studies a smooth manifold $M$ through a Morse function $f: M \to \mathbb{R}$ whose critical points are non-degenerate. The Morse lemma gives a normal form near each critical point, and $M$ admits a handle decomposition producing a CW structure; the Morse inequalities bound its homology in terms of the critical points of each index. Infinite-dimensional variants, including Morse--Witten and Floer theory, underlie modern symplectic and gauge theory.
@@ -182,28 +186,28 @@ Morse theory studies a smooth manifold $M$ through a Morse function $f: M \to \m
 Grothendieck's conjectural universal cohomology theory underlying all Weil cohomology theories. The category of pure motives is constructed from smooth projective varieties by adjoining correspondences as morphisms, and the Chow and Künneth standard conjectures concern its structure. Mixed motives extend the construction to arbitrary varieties, motivic cohomology provides the associated cohomology theory, and motives are central to the Langlands program.
 
 \term{Multigrid Method}
-A numerical method that accelerates iterative solvers by working on multiple grid resolutions.
+A multigrid method solves discretized PDEs on several grid resolutions. Fine grids remove local errors, while coarse grids efficiently remove slowly varying errors. \par\noindent\textbf{Applications:} multigrid accelerates elliptic PDE solvers in fluid flow, heat transfer, elasticity, imaging, and engineering simulation.
 
 \term{Multilinear Map}
-A function of several vectors that is linear in each argument independently. The most common example is the determinant, which is a multilinear map of the columns of a matrix.
+A multilinear map is linear in each argument when the others are held fixed. The determinant is multilinear in the columns of a matrix. \par\noindent\textbf{Applications:} multilinear maps describe tensors, volume, interactions among variables, differential forms, and higher-order data models.
 
 \term{Multinomial Distribution}
-A generalization of the binomial distribution to a discrete random variable with $k$ possible outcomes, each with a fixed probability.
+The multinomial distribution counts outcomes in $n$ independent trials with $k$ categories and probabilities $p_1,\ldots,p_k$. Its probability is $\frac{n!}{x_1!\cdots x_k!}\prod_i p_i^{x_i}$ when $\sum x_i=n$. \par\noindent\textbf{Applications:} it models categorical data, survey counts, genetics, text frequencies, and contingency tables.
 
 \term{Multiple Integral}
-The integral of a function of two or more real variables over a multi-dimensional domain, such as a double integral over a region in $\mathbb{R}^2$ or a triple integral over a volume in $\mathbb{R}^3$.
+A multiple integral accumulates a function over a multidimensional region, such as $\iint_Df\,dA$ or $\iiint_Vf\,dV$. Fubini's theorem and changes of variables give practical ways to compute it under suitable hypotheses. \par\noindent\textbf{Applications:} multiple integrals calculate mass, probability, volume, work, and fields.
 
 \term{Multiplicative Function}
 An arithmetic function $f$ such that $f(mn) = f(m)f(n)$ for any two coprime integers $m$ and $n$. Examples include the Euler totient function $\varphi(n)$ and the Möbius function $\mu(n)$.
 
 \term{Multiplicative Inverse}
-An element $a^{-1}$ such that $a \cdot a^{-1} = 1$. In a field, every non-zero element has a multiplicative inverse. In $\mathbb{Z}/n\mathbb{Z}$, an element has an inverse iff it is coprime to $n$.
+An element $a^{-1}$ is a multiplicative inverse when $aa^{-1}=1$. Every nonzero field element has one; in $\mathbb Z/n\mathbb Z$, $a$ is invertible exactly when $\gcd(a,n)=1$. \par\noindent\textbf{Applications:} inverses solve equations, support modular cryptography, and define division in algebraic systems.
 
 \term{Multiplicity}
-The number of times a root is repeated in a polynomial, or the algebraic multiplicity of an eigenvalue.
+The multiplicity of a polynomial root is the number of repeated factors $(x-r)$ it contributes. For an eigenvalue, algebraic multiplicity is its multiplicity in the characteristic polynomial. \par\noindent\textbf{Applications:} multiplicities distinguish repeated solutions, determine diagonalizability, and describe resonance and degeneracy.
 
 \term{Multiset}
-A generalization of a set where members can appear more than once. The number of times a member appears is called its multiplicity.
+A multiset allows an element to occur several times; the occurrence count is its multiplicity. Unlike an ordinary set, multiplicity is retained. \par\noindent\textbf{Applications:} multisets model repeated measurements, inventory, words, chemical compositions, and counting problems.
 
 \term{Myhill--Nerode Theorem}
-A result in theoretical computer science that characterizes regular languages in terms of the number of equivalence classes of a specific congruence relation on strings.
+The Myhill--Nerode theorem states that a language is regular exactly when the relation identifying strings with the same possible continuations has finitely many equivalence classes. Those classes are the states of the minimal deterministic finite automaton. \par\noindent\textbf{Applications:} it proves non-regularity and constructs minimal automata for compilers, pattern matching, and verification.

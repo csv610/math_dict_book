@@ -2,13 +2,13 @@
 \label{chap:p}
 
 \term{P vs NP}
-The central open problem of theoretical computer science, asking whether every problem whose solutions are checkable in polynomial time (the class NP) can also be solved in polynomial time (the class P). Since P $\subseteq$ NP, the question is whether the inclusion is strict; $P = NP$ would make finding solutions essentially as easy as checking them. The theory of NP-completeness, the hardest problems in NP to which all others reduce, shows that proving $P \neq NP$ is equivalent to showing that any one such problem is not in P. The problem underpins cryptography and optimization and is one of the Clay Millennium Prize Problems.
+The P versus NP problem asks whether every problem whose proposed solution can be checked in polynomial time can also be solved in polynomial time. Since $P\subseteq NP$, the question is whether this inclusion is strict. \par\noindent\textbf{Applications:} the problem affects optimization, scheduling, automated reasoning, cryptography, and the limits of efficient computation.
 
 \term{P-adic Number}
-Elements of the field $\mathbb{Q}_p$, constructed as the completion of the rational numbers $\mathbb{Q}$ with respect to the $p$-adic valuation $|x|_p = p^{-v_p(x)}$. These numbers are fundamental in modern number theory and arithmetic geometry.
+The $p$-adic numbers are the completion of the rationals using the distance $|x|_p=p^{-v_p(x)}$, which measures divisibility by a prime $p$ rather than ordinary size. Numbers are close when their difference is highly divisible by $p$. \par\noindent\textbf{Applications:} $p$-adic numbers support Diophantine equations, arithmetic geometry, local-to-global methods, and cryptography.
 
 \term{P-adic Valuation}
-A function $v_p: \mathbb{Q} \to \mathbb{Z} \cup \{\infty\}$ where $v_p(n)$ is the exponent of the highest power of $p$ that divides $n$. It satisfies the ultrametric inequality: $v_p(x+y) \geq \min(v_p(x), v_p(y))$.
+The $p$-adic valuation $v_p(n)$ is the exponent of the highest power of $p$ dividing an integer, extended to rationals and with $v_p(0)=\infty$. It satisfies $v_p(x+y)\geq\min(v_p(x),v_p(y))$. \par\noindent\textbf{Applications:} valuations measure divisibility and support congruences, factorization, and $p$-adic analysis.
 
 \term{Painter's Paradox}
 The observation connected with Gabriel's horn: the horn can be filled with a finite volume of paint, yet covering its surface seems to require an infinite amount. Under an idealized model with paint of no thickness the two statements conflict; in practice a finite film of paint on an infinite area still uses infinite volume, and the paradox highlights the difference between surface area and volume.
@@ -17,55 +17,55 @@ The observation connected with Gabriel's horn: the horn can be filled with a fin
 The Paley--Wiener theorem characterizes entire functions of exponential type: a function $f$ is the restriction to $\mathbb{R}$ of an entire function of exponential type $\tau$ if and only if its Fourier transform has support in $[-\tau, \tau]$. Equivalently, the Fourier transform of a compactly supported function or distribution is an entire function of exponential type growing at most like $e^{\tau |z|}$. The theorem extends to tempered distributions and underlies the theory of Paley--Wiener spaces of bandlimited signals in sampling theory and harmonic analysis.
 
 \term{Palindromic Sequence}
-A sequence of symbols or numbers that reads the same forwards and backwards. In combinatorics on words, the study of palindromes relates to the structure of free monoids and Sturmian words.
+A palindromic sequence reads the same from left to right and right to left. Palindromes can be studied through recursive construction, symmetry, and word combinatorics. \par\noindent\textbf{Applications:} they occur in string algorithms, coding, molecular sequence analysis, and pattern detection.
 
 \term{Parabolic PDE}
-A partial differential equation of heat type, with one distinguished direction of time and smoothing evolution.
+A parabolic PDE has a time-like direction and diffusion-like behavior, as in the heat equation. It generally smooths irregular initial data as time evolves. \par\noindent\textbf{Applications:} parabolic PDEs model heat flow, diffusion, pricing, population spread, and image denoising.
 
 \term{Paracompact}
 A topological space $X$ is paracompact if every open cover of $X$ admits a locally finite refinement, meaning an open refinement in which each point lies in only finitely many members. Paracompact Hausdorff spaces admit partitions of unity subordinate to any open cover, which is essential for defining smooth partitions of unity on manifolds and for gluing local constructions. Metric spaces and CW complexes are paracompact. Paracompactness plays a central role in sheaf theory, differential topology, and the construction of integrals on manifolds.
 
 \term{Parallelepiped}
-A three-dimensional figure whose six faces are all parallelograms. Its volume is given by the absolute value of the scalar triple product: $V = | \mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) |$.
+A parallelepiped is a solid generated by three vectors, with each pair of opposite faces parallel. Its volume is $V=|\mathbf a\cdot(\mathbf b\times\mathbf c)|$. \par\noindent\textbf{Applications:} parallelepipeds describe unit cells in crystals, coordinate changes, and volumes in vector calculus.
 
 \term{Parallel Transport}
-A way of moving a vector along a curve on a manifold such that the vector "remains parallel" to itself, meaning its covariant derivative along the curve is zero. The result depends on the path taken if the manifold has curvature.
+Parallel transport moves a vector along a curve while making its covariant derivative along the curve zero. On a curved manifold the result can depend on the path, revealing curvature. \par\noindent\textbf{Applications:} parallel transport is used in differential geometry, general relativity, robotics, and gauge theory.
 
 \term{Parameter}
-A quantity that can be varied and appears as a constant in an equation, or the coordinate of a parametric curve.
+A parameter is a quantity that remains fixed during one calculation but can vary between models or cases. It can also label points on a parametric curve. \par\noindent\textbf{Applications:} parameters describe model uncertainty, geometric families, physical constants, and statistical coefficients.
 
 \term{Parametric Equation}
-An equation describing a curve through functions of one or more parameters, such as $x = \cos t$, $y = \sin t$.
+A parametric equation describes coordinates as functions of a parameter, such as $x=\cos t$ and $y=\sin t$ for a circle. It can represent motion, orientation, and curves that are not graphs of a single-valued function. \par\noindent\textbf{Applications:} parametric equations are used in kinematics, computer graphics, geometry, and robotics.
 
 \term{Parity}
-The evenness or oddness of an integer; also the property of a function that is even or odd.
+The parity of an integer is whether it is even or odd. A function is even when $f(-x)=f(x)$ and odd when $f(-x)=-f(x)$. \par\noindent\textbf{Applications:} parity simplifies symmetry arguments, permutation signs, Fourier expansions, and selection rules in physics.
 
 \term{Parrondo's Paradox}
 Two games that are each losing can be combined, played alternately or by a random rule, into a winning strategy. It arises from capital-dependent or history-dependent strategies and connects to the theory of Brownian ratchets in physics; the winning arises from the nonlinearity of the combined process.
 
 \term{Parseval's Identity}
-The equality $\sum |a_n|^2 = \int |f|^2$ relating the Fourier coefficients of a function to its energy.
+Parseval's identity states that the squared norm of a function equals the sum of the squared magnitudes of its Fourier coefficients, with normalization depending on convention. It expresses conservation of energy under Fourier expansion. \par\noindent\textbf{Applications:} it supports signal power calculations, Fourier analysis, and error estimates for approximations.
 
 \term{Partial Derivative}
-The derivative of a multivariable function with respect to one variable, while holding all other variables constant. It measures the rate of change along a specific coordinate axis.
+A partial derivative differentiates a multivariable function with respect to one variable while holding the others fixed. It measures change along a coordinate direction. \par\noindent\textbf{Applications:} partial derivatives form gradients and Jacobians and are used in optimization, sensitivity analysis, thermodynamics, and PDEs.
 
 \term{Partial Differential Equation}
 A partial differential equation (PDE) is an equation relating an unknown function $u$ of several variables to its partial derivatives, of the form $F(x, u, \partial u/\partial x_i, \partial^2 u/\partial x_i \partial x_j, \ldots) = 0$. Second-order linear equations are classified by the sign of their principal symbol as elliptic, parabolic, or hyperbolic, each with its own existence, uniqueness, and regularity theory. A problem is well-posed in the sense of Hadamard when a solution exists, is unique, and depends continuously on the data. Weak solutions and Sobolev spaces are central tools in the analysis of PDEs.
 
 \term{Partial Fraction}
-The decomposition of a rational function into a sum of simpler rational terms, useful for integration.
+A partial-fraction decomposition writes a rational function as a sum of simpler fractions associated with the factors of its denominator. \par\noindent\textbf{Applications:} it simplifies integration, inverse Laplace transforms, recurrence solutions, and symbolic algebra.
 
 \term{Partial Sum}
-The sum of the first $n$ terms of a series, $S_n = a_1 + \cdots + a_n$.
+A partial sum is $S_n=a_1+\cdots+a_n$, the sum of the first $n$ terms of a series. A series converges when its partial sums approach a finite limit. \par\noindent\textbf{Applications:} partial sums provide finite approximations and are used to study convergence and numerical error.
 
 \term{Partial Order}
-A binary relation $\leq$ on a set $S$ that is reflexive ($a \leq a$), antisymmetric ($a \leq b \land b \leq a \implies a = b$), and transitive ($a \leq b \land b \leq c \implies a \leq c$).
+A partial order is a relation that is reflexive, antisymmetric, and transitive. It allows some elements to be incomparable, unlike a total order. \par\noindent\textbf{Applications:} partial orders represent dependencies, task schedules, lattices, version histories, and optimization constraints.
 
 \term{Partition (Integer)}
 A way of writing a positive integer $n$ as a sum of positive integers, where the order of the summands does not matter. The partition function $p(n)$ grows rapidly and is studied using generating functions and Hardy-Ramanujan asymptotics.
 
 \term{Path-Connected Space}
-A topological space $X$ where any two points $x, y \in X$ can be joined by a continuous path $\gamma: [0,1] \to X$ such that $\gamma(0)=x$ and $\gamma(1)=y$. Path-connectedness implies connectedness.
+A space is path-connected if every two points can be joined by a continuous path. Path-connectedness implies connectedness, although the converse can fail. \par\noindent\textbf{Applications:} it describes reachable configurations, connected regions, and continuous motions in topology and robotics.
 
 \term{Path Integral}
 A formulation of quantum mechanics developed by Richard Feynman, where the probability amplitude for a particle to travel from $a$ to $b$ is the sum over all possible paths, weighted by $e^{iS/\hbar}$ where $S$ is the action.
@@ -74,7 +74,7 @@ A formulation of quantum mechanics developed by Richard Feynman, where the proba
 A regular, repeating or predictable structure, studied formally in combinatorics and formal language theory.
 
 \term{Pearson Correlation Coefficient}
-A measure of the linear correlation between two variables, $\rho_{XY} = \operatorname{Cov}(X,Y) / (\sigma_X \sigma_Y)$, taking values in $[-1, 1]$. It is the sample correlation used in linear regression.
+The Pearson correlation is $\rho_{XY}=\operatorname{Cov}(X,Y)/(\sigma_X\sigma_Y)$ and lies between $-1$ and $1$. It measures linear association, not causation or general dependence. \par\noindent\textbf{Applications:} correlation summarizes data relationships and is used in regression, screening, and exploratory statistics.
 
 \term{Perfect Number}
 A positive integer that is equal to the sum of its proper positive divisors. Examples include 6, 28, and 496. All known perfect numbers are even and given by the formula $2^{p-1}(2^p - 1)$ where $2^p-1$ is a Mersenne prime.
@@ -83,22 +83,22 @@ A positive integer that is equal to the sum of its proper positive divisors. Exa
 A field $K$ such that every irreducible polynomial over $K$ has distinct roots in its splitting field. All fields of characteristic 0 and all finite fields are perfect.
 
 \term{Perfect Matching}
-In graph theory, a set of edges such that every vertex of the graph is incident to exactly one edge in the set. Also called a 1-factor.
+A perfect matching is a set of edges in which every vertex is incident to exactly one selected edge. It is also called a 1-factor. \par\noindent\textbf{Applications:} perfect matchings model pairings, assignment, scheduling, molecular bonding, and resource allocation.
 
 \term{Permutation}
-A bijection from a set to itself. A permutation of a finite set of $n$ elements is one of the $n!$ possible linear orderings.
+A permutation is a bijection from a set to itself. A finite set of $n$ elements has $n!$ permutations. \par\noindent\textbf{Applications:} permutations model rearrangements, schedules, symmetries, randomized algorithms, and group actions.
 
 \term{Permutation Group}
 A group whose elements are permutations of a given set and whose operation is the composition of permutations. The symmetric group $S_n$ is the group of all permutations of $n$ elements.
 
 \term{Permutation Matrix}
-A square binary matrix that has exactly one entry of 1 in each row and each column and 0s elsewhere. Multiplying a matrix by a permutation matrix reorders its rows or columns.
+A permutation matrix has exactly one $1$ in each row and column and zeros elsewhere. Multiplication by it reorders rows or columns without changing their values. \par\noindent\textbf{Applications:} permutation matrices represent reindexing, pivoting, graph relabeling, and sparse numerical algorithms.
 
 \term{Perron--Frobenius Theorem}
 A non-negative irreducible square matrix has a positive real eigenvalue equal to its spectral radius, with a strictly positive eigenvector; this eigenvalue is simple and dominates all others in modulus. It is the foundation for the convergence of Markov chains and for stable states in population dynamics, such as those modeled by Leslie matrices.
 
 \term{Phase Space}
-Phase space is the space of all possible states of a system. In classical mechanics, a point usually records both position and momentum. As the system evolves, this point traces a path through phase space; Hamiltonian motion preserves phase-space volume by Liouville's theorem. Applications: phase space is used to study planetary motion, gases, control systems, and statistical mechanics.
+Phase space is the set of all possible states of a system. In classical mechanics, a state usually includes position and momentum, and evolution traces a path through phase space. \par\noindent\textbf{Applications:} phase space supports the study of planetary motion, gases, control systems, and statistical mechanics.
 
 \term{Phi ($\phi$) (Golden Ratio)}
 The irrational number $\phi = \frac{1+\sqrt{5}}{2} \approx 1.618$, which is the positive solution to $x^2 - x - 1 = 0$. It appears in the geometry of pentagons, the Fibonacci sequence, and phyllotaxis.
@@ -110,40 +110,40 @@ Picard's theorems concern the range of holomorphic functions. The little Picard 
 For the initial value problem $y' = f(x,y)$, $y(x_0) = y_0$, if $f$ is continuous in $x$ and Lipschitz continuous in $y$, then a unique solution exists on some interval about $x_0$. The proof typically proceeds via the contraction mapping principle applied to a space of continuous functions.
 
 \term{Pigeonhole Principle}
-A combinatorial principle stating that if $n$ items are put into $m$ containers, with $n > m$, then at least one container must contain more than one item.
+The pigeonhole principle states that placing more than $m$ objects into $m$ containers forces some container to contain at least two objects. \par\noindent\textbf{Applications:} it proves existence results in combinatorics, number theory, hashing, scheduling, and collision analysis.
 
 \term{Planar Graph}
 A graph that can be drawn in the plane so that its edges meet only at common endpoints. Kuratowski's theorem characterizes planar graphs as those containing neither $K_5$ nor $K_{3,3}$ as a minor (equivalently, as a topological minor). A connected planar graph satisfies Euler's formula $V - E + F = 2$ relating vertices, edges, and faces. Every planar graph is 4-colorable, the four-color theorem. Planarity testing, dual graphs, and planar embeddings matter in graph drawing, network design, and algorithmic graph theory.
 
 \term{Pointwise Convergence}
-A sequence of functions $f_n$ converges pointwise to $f$ on a set $S$ if for every $x \in S$, the sequence of values $f_n(x)$ converges to $f(x)$. This is a weaker condition than uniform convergence.
+The sequence $f_n$ converges pointwise to $f$ on $S$ if $f_n(x)\to f(x)$ for each fixed $x\in S$. The rate may depend on $x$, so pointwise convergence is weaker than uniform convergence. \par\noindent\textbf{Applications:} it appears in approximation, probability, integration, and the study of function limits.
 
 \term{Poisson Distribution}
-A discrete probability distribution that expresses the probability of a given number of events occurring in a fixed interval of time or space, provided these events occur with a known constant mean rate and independently of the time since the last event.
+The Poisson distribution models the number of independent events in a fixed interval with mean rate $\lambda$: $P(X=k)=e^{-\lambda}\lambda^k/k!$. \par\noindent\textbf{Applications:} it models arrivals, defects, mutations, calls, and other count data.
 
 \term{Poisson Equation}
 A partial differential equation of the form $\Delta u = f$, where $\Delta$ is the Laplacian. It describes the potential $u$ generated by a source density $f$, appearing in electrostatics and gravity.
 
 \term{Poisson Process}
-A stochastic process $N(t)$ that counts the number of events occurring up to time $t$, where the increments are independent and the number of events in any interval follows a Poisson distribution.
+A Poisson process $N(t)$ counts events whose independent increments have Poisson distributions proportional to interval length. Its waiting times are independent exponential variables. \par\noindent\textbf{Applications:} it models queues, radioactive decay, insurance claims, network traffic, and random arrivals.
 
 \term{Poisson Summation Formula}
 A relationship between the sum of values of a function at integers and the sum of values of its Fourier transform at integers: $\sum_{n=-\infty}^\infty f(n) = \sum_{k=-\infty}^\infty \hat{f}(k)$.
 
 \term{Polytope}
-The generalization of a polygon (2D) and polyhedron (3D) to $n$ dimensions. A convex polytope is the convex hull of a finite set of points in $\mathbb{R}^n$.
+A polytope is a finite-dimensional generalization of a polygon and polyhedron. A convex polytope is the convex hull of finitely many points, or equivalently a bounded intersection of finitely many half-spaces. \par\noindent\textbf{Applications:} polytopes describe feasible regions in linear programming, geometry, combinatorics, and computer graphics.
 
 \term{Polyhedron}
 In Euclidean geometry, a three-dimensional solid bounded by flat polygonal faces, the higher-dimensional analogue of a polygon. More generally a polyhedron is a union of finitely many convex polytopes in $\mathbb{R}^n$. Convex polyhedra are studied through the theory of polytopes, with Euler's formula $V - E + F = 2$ for convex solids relating vertices, edges, and faces. Regular and vertex-transitive polyhedra include the five Platonic solids, the classification of which dates to antiquity and reappears in symmetry and group theory.
 
 \term{Polynomial}
-An expression consisting of variables and coefficients, using only addition, subtraction, multiplication, and non-negative integer exponents of variables.
+A polynomial is a finite sum of terms involving coefficients, variables, and nonnegative integer powers. Its degree controls growth and algebraic complexity. \par\noindent\textbf{Applications:} polynomials model data, approximate functions, define algebraic varieties, and support symbolic and numerical computation.
 
 \term{Polynomial Ring}
 The ring $R[x]$ consisting of all polynomials with coefficients in a ring $R$. If $R$ is a field, $R[x]$ is a Euclidean domain.
 
 \term{Polar Coordinates}
-A two-dimensional coordinate system in which each point is determined by a distance $r$ from a reference point (the origin) and an angle $\theta$ from a reference direction.
+Polar coordinates represent a planar point by radius $r$ and angle $\theta$, with $x=r\cos\theta$ and $y=r\sin\theta$. The area element is $r\,dr\,d\theta$. \par\noindent\textbf{Applications:} polar coordinates simplify circular geometry, wave equations, orbital motion, and double integrals.
 
 \term{Polar Decomposition}
 The factorization of a complex square matrix $A$ as $A = UP$, where $U$ is a unitary matrix and $P$ is a positive semi-definite Hermitian matrix.

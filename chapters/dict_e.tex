@@ -2,19 +2,19 @@
 \label{chap:e}
 
 \term{Eccentricity}
-The ratio $\sqrt{1 - b^2/a^2}$ for an ellipse, measuring deviation from a circle; also a graph measure: the maximum distance from a vertex to any other vertex.
+For a conic section, eccentricity measures how far the shape is from a circle: for an ellipse with semiaxes $a\ge b$, it is $e=\sqrt{1-b^2/a^2}$. A graph-theory eccentricity is different: it is the greatest shortest-path distance from one vertex to any other. \par\noindent\textbf{Applications:} conic eccentricity classifies ellipses, parabolas, and hyperbolas, while graph eccentricity identifies central and peripheral locations in networks.
 
 \term{Edge}
-A pair of vertices in a graph, the fundamental building block of graph theory.
+An edge is a connection between two vertices in a graph; it may have a direction or a weight. \par\noindent\textbf{Applications:} edges represent roads, communication links, relationships, and transitions between states.
 
 \term{Eigenvalue}
 An eigenvalue $\lambda$ of a linear operator $T: V \to V$ on a vector space $V$ is a scalar such that $T v = \lambda v$ for some non-zero $v \in V$ (an eigenvector). The eigenvalues are the roots of the characteristic polynomial $\det(T - \lambda I) = 0$. The spectral theorem states that a symmetric matrix is orthogonally diagonalisable with real eigenvalues. Eigenvalues determine stability of dynamical systems and appear throughout physics and engineering.
 
 \term{Eigenvalue Problem}
-The problem of finding scalars $\lambda$ and non-zero vectors $v$ with $Av = \lambda v$.
+The eigenvalue problem seeks scalars $\lambda$ and nonzero vectors $v$ satisfying $Av=\lambda v$. \par\noindent\textbf{Applications:} eigenvalues identify natural frequencies, growth rates, stability, and important directions in data.
 
 \term{Eigenvector}
-An eigenvector of a linear transformation $T$ corresponding to eigenvalue $\lambda$ is a non-zero vector $v$ satisfying $T v = \lambda v$. The set of all eigenvectors for a given eigenvalue, together with the zero vector, forms the eigenspace. For distinct eigenvalues, eigenvectors are linearly independent. If $T$ has a basis of eigenvectors, it is diagonalisable: $T = PDP^{-1}$ where $D$ is diagonal with eigenvalues on the diagonal.
+An eigenvector of $T$ is a nonzero vector $v$ satisfying $Tv=\lambda v$; the transformation changes its size or direction only by the scalar $\lambda$. \par\noindent\textbf{Applications:} eigenvectors describe vibration modes, principal components, quantum states, and long-term behavior of dynamical systems.
 
 \term{Eilenberg--Steenrod Axioms}
 The Eilenberg--Steenrod axioms characterise ordinary homology and cohomology theories on the category of CW pairs: (1) homotopy invariance, (2) exactness of the long exact sequence of a pair, (3) excision, (4) additivity over disjoint unions, (5) normalisation on a point. Any two theories satisfying these axioms are naturally isomorphic. These axioms (1952) provided the first rigorous framework for homology.
@@ -26,28 +26,28 @@ For an abelian group $G$ and integer $n \geq 1$, the Eilenberg--MacLane space $K
 The Eisenstein series $E_k(z) = \sum_{(c,d) \neq (0,0)} (cz+d)^{-k}$ on the upper half-plane converges absolutely for $k > 2$ and is a modular form of weight $k$ for $\mathrm{SL}_2(\mathbb{Z})$. Its Fourier expansion $E_k(z) = 2\zeta(k) + \frac{2(2\pi i)^k}{(k-1)!}\sum_{n \geq 1} \sigma_{k-1}(n) e^{2\pi i n z}$ is written in terms of the divisor sums $\sigma_{k-1}$. Together with cusp forms they generate the space of modular forms; the constant terms are algebraic multiples of $\zeta(k)$, and the series connect to the Weierstrass zeta function in the theory of elliptic functions.
 
 \term{Elementary Function}
-A function built from polynomials, exponentials, logarithms, trigonometric functions, and their inverses under finitely many operations and compositions.
+A function built from polynomials, exponentials, logarithms, trigonometric functions, and their inverses using finitely many operations and compositions. \par\noindent\textbf{Applications:} elementary functions form the standard vocabulary of calculus, modeling, engineering, and scientific computation.
 
 \term{Elementary Symmetric Polynomials}
 The elementary symmetric polynomials in $x_1, \ldots, x_n$ are $e_k = \sum_{1 \leq i_1 < \cdots < i_k \leq n} x_{i_1} \cdots x_{i_k}$ for $k=1,\ldots,n$. The Fundamental Theorem of Symmetric Functions states that every symmetric polynomial is a unique polynomial in the $e_k$. The coefficients of a monic polynomial are (up to sign) the elementary symmetric polynomials in its roots.
 
 \term{Ellipse}
-The conic section defined by the set of points whose sum of distances to two foci is constant.
+An ellipse is the set of points whose sum of distances to two fixed foci is constant. A circle is the special case in which the foci coincide. \par\noindent\textbf{Applications:} ellipses model planetary orbits, optical mirrors, acoustic reflectors, and uncertainty regions in statistics.
 
 \term{Elliptic Curve}
-A smooth curve of genus 1 with a chosen point at infinity. Over a field of characteristic different from $2$ and $3$, it can be written as $y^2=x^3+ax+b$ with $4a^3+27b^2\ne0$. Its points form an abelian group under a geometric addition rule. Applications: elliptic curves are used in public-key cryptography, integer factorization, and the study of rational solutions to equations.
+A smooth curve of genus 1 with a chosen point at infinity. Over a field of characteristic different from $2$ and $3$, it can be written as $y^2=x^3+ax+b$ with $4a^3+27b^2\ne0$. Its points form an abelian group under a geometric addition rule. \par\noindent\textbf{Applications:} elliptic curves are used in public-key cryptography, integer factorization, and the study of rational solutions to equations.
 
 \term{Elliptic Curve Cryptography}
 Elliptic curve cryptography is a public-key cryptosystem whose security rests on the elliptic curve discrete logarithm problem: given points $P$ and $Q = [k]P$ on an elliptic curve over a finite field, recover $k$. For a general curve no sub-exponential algorithm is known, whereas the index calculus attacks finite fields, so elliptic curve systems achieve security comparable to RSA with much smaller keys: a 256-bit curve offers the security of a 3072-bit RSA modulus. Standardised constructions include key exchange (ECDH) and digital signatures (ECDSA), together with efficient curve models such as Montgomery and twisted Edwards curves that resist side-channel attacks.
 
 \term{Elliptic Function}
-A meromorphic doubly periodic function on the complex plane, such as the Weierstrass $\wp$ function.
+A meromorphic function on the complex plane with two independent periods, such as the Weierstrass $\wp$ function. \par\noindent\textbf{Applications:} elliptic functions describe periodic phenomena in two directions and appear in complex analysis, mechanics, and the geometry of elliptic curves.
 
 \term{Elliptic Integral}
-An integral of the form $\int R(x, \sqrt{P(x)})\,dx$ where $P$ is a cubic or quartic, not expressible in elementary functions in general.
+An elliptic integral is an integral such as $\int R(x,\sqrt{P(x)})\,dx$, where $P$ is a cubic or quartic and $R$ is rational; it is not generally expressible using elementary functions. \par\noindent\textbf{Applications:} elliptic integrals calculate pendulum periods, arc lengths, planetary motion, and electromagnetic quantities.
 
 \term{Elliptic PDE}
-A partial differential equation whose principal symbol is positive definite, such as Laplace's equation; elliptic problems have smooth solutions and well-posed boundary value problems.
+An elliptic PDE has a principal part that behaves like a positive-definite quadratic form; Laplace's equation is the standard example. Under suitable boundary conditions, elliptic equations smooth their solutions. \par\noindent\textbf{Applications:} they model steady temperature, electrostatics, elasticity, fluid potential, and image smoothing.
 
 \term{Ellsberg Paradox}
 People strongly prefer gambles with known probabilities over those with ambiguous or unknown probabilities, even when subjective expected utility would treat them the same. It is a classic violation of expected utility theory and motivates ambiguity aversion and the distinction between risk and uncertainty (Knightian uncertainty).
@@ -56,22 +56,22 @@ People strongly prefer gambles with known probabilities over those with ambiguou
 Nash's embedding theorem (1954, 1956) states that every Riemannian manifold can be isometrically embedded into some Euclidean space $\mathbb{R}^N$. The $C^1$ embedding requires $N \geq n+2$; the $C^\infty$ embedding requires $N = n(3n+11)/2$ for compact manifolds. This resolved a long-standing question: abstract Riemannian manifolds arise as submanifolds of Euclidean space.
 
 \term{Endomorphism}
-A homomorphism from a mathematical structure to itself.
+An endomorphism is a structure-preserving map from an object to itself. \par\noindent\textbf{Applications:} endomorphisms describe repeated transformations, linear systems, dynamical updates, and symmetries of algebraic structures.
 
 \term{Enumeration}
-The process of listing all elements of a set, or assigning natural numbers to them.
+Enumeration is the process of listing objects or assigning them natural-number labels. \par\noindent\textbf{Applications:} enumeration generates combinatorial objects, indexes data, tests algorithms, and distinguishes countable from uncountable sets.
 
 \term{Entire Function}
 An entire function is a holomorphic function defined on all of $\mathbb{C}$. Liouville's theorem states that a bounded entire function is constant, giving the fundamental theorem of algebra. Every entire function admits a Weierstrass factorization as a product over its zeros times an exponential factor; for functions of finite order, the Hadamard factorization theorem makes this canonical, and the growth is quantified by the order and type. Examples include polynomials, $\exp$, $\sin$, and $\cos$. Entire functions are central to complex analysis and value distribution theory (Nevanlinna theory), and their zeros control the gamma and zeta functions.
 
 \term{Envelope}
-A curve tangent to every member of a family of curves.
+An envelope is a curve tangent to each member of a family of curves, at least locally. \par\noindent\textbf{Applications:} envelopes describe wavefronts, caustics in optics, reachable boundaries, and families of solutions to differential equations.
 
 \term{Epimorphism}
-A morphism that is surjective, or in category theory a morphism $f$ such that $g \circ f = h \circ f$ implies $g = h$.
+In category theory, an epimorphism is a morphism $f$ such that $g\circ f=h\circ f$ implies $g=h$. It need not be surjective in every category, although epimorphisms of sets are surjective. \par\noindent\textbf{Applications:} epimorphisms formalize quotient and “onto-like” constructions in algebra and geometry.
 
 \term{Equality}
-The relation between objects that are identical, satisfying reflexivity, symmetry, and transitivity.
+Equality means that two expressions denote the same object; it is reflexive, symmetric, and transitive. \par\noindent\textbf{Applications:} equality is the basic relation used in equations, symbolic computation, formal proof, and program verification.
 
 \term{Equivalence Relation}
 An equivalence relation on a set $X$ is a binary relation $\sim$ that is reflexive ($x \sim x$), symmetric ($x \sim y \implies y \sim x$), and transitive ($x \sim y \land y \sim z \implies x \sim z$). Equivalence relations partition $X$ into equivalence classes $[x] = \{y \in X : y \sim x\}$. The quotient set $X/{\sim}$ is the set of all equivalence classes. Examples: congruence modulo $n$, isomorphism of structures, homotopy of maps.
@@ -80,7 +80,7 @@ An equivalence relation on a set $X$ is a binary relation $\sim$ that is reflexi
 An equivalence of categories consists of functors $F: \mathcal{C} \to \mathcal{D}$ and $G: \mathcal{D} \to \mathcal{C}$ together with natural isomorphisms $GF \cong \mathrm{id}_{\mathcal{C}}$ and $FG \cong \mathrm{id}_{\mathcal{D}}$. Equivalent categories are interchangeable for all categorical purposes: any construction preserved by composition with $F$ or $G$ holds in both, such as the existence of limits, coproducts, and adjoints. Finite-dimensional vector spaces over a field are equivalent to the category of matrices over that field, and rings with equivalent module categories are Morita equivalent. By Yoneda's lemma, a category is essentially determined up to equivalence by its representable functors.
 
 \term{Equivalent}
-Related by an equivalence relation; two statements are logically equivalent if each implies the other.
+Two objects are equivalent when they are related by an equivalence relation; two statements are logically equivalent when each implies the other. \par\noindent\textbf{Applications:} equivalence lets mathematicians replace a difficult object or statement with a simpler one having the same relevant behavior.
 
 \term{Erdős--Ko--Rado Theorem}
 If $n \geq 2k$, a family of $k$-element subsets of an $n$-element set with pairwise intersecting members has size at most $\binom{n-1}{k-1}$; equality is achieved by all sets containing a fixed element.
@@ -92,13 +92,13 @@ The Erdős--Szekeres theorem asserts that any sequence of $(r-1)(s-1)+1$ distinc
 Birkhoff's ergodic theorem states that for a measure-preserving transformation $T$ on a probability space $(X, \mathcal{F}, \mu)$ and $f \in L^1(\mu)$, the time averages $\frac{1}{n}\sum_{k=0}^{n-1} f(T^k x)$ converge almost everywhere to a $T$-invariant function $\bar{f}$. If $T$ is ergodic, $\bar{f} = \int f\,d\mu$ almost everywhere. This justifies the physical principle that time averages equal space averages for ergodic systems.
 
 \term{Ergodic Theory}
-The study of the long-term statistical behaviour of measure-preserving transformations.
+Ergodic theory studies long-term statistical behavior in systems that preserve a measure. \par\noindent\textbf{Applications:} it connects time averages with ensemble averages in statistical mechanics, dynamical systems, information theory, and data modeling.
 
 \term{Ergodicity}
-The property that time averages along orbits equal space averages with respect to the invariant measure for almost every starting point.
+Ergodicity is the property that long-run averages along almost every trajectory equal averages over the whole invariant state space. \par\noindent\textbf{Applications:} it justifies replacing repeated time measurements by ensemble averages in physics, probability, and dynamical simulations.
 
 \term{Essential Singularity}
-A singularity of an analytic function that is not removable and not a pole, near which the function takes every complex value infinitely often.
+An essential singularity is an isolated singularity that is neither removable nor a pole. Near it, the function behaves extremely irregularly and approaches almost every complex value. \par\noindent\textbf{Applications:} essential singularities classify complex functions and determine local behavior in contour integration and complex models.
 
 \term{Étale Cohomology}
 Étale cohomology $H_{\text{\'et}}^*(X, \mathcal{F})$ is a cohomology theory for schemes developed by Grothendieck and Artin (1960s). It uses the étale site (étale morphisms as covers) instead of the Zariski or analytic topology. It satisfies the Weil conjectures: rationality, functional equation, and Riemann hypothesis for varieties over finite fields. The $\ell$-adic cohomology $H_{\text{\'et}}^*(X_{\bar{k}}, \mathbb{Q}_\ell)$ carries a Galois action.
@@ -107,13 +107,13 @@ A singularity of an analytic function that is not removable and not a pole, near
 A morphism of schemes $f: X \to Y$ is étale if it is smooth of relative dimension $0$, equivalently flat and unramified. Étale morphisms are the algebro-geometric analogue of local isomorphisms of complex manifolds: they induce isomorphisms on completions of local rings and lift tangent vectors, so the formal inverse function theorem holds. The étale site, whose covers are surjective families of étale morphisms, underlies étale cohomology, and the étale fundamental group classifies finite étale covers of a connected scheme.
 
 \term{Euclid's Algorithm}
-The process of repeatedly dividing to compute the greatest common divisor of two integers.
+Euclid's algorithm repeatedly divides with remainders to compute the greatest common divisor of two integers. \par\noindent\textbf{Applications:} it supports fraction reduction, modular inverses, polynomial arithmetic, and cryptographic algorithms.
 
 \term{Euclid's Theorem}
-There are infinitely many primes. Euclid's proof: given any finite list of primes, multiply them together and add one; any prime divisor of the resulting number is new, so the list was incomplete.
+There are infinitely many prime numbers. Euclid's proof multiplies any proposed finite list of primes and adds one, producing a number with a prime divisor absent from the list. \par\noindent\textbf{Applications:} the theorem establishes the basic supply of prime building blocks used in arithmetic and cryptography.
 
 \term{Euclidean Domain}
-An integral domain admitting a degree function with a division algorithm, and hence a principal ideal domain and a unique factorization domain.
+An Euclidean domain is an integral domain with a division algorithm based on a size function. It is therefore a principal ideal domain and a unique factorization domain. \par\noindent\textbf{Applications:} Euclidean domains support efficient gcd calculations and factorization in integers and polynomial rings.
 
 \term{Euler Characteristic}
 The Euler characteristic $\chi(X)$ of a topological space is $\chi = \sum_{k=0}^\infty (-1)^k \operatorname{rank} H_k(X; \mathbb{Q})$. For a finite CW complex, $\chi = \sum (-1)^k (\text{number of } k\text{-cells})$. For polyhedra, $\chi = V - E + F$. The Gauss--Bonnet theorem relates $\chi(S)$ of a surface to its Gaussian curvature: $\int_S K\,dA = 2\pi\chi(S)$. The Euler characteristic is multiplicative under fibrations.
@@ -122,49 +122,49 @@ The Euler characteristic $\chi(X)$ of a topological space is $\chi = \sum_{k=0}^
 For a convex polyhedron, $V - E + F = 2$ where $V$ is vertices, $E$ edges, and $F$ faces. More generally, for a connected planar graph, $V - E + F = 2$ including the unbounded face. This is the Euler characteristic of the sphere. For surfaces of genus $g$, $V - E + F = 2 - 2g$. The formula is a cornerstone of topology and graph theory.
 
 \term{Euler's Identity}
-Euler's identity $e^{i\pi} + 1 = 0$ unites five fundamental constants: $e$ (base of natural logarithm), $i$ (imaginary unit), $\pi$ (circle ratio), $1$ (multiplicative identity), and $0$ (additive identity). It is the special case $\theta = \pi$ of Euler's formula $e^{i\theta} = \cos\theta + i\sin\theta$, which expresses complex exponentials in terms of trigonometric functions and is fundamental to complex analysis.
+Euler's identity $e^{i\pi}+1=0$ follows from $e^{i\theta}=\cos\theta+i\sin\theta$ at $\theta=\pi$. It connects exponential, trigonometric, and complex notation. \par\noindent\textbf{Applications:} this relationship powers Fourier analysis, alternating-current calculations, signal processing, and quantum mechanics.
 
 \term{Euler's Number}
-The transcendental constant $e = \lim_{n\to\infty}(1 + 1/n)^n \approx 2.71828$, the base of the natural logarithm.
+Euler's number is the transcendental constant $e=\lim_{n\to\infty}(1+1/n)^n\approx2.71828$, the base of the natural logarithm. \par\noindent\textbf{Applications:} $e^x$ models continuous growth and decay, compound interest, radioactive decay, and probability distributions.
 
 \term{Euler's Theorem}
-(Number theory) The congruence $a^{\varphi(n)} \equiv 1 \pmod{n}$ for $\gcd(a,n) = 1$, generalising Fermat's little theorem.
+(Number theory) If $\gcd(a,n)=1$, then $a^{\varphi(n)}\equiv1\pmod n$. \par\noindent\textbf{Applications:} Euler's theorem supports modular inverses, primality tests, and the RSA cryptosystem.
 
 \term{Euler--Lagrange Equation}
-The differential equation $\frac{\partial L}{\partial f} - \frac{d}{dx}\frac{\partial L}{\partial f'} = 0$ satisfied by extremals of a variational problem.
+The Euler--Lagrange equation $\partial L/\partial f-d(\partial L/\partial f')/dx=0$ is satisfied by functions that make a variational quantity stationary. \par\noindent\textbf{Applications:} it gives the equations of motion in mechanics and is used in optics, optimal control, and PDEs.
 
 \term{Euler--Maclaurin Formula}
 The Euler--Maclaurin formula relates sums to integrals: $\sum_{k=a}^b f(k) = \int_a^b f(x)\,dx + \frac{f(a)+f(b)}{2} + \sum_{k=1}^m \frac{B_{2k}}{(2k)!} \left(f^{(2k-1)}(b) - f^{(2k-1)}(a)\right) + R_m$, where $B_{2k}$ are Bernoulli numbers. It provides asymptotic expansions for sums, computes zeta values, and is used in numerical integration and analytic number theory.
 
 \term{Eulerian Graph}
-A graph containing a closed walk that uses every edge exactly once, characterised by all vertices having even degree.
+A connected graph is Eulerian if it has a closed walk using every edge exactly once; equivalently, every vertex has even degree. \par\noindent\textbf{Applications:} Eulerian graphs model inspection routes, street sweeping, circuit testing, and the Chinese postman problem.
 
 \term{Eulerian Path}
 An Eulerian path in a graph is a trail that uses every edge exactly once; if it returns to its starting vertex it is an Eulerian circuit. Euler's theorem characterises when these exist: a connected graph admits an Eulerian circuit iff every vertex has even degree, and an Eulerian path iff at most two vertices have odd degree. The problem originated with the bridges of Königsberg. Hierholzer's algorithm finds an Eulerian circuit in linear time. Eulerian circuits are in a sense dual to Hamiltonian cycles.
 
 \term{Event}
-A subset of a sample space in probability theory, to which a probability is assigned.
+An event is a subset of the sample space to which a probability is assigned. \par\noindent\textbf{Applications:} events represent outcomes of experiments, alerts in monitoring systems, medical conditions, and statements tested by data.
 
 \term{Exact Sequence}
-A sequence of homomorphisms in which the image of each map equals the kernel of the next.
+An exact sequence is a sequence of homomorphisms in which the image of each map equals the kernel of the next. \par\noindent\textbf{Applications:} exact sequences track information through algebraic constructions and are used in homology, differential equations, and extension problems.
 
 \term{Excision}
 Excision is the theorem that for subspaces $Z \subset A \subset X$ with $\overline{Z} \subset \operatorname{int}(A)$, the inclusion $(X-Z, A-Z) \hookrightarrow (X, A)$ induces isomorphisms $H_n(X-Z, A-Z) \cong H_n(X, A)$ on relative homology. It is one of the Eilenberg--Steenrod axioms which, together with homotopy invariance, exactness, additivity, and normalisation, characterise homology theories. Excision enables the computation of homology by attaching cells and yields the Mayer--Vietoris long exact sequence as a consequence.
 
 \term{Existence}
-The property of there being at least one object satisfying a given condition, expressed by the existential quantifier $\exists$.
+Existence means that at least one object satisfies a condition, written with the quantifier $\exists$. \par\noindent\textbf{Applications:} existence theorems guarantee that a model, solution, equilibrium, or optimum actually exists before it is computed.
 
 \term{Existence and Uniqueness Theorem}
 For ordinary differential equations, the Picard--Lindelöf theorem guarantees a unique local solution to $y' = f(x, y)$ with $y(x_0) = y_0$ when $f$ is continuous in $x$ and Lipschitz in $y$.
 
 \term{Expected Value}
-The mean $E[X] = \int x\,dP$ of a random variable, the probability-weighted average of its possible values.
+The expected value $\mathbb E[X]=\int x\,dP$ is the probability-weighted average of a random variable. \par\noindent\textbf{Applications:} expected values describe long-run averages in risk, finance, statistical estimation, games, and decision-making.
 
 \term{Explicit Formula}
-A formula that directly expresses the value of a quantity, as opposed to an implicit or recursive definition.
+A formula is explicit when it directly gives the quantity of interest rather than defining it indirectly or recursively. \par\noindent\textbf{Applications:} explicit formulas allow direct evaluation, symbolic analysis, and efficient numerical implementation.
 
 \term{Exponential Distribution}
-The continuous distribution with density $f(x) = \lambda e^{-\lambda x}$ for $x \geq 0$, modelling times between events of a Poisson process.
+The exponential distribution has density $f(x)=\lambda e^{-\lambda x}$ for $x\ge0$ and models waiting times between events of a Poisson process. \par\noindent\textbf{Applications:} it describes service times, radioactive decay, reliability, queueing, and time-to-failure models.
 
 \term{Expectation (Probability)}
 The expectation $\mathbb{E}[X]$ of a random variable $X$ is $\int X\,dP$ on a probability space, or $\sum x P(X=x)$ for discrete, or $\int x f(x)\,dx$ for continuous with density $f$. Linearity: $\mathbb{E}[aX + bY] = a\mathbb{E}[X] + b\mathbb{E}[Y]$. The expectation of a product is $\mathbb{E}[XY] = \operatorname{Cov}(X,Y) + \mathbb{E}[X]\mathbb{E}[Y]$. The law of the unconscious statistician: $\mathbb{E}[g(X)] = \int g(x) f(x)\,dx$.

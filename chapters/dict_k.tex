@@ -2,157 +2,156 @@
 \label{chap:k}
 
 \term{K-theory (Topological)}
-A cohomology-like theory that assigns a ring $K(X)$ to a topological space $X$, constructed from the Grothendieck group of vector bundles over $X$. It is a powerful tool for studying the fact that some vector bundles are not trivial.
+Topological K-theory assigns a ring $K(X)$ to a space using formal differences of vector bundles. It records when bundles are genuinely nontrivial and behaves like a cohomology theory. \par\noindent\textbf{Applications:} K-theory classifies vector bundles, detects topological obstructions, and appears in index theory, condensed matter, and geometry.
 
 \term{K-theory (Algebraic)}
-A sequence of functors $K_n$ from rings to abelian groups. $K_0(R)$ is the Grothendieck group of finitely generated projective modules over $R$. Algebraic K-theory bridges ring theory, topology, and number theory.
+Algebraic K-theory assigns groups $K_n(R)$ to a ring. The group $K_0(R)$ is formed from finitely generated projective modules, while higher groups record deeper relations among modules and automorphisms. \par\noindent\textbf{Applications:} algebraic K-theory links rings to topology and number theory and studies vector bundles, regulators, and arithmetic invariants.
 
 \term{Kähler Manifold}
 A complex manifold equipped with a Hermitian metric whose associated 2-form $\omega$ is closed, so that $[\omega]$ defines a Kähler class in $H^2(X, \mathbb{R})$. The condition $d\omega = 0$ makes the Levi--Civita connection and the Chern connection coincide, and it implies the $\partial\bar{\partial}$-lemma, the Hodge decomposition into Dolbeault cohomology groups, and vanishing theorems such as Kodaira's. Complex projective space and smooth projective varieties are Kähler. Kähler geometry is central to complex and algebraic geometry, mirror symmetry, and the study of Calabi--Yau manifolds.
 
 \term{Kantorovich Inequality}
-The inequality $(\sum a_i x_i)(\sum a_i / x_i) \leq \frac{(M+m)^2}{4Mm}$ for positive $a_i$ and $m \leq x_i \leq M$, used in optimization and numerical analysis.
+For positive weights $a_i$ and $m\leq x_i\leq M$, the Kantorovich inequality bounds products of weighted sums, in a normalized form by $\frac{(M+m)^2}{4Mm}$. It quantifies how far two averages can differ when values lie in a known interval. \par\noindent\textbf{Applications:} it gives error and condition-number bounds in numerical linear algebra and optimization.
 
 \term{Karush--Kuhn--Tucker (KKT) Conditions}
-First-order necessary conditions for a solution in nonlinear programming to be optimal, provided that some regularity conditions are met. They generalize the method of Lagrange multipliers to inequality constraints.
+The KKT conditions are first-order conditions for constrained optimization. They combine stationarity, primal feasibility, dual feasibility, and complementary slackness; under a constraint qualification they are necessary for a local optimum, and for convex problems they are often sufficient. \par\noindent\textbf{Applications:} KKT conditions support nonlinear programming, machine learning, economics, and engineering design.
 
 \term{Kazhdan--Lusztig Polynomials}
-Polynomials associated with Coxeter groups used to describe the singularities of Schubert varieties. They play a central role in the representation theory of Lie algebras and the Hecke algebra.
+Kazhdan--Lusztig polynomials are polynomials attached to pairs of elements in a Coxeter group. Their coefficients encode order and singularity information in Schubert varieties and determine important representation-theoretic bases. \par\noindent\textbf{Applications:} they connect Lie algebras, Hecke algebras, algebraic geometry, and combinatorics.
 
 \term{Keller's Conjecture}
-The conjecture that any tiling of $\mathbb{R}^n$ by equal hypercubes has a pair of cubes meeting full-face-to-full-face; true for $n \leq 6$ and disproved in dimension 10 or more.
+Keller's conjecture proposed that every tiling of $\mathbb R^n$ by congruent axis-aligned cubes contains two cubes sharing a complete face. It is true in dimensions at most $6$ and false in dimensions at least $10$; intermediate cases were settled using combinatorics and computation. \par\noindent\textbf{Applications:} it illustrates links between tilings, coding theory, and high-dimensional discrete geometry.
 
 \term{Kepler Conjecture}
-The theorem that the densest packing of equal spheres in three dimensions is the face-centred cubic lattice, with density $\pi/\sqrt{18}$.
+The Kepler conjecture, now a theorem, states that equal spheres in three dimensions have maximum packing density $\pi/\sqrt{18}\approx0.74048$, achieved by the face-centered cubic and hexagonal close packings. \par\noindent\textbf{Applications:} sphere packing informs materials science, crystallography, coding theory, and the design of efficient storage and communication schemes.
 
 \term{Kernel (Linear Algebra)}
-The set of all vectors $v$ such that $Tv = 0$ for a linear operator $T$. Also known as the null space. The dimension of the kernel is the nullity of the operator.
+The kernel or null space of a linear map $T:V\to W$ is $\ker T=\{v:T v=0\}$. Its dimension is the nullity, and rank--nullity gives $\dim V=\operatorname{rank}T+\operatorname{nullity}T$ in finite dimensions. \par\noindent\textbf{Applications:} kernels describe non-unique solutions, constraints, dependencies, and unobservable directions.
 
 \term{Kernel (Group Theory)}
-The set of elements in the domain of a group homomorphism that are mapped to the identity element of the codomain. The kernel is always a normal subgroup of the domain.
+For a homomorphism $f:G\to H$, the kernel is $\ker f=\{g\in G:f(g)=e_H\}$. It is a normal subgroup, and the first isomorphism theorem gives $G/\ker f\cong\operatorname{im}f$. \par\noindent\textbf{Applications:} kernels measure information lost by a homomorphism and define quotient groups and symmetry reductions.
 
 \term{Kernel (Integral Equation)}
-The function $K(x,y)$ in an integral operator $(Tf)(x) = \int K(x,y)f(y)\,dy$. The properties of the kernel (e.g., symmetry, continuity) determine the properties of the operator.
+In an integral operator $(Tf)(x)=\int K(x,y)f(y)\,dy$, the function $K(x,y)$ is the kernel. It describes how the input value at $y$ influences the output at $x$. Continuity, symmetry, or decay of $K$ affects boundedness and compactness. \par\noindent\textbf{Applications:} kernels model interactions in boundary-value, inverse, and signal-processing problems.
 
 \term{Kernel (Convolution)}
-A function used in convolution to extract specific features from a signal or image. In the context of the Fourier transform, convolution in the time domain corresponds to multiplication in the frequency domain.
+A convolution kernel $k$ combines nearby values by $(k*f)(x)=\int k(x-y)f(y)\,dy$ or its discrete analogue. Different kernels smooth, sharpen, detect edges, or extract patterns. Since Fourier transform changes convolution into multiplication, frequency behavior can be analyzed efficiently. \par\noindent\textbf{Applications:} filtering, image processing, signal analysis, and neural networks.
 
 \term{Kernel Method}
-The technique of implicitly mapping data into a high-dimensional feature space via a positive definite kernel, used in support vector machines.
+Kernel methods use a positive-definite function $K(x,y)$ as an inner product in a possibly high-dimensional feature space, without constructing that space explicitly. The kernel trick makes nonlinear relationships accessible to linear algorithms. \par\noindent\textbf{Applications:} support vector machines, Gaussian processes, principal-component methods, and pattern recognition.
 
 \term{Killing Form}
-A symmetric bilinear form on a Lie algebra $\mathfrak{g}$ defined by $B(X, Y) = \operatorname{tr}(\operatorname{ad}_X \operatorname{ad}_Y)$. A Lie algebra is semisimple iff its Killing form is non-degenerate.
+For a Lie algebra $\mathfrak g$, the Killing form is $B(X,Y)=\operatorname{tr}(\operatorname{ad}_X\operatorname{ad}_Y)$. It measures how the adjoint actions interact; over characteristic zero, $\mathfrak g$ is semisimple exactly when this form is nondegenerate. \par\noindent\textbf{Applications:} it classifies Lie algebras and defines invariant metrics used in geometry and theoretical physics.
 
 \term{Killing Vector Field}
-A vector field $X$ on a Riemannian manifold such that the Lie derivative of the metric $g$ along $X$ vanishes: $\mathcal{L}_X g = 0$. These fields generate isometries of the manifold.
+A vector field $X$ is Killing when $\mathcal L_Xg=0$, so its flow preserves the Riemannian metric and generates isometries. Killing fields represent continuous symmetries. \par\noindent\textbf{Applications:} they yield conserved quantities in mechanics and general relativity and identify symmetries of geometric spaces.
 
 \term{Kirchhoff's Laws}
-Conservation laws for electric circuits: the current law (sum of currents into a node is zero) and the voltage law (sum of potential differences around a loop is zero).
+Kirchhoff's current law says that the signed currents at a node sum to zero, expressing charge conservation. Kirchhoff's voltage law says that signed potential changes around a closed loop sum to zero, expressing energy conservation. \par\noindent\textbf{Applications:} these laws produce solvable linear circuit equations for electrical networks.
 
 \term{Kirchhoff's Theorem}
-The formula for the number of spanning trees of a graph as any cofactor of its Laplacian matrix.
+Kirchhoff's matrix-tree theorem says that the number of spanning trees of a connected graph equals any cofactor of its graph Laplacian $L=D-A$. \par\noindent\textbf{Applications:} it counts network configurations, supports reliability analysis, and connects graph connectivity with determinants and electrical networks.
 
 \term{Klee's Measure Problem}
-The problem of computing the volume of the union of $n$ axis-parallel hyperrectangles in $d$-dimensional space. The most efficient algorithms have complexity $O(n \log n)$ for $d=2$ and $O(n^{d/2})$ for larger $d$.
+Klee's measure problem asks for the volume of the union of $n$ axis-parallel rectangles or hyperrectangles in $d$ dimensions. The challenge is to avoid repeatedly counting overlaps; in two dimensions an $O(n\log n)$ sweep-line algorithm is available, while higher dimensions are harder. \par\noindent\textbf{Applications:} it appears in computational geometry, collision detection, coverage, and spatial databases.
 
 \term{Klein Bottle}
-A non-orientable surface of genus 1, formed by gluing the opposite edges of a rectangle with one pair reversed. It cannot be embedded in $\mathbb{R}^3$ without self-intersection, though it can be embedded in $\mathbb{R}^4$.
+A Klein bottle is a closed non-orientable surface formed by gluing opposite sides of a rectangle with one pair reversed. It cannot be embedded in $\mathbb R^3$ without self-intersection, but it embeds in $\mathbb R^4$. \par\noindent\textbf{Applications:} it is a standard example in topology for studying orientation, surfaces, and quotient constructions.
 
 \term{Klein Four-Group}
-The group $\mathbb{Z}/2 \times \mathbb{Z}/2$, the smallest non-cyclic group, with four elements each of order 2.
+The Klein four-group is $V_4\cong\mathbb Z/2\times\mathbb Z/2$. It has four elements: the identity and three nonidentity elements, each of order $2$. It is the smallest noncyclic group. \par\noindent\textbf{Applications:} it describes symmetries, permutations, error codes, and the Galois group of some quartic polynomials.
 
 \term{Klein Quadric}
 The Grassmannian $\operatorname{Gr}(2, 4)$ of lines in $\mathbb{P}^3$, which can be embedded as a smooth quadric hypersurface in $\mathbb{P}^5$. It is central to the study of line geometry.
 
 \term{Kneser Graph}
-The graph $KG(n,k)$ whose vertices are the $k$-subsets of an $n$-set, adjacent when they are disjoint; used in Ramsey theory.
+The Kneser graph $KG(n,k)$ has one vertex for each $k$-subset of an $n$-element set, with two vertices adjacent when the subsets are disjoint. Its chromatic number is $n-2k+2$ when $n\geq2k-1$, a result of Lovász. \par\noindent\textbf{Applications:} Kneser graphs link extremal set theory, graph coloring, and combinatorics.
 
 \term{Knot Theory}
-The study of mathematical knots, which are embeddings of the circle $S^1$ into $\mathbb{R}^3$ or $S^3$. Two knots are equivalent if one can be deformed into the other without cutting.
+Knot theory studies embeddings of a circle $S^1$ in $\mathbb R^3$ or $S^3$. Two knots are equivalent when one can be continuously deformed into the other without cutting or passing strands through each other. \par\noindent\textbf{Applications:} knot theory is used in topology, molecular modeling, DNA, fluid vortices, and quantum field theory.
 
 \term{Knot Invariants}
-Quantities (numbers, polynomials, or groups) assigned to a knot that remain unchanged under ambient isotopy. Examples include the Jones polynomial, the Alexander polynomial, and the knot group $\pi_1(S^3 \setminus K)$.
+Knot invariants are quantities unchanged by ambient isotopy. Examples include the knot group $\pi_1(S^3\setminus K)$ and the Alexander and Jones polynomials. If two knots have different invariants, they cannot be equivalent, although one invariant may fail to distinguish them. \par\noindent\textbf{Applications:} invariants classify knots and connect topology with algebra, combinatorics, and physics.
 
 \term{Knot Sum}
-The connected sum of two knots $K_1$ and $K_2$, performed by removing a small arc from each and joining the endpoints. This operation makes the set of knots into a commutative monoid.
+The knot sum $K_1\#K_2$ removes a small arc from each knot and joins the resulting endpoints. Up to equivalence, this operation is commutative and gives knots a monoid structure; prime knots act as building blocks. \par\noindent\textbf{Applications:} knot sums support decomposition and classification in knot theory.
 
 \term{Knuth's Algorithm}
 Algorithms of Donald Knuth for combinatorial generation and sorting, notably his efficient permutation generation algorithms.
 
 \term{Konigsberg Bridges}
-The historical problem, solved by Euler in 1736, of whether one can walk across all seven bridges of Königsberg exactly once, founding graph theory.
+The Königsberg bridge problem asked whether a walk could cross each of seven bridges exactly once. Euler modeled land regions as vertices and bridges as edges and showed that no such walk exists because more than two vertices have odd degree. \par\noindent\textbf{Applications:} it introduced graph-theoretic modeling and the study of Euler trails and network routing.
 
 \term{König's Theorem}
-In a bipartite graph, the size of a maximum matching equals the size of a minimum vertex cover. It is equivalent to Hall's marriage theorem and follows from the max-flow min-cut theorem.
+König's theorem states that in a bipartite graph, the largest matching and the smallest vertex cover have equal size. A matching selects disjoint edges; a vertex cover meets every edge. \par\noindent\textbf{Applications:} it solves assignment and resource-allocation problems and provides the combinatorial basis for efficient matching algorithms.
 
 \term{K-tuple}
-An ordered list of $k$ elements. The set of all $k$-tuples of a set $S$ is the Cartesian product $S^k$.
+An ordered $k$-tuple is a list $(x_1,\ldots,x_k)$ whose positions matter. The set of all such tuples from $S$ is the Cartesian product $S^k$. \par\noindent\textbf{Applications:} tuples represent coordinates, feature vectors, database records, states, and ordered parameters.
 
 \term{Koopman Operator}
-An infinite-dimensional linear operator that describes the evolution of functions (observables) on a state space under a dynamical system, mapping $f \to f \circ T$.
+For a map $T$ on a state space, the Koopman operator evolves observables by $(Uf)(x)=f(T(x))$. Although $T$ may be nonlinear, $U$ is linear, usually on an infinite-dimensional function space. \par\noindent\textbf{Applications:} Koopman operators support data-driven dynamical analysis, system identification, reduced-order modeling, and forecasting.
 
 \term{Kolmogorov Complexity}
-The length of the shortest computer program that produces a given string as output. It provides a formal measure of the algorithmic randomness of a string.
+The Kolmogorov complexity $K(x)$ of a finite string is the length of the shortest program that outputs $x$ on a fixed universal computer. It measures incompressibility up to an additive constant. \par\noindent\textbf{Applications:} it formalizes algorithmic randomness, data compression, information content, and limits of automated description.
 
 \term{Kolmogorov--Savage Divergence}
-Also known as Kullback--Leibler (KL) divergence. A measure of how one probability distribution $P$ differs from a second, reference probability distribution $Q$.
+The Kolmogorov--Savage divergence, commonly called Kullback--Leibler divergence, is $D_{\mathrm{KL}}(P\|Q)=\sum_xP(x)\log\frac{P(x)}{Q(x)}$ in the discrete case. It is nonnegative but not symmetric, so it is not a distance. \par\noindent\textbf{Applications:} it measures model mismatch and supports maximum likelihood, Bayesian inference, information theory, and machine learning.
 
 \term{Kolmogorov Continuity Theorem}
-A criterion for a stochastic process to have a continuous modification. It requires the increments to be bounded by a power of the time difference: $\mathbb{E}[|X_t - X_s|^\alpha] \leq C|t-s|^{1+\beta}$.
+The Kolmogorov continuity theorem gives conditions for a stochastic process to have a continuous version. If, for suitable $\alpha,\beta,C>0$, $\mathbb E|X_t-X_s|^\alpha\leq C|t-s|^{1+\beta}$, then a modification has sample paths that are Hölder continuous of every order below $\beta/\alpha$. \par\noindent\textbf{Applications:} it establishes regularity of Brownian motion and random fields.
 
 \term{Kolmogorov--Smirnov Test}
-A non-parametric test used to determine if a sample comes from a specific probability distribution by comparing the empirical distribution function to the theoretical one.
+The Kolmogorov--Smirnov test compares an empirical distribution function with a proposed distribution, using the largest vertical difference between them. A two-sample version compares two empirical distributions without assuming a parametric form. \par\noindent\textbf{Applications:} it tests distributional assumptions and compares samples in statistics and data analysis.
 
 \term{Kolmogorov Three-Series Theorem}
-A series of independent random variables $\sum X_n$ converges almost surely if and only if three series converge: $\sum P(|X_n| > 1)$, the series of the means of the truncated variables $X_n 1_{\{|X_n| \leq 1\}}$, and the series of their variances.
+The Kolmogorov three-series theorem gives necessary and sufficient conditions for an independent random-variable series $\sum X_n$ to converge almost surely. It checks large jumps, the means of truncated variables, and the corresponding variances. \par\noindent\textbf{Applications:} it provides a rigorous convergence test in probability theory and stochastic-process analysis.
 
 \term{K-nearest neighbors (KNN)}
-A non-parametric method used for classification and regression, where the label of a point is determined by the majority vote of its $k$ closest neighbors in the feature space.
+K-nearest neighbors predicts a point from the labels or values of its $k$ closest training examples. Small $k$ gives a flexible but noisy model, while large $k$ smooths the prediction; distance choice and feature scaling matter. \par\noindent\textbf{Applications:} KNN supports classification, regression, recommendation, and anomaly detection.
 
 \term{K-means Clustering}
-An iterative algorithm that partitions a dataset into $k$ clusters by minimizing the variance within each cluster (the sum of squared distances to the centroid).
+K-means partitions data into $k$ clusters by minimizing within-cluster squared distances to centroids. It alternates between assigning points to the nearest centroid and recomputing centroids until stable. The result depends on initialization and need not be globally optimal. \par\noindent\textbf{Applications:} it supports segmentation, vector quantization, customer grouping, and exploratory data analysis.
 
 \term{Koszul Complex}
-A chain complex used in commutative algebra to study the regularity of a sequence of elements in a ring. It is the primary tool for defining and computing the depth of a module.
+The Koszul complex is a chain complex built from a sequence of elements of a ring. Its homology measures whether the sequence is regular and helps define depth and regularity of modules. \par\noindent\textbf{Applications:} it computes homological invariants and supports commutative algebra and algebraic geometry.
 
 \term{Koszul Duality}
-A duality between certain categories of modules over quadratic algebras. It relates the cohomology of a space to the algebra of its loop space.
+Koszul duality relates a quadratic algebra to a dual algebra whose relations exchange generators and relations in a controlled way. At the level of spaces, it connects cohomology algebras with loop-space constructions. \par\noindent\textbf{Applications:} it simplifies homological calculations and appears in representation theory, algebraic topology, and derived geometry.
 
 \term{Krull Dimension}
-The supremum of the lengths of all chains of prime ideals in a commutative ring. For a polynomial ring $k[x_1, \ldots, x_n]$, the Krull dimension is $n$.
+The Krull dimension of a commutative ring is the supremum of the lengths of chains of prime ideals. It measures algebraic dimension: $k[x_1,\ldots,x_n]$ has dimension $n$. \par\noindent\textbf{Applications:} Krull dimension describes the size of algebraic varieties and controls induction and local calculations in commutative algebra.
 
 \term{Krull's Intersection Theorem}
-In a Noetherian ring, if $I$ is an ideal and $M$ is a finitely generated module, the intersection $\bigcap_{n=1}^\infty I^n M$ consists of elements $m \in M$ such that $(1-a)m = 0$ for some $a \in I$.
+Krull's intersection theorem describes the elements that remain in every power $I^nM$ for a finitely generated module over a Noetherian ring. Under common hypotheses, such as $I$ contained in the Jacobson radical, the intersection is zero. \par\noindent\textbf{Applications:} it controls $I$-adic approximation, completion, and when repeated divisibility forces an element to vanish.
 
 \term{Krull--Schmidt Theorem}
-The theorem that modules of finite length decompose uniquely into indecomposable direct summands.
+The Krull--Schmidt theorem says that a module of finite length decomposes into indecomposable direct summands, uniquely up to reordering and isomorphism. \par\noindent\textbf{Applications:} it gives a reliable notion of building blocks for modules, representations, and finite-dimensional algebraic structures.
 
 \term{Kronecker Delta}
-A function of two variables $\delta_{ij}$ that is $1$ if $i=j$ and $0$ otherwise. It is the identity element for the Hadamard product and is used to represent the identity matrix.
+The Kronecker delta is $\delta_{ij}=1$ when $i=j$ and $0$ otherwise. Its entries form the identity matrix, and it selects terms in sums, for example $\sum_i\delta_{ij}a_i=a_j$. \par\noindent\textbf{Applications:} it expresses discrete orthogonality, tensor components, matrix identities, and finite-difference formulas.
 
 \term{Kronecker Product}
-An operation on two matrices $A$ and $B$ resulting in a block matrix $A \otimes B$ where each element $a_{ij}$ of $A$ is multiplied by the entire matrix $B$.
+The Kronecker product $A\otimes B$ is the block matrix whose $(i,j)$ block is $a_{ij}B$. It represents tensor products of linear maps and satisfies $(A\otimes B)(C\otimes D)=AC\otimes BD$. \par\noindent\textbf{Applications:} it models multidimensional systems, quantum states, image operations, covariance matrices, and large structured linear systems.
 
 \term{Kronecker Lemma}
-A result in real analysis stating that if $\sum a_n$ is a convergent series of real numbers and $0 < b_n \uparrow \infty$, then $\frac{1}{b_n} \sum_{k=1}^n a_k b_k \to 0$.
+If $\sum a_n$ converges and $0<b_n\uparrow\infty$, then $\frac1{b_n}\sum_{k=1}^n a_kb_k\to0$. It is a weighted-averaging result: convergent terms cannot create a persistent average after normalization by an increasing scale. \par\noindent\textbf{Applications:} it proves convergence in probability and summability arguments.
 
 \term{Kronecker--Weber Theorem}
 The theorem that every abelian extension of the rationals is contained in a cyclotomic field $\mathbb{Q}(\zeta_n)$; equivalently, the maximal abelian extension of $\mathbb{Q}$ is the union $\bigcup_n \mathbb{Q}(\zeta_n)$ of cyclotomic fields. By the irreducibility of the cyclotomic polynomials, the Galois group $\operatorname{Gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^\times$ is abelian, so the cyclotomic tower realises the whole abelian part of the absolute Galois group. The theorem is the prototype of explicit class field theory: it gives an explicit description of abelian extensions of $\mathbb{Q}$, generalised by Kronecker's Jugendtraum and the Langlands program to other number fields.
 
 \term{Krylov Subspace}
-The subspace $\mathrm{span}\{b, Ab, A^2b, \ldots\}$ used in iterative methods for linear systems such as GMRES and the conjugate gradient method.
+The $k$th Krylov subspace generated by $A$ and $b$ is $\mathcal K_k(A,b)=\operatorname{span}\{b,Ab,\ldots,A^{k-1}b\}$. Iterative methods search for approximate solutions inside these small subspaces. \par\noindent\textbf{Applications:} Krylov methods solve large sparse linear systems and eigenvalue problems without dense matrix factorizations.
 
 \term{K-matrix}
-In scattering theory, the K-matrix is a representation of the S-matrix that ensures unitarity. It is related to the phase shifts of the scattering process.
+In scattering theory, the K-matrix is a real or Hermitian auxiliary representation related to the scattering matrix $S$. It is often easier to calculate and can encode phase shifts while preserving the required unitarity of $S$. \par\noindent\textbf{Applications:} K-matrices model resonances and channels in nuclear, particle, and wave scattering.
 
 \term{K-theoretic Euler Characteristic}
-The alternating sum of the ranks of the K-theory groups of a space, providing a generalized notion of the classical Euler characteristic.
+The K-theoretic Euler characteristic is an alternating combination of K-theory classes or ranks that extends the ordinary Euler characteristic. It summarizes vector-bundle data rather than only counting cells. \par\noindent\textbf{Applications:} it appears in index theory, algebraic geometry, and generalized versions of Riemann--Roch formulas.
 
 \term{Kummer's Theorem}
-A theorem giving the exponent of a prime $p$ in a binomial coefficient in terms of carries in base-$p$ addition.
+Kummer's theorem says that the exponent of a prime $p$ in $\binom mn$ equals the number of carries when adding $n$ and $m-n$ in base $p$. It converts divisibility into a digit calculation. \par\noindent\textbf{Applications:} it supports congruences, valuation estimates, and computational number theory.
 
 \term{Kurtosis}
-The fourth standardized moment of a distribution, measuring the heaviness of its tails.
+Kurtosis is the fourth standardized moment, $\mathbb E[(X-\mu)^4]/\sigma^4$, when it exists. Excess kurtosis subtracts $3$, the value for a normal distribution. It reflects tail weight and peak behavior, but can be unstable for small samples. \par\noindent\textbf{Applications:} kurtosis helps assess outliers, financial risk, and distributional assumptions.
 \term{Opposite Category}
-For a category $\mathcal{C}$, the opposite category $\mathcal{C}^{\operatorname{op}}$ has the same objects but all morphisms reversed: $\operatorname{Hom}_{\mathcal{C}^{\operatorname{op}}}(A, B) = \operatorname{Hom}_{\mathcal{C}}(B, A)$. Duality is the principle of obtaining a new theorem by reversing all arrows in a proof. The opposite of an abelian category is abelian, and $(\mathcal{C}^{\operatorname{op}})^{\operatorname{op}} \cong \mathcal{C}$.
-
+For a category $\mathcal C$, the opposite category $\mathcal C^{\rm op}$ has the same objects but reverses every morphism: $\operatorname{Hom}_{\mathcal C^{\rm op}}(A,B)=\operatorname{Hom}_{\mathcal C}(B,A)$. Reversing arrows turns covariant constructions into contravariant ones. \par\noindent\textbf{Applications:} opposite categories formalize duality, pullbacks, dual vector spaces, and cohomology.

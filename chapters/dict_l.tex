@@ -2,25 +2,25 @@
 \label{chap:l}
 
 \term{Lagrange's Theorem}
-For a finite group $G$ and a subgroup $H$, the order of $H$ divides the order of $G$: $|G| = [G:H]|H|$, where $[G:H]$ is the index of $H$ in $G$.
+For a finite group $G$ and subgroup $H$, the group is partitioned into cosets of $H$, so $|G|=[G:H]|H|$. Thus the order of $H$ divides the order of $G$. \par\noindent\textbf{Applications:} the theorem restricts possible subgroup orders and supports the study of symmetries, permutation groups, and modular arithmetic.
 
 \term{Lagrange Multipliers}
-A strategy for finding the local maxima and minima of a function subject to equality constraints. If we want to optimize $f(x,y)$ subject to $g(x,y)=c$, we solve $\nabla f = \lambda \nabla g$.
+For an equality constraint $g(x)=c$, a constrained extremum of $f$ often satisfies $\nabla f=\lambda\nabla g$, together with $g(x)=c$. The gradients are parallel because the objective cannot change to first order along the constraint surface. \par\noindent\textbf{Applications:} the method supports constrained design, economics, mechanics, and statistical estimation.
 
 \term{Lagrange Interpolation}
-A method of polynomial interpolation where the interpolating polynomial is expressed as a linear combination of Lagrange basis polynomials. This ensures the polynomial passes exactly through $n$ given points.
+Given distinct nodes $x_i$ and values $y_i$, Lagrange interpolation constructs the unique polynomial of degree at most $n-1$ through the data using $p(x)=\sum_i y_iL_i(x)$, where $L_i(x_j)=\delta_{ij}$. \par\noindent\textbf{Applications:} it estimates values from tables and measurements and is used in numerical integration and scientific computing.
 
 \term{Lagrange Inversion Theorem}
-A formula for the inverse of an analytic function $f$ around a point. If $f(w)=z$, the theorem gives a power series for $w$ in terms of $z$ using the derivatives of $f$.
+The Lagrange inversion theorem gives coefficients of the local inverse of an analytic function. If $w=z\phi(w)$ with $\phi(0)\ne0$, then coefficients of $w(z)$ can be computed from powers of $\phi$. \par\noindent\textbf{Applications:} it derives generating functions, counts combinatorial structures, and analyzes implicit equations.
 
 \term{Lagrangian (Mechanics)}
-A function $L = T - V$ (kinetic minus potential energy) used to derive the equations of motion for a physical system via the Euler--Lagrange equations $\frac{d}{dt}(\frac{\partial L}{\partial \dot{q}}) - \frac{\partial L}{\partial q} = 0$.
+The Lagrangian is often $L=T-V$, kinetic minus potential energy. The motion follows the Euler--Lagrange equations $\frac d{dt}(\partial L/\partial\dot q)-\partial L/\partial q=0$. The formulation handles generalized coordinates and constraints naturally. \par\noindent\textbf{Applications:} it models mechanics, optics, field theory, robotics, and control.
 
 \term{Lambda Calculus}
-A formal system in mathematical logic for expressing computation based on function abstraction and application using variable binding and substitution. It is the basis for functional programming languages.
+Lambda calculus is a formal language for computation built from variables, function abstraction, and function application, with substitution as its main operation. It separates the idea of a function from a particular programming syntax. \par\noindent\textbf{Applications:} it underlies functional programming, type theory, interpreters, and the mathematical study of computability.
 
 \term{Lambda-term}
-The basic object of the lambda calculus, which can be a variable, an abstraction $\lambda x. M$, or an application $(M N)$.
+A lambda term is a variable, an abstraction $\lambda x.M$ representing a function, or an application $(MN)$ applying one term to another. Bound variables can be renamed, and substitution models computation. \par\noindent\textbf{Applications:} lambda terms describe programs, symbolic reduction, and formal proofs in logic and type systems.
 
 \term{Langlands Program}
 A vast network of conjectures, initiated by Robert Langlands in 1967, connecting automorphic forms and representations of reductive groups over global fields to Galois representations and motives. The central reciprocity conjecture, the Langlands correspondence, predicts that $L$-functions of automorphic representations match those of Galois representations, and functoriality asserts functorial transfer between reductive groups. Its local version concerns representations of $p$-adic groups, and it generalizes Artin's conjecture on holomorphy, providing the framework for modularity results such as the proof of Fermat's Last Theorem.
@@ -29,10 +29,10 @@ A vast network of conjectures, initiated by Robert Langlands in 1967, connecting
 The equation $\Delta u = 0$ for the Laplacian $\Delta$, whose solutions are the harmonic functions. Harmonic functions satisfy the maximum principle and the mean value property and are real analytic. Boundary value problems for the equation prescribe the values of $u$ or of its normal derivative on the boundary, the Dirichlet and Neumann problems; the inhomogeneous Poisson equation $\Delta u = f$ is solved using fundamental solutions and Green's functions. The Laplace equation is the model elliptic equation, governing electrostatics, steady heat flow, and potential flow.
 
 \term{Laplace Transform}
-An integral transform that converts a function of time $f(t)$ into a function of complex frequency $s$: $\mathcal{L}\{f(t)\} = \int_0^\infty e^{-st} f(t)\,dt$. It transforms differential equations into algebraic equations.
+The Laplace transform is $\mathcal L\{f\}(s)=\int_0^\infty e^{-st}f(t)\,dt$. Differentiation becomes multiplication by $s$ together with initial-value terms, so differential equations become algebraic equations in transform space. \par\noindent\textbf{Applications:} it solves ODEs for circuits, control systems, mechanical vibrations, and transient responses.
 
 \term{Laplacian}
-The divergence of the gradient of a scalar field, $\Delta f = \nabla^2 f = \sum \frac{\partial^2 f}{\partial x_i^2}$. In physics, it describes diffusion, heat flow, and the Poisson equation.
+The Laplacian is the divergence of the gradient: $\Delta f=\nabla\cdot\nabla f=\sum_i\partial^2f/\partial x_i^2$. It measures local curvature or imbalance of flux. \par\noindent\textbf{Applications:} it governs heat and diffusion, electrostatic potential, wave models, image smoothing, and graph-based learning.
 
 \term{Large Cardinals}
 Very large infinite cardinals whose existence cannot be proved in ZFC and whose consistency implies the consistency of ZFC, arranged in a hierarchy of consistency strength. They include inaccessible cardinals, measurable cardinals, Woodin cardinals, and supercompact cardinals. Their theory measures the strength of set-theoretic statements, interacts with the axiom of determinacy and with forcing, and features in inner model theory, where the existence of such cardinals reflects deep structure of the universe of sets beyond the usual cumulative hierarchy.
@@ -41,206 +41,213 @@ Very large infinite cardinals whose existence cannot be proved in ZFC and whose 
 The asymptotic description of rare events: a sequence of probability measures $P_n$ satisfies a large deviations principle with rate function $I$ if $P_n(A) \approx \exp(-n \inf_{x \in A} I(x))$ for suitable sets $A$, where $I \geq 0$ is lower semicontinuous with compact sublevel sets. Cramér's theorem gives the rate function for empirical means of i.i.d. variables, and Sanov's theorem for empirical measures. Varadhan's lemma computes limits of normalized logarithmic expectations. The theory underpins statistics and statistical mechanics.
 
 \term{Lattice (Algebra)}
-A partially ordered set in which every two elements have a unique supremum (join $\vee$) and infimum (meet $\wedge$). Distributive lattices and modular lattices are important subclasses.
+A lattice is a partially ordered set in which every pair has a least upper bound $a\vee b$ and greatest lower bound $a\wedge b$. Distributive and modular lattices are important special cases. \par\noindent\textbf{Applications:} lattices organize subspaces, ideals, logical propositions, and data or information hierarchies.
 
 \term{Lattice (Geometry)}
-A discrete additive subgroup of $\mathbb{R}^n$. A lattice $\Lambda$ is the set of all integer linear combinations of a basis $\{\mathbf{b}_1, \ldots, \mathbf{b}_k\}$. The volume of the fundamental parallelepiped is the determinant of the lattice.
+A geometric lattice is a discrete subgroup $\Lambda=\{\sum_i m_i\mathbf b_i:m_i\in\mathbb Z\}$ of $\mathbb R^n$. A basis generates a fundamental parallelepiped whose volume is $|\det(\mathbf b_1,\ldots,\mathbf b_n)|$ in full rank. \par\noindent\textbf{Applications:} lattices model crystals, error-correcting codes, cryptography, optimization, and integer approximation.
 
 \term{Laurent Series}
-A representation of a complex function $f(z)$ as a sum of powers of $(z-z_0)$, including negative powers: $f(z) = \sum_{n=-\infty}^\infty a_n (z-z_0)^n$. Used to analyze singularities (poles and essential singularities).
+A Laurent series represents a complex function near $z_0$ as $f(z)=\sum_{n=-\infty}^{\infty}a_n(z-z_0)^n$. Negative powers describe the singular part: finitely many indicate a pole, while infinitely many may indicate an essential singularity. \par\noindent\textbf{Applications:} Laurent series calculate residues and evaluate contour integrals.
 
 \term{L-function}
-A generalization of the Riemann zeta function, often defined by a Dirichlet series $L(s, \chi) = \sum \chi(n)n^{-s}$. They are central to number theory, particularly in the study of prime distributions and elliptic curves.
+An $L$-function is a Dirichlet series, often with an Euler product, that generalizes the Riemann zeta function; for a character $\chi$, $L(s,\chi)=\sum\chi(n)n^{-s}$. Its analytic behavior encodes arithmetic information. \par\noindent\textbf{Applications:} $L$-functions study primes, elliptic curves, modular forms, and number-field extensions.
 
 \term{L-space}
 In Heegaard Floer homology, an L-space is a 3-manifold $Y$ whose Heegaard Floer homology $\widehat{HF}(Y)$ is as small as possible (rank equal to the order of $H_1(Y; \mathbb{Z})$).
 
 \term{Law of Large Numbers}
-The theorem that the average of many independent identically distributed random variables converges to their common expectation, almost surely for the strong law.
+The law of large numbers says that averages of many independent identically distributed variables approach their common expectation. The weak law gives convergence in probability, while the strong law gives almost-sure convergence under suitable conditions. \par\noindent\textbf{Applications:} it justifies sample averages, Monte Carlo computation, polling, insurance, and statistical estimation.
 
 \term{Law of Total Probability}
-The formula $P(B) = \sum_i P(B \cap A_i)$ for a partition $\{A_i\}$, expressing an unconditional probability through conditional probabilities.
+If $\{A_i\}$ is a partition, then $P(B)=\sum_iP(B\mid A_i)P(A_i)$. It decomposes an event according to mutually exclusive cases. \par\noindent\textbf{Applications:} it supports Bayesian inference, reliability calculations, risk analysis, and prediction with hidden categories.
 
 \term{Least Common Multiple}
-The smallest positive integer divisible by each of a given set of integers, written $\operatorname{lcm}(a, b)$.
+The least common multiple $\operatorname{lcm}(a,b)$ is the smallest positive integer divisible by both $a$ and $b$. For positive integers, $\gcd(a,b)\operatorname{lcm}(a,b)=ab$. \par\noindent\textbf{Applications:} LCM handles synchronized cycles, common denominators, modular schedules, and periodic processes.
 
 \term{Lax Equivalence Theorem}
-For a consistent finite difference approximation to a well-posed linear initial value problem, stability is equivalent to convergence. It justifies the numerical method design for hyperbolic conservation laws and other linear evolution equations.
+For a consistent finite-difference scheme approximating a well-posed linear initial-value problem, stability is equivalent to convergence. Consistency controls local truncation error, while stability prevents errors from growing without bound. \par\noindent\textbf{Applications:} the theorem guides reliable numerical schemes for wave, transport, and other evolution equations.
 
 \term{Lax--Milgram Theorem}
-For a Hilbert space $H$ and a bounded coercive bilinear form $a(\cdot, \cdot)$, the variational problem $a(u, v) = f(v)$ has a unique solution for every bounded linear functional $f$, depending continuously on $f$. It is the basis of weak solutions to elliptic PDEs.
+If $a(u,v)$ is bounded and coercive on a Hilbert space $H$, then for every bounded linear functional $f$ there is a unique $u\in H$ with $a(u,v)=f(v)$ for all $v$. The solution depends continuously on $f$. \par\noindent\textbf{Applications:} it proves existence and stability of weak solutions to elliptic PDEs and supports finite-element methods.
 
 \term{Least Squares}
-An optimization method to find the "best fit" line or curve by minimizing the sum of the squares of the vertical offsets between the observed data and the fitted curve.
+Least squares chooses parameters to minimize the sum of squared residuals between observations and model predictions. For a linear model this leads to the normal equations, or a more stable QR or singular-value computation. \par\noindent\textbf{Applications:} least squares is used in regression, calibration, signal reconstruction, inverse problems, and data fitting.
 
 \term{Lebesgue Integral}
-An integral based on the Lebesgue measure, defined by partitioning the range of the function rather than the domain. It generalizes the Riemann integral and allows for the integration of highly discontinuous functions.
+The Lebesgue integral groups points according to function values and measures the corresponding sets, rather than relying only on intervals in the domain. It extends the Riemann integral and handles limits of functions and many discontinuities effectively. \par\noindent\textbf{Applications:} it is the foundation of modern probability, Fourier analysis, PDEs, and $L^p$ spaces.
 
 \term{Lebesgue Measure}
-The standard way of assigning a volume to subsets of $\mathbb{R}^n$. It is the unique translation-invariant measure on the Borel $\sigma$-algebra such that the measure of a unit hypercube is 1.
+Lebesgue measure assigns length, area, or volume to measurable subsets of $\mathbb R^n$. It is translation invariant and agrees with ordinary volume on boxes, with the unit cube having measure $1$. \par\noindent\textbf{Applications:} it defines probability densities, integration, volume in analysis, and the size of exceptional or fractal sets.
 
 \term{Lebesgue's Dominated Convergence Theorem}
-A powerful theorem in integration: if a sequence of measurable functions $f_n$ converges pointwise to $f$ and is bounded by an integrable function $g$, then $\int f_n \to \int f$.
+If measurable $f_n\to f$ almost everywhere and $|f_n|\leq g$ for an integrable $g$, then $\int f_n\to\int f$. The common integrable bound permits the limit to pass through the integral. \par\noindent\textbf{Applications:} it justifies limiting calculations in probability, Fourier analysis, numerical approximation, and PDEs.
 
 \term{Lusin's Theorem}
-A result in measure theory: if $f$ is a measurable function on a finite measure space and $\varepsilon > 0$, then there exists a continuous function $g$ such that $f = g$ except on a set of measure less than $\varepsilon$. Lusin's theorem connects measurability to continuity and is a key step in proving that simple functions are dense in $L^p$.
+On a finite-measure space, a measurable function is nearly continuous: for every $\varepsilon>0$, there is a closed set whose complement has measure below $\varepsilon$ and on which the function is continuous. \par\noindent\textbf{Applications:} Lusin's theorem connects measurable functions with continuous approximation and supports density results in $L^p$ analysis.
 
 \term{Lemma}
 A "helping theorem"; a minor result that is proved as a stepping stone toward a larger, more significant theorem.
 
 \term{Leibniz Rule (Generalised)}
-The formula for the $n$-th derivative of a product of two functions: $(fg)^{(n)} = \sum_{k=0}^n \binom{n}{k} f^{(k)} g^{(n-k)}$.
+The generalized Leibniz rule is
+\[
+(fg)^{(n)}=\sum_{k=0}^n\binom nk f^{(k)}g^{(n-k)}.
+\]
+It extends the product rule to higher derivatives. \par\noindent\textbf{Applications:} it is used in Taylor expansions, differential equations, symbolic computation, and estimates for products of smooth functions.
 
 \term{Leibniz Integral Rule}
-A formula for differentiating an integral whose limits are functions of the variable of differentiation: $\frac{d}{dx} \int_{a(x)}^{b(x)} f(x,t)\,dt = f(x, b(x))b'(x) - f(x, a(x))a'(x) + \int_{a(x)}^{b(x)} \frac{\partial f}{\partial x} \, dt$.
+The Leibniz rule differentiates an integral with variable limits:
+\[
+\frac d{dx}\int_{a(x)}^{b(x)}f(x,t)dt=f(x,b(x))b'(x)-f(x,a(x))a'(x)+\int_{a(x)}^{b(x)}f_x(x,t)dt.
+\]
+\par\noindent\textbf{Applications:} it derives conservation laws, sensitivity equations, moving-boundary models, and gradients of integral objectives.
 
 \term{Levi--Civita Connection}
-The unique affine connection on a Riemannian manifold that is torsion-free and preserves the metric. It allows for the definition of parallel transport and geodesics.
+The Levi--Civita connection is the unique connection that is torsion-free and preserves the Riemannian metric. It defines covariant differentiation, parallel transport, curvature, and geodesics. \par\noindent\textbf{Applications:} it provides the basic language for curved surfaces, general relativity, mechanics, and geometric data analysis.
 
 \term{L'Hôpital's Rule}
-The rule that $\lim f/g = \lim f'/g'$ when both functions tend to $0$ or $\pm\infty$.
+Under appropriate differentiability and nonzero-denominator hypotheses, an indeterminate limit of $f/g$ of type $0/0$ or $\infty/\infty$ may be found from $f'/g'$ when that latter limit exists. \par\noindent\textbf{Applications:} it evaluates difficult limits in calculus and asymptotic error analysis; its hypotheses must be checked before use.
 
 \term{Liar Paradox}
 The self-referential sentence "this statement is false" cannot consistently be assigned a truth value, since it is true iff it is false. It is a foundational example of self-reference in logic, motivating Tarski's hierarchy of truth and discussions of paraconsistent and gap-based approaches.
 
 \term{Lie Algebra}
-A vector space $\mathfrak{g}$ equipped with a binary operation $[ \cdot, \cdot ]$ (the Lie bracket) that is bilinear, alternating ($[X,X]=0$), and satisfies the Jacobi identity: $[X, [Y,Z]] + [Y, [Z,X]] + [Z, [X,Y]] = 0$.
+A Lie algebra is a vector space with a bilinear bracket satisfying $[X,X]=0$ and the Jacobi identity. The bracket measures the failure of infinitesimal operations to commute. \par\noindent\textbf{Applications:} Lie algebras linearize Lie groups and describe rotations, differential equations, symmetries, gauge fields, and conservation laws.
 
 \term{Lie Bracket}
-The operation $[X, Y] = XY - YX$ on a Lie algebra, bilinear, antisymmetric, and satisfying the Jacobi identity.
+The Lie bracket measures noncommutativity. For matrices or operators it is $[X,Y]=XY-YX$; for vector fields it records their commutator as differential operators. It is bilinear, antisymmetric, and satisfies Jacobi. \par\noindent\textbf{Applications:} brackets describe infinitesimal symmetries, controllability, curvature, and quantum commutators.
 
 \term{Lie Group}
-A group that is also a smooth manifold, where group multiplication and inversion are smooth maps. They are the mathematical foundation for studying continuous symmetries.
+A Lie group is both a group and a smooth manifold, with smooth multiplication and inversion. Its tangent space at the identity is a Lie algebra describing infinitesimal motions. \par\noindent\textbf{Applications:} Lie groups model continuous symmetries in robotics, mechanics, computer vision, relativity, and physics.
 
 \term{Lie Derivative}
-The derivative of a tensor field along the flow of a vector field. It measures the change of the tensor as it is "dragged" along the flow.
+The Lie derivative measures how a tensor field changes when carried along the flow of a vector field. For a scalar it is directional differentiation; for vector fields it is related to the Lie bracket. \par\noindent\textbf{Applications:} it tests symmetries, expresses conservation laws, and is used in fluid mechanics, differential geometry, and relativity.
 
 \term{Lie Superalgebra}
 A generalization of a Lie algebra that is $\mathbb{Z}_2$-graded (even and odd parts) and satisfies a graded version of the Jacobi identity. Used in supersymmetry in physics.
 
 \term{Limit}
-The value a function or sequence approaches as its argument approaches a given point, formalised with $\epsilon$--$\delta$ arguments.
+The limit of a function or sequence is the value it approaches as its input approaches a point or infinity. The $\varepsilon$--$\delta$ definition makes this idea precise without requiring the function to attain the limiting value. \par\noindent\textbf{Applications:} limits define derivatives, integrals, continuity, convergence, and asymptotic approximations.
 
 \term{Limit (Category Theory)}
 A limit of a diagram $F: J \to C$ is a cone $(L, \pi_j)$ over $F$ that is universal: every other cone factors uniquely through $L$. Limits encompass products, pullbacks, equalizers, and inverse limits. A category with all small limits is complete, and limits are computed objectwise in functor categories. Right adjoints preserve limits, and their existence is governed by the adjoint functor theorems. Limits are the dual of colimits and central to universal constructions; this is distinct from the analytic notion of a limit in calculus.
 
 \term{Limit Point}
-A point that is the limit of a sequence of distinct elements of a set; also called an accumulation point.
+A point $x$ is a limit or accumulation point of a set $S$ if every neighborhood of $x$ contains a point of $S$ different from $x$. In metric spaces this is equivalent to being the limit of a sequence of distinct points of $S$. \par\noindent\textbf{Applications:} limit points describe closure, continuity, convergence, and the boundary structure of sets.
 
 \term{Lindenbaum--Tarski Algebra}
 The algebra formed by the equivalence classes of formulas in a logical theory, where the equivalence relation is provable equivalence.
 
 \term{Lindeberg--Lévy Central Limit Theorem}
-A specific version of the CLT stating that the sample mean of i.i.d. random variables with finite variance converges in distribution to a normal distribution.
+The Lindeberg--Lévy central limit theorem states that normalized sums of independent identically distributed variables with finite mean and nonzero finite variance converge in distribution to a standard normal variable. \par\noindent\textbf{Applications:} it explains normal approximations for sample means, measurement errors, polling, and statistical confidence intervals.
 
 \term{Lindelöf Space}
-A topological space in which every open cover has a countable subcover. Every second-countable space is Lindelöf.
+A Lindelöf space is one in which every open cover has a countable subcover. This property provides countable control over potentially large collections of open sets; every second-countable space is Lindelöf. \par\noindent\textbf{Applications:} it supports separability and countable constructions in analysis and topology.
 
 \term{Line}
 A one-dimensional object with zero thickness extending without end in both directions; in a projective plane, the dual of a point.
 
 \term{Line Bundle}
-A vector bundle of rank 1, holomorphic, algebraic, or topological, whose fibres are one-dimensional vector spaces. Its sections are locally functions up to scaling, and the zero locus of a section of a line bundle defines a divisor; conversely, divisors give rise to line bundles, so that isomorphism classes form the Picard group under tensor product. The first Chern class $c_1$ classifies topological line bundles, and very ample line bundles give projective embeddings, as in the Kodaira embedding theorem.
+A line bundle is a vector bundle with one-dimensional fibers. Local sections look like functions whose descriptions change by nonzero scaling on overlaps. Divisors and line bundles are closely related, and the first Chern class records topological twisting. \par\noindent\textbf{Applications:} line bundles define projective embeddings, describe phases and magnetic potentials, and organize divisors in algebraic and complex geometry.
 
 \term{Line Integral}
-The integral of a function or vector field along a curve, $\int_C f\, ds$ or $\int_C F \cdot dr$.
+A line integral accumulates a scalar field along arc length, $\int_Cf\,ds$, or measures work and circulation of a vector field, $\int_C\mathbf F\cdot d\mathbf r$. Its value can depend on the path unless the field is conservative. \par\noindent\textbf{Applications:} line integrals compute work, circulation, mass of wires, and quantities along trajectories.
 
 \term{Linear Algebra}
-The branch of mathematics concerning linear equations, linear maps, and vector spaces. It provides the framework for solving systems of equations and analyzing linear transformations.
+Linear algebra studies vector spaces, linear maps, matrices, and linear equations. Concepts such as bases, rank, eigenvalues, and orthogonality turn complicated systems into structured calculations. \par\noindent\textbf{Applications:} it is fundamental in engineering, data science, graphics, quantum mechanics, differential equations, and optimization.
 
 \term{Linear Combination}
-An expression formed by multiplying each term of a set of vectors by a scalar and adding the results: $\sum a_i v_i$.
+A linear combination of vectors is $\sum_i a_iv_i$, where the $a_i$ are scalars. The span of a set is all its linear combinations. \par\noindent\textbf{Applications:} linear combinations describe coordinates, approximations, mixtures, signals, and solutions of linear systems.
 
 \term{Linear Dependence}
 A set of vectors $\{v_i\}$ is linearly dependent if there exist scalars $a_i$, not all zero, such that $\sum a_i v_i = 0$. Otherwise, they are linearly independent.
 
 \term{Linear Functional}
-A linear map from a vector space $V$ to its scalar field $\mathbb{F}$. The set of all such functionals forms the dual space $V^*$.
+A linear functional is a linear map $\ell:V\to\mathbb F$, satisfying $\ell(au+bv)=a\ell(u)+b\ell(v)$. All such maps form the dual space $V^*$. \par\noindent\textbf{Applications:} functionals represent measurements, constraints, gradients, weak derivatives, and observations in optimization and PDEs.
 
 \term{Linear Independence}
 A set of vectors is linearly independent if the only linear combination equal to zero has all coefficients zero.
 
 \term{Linear Map}
-A function $T: V \to W$ between vector spaces that preserves addition and scalar multiplication: $T(au + bv) = aT(u) + bT(v)$.
+A linear map satisfies $T(au+bv)=aT(u)+bT(v)$. Once bases are chosen, it is represented by a matrix, so kernels, images, rank, and eigenvalues can be studied algebraically. \par\noindent\textbf{Applications:} linear maps model transformations, networks, discretized physical systems, and changes of coordinates.
 
 \term{Linear Programming}
-The method of optimizing a linear objective function subject to linear equality and inequality constraints. The feasible region is always a convex polytope.
+Linear programming optimizes a linear objective subject to linear equalities and inequalities. The feasible set is a convex polyhedron, and when an optimum exists it can be found at an extreme point. \par\noindent\textbf{Applications:} it allocates resources, schedules production, routes goods, designs networks, and supports machine learning.
 
 \term{Linear Recurrence}
-A sequence where each term is a linear combination of previous terms. The Fibonacci sequence is a linear recurrence of order 2.
+A linear recurrence expresses each term as a fixed linear combination of earlier terms, such as $a_n=c_1a_{n-1}+\cdots+c_ka_{n-k}$. Its characteristic polynomial often gives a closed form. \par\noindent\textbf{Applications:} recurrences model population growth, algorithms, digital filters, and discrete dynamical systems.
 
 \term{Linear Regression}
-The statistical modelling of a response as a linear function of predictors, fitted typically by least squares.
+Linear regression models a response as $y\approx\beta_0+\beta_1x_1+\cdots+\beta_px_p+\varepsilon$. Parameters are often estimated by least squares, with assumptions used for uncertainty and inference. \par\noindent\textbf{Applications:} regression supports prediction, calibration, trend estimation, and experimental analysis.
 
 \term{Linear Operator}
 A linear map from a vector space to itself. The study of these operators includes eigenvalues, eigenvectors, and spectral theory.
 
 \term{Lipschitz Continuity}
-A function $f$ is Lipschitz continuous if there exists $L \geq 0$ such that $|f(x) - f(y)| \leq L |x-y|$ for all $x,y$. This is a stronger condition than continuity but weaker than differentiability.
+A function is Lipschitz continuous if $|f(x)-f(y)|\leq L|x-y|$ for all $x,y$. It cannot change faster than a fixed linear rate. Lipschitz continuity implies uniform continuity. \par\noindent\textbf{Applications:} it guarantees uniqueness of ODE solutions under standard hypotheses and controls approximation error, stability, and learning models.
 
 \term{Lipschitz Constant}
-The smallest $L$ such that $f$ is Lipschitz continuous with constant $L$. It represents the maximum "steepness" of the function.
+The Lipschitz constant is the smallest admissible $L$ in $|f(x)-f(y)|\leq L|x-y|$. It bounds the maximum global rate of change. \par\noindent\textbf{Applications:} it quantifies sensitivity, controls propagation of errors, and sets step-size or robustness bounds in numerical methods and optimization.
 
 \term{Liouville's Theorem}
-Every bounded entire holomorphic function is constant. It follows from Cauchy's integral formula via estimates on the Taylor coefficients, and implies the fundamental theorem of algebra.
+Liouville's theorem states that every bounded entire holomorphic function is constant. Cauchy's estimates force all positive-degree Taylor coefficients to vanish. \par\noindent\textbf{Applications:} it proves the fundamental theorem of algebra and gives powerful uniqueness and growth arguments in complex analysis.
 
 \term{Local Compactness}
-The property of a topological space in which every point has a compact neighbourhood.
+A space is locally compact if every point has a neighborhood whose closure is compact, or equivalently a compact neighborhood in common Hausdorff settings. Local compactness allows useful integration and compactness arguments without the whole space being compact. \par\noindent\textbf{Applications:} it underlies Haar measure, Fourier analysis, potential theory, and one-point compactification.
 
 \term{Local Field}
 A locally compact, non-discrete topological field: the real or complex numbers, a finite extension of the field $\mathbb{Q}_p$ of $p$-adic numbers, or a finite extension of the field $\mathbb{F}_q((t))$ of formal Laurent series over a finite field. Every non-archimedean local field carries a discrete valuation and a finite residue field. Local class field theory describes abelian extensions of local fields, Tate duality governs local Galois cohomology, and Haar measure on the additive group provides the local structure underlying the adèles.
 
 \term{Local Homeomorphism}
-A map $f: X \to Y$ such that for every point $x \in X$, there exists an open neighborhood $U$ of $x$ such that $f|_U$ is a homeomorphism onto an open set in $Y$.
+A map is a local homeomorphism if every point has a neighborhood on which the map is a homeomorphism onto an open subset of the target. It need not be globally one-to-one. \par\noindent\textbf{Applications:} local homeomorphisms describe covering maps, coordinate charts, and locally invertible transformations.
 
 \term{Local Minimum}
-A point $x_0$ such that $f(x) \geq f(x_0)$ for all $x$ in some open neighborhood of $x_0$.
+A point $x_0$ is a local minimum if $f(x_0)\leq f(x)$ for all $x$ in some neighborhood of $x_0$. It is a local comparison and may not be the smallest value globally. \par\noindent\textbf{Applications:} local minima represent stable designs and equilibria and are targets of many optimization algorithms.
 
 \term{Local Maximum}
-A point $x_0$ such that $f(x) \leq f(x_0)$ for all $x$ in some open neighborhood of $x_0$.
+A point $x_0$ is a local maximum if $f(x)\leq f(x_0)$ for all $x$ in some neighborhood of $x_0$. It need not be the largest value on the whole domain. \par\noindent\textbf{Applications:} local maxima describe nearby best responses, peaks in data, and stable or unstable equilibria.
 
 \term{Local Ring}
-A ring with exactly one maximal ideal. In algebraic geometry, the local ring of a point on a variety consists of functions defined in a neighborhood of that point.
+A local ring has exactly one maximal ideal, representing the functions that vanish at the point under study. In algebraic geometry, localizing at a prime ideal focuses on behavior near that point. \par\noindent\textbf{Applications:} local rings study singularities, tangent spaces, divisors, and local solvability of equations.
 
 \term{Localization}
 The process of formally adjoining inverses of a multiplicatively closed subset $S$ of a commutative ring $R$, producing the ring of fractions $S^{-1}R$; localization at the complement of a prime ideal $\mathfrak{p}$ yields the local ring $R_{\mathfrak{p}}$. For modules, localization is exact and compatible with tensor products. Geometrically, localization corresponds to restricting sheaves to an open set, expressing the local behaviour of a variety at a point. The notion generalizes to the localization of a category, formally inverting a class of morphisms, as in the construction of derived categories.
 
 \term{Logarithm}
-The inverse operation to exponentiation. The natural logarithm $\ln x$ is the integral $\int_1^x \frac{1}{t}\,dt$.
+The logarithm is the inverse of exponentiation: $\log_bx=y$ when $b^y=x$. The natural logarithm satisfies $\ln x=\int_1^xdt/t$ and converts products into sums. \par\noindent\textbf{Applications:} logarithms measure growth, scale data, solve exponential equations, and appear in entropy and decibel units.
 
 \term{Logarithmic Function}
 The inverse of the exponential function, $\log_b x = y$ when $b^y = x$, satisfying $\log(xy) = \log x + \log y$.
 
 \term{Loop Space}
-The space $\Omega X$ of based loops in a pointed topological space $X$, equipped with the compact-open topology. The loop space functor is right adjoint to the suspension functor, giving the adjunction $[\Sigma Y, X] \cong [Y, \Omega X]$ in the homotopy category. Homotopy groups satisfy $\pi_n(X) \cong \pi_{n-1}(\Omega X)$, so the loop space shifts the homotopy groups down by one. The based loop space is a homotopy-theoretic group object, and iterated loop spaces and spectra are central in stable homotopy theory, with classifying spaces $BG$ arising as deloopings.
+The loop space $\Omega X$ consists of paths in a pointed space that start and end at the basepoint. Concatenation gives it a group-like structure up to homotopy, and $\pi_n(X)\cong\pi_{n-1}(\Omega X)$. \par\noindent\textbf{Applications:} loop spaces convert questions about maps and homotopy groups into structured algebraic-topology problems and are central to stable homotopy theory.
 
 \term{Lorentz Transformation}
-The linear transformations between two inertial frames in special relativity that preserve the spacetime interval $\Delta s^2 = -c^2 \Delta t^2 + \Delta x^2 + \Delta y^2 + \Delta z^2$.
+A Lorentz transformation is a linear change between inertial frames preserving the spacetime interval $\Delta s^2=-c^2\Delta t^2+\Delta x^2+\Delta y^2+\Delta z^2$. It combines rotations with boosts and replaces ordinary Euclidean distance by spacetime geometry. \par\noindent\textbf{Applications:} Lorentz transformations describe relativistic motion, time dilation, length contraction, and electromagnetic-field changes.
 
 \term{Löwenheim--Skolem Theorem}
 A countable first-order theory that has an infinite model has a model of any infinite cardinality (downward and upward forms). It yields the Skolem paradox: set theory has a countable model, yet proves the existence of uncountable sets.
 
 \term{Lower Bound}
-A value that is no greater than every element of a set; the greatest such value is the infimum.
+A lower bound of a set $S$ is a number $m$ with $m\leq s$ for every $s\in S$. The greatest lower bound is $\inf S$, whether or not it belongs to $S$. \par\noindent\textbf{Applications:} lower bounds certify performance limits, prove convergence, and establish minimum possible costs or errors.
 
 \term{L\textasciicircum p Space}
-The space of measurable functions $f$ for which the $p$-th power of the absolute value is Lebesgue integrable: $\int |f|^p < \infty$. For $p=2$, it is a Hilbert space.
+The space $L^p$ contains measurable functions with $\int|f|^p<\infty$ for $1\leq p<\infty$, with an essential-supremum norm when $p=\infty$. For $p=2$ it is a Hilbert space. \par\noindent\textbf{Applications:} $L^p$ spaces measure signal size, define probability moments, and provide the standard setting for Fourier analysis and PDEs.
 
 \term{L-polynomial}
 The polynomial associated with an L-function, often appearing in the context of the Birch and Swinnerton-Dyer conjecture for elliptic curves.
 
 \term{Lefschetz Fixed-Point Theorem}
-A theorem relating the sum of indices of fixed points of a map $f: X \to X$ to the trace of the induced map on homology: $\sum \text{ind}(x_i) = \sum (-1)^k \operatorname{tr}(f_* | H_k(X))$.
+The Lefschetz fixed-point theorem relates fixed points of a continuous map to its action on homology. The Lefschetz number is $L(f)=\sum_k(-1)^k\operatorname{tr}(f_*|H_k(X))$; if it is nonzero, $f$ has a fixed point. \par\noindent\textbf{Applications:} it proves existence of equilibria and fixed points in topology, dynamics, and geometry.
 
 \term{Lefschetz Hyperplane Theorem}
 A result in complex geometry stating that the cohomology of a smooth projective variety $X$ is determined by the cohomology of a generic hyperplane section $H$ up to a certain dimension.
 
 \term{L-system (Lindenmayer system)}
-A parallel rewriting system used to model the growth processes of plants and create fractals.
+An L-system is a parallel rewriting system: every symbol in a string is replaced simultaneously according to production rules. Interpreting symbols as drawing commands produces branching patterns. \par\noindent\textbf{Applications:} L-systems model plant growth, generate fractals, and create procedural graphics.
 
 \term{Lattice Gauge Theory}
-A non-perturbative approach to quantum field theory where spacetime is replaced by a discrete lattice of points.
+Lattice gauge theory approximates spacetime by a discrete lattice while preserving gauge symmetry through variables on edges. It provides a non-perturbative formulation of quantum field theories. \par\noindent\textbf{Applications:} numerical lattice calculations study strong interactions, confinement, phase transitions, and quantum statistical systems.
 
 \term{Lumpability}
-A property of a Markov chain whereby a coarser process, aggregating states, remains a Markov chain.
-
+Lumpability is a property of a Markov chain under which grouped states form an exact lower-dimensional Markov chain. Transition probabilities from states in the same group must agree after aggregation. \par\noindent\textbf{Applications:} lumpability enables model reduction, state aggregation, faster simulation, and simplified queueing or reliability models.

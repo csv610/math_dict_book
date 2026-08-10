@@ -2,103 +2,103 @@
 \label{chap:n}
 
 \term{Nash Equilibrium}
-A strategy profile in a game where no player can increase their payoff by unilaterally changing their strategy, given that other players keep their strategies unchanged.
+A Nash equilibrium is a strategy profile in which no player can improve their payoff by changing strategy alone while others keep theirs fixed. Equilibria may be pure or mixed and need not be socially optimal. \par\noindent\textbf{Applications:} Nash equilibrium models competition, bargaining, auctions, evolution, and network behavior.
 
 \term{Natural Transformation}
-A structure-preserving map between functors, assigning to each object a morphism commuting with the functorial maps.
+A natural transformation assigns a morphism between the outputs of two functors for every object, in a way that commutes with every map in the category. The commuting condition makes the construction independent of arbitrary choices. \par\noindent\textbf{Applications:} natural transformations formalize equivalence of constructions in algebra, topology, geometry, and theoretical computer science.
 
 \term{Noether's Theorem}
-In physics, every differentiable symmetry of the action of a physical system has a corresponding conservation law; for example, time translation symmetry leads to the conservation of energy.
+Noether's theorem states that every suitable continuous symmetry of an action produces a conservation law. Time-translation symmetry gives energy conservation, spatial translation gives momentum, and rotational symmetry gives angular momentum. \par\noindent\textbf{Applications:} it organizes classical mechanics, field theory, fluid dynamics, and particle physics.
 
 \term{Navier--Stokes Equations}
-A set of partial differential equations that describe the motion of viscous fluid substances. Solving them for the case of 3D incompressible flow is one of the Millennium Prize Problems.
+The Navier--Stokes equations describe conservation of mass and momentum in a moving viscous fluid. They balance acceleration and pressure against viscous and external forces; incompressibility adds $\nabla\cdot u=0$. \par\noindent\textbf{Applications:} they model air flow, water, weather, blood, combustion, and industrial fluid systems. Global regularity for 3D incompressible flow remains a Millennium Prize problem.
 
 \term{Necessary and Sufficient Condition}
-A condition $A$ that is both necessary and sufficient for $B$, meaning $A$ is true if and only if $B$ is true ($A \iff B$).
+A condition $A$ is necessary and sufficient for $B$ when $A\iff B$: $A$ implies $B$, and $B$ implies $A$. This gives an exact characterization rather than only a test or consequence. \par\noindent\textbf{Applications:} such conditions simplify proofs, algorithms, classification, and diagnostic criteria.
 
 \term{Necessary Condition}
-A condition that must be true for an event to occur, but whose truth does not guarantee that the event will occur. $A$ is necessary for $B$ if $B \implies A$.
+A is necessary for $B$ when $B\Rightarrow A$. If $A$ fails, $B$ is impossible, but $A$ alone may not guarantee $B$. \par\noindent\textbf{Applications:} necessary conditions eliminate infeasible designs, rule out solutions, and provide preliminary tests in optimization and differential equations.
 
 \term{Neighborhood (Topology)}
-A neighborhood of a point $x$ in a topological space is a set $V$ that contains an open set $U$ such that $x \in U \subseteq V$.
+A neighborhood of $x$ is a set containing an open set that contains $x$. Neighborhoods define local concepts such as convergence, continuity, interior, and differentiability without requiring a distance. \par\noindent\textbf{Applications:} they provide the basic language for topology, manifolds, analysis, and local approximation.
 
 \term{Néron Model}
 The smooth group scheme over the ring of integers, or more generally over a Dedekind base, that extends an abelian variety and satisfies the Néron mapping property: morphisms from the generic fiber extend uniquely to morphisms from the whole base scheme. Its special fiber carries the group of connected components. Néron models are central to arithmetic geometry and the theory of abelian varieties over number fields.
 
 \term{Nested Set}
-A family of sets each of which is contained in the next, $S_1 \subseteq S_2 \subseteq \cdots$.
+A nested family has successive inclusion, such as $S_1\subseteq S_2\subseteq\cdots$ or decreasing inclusion. Nested sets support limiting constructions and completeness arguments. \par\noindent\textbf{Applications:} they describe feasible-region refinement, interval methods, fractals, probability events, and approximation schemes.
 
 \term{Net (Topology)}
-A generalization of a sequence, where the index set is a directed set rather than the natural numbers. Nets are used to characterize compactness in arbitrary topological spaces.
+A net generalizes a sequence by allowing its indices to range over any directed set. Nets characterize convergence and closure in arbitrary topological spaces, including spaces where sequences are insufficient. \par\noindent\textbf{Applications:} they support general compactness arguments, functional analysis, and convergence of approximations.
 
 \term{Network Flow}
-The study of flows in networks, digraphs with capacities on their edges. The max-flow min-cut theorem states that the maximum value of a flow equals the minimum capacity of a cut separating source from sink, and the Ford--Fulkerson and Edmonds--Karp algorithms compute maximum flows. Integrality of the problem underlies applications in transportation and combinatorial optimization, and matching problems reduce to flow problems.
+Network-flow theory studies quantities moving through directed edges with capacities. The max-flow min-cut theorem says the greatest source-to-sink flow equals the capacity of a smallest separating cut. \par\noindent\textbf{Applications:} flow algorithms solve transportation, bandwidth allocation, matching, scheduling, and supply-chain problems.
 
 \term{Neumann Boundary Condition}
-A boundary condition that specifies the value of the normal derivative of a function on the boundary of a domain: $\frac{\partial u}{\partial n} = g$.
+A Neumann boundary condition prescribes the normal derivative on a boundary: $\partial u/\partial n=g$. It often represents flux through the boundary, such as heat flow or electric current. \par\noindent\textbf{Applications:} Neumann conditions model insulated or flux-controlled boundaries in PDEs, heat transfer, and electrostatics.
 
 \term{Newcomb's Paradox}
 A puzzle about an infallible predictor who has placed money in boxes: one box always contains \$1000 and a second contains \$1,000,000 exactly when the predictor expects you to take only the second box. Two-boxing dominates in payoff, but the predictor's accuracy makes one-boxing optimal, exposing a tension between causal and evidential decision theory.
 
 \term{Newton Polytopes}
-The convex hull of the exponents of the monomials in a polynomial, used to study the behavior of the polynomial's zeros and its Newton-Puiseux series.
+The Newton polytope of a polynomial is the convex hull of the exponent vectors of its nonzero monomials. Its geometry records which terms dominate in different directions. \par\noindent\textbf{Applications:} Newton polytopes study polynomial roots, sparse systems, tropical geometry, mixed volumes, and computational algebra.
 
 \term{Newton--Raphson Method}
-An iterative numerical method for finding the roots of a real-valued function $f(x) = 0$. Given an initial guess $x_n$, the next approximation is $x_{n+1} = x_n - f(x_n)/f'(x_n)$, which geometrically corresponds to following the tangent line at $x_n$ to the $x$-axis. It typically converges quadratically if the initial guess is sufficiently close to the root. Also called Newton's method.
+Newton's method finds a root using $x_{n+1}=x_n-f(x_n)/f'(x_n)$. It replaces the function locally by its tangent line and is usually quadratically convergent near a simple root, but poor initial guesses or small derivatives can cause failure. \par\noindent\textbf{Applications:} it solves nonlinear equations in engineering, calibration, optimization, and scientific computing.
 
 \term{Nilpotent Element}
-An element $x$ of a ring such that $x^n = 0$ for some positive integer $n$. The smallest such $n$ is the index of nilpotency.
+An element $x$ of a ring is nilpotent if $x^n=0$ for some positive integer $n$. The least such $n$ is its nilpotency index. Nilpotents behave like algebraic infinitesimals. \par\noindent\textbf{Applications:} they reveal singular or nonreduced structure in rings and algebraic varieties.
 
 \term{Nilpotent Group}
-A group $G$ is nilpotent if its upper central series reaches $G$ in finitely many steps, equivalently if its lower central series terminates at the trivial subgroup. Nilpotent groups generalize abelian groups; every nilpotent group is solvable, though not conversely. Examples include finite $p$-groups and unitriangular matrix groups. Nilpotency is central in Lie theory, where the Lie correspondence relates nilpotent Lie groups and nilpotent Lie algebras.
+A group is nilpotent if its central series reaches the whole group in finitely many steps. Nilpotent groups generalize abelian groups and are always solvable, though not every solvable group is nilpotent. \par\noindent\textbf{Applications:} they provide manageable models of noncommutativity and appear in Lie theory, matrix groups, and local group structure.
 
 \term{Nilpotent Ideal}
-An ideal $I$ such that $I^n = 0$ for some $n \geq 1$. Every element of a nilpotent ideal is a nilpotent element.
+An ideal $I$ is nilpotent if $I^n=0$ for some $n$. Every element of $I$ is then nilpotent, and the ideal records a part of the ring that disappears under repeated multiplication. \par\noindent\textbf{Applications:} nilpotent ideals describe infinitesimal thickenings and help separate reduced structure from algebraic multiplicity.
 
 \term{Nilpotent Ring}
 A ring where every element is nilpotent, or equivalently, the ring itself is a nilpotent ideal of itself.
 
 \term{Nodal Domain}
-A connected component of the set where an eigenfunction of the Laplacian (such as a vibration mode of a drum) is non-zero.
+A nodal domain is a connected component of the region where an eigenfunction is positive or negative, separated by its zero set. For a vibrating membrane, nodal domains are regions oscillating with the same sign. \par\noindent\textbf{Applications:} nodal domains study eigenvalue problems, vibrations, quantum states, and spectral geometry.
 
 \term{Node (Graph Theory)}
-A fundamental unit of a graph, also called a vertex. A graph consists of a set of nodes and a set of edges connecting them.
+A node or vertex is a basic object in a graph, connected to other nodes by edges. Nodes may represent entities, locations, states, or variables. \par\noindent\textbf{Applications:} graph nodes model routers, people, cities, tasks, molecules, and states in a finite automaton.
 
 \term{Noetherian Module}
-A module $M$ such that every ascending chain of submodules stabilizes. For a ring $R$, $R$ is Noetherian iff every finitely generated $R$-module is Noetherian.
+A module is Noetherian if every ascending chain of submodules eventually stabilizes, equivalently if every submodule is finitely generated. Noetherian modules prevent endlessly increasing algebraic complexity. \par\noindent\textbf{Applications:} they guarantee finite descriptions in algebra, algebraic geometry, and module computations.
 
 \term{Noetherian Ring}
-A ring $R$ that satisfies the ascending chain condition on its ideals: every chain of ideals $I_1 \subseteq I_2 \subseteq \cdots$ eventually stabilizes.
+A ring is Noetherian if every ascending chain of ideals stabilizes. Equivalently, every ideal is finitely generated. \par\noindent\textbf{Applications:} Noetherianity guarantees finite algebraic calculations and is fundamental to polynomial rings, algebraic varieties, and Gröbner-basis methods.
 
 \term{Non-archimedean Field}
-A field with a valuation $|\cdot|$ that satisfies the strong triangle inequality: $|x+y| \leq \max(|x|, |y|)$. The $p$-adic numbers $\mathbb{Q}_p$ are the primary example.
+A non-archimedean field has an absolute value satisfying $|x+y|\leq\max(|x|,|y|)$. The $p$-adic field $\mathbb Q_p$ is the main example; its geometry is ultrametric, so triangles are often isosceles with very strong nesting. \par\noindent\textbf{Applications:} non-archimedean fields support number theory, coding, arithmetic geometry, and $p$-adic computation.
 
 \term{Non-commutative Geometry}
-A generalization of geometry where the algebra of "functions" on a space is not required to be commutative, treating the algebra itself as the primary geometric object.
+Noncommutative geometry studies spaces through algebras of functions that may not commute. The algebra is treated as the primary object, even when no ordinary point-set space exists. \par\noindent\textbf{Applications:} it connects operator algebras, quantum physics, index theory, foliations, and mathematical models of quantum spaces.
 
 \term{Nonconvex Optimization}
-An optimization problem whose feasible set or objective is not convex, so it may have multiple local optima.
+Nonconvex optimization has a nonconvex objective or feasible set, so it may contain many local optima, saddle points, or disconnected feasible regions. Global optimization is generally difficult. \par\noindent\textbf{Applications:} it appears in neural networks, engineering design, matrix factorization, robotics, and physical inverse problems.
 
 \term{Non-degenerate}
-A form or matrix for which the only solution to $B(x, y) = 0$ for all $y$ is $x = 0$; a matrix with full rank.
+A bilinear or sesquilinear form is nondegenerate if $B(x,y)=0$ for every $y$ implies $x=0$. For a square matrix this corresponds to full rank and a nonzero determinant. \par\noindent\textbf{Applications:} nondegeneracy guarantees solvable coordinate changes, well-defined metrics, unique pairings, and stable geometric structures.
 
 \term{Non-Euclidean Geometry}
-Geometries where the parallel postulate of Euclid is replaced. Examples include hyperbolic geometry (where multiple parallel lines exist) and elliptic geometry (where no parallel lines exist).
+Non-Euclidean geometries alter Euclid's parallel postulate. Hyperbolic geometry has infinitely many parallels through an external point, while elliptic geometry has none. \par\noindent\textbf{Applications:} these geometries model curved surfaces, relativity, navigation, computer graphics, and geometric group theory.
 
 \term{Nonlinear}
-A system or equation not governed by linearity, so superposition does not apply.
+A system is nonlinear when its response does not satisfy superposition: scaling or adding solutions need not produce another solution. Nonlinear systems can have bifurcations, chaos, shocks, and multiple equilibria. \par\noindent\textbf{Applications:} they model fluids, climate, biological populations, circuits, and complex engineering systems.
 
 \term{Non-orientable Surface}
-A surface that does not have a consistent "side," such as the Möbius strip or the Klein bottle. A surface is non-orientable iff it contains a Möbius strip.
+A non-orientable surface has no globally consistent choice of clockwise orientation or side; a loop can reverse orientation. The Möbius strip and Klein bottle are examples. \par\noindent\textbf{Applications:} non-orientability is a central topological property and appears in surface classification, geometry, and physical models with orientation reversal.
 
 \term{Non-standard Analysis}
-A branch of mathematics that uses infinitesimals and infinite numbers to provide a rigorous foundation for the intuitive "infinitesimal" calculus of Leibniz and Newton.
+Nonstandard analysis extends the real numbers with infinitesimal and infinite elements and uses a transfer principle to preserve suitable first-order statements. It gives rigorous versions of intuitive infinitesimal calculus. \par\noindent\textbf{Applications:} it provides alternative proofs and models for limits, derivatives, integrals, probability, and mathematical economics.
 
 \term{Normal Bundle}
-A vector bundle over a submanifold $M$ whose fibers are the normal spaces to $M$ at each point.
+For a submanifold $M$ inside a Riemannian manifold, the normal bundle has fiber $N_pM$, the orthogonal complement of the tangent space at $p$. It records directions leaving the submanifold. \par\noindent\textbf{Applications:} normal bundles describe tubular neighborhoods, curvature, embeddings, perturbations, and intersection theory.
 
 \term{Normal Distribution}
-Also known as the Gaussian distribution. A continuous probability distribution characterized by its bell-shaped curve, defined by its mean $\mu$ and variance $\sigma^2$.
+The normal distribution $N(\mu,\sigma^2)$ has density $\frac1{\sqrt{2\pi\sigma^2}}e^{-(x-\mu)^2/(2\sigma^2)}$. It is centered at $\mu$ with variance $\sigma^2$ and arises as a limit of normalized sums in the central limit theorem. \par\noindent\textbf{Applications:} it models measurement errors, noise, regression residuals, and confidence intervals.
 
 \term{Normal Extension}
 An algebraic field extension $K/F$ is normal if every irreducible polynomial over $F$ having a root in $K$ splits completely in $K$, equivalently if $K$ is stable under all $F$-automorphisms in an algebraic closure. Splitting fields are normal, and a finite extension is normal and separable exactly when it is Galois. Composita of normal extensions are again normal, making normality a key ingredient of the fundamental theorem of Galois theory.
@@ -107,22 +107,22 @@ An algebraic field extension $K/F$ is normal if every irreducible polynomial ove
 A family of holomorphic functions on a domain is normal if it is precompact in the topology of locally uniform convergence, so that every sequence contains a locally uniformly convergent subsequence. Montel's theorem characterizes normality through local boundedness. Normality is the engine behind proofs of the Picard theorems and is fundamental in value distribution theory and the iteration of holomorphic maps.
 
 \term{Normal Form}
-A canonical representation of a mathematical object, such as the Jordan Normal Form for matrices or the Smith Normal Form for matrices over a PID.
+A normal form is a standard representative of an object under an allowed equivalence, such as Jordan form or Smith form. It exposes structural information and makes comparison or computation easier. \par\noindent\textbf{Applications:} normal forms solve classification, matrix, polynomial, rewriting, and symbolic-computation problems.
 
 \term{Normality}
-The property of a topological space in which disjoint closed sets have disjoint open neighbourhoods.
+In topology, normality means that any two disjoint closed sets have disjoint open neighborhoods. This separation property supports continuous functions that distinguish closed sets. \par\noindent\textbf{Applications:} normality underlies extension and metrization theorems and is automatic for metric spaces.
 
 \term{Normalization}
-The process of scaling a vector or function so that its norm is equal to 1. In probability, it ensures that the total probability of a distribution is 1.
+Normalization rescales an object to satisfy a chosen standard, such as $\|v\|=1$ for a vector or total mass $1$ for a probability distribution. The exact scaling depends on context. \par\noindent\textbf{Applications:} it compares data on common scales, creates unit directions, and converts weights into probabilities.
 
 \term{Normalizer (Group Theory)}
-For a subgroup $H \subseteq G$, the normalizer $N_G(H)$ is the largest subgroup of $G$ in which $H$ is normal: $N_G(H) = \{g \in G : gHg^{-1} = H\}$.
+The normalizer of $H\leq G$ is $N_G(H)=\{g\in G:gHg^{-1}=H\}$. It is the largest subgroup of $G$ in which $H$ is normal and measures the symmetries preserving $H$ under conjugation. \par\noindent\textbf{Applications:} normalizers analyze subgroup structure, group actions, and symmetry reductions.
 
 \term{Normal Map}
 In homotopy theory, a map $f: X \to Y$ that is a "normal" map in the sense of surgery theory, typically involving a bundle map from the normal bundle of $X$ to a bundle over $Y$.
 
 \term{Normal Operator}
-An operator that commutes with its adjoint, $TT^* = T^*T$; such operators are unitarily diagonalizable.
+A bounded operator is normal when $TT^*=T^*T$. On finite-dimensional complex inner-product spaces, the spectral theorem says it is unitarily diagonalizable. Hermitian, unitary, and diagonal operators are normal. \par\noindent\textbf{Applications:} normal operators simplify spectral analysis, quantum observables, Fourier methods, and numerical computations.
 
 \term{Normal Space}
 A topological space in which every two disjoint closed sets have disjoint open neighbourhoods. Such spaces are also called $T_4$ spaces. Every metric space is normal. Normality is a key property in the proof of the Urysohn Metrization Theorem and the Tietze Extension Theorem.
@@ -131,58 +131,57 @@ A topological space in which every two disjoint closed sets have disjoint open n
 The orthogonal complement of the tangent space at a point $p$ on a manifold $M \subset \mathbb{R}^n$.
 
 \term{Normal Subgroup}
-A subgroup $N$ of $G$ that is invariant under conjugation: $gNg^{-1} = N$ for all $g \in G$. Normal subgroups are exactly the kernels of group homomorphisms.
+A subgroup $N\trianglelefteq G$ is normal if $gNg^{-1}=N$ for every $g\in G$. This makes the quotient $G/N$ a group, and every homomorphism's kernel is normal. \par\noindent\textbf{Applications:} normal subgroups produce quotient symmetries and support classification and homomorphism theorems.
 
 \term{Normed Space}
-A vector space equipped with a norm. A normed space is a metric space with $d(x,y) = \|x-y\|$. If it is complete, it is called a Banach space.
+A normed space is a vector space with a norm, and therefore a metric $d(x,y)=\|x-y\|$. If every Cauchy sequence converges in the space, it is a Banach space. \par\noindent\textbf{Applications:} normed spaces measure function and signal size and provide the setting for functional analysis, approximation, and PDEs.
 
 \term{Norm}
 See \term{Norm (Vector Space)}.
 
 \term{Norm (Vector Space)}
-A function $\|\cdot\|: V \to [0, \infty)$ that satisfies: (1) $\|v\|=0 \iff v=0$, (2) $\|\alpha v\| = |\alpha| \|v\|$, and (3) $\|u+v\| \leq \|u\|+\|v\|$ (the triangle inequality).
+A norm is a function satisfying $\|v\|=0\iff v=0$, $\|\alpha v\|=|\alpha|\|v\|$, and $\|u+v\|\leq\|u\|+\|v\|$. It measures vector size and induces distance and convergence. \par\noindent\textbf{Applications:} norms quantify error, regularization, signal magnitude, and stability in numerical and functional analysis.
 
 \term{Nuclear Space}
 A locally convex space whose topology is generated by Hilbert seminorms satisfying the nuclear (trace-class) property. Fréchet nuclear spaces, such as the Schwartz space, are the domain of the Schwartz kernel theorem, and the class of nuclear spaces is stable under tensor products. Nuclear spaces provide the natural setting for distribution theory.
 
 \term{Null Hypothesis}
-In statistics, the hypothesis $H_0$ that there is no effect or no difference between groups. It is the hypothesis that the researcher tries to reject or fail to reject.
+The null hypothesis $H_0$ is a baseline claim, often that there is no effect or difference. A statistical test measures how surprising the data would be under $H_0$; failing to reject it is not the same as proving it true. \par\noindent\textbf{Applications:} null hypotheses structure experiments, clinical studies, quality control, and scientific inference.
 
 \term{Nullity}
-The dimension of the null space of a linear map; by the rank-nullity theorem, $\operatorname{rank} + \operatorname{nullity} = \dim V$.
+The nullity of a linear map is the dimension of its kernel. In finite dimensions, rank--nullity gives $\operatorname{rank}T+\operatorname{nullity}T=\dim V$. \par\noindent\textbf{Applications:} nullity measures non-uniqueness, redundant variables, unobservable modes, and degrees of freedom in linear systems.
 
 \term{Null Set}
-A set of measure zero; the empty set is sometimes called a null set.
+A null set has measure zero, meaning it contributes no mass, length, area, or volume under the chosen measure. A property holding almost everywhere may fail on a null set. \par\noindent\textbf{Applications:} null sets allow negligible exceptions in probability, integration, differential equations, and geometric measure theory.
 
 \term{Null Space}
-The set of all vectors $v$ such that $Av = 0$ for a matrix $A$. Also called the kernel of the linear transformation.
+The null space of a matrix $A$ is $\ker A=\{v:Av=0\}$. It consists of directions invisible to the transformation and determines whether solutions of $Ax=b$ are unique. \par\noindent\textbf{Applications:} null spaces identify constraints, redundancy, inverse-problem ambiguity, and degrees of freedom.
 
 \term{Nullstellensatz}
 See Hilbert's Nullstellensatz: the correspondence between ideals of a polynomial ring and algebraic varieties.
 
 \term{Null Vector}
-A vector of zero norm; in relativity, a lightlike vector with $g(v, v) = 0$.
+A null vector has zero value under a quadratic or indefinite form, $g(v,v)=0$. In a positive-definite inner product this forces $v=0$, but in spacetime a nonzero null vector represents lightlike motion. \par\noindent\textbf{Applications:} null vectors describe light cones, relativistic signals, and degeneracy in bilinear-form geometry.
 
 \term{Number Theory}
-The study of the properties of integers $\mathbb{Z}$. It is divided into elementary number theory, analytic number theory, and algebraic number theory.
+Number theory studies integers and related arithmetic structures. Elementary, analytic, algebraic, and computational branches investigate divisibility, primes, equations, fields, and algorithms. \par\noindent\textbf{Applications:} number theory supports cryptography, coding, pseudorandom generation, secure protocols, and error detection.
 
 \term{Numerical Analysis}
-The study of algorithms that use numerical approximation for the problems of mathematical analysis, focusing on convergence, stability, and error bounds.
+Numerical analysis develops algorithms for approximate solutions of mathematical problems. It studies convergence, stability, conditioning, discretization, and error bounds. \par\noindent\textbf{Applications:} it enables simulation and computation in engineering, physics, finance, weather prediction, imaging, and scientific research.
 
 \term{Numerical Optimization}
-The design and analysis of algorithms for minimizing or maximizing functions numerically.
+Numerical optimization designs algorithms for approximate minima or maxima of functions, possibly with constraints. Methods include gradient, Newton, trust-region, and derivative-free approaches. \par\noindent\textbf{Applications:} it supports parameter estimation, machine learning, engineering design, control, and resource allocation.
 
 \term{Numerical Quadrature}
-The numerical approximation of definite integrals, such as by the trapezoidal rule or Gaussian quadrature.
+Numerical quadrature approximates a definite integral by a weighted sum of function values, as in the trapezoidal, Simpson, or Gaussian rules. Accuracy depends on smoothness, spacing, and the chosen rule. \par\noindent\textbf{Applications:} quadrature evaluates integrals in simulation, probability, finite elements, and physics.
 
 \term{Numerical Stability}
-The property of an algorithm that small perturbations of the input cause only small perturbations of the output.
+An algorithm is numerically stable when rounding and input errors produce controlled output errors, ideally comparable to the problem's conditioning. Stability is distinct from whether the underlying problem is well-conditioned. \par\noindent\textbf{Applications:} stability analysis guides reliable linear algebra, differential-equation solvers, simulation, and scientific software.
 
 \term{Numeric Integration}
-The approximation of definite integrals by discrete sums, such as the trapezoidal rule or Simpson's rule.
+Numerical integration approximates an integral using discrete samples and weights, such as the trapezoidal or Simpson rule. Refinement and error estimates determine reliability. \par\noindent\textbf{Applications:} it computes areas, expectations, energies, and model outputs when antiderivatives are unavailable.
 
 \term{Nyquist Frequency}
-In signal processing, the minimum rate at which a signal must be sampled to avoid aliasing, equal to half the maximum frequency component of the signal.
+For a sampling rate $f_s$, the Nyquist frequency is $f_s/2$, the highest frequency that can be represented without aliasing under ideal band-limited assumptions. A signal must be sampled at more than twice its maximum frequency. \par\noindent\textbf{Applications:} this rule guides digital audio, imaging, communications, sensors, and anti-aliasing filter design.
 \term{Nonlinear Programming}
-The optimisation of an objective function or the solution of a system of equations when the relationships are not linear. Nonlinear programming encompasses smooth and nonsmooth optimisation, convex and nonconvex problems, and integer constraints. The KKT conditions generalise Lagrange multipliers to inequality-constrained problems.
-
+Nonlinear programming optimizes a nonlinear objective or constraints, including smooth, nonsmooth, convex, nonconvex, and mixed-integer cases. Local methods may depend strongly on initialization; KKT conditions extend Lagrange multipliers to inequalities. \par\noindent\textbf{Applications:} it models engineering design, energy systems, machine learning, finance, and nonlinear control.

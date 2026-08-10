@@ -7,6 +7,9 @@ The distance $R$ from the center of a power series within which the series conve
 \term{Radon--Nikodym Theorem}
 A fundamental result in measure theory stating that for two $\sigma$-finite measures $\mu$ and $\nu$ on the same measurable space, if $\nu$ is absolutely continuous with respect to $\mu$, there exists a unique (up to $\mu$-almost everywhere) non-negative measurable function $f$ such that $\nu(A) = \int_A f \, d\mu$.
 
+\term{Riemann–Stieltjes Integral}
+A generalization of the Riemann integral where integration is with respect to a function of bounded variation $\alpha$ rather than the identity: $\int_a^b f\,d\alpha$. When $\alpha(x) = x$, it reduces to the ordinary Riemann integral. The Riemann–Stieltjes integral is used in probability theory to express expectations and in the study of distributions.
+
 \term{Radon Transform}
 An integral transform that maps a function on $\mathbb{R}^n$ to the set of its integrals over all hyperplanes. It is the mathematical basis for Computerized Tomography (CT) scans, allowing the reconstruction of an object from its projections.
 
@@ -160,6 +163,9 @@ The function $\zeta(s) = \sum_{n=1}^\infty n^{-s}$, defined for $\operatorname{R
 \term{Riemann--Hilbert Problem}
 The problem of finding a holomorphic function with a prescribed jump across a given contour. It is central to the study of integrable systems and orthogonal polynomials.
 
+\term{Riemannian Manifold}
+A smooth manifold equipped with a Riemannian metric, which is a smooth choice of a positive-definite inner product on each tangent space.
+
 \term{Riemannian Metric}
 A smooth positive definite inner product on each tangent space of a manifold, enabling the measurement of lengths, distances, and angles.
 
@@ -190,6 +196,9 @@ A property of a geometric figure that remains unchanged after a rotation by a ce
 \term{Rotation Matrix}
 A square matrix $R$ that preserves lengths and orientation in $\mathbb{R}^n$. In 2D, it is given by $\begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}$.
 
+\term{Rolle's Theorem}
+If a real-valued function $f$ is continuous on $[a, b]$, differentiable on $(a, b)$, and $f(a) = f(b)$, then there exists at least one $c \in (a, b)$ such that $f'(c) = 0$. It is the basis for the Mean Value Theorem.
+
 \term{Rouché's Theorem}
 The theorem that if $|f| < |g|$ on a closed curve, then $f$ and $f + g$ have the same number of zeros inside the curve.
 
@@ -212,7 +221,7 @@ A straightedge used in classical constructions; with compass, the tools of Eucli
 A family of iterative methods used for the numerical solution of ordinary differential equations. They provide a higher-order approximation of the solution than the simple Euler method.
 
 \term{Runge's Theorem}
-A result in complex analysis stating that any holomorphic function on a compact set $K$ can be uniformly approximated by rational functions with poles outside $K$.
+Runge's theorem says that a function holomorphic near a compact set can be uniformly approximated there by rational functions whose poles lie in the allowed complementary components. If the complement of the compact set is connected, polynomials are enough. Applications: the theorem replaces analytic functions by simpler expressions for approximation and numerical computation.
 
 \term{Russell's Paradox}
 The set $R = \{x : x \notin x\}$ of sets that do not contain themselves cannot consistently be asked whether $R \in R$: each answer implies the other. Discovered by Russell in 1901, it undermined naive set theory and motivated the axioms of ZFC and Russell's theory of types. The "barber paradox" is its everyday analogue.
@@ -222,3 +231,9 @@ A module over a ring $R$. If $R$ is a field, an $R$-module is simply a vector sp
 
 \term{R-linear map}
 A map between two $R$-modules that preserves the $R$-action: $f(ax+by) = af(x) + bf(y)$ for $a, b \in R$.
+\term{Prime Distribution}
+The study of how prime numbers are distributed among the integers. The Prime Number Theorem states that $\pi(x) \sim x/\log x$, where $\pi(x)$ counts primes up to $x$. The Riemann hypothesis, if true, gives the sharpest possible error term: $\pi(x) = \operatorname{Li}(x) + O(\sqrt{x}\log x)$. Prime gaps, arithmetic progressions, and the distribution of primes in short intervals are active areas of research.
+\term{Riemann Hypothesis}
+The conjecture that all non-trivial zeros of the Riemann zeta function $\zeta(s)$ lie on the critical line $\operatorname{Re}(s) = 1/2$. Proved for infinitely many zeros and verified for the first trillions, it remains open. The hypothesis is equivalent to sharp bounds on the error term in the Prime Number Theorem and has far-reaching consequences for number theory, random matrix theory, and quantum chaos.
+\term{Ramsey Theory}
+A branch of combinatorics asserting that complete disorder is impossible: for any given order and any partition of the objects being studied, there is a monochromatic structured subobject. Ramsey's theorem guarantees a monochromatic complete subgraph in any edge-colouring of a sufficiently large complete graph. Other results include van der Waerden's theorem on arithmetic progressions and the Erdős--Szekeres theorem on monotone subsequences.

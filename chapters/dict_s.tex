@@ -19,6 +19,9 @@ A quantity that is described by a single number, as opposed to a vector which ha
 \term{Scalar Curvature}
 The trace of the Ricci curvature, $R = g^{ab}\operatorname{Ric}_{ab}$, a key invariant of Riemannian manifolds.
 
+\term{Sectional Curvature}
+A way of assigning a real number to every 2-plane in the tangent space of a Riemannian manifold, representing the Gaussian curvature of the surface formed by the geodesics passing through the point and tangent to the plane.
+
 \term{Scalar Product}
 Another name for the inner product. For two vectors $\mathbf{u}$ and $\mathbf{v}$ in $\mathbb{R}^n$, it is the sum $\sum u_i v_i$. It is used to define lengths and angles between vectors.
 
@@ -50,10 +53,10 @@ The factorization of a square matrix $A$ as $A = QUQ^*$ where $Q$ is unitary and
 A result in complex analysis: if $f$ is a holomorphic function from the unit disk to itself such that $f(0)=0$, then $|f(z)| \leq |z|$ and $|f'(0)| \leq 1$ for all $z$ in the disk.
 
 \term{Schwarz Space}
-The space of smooth functions whose derivatives all decay faster than any power of $1/|x|$ as $|x| \to \infty$. It is the natural domain for the Fourier transform, as the transform of a Schwarz function is also a Schwarz function.
+See \term{Schwartz Space}.
 
 \term{Schwartz Space}
-The space $\mathcal{S}(\mathbb{R}^n)$ of rapidly decreasing smooth functions, on which the Fourier transform is an isomorphism.
+The Schwartz space $\mathcal{S}(\mathbb{R}^n)$ consists of smooth functions whose derivatives decrease faster than every power of $1/\lVert x\rVert$ as $\lVert x\rVert\to\infty$. The Fourier transform maps this space to itself. Applications: it is the natural setting for Fourier analysis, signal processing, partial differential equations, and distributions.
 
 \term{S-curve}
 A sigmoid-shaped curve used in various fields to describe growth processes that start slowly, accelerate, and then level off as they reach a carrying capacity.
@@ -94,6 +97,9 @@ A group $G$ is a semidirect product $N \rtimes H$ when $N$ is normal, $H$ is a s
 \term{Separable Space}
 A topological space that contains a countable dense subset. For example, $\mathbb{R}$ is separable because $\mathbb{Q}$ is a countable dense subset.
 
+\term{Separation Axioms}
+A set of axioms (such as $T_0, T_1, T_2, T_3, T_4$) that describe the ability to distinguish distinct points or closed sets in a topological space using open sets.
+
 \term{Separable Extension}
 An algebraic extension $L/K$ where every element of $L$ is the root of a separable polynomial over $K$ (a polynomial with distinct roots in its splitting field).
 
@@ -111,6 +117,9 @@ The branch of mathematics studying sets and their operations, relations, and car
 
 \term{Sheaf}
 A presheaf satisfying the locality and gluing axioms, allowing consistent local data to be assembled into global sections.
+
+\term{Sheaf Cohomology}
+The cohomology groups $H^i(X, \mathcal{F})$ of a sheaf $\mathcal{F}$ on a topological space or scheme $X$, computed as the right derived functors of the global sections functor. They may be computed via Čech cohomology or by acyclic resolutions such as flasque, injective, or Godement resolutions; these definitions agree on paracompact spaces. The groups govern the existence of global sections, with $H^1(X, \mathcal{F})$ classifying $\mathcal{F}$-torsors and $H^2$ classifying gerbes bound by $\mathcal{F}$, making them central to obstruction theory and descent.
 
 \term{Sieve Method}
 A technique in number theory for counting or estimating the number of elements in a set that are not divisible by any of a given set of primes. The Sieve of Eratosthenes is the most basic example.
@@ -136,6 +145,9 @@ A continuous path in a topological space that starts and ends at the same point 
 \term{Simple Root}
 In the theory of Lie algebras, a root that cannot be written as a sum of two other positive roots. The set of simple roots forms a basis for the root system.
 
+\term{Simplicial Set}
+A functor $X: \Delta^{\mathrm{op}} \to \mathbf{Set}$ from the opposite of the simplex category $\Delta$ to the category of sets, equipped with face and degeneracy maps satisfying the simplicial identities. Simplicial sets form a purely combinatorial model for homotopy theory: the fibrant objects, Kan complexes, satisfy the extension condition and their geometric realizations $|X|$ encode homotopy types. The category of simplicial sets carries a Quillen model structure whose weak equivalences are maps inducing weak equivalences on realizations, making it a model for the homotopy category of spaces.
+
 \term{Simpson's Paradox}
 A trend that holds in each separate subgroup of data can be reversed when the subgroups are pooled together. It arises from lurking or confounding variables and unequal group sizes; the classic example is a treatment that looks better for every patient group yet worse overall.
 
@@ -150,6 +162,9 @@ A factorization of any $m \times n$ matrix $A$ as $A = U \Sigma V^T$ where $U$ a
 
 \term{Singular Point}
 A point on a curve or surface where the derivative vanishes or is undefined. At such a point, the curve may have a cusp, a node, or a self-intersection.
+
+\term{Singular Variety}
+A variety that contains at least one point where the dimension of the tangent space is strictly greater than the dimension of the variety. The set of all such points is the singular locus, and its complement is the smooth locus.
 
 \term{Singular Value}
 The square roots of the eigenvalues of $A^* A$. They measure the "stretch" of the linear transformation $A$ along specific directions.
@@ -166,8 +181,14 @@ By the Löwenheim--Skolem theorem, Zermelo--Fraenkel set theory (if consistent) 
 \term{Sleeping Beauty Problem}
 A probability puzzle: Beauty is woken on Monday, and possibly again on Tuesday depending on a coin toss, without knowing which day it is. Whether the probability of heads is $1/2$ or $1/3$ is debated; the halfer and thirder positions rest on different interpretations of conditional probability and self-location.
 
+\term{Simply Connected Space}
+A path-connected topological space $X$ is simply connected if its fundamental group is trivial, meaning every loop in $X$ can be continuously contracted to a point. Examples include the $n$-sphere $S^n$ for $n \geq 2$ and the Euclidean space $\mathbb{R}^n$.
+
 \term{Smooth Manifold}
 A topological manifold equipped with a smooth atlas of charts whose transition maps are infinitely differentiable.
+
+\term{Smooth Variety}
+A variety $X$ of dimension $n$ such that the tangent space at every point $p \in X$ has dimension exactly $n$. Smooth varieties are manifolds over the base field $k$ and are the central objects of classical algebraic geometry.
 
 \term{Sobolev Embedding Theorem}
 Under suitable conditions on the indices, Sobolev spaces embed continuously into other Sobolev spaces, into $L^q$ spaces, or into spaces of continuous functions. For instance, $W^{k,p}$ embeds into $C^{m,\alpha}$ whenever $k - n/p > m$. Such embeddings play a central role in the regularity theory of PDEs, showing that weak solutions are smoother than initially guaranteed.
@@ -205,6 +226,9 @@ A result stating that every symmetric matrix (or more generally, every normal op
 \term{Spectral Theory}
 The study of the spectrum (eigenvalues) of linear operators. It is fundamental to quantum mechanics, where observables are represented by self-adjoint operators.
 
+\term{Spectrum (of an Operator)}
+For a bounded linear operator $T$ on a Banach space, the set of scalars $\lambda$ such that $T - \lambda I$ is not invertible. It generalizes the set of eigenvalues of a matrix to infinite-dimensional spaces.
+
 \term{Sphere}
 The set of all points in $\mathbb{R}^n$ at a fixed distance $r$ from a center point. An $n$-sphere $S^n$ is the boundary of an $(n+1)$-ball.
 
@@ -229,6 +253,9 @@ The group of $n \times n$ orthogonal matrices with determinant 1. It consists of
 \term{Spec (Spectrum of a Ring)}
 The set of all prime ideals of a commutative ring, equipped with the Zariski topology. It is the basic building block of schemes.
 
+\term{Spectrum (Topology)}
+A sequence of pointed spaces $\{X_n\}$ together with structure maps $S^1 \wedge X_n \to X_{n+1}$, where $\wedge$ denotes the smash product. Spectra form the stable homotopy category, obtained by inverting the suspension functor, and represent generalized (co)homology theories: the sphere spectrum represents stable homotopy groups, Eilenberg--MacLane spectra represent ordinary cohomology, and Thom spectra represent bordism theories. By Brown representability, every reasonable generalized cohomology theory is represented by a spectrum.
+
 \term{Sperner's Theorem}
 The largest antichain in the Boolean lattice of all subsets of an $n$-element set has size $\binom{n}{\lfloor n/2 \rfloor}$, realized by the middle level of subsets of size $\lfloor n/2 \rfloor$ or $\lceil n/2 \rceil$. It is a central result of extremal set theory and can be seen as a sharp version of Dilworth's theorem for the Boolean lattice.
 
@@ -240,6 +267,9 @@ A lottery in which the payoff doubles with each successive head and the expected
 
 \term{Stability}
 The property of a solution or numerical scheme that small perturbations remain small; in ODE theory, solutions starting near an equilibrium remain near it for all time.
+
+\term{Stable Homotopy}
+The theory of homotopy in the limit under suspension. The Freudenthal suspension theorem states that the suspension homomorphism $\pi_k(X) \to \pi_{k+1}(\Sigma X)$ is an isomorphism in a stable range of dimensions, so stable invariants are eventually constant. The stable homotopy category of spectra is the natural home for these phenomena, and stable (co)homology theories are exactly the spectrum representable ones. The stable homotopy groups of spheres $\pi_k^s$ are central objects, studied via the Adams spectral sequence.
 
 \term{Stable Marriage Problem}
 An algorithmic problem of finding a matching between two sets of elements such that no pair of elements would both prefer each other over their current partners.
@@ -271,6 +301,9 @@ A solution of a dynamical system that does not change with time, such as a fixed
 \term{Stochastic Calculus}
 The calculus of integration for stochastic processes, generalizing the Itô integral to integration against general semimartingales. Its core tools are the Itô formula, martingales, quadratic variation, stochastic differential equations, and the Girsanov transformation for changing the probability measure. It gives rigorous meaning to noise-driven dynamics and underpins mathematical finance, where asset prices are modeled by geometric Brownian motion, and the general theory of diffusion processes.
 
+\term{Stochastic Differential Equation}
+An equation of the form $dX_t = b(X_t)\,dt + \sigma(X_t)\,dW_t$, where $W_t$ is Brownian motion and the integrals are interpreted in the Itô or Stratonovich sense. Under Lipschitz and linear-growth conditions on the coefficients, solutions exist and are pathwise unique, yielding a Markov diffusion with infinitesimal generator $b\cdot\nabla + \frac{1}{2}\operatorname{tr}(\sigma\sigma^T D^2)$. SDEs connect to PDEs through the Feynman--Kac formula, to martingale problems through their martingale characterization, and model dynamics in finance and physics.
+
 \term{Stochastic Integral}
 The integral of a stochastic process with respect to a semimartingale, defined in the sense of Itô or Stratonovich.
 
@@ -285,6 +318,9 @@ The largest compact Hausdorff space $\beta X$ that contains a given completely r
 
 \term{Stone--Weierstrass Theorem}
 A generalization of the Weierstrass approximation theorem: any continuous function on a compact Hausdorff space can be uniformly approximated by elements of a dense subalgebra.
+
+\term{Stopping Time}
+A random variable $T$ taking values in the time set of a filtration $(\mathcal{F}_t)$ such that the event $\{T \le t\}$ lies in $\mathcal{F}_t$ for every $t$, expressing that the decision to stop uses only information available up to time $t$, without looking into the future. Stopping times are the admissible random times in the optional stopping theorem for martingales and the strong Markov property. Hitting times, the first times a process enters a set, are the canonical examples.
 
 \term{Stratification}
 The decomposition of a space into a disjoint union of smooth manifolds (strata) of varying dimensions, used in singularity theory.
@@ -334,6 +370,9 @@ The least upper bound of a set. If a set has a maximum, the supremum is that max
 \term{Surjection}
 A function that hits every element of its codomain, also called onto.
 
+\term{Suspension}
+The operation $\Sigma X = X \times I/(X \times \{0,1\})$ that collapses both ends of the cylinder of a space $X$ to points; in the pointed setting, the reduced suspension $X \wedge S^1$ is used. Suspension is left adjoint to the loop space functor, giving the adjunction $[\Sigma X, Y] \cong [X, \Omega Y]$, and it induces the suspension homomorphism $\pi_n(X) \to \pi_{n+1}(\Sigma X)$ in homotopy groups. Iterated suspensions stabilize by the Freudenthal suspension theorem, linking to stable homotopy.
+
 \term{Symmetric}
 A relation $R$ with $xRy \Rightarrow yRx$; a symmetric matrix satisfies $A^T = A$.
 
@@ -372,3 +411,11 @@ A system of differential equations used in biochemical systems theory to model t
 
 \term{Sylow Theorems}
 A set of theorems describing the $p$-subgroups of a finite group $G$: Sylow $p$-subgroups exist, any two are conjugate, and the number $n_p$ of them divides $|G|$ and satisfies $n_p \equiv 1 \pmod p$. They are indispensable for classifying groups of small order and for analyzing the structure of finite groups generally.
+\term{Inclusion Exclusion Principle}
+A counting technique: the size of the union of sets is the sum of their sizes minus the sum of sizes of pairwise intersections plus the sum of triple intersections, and so on. For sets $A_1, \ldots, A_n$: $\left|\bigcup_i A_i\right| = \sum |A_i| - \sum |A_i \cap A_j| + \sum |A_i \cap A_j \cap A_k| - \cdots$. It is used to count derangements, to sieve primes, and in probability.
+\term{Simplex Method}
+An algorithm for solving linear programming problems, due to George Dantzig (1947). It traverses the vertices of the feasible polytope, improving the objective at each step, until an optimum is reached. Though exponential in the worst case, it is extremely efficient in practice. The dual simplex method and interior-point methods are important variants.
+\term{Sieve}
+A technique in number theory for estimating the size of sifted sets of integers. The sieve of Eratosthenes is the prototype. Modern sieves include the Brun sieve, the Selberg sieve, and the large sieve, which bounds sums of the form $\sum_{n} \left|\sum_{a \bmod q} a_n\right|^2$. Sieves are fundamental to problems in additive number theory, including the twin prime conjecture and Goldbach's conjecture.
+\term{Sobolev Theorem}
+Also called the Sobolev embedding theorem: it states that Sobolev spaces $W^{k,p}(\Omega)$ embed continuously (or compactly) into other function spaces such as $L^q$ or $C^m$, depending on the relationship between $k$, $p$, and the dimension $n$. For $kp > n$, functions in $W^{k,p}$ are Hölder continuous. The theorem is essential for the regularity theory of elliptic PDEs.

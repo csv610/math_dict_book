@@ -1,122 +1,128 @@
 \chapter*{B}
 \label{chap:b}
 
+\term{Backward Stability}
+A numerical algorithm is backward stable if its computed answer is the exact answer to a nearby problem. In symbols, the output for input $x$ is the exact result for $x+\Delta x$, where $\|\Delta x\|$ is small compared with $\|x\|$. Applications: backward stability explains why matrix algorithms can be trusted even when round-off error is unavoidable.
+
 \term{Baire Category Theorem}
-A topological space is a Baire space if every countable intersection of open dense sets is dense. Complete metric spaces and locally compact Hausdorff spaces are Baire spaces, so a countable union of nowhere dense sets has empty interior.
+The Baire category theorem says that a complete metric space cannot be built as a countable union of thin sets, called nowhere-dense sets. Equivalently, a countable intersection of open dense sets is dense. Applications: it proves that certain objects exist in analysis and supports the uniform boundedness and open mapping theorems.
+
+\term{Banach Fixed-Point Theorem}
+If a map on a complete metric space brings points strictly closer together, then it has exactly one fixed point, and repeated iteration converges to it. This is also called the contraction mapping principle. Applications: it proves existence and uniqueness of solutions to equations and gives a practical iteration method for finding them.
 
 \term{Banach Space}
-A complete normed vector space, meaning every Cauchy sequence converges. Hilbert spaces are the Banach spaces whose norm comes from an inner product.
+A Banach space is a normed vector space in which every Cauchy sequence converges to a point in the space. Completeness means that a calculation whose successive approximations become arbitrarily close does not leave the space. Applications: Banach spaces provide the setting for infinite-dimensional approximation, integral equations, optimization, and differential equations.
 
 \term{Banach--Steinhaus Theorem}
-Also called the uniform boundedness principle, it states that for a family of bounded linear operators on a Banach space, pointwise boundedness implies uniform boundedness on the unit ball. It is a consequence of Baire's theorem.
+The uniform boundedness principle says that a family of bounded linear operators on a Banach space is uniformly bounded on the unit ball if each individual vector is sent to a bounded family of values. Its proof uses the Baire category theorem. Applications: it prevents hidden blow-up in families of approximation operators and is useful in functional analysis and numerical methods.
 
 \term{Banach--Tarski Paradox}
-A unit ball in $\mathbb{R}^3$ can be decomposed into finitely many pieces and reassembled, using only rigid motions, into two disjoint copies of the original ball. The pieces are necessarily non-measurable, and the construction uses the axiom of choice.
+Using a finite number of non-measurable pieces and rigid motions, a solid ball in three-dimensional space can be reassembled into two balls of the same size. This does not violate conservation of volume because the pieces have no well-defined volume; the construction uses the axiom of choice. Applications: the paradox clarifies the limits of assigning volume to arbitrary sets and the role of symmetry in measure theory.
 
 \term{Base Case}
-In induction, the initial case that is verified directly. Once the base case holds and the induction step is proved, the statement holds for all natural numbers.
+The base case is the first statement checked in a proof by mathematical induction. After it is established, an induction step shows that truth for one integer implies truth for the next. Applications: base cases are essential in recursive algorithms, proofs about sequences, and definitions of data structures.
 
 \term{Basis}
-A linearly independent spanning set of a vector space. Every vector space has a basis, and any two bases have the same cardinality, called the dimension.
+A basis of a vector space is a linearly independent set that spans the whole space. Every vector has one and only one finite linear combination of basis vectors. Applications: coordinates, Fourier expansions, finite-element methods, and computer graphics all represent objects using a suitable basis.
 
 \term{Bayes' Theorem}
-The formula $P(A \mid B) = \frac{P(B \mid A) P(A)}{P(B)}$ relating conditional probabilities. It is the foundation of Bayesian statistics and inference.
+Bayes' theorem relates conditional probabilities: $P(A\mid B)=P(B\mid A)P(A)/P(B)$ when $P(B)>0$. It updates the probability of a hypothesis after new evidence is observed. Applications: Bayesian statistics, medical diagnosis, spam filtering, fault detection, and machine learning use this update rule.
 
 \term{Bernoulli Numbers}
-The rational numbers $B_n$ defined by $\frac{x}{e^x - 1} = \sum_{n \geq 0} B_n \frac{x^n}{n!}$. They appear in the Euler--Maclaurin formula and in the values of the zeta function at negative integers.
+The Bernoulli numbers $B_n$ are defined by $x/(e^x-1)=\sum_{n\ge0}B_nx^n/n!$. They occur in formulas for sums of powers and in the Euler--Maclaurin formula. Applications: they improve numerical integration and connect combinatorics with special values of the Riemann zeta function.
 
 \term{Bernoulli Trial}
-An experiment with exactly two outcomes, conventionally called success and failure, with probabilities $p$ and $1-p$. Repeating independent Bernoulli trials gives a Bernoulli process.
+A Bernoulli trial is an experiment with two possible outcomes, usually called success and failure, with probabilities $p$ and $1-p$. Independent repetitions form a Bernoulli process. Applications: Bernoulli trials model yes/no tests, defective/nondefective items, clicks, infections, and binary classification outcomes.
 
 \term{Berry's Paradox}
-The phrase "the smallest positive integer not definable in fewer than twenty words" seems to define a number in fewer than twenty words, a contradiction. It illustrates the tension between definition and countability and relates to definability arguments in logic.
+Berry's paradox arises from the phrase “the smallest positive integer not definable in fewer than twenty words.” The phrase appears to define such an integer in fewer than twenty words, creating a contradiction between informal language and formal definitions. Applications: it motivates precise languages in logic, computer science, and the study of what can be described or computed.
 
 \term{Bertrand's Paradox}
-Different natural procedures for choosing a "random chord" of a circle (by endpoint, by midpoint, by distance from center) yield different probabilities for a chord being longer than a side of the inscribed equilateral triangle. It highlights the ambiguity of uniform randomness without a precise specification.
+Bertrand's paradox shows that the probability of a randomly chosen chord of a circle being longer than a side of an inscribed equilateral triangle depends on how “random chord” is defined. Applications: it teaches that a probability model must specify its sampling procedure, a principle important in statistics, simulation, and scientific experiments.
 
 \term{Besov Space}
-A scale of function spaces $B^s_{p,q}$, with smoothness $s \in \mathbb{R}$ and $1 \le p, q \le \infty$, whose norms measure smoothness through the $\ell^q$ norm over dyadic scales of the $\ell^p$ norms of the Littlewood--Paley or wavelet blocks of $f$. Sobolev spaces sit inside the scale, with $W^{k,p} = B^k_{p,p}$ for integer $k$ in many settings, and Besov spaces interpolate between them. They are the natural spaces for the regularity theory of PDEs, for Fourier restriction estimates, and for nonlinear approximation in harmonic analysis.
+Besov spaces $B^s_{p,q}$ measure the smoothness of functions using how their detail changes across scales. The parameter $s$ describes smoothness, while $p$ and $q$ describe size and how different scales are combined; Sobolev spaces are important special cases. Applications: Besov spaces are used in partial differential equations, wavelet compression, image denoising, and nonlinear approximation.
 
 \term{Bessel Function}
-The solutions $J_n$ and $Y_n$ of Bessel's differential equation $x^2 y'' + x y' + (x^2 - n^2) y = 0$. They are used to solve boundary value problems in cylindrical coordinates.
+Bessel functions solve the differential equation $x^2y''+xy'+(x^2-n^2)y=0$. The functions $J_n$ and $Y_n$ are its standard independent solutions. Applications: they describe vibrations of circular membranes, heat flow in cylinders, electromagnetic waves, and acoustic modes.
 
 \term{Bijection}
-A function that is both injective and surjective, pairing each element of its domain with exactly one element of its codomain and vice versa.
+A bijection is a function that is both one-to-one and onto: every input has a different output, and every target is reached exactly once. A bijection proves that two sets have the same number of elements, even when they are infinite. Applications: bijections are used in counting, data encoding, coordinate changes, and proofs about infinite sets.
 
 \term{Bilinear Form}
-A map $B: V \times W \to k$ that is linear in each argument separately. When $V = W$ and $B(v,w) = B(w,v)$, the form is symmetric.
+A bilinear form is a function $B:V\times W\to k$ that is linear in each input when the other is held fixed. Inner products and matrix expressions $x^TAy$ are examples. Applications: bilinear forms describe energy, angles, quadratic optimization, finite-element models, and the geometry of conic sections.
 
 \term{Binary Operation}
-A function $f: S \times S \to S$ combining two elements of a set to produce a third. Group, ring, and lattice operations are binary operations.
+A binary operation combines two elements of a set and returns an element of the same set: $*:S\times S\to S$. Addition and multiplication are examples, but the operation need not be commutative or associative. Applications: binary operations define the basic structure of groups, rings, logic gates, and algebraic data types.
 
 \term{Binary Relation}
-A set of ordered pairs $(a, b)$ with $a \in A$, $b \in B$, expressing a relationship between elements of two sets. Functions are a special class of binary relations.
+A binary relation between sets $A$ and $B$ is a collection of ordered pairs $(a,b)$ describing which elements are related. A function is a special relation in which each $a$ is paired with exactly one $b$. Applications: relations represent networks, database links, ordering, logical statements, and allowable transitions in algorithms.
 
 \term{Binomial Coefficient}
-The number $\binom{n}{k} = \frac{n!}{k!(n-k)!}$ of ways to choose $k$ elements from a set of $n$, also the coefficient of $x^k$ in $(1+x)^n$.
+The binomial coefficient $\binom nk=n!/[k!(n-k)!]$ counts the ways to choose $k$ objects from $n$ without regard to order. It is also the coefficient of $x^ky^{n-k}$ in $(x+y)^n$. Applications: binomial coefficients occur in probability, combinatorics, polynomial expansion, and error-correcting codes.
 
 \term{Binomial Distribution}
-The distribution of the number of successes in $n$ independent Bernoulli trials, with probability mass function $P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}$.
+The binomial distribution gives the probability of $k$ successes in $n$ independent Bernoulli trials: $P(X=k)=\binom nkp^k(1-p)^{n-k}$. Its parameters are the number of trials $n$ and success probability $p$. Applications: it models counts such as successful tests, conversions, defects, and disease cases in a fixed sample.
 
 \term{Binomial Theorem}
-The expansion $(x + y)^n = \sum_{k=0}^n \binom{n}{k} x^{n-k} y^k$. It generalises to arbitrary real exponents via the binomial series.
+The binomial theorem expands $(x+y)^n$ as $\sum_{k=0}^n\binom nkx^{n-k}y^k$. It converts a power of a sum into a sum of simpler terms. Applications: it is used in algebra, probability, numerical approximations, and the derivation of many combinatorial identities.
 
 \term{Bipartite Graph}
-A graph whose vertices can be partitioned into two sets such that every edge joins a vertex in one set to a vertex in the other. Bipartite graphs have no odd cycles.
+A bipartite graph has its vertices divided into two sets, with every edge joining the two different sets. It has no odd-length cycle. Applications: bipartite graphs model job assignments, matching students to projects, network flow, recommendation systems, and molecular structures.
 
 \term{Birch--Swinnerton-Dyer Conjecture}
-The conjecture asserting that for an elliptic curve $E$ over $\mathbb{Q}$ the order of vanishing of its Hasse--Weil $L$-function $L(E,s)$ at $s=1$, the analytic rank, equals the rank of the finitely generated abelian group $E(\mathbb{Q})$, the Mordell--Weil group. It further predicts the leading coefficient of $L(E,s)$ at $s=1$ in terms of the regulator, the Tate--Shafarevich group, and the Tamagawa numbers. Verified in many rank-zero and rank-one cases, it is one of the seven Millennium Prize Problems and remains open in general.
+For an elliptic curve $E$ over $\mathbb Q$, this conjecture relates the number of independent rational points on $E$ to how many times its $L$-function vanishes at $s=1$. It also predicts the leading coefficient using arithmetic quantities such as the regulator and Tate--Shafarevich group. Applications: it links analytic formulas with rational solutions and guides research in arithmetic geometry.
 
 \term{Birthday Paradox}
-With only 23 people in a room the probability that two share a birthday exceeds $1/2$, and with 70 it exceeds $0.999$, far smaller than intuition suggests. The exact value is $1 - \prod_{k=0}^{n-1}(365-k)/365$.
-
-\term{Borel Measure}
-A measure defined on the Borel $\sigma$-algebra of a topological space. On Polish spaces and on locally compact Hausdorff spaces, finite Borel measures are inner regular on open sets and outer regular on Borel sets, and regular measures coincide with tight ones. Lebesgue measure restricted to the Borel sets of $\mathbb{R}^n$ is the fundamental example. By the Riesz representation theorem, positive linear functionals on compactly supported continuous functions correspond bijectively to regular Borel measures.
-
-\term{Borel Set}
-A set that can be obtained from open sets by countably many operations of union, intersection, and complement. Borel sets are measurable for every measure on the reals.
+In a group of 23 people, the probability that two share a birthday is already greater than $1/2$, assuming 365 equally likely birthdays. The probability of no match among $n$ people is $\prod_{k=0}^{n-1}(365-k)/365$. Applications: the effect is important in collision probabilities, hash tables, computer security, and the design of identifiers.
 
 \term{Borel--Cantelli Lemmas}
-Two lemmas about events $E_n$ in a probability space. If $\sum_n P(E_n) < \infty$, then infinitely many of the events occur with probability $0$; conversely, if the events are independent and $\sum_n P(E_n) = \infty$, then infinitely many occur with probability $1$.
+If events $E_n$ satisfy $\sum P(E_n)<\infty$, then with probability one only finitely many of them occur. If the events are independent and $\sum P(E_n)=\infty$, then infinitely many occur with probability one. Applications: these lemmas test whether rare events eventually stop occurring and help prove convergence in probability theory.
+
+\term{Borel Measure}
+A Borel measure assigns sizes or probabilities to Borel sets, the sets generated from open sets by countable unions, intersections, and complements. On familiar spaces such as $\mathbb R^n$, it includes the usual notions of length, area, and volume. Applications: Borel measures form the foundation of probability, integration, and geometric measurement.
+
+\term{Borel Set}
+A Borel set is built from open sets using countable unions, countable intersections, and complements. The Borel sets form the smallest $\sigma$-algebra containing all open sets. Applications: intervals, regions, and countable combinations of them can be assigned probabilities or measures in analysis and statistics.
 
 \term{Borsuk--Ulam Theorem}
-The theorem that every continuous map from the $n$-sphere $S^n$ to $\mathbb{R}^n$ identifies a pair of antipodal points, so the $n$-sphere cannot be embedded in $\mathbb{R}^n$. In two dimensions it says some pair of antipodal points on a sphere have the same value under any continuous real-valued map on the surface, which implies the ham sandwich theorem.
+Every continuous map from the sphere $S^n$ to $\mathbb R^n$ gives the same value at some pair of opposite points. For $n=2$, one consequence is that at some pair of antipodal points on Earth, temperature and atmospheric pressure are simultaneously equal. Applications: the theorem supports fair-division results such as the ham-sandwich theorem and studies of continuous data on spheres.
 
 \term{Bound}
-An upper or lower constraint on the values of a function, sequence, or set. A set is bounded above if it has an upper bound, bounded if it has both upper and lower bounds.
+A bound is a number that limits a set, sequence, or function from above or below. A set is bounded if it has both an upper and a lower bound. Applications: bounds control error, guarantee stability, establish convergence, and quantify worst-case performance in algorithms.
 
 \term{Boundary}
-For a set $S$ in a topological space, the set of points whose every neighbourhood meets both $S$ and its complement. The boundary of a manifold is its edge.
+The boundary of a set $S$ consists of points whose every neighborhood meets both $S$ and its complement. For an interval $[0,1]$, the boundary is $\{0,1\}$. Applications: boundaries specify interfaces, constraints, and edge conditions in geometry, image processing, and differential equations.
 
 \term{Boundary-value Problem}
-A differential equation together with conditions imposed on the solution at the boundary of its domain, such as Dirichlet or Neumann conditions.
+A boundary-value problem asks for a solution of a differential equation subject to conditions on the boundary of a domain, such as fixed values (Dirichlet conditions) or fixed normal derivatives (Neumann conditions). Applications: it models temperature in a solid, vibration of a membrane, fluid flow, and electrostatic fields.
 
 \term{Bounded Function}
-A function whose image is contained in a bounded interval, so there exist $m, M$ with $m \leq f(x) \leq M$ for all $x$ in its domain.
+A function is bounded if all its values lie between two fixed numbers: $m\le f(x)\le M$. For example, sine is bounded between $-1$ and $1$. Applications: boundedness prevents uncontrolled output and is used in stability analysis, probability, optimization, and signal processing.
 
 \term{Bounded Linear Operator}
-A linear map $T : X \to Y$ between normed spaces that is continuous, equivalently bounded: there is $C$ with $\|Tx\|_Y \le C\|x\|_X$ for all $x$, so $T$ is bounded on the unit ball and $\|T\| = \sup_{\|x\| \le 1}\|Tx\|$ defines the operator norm. The space of such operators between Banach spaces is a Banach space. The Banach--Steinhaus theorem, the open mapping theorem, and the bounded inverse theorem are fundamental consequences of these hypotheses, and the continuous adjoint $T^*$ exists whenever the spaces are normed.
+A linear map $T:X\to Y$ between normed spaces is bounded if $\|Tx\|\le C\|x\|$ for some constant $C$. For linear maps, boundedness is equivalent to continuity, and $\|T\|=\sup_{\|x\|\le1}\|Tx\|$ measures the largest amplification. Applications: operator norms quantify sensitivity in differential equations, numerical linear algebra, and signal transformations.
 
 \term{Boy or Girl Paradox}
-The answer to the probability question about two children changes depending on how the information "one is a girl" is obtained: if a random child is a girl the probability of two girls is $1/2$, but if "at least one is a girl" is asserted it is $1/3$. The difference is a subtlety of conditional probability.
+The probability that two children are both girls depends on how the information “at least one is a girl” was obtained. Under the usual equally likely interpretation it is $1/3$, while choosing a random child and finding that child is a girl gives $1/2$. Applications: the paradox teaches careful conditioning, which is essential in medical testing, surveys, and statistical reporting.
 
 \term{Braess's Paradox}
-Adding a new road (or capacity) to a congested network can increase every traveller's travel time, because selfish routing equilibria need not improve with more options. It is a classic counterintuitive result in network flow and game theory.
+Adding a road to a congested network can make every traveller's journey longer because selfish route choices can create a worse equilibrium. Applications: the paradox informs traffic planning, communication networks, supply chains, and the design of systems where local decisions affect global performance.
 
 \term{Branch Point}
-A point of the domain of a multi-valued analytic function at which the function cannot be defined continuously in any neighbourhood without values repeating, as at $z = 0$ for $\sqrt{z}$ or $\log z$.
+A branch point is a point around which a multi-valued complex function, such as $\sqrt z$ or $\log z$, cannot be made single-valued and continuous without choosing a branch cut. Going once around the point may change the value. Applications: branch points occur in complex integration, wave propagation, fluid flow, and mathematical physics.
 
 \term{Brouwer Fixed-Point Theorem}
-The theorem that every continuous map from a closed ball in $\mathbb{R}^n$ to itself has a fixed point. It is a landmark result in topology with applications in economics and PDE theory.
+Every continuous map from a closed ball in $\mathbb R^n$ to itself has at least one fixed point $f(x)=x$. Continuity and the fact that the map stays inside the ball are essential. Applications: the theorem proves equilibrium existence in economics and game theory and helps establish solutions of nonlinear equations.
 
 \term{Brownian Motion}
-The continuous-time stochastic process with independent stationary Gaussian increments, the mathematical model of random diffusion.
+Brownian motion is a continuous random process whose independent increments are normally distributed and whose variance grows with elapsed time. It is the mathematical model of random diffusion. Applications: it models molecular motion, particle diffusion, financial price models, heat transport, and stochastic differential equations.
 
-\term{Burali-Forti Paradox}
-The set of all ordinal numbers would itself be an ordinal, strictly larger than every member including itself, a contradiction. It shows the ordinals form a proper class, and motivated the ZF axioms with rank-based set formation.
+\term{Burali--Forti Paradox}
+The collection of all ordinal numbers cannot be a set: if it were, it would have an ordinal larger than every ordinal in the collection, including itself. This contradiction helped motivate modern axioms that distinguish sets from proper classes. Applications: it clarifies the foundations of set theory and prevents uncontrolled definitions of “the set of everything.”
 
 \term{Burnside's Lemma}
-The formula $|X/G| = \frac{1}{|G|}\sum_{g \in G} |X^g|$ for the number of orbits of a group action, where $X^g$ is the fixed set of $g$. It is used to count distinct objects under symmetry.
+If a finite group $G$ acts on a finite set $X$, the number of distinct orbits is $|X/G|=|G|^{-1}\sum_{g\in G}|X^g|$, where $X^g$ is the set fixed by $g$. It counts objects while treating symmetric copies as the same. Applications: it counts necklaces, colorings, chemical structures, and configurations under rotation or reflection.
 
 \term{Busy Beaver}
-The maximum number of steps (or 1s written) a halting Turing machine with $n$ states can produce. The function $\mathrm{BB}(n)$ grows faster than any computable function and is not computable, a striking instance of simple programs with enormous outputs.
+The Busy Beaver function gives the largest number of steps, or ones written, by any halting Turing machine with a fixed number of states. It grows faster than every computable function and therefore cannot itself be computed by an algorithm. Applications: Busy Beaver illustrates the limits of computation, undecidability, and the difference between simple programs and predictable behavior.

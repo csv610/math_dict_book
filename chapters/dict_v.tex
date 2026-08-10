@@ -95,7 +95,7 @@ A polytope defined as the convex hull of a finite set of vertices (V-representat
 The second central moment of a random variable, $\operatorname{Var}(X) = \mathbb{E}[(X - \mu)^2]$. It measures the dispersion of a distribution around its mean.
 
 \term{V-statistic}
-A type of la Place-style statistic that generalizes the variance and covariance to higher-order interactions in a sample.
+A V-statistic is an average of a function over all ordered tuples of observations, allowing repeated observations. For a kernel $h$ of $m$ variables, it has the form $n^{-m}\sum h(X_{i_1},\ldots,X_{i_m})$, where the sum ranges over all indices. Applications: V-statistics estimate moments, dependence measures, and goodness-of-fit quantities from data.
 
 \term{V-fold Cross Validation}
 A technique in machine learning where a dataset is split into $V$ folds; the model is trained on $V-1$ folds and tested on the remaining one, repeating this process $V$ times.
@@ -111,3 +111,10 @@ A specific type of norm used in the study of certain operator algebras or sequen
 
 \term{von Neumann Algebra}
 A C*-algebra that is also closed in the weak operator topology; equivalently, the algebra of operators commuting with the commutant of a Hilbert space representation.
+\term{Shortest Path}
+A path between two vertices in a weighted graph that minimises the sum of edge weights. Dijkstra's algorithm solves the single-source shortest path problem in graphs with non-negative weights. The Bellman--Ford algorithm handles negative weights and detects negative cycles. In unweighted graphs, breadth-first search finds shortest paths.
+\term{Universal Property}
+A characterisation of an object by the unique existence of morphisms making certain diagrams commute, rather than by an explicit construction. Universal properties define objects up to unique isomorphism. Examples include products, coproducts, free objects, completions, and adjoints. Category theory is built on the language of universal properties.
+
+\term{Vitali Set}
+A subset of the real numbers that is not Lebesgue measurable, constructed by Vitali using the axiom of choice. The construction partitions $\mathbb{R}$ into equivalence classes under the relation $x \sim y \iff x - y \in \mathbb{Q}$, selects one representative from each class in $[0,1]$, and translates by rationals to produce disjoint copies. If the set were measurable, translation invariance of Lebesgue measure would lead to a contradiction.

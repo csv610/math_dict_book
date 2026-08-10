@@ -4,6 +4,9 @@
 \term{Gabriel's Horn}
 The surface of revolution of $y = 1/x$ for $x \geq 1$ about the $x$-axis. Its volume is finite (equal to $\pi$) but its surface area is infinite, so the horn can be filled with a finite amount of paint while no finite amount suffices to cover it. It illustrates that volume and area behave independently and connects to improper integrals and convergence.
 
+\term{GAGA}
+Serre's comparison principle asserting that for complex projective varieties the coherent analytic sheaves and their cohomology coincide with their algebraic counterparts; the Riemann existence theorem arises as a special case. The theorem bridges algebraic and analytic geometry, showing that the categories of algebraic and analytic coherent sheaves are equivalent and that the corresponding algebraic and analytic cohomology spaces are canonically isomorphic.
+
 \term{Galois Extension}
 A normal, separable field extension; the fixed field of its full automorphism group.
 
@@ -25,6 +28,9 @@ The function $\Gamma(s) = \int_0^\infty t^{s-1} e^{-t}\, dt$ generalising the fa
 \term{Gâteaux Derivative}
 The directional derivative of a map between normed spaces, defined by a limit along a line.
 
+\term{Gauge Theory}
+Gauge theory is the study of connections and curvature on principal bundles, whose fields are governed by invariance under gauge transformations, the group of vertical automorphisms of the bundle. Its central equations are the Yang--Mills equations, with finite-energy solutions on four-manifolds given by instantons; the moduli space of anti-self-dual connections yields the Donaldson invariants of smooth four-manifolds. Gauge theory provides the mathematical formulation of the standard model of particle physics.
+
 \term{Gaussian Curvature}
 The Gaussian curvature $K$ of a surface at a point is the product of the principal curvatures $\kappa_1 \kappa_2$. Equivalently, $K = \det(dN)$ where $N$ is the Gauss map. For a surface in $\mathbb{R}^3$, $K = \frac{LN - M^2}{EG - F^2}$ using the first and second fundamental forms. By Theorema Egregium, $K$ is intrinsic (depends only on the first fundamental form). The Gauss--Bonnet theorem: $\int_S K\,dA = 2\pi\chi(S)$. Positive curvature: sphere; zero: plane, cylinder; negative: saddle, hyperbolic plane.
 
@@ -37,6 +43,12 @@ Gaussian elimination solves linear systems $Ax = b$ by reducing $A$ to row echel
 \term{Gaussian Integers}
 The Gaussian integers $\mathbb{Z}[i] = \{a+bi : a,b \in \mathbb{Z}\}$ form a Euclidean domain with norm $N(a+bi) = a^2+b^2$. They are a UFD; primes are either rational primes $p \equiv 3 \pmod{4}$ (remain prime), $p \equiv 1 \pmod{4}$ (split as $p = \pi \bar{\pi}$), or $2 = -i(1+i)^2$ (ramifies). The units are $\{\pm 1, \pm i\}$. Gaussian integers are used to prove Fermat's two-square theorem: $p = x^2+y^2$ iff $p \equiv 1 \pmod{4}$.
 
+\term{Gaussian Process}
+A Gaussian process is a stochastic process all of whose finite-dimensional distributions are multivariate normal, so it is determined by a mean function $m(x)$ and a covariance kernel $k(x,y)$. Sample paths are continuous under regularity conditions on $k$, and the process is intimately tied to the reproducing kernel Hilbert space it generates. Gaussian process regression performs Bayesian inference over functions in machine learning. Canonical examples include Brownian motion and the Ornstein--Uhlenbeck process.
+
+\term{Gaussian Quadrature}
+A highly efficient numerical integration method that selects optimal sample points (nodes) and weights to exactly integrate polynomials of a certain degree. For example, Gauss--Legendre quadrature uses roots of Legendre polynomials to provide the best possible accuracy for a given number of points over a finite interval.
+
 \term{Gauss--Bonnet Theorem}
 The Gauss--Bonnet theorem for a compact 2-manifold $S$ without boundary: $\int_S K\,dA = 2\pi\chi(S)$, where $K$ is Gaussian curvature and $\chi$ is Euler characteristic. For a surface with boundary, $\int_S K\,dA + \int_{\partial S} k_g\,ds = 2\pi\chi(S)$ where $k_g$ is geodesic curvature. This links local geometry (curvature) to global topology (Euler characteristic). For polyhedral surfaces, curvature concentrates at vertices: angle defect $2\pi - \sum \theta_i$.
 
@@ -45,6 +57,9 @@ Gauss's law states that the electric flux through a closed surface is proportion
 
 \term{Gauss's Theorem (Divergence Theorem)}
 The divergence theorem (Gauss's theorem): $\int_V (\nabla \cdot \mathbf{F})\,dV = \oint_{\partial V} \mathbf{F} \cdot d\mathbf{S}$ for a vector field $\mathbf{F}$ on a volume $V$ with boundary $\partial V$. This relates volume integral of divergence to surface integral of flux. In coordinates: $\int_V \frac{\partial F^i}{\partial x^i}\,dV = \int_{\partial V} F^i n_i\,dS$. Special cases: Green's identities in PDE theory, Gauss's law in electromagnetism. Generalises to manifolds via Stokes' theorem.
+
+\term{Gelfand Triple}
+A Gelfand triple, or rigged Hilbert space, is a chain $\Phi \subset H \subset \Phi^*$ in which $\Phi$ is a nuclear space densely and continuously embedded in a Hilbert space $H$, and $\Phi^*$ is the dual of $\Phi$ containing $H$. It provides the functional-analytic setting for the Schwartz distributions and, via the nuclear spectral theorem, for generalized eigenfunctions of self-adjoint operators, enabling a spectral decomposition where eigenvalues may lie in the continuous spectrum.
 
 \term{Generalized Eigenspace}
 The subspace $\ker (A - \lambda I)^m$ for sufficiently large $m$, spanned by the generalized eigenvectors of $A$ for the eigenvalue $\lambda$.
@@ -89,7 +104,10 @@ The smallest value attained by a function over its entire domain.
 Gödel's completeness theorem (1929): first-order logic is complete. A formula is provable from a set of axioms iff it is true in every model of those axioms. Equivalently, a theory is consistent iff it has a model. This is distinct from the incompleteness theorem (1931). The proof constructs a model from a maximal consistent set of formulas using the Lindenbaum--Henkin method. Compactness theorem: a set of sentences has a model iff every finite subset does.
 
 \term{Gödel's Incompleteness Theorems}
-First Incompleteness Theorem (1931): Any consistent formal system containing Peano arithmetic is incomplete: there are true statements about natural numbers unprovable in the system. Second Incompleteness Theorem: No such system can prove its own consistency. Gödel constructed a statement ``I am not provable'' using self-reference via G\"odel numbering. These theorems showed the limitations of Hilbert's program to formalise all mathematics.
+First Incompleteness Theorem (1931): Any consistent formal system containing Peano arithmetic is incomplete: there are true statements about natural numbers unprovable in the system. Second Incompleteness Theorem: No such system can prove its own consistency. Gödel constructed a statement ``I am not provable'' using self-reference via Gödel numbering. These theorems showed the limitations of Hilbert's program to formalise all mathematics.
+
+\term{Gödel Numbering}
+A method of assigning a unique natural number to each symbol, formula, and proof in a formal system, enabling syntactic statements about the system to be expressed arithmetically. The assignment proceeds by encoding each symbol as a number, then representing a finite sequence of symbols as the product of primes raised to successive powers. This arithmetisation of syntax is the key technical step in proving Gödel's incompleteness theorems and Turing's undecidability of the halting problem.
 
 \term{Goldbach's Conjecture}
 Goldbach's conjecture (1742): every even integer $n \geq 4$ is the sum of two primes. The weak Goldbach conjecture (every odd $n \geq 7$ is sum of three primes) was proved by Helfgott (2013). The strong conjecture remains open. Vinogradov (1937) proved all sufficiently large odd integers are sum of three primes. Chen (1973) proved every sufficiently large even integer is sum of a prime and a number with at most two prime factors. Computational verification up to $4 \times 10^{18}$.
@@ -109,6 +127,9 @@ The vector of first partial derivatives $\nabla f = (\partial f/\partial x_1, \l
 \term{Graph}
 A mathematical structure of vertices and edges, either undirected or directed, modelling pairwise relations.
 
+\term{Graph Coloring}
+A graph coloring is an assignment of colors to the vertices (or edges) of a graph such that adjacent vertices receive distinct colors. The chromatic number $\chi(G)$ is the least number of colors needed; the four-color theorem asserts $\chi(G) \leq 4$ for every planar graph, while Brooks' theorem bounds $\chi(G) \leq \Delta(G)$ unless $G$ is a complete graph or an odd cycle. Determining the chromatic number is NP-hard, yet coloring problems arise in scheduling and register allocation.
+
 \term{Graph Laplacian}
 The matrix $L = D - A$ for a graph, whose spectrum encodes connectivity and is used in spectral graph theory and clustering.
 
@@ -120,6 +141,9 @@ The Grassmannian $\operatorname{Gr}(k,n)$ (or $\operatorname{Gr}(k,V)$) is the s
 
 \term{Gray Code}
 A Gray code is an ordering of $2^n$ binary strings of length $n$ such that adjacent strings differ in exactly one bit. The binary-reflected Gray code is constructed recursively: $G_1 = (0,1)$; $G_{n+1} = (0G_n, 1 \text{reverse}(G_n))$. Gray codes minimise transitions in analog-to-digital conversion, solve the Chinese rings puzzle, and generate Hamiltonian cycles on hypercubes. The $k$-th Gray code is $k \oplus \lfloor k/2 \rfloor$.
+
+\term{Green Function}
+A Green function is the kernel $G(x,y)$ solving a linear differential equation $L u = f$ with specified boundary conditions as $u(x) = \int G(x,y) f(y)\,dy$; formally $L G(x,y) = \delta(x-y)$, so $G$ represents the inverse of $L$. For elliptic operators it is constructed from fundamental solutions by enforcing the boundary conditions. The Green function propagates information from the source $f$ to the solution $u$. Examples include the Laplacian Green function, the heat kernel, and retarded propagators.
 
 \term{Green's Function}
 The Green's function $G(x,y)$ for a linear differential operator $L$ satisfies $L G(x,y) = \delta(x-y)$ with appropriate boundary conditions. The solution to $L u = f$ is $u(x) = \int G(x,y) f(y)\,dy$. For the Laplacian on $\mathbb{R}^n$, $G(x,y) = \frac{1}{n(n-2)\omega_n} |x-y|^{2-n}$ ($n \geq 3$) or $\frac{1}{2\pi} \log |x-y|$ ($n=2$). Green's functions are fundamental in PDE theory, potential theory, and quantum field theory (propagators).
@@ -157,6 +181,9 @@ The generalisation of Serre duality to coherent sheaves on arbitrary schemes, vi
 \term{Grothendieck Group}
 The Grothendieck group $K_0(\mathcal{C})$ of an additive category $\mathcal{C}$ is the abelian group generated by isomorphism classes $[X]$ of objects with relations $[X] = [Y] + [Z]$ for every short exact sequence $0 \to Y \to X \to Z \to 0$. For a ring $R$, $K_0(R)$ is built from finitely generated projective modules. $K_0(\text{Var}_k)$ is generated by varieties with $[X] = [Y] + [X \setminus Y]$ for closed $Y \subset X$. Grothendieck groups are universal for additive invariants (Euler characteristic, rank, Chern classes).
 
+\term{Grothendieck--Riemann--Roch}
+The Grothendieck--Riemann--Roch theorem computes the pushforward of the Chern character along proper morphisms between schemes: for a proper morphism $f: X \to Y$, $\operatorname{ch}(f_! \mathcal{E}) \cdot \operatorname{td}(Y) = f_*(\operatorname{ch}(\mathcal{E}) \cdot \operatorname{td}(X))$ in the Chow ring tensored with $\mathbb{Q}$, where $\operatorname{td}$ is the Todd class correction. It generalizes the Hirzebruch--Riemann--Roch formula and yields Euler characteristics of line bundles.
+
 \term{Grothendieck Topology}
 A Grothendieck topology on a category $\mathcal{C}$ specifies covering families $\{U_i \to U\}$ satisfying: (1) isomorphisms are covers, (2) pullbacks of covers are covers, (3) composites of covers are covers. This generalises the notion of open covers from topological spaces. A site is a category with a Grothendieck topology. Sheaves on sites define cohomology (étale, fppf, fpqc, crystalline). Grothendieck topologies are the foundation of modern algebraic geometry and the Weil conjectures.
 
@@ -166,8 +193,16 @@ Grothendieck's six operations in derived categories of sheaves: $f_*$ (pushforwa
 \term{Grunsky Coefficients}
 The Grunsky coefficients $c_{mn}$ of a univalent function $f(z) = z + a_2 z^2 + \cdots$ on the unit disk are defined by $\log \frac{f(z) - f(w)}{z-w} = -\sum_{m,n \geq 1} c_{mn} z^m w^n$. The Grunsky inequalities state that the matrix $(c_{mn})$ is positive semi-definite. They provide necessary and sufficient conditions for univalence and are used in the proof of the Bieberbach conjecture ($|a_n| \leq n$ for univalent functions).
 
-\term{G\"urtler's Theorem}
+\term{Gurtler's Theorem}
 G\"urtler's theorem in differential geometry: a complete Riemannian manifold with non-positive sectional curvature is diffeomorphic to $\mathbb{R}^n$ (Hadamard--Cartan theorem). More generally, if the manifold has no conjugate points, the universal cover is diffeomorphic to $\mathbb{R}^n$. This relates global topology to curvature assumptions. The theorem is fundamental in comparison geometry and the study of CAT(0) spaces.
 
 \term{Gyrovector Space}
 A gyrovector space (Ungar, 2001) is an algebraic structure for hyperbolic geometry analogous to vector spaces for Euclidean geometry. It has ``gyrovector addition'' $\oplus$ (not associative but gyroassociative) and scalar multiplication. The gyrogroup axioms include the gyrocommutative law $a \oplus b = \operatorname{gyr}[a,b](b \oplus a)$ where $\operatorname{gyr}$ is the Thomas precession. Gyrovector spaces provide a vector-like formalism for Einstein's velocity addition in special relativity.
+
+\term{Gysin Sequence}
+The Gysin sequence is the long exact sequence in cohomology associated to a sphere bundle $S^k \to E \to B$ (or, dually, to a smooth closed embedding), relating the cohomology of the total space, the base, and the fiber. It takes the form $\cdots \to H^i(E) \to H^{i-k}(B) \xrightarrow{e} H^{i+1}(B) \to H^{i+1}(E) \to \cdots$, where $e$ is the cup product with the Euler class, the Gysin homomorphism. It is used for sphere bundles, links, and projective bundles.
+\term{Articulation Point}
+See Cut Vertex. An articulation point or cut vertex is a vertex whose removal increases the number of connected components. The term is standard in graph theory and network analysis.
+\term{Canonical Transformation}
+A change of coordinates in phase space that preserves the form of Hamilton's equations. In symplectic geometry, a canonical transformation is a symplectomorphism: a diffeomorphism $\phi$ such that $\phi^*\omega = \omega$, where $\omega = \sum dq_i \wedge dp_i$ is the standard symplectic form. Generating functions provide concrete realisations.
+

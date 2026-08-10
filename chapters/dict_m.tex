@@ -7,6 +7,9 @@ The Taylor series of a function at $x = 0$: $f(x) = \sum_{n=0}^\infty \frac{f^{(
 \term{Manifold}
 A topological space that locally resembles Euclidean space $\mathbb{R}^n$. For every point $p$, there exists a neighborhood $U$ and a homeomorphism $\varphi: U \to \mathbb{R}^n$. Manifolds can be smooth, Riemannian, complex, or symplectic.
 
+\term{Metric Tensor}
+A symmetric, non-degenerate $(0, 2)$-tensor field on a manifold that defines an inner product on each tangent space, allowing the measurement of lengths, angles, and volumes.
+
 \term{Map}
 A synonym for function; a rule associating to each element of one set an element of another.
 
@@ -53,10 +56,13 @@ The problem of finding the maximum amount of flow that can be sent from a source
 An estimator of a population parameter that maximizes the likelihood function, meaning it finds the parameter value that makes the observed data most probable.
 
 \term{Maximum Modulus Principle}
-The theorem that a non-constant holomorphic function attains its maximum modulus only on the boundary of its domain.
+If a holomorphic function is nonconstant, its modulus cannot have a local maximum at an interior point of its domain. If a maximum exists on the closure of a bounded domain, it occurs on the boundary. Applications: the principle gives bounds for analytic functions and helps prove uniqueness results such as the Schwarz lemma.
 
 \term{Maximum Principle}
 For harmonic or holomorphic functions, the property that a non-constant function attains no interior maximum.
+
+\term{Mayer--Vietoris}
+The long exact sequence relating the homology of a union $X = A \cup B$ to the homology of the pieces and their intersection: $\cdots \to H_n(A \cap B) \to H_n(A) \oplus H_n(B) \to H_n(X) \to H_{n-1}(A \cap B) \to \cdots$. Together with excision, the Mayer--Vietoris sequence is the fundamental computational tool for computing homology of spaces built from simpler pieces; it has analogous formulations for cohomology and for sheaves.
 
 \term{Mean Value Theorem}
 The theorem that for a differentiable $f$ on $[a,b]$ there exists $c$ with $f'(c) = \frac{f(b)-f(a)}{b-a}$.
@@ -78,6 +84,9 @@ In a finite graph, the maximum number of internally vertex-disjoint paths betwee
 
 \term{Meromorphic Function}
 A function that is holomorphic on a domain except at isolated poles.
+
+\term{Method of Characteristics}
+A technique for solving first-order quasilinear partial differential equations by reducing them to systems of ordinary differential equations along characteristic curves. The solution is transported along the characteristics, whose crossing can lead to shocks and the breakdown of smooth solutions. The method underlies the theory of the Hamilton--Jacobi equation and of hyperbolic conservation laws.
 
 \term{Metric Space}
 A set $X$ equipped with a distance function $d: X \times X \to [0, \infty)$ satisfying identity of indiscernibles, symmetry, and the triangle inequality. It provides a formal framework for the concepts of limit, continuity, and compactness.
@@ -103,6 +112,9 @@ A result in number theory that allows one to recover a function $f(n)$ from its 
 \term{Möbius Strip}
 A non-orientable surface with only one side and one boundary component. It can be constructed by taking a strip of paper and joining the ends with a half-twist.
 
+\term{Model Category}
+A category with three distinguished classes of morphisms, the weak equivalences, cofibrations, and fibrations, satisfying the model axioms of Quillen. It provides an abstract framework for homotopy theory in which the localization of the category at the weak equivalences is the homotopy category. Model structures exist for topological spaces, simplicial sets, and chain complexes, and model categories formalize derived functors.
+
 \term{Model (Logic)}
 A structure that satisfies the axioms of a given formal theory. A statement is "true in a model" if the interpretation of the statement in that structure is true.
 
@@ -113,10 +125,10 @@ The branch of mathematical logic that studies structures and the first-order the
 A system of arithmetic for integers, where numbers "wrap around" upon reaching a certain value, the modulus. It is fundamental to number theory, cryptography (e.g., RSA), and computer science.
 
 \term{Modular Form}
-A complex-analytic function on the upper half-plane $\mathbb{H}$ that transforms in a specific way under the action of the modular group $\operatorname{SL}(2, \mathbb{Z})$ and is holomorphic at the cusps.
+A modular form of weight $k$ is a holomorphic function $f$ on the upper half-plane satisfying $f((az+b)/(cz+d))=(cz+d)^k f(z)$ for matrices in the modular group, together with a suitable holomorphy condition at the cusps. Applications: Fourier coefficients of modular forms encode arithmetic information and appear in the study of elliptic curves and number theory.
 
 \term{Modular Group}
-The group $\operatorname{PSL}(2, \mathbb{Z})$ of $2 \times 2$ integer matrices with determinant 1, acting on the upper half-plane by Möbius transformations. It is the prototypical Fuchsian group.
+The modular group is $\operatorname{PSL}(2,\mathbb{Z})=\operatorname{SL}(2,\mathbb{Z})/\{I,-I\}$. Here $\operatorname{SL}(2,\mathbb{Z})$ consists of the $2\times2$ integer matrices with determinant $1$, and the quotient identifies a matrix with its negative. It acts on the upper half-plane by $z\mapsto(az+b)/(cz+d)$. Applications: this symmetry is fundamental in modular forms, elliptic curves, and arithmetic geometry.
 
 \term{Module}
 A generalization of a vector space where the scalars come from a ring $R$ instead of a field. A left $R$-module $M$ is an abelian group equipped with a scalar multiplication $R \times M \to M$ satisfying specific axioms.
@@ -128,7 +140,7 @@ A space, scheme, stack, or analytic space whose points parametrize isomorphism c
 The function $\omega(\delta) = \sup_{|x-y|<\delta} |f(x)-f(y)|$ measuring the uniform continuity of $f$.
 
 \term{Moment (Statistics)}
-A quantity that describes the shape of a probability distribution. The first moment is the mean, the second is the variance (centered), the third is skewness, and the fourth is kurtosis.
+A moment is a numerical summary of a probability distribution. The raw $k$th moment is $\mathbb{E}[X^k]$, while the $k$th central moment is $\mathbb{E}[(X-\mu)^k]$. The second central moment is the variance; standardized third and fourth central moments describe skewness and kurtosis. Applications: moments summarize location, spread, asymmetry, and tail behavior in data analysis.
 
 \term{Moment Generating Function}
 A function $M_X(t) = \mathbb{E}[e^{tX}]$ that encodes all the moments of a random variable $X$. The $n$-th derivative of $M_X(t)$ at $t=0$ gives the $n$-th moment.
@@ -166,6 +178,9 @@ A general arrow between two objects $X$ and $Y$ in a category. Depending on the 
 \term{Morse Theory}
 Morse theory studies a smooth manifold $M$ through a Morse function $f: M \to \mathbb{R}$ whose critical points are non-degenerate. The Morse lemma gives a normal form near each critical point, and $M$ admits a handle decomposition producing a CW structure; the Morse inequalities bound its homology in terms of the critical points of each index. Infinite-dimensional variants, including Morse--Witten and Floer theory, underlie modern symplectic and gauge theory.
 
+\term{Motives}
+Grothendieck's conjectural universal cohomology theory underlying all Weil cohomology theories. The category of pure motives is constructed from smooth projective varieties by adjoining correspondences as morphisms, and the Chow and Künneth standard conjectures concern its structure. Mixed motives extend the construction to arbitrary varieties, motivic cohomology provides the associated cohomology theory, and motives are central to the Langlands program.
+
 \term{Multigrid Method}
 A numerical method that accelerates iterative solvers by working on multiple grid resolutions.
 
@@ -192,4 +207,3 @@ A generalization of a set where members can appear more than once. The number of
 
 \term{Myhill--Nerode Theorem}
 A result in theoretical computer science that characterizes regular languages in terms of the number of equivalence classes of a specific congruence relation on strings.
-

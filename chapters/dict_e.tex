@@ -22,6 +22,9 @@ The Eilenberg--Steenrod axioms characterise ordinary homology and cohomology the
 \term{Eilenberg--MacLane Space}
 For an abelian group $G$ and integer $n \geq 1$, the Eilenberg--MacLane space $K(G,n)$ is a CW complex whose homotopy groups vanish except $\pi_n(K(G,n)) \cong G$. It represents cohomology: for any CW complex $X$ there is a natural bijection $H^n(X;G) \cong [X, K(G,n)]$ between cohomology classes and homotopy classes of maps into $K(G,n)$. These spaces exist and are unique up to homotopy, and they play a central role in obstruction theory, where the obstructions to extending maps and sections live in cohomology with coefficients in the relevant homotopy groups, and in the theory of cohomology operations.
 
+\term{Eisenstein Series}
+The Eisenstein series $E_k(z) = \sum_{(c,d) \neq (0,0)} (cz+d)^{-k}$ on the upper half-plane converges absolutely for $k > 2$ and is a modular form of weight $k$ for $\mathrm{SL}_2(\mathbb{Z})$. Its Fourier expansion $E_k(z) = 2\zeta(k) + \frac{2(2\pi i)^k}{(k-1)!}\sum_{n \geq 1} \sigma_{k-1}(n) e^{2\pi i n z}$ is written in terms of the divisor sums $\sigma_{k-1}$. Together with cusp forms they generate the space of modular forms; the constant terms are algebraic multiples of $\zeta(k)$, and the series connect to the Weierstrass zeta function in the theory of elliptic functions.
+
 \term{Elementary Function}
 A function built from polynomials, exponentials, logarithms, trigonometric functions, and their inverses under finitely many operations and compositions.
 
@@ -32,7 +35,7 @@ The elementary symmetric polynomials in $x_1, \ldots, x_n$ are $e_k = \sum_{1 \l
 The conic section defined by the set of points whose sum of distances to two foci is constant.
 
 \term{Elliptic Curve}
-A smooth projective curve of genus 1 with equation $y^2 = x^3 + ax + b$, carrying an abelian group law; central to number theory and cryptography.
+A smooth curve of genus 1 with a chosen point at infinity. Over a field of characteristic different from $2$ and $3$, it can be written as $y^2=x^3+ax+b$ with $4a^3+27b^2\ne0$. Its points form an abelian group under a geometric addition rule. Applications: elliptic curves are used in public-key cryptography, integer factorization, and the study of rational solutions to equations.
 
 \term{Elliptic Curve Cryptography}
 Elliptic curve cryptography is a public-key cryptosystem whose security rests on the elliptic curve discrete logarithm problem: given points $P$ and $Q = [k]P$ on an elliptic curve over a finite field, recover $k$. For a general curve no sub-exponential algorithm is known, whereas the index calculus attacks finite fields, so elliptic curve systems achieve security comparable to RSA with much smaller keys: a 256-bit curve offers the security of a 3072-bit RSA modulus. Standardised constructions include key exchange (ECDH) and digital signatures (ECDSA), together with efficient curve models such as Montgomery and twisted Edwards curves that resist side-channel attacks.
@@ -82,6 +85,9 @@ Related by an equivalence relation; two statements are logically equivalent if e
 \term{Erdős--Ko--Rado Theorem}
 If $n \geq 2k$, a family of $k$-element subsets of an $n$-element set with pairwise intersecting members has size at most $\binom{n-1}{k-1}$; equality is achieved by all sets containing a fixed element.
 
+\term{Erdős--Szekeres}
+The Erdős--Szekeres theorem asserts that any sequence of $(r-1)(s-1)+1$ distinct real numbers contains an increasing subsequence of length $r$ or a decreasing subsequence of length $s$; equivalently, every sufficiently large point set in the plane contains a large monotone subset. The bound is sharp and the theorem is proved by a pigeonhole argument. It is a foundational result of Ramsey-type combinatorics and a precursor to the Erdős--Szekeres cups-and-caps theorem on convex configurations.
+
 \term{Ergodic Theorem (Birkhoff)}
 Birkhoff's ergodic theorem states that for a measure-preserving transformation $T$ on a probability space $(X, \mathcal{F}, \mu)$ and $f \in L^1(\mu)$, the time averages $\frac{1}{n}\sum_{k=0}^{n-1} f(T^k x)$ converge almost everywhere to a $T$-invariant function $\bar{f}$. If $T$ is ergodic, $\bar{f} = \int f\,d\mu$ almost everywhere. This justifies the physical principle that time averages equal space averages for ergodic systems.
 
@@ -96,6 +102,9 @@ A singularity of an analytic function that is not removable and not a pole, near
 
 \term{Étale Cohomology}
 Étale cohomology $H_{\text{\'et}}^*(X, \mathcal{F})$ is a cohomology theory for schemes developed by Grothendieck and Artin (1960s). It uses the étale site (étale morphisms as covers) instead of the Zariski or analytic topology. It satisfies the Weil conjectures: rationality, functional equation, and Riemann hypothesis for varieties over finite fields. The $\ell$-adic cohomology $H_{\text{\'et}}^*(X_{\bar{k}}, \mathbb{Q}_\ell)$ carries a Galois action.
+
+\term{Étale Morphism}
+A morphism of schemes $f: X \to Y$ is étale if it is smooth of relative dimension $0$, equivalently flat and unramified. Étale morphisms are the algebro-geometric analogue of local isomorphisms of complex manifolds: they induce isomorphisms on completions of local rings and lift tangent vectors, so the formal inverse function theorem holds. The étale site, whose covers are surjective families of étale morphisms, underlies étale cohomology, and the étale fundamental group classifies finite étale covers of a connected scheme.
 
 \term{Euclid's Algorithm}
 The process of repeatedly dividing to compute the greatest common divisor of two integers.
@@ -130,11 +139,17 @@ The Euler--Maclaurin formula relates sums to integrals: $\sum_{k=a}^b f(k) = \in
 \term{Eulerian Graph}
 A graph containing a closed walk that uses every edge exactly once, characterised by all vertices having even degree.
 
+\term{Eulerian Path}
+An Eulerian path in a graph is a trail that uses every edge exactly once; if it returns to its starting vertex it is an Eulerian circuit. Euler's theorem characterises when these exist: a connected graph admits an Eulerian circuit iff every vertex has even degree, and an Eulerian path iff at most two vertices have odd degree. The problem originated with the bridges of Königsberg. Hierholzer's algorithm finds an Eulerian circuit in linear time. Eulerian circuits are in a sense dual to Hamiltonian cycles.
+
 \term{Event}
 A subset of a sample space in probability theory, to which a probability is assigned.
 
 \term{Exact Sequence}
 A sequence of homomorphisms in which the image of each map equals the kernel of the next.
+
+\term{Excision}
+Excision is the theorem that for subspaces $Z \subset A \subset X$ with $\overline{Z} \subset \operatorname{int}(A)$, the inclusion $(X-Z, A-Z) \hookrightarrow (X, A)$ induces isomorphisms $H_n(X-Z, A-Z) \cong H_n(X, A)$ on relative homology. It is one of the Eilenberg--Steenrod axioms which, together with homotopy invariance, exactness, additivity, and normalisation, characterise homology theories. Excision enables the computation of homology by attaching cells and yields the Mayer--Vietoris long exact sequence as a consequence.
 
 \term{Existence}
 The property of there being at least one object satisfying a given condition, expressed by the existential quantifier $\exists$.
@@ -160,6 +175,9 @@ The exponential map $\exp: \mathfrak{g} \to G$ from a Lie algebra $\mathfrak{g}$
 \term{Exponential Function}
 The exponential function $e^x = \sum_{n=0}^\infty x^n/n!$ is the unique function equal to its own derivative with $e^0 = 1$. For complex $z$, $e^z = e^x(\cos y + i\sin y)$ where $z = x+iy$. The complex exponential is periodic: $e^{z+2\pi i} = e^z$. It satisfies $e^{a+b} = e^a e^b$ and maps lines to rays, strips to annuli. The inverse is the complex logarithm $\log z = \ln|z| + i\arg z$.
 
+\term{Ext Functor}
+For an abelian category with enough projectives or injectives, the derived functor $\operatorname{Ext}_R^n(A,B)$ of $\mathrm{Hom}_R$ is computed as the cohomology of $\mathrm{Hom}_R(P_\bullet, B)$ for a projective resolution $P_\bullet$ of $A$, or symmetrically with an injective resolution of $B$. $\operatorname{Ext}^1_R(A,B)$ classifies extensions $0 \to B \to E \to A \to 0$ up to equivalence. Higher groups give sheaf cohomology via $\operatorname{Ext}^n_{\mathcal{O}_X}(\mathcal{O}_X, \mathcal{F}) = H^n(X, \mathcal{F})$, and universal-coefficient duality relates $\operatorname{Ext}$ to $\operatorname{Tor}$.
+
 \term{Extension}
 A field $K$ containing a field $F$, written $K/F$; also any structure containing a given structure.
 
@@ -183,3 +201,11 @@ A continuous real-valued function on a compact space attains its maximum and min
 
 \term{Extremum}
 A maximum or minimum of a function, either local or global.
+\term{Cayley Graph}
+A graph representing a group: the vertices are group elements and edges correspond to multiplication by generators. Cayley graphs encode the structure of groups geometrically and are central to geometric group theory. For example, the Cayley graph of $\mathbb{Z}^n$ with standard generators is the infinite grid, and the Cayley graph of $S_3$ with generators $(12)$ and $(123)$ is a triangle with diagonals.
+\term{Euler Totient Function}
+The function $\phi(n)$ counting positive integers $\leq n$ that are coprime to $n$. It is multiplicative: $\phi(mn) = \phi(m)\phi(n)$ when $\gcd(m,n) = 1$, and $\phi(p^k) = p^k - p^{k-1}$ for primes $p$. Euler's theorem states $a^{\phi(n)} \equiv 1 \pmod{n}$ for $\gcd(a,n) = 1$, generalising Fermat's little theorem.
+\term{Eulerian Circuit}
+A closed walk in a graph that traverses every edge exactly once. A connected graph has an Eulerian circuit if and only if every vertex has even degree, by Euler's theorem (1736). Such a graph is called Eulerian. The Chinese postman problem asks for the shortest closed walk covering every edge of a weighted graph.
+\term{Equalizer}
+In category theory, the equalizer of two morphisms $f, g: A \to B$ is the object $E$ with a morphism $e: E \to A$ such that $f \circ e = g \circ e$, and which is universal with this property. In sets, the equalizer is $\{a \in A : f(a) = g(a)\}$. Equalizers and coequalizers are instances of limits and colimits, respectively.

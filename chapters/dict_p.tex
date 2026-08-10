@@ -98,7 +98,7 @@ A square binary matrix that has exactly one entry of 1 in each row and each colu
 A non-negative irreducible square matrix has a positive real eigenvalue equal to its spectral radius, with a strictly positive eigenvector; this eigenvalue is simple and dominates all others in modulus. It is the foundation for the convergence of Markov chains and for stable states in population dynamics, such as those modeled by Leslie matrices.
 
 \term{Phase Space}
-In classical mechanics, a space in which all possible states of a system are represented, with plot coordinates asCanadian position and momentum. The volume of a region in phase space is preserved by Hamiltonian flow (Liouville's theorem).
+Phase space is the space of all possible states of a system. In classical mechanics, a point usually records both position and momentum. As the system evolves, this point traces a path through phase space; Hamiltonian motion preserves phase-space volume by Liouville's theorem. Applications: phase space is used to study planetary motion, gases, control systems, and statistical mechanics.
 
 \term{Phi ($\phi$) (Golden Ratio)}
 The irrational number $\phi = \frac{1+\sqrt{5}}{2} \approx 1.618$, which is the positive solution to $x^2 - x - 1 = 0$. It appears in the geometry of pentagons, the Fibonacci sequence, and phyllotaxis.
@@ -151,6 +151,9 @@ The factorization of a complex square matrix $A$ as $A = UP$, where $U$ is a uni
 \term{Pontryagin Duality}
 A duality between a locally compact abelian (LCA) group $G$ and its dual group $\widehat{G}$, which consists of all continuous characters of $G$. The double dual is canonically isomorphic to $G$.
 
+\term{Predicate Logic}
+Also called first-order logic or first-order predicate calculus. It extends propositional logic by introducing quantifiers ($\forall$, $\exists$) and predicates applied to variables. Predicate logic is the standard formal system for expressing mathematical statements and proofs.
+
 \term{Poincaré Disk Model}
 A model of hyperbolic geometry where the hyperbolic plane is represented by the interior of the unit disk in $\mathbb{R}^2$. Geodesics are arcs of circles orthogonal to the boundary.
 
@@ -163,6 +166,9 @@ A famous theorem stating that every simply connected, closed 3-manifold is homeo
 \term{Poincaré Duality}
 A fundamental result in manifold topology: for a compact oriented $n$-manifold $M$, there is an isomorphism $H^k(M; \mathbb{Z}) \cong H_{n-k}(M; \mathbb{Z})$.
 
+\term{Poincaré--Hopf Theorem}
+For a smooth vector field $V$ on a compact manifold $M$ with isolated zeros, the sum of the indices of the zeros equals the Euler characteristic $\chi(M)$.
+
 \term{Population}
 The entire set of objects of interest in a statistical study, from which samples are drawn.
 
@@ -174,6 +180,9 @@ An infinite series of the form $\sum_{n=0}^\infty a_n (x-c)^n$. Each power serie
 
 \term{Preconditioner}
 A matrix or operator that transforms a linear system into one with better conditioning for iterative solvers.
+
+\term{Preconditioning}
+The process of transforming a linear system $Ax = b$ into an equivalent system $M^{-1}Ax = M^{-1}b$ to reduce its condition number. A good preconditioner $M$ approximates $A$ but is easy to invert, thereby accelerating the convergence of iterative solvers like the conjugate gradient method.
 
 \term{Preimage}
 For a function $f: X \to Y$ and a subset $B \subseteq Y$, the preimage $f^{-1}(B)$ is the set of all $x \in X$ such that $f(x) \in B$.
@@ -226,7 +235,7 @@ The Cartesian product of two or more sets, spaces, or groups, equipped with the 
 \term{Product Topology}
 The coarsest topology on a product $\prod X_i$ such that all projection maps $\pi_i$ are continuous. A basis for this topology consists of products of open sets, where all but finitely many are the whole space $X_i$.
 
-\term{Projection (Linear Algebra)}
+\term{Projection Operator}
 A linear operator $P: V \to V$ such that $P^2 = P$. It decomposes the space $V$ into the direct sum of the image of $P$ and the kernel of $P$.
 
 \term{Projective Geometry}
@@ -234,6 +243,9 @@ The study of geometric properties that are invariant under projective transforma
 
 \term{Projective Module}
 An $R$-module $P$ is projective if the functor $\operatorname{Hom}_R(P, -)$ is exact, meaning every epimorphism $M \to N$ induces a surjection $\operatorname{Hom}_R(P, M) \to \operatorname{Hom}_R(P, N)$. Equivalently, $P$ is a direct summand of a free module, or the image of an idempotent endomorphism of a free module. Projective modules give projective resolutions and the derived functor Ext; over a commutative ring, Bass's theorem characterizes the projective generation of modules, and the Serre--Swan correspondence relates finitely generated projective modules over the ring of smooth functions on a manifold to vector bundles.
+
+\term{Projective Scheme}
+A scheme of the form $\operatorname{Proj}(S)$ for a graded ring $S$, equivalently a scheme admitting an ample line bundle, which yields a closed immersion into projective space $\mathbb{P}^n$. Finitely generated graded algebras over a field give projective varieties. Cohomology of coherent sheaves on projective schemes is finite-dimensional, and Serre vanishing and the GAGA correspondence are central results.
 
 \term{Projective Space}
 The set of all lines passing through the origin in a vector space $\mathbb{R}^{n+1}$. It is denoted $\mathbb{P}^n(\mathbb{R})$ and can be viewed as the quotient of $\mathbb{R}^{n+1} \setminus \{0\}$ by the equivalence $v \sim \lambda v$.
@@ -264,3 +276,14 @@ A complex number of the form $bi$ with real part zero.
 
 \term{Pushforward}
 The map $f_*$ induced by a function $f$, pushing vectors from the tangent space of the domain to that of the codomain.
+
+\term{Pushout}
+The colimit of a diagram $B \leftarrow A \rightarrow C$, the result of gluing $B$ and $C$ along the maps from $A$, equivalently the coproduct of $B$ and $C$ over $A$. For topological spaces, pushouts are quotients of disjoint unions, as in adjunction spaces. Pushout squares and homotopy pushouts are central in homotopy theory, and pushouts are dual to pullbacks.
+\term{Poisson Bracket}
+A bilinear operation on functions on a symplectic manifold, $\{f, g\} = \sum_i \left(\frac{\partial f}{\partial q_i}\frac{\partial g}{\partial p_i} - \frac{\partial f}{\partial p_i}\frac{\partial g}{\partial q_i}\right)$, satisfying skew-symmetry, the Jacobi identity, and acting as a derivation. In Hamiltonian mechanics, the time evolution of any observable $f$ is $\dot{f} = \{f, H\}$, and canonical transformations are exactly those preserving the Poisson bracket.
+
+\term{Paradox}
+A statement or argument that leads to a contradiction or a situation that defies intuition. Mathematical paradoxes often reveal limitations in naive reasoning or exposed flaws in foundational assumptions. Famous examples include Russell's paradox, the Banach--Tarski paradox, and Zeno's paradoxes.
+
+\term{Positive-Definite Matrix}
+A symmetric (or Hermitian) matrix $A$ is positive definite if $x^T A x > 0$ for all non-zero vectors $x$ (or $x^* A x > 0$ in the complex case). Equivalent conditions include: all eigenvalues are strictly positive, all leading principal minors are positive (Sylvester's criterion), and $A$ can be factored as $A = L L^T$ with $L$ lower triangular with positive diagonal entries. Positive-definite matrices arise in optimization (strict convexity), statistics (covariance matrices), and numerical analysis (preconditioners).

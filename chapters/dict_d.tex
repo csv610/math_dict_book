@@ -28,11 +28,17 @@ The Dedekind eta function is $\eta(\tau) = e^{\pi i \tau/12} \prod_{n=1}^{\infty
 \term{Dedekind's Axiom}
 The completeness property of the real numbers: every non-empty bounded-above subset has a least upper bound.
 
+\term{Dedekind Zeta Function}
+The Dedekind zeta function of a number field $K$ is $\zeta_K(s) = \sum_I N(I)^{-s}$, summed over all nonzero integral ideals $I$ of the ring of integers $\mathcal{O}_K$. The series converges absolutely for $\operatorname{Re}(s) > 1$ and admits an Euler product over the nonzero prime ideals. Hecke proved analytic continuation to a meromorphic function on $\mathbb{C}$ with a simple pole at $s = 1$, and a functional equation relating $\zeta_K(s)$ to $\zeta_K(1-s)$ that involves the discriminant and Gamma factors. The class number formula identifies the residue at $s = 1$ in terms of the class number, the regulator, and the number of roots of unity.
+
 \term{Definite Integral}
 The quantity $\int_a^b f(x)\,dx$ measuring the signed area under $f$ between $a$ and $b$.
 
 \term{Deformation Retract}
 A subspace $A$ of $X$ is a deformation retract if there exists a homotopy $H: X \times [0,1] \to X$ with $H(x,0) = x$, $H(x,1) \in A$, and $H(a,t) = a$ for all $a \in A$, $t \in [0,1]$. The circle $S^1$ is a deformation retract of the punctured plane $\mathbb{R}^2 \setminus \{0\}$ via radial projection. Homotopy equivalent spaces share the same homotopy groups.
+
+\term{Deformation Theory}
+Deformation theory studies families of algebraic or analytic objects (varieties, schemes, vector bundles) over infinitesimal parameter spaces such as $\operatorname{Spec} k[\varepsilon]/(\varepsilon^2)$. First-order deformations are classified by the cohomology group $H^1(X, \mathcal{T}_X)$ of the tangent sheaf, while obstructions to extending deformations to higher order lie in $H^2(X, \mathcal{T}_X)$. Schlessinger's criteria describe formal versal deformation spaces; the cotangent complex governs deformations of general objects, and derived deformation theory packages these invariants through derived moduli stacks.
 
 \term{Delaunay Triangulation}
 Given a finite set of points in the plane, the Delaunay triangulation is a triangulation such that no point lies inside the circumcircle of any triangle. Equivalently, the Voronoi cells form a dual graph. Delaunay triangulations maximise the minimum angle, avoiding skinny triangles, making them ideal for finite element methods and surface reconstruction.
@@ -57,6 +63,9 @@ A derivation on the algebra $C^\infty(M)$ of smooth functions on a manifold $M$ 
 
 \term{Derivative}
 The derivative $f'(x_0) = \lim_{h \to 0} \frac{f(x_0+h) - f(x_0)}{h}$ measures the instantaneous rate of change of $f$ at $x_0$. For functions of several variables, the derivative is the linear map represented by the Jacobian matrix. The derivative is fundamental to calculus, appearing in the Fundamental Theorem, Taylor's theorem, and the study of differential equations.
+
+\term{Derived Category}
+The derived category $D(\mathcal{A})$ of an abelian category $\mathcal{A}$ is the Verdier localization of the homotopy category of complexes at the class of quasi-isomorphisms; it is a triangulated category whose triangles encode short exact sequences. Derived functors are total derived functors such as $\mathbf{R}\mathrm{Hom}$, $\otimes^L$, and $R\Gamma$, computed via resolutions, and satisfy $H^n(\mathbf{R}\mathrm{Hom}(A,B)) = \operatorname{Ext}^n(A,B)$. It is the natural home of homological algebra. DG-enhancements and stable $\infty$-categories refine the derived category to capture additional homotopical information.
 
 \term{Derived Functor}
 The functor $R^n F$ obtained by applying a left-exact functor to a resolution, measuring the failure of exactness.
@@ -87,6 +96,9 @@ Cantor's diagonal argument proves that $\mathbb{R}$ is uncountable. Suppose $r_1
 
 \term{Diagonalisation (Logic)}
 Diagonalisation in computability theory constructs an object that differs from every member of a given list. Turing's diagonal argument shows the halting problem is undecidable: assume a machine $H$ decides halting; construct $D$ that does the opposite of $H$ on its own description. $D$ cannot be decided by $H$, contradiction. This technique underlies Gödel's incompleteness theorems.
+
+\term{Diagonalization}
+See Diagonalisation. The term diagonalization is the American spelling of the same technique, originating with Cantor's proof that the reals are uncountable.
 
 \term{Diagonal Matrix}
 A square matrix whose only non-zero entries lie on the main diagonal.
@@ -202,6 +214,9 @@ A series whose partial sums do not converge to a finite limit.
 \term{Divisible Group}
 An abelian group $G$ is divisible if for every $g \in G$ and positive integer $n$, there exists $h \in G$ with $nh = g$. Examples: $\mathbb{Q}/\mathbb{Z}$, $\mathbb{Q}$, and the circle group $\mathbb{R}/\mathbb{Z}$. Divisible groups are injective objects in the category of abelian groups: every abelian group embeds in a divisible group. The classification of divisible groups is simple: they are direct sums of copies of $\mathbb{Q}$ and $\mathbb{Z}(p^\infty)$.
 
+\term{Divisor}
+A formal linear combination of codimension-one subvarieties of a variety, written as $D = \sum n_i Y_i$. Divisors are used to study the zeros and poles of meromorphic functions; Cartier divisors are defined by local data and correspond to line bundles.
+
 \term{Division Algorithm}
 For integers $a$ and $b > 0$, there exist unique integers $q$ (quotient) and $r$ (remainder) such that $a = bq + r$ with $0 \leq r < b$. This fundamental result underlies the Euclidean algorithm for computing GCDs. The division algorithm generalises to polynomials over a field: for $f, g \neq 0$, there exist unique $q, r$ with $\deg(r) < \deg(g)$ and $f = gq + r$.
 
@@ -213,6 +228,9 @@ Natural deduction is a proof calculus developed by Gerhard Gentzen (1934) and Ja
 
 \term{Dodecahedron}
 The regular dodecahedron is one of the five Platonic solids, with 12 regular pentagonal faces, 20 vertices, and 30 edges. Its symmetry group is $A_5 \times \mathbb{Z}/2\mathbb{Z}$ of order 120. The dodecahedron is dual to the icosahedron. Its vertices can be placed at coordinates involving the golden ratio $\phi = (1+\sqrt{5})/2$, e.g., $(\pm 1, \pm 1, \pm 1)$ and $(0, \pm \phi, \pm 1/\phi)$ and permutations.
+
+\term{Doob Decomposition}
+Every integrable submartingale $X_n$ with respect to a filtration $(\mathcal{F}_n)$ admits a unique decomposition $X_n = M_n + A_n$, where $M$ is a martingale and $A$ is a predictable nondecreasing process with $A_0 = 0$. The compensator is $A_n = \sum_{k=1}^n \mathbb{E}[X_k - X_{k-1} \mid \mathcal{F}_{k-1}]$. This discrete-time result is the basis of the Doob--Meyer decomposition in continuous time and is fundamental to martingale theory and the construction of stochastic integrals.
 
 \term{Doob's Optional Stopping Theorem}
 For a martingale $X_n$ and a stopping time $T$, under appropriate conditions we have $\mathbb{E}[X_T] = \mathbb{E}[X_0]$. The theorem holds when $T$ is bounded, or when $X$ is uniformly integrable and $T$ is almost surely finite. This formalises the fair-games interpretation of martingales: no strategy of stopping at a random time can improve expected winnings. The theorem is central in martingale theory, harmonic analysis, and mathematical finance.
@@ -258,4 +276,6 @@ Legendre's duplication formula states $\Gamma(z)\Gamma(z + 1/2) = 2^{1-2z}\sqrt{
 
 \term{Dynamical System}
 A space together with a rule, such as an iteration or differential equation, describing how points evolve over time.
+\term{Diophantine Equation}
+An equation, typically polynomial, for which integer or rational solutions are sought. The most famous is Fermat's equation $x^n + y^n = z^n$, which Fermat conjectured has no non-trivial integer solutions for $n > 2$. Hilbert's tenth problem, solved by Matiyasevich in 1970, showed that no general algorithm can decide whether a Diophantine equation has a solution.
 

@@ -1,6 +1,9 @@
 \chapter*{L}
 \label{chap:l}
 
+\term{Lagrange's Theorem}
+For a finite group $G$ and a subgroup $H$, the order of $H$ divides the order of $G$: $|G| = [G:H]|H|$, where $[G:H]$ is the index of $H$ in $G$.
+
 \term{Lagrange Multipliers}
 A strategy for finding the local maxima and minima of a function subject to equality constraints. If we want to optimize $f(x,y)$ subject to $g(x,y)=c$, we solve $\nabla f = \lambda \nabla g$.
 
@@ -21,6 +24,9 @@ The basic object of the lambda calculus, which can be a variable, an abstraction
 
 \term{Langlands Program}
 A vast network of conjectures, initiated by Robert Langlands in 1967, connecting automorphic forms and representations of reductive groups over global fields to Galois representations and motives. The central reciprocity conjecture, the Langlands correspondence, predicts that $L$-functions of automorphic representations match those of Galois representations, and functoriality asserts functorial transfer between reductive groups. Its local version concerns representations of $p$-adic groups, and it generalizes Artin's conjecture on holomorphy, providing the framework for modularity results such as the proof of Fermat's Last Theorem.
+
+\term{Laplace Equation}
+The equation $\Delta u = 0$ for the Laplacian $\Delta$, whose solutions are the harmonic functions. Harmonic functions satisfy the maximum principle and the mean value property and are real analytic. Boundary value problems for the equation prescribe the values of $u$ or of its normal derivative on the boundary, the Dirichlet and Neumann problems; the inhomogeneous Poisson equation $\Delta u = f$ is solved using fundamental solutions and Green's functions. The Laplace equation is the model elliptic equation, governing electrostatics, steady heat flow, and potential flow.
 
 \term{Laplace Transform}
 An integral transform that converts a function of time $f(t)$ into a function of complex frequency $s$: $\mathcal{L}\{f(t)\} = \int_0^\infty e^{-st} f(t)\,dt$. It transforms differential equations into algebraic equations.
@@ -75,6 +81,9 @@ The standard way of assigning a volume to subsets of $\mathbb{R}^n$. It is the u
 
 \term{Lebesgue's Dominated Convergence Theorem}
 A powerful theorem in integration: if a sequence of measurable functions $f_n$ converges pointwise to $f$ and is bounded by an integrable function $g$, then $\int f_n \to \int f$.
+
+\term{Lusin's Theorem}
+A result in measure theory: if $f$ is a measurable function on a finite measure space and $\varepsilon > 0$, then there exists a continuous function $g$ such that $f = g$ except on a set of measure less than $\varepsilon$. Lusin's theorem connects measurability to continuity and is a key step in proving that simple functions are dense in $L^p$.
 
 \term{Lemma}
 A "helping theorem"; a minor result that is proved as a stepping stone toward a larger, more significant theorem.
@@ -202,6 +211,9 @@ The inverse operation to exponentiation. The natural logarithm $\ln x$ is the in
 \term{Logarithmic Function}
 The inverse of the exponential function, $\log_b x = y$ when $b^y = x$, satisfying $\log(xy) = \log x + \log y$.
 
+\term{Loop Space}
+The space $\Omega X$ of based loops in a pointed topological space $X$, equipped with the compact-open topology. The loop space functor is right adjoint to the suspension functor, giving the adjunction $[\Sigma Y, X] \cong [Y, \Omega X]$ in the homotopy category. Homotopy groups satisfy $\pi_n(X) \cong \pi_{n-1}(\Omega X)$, so the loop space shifts the homotopy groups down by one. The based loop space is a homotopy-theoretic group object, and iterated loop spaces and spectra are central in stable homotopy theory, with classifying spaces $BG$ arising as deloopings.
+
 \term{Lorentz Transformation}
 The linear transformations between two inertial frames in special relativity that preserve the spacetime interval $\Delta s^2 = -c^2 \Delta t^2 + \Delta x^2 + \Delta y^2 + \Delta z^2$.
 
@@ -211,7 +223,7 @@ A countable first-order theory that has an infinite model has a model of any inf
 \term{Lower Bound}
 A value that is no greater than every element of a set; the greatest such value is the infimum.
 
-\term{Lp Space}
+\term{L\textasciicircum p Space}
 The space of measurable functions $f$ for which the $p$-th power of the absolute value is Lebesgue integrable: $\int |f|^p < \infty$. For $p=2$, it is a Hilbert space.
 
 \term{L-polynomial}

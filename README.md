@@ -1,10 +1,10 @@
 # Mathematical Dictionary
 
-A comprehensive LaTeX mathematical dictionary with **1,554 entries** covering topics from foundational concepts to advanced theory, including classical theorems, modern results, and paradoxes.
+A comprehensive LaTeX mathematical dictionary with **1,788 entries** covering topics from foundational concepts to advanced theory, including classical theorems, modern results, and paradoxes. Although some terms are graduate-level, explanations are written for undergraduates without becoming superficial: they explain the main idea, define essential vocabulary, retain important assumptions and formulas, and describe applications in science, engineering, computing, or data analysis.
 
 ## Overview
 
-Mathematics is not learned alphabetically, nor is it practised that way. This dictionary is therefore organised alphabetically **within** subject-based chapters, so a topologist finds homotopy and sheaf theory together rather than scattered between unrelated terms. Each entry is a concise definition in bold blue with an automatic index entry and a hyperlink anchor.
+Mathematics is not learned alphabetically, nor is it practised that way. This dictionary is organised alphabetically by letter for quick lookup. Each entry aims to give an undergraduate-friendly explanation with enough mathematical substance to be useful: definition, intuition, assumptions, formula or example, and application where appropriate. Terms that require advanced background should still make their purpose and importance clear.
 
 ## Features
 
@@ -37,7 +37,7 @@ Each entry follows this format (no blank line between the term and its definitio
 
 ```latex
 \term{Term Name}
-A concise definition in plain language, with inline math where natural.
+A clear but substantive definition in plain language, with inline math where natural. Explain technical words briefly, preserve important hypotheses, include a formula, example, or consequence when useful, and add an `Applications:` sentence describing the term's practical importance.
 ```
 
 Insert the entry in the correct alphabetical position within its chapter file, then rebuild.

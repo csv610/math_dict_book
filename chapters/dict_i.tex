@@ -7,6 +7,9 @@ A subset $I$ of a ring $R$ is a left ideal if $(I, +)$ is a subgroup and $r \in 
 \term{Ideal Class Group}
 The quotient of the group of fractional ideals of the ring of integers of a number field by the subgroup of principal fractional ideals. It measures the failure of unique factorization: its order, the class number, is finite by Minkowski's bound on ideal norms, and the ring of integers has unique factorization iff the class group is trivial. The class group is central in algebraic number theory: unramified abelian extensions are governed by class field theory, and the class group appears as the Galois group of the Hilbert class field of the number field.
 
+\term{Ideal Sheaf}
+The sheaf $\mathcal{I}_Y$ on a space $X$ associated with a closed subscheme $Y$, whose sections over an open set $U$ are the functions in $\mathcal{O}_X(U)$ that vanish on $Y \cap U$. It is the kernel of the restriction map $\mathcal{O}_X \to i_* \mathcal{O}_Y$.
+
 \term{Idempotent Element}
 An element $e$ of a ring or semigroup is idempotent if $e^2 = e$. In a ring, $0$ and $1$ are always idempotent. Idempotents are used to decompose rings into direct sums: if $e$ is idempotent, $R = eR \oplus (1-e)R$.
 
@@ -168,6 +171,9 @@ A polynomial that has multiple roots in its splitting field. For a field of char
 
 \term{Inspection Paradox}
 The phenomenon that an interval encountered by random sampling tends to be longer than the average interval: for example, the average wait for a bus that you arrive to is longer than the theoretical average headway. It is a manifestation of length-biased sampling in renewal theory.
+
+\term{Instanton}
+A solution of the Yang--Mills equations on a principal $G$-bundle over a Riemannian four-manifold with finite action, equivalently a connection whose curvature $F$ satisfies the self-duality equation $F = *F$ (or anti-self-duality $F = -*F$), where $*$ is the Hodge star. Instantons minimise the Yang--Mills functional in their topological class, and their classification by Chern classes and Pontryagin number uses index theory; over $\mathbb{R}^4$ the ADHM construction parametrises all instantons. Donaldson invariants of smooth four-manifolds are built from moduli spaces of instantons, making them central to gauge theory and the differential topology of four-manifolds.
 
 \term{Integers}
 The set $\mathbb{Z} = \{\ldots, -2, -1, 0, 1, 2, \ldots\}$. They form a commutative ring and a Euclidean domain. The additive group is $\mathbb{Z}$, and the multiplicative group of units is $\{\pm 1\}$.
@@ -375,3 +381,10 @@ A numerical method that generates successive approximations converging to the so
 
 \term{Itô Calculus}
 The stochastic calculus for semimartingales, centered on the Itô integral of predictable processes with respect to martingales such as Brownian motion. Itô's formula is the change-of-variables rule, whose second-order term is the quadratic variation $[X,X]_t$, and it is the source of stochastic differential equations, whose solutions are diffusions governed by their generators. Unlike the Stratonovich integral, the Itô integral is an isometry and a martingale. Itô calculus is the foundation of the theory of diffusions and of mathematical finance through the Itô isometry and Itô's lemma.
+\term{Finite Element Method}
+A numerical technique for solving PDEs by partitioning the domain into simple elements and approximating the solution on each element by basis functions, typically polynomials. The method converts a PDE into a large sparse linear or nonlinear system. It is the dominant method in engineering simulation and has a rigorous foundation in Sobolev space theory and Céa's lemma.
+\term{Initial Object}
+An object $0$ in a category such that for every object $X$ there is a unique morphism $0 \to X$. Dually, a terminal object has a unique morphism from every object. In **Set**, the initial object is the empty set and the terminal objects are singleton sets. In **Grp**, the trivial group is both initial and terminal.
+\term{Independent Set}
+A set of vertices in a graph no two of which are adjacent. The independence number $\alpha(G)$ is the maximum size of an independent set. Independent sets are dual to vertex covers: a set is a vertex cover if and only if its complement is an independent set. The problem of finding maximum independent sets is NP-hard.
+

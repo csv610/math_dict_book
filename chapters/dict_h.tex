@@ -31,8 +31,14 @@ A combinatorial theorem giving a necessary and sufficient condition for a finite
 \term{Halting Problem}
 The problem of deciding, given a program and its input, whether the program eventually halts. Turing proved that it is undecidable: no algorithm solves it in all cases. The proof uses a diagonalization argument, constructing a program that halts exactly when the purported decider claims it does not. It is the classic undecidable problem and the starting point for the theory of computability.
 
+\term{Heine--Borel Theorem}
+In $\mathbb{R}^n$, a subset is compact if and only if it is closed and bounded. This characterisation links a topological property (compactness) to metric properties (closedness and boundedness) and is essential for proving the existence of extrema for continuous functions.
+
 \term{Hamiltonian (Mechanics)}
 A function $H(p, q, t)$ representing the total energy of a system. The evolution of the system is governed by Hamilton's equations: $\dot{q} = \frac{\partial H}{\partial p}$ and $\dot{p} = -\frac{\partial H}{\partial q}$.
+
+\term{Hamiltonian Cycle}
+A cycle in a graph that visits each vertex exactly once; a Hamiltonian path is the corresponding notion without return to the starting vertex. Dirac's theorem asserts that a graph on $n \geq 3$ vertices with minimum degree at least $n/2$ is Hamiltonian, and Ore's theorem generalises it to the condition $d(u)+d(v) \geq n$ for every pair of non-adjacent vertices. Deciding whether a graph contains a Hamiltonian cycle is NP-complete, and the traveling salesman problem asks for a Hamiltonian cycle of minimum total weight in an edge-weighted complete graph.
 
 \term{Hamiltonian Operator}
 In quantum mechanics, the operator $\hat{H}$ corresponding to the total energy of the system. The time-independent Schrödinger equation is $\hat{H} \psi = E \psi$.
@@ -91,6 +97,9 @@ The partial differential equation $\frac{\partial u}{\partial t} = \alpha \nabla
 \term{Heaviside Step Function}
 A function $\text{H}(x)$ that is $0$ for $x < 0$ and $1$ for $x \geq 0$. It is used to model switches in circuit theory and is the integral of the Dirac delta function.
 
+\term{Hecke Operator}
+The operator $T_n$ acting on spaces of modular forms via the double coset decomposition of $\operatorname{GL}_2$, or explicitly by $T_n f(\tau) = \sum_{ad=n,\, 0 \leq b < d} f\left(\frac{a\tau+b}{d}\right)$ for level-one forms. The operators $T_n$ commute and are normal for the Petersson inner product, so cusp forms admit a basis of simultaneous Hecke eigenforms whose Fourier coefficients are multiplicative, $a_{mn} = a_m a_n$ for $\gcd(m,n)=1$. This multiplicativity yields Euler products for the associated Hecke $L$-functions. Via the correspondence of Eichler--Shimura, Hecke operators mediate the bridge from modular forms to Galois representations, underpinning the Langlands program.
+
 \term{Hedgehog Space}
 A topological space formed by attaching several copies of the unit interval to a single common endpoint. It is used as a counterexample in the study of metric spaces.
 
@@ -123,6 +132,9 @@ A sesquilinear form $h$ on a complex vector space satisfying $h(u,v) = \overline
 
 \term{Hermitian Matrix}
 A complex square matrix $A$ that is equal to its own conjugate transpose: $A = A^*$. All eigenvalues of a Hermitian matrix are real.
+
+\term{Hessian}
+See \term{Hessian Matrix}.
 
 \term{Hessian Matrix}
 The square matrix of second-order partial derivatives of a scalar-valued function. It is used to determine if a critical point is a local maximum, minimum, or saddle point.
@@ -160,6 +172,12 @@ A theorem characterising the generators of strongly continuous semigroups of con
 \term{H-index}
 A metric that measures both the productivity and citation impact of a publication, where a scientist has index $h$ if $h$ of their papers have at least $h$ citations each.
 
+\term{Hilbert Polynomial}
+A polynomial $P(n)$ such that for sufficiently large $n$, $P(n)$ equals the dimension of the $n$-th graded component of the homogeneous coordinate ring of a projective variety. Its degree is the dimension of the variety, and its leading coefficient is related to the degree of the variety.
+
+\term{Hochschild Cohomology}
+The cohomology $\mathrm{HH}^n(A,M)$ of an associative algebra $A$ with coefficients in an $A$-bimodule $M$, defined as the cohomology of the Hochschild complex $C^n(A,M) = \operatorname{Hom}_k(A^{\otimes n}, M)$ with differential built from the multiplication of $A$. The group $\mathrm{HH}^2(A,A)$ classifies infinitesimal deformations of $A$, with obstructions in $\mathrm{HH}^3$. For smooth algebras the Hochschild--Kostant--Rosenberg theorem identifies $\mathrm{HH}^n(A,A)$ with polyvector fields $\bigwedge^n \operatorname{Der}_k(A)$, and the theory connects to Kähler differentials. Hochschild homology and cohomology are central to deformation theory, cyclic cohomology, and noncommutative geometry.
+
 \term{Hodge Star Operator}
 A linear isomorphism between $k$-forms and $(n-k)$-forms on an $n$-dimensional oriented Riemannian manifold. It is used to define the adjoint of the exterior derivative.
 
@@ -173,7 +191,7 @@ The operator $\Delta = d\delta + \delta d$ acting on differential forms. The ker
 A fractal pattern representing the energy spectrum of an electron in a 2D lattice subjected to a magnetic field.
 
 \term{Hölder Space}
-A space of functions whose differences are controlled by a power of the distance, i.e.\ functions satisfying $|f(x) - f(y)| \leq C |x - y|^\alpha$ for some $0 < \alpha \leq 1$.
+A space of functions whose differences are controlled by a power of the distance, i.e. functions satisfying $|f(x) - f(y)| \leq C |x - y|^\alpha$ for some $0 < \alpha \leq 1$.
 
 \term{Hölder's Inequality}
 The inequality $\int |fg| \leq \|f\|_p \|g\|_q$ for $1/p + 1/q = 1$, $p, q \geq 1$. It generalises the Cauchy--Schwarz inequality, which is the case $p = q = 2$.
@@ -213,6 +231,9 @@ A continuous deformation between two continuous maps $f, g: X \to Y$. Two maps a
 
 \term{Homotopy Category}
 The category whose objects are topological spaces and whose morphisms are homotopy classes of continuous maps.
+
+\term{Homotopy Fiber}
+The homotopy fiber $F_f$ of a map $f: X \to Y$ is the homotopy pullback of $f$ along the inclusion of a basepoint $* \to Y$: the space of pairs $(x, \gamma)$ with $x \in X$ and $\gamma: [0,1] \to Y$ a path from $f(x)$ to the basepoint, with the compact-open topology. When $f$ is a fibration, the homotopy fiber is homotopy equivalent to the ordinary fiber. The homotopy fiber fits into a fibration sequence $F_f \to X \to Y$ inducing the long exact sequence of homotopy groups, and homotopy fibers are the special case of homotopy limits. They are central in fibration sequences, obstruction theory, and stable homotopy.
 
 \term{Homotopy Group}
 The group $\pi_n(X)$ of based homotopy classes of maps $S^n \to X$. The fundamental group $\pi_1$ is the case $n = 1$.
@@ -300,3 +321,12 @@ A manifold of dimension $n-1$ embedded in a manifold of dimension $n$.
 
 \term{Hypervolume}
 The $n$-dimensional volume of a region in $\mathbb{R}^n$ for $n > 3$.
+
+\term{Gauge Symmetry}
+A redundancy in the mathematical description of a physical system: different field configurations related by a gauge transformation represent the same physical state. Gauge symmetries are the organising principle of the Standard Model, with $U(1)$ governing electromagnetism, $SU(2)$ the weak force, and $SU(3)$ the strong force. Yang--Mills theory generalises Maxwell's equations to non-abelian gauge groups.
+
+\term{Kan Extension}
+A method of extending a functor along another functor, universal in the sense of an adjunction. Left and right Kan extensions generalise the notions of left and right adjoints, colimits, and limits. Given $F: \mathcal{C} \to \mathcal{D}$ and $K: \mathcal{C} \to \mathcal{E}$, the left Kan extension $\operatorname{Lan}_K F: \mathcal{E} \to \mathcal{D}$ is the universal functor equipped with a natural transformation $F \Rightarrow \operatorname{Lan}_K F \circ K$.
+
+\term{Contravariant Functor}
+A functor $F: \mathcal{C} \to \mathcal{D}$ that reverses the direction of morphisms: $F(g \circ f) = F(g) \circ F(f)$. Equivalently, a covariant functor from $\mathcal{C}^{\operatorname{op}}$ to $\mathcal{D}$. The contravariant Hom functor $\operatorname{Hom}(-, A)$ and the dual space functor $V \mapsto V^*$ are fundamental examples. Contravariant functors appear throughout algebra and topology, particularly in cohomology theory.

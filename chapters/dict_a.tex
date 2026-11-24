@@ -37,6 +37,9 @@ Adaptive mesh refinement improves a numerical grid by using small cells where th
 \term{Additive Inverse}
 The additive inverse of a number or vector is the value that cancels it under addition. It is written $-a$ and satisfies $a+(-a)=0$; for example, the additive inverse of $7$ is $-7$. Subtraction is addition of an additive inverse: $a-b=a+(-b)$. \par\noindent Applications: additive inverses solve equations, balance physical quantities, and compute differences in data.
 
+\term{Adjacency Matrix}
+A square matrix $A=(a_{ij})$ represents a graph when $a_{ij}$ records whether vertices $i$ and $j$ are connected, or records an edge weight. Its eigenvalues form the graph spectrum. \par\noindent Applications: adjacency matrices support network ranking, community detection, graph clustering, and connectivity analysis.
+
 \term{Adjoint}
 The adjoint of a linear map is the map that moves the action from one side of an inner product to the other. It is defined by $\langle Ax,y\rangle=\langle x,A^*y\rangle$. For a real matrix $A$, $A^*$ is $A^{\mathsf T}$; for a complex matrix, it is the conjugate transpose. \par\noindent Applications: adjoints simplify least-squares fitting, optimization, quantum mechanics, and automatic differentiation.
 
@@ -115,6 +118,9 @@ The argument principle counts how many times a complex function winds around zer
 \term{Arrow's Impossibility Theorem}
 Arrow's impossibility theorem shows that no ranking rule for three or more choices can satisfy several reasonable fairness requirements simultaneously. In particular, unrestricted preferences, unanimity, independence of irrelevant alternatives, and non-dictatorship cannot all hold at once. The theorem identifies a trade-off rather than saying that voting is useless. \par\noindent Applications: it guides the design and interpretation of elections, ranking systems, and group decisions.
 
+\term{Articulation Point}
+See Cut Vertex. An articulation point or cut vertex is a vertex whose removal increases the number of connected components. \par\noindent Applications: it identifies single points of failure in communication, transport, and dependency networks.
+
 \term{Artinian Ring}
 An Artinian ring has a finiteness property: descending chains of ideals must eventually stop. For a left Artinian ring, every chain $I_1\supseteq I_2\supseteq\cdots$ becomes constant; such a ring is also left Noetherian, and its Jacobson radical is nilpotent. \par\noindent Applications: Artinian rings make classification problems manageable and appear in representation theory and finite-dimensional algebra.
 
@@ -138,6 +144,3 @@ The axiom of choice says that for any collection of nonempty sets, one can selec
 
 \term{Axiom Schema}
 An axiom schema is a template that produces a separate axiom for every allowed substitution into a pattern. For example, the separation schema in set theory gives an axiom for each formula describing a property used to select elements from a set. \par\noindent Applications: axiom schemas express broad principles in first-order systems while keeping each individual axiom finite.
-
-\term{Choice Function}
-For a family $\mathcal A$ of nonempty sets, a choice function makes one selection from every set: $f(A)\in A$ for each $A\in\mathcal A$. If the sets are finite and explicitly listed, the function is easy to construct; for an arbitrary family, its existence is guaranteed by the axiom of choice. \par\noindent Applications: choice functions appear in proofs involving bases, representatives of equivalence classes, optimization over infinite sets, and product constructions.

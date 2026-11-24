@@ -1,9 +1,6 @@
 \chapter*{C}
 \label{chap:c}
 
-\term{Adjacency Matrix}
-A square matrix $A=(a_{ij})$ represents a graph when $a_{ij}$ records whether vertices $i$ and $j$ are connected, or records an edge weight. Its eigenvalues form the graph spectrum. \par\noindent Applications: adjacency matrices support network ranking, community detection, graph clustering, and connectivity analysis.
-
 \term{Calculus}
 Calculus is the mathematics of change and accumulation. Derivatives measure instantaneous change, while integrals add up infinitely many small contributions; both are connected by the fundamental theorem of calculus. For example, if position is $s(t)$, velocity is $s'(t)$ and distance can be recovered by integrating velocity. \par\noindent Applications: calculus models motion, growth, optimization, fluid flow, finance, and physical systems.
 
@@ -15,6 +12,9 @@ A C*-algebra is an algebra of complex-valued operators that is complete and comp
 
 \term{Canonical Bundle}
 The canonical bundle records the objects that behave like volume forms on a complex manifold. For an $n$-dimensional manifold $X$, it is the line bundle $K_X=\bigwedge^nT^*X$, whose sections are holomorphic $n$-forms. Its positivity or negativity reveals important global features of $X$. \par\noindent Applications: canonical bundles are central in complex geometry, the classification of algebraic varieties, Kodaira vanishing, and the minimal model program.
+
+\term{Canonical Transformation}
+A change of coordinates in phase space that preserves the form of Hamilton's equations. In symplectic geometry, it is a diffeomorphism $\phi$ satisfying $\phi^*\omega=\omega$, where $\omega=\sum dq_i\wedge dp_i$. \par\noindent Applications: canonical transformations simplify mechanics problems, identify conserved quantities, and connect different Hamiltonian descriptions.
 
 \term{Cantor--Bernstein Theorem}
 The Cantor--Bernstein theorem says that two sets have the same size if each can be injected into the other. If there is a one-to-one map $A\to B$ and another $B\to A$, then a bijection $A\to B$ exists. \par\noindent Applications: it compares infinite sets and proves results about cardinality, data encodings, and function spaces.
@@ -43,6 +43,9 @@ A category is a system of objects and structure-preserving arrows between them. 
 \term{Category Theory}
 Category theory studies mathematical objects by the maps between them rather than by their internal descriptions. Its main tools are categories, functors that translate between categories, and natural transformations that compare functors. \par\noindent Applications: it unifies constructions across algebra, topology, geometry, logic, and computer science.
 
+\term{Cauchy Criterion}
+The Cauchy criterion says that a sequence $(x_n)$ converges in $\mathbb{R}^n$ exactly when its terms eventually become arbitrarily close to one another: for every $\epsilon>0$, there is an $N$ such that $\|x_m-x_n\|<\epsilon$ whenever $m,n\ge N$. In a general metric space, this condition guarantees convergence when the space is complete. \par\noindent Applications: it proves convergence of sequences and series without requiring an explicit value for their limit.
+
 \term{Cauchy Integral Theorem}
 The Cauchy integral theorem says that a holomorphic function has integral zero around any closed curve that can be shrunk to a point without crossing a singularity. Thus, on a suitable simply connected domain, $\oint_\gamma f(z)\,dz=0$. \par\noindent Applications: it gives path independence for complex integrals and leads to Cauchy's integral formula and the residue theorem.
 
@@ -67,6 +70,9 @@ This is another name for \termref{Cauchy Integral Theorem}: a holomorphic functi
 \term{Cauchy's Theorem}
 This is another name for \termref{Cauchy Integral Theorem}, which says that the integral of a holomorphic function around a contractible closed curve is zero. \par\noindent Applications: it supports complex integration and the study of analytic functions.
 
+\term{Cayley Graph}
+A Cayley graph turns a group into a network: each vertex is a group element, and edges show multiplication by chosen generators. For example, the Cayley graph of $\mathbb Z^n$ with standard generators is an infinite grid. \par\noindent Applications: Cayley graphs visualize algebraic structure and support network analysis, symmetry studies, and geometric group theory.
+
 \term{Cayley--Hamilton Theorem}
 The Cayley--Hamilton theorem says that a square matrix satisfies the polynomial equation whose roots are its eigenvalues. If $p(\lambda)=\det(\lambda I-A)$ is the characteristic polynomial, then $p(A)=0$. For a $2\times2$ matrix, every higher power reduces to a combination of $I$ and $A$. \par\noindent Applications: it computes matrix functions and helps solve systems of linear differential equations.
 
@@ -87,6 +93,9 @@ A chain complex is a sequence of algebraic objects linked by maps whose consecut
 
 \term{Chain Rule}
 The chain rule differentiates a composition by multiplying the rates of change at each stage. In one variable, $(g\circ f)'(x)=g'(f(x))f'(x)$; in several variables, $D(g\circ f)=Dg\,Df$. \par\noindent Applications: it drives sensitivity analysis, backpropagation in machine learning, mechanics, and calculus.
+
+\term{Change of Variables Theorem}
+The change of variables theorem transforms a multiple integral under a smooth one-to-one coordinate map. If \(T:U\to V\) is a suitable differentiable bijection, then \(\int_V g(y)\,dy=\int_U g(T(x))|\det DT(x)|\,dx\), where the determinant accounts for local area or volume scaling. \par\noindent Applications: it simplifies integrals by choosing coordinates suited to the geometry, such as polar, cylindrical, or spherical coordinates.
 
 \term{Chaos}
 Chaos is complicated, apparently random behavior produced by a deterministic system. A key feature is sensitive dependence on initial conditions: tiny starting differences can grow rapidly. \par\noindent Applications: chaotic models describe weather, turbulence, population dynamics, encryption, and the limits of long-term prediction.
@@ -126,6 +135,9 @@ A chi-squared distribution is the distribution of $X_1^2+\cdots+X_k^2$ when the 
 
 \term{Chi-squared (\ensuremath{\chi^2}) Test}
 The chi-squared test compares observed category counts with counts predicted by a model. A common statistic is $\chi^2=\sum (O_i-E_i)^2/E_i$, where $O_i$ and $E_i$ are observed and expected frequencies. \par\noindent Applications: it tests goodness of fit, independence in contingency tables, and relationships between categorical variables.
+
+\term{Choice Function}
+For a family $\mathcal A$ of nonempty sets, a choice function makes one selection from every set: $f(A)\in A$ for each $A\in\mathcal A$. If the sets are finite and explicitly listed, the function is easy to construct; for an arbitrary family, its existence is guaranteed by the axiom of choice. \par\noindent Applications: choice functions appear in proofs involving bases, representatives of equivalence classes, optimization over infinite sets, and product constructions.
 
 \term{Christoffel Symbols}
 Coefficients $\Gamma^k_{ij}$ describing the Levi--Civita connection on a Riemannian manifold with metric $g_{ij}$ are $\Gamma^k_{ij}=\frac12g^{kl}(\partial_i g_{jl}+\partial_jg_{il}-\partial_lg_{ij})$. They appear in the geodesic equation $\ddot{x}^k+\Gamma^k_{ij}\dot{x}^i\dot{x}^j=0$ and in covariant differentiation. They are not tensors but transform in a controlled way under coordinate changes. \par\noindent Applications: Christoffel symbols calculate geodesics, acceleration in curved coordinates, and gravitational motion in general relativity.
@@ -193,6 +205,9 @@ The codomain of a function $f:A\to B$ is the declared target set $B$; the range 
 \term{Coefficient of Variation}
 The coefficient of variation compares spread with the size of the mean. It is $CV=\sigma/|\mu|$ when $\mu\ne0$, so it has no units and can compare datasets measured on different scales. \par\noindent Applications: it compares relative variability in laboratory measurements, finance, biology, quality control, and risk analysis.
 
+\term{Coequalizer}
+A coequalizer combines points that two maps declare equivalent. For maps $f,g:A\to B$, it is a universal map $q:B\to C$ with $qf=qg$; for sets, it is the quotient formed by identifying every $f(a)$ with $g(a)$. \par\noindent Applications: coequalizers describe quotients and gluing in algebra, topology, and category theory.
+
 \term{Cofibration}
 A cofibration is a map $i:A\to X$ with the homotopy extension property: a deformation already defined on $A$ can be extended to all of $X$. In model categories, cofibrations are one of the three distinguished classes of maps and are dual to fibrations. \par\noindent Applications: cofibrations provide well-behaved inclusions for building spaces in homotopy theory and algebraic topology.
 
@@ -213,6 +228,9 @@ A combination is a selection in which order does not matter. The number of ways 
 
 \term{Commutative Algebra}
 Commutative algebra studies rings in which multiplication satisfies $ab=ba$, together with their ideals and modules. Polynomial rings and the integers are basic examples. \par\noindent Applications: commutative algebra is the algebraic foundation of algebraic geometry, number theory, coding, and algebraic statistics.
+
+\term{Commutative Diagram}
+A commutative diagram is a picture of maps where every route between the same two objects gives the same result. It is a visual way to show that several algebraic operations are compatible. \par\noindent Applications: commutative diagrams explain natural maps, exact sequences, universal properties, and constructions in algebra and topology.
 
 \term{Compactness Theorem}
 The compactness theorem for first-order logic says that an infinite collection of statements is simultaneously satisfiable whenever every finite subcollection is satisfiable. In other words, no contradiction appears only at infinity. \par\noindent Applications: it transfers finite constructions to infinite settings and supports model theory, nonstandard models, and combinatorics.
@@ -246,6 +264,9 @@ In high-dimensional spaces, most points behave nearly alike or lie close to a ty
 
 \term{Conditional Expectation}
 The conditional expectation $\mathbb E[X\mid\mathcal F]$ is the best average prediction of $X$ using the information in the $\sigma$-algebra $\mathcal F$. It is itself a random variable determined by that information. \par\noindent Applications: conditional expectation is used in prediction, filtering, regression, finance, and stochastic processes.
+
+\term{Conditional Independence}
+Events \(A\) and \(B\) are conditionally independent given information \(C\) when, after conditioning on \(C\), learning whether one occurs does not change the probability of the other: \(P(A\cap B\mid C)=P(A\mid C)P(B\mid C)\), when these conditional probabilities are defined. Conditional independence need not imply independence without the conditioning. \par\noindent Applications: it underlies Bayesian networks, probabilistic graphical models, causal reasoning, and statistical model factorization.
 
 \term{Conditional Probability}
 Conditional probability measures how likely $A$ is after learning that $B$ occurred. When $P(B)>0$, $P(A\mid B)=P(A\cap B)/P(B)$, and Bayes' theorem rewrites this using $P(B\mid A)$. \par\noindent Applications: conditional probability is essential in diagnosis, risk analysis, surveys, machine learning, and statistical inference.
@@ -306,6 +327,9 @@ The contraction mapping principle says that repeatedly applying a map that shrin
 
 \term{Contradiction}
 A contradiction is a statement or pair of assumptions that cannot both be true. In proof by contradiction, one assumes the negation of the desired claim and derives an impossibility. \par\noindent Applications: contradiction is used to prove irrationality, uniqueness, impossibility results, and the correctness of algorithms.
+
+\term{Contravariant Functor}
+A contravariant functor reverses arrows: it sends $f:X\to Y$ to $F(f):F(Y)\to F(X)$ and reverses composition. Equivalently, it is a covariant functor from the opposite category. Examples include $\operatorname{Hom}(-,A)$ and the dual-space map $V\mapsto V^*$. \par\noindent Applications: contravariant functors organize cohomology, duality, and pullback constructions in algebra and topology.
 
 \term{Convergence Almost Everywhere}
 Also called almost sure convergence, this means $P(\{\omega:X_n(\omega)\to X(\omega)\})=1$. It is stronger than convergence in probability and implies it. \par\noindent Applications: it describes long-run sample behavior in probability, simulation, and stochastic modeling.
@@ -438,6 +462,3 @@ In a product of many spaces, a cylinder set is defined by restricting only finit
 
 \term{Cylinder (Topology)}
 The cylinder over a space $X$ is the product $X\times[0,1]$, like stretching a space through time. It provides two ends, $X\times\{0\}$ and $X\times\{1\}$, which allow a continuous deformation between maps. \par\noindent Applications: cylinders define homotopy, mapping cylinders, deformation arguments, and constructions in algebraic topology.
-
-\term{Generating Function}
-A generating function stores a sequence as the coefficients of a power series. \origin{Leonhard Euler and Abraham de Moivre developed early generating-function methods to turn counting problems into algebraic calculations.} \par\noindent Applications: generating functions count arrangements, solve recurrences, study probability distributions, and analyze algorithms.

@@ -1,6 +1,6 @@
 # Mathematical Dictionary
 
-A comprehensive LaTeX mathematical dictionary with **1,786 entries** covering topics from foundational concepts to advanced theory, including classical theorems, modern results, and paradoxes. Although some terms are graduate-level, explanations are written for undergraduates without becoming superficial: they explain the main idea, define essential vocabulary, retain important assumptions and formulas, and describe applications in science, engineering, computing, or data analysis.
+A comprehensive LaTeX mathematical dictionary with **1,795 entries** covering topics from foundational concepts to advanced theory, including classical theorems, modern results, and paradoxes. Although some terms are graduate-level, explanations are written for undergraduates without becoming superficial: they explain the main idea, define essential vocabulary, retain important assumptions and formulas, and describe applications in science, engineering, computing, or data analysis.
 
 ## Overview
 

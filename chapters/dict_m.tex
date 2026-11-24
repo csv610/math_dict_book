@@ -26,6 +26,9 @@ A Markov process has the property that, conditional on its present state, its fu
 \term{Markov Property}
 The Markov property says that the present contains all the information needed to predict the next step: the future does not depend on the earlier history once the current state is known. \par\noindent Applications: it simplifies models of weather, queues, finance, genetics, and many other changing systems.
 
+\term{Markov's Inequality}
+Markov's inequality says that if \(X\) is a nonnegative random variable with finite expectation and \(a>0\), then \(P(X\ge a)\le \mathbb{E}[X]/a\). It bounds the chance of a large value using only the mean. \par\noindent Applications: it is a starting point for tail bounds, including Chebyshev's inequality and many concentration estimates.
+
 \term{Martingale}
 A process $(X_n)$ is a martingale with respect to information $(\mathcal F_n)$ if $\mathbb E[|X_n|]<\infty$ and $\mathbb E[X_{n+1}\mid\mathcal F_n]=X_n$. Its current value is the best conditional prediction of the next value. \par\noindent Applications: martingales model fair games, financial prices, stochastic integrals, and convergence arguments.
 

@@ -1,289 +1,290 @@
 \chapter*{P}
 \label{chap:p}
 
-\term{P vs NP}
-The P versus NP problem asks whether every problem whose proposed solution can be checked in polynomial time can also be solved in polynomial time. Since $P\subseteq NP$, the question is whether this inclusion is strict. \par\noindent\textbf{Applications:} the problem affects optimization, scheduling, automated reasoning, cryptography, and the limits of efficient computation.
-
 \term{P-adic Number}
-The $p$-adic numbers are the completion of the rationals using the distance $|x|_p=p^{-v_p(x)}$, which measures divisibility by a prime $p$ rather than ordinary size. Numbers are close when their difference is highly divisible by $p$. \par\noindent\textbf{Applications:} $p$-adic numbers support Diophantine equations, arithmetic geometry, local-to-global methods, and cryptography.
+The $p$-adic numbers are the completion of the rationals using the distance $|x|_p=p^{-v_p(x)}$, which measures divisibility by a prime $p$ rather than ordinary size. Numbers are close when their difference is highly divisible by $p$. \par\noindent Applications: $p$-adic numbers support Diophantine equations, arithmetic geometry, local-to-global methods, and cryptography.
 
 \term{P-adic Valuation}
-The $p$-adic valuation $v_p(n)$ is the exponent of the highest power of $p$ dividing an integer, extended to rationals and with $v_p(0)=\infty$. It satisfies $v_p(x+y)\geq\min(v_p(x),v_p(y))$. \par\noindent\textbf{Applications:} valuations measure divisibility and support congruences, factorization, and $p$-adic analysis.
+The $p$-adic valuation $v_p(n)$ is the exponent of the highest power of $p$ dividing an integer, extended to rationals and with $v_p(0)=\infty$. It satisfies $v_p(x+y)\geq\min(v_p(x),v_p(y))$. \par\noindent Applications: valuations measure divisibility and support congruences, factorization, and $p$-adic analysis.
 
 \term{Painter's Paradox}
-The observation connected with Gabriel's horn: the horn can be filled with a finite volume of paint, yet covering its surface seems to require an infinite amount. Under an idealized model with paint of no thickness the two statements conflict; in practice a finite film of paint on an infinite area still uses infinite volume, and the paradox highlights the difference between surface area and volume.
+Painter's paradox is the surprising fact that Gabriel's horn has finite volume but infinite surface area. It can be filled with a finite amount of paint, while coating every part of its ideal surface would require infinitely much. \par\noindent Applications: it illustrates the difference between area and volume and the care needed with infinite processes.
 
 \term{Paley--Wiener}
-The Paley--Wiener theorem characterizes entire functions of exponential type: a function $f$ is the restriction to $\mathbb{R}$ of an entire function of exponential type $\tau$ if and only if its Fourier transform has support in $[-\tau, \tau]$. Equivalently, the Fourier transform of a compactly supported function or distribution is an entire function of exponential type growing at most like $e^{\tau |z|}$. The theorem extends to tempered distributions and underlies the theory of Paley--Wiener spaces of bandlimited signals in sampling theory and harmonic analysis.
+The Paley--Wiener theorem links how quickly a complex function grows with how limited its frequency content is. A signal confined to a finite range of locations has a transform with controlled complex growth, and the reverse is also true. \par\noindent Applications: it supports Fourier analysis, sampling, signal processing, and the study of band-limited data.
 
 \term{Palindromic Sequence}
-A palindromic sequence reads the same from left to right and right to left. Palindromes can be studied through recursive construction, symmetry, and word combinatorics. \par\noindent\textbf{Applications:} they occur in string algorithms, coding, molecular sequence analysis, and pattern detection.
+A palindromic sequence reads the same from left to right and right to left. Palindromes can be studied through recursive construction, symmetry, and word combinatorics. \par\noindent Applications: they occur in string algorithms, coding, molecular sequence analysis, and pattern detection.
 
 \term{Parabolic PDE}
-A parabolic PDE has a time-like direction and diffusion-like behavior, as in the heat equation. It generally smooths irregular initial data as time evolves. \par\noindent\textbf{Applications:} parabolic PDEs model heat flow, diffusion, pricing, population spread, and image denoising.
+A parabolic PDE has a time-like direction and diffusion-like behavior, as in the heat equation. It generally smooths irregular initial data as time evolves. \par\noindent Applications: parabolic PDEs model heat flow, diffusion, pricing, population spread, and image denoising.
 
 \term{Paracompact}
-A topological space $X$ is paracompact if every open cover of $X$ admits a locally finite refinement, meaning an open refinement in which each point lies in only finitely many members. Paracompact Hausdorff spaces admit partitions of unity subordinate to any open cover, which is essential for defining smooth partitions of unity on manifolds and for gluing local constructions. Metric spaces and CW complexes are paracompact. Paracompactness plays a central role in sheaf theory, differential topology, and the construction of integrals on manifolds.
-
-\term{Parallelepiped}
-A parallelepiped is a solid generated by three vectors, with each pair of opposite faces parallel. Its volume is $V=|\mathbf a\cdot(\mathbf b\times\mathbf c)|$. \par\noindent\textbf{Applications:} parallelepipeds describe unit cells in crystals, coordinate changes, and volumes in vector calculus.
-
-\term{Parallel Transport}
-Parallel transport moves a vector along a curve while making its covariant derivative along the curve zero. On a curved manifold the result can depend on the path, revealing curvature. \par\noindent\textbf{Applications:} parallel transport is used in differential geometry, general relativity, robotics, and gauge theory.
-
-\term{Parameter}
-A parameter is a quantity that remains fixed during one calculation but can vary between models or cases. It can also label points on a parametric curve. \par\noindent\textbf{Applications:} parameters describe model uncertainty, geometric families, physical constants, and statistical coefficients.
-
-\term{Parametric Equation}
-A parametric equation describes coordinates as functions of a parameter, such as $x=\cos t$ and $y=\sin t$ for a circle. It can represent motion, orientation, and curves that are not graphs of a single-valued function. \par\noindent\textbf{Applications:} parametric equations are used in kinematics, computer graphics, geometry, and robotics.
-
-\term{Parity}
-The parity of an integer is whether it is even or odd. A function is even when $f(-x)=f(x)$ and odd when $f(-x)=-f(x)$. \par\noindent\textbf{Applications:} parity simplifies symmetry arguments, permutation signs, Fourier expansions, and selection rules in physics.
-
-\term{Parrondo's Paradox}
-Two games that are each losing can be combined, played alternately or by a random rule, into a winning strategy. It arises from capital-dependent or history-dependent strategies and connects to the theory of Brownian ratchets in physics; the winning arises from the nonlinearity of the combined process.
-
-\term{Parseval's Identity}
-Parseval's identity states that the squared norm of a function equals the sum of the squared magnitudes of its Fourier coefficients, with normalization depending on convention. It expresses conservation of energy under Fourier expansion. \par\noindent\textbf{Applications:} it supports signal power calculations, Fourier analysis, and error estimates for approximations.
-
-\term{Partial Derivative}
-A partial derivative differentiates a multivariable function with respect to one variable while holding the others fixed. It measures change along a coordinate direction. \par\noindent\textbf{Applications:} partial derivatives form gradients and Jacobians and are used in optimization, sensitivity analysis, thermodynamics, and PDEs.
-
-\term{Partial Differential Equation}
-A partial differential equation (PDE) is an equation relating an unknown function $u$ of several variables to its partial derivatives, of the form $F(x, u, \partial u/\partial x_i, \partial^2 u/\partial x_i \partial x_j, \ldots) = 0$. Second-order linear equations are classified by the sign of their principal symbol as elliptic, parabolic, or hyperbolic, each with its own existence, uniqueness, and regularity theory. A problem is well-posed in the sense of Hadamard when a solution exists, is unique, and depends continuously on the data. Weak solutions and Sobolev spaces are central tools in the analysis of PDEs.
-
-\term{Partial Fraction}
-A partial-fraction decomposition writes a rational function as a sum of simpler fractions associated with the factors of its denominator. \par\noindent\textbf{Applications:} it simplifies integration, inverse Laplace transforms, recurrence solutions, and symbolic algebra.
-
-\term{Partial Sum}
-A partial sum is $S_n=a_1+\cdots+a_n$, the sum of the first $n$ terms of a series. A series converges when its partial sums approach a finite limit. \par\noindent\textbf{Applications:} partial sums provide finite approximations and are used to study convergence and numerical error.
-
-\term{Partial Order}
-A partial order is a relation that is reflexive, antisymmetric, and transitive. It allows some elements to be incomparable, unlike a total order. \par\noindent\textbf{Applications:} partial orders represent dependencies, task schedules, lattices, version histories, and optimization constraints.
-
-\term{Partition (Integer)}
-A way of writing a positive integer $n$ as a sum of positive integers, where the order of the summands does not matter. The partition function $p(n)$ grows rapidly and is studied using generating functions and Hardy-Ramanujan asymptotics.
-
-\term{Path-Connected Space}
-A space is path-connected if every two points can be joined by a continuous path. Path-connectedness implies connectedness, although the converse can fail. \par\noindent\textbf{Applications:} it describes reachable configurations, connected regions, and continuous motions in topology and robotics.
-
-\term{Path Integral}
-A formulation of quantum mechanics developed by Richard Feynman, where the probability amplitude for a particle to travel from $a$ to $b$ is the sum over all possible paths, weighted by $e^{iS/\hbar}$ where $S$ is the action.
-
-\term{Pattern}
-A regular, repeating or predictable structure, studied formally in combinatorics and formal language theory.
-
-\term{Pearson Correlation Coefficient}
-The Pearson correlation is $\rho_{XY}=\operatorname{Cov}(X,Y)/(\sigma_X\sigma_Y)$ and lies between $-1$ and $1$. It measures linear association, not causation or general dependence. \par\noindent\textbf{Applications:} correlation summarizes data relationships and is used in regression, screening, and exploratory statistics.
-
-\term{Perfect Number}
-A positive integer that is equal to the sum of its proper positive divisors. Examples include 6, 28, and 496. All known perfect numbers are even and given by the formula $2^{p-1}(2^p - 1)$ where $2^p-1$ is a Mersenne prime.
-
-\term{Perfect Field}
-A field $K$ such that every irreducible polynomial over $K$ has distinct roots in its splitting field. All fields of characteristic 0 and all finite fields are perfect.
-
-\term{Perfect Matching}
-A perfect matching is a set of edges in which every vertex is incident to exactly one selected edge. It is also called a 1-factor. \par\noindent\textbf{Applications:} perfect matchings model pairings, assignment, scheduling, molecular bonding, and resource allocation.
-
-\term{Permutation}
-A permutation is a bijection from a set to itself. A finite set of $n$ elements has $n!$ permutations. \par\noindent\textbf{Applications:} permutations model rearrangements, schedules, symmetries, randomized algorithms, and group actions.
-
-\term{Permutation Group}
-A group whose elements are permutations of a given set and whose operation is the composition of permutations. The symmetric group $S_n$ is the group of all permutations of $n$ elements.
-
-\term{Permutation Matrix}
-A permutation matrix has exactly one $1$ in each row and column and zeros elsewhere. Multiplication by it reorders rows or columns without changing their values. \par\noindent\textbf{Applications:} permutation matrices represent reindexing, pivoting, graph relabeling, and sparse numerical algorithms.
-
-\term{Perron--Frobenius Theorem}
-A non-negative irreducible square matrix has a positive real eigenvalue equal to its spectral radius, with a strictly positive eigenvector; this eigenvalue is simple and dominates all others in modulus. It is the foundation for the convergence of Markov chains and for stable states in population dynamics, such as those modeled by Leslie matrices.
-
-\term{Phase Space}
-Phase space is the set of all possible states of a system. In classical mechanics, a state usually includes position and momentum, and evolution traces a path through phase space. \par\noindent\textbf{Applications:} phase space supports the study of planetary motion, gases, control systems, and statistical mechanics.
-
-\term{Phi ($\phi$) (Golden Ratio)}
-The irrational number $\phi = \frac{1+\sqrt{5}}{2} \approx 1.618$, which is the positive solution to $x^2 - x - 1 = 0$. It appears in the geometry of pentagons, the Fibonacci sequence, and phyllotaxis.
-
-\term{Picard Theorem}
-Picard's theorems concern the range of holomorphic functions. The little Picard theorem states that a nonconstant entire function omits at most one complex value, so every other value is attained. The great Picard theorem states that a holomorphic function in a punctured neighborhood of an essential singularity assumes every complex value infinitely often in every neighborhood of the singularity, with at most one exception. These results vastly strengthen Casorati--Weierstrass and are deep consequences of the theory of normal families; Nevanlinna theory refines them in the study of meromorphic functions.
-
-\term{Picard--Lindelöf Theorem}
-For the initial value problem $y' = f(x,y)$, $y(x_0) = y_0$, if $f$ is continuous in $x$ and Lipschitz continuous in $y$, then a unique solution exists on some interval about $x_0$. The proof typically proceeds via the contraction mapping principle applied to a space of continuous functions.
-
-\term{Pigeonhole Principle}
-The pigeonhole principle states that placing more than $m$ objects into $m$ containers forces some container to contain at least two objects. \par\noindent\textbf{Applications:} it proves existence results in combinatorics, number theory, hashing, scheduling, and collision analysis.
-
-\term{Planar Graph}
-A graph that can be drawn in the plane so that its edges meet only at common endpoints. Kuratowski's theorem characterizes planar graphs as those containing neither $K_5$ nor $K_{3,3}$ as a minor (equivalently, as a topological minor). A connected planar graph satisfies Euler's formula $V - E + F = 2$ relating vertices, edges, and faces. Every planar graph is 4-colorable, the four-color theorem. Planarity testing, dual graphs, and planar embeddings matter in graph drawing, network design, and algorithmic graph theory.
-
-\term{Pointwise Convergence}
-The sequence $f_n$ converges pointwise to $f$ on $S$ if $f_n(x)\to f(x)$ for each fixed $x\in S$. The rate may depend on $x$, so pointwise convergence is weaker than uniform convergence. \par\noindent\textbf{Applications:} it appears in approximation, probability, integration, and the study of function limits.
-
-\term{Poisson Distribution}
-The Poisson distribution models the number of independent events in a fixed interval with mean rate $\lambda$: $P(X=k)=e^{-\lambda}\lambda^k/k!$. \par\noindent\textbf{Applications:} it models arrivals, defects, mutations, calls, and other count data.
-
-\term{Poisson Equation}
-A partial differential equation of the form $\Delta u = f$, where $\Delta$ is the Laplacian. It describes the potential $u$ generated by a source density $f$, appearing in electrostatics and gravity.
-
-\term{Poisson Process}
-A Poisson process $N(t)$ counts events whose independent increments have Poisson distributions proportional to interval length. Its waiting times are independent exponential variables. \par\noindent\textbf{Applications:} it models queues, radioactive decay, insurance claims, network traffic, and random arrivals.
-
-\term{Poisson Summation Formula}
-A relationship between the sum of values of a function at integers and the sum of values of its Fourier transform at integers: $\sum_{n=-\infty}^\infty f(n) = \sum_{k=-\infty}^\infty \hat{f}(k)$.
-
-\term{Polytope}
-A polytope is a finite-dimensional generalization of a polygon and polyhedron. A convex polytope is the convex hull of finitely many points, or equivalently a bounded intersection of finitely many half-spaces. \par\noindent\textbf{Applications:} polytopes describe feasible regions in linear programming, geometry, combinatorics, and computer graphics.
-
-\term{Polyhedron}
-In Euclidean geometry, a three-dimensional solid bounded by flat polygonal faces, the higher-dimensional analogue of a polygon. More generally a polyhedron is a union of finitely many convex polytopes in $\mathbb{R}^n$. Convex polyhedra are studied through the theory of polytopes, with Euler's formula $V - E + F = 2$ for convex solids relating vertices, edges, and faces. Regular and vertex-transitive polyhedra include the five Platonic solids, the classification of which dates to antiquity and reappears in symmetry and group theory.
-
-\term{Polynomial}
-A polynomial is a finite sum of terms involving coefficients, variables, and nonnegative integer powers. Its degree controls growth and algebraic complexity. \par\noindent\textbf{Applications:} polynomials model data, approximate functions, define algebraic varieties, and support symbolic and numerical computation.
-
-\term{Polynomial Ring}
-The ring $R[x]$ consisting of all polynomials with coefficients in a ring $R$. If $R$ is a field, $R[x]$ is a Euclidean domain.
-
-\term{Polar Coordinates}
-Polar coordinates represent a planar point by radius $r$ and angle $\theta$, with $x=r\cos\theta$ and $y=r\sin\theta$. The area element is $r\,dr\,d\theta$. \par\noindent\textbf{Applications:} polar coordinates simplify circular geometry, wave equations, orbital motion, and double integrals.
-
-\term{Polar Decomposition}
-The factorization of a complex square matrix $A$ as $A = UP$, where $U$ is a unitary matrix and $P$ is a positive semi-definite Hermitian matrix.
-
-\term{Pontryagin Duality}
-A duality between a locally compact abelian (LCA) group $G$ and its dual group $\widehat{G}$, which consists of all continuous characters of $G$. The double dual is canonically isomorphic to $G$.
-
-\term{Predicate Logic}
-Also called first-order logic or first-order predicate calculus. It extends propositional logic by introducing quantifiers ($\forall$, $\exists$) and predicates applied to variables. Predicate logic is the standard formal system for expressing mathematical statements and proofs.
-
-\term{Poincaré Disk Model}
-A model of hyperbolic geometry where the hyperbolic plane is represented by the interior of the unit disk in $\mathbb{R}^2$. Geodesics are arcs of circles orthogonal to the boundary.
-
-\term{Poincaré Recurrence Theorem}
-A theorem in dynamical systems stating that for a measure-preserving transformation on a finite-measure space, almost every point in any set $A$ will eventually return to $A$ infinitely often.
-
-\term{Poincaré Conjecture}
-A famous theorem stating that every simply connected, closed 3-manifold is homeomorphic to the 3-sphere. It was proven by Grigori Perelman (2003) using Ricci flow.
-
-\term{Poincaré Duality}
-A fundamental result in manifold topology: for a compact oriented $n$-manifold $M$, there is an isomorphism $H^k(M; \mathbb{Z}) \cong H_{n-k}(M; \mathbb{Z})$.
-
-\term{Poincaré--Hopf Theorem}
-For a smooth vector field $V$ on a compact manifold $M$ with isolated zeros, the sum of the indices of the zeros equals the Euler characteristic $\chi(M)$.
-
-\term{Population}
-The entire set of objects of interest in a statistical study, from which samples are drawn.
-
-\term{Power Set}
-The set of all subsets of a set $S$, denoted $\mathcal{P}(S)$ or $2^S$. By Cantor's theorem, the cardinality of the power set is strictly greater than the cardinality of $S$.
-
-\term{Power Series}
-An infinite series of the form $\sum_{n=0}^\infty a_n (x-c)^n$. Each power series has a radius of convergence $R$, within which the series converges absolutely.
-
-\term{Preconditioner}
-A matrix or operator that transforms a linear system into one with better conditioning for iterative solvers.
-
-\term{Preconditioning}
-The process of transforming a linear system $Ax = b$ into an equivalent system $M^{-1}Ax = M^{-1}b$ to reduce its condition number. A good preconditioner $M$ approximates $A$ but is easy to invert, thereby accelerating the convergence of iterative solvers like the conjugate gradient method.
-
-\term{Preimage}
-For a function $f: X \to Y$ and a subset $B \subseteq Y$, the preimage $f^{-1}(B)$ is the set of all $x \in X$ such that $f(x) \in B$.
-
-\term{Pre-order}
-A binary relation that is reflexive and transitive, but not necessarily antisymmetric. A partial order is a pre-order that is also antisymmetric.
-
-\term{Presheaf}
-An assignment of data to open sets together with restriction maps, compatible with inclusions of open sets.
-
-\term{Primal Problem}
-The original optimization problem, to which a dual problem is associated.
-
-\term{Primality Test}
-An algorithm deciding whether a given integer $n$ is prime. Trial division is simple but exponential in the number of digits; probabilistic tests such as Miller--Rabin and Solovay--Strassen determine primality quickly with small error probability. The AKS algorithm, announced in 2002, gives the first deterministic polynomial-time primality test, unconditionally proving primality in time polynomial in $\log n$. Primality testing is distinct from integer factorization and is central to public-key cryptography, where large primes are generated for RSA and related schemes.
-
-\term{Prime Ideal}
-An ideal $P$ such that $ab \in P$ implies $a \in P$ or $b \in P$; the quotient ring is an integral domain.
-
-\term{Prime Number Theorem}
-The number $\pi(x)$ of primes at most $x$ is asymptotically $\pi(x) \sim x / \ln x$. An equivalent statement is that $\pi(x)$ is asymptotic to the logarithmic integral $\operatorname{li}(x)$, which approximates $\pi(x)$ even more closely. The size of the error term depends on the zeros of the Riemann zeta function, and the Riemann hypothesis would imply a sharp square-root error bound.
-
-\term{Principal Ideal}
-An ideal $I$ in a ring $R$ that is generated by a single element $a$: $I = (a) = \{ra : r \in R\}$.
-
-\term{Principal Component Analysis (PCA)}
-A statistical procedure that uses an orthogonal transformation to convert a set of observations of possibly correlated variables into a set of values of linearly uncorrelated variables called principal components.
-
-\term{Principal Fiber Bundle}
-A fiber bundle $\pi: P \to B$ together with a Lie group $G$ that acts freely and transitively on each fiber. These are used to define gauge theories in physics.
-
-\term{Principal Ideal Domain (PID)}
-An integral domain in which every ideal is a principal ideal. Examples include the ring of integers $\mathbb{Z}$ and the ring of polynomials $F[x]$ over a field $F$.
-
-\term{Principal Value (Cauchy)}al
-The Cauchy principal value is a method for assigning a value to certain divergent integrals, such as $\int_{-a}^a \frac{1}{x}\,dx$, by taking a symmetric limit around the singularity.
-
-\term{Probability Density Function}
-The function $f$ such that $P(a \leq X \leq b) = \int_a^b f(x)\,dx$ for a continuous random variable $X$.
-
-\term{Probability Space}
-A mathematical triple $(\Omega, \mathcal{F}, P)$ consisting of a sample space $\Omega$, a $\sigma$-algebra $\mathcal{F}$ of events, and a probability measure $P$.
-
-\term{Product Measure}
-Given measure spaces $(X, \mathcal{A}, \mu)$ and $(Y, \mathcal{B}, \nu)$, the product measure $\mu \times \nu$ on $X \times Y$ is constructed from the outer measure generated by the measurable rectangles $A \times B$. Fubini and Tonelli theorems justify interchanging integrals over the factors. In probability, product measures model independent random variables, and the Kolmogorov extension theorem constructs infinite product measures for arbitrary collections of random variables, underlying stochastic processes.
-
-\term{Product Space}
-The Cartesian product of two or more sets, spaces, or groups, equipped with the product structure (e.g., the product topology or product measure).
-
-\term{Product Topology}
-The coarsest topology on a product $\prod X_i$ such that all projection maps $\pi_i$ are continuous. A basis for this topology consists of products of open sets, where all but finitely many are the whole space $X_i$.
-
-\term{Projection Operator}
-A linear operator $P: V \to V$ such that $P^2 = P$. It decomposes the space $V$ into the direct sum of the image of $P$ and the kernel of $P$.
-
-\term{Projective Geometry}
-The study of geometric properties that are invariant under projective transformations. It extends Euclidean geometry by adding "points at infinity."
-
-\term{Projective Module}
-An $R$-module $P$ is projective if the functor $\operatorname{Hom}_R(P, -)$ is exact, meaning every epimorphism $M \to N$ induces a surjection $\operatorname{Hom}_R(P, M) \to \operatorname{Hom}_R(P, N)$. Equivalently, $P$ is a direct summand of a free module, or the image of an idempotent endomorphism of a free module. Projective modules give projective resolutions and the derived functor Ext; over a commutative ring, Bass's theorem characterizes the projective generation of modules, and the Serre--Swan correspondence relates finitely generated projective modules over the ring of smooth functions on a manifold to vector bundles.
-
-\term{Projective Scheme}
-A scheme of the form $\operatorname{Proj}(S)$ for a graded ring $S$, equivalently a scheme admitting an ample line bundle, which yields a closed immersion into projective space $\mathbb{P}^n$. Finitely generated graded algebras over a field give projective varieties. Cohomology of coherent sheaves on projective schemes is finite-dimensional, and Serre vanishing and the GAGA correspondence are central results.
-
-\term{Projective Space}
-The set of all lines passing through the origin in a vector space $\mathbb{R}^{n+1}$. It is denoted $\mathbb{P}^n(\mathbb{R})$ and can be viewed as the quotient of $\mathbb{R}^{n+1} \setminus \{0\}$ by the equivalence $v \sim \lambda v$.
-
-\term{Projective Variety}
-The set of common zeros of a collection of homogeneous polynomials in a projective space. Projective varieties are the central objects of study in classical algebraic geometry.
-
-\term{Proper Map}
-A continuous map $f: X \to Y$ between topological spaces is proper if the preimage of every compact set in $Y$ is compact in $X$.
-
-\term{Primitive Root}
-An integer $g$ is a primitive root modulo $n$ if every integer $a$ coprime to $n$ is congruent to a power of $g$ modulo $n$. This means $g$ generates the multiplicative group $(\mathbb{Z}/n\mathbb{Z})^\times$.
-
-\term{Primitive Element Theorem}
-A theorem in field theory stating that every finite separable extension $L/K$ is a simple extension, meaning $L = K(\alpha)$ for some $\alpha \in L$.
-
-\term{Proportionality}
-A relationship between two quantities where their ratio remains constant. If $y$ is proportional to $x$, then $y = kx$ for some constant $k$.
-
-\term{Proximal Operator}
-The map $\operatorname{prox}_f(x) = \arg\min_y (f(y) + \frac{1}{2}\|x-y\|^2)$, central to proximal methods in optimization.
-
-\term{Pullback}
-The map $f^*$ induced by a function $f$, sending objects on the codomain to objects on the domain, such as differential forms or bundles.
-
-\term{Purely Imaginary}
-A complex number of the form $bi$ with real part zero.
-
-\term{Pushforward}
-The map $f_*$ induced by a function $f$, pushing vectors from the tangent space of the domain to that of the codomain.
-
-\term{Pushout}
-The colimit of a diagram $B \leftarrow A \rightarrow C$, the result of gluing $B$ and $C$ along the maps from $A$, equivalently the coproduct of $B$ and $C$ over $A$. For topological spaces, pushouts are quotients of disjoint unions, as in adjunction spaces. Pushout squares and homotopy pushouts are central in homotopy theory, and pushouts are dual to pullbacks.
-\term{Poisson Bracket}
-A bilinear operation on functions on a symplectic manifold, $\{f, g\} = \sum_i \left(\frac{\partial f}{\partial q_i}\frac{\partial g}{\partial p_i} - \frac{\partial f}{\partial p_i}\frac{\partial g}{\partial q_i}\right)$, satisfying skew-symmetry, the Jacobi identity, and acting as a derivation. In Hamiltonian mechanics, the time evolution of any observable $f$ is $\dot{f} = \{f, H\}$, and canonical transformations are exactly those preserving the Poisson bracket.
+A space is paracompact when any cover by open pieces can be replaced by another cover in which each point belongs to only finitely many pieces. This allows local descriptions to be combined smoothly. \par\noindent Applications: paracompactness supports manifolds, partitions of unity, differential geometry, and the gluing of local data.
 
 \term{Paradox}
-A statement or argument that leads to a contradiction or a situation that defies intuition. Mathematical paradoxes often reveal limitations in naive reasoning or exposed flaws in foundational assumptions. Famous examples include Russell's paradox, the Banach--Tarski paradox, and Zeno's paradoxes.
+A paradox is an argument or situation that seems to lead to an impossible or self-contradictory conclusion. It often exposes a hidden assumption or a limit of ordinary intuition. \par\noindent Applications: paradoxes sharpen definitions and reveal issues in logic, infinity, probability, and the foundations of mathematics.
+
+\term{Parallelepiped}
+A parallelepiped is a solid generated by three vectors, with each pair of opposite faces parallel. Its volume is $V=|\mathbf a\cdot(\mathbf b\times\mathbf c)|$. \par\noindent Applications: parallelepipeds describe unit cells in crystals, coordinate changes, and volumes in vector calculus.
+
+\term{Parallel Transport}
+Parallel transport moves a vector along a curve while making its covariant derivative along the curve zero. On a curved manifold the result can depend on the path, revealing curvature. \par\noindent Applications: parallel transport is used in differential geometry, general relativity, robotics, and gauge theory.
+
+\term{Parameter}
+A parameter is a quantity that remains fixed during one calculation but can vary between models or cases. It can also label points on a parametric curve. \par\noindent Applications: parameters describe model uncertainty, geometric families, physical constants, and statistical coefficients.
+
+\term{Parametric Equation}
+A parametric equation describes coordinates as functions of a parameter, such as $x=\cos t$ and $y=\sin t$ for a circle. It can represent motion, orientation, and curves that are not graphs of a single-valued function. \par\noindent Applications: parametric equations are used in kinematics, computer graphics, geometry, and robotics.
+
+\term{Parity}
+The parity of an integer is whether it is even or odd. A function is even when $f(-x)=f(x)$ and odd when $f(-x)=-f(x)$. \par\noindent Applications: parity simplifies symmetry arguments, permutation signs, Fourier expansions, and selection rules in physics.
+
+\term{Parrondo's Paradox}
+Parrondo's paradox shows that two games, each unfavorable when played alone, can become favorable when alternated in the right pattern. The switching changes the player's state and therefore changes the later odds. \par\noindent Applications: it illustrates probability, random processes, alternating strategies, and ratchet effects in physics.
+
+\term{Parseval's Identity}
+Parseval's identity states that the squared norm of a function equals the sum of the squared magnitudes of its Fourier coefficients, with normalization depending on convention. It expresses conservation of energy under Fourier expansion. \par\noindent Applications: it supports signal power calculations, Fourier analysis, and error estimates for approximations.
+
+\term{Partial Derivative}
+A partial derivative differentiates a multivariable function with respect to one variable while holding the others fixed. It measures change along a coordinate direction. \par\noindent Applications: partial derivatives form gradients and Jacobians and are used in optimization, sensitivity analysis, thermodynamics, and PDEs.
+
+\term{Partial Differential Equation}
+A partial differential equation relates a quantity depending on several variables to its rates of change in those variables. Heat, waves, fluid flow, and vibrations are described by such equations. \par\noindent Applications: PDEs model weather, sound, heat, elasticity, fluid motion, electricity, and image processing.
+
+\term{Partial Fraction}
+A partial-fraction decomposition writes a rational function as a sum of simpler fractions associated with the factors of its denominator. \par\noindent Applications: it simplifies integration, inverse Laplace transforms, recurrence solutions, and symbolic algebra.
+
+\term{Partial Order}
+A partial order is a relation that is reflexive, antisymmetric, and transitive. It allows some elements to be incomparable, unlike a total order. \par\noindent Applications: partial orders represent dependencies, task schedules, lattices, version histories, and optimization constraints.
+
+\term{Partial Sum}
+A partial sum is $S_n=a_1+\cdots+a_n$, the sum of the first $n$ terms of a series. A series converges when its partial sums approach a finite limit. \par\noindent Applications: partial sums provide finite approximations and are used to study convergence and numerical error.
+
+\term{Partition (Integer)}
+An integer partition writes a whole number as a sum of positive whole numbers, without caring about order. For example, $4$ has the partitions $4$, $3+1$, $2+2$, $2+1+1$, and $1+1+1+1$. \par\noindent Applications: partitions count arrangements, resource allocations, musical rhythms, and combinatorial objects.
+
+\term{Path-Connected Space}
+A space is path-connected if every two points can be joined by a continuous path. Path-connectedness implies connectedness, although the converse can fail. \par\noindent Applications: it describes reachable configurations, connected regions, and continuous motions in topology and robotics.
+
+\term{Path Integral}
+A path integral describes a quantum process by combining contributions from every possible path between two events. Paths whose effects reinforce one another are most visible in the final result. \par\noindent Applications: path integrals support quantum mechanics, quantum field theory, statistical physics, and semiclassical approximations.
+
+\term{Pattern}
+A pattern is a structure that repeats or follows a recognizable rule. Mathematics studies patterns in numbers, shapes, words, graphs, and data. \par\noindent Applications: patterns support prediction, compression, design, combinatorics, and the discovery of regularity in data.
+
+\term{Pearson Correlation Coefficient}
+The Pearson correlation is $\rho_{XY}=\operatorname{Cov}(X,Y)/(\sigma_X\sigma_Y)$ and lies between $-1$ and $1$. It measures linear association, not causation or general dependence. \par\noindent Applications: correlation summarizes data relationships and is used in regression, screening, and exploratory statistics.
+
+\term{Perfect Field}
+A perfect field is a number system in which polynomial roots do not acquire unwanted repetitions. All finite fields and the usual real and complex number systems are perfect. \par\noindent Applications: perfect fields simplify polynomial equations, field extensions, and algebraic geometry.
+
+\term{Perfect Matching}
+A perfect matching is a set of edges in which every vertex is incident to exactly one selected edge. It is also called a 1-factor. \par\noindent Applications: perfect matchings model pairings, assignment, scheduling, molecular bonding, and resource allocation.
+
+\term{Perfect Number}
+A perfect number equals the sum of its positive divisors other than itself. For example, $6=1+2+3$. \par\noindent Applications: perfect numbers illustrate divisor patterns and support research in number theory and computational mathematics.
+
+\term{Permutation}
+A permutation is a bijection from a set to itself. A finite set of $n$ elements has $n!$ permutations. \par\noindent Applications: permutations model rearrangements, schedules, symmetries, randomized algorithms, and group actions.
+
+\term{Permutation Group}
+A permutation group is a collection of rearrangements of a set that can be combined and undone. \par\noindent Applications: permutation groups describe symmetry, shuffling, puzzles, molecule structures, and the rearrangement of coordinates.
+
+\term{Permutation Matrix}
+A permutation matrix has exactly one $1$ in each row and column and zeros elsewhere. Multiplication by it reorders rows or columns without changing their values. \par\noindent Applications: permutation matrices represent reindexing, pivoting, graph relabeling, and sparse numerical algorithms.
+
+\term{Perron--Frobenius Theorem}
+The Perron--Frobenius theorem says that a matrix with nonnegative entries has a largest growth direction with nonnegative entries. Repeatedly applying the matrix tends to make this dominant direction visible. \par\noindent Applications: it studies population growth, search ranking, networks, Markov chains, and economic input-output models.
+
+\term{Phase Space}
+Phase space is the set of all possible states of a system. In classical mechanics, a state usually includes position and momentum, and evolution traces a path through phase space. \par\noindent Applications: phase space supports the study of planetary motion, gases, control systems, and statistical mechanics.
+
+\term{Phi ($\phi$) (Golden Ratio)}
+The golden ratio is $\phi=(1+\sqrt5)/2\approx1.618$. It has the special property that $\phi=1+1/\phi$, and it appears in pentagons and Fibonacci numbers. \par\noindent Applications: it appears in geometry, design, growth patterns, art, and the analysis of recursive sequences.
+
+\term{Picard--Lindelöf Theorem}
+The Picard--Lindelöf theorem says that an initial-value differential equation has one and only one nearby solution when its rule changes continuously and does not change too sharply with the unknown. \par\noindent Applications: it justifies predictions from differential equations and guarantees that a model has a well-defined local future.
+
+\term{Picard Theorem}
+Picard's theorem says that a nonconstant complex function takes almost every complex value. Near a severe singularity, it takes almost every value infinitely many times, however small the neighborhood. \par\noindent Applications: it describes the richness of complex functions and supports complex analysis and the study of singularities.
+
+\term{Pigeonhole Principle}
+The pigeonhole principle states that placing more than $m$ objects into $m$ containers forces some container to contain at least two objects. \par\noindent Applications: it proves existence results in combinatorics, number theory, hashing, scheduling, and collision analysis.
+
+\term{Planar Graph}
+A planar graph can be drawn on a flat surface without edges crossing except at shared endpoints. \par\noindent Applications: planar graphs model maps, printed circuits, road networks, layouts, and diagrams.
+
+\term{Poincaré Conjecture}
+The Poincaré conjecture, now a theorem, says that every closed three-dimensional space with no essential loops has the same topological shape as a three-sphere. \par\noindent Applications: it is a landmark in topology and guides the classification of three-dimensional spaces.
+
+\term{Poincaré Disk Model}
+The Poincaré disk model represents the whole hyperbolic plane inside an ordinary circular disk. Straightest paths appear as circular arcs that meet the boundary at right angles. \par\noindent Applications: it visualizes hyperbolic geometry, tilings, networks, and curved spaces.
+
+\term{Poincaré Duality}
+Poincaré duality says that on a closed, oriented $n$-dimensional space, information about $k$-dimensional holes matches information about $(n-k)$-dimensional holes. \par\noindent Applications: it links geometry and topology and simplifies calculations on surfaces and manifolds.
+
+\term{Poincaré--Hopf Theorem}
+The Poincaré--Hopf theorem says that the total turning behavior of a vector field at its isolated zero points equals the Euler characteristic of the whole space. \par\noindent Applications: it guarantees stationary points and connects vector fields, curvature, and topology.
+
+\term{Poincaré Recurrence Theorem}
+The Poincaré recurrence theorem says that a system with finite total size and preserved probability will, for almost every starting state, eventually return arbitrarily close to earlier states. \par\noindent Applications: it supports statistical mechanics, dynamical systems, and the study of long-term motion.
+
+\term{Pointwise Convergence}
+The sequence $f_n$ converges pointwise to $f$ on $S$ if $f_n(x)\to f(x)$ for each fixed $x\in S$. The rate may depend on $x$, so pointwise convergence is weaker than uniform convergence. \par\noindent Applications: it appears in approximation, probability, integration, and the study of function limits.
+
+\term{Poisson Bracket}
+The Poisson bracket combines two quantities in Hamiltonian mechanics to describe how their interaction changes over time. \par\noindent Applications: it models motion, conserved quantities, canonical coordinates, and the transition from classical to quantum mechanics.
+
+\term{Poisson Distribution}
+The Poisson distribution models the number of independent events in a fixed interval with mean rate $\lambda$: $P(X=k)=e^{-\lambda}\lambda^k/k!$. \par\noindent Applications: it models arrivals, defects, mutations, calls, and other count data.
+
+\term{Poisson Equation}
+The Poisson equation is $\Delta u=f$, where the source $f$ determines how the quantity $u$ bends or spreads. \par\noindent Applications: it models electric potential, gravity, pressure, steady heat, and fluid flow.
+
+\term{Poisson Process}
+A Poisson process $N(t)$ counts events whose independent increments have Poisson distributions proportional to interval length. Its waiting times are independent exponential variables. \par\noindent Applications: it models queues, radioactive decay, insurance claims, network traffic, and random arrivals.
+
+\term{Poisson Summation Formula}
+The Poisson summation formula says that adding a function at all integer points can equal adding its frequency transform at all integer frequencies. It connects a discrete view with a frequency view. \par\noindent Applications: it estimates sums, studies sampling, and supports Fourier analysis and number theory.
+
+\term{Polar Coordinates}
+Polar coordinates represent a planar point by radius $r$ and angle $\theta$, with $x=r\cos\theta$ and $y=r\sin\theta$. The area element is $r\,dr\,d\theta$. \par\noindent Applications: polar coordinates simplify circular geometry, wave equations, orbital motion, and double integrals.
+
+\term{Polar Decomposition}
+Polar decomposition writes a matrix as a rotation-like part times a stretching part, $A=UP$. It is the matrix version of writing a complex number as size times direction. \par\noindent Applications: it supports numerical linear algebra, data analysis, geometry, signal processing, and quantum mechanics.
+
+\term{Polyhedron}
+A polyhedron is a solid bounded by flat polygonal faces. A cube and a pyramid are familiar examples. \par\noindent Applications: polyhedra model buildings, crystals, 3D computer objects, geometric optimization, and physical structures.
+
+\term{Polynomial}
+A polynomial is a finite sum of terms involving coefficients, variables, and nonnegative integer powers. Its degree controls growth and algebraic complexity. \par\noindent Applications: polynomials model data, approximate functions, define algebraic varieties, and support symbolic and numerical computation.
+
+\term{Polynomial Ring}
+A polynomial ring is the collection of all polynomials whose coefficients come from a chosen number system or ring. \par\noindent Applications: polynomial rings provide the basic setting for equations, factorization, algebraic geometry, and symbolic computation.
+
+\term{Polytope}
+A polytope is a finite-dimensional generalization of a polygon and polyhedron. A convex polytope is the convex hull of finitely many points, or equivalently a bounded intersection of finitely many half-spaces. \par\noindent Applications: polytopes describe feasible regions in linear programming, geometry, combinatorics, and computer graphics.
+
+\term{Pontryagin Duality}
+Pontryagin duality says that a suitable commutative group can be recovered from the collection of its continuous wave-like characters. Taking the character collection twice returns the original group. \par\noindent Applications: it unifies Fourier analysis, harmonic analysis, signals, and locally compact groups.
+
+\term{Population}
+A population is the complete collection a statistical study wants to understand. A sample is selected from that population. \par\noindent Applications: populations define the scope of surveys, experiments, medical studies, and quality control.
 
 \term{Positive-Definite Matrix}
-A symmetric (or Hermitian) matrix $A$ is positive definite if $x^T A x > 0$ for all non-zero vectors $x$ (or $x^* A x > 0$ in the complex case). Equivalent conditions include: all eigenvalues are strictly positive, all leading principal minors are positive (Sylvester's criterion), and $A$ can be factored as $A = L L^T$ with $L$ lower triangular with positive diagonal entries. Positive-definite matrices arise in optimization (strict convexity), statistics (covariance matrices), and numerical analysis (preconditioners).
+A positive-definite matrix gives a positive result $x^TAx$ for every nonzero direction $x$. It behaves like a multidimensional upward-opening bowl. \par\noindent Applications: positive-definite matrices support optimization, distances, covariance, stability, and numerical computation.
+
+\term{Power Series}
+A power series represents a function as an infinite polynomial, $\sum a_n(x-c)^n$. It converges within a certain distance from its center. \par\noindent Applications: power series approximate functions and solve differential equations, probability problems, and physical models.
+
+\term{Power Set}
+The power set of $S$ is the collection of every subset of $S$, including the empty set and $S$ itself. \par\noindent Applications: power sets describe all possible selections, events in probability, and the foundations of set theory.
+
+\term{Preconditioner}
+A preconditioner is a simple transformation that makes a difficult linear system easier for a numerical algorithm to solve. \par\noindent Applications: preconditioners speed up simulations, engineering calculations, optimization, and scientific computing.
+
+\term{Preconditioning}
+Preconditioning changes a linear system into an equivalent but easier one before solving it. A good change reduces the number of steps needed by an iterative solver. \par\noindent Applications: it accelerates large simulations, fluid models, optimization, and finite-element calculations.
+
+\term{Predicate Logic}
+Predicate logic extends statements such as “$P$ is true” by allowing variables, relationships, and phrases such as “for every” and “there exists.” \par\noindent Applications: it expresses mathematics, databases, computer programs, automated reasoning, and formal proofs.
+
+\term{Preimage}
+The preimage of a set is the collection of inputs whose outputs land in that set. \par\noindent Applications: preimages describe solution sets, level regions, event probabilities, and how maps transfer constraints backward.
+
+\term{Pre-order}
+A pre-order is a relation that says an object can come before another, with every object before itself and the relation chaining consistently. Two different objects may still count as equivalent in both directions. \par\noindent Applications: pre-orders organize tasks, information, logic, approximation, and computer programs.
+
+\term{Presheaf}
+A presheaf assigns data to each region of a space and tells how to restrict that data to a smaller region. It records local information before requiring pieces to fit together globally. \par\noindent Applications: presheaves organize local functions, geometry, topology, and algebraic data.
+
+\term{Primality Test}
+A primality test decides whether a whole number has exactly two positive divisors, $1$ and itself. \par\noindent Applications: primality tests generate cryptographic keys, check number-theory calculations, and support fast computer arithmetic.
+
+\term{Primal Problem}
+The primal problem is the original optimization task: choose variables to minimize or maximize an objective subject to given restrictions. \par\noindent Applications: primal problems allocate resources, schedule work, design systems, and fit models.
+
+\term{Prime Ideal}
+A prime ideal is a collection of ring elements with the property that if a product belongs to it, at least one factor already belongs to it. It behaves like the prime numbers do under multiplication. \par\noindent Applications: prime ideals identify algebraic points and support factorization and algebraic geometry.
+
+\term{Prime Number Theorem}
+The prime number theorem says that primes become less frequent in a predictable way: the number of primes up to $x$ is approximately $x/\ln x$. \par\noindent Applications: it estimates prime counts, guides number theory, and supports algorithms involving large primes.
+
+\term{Primitive Element Theorem}
+The primitive element theorem says that many finite number-system extensions can be generated by adding just one carefully chosen element. \par\noindent Applications: it simplifies field extensions, polynomial equations, and Galois theory.
+
+\term{Primitive Root}
+A primitive root modulo $n$ is a number whose successive powers produce every nonzero remainder that has a multiplicative inverse modulo $n$. \par\noindent Applications: primitive roots support modular arithmetic, cyclic patterns, cryptography, and number-theoretic algorithms.
+
+\term{Principal Component Analysis (PCA)}
+Principal component analysis rotates data to find the directions containing the most variation. It can replace many correlated measurements by a smaller number of informative summaries. \par\noindent Applications: PCA supports visualization, compression, noise reduction, image analysis, and machine learning.
+
+\term{Principal Fiber Bundle}
+A principal fiber bundle is a space built from a base space and identical copies of a symmetry group attached above each point. The attachments may twist globally even when they look simple locally. \par\noindent Applications: principal bundles describe gauge fields, connections, curvature, and geometry.
+
+\term{Principal Ideal}
+A principal ideal is the collection of all multiples of one chosen ring element: $(a)=\{ra:r\in R\}$. \par\noindent Applications: principal ideals simplify divisibility, factorization, and calculations in rings.
+
+\term{Principal Ideal Domain (PID)}
+A principal ideal domain is a ring in which every ideal is generated by one element. The integers are the basic example. \par\noindent Applications: these domains make divisibility, factorization, and module calculations especially manageable.
+
+\term{Principal Value (Cauchy)}al
+The Cauchy principal value assigns a balanced value to some improper integrals by approaching a singular point equally from both sides. \par\noindent Applications: it is used in Fourier analysis, wave propagation, fluid flow, and physics.
+
+\term{Probability Density Function}
+A probability density function describes how likely values of a continuous random quantity are. The area under its graph over an interval gives the probability of landing there. \par\noindent Applications: densities model measurement error, heights, lifetimes, finance, and scientific uncertainty.
+
+\term{Probability Space}
+A probability space specifies all possible outcomes, which collections of outcomes count as events, and the probability assigned to each event. \par\noindent Applications: it provides the foundation for statistics, risk, experiments, random processes, and probability models.
+
+\term{Product Measure}
+A product measure assigns a size or probability to pairs of outcomes using the measures of their separate parts. For independent events, the combined probability is the product of the individual probabilities. \par\noindent Applications: product measures model several random variables, regions in higher dimensions, and repeated experiments.
+
+\term{Product Space}
+A product space combines several spaces by forming every possible tuple of one element from each. \par\noindent Applications: product spaces describe multi-variable states, positions, parameters, experiments, and systems with several components.
+
+\term{Product Topology}
+The product topology defines nearness in a tuple by checking only finitely many coordinates at a time. It is the weakest topology that makes each coordinate-reading map continuous. \par\noindent Applications: it gives a natural notion of convergence in spaces of tuples and functions.
+
+\term{Projection Operator}
+A projection operator sends every vector to its component in a chosen subspace and leaves that component unchanged. Applying the projection twice has the same effect as applying it once. \par\noindent Applications: projections extract data components, fit least-squares models, and split vector spaces.
+
+\term{Projective Geometry}
+Projective geometry studies properties that remain visible under perspective changes. Parallel lines are allowed to meet at points at infinity. \par\noindent Applications: it supports perspective drawing, cameras, computer vision, geometry, and algebraic curves.
+
+\term{Projective Module}
+A projective module behaves like a part of a free module, so equations involving it can be lifted and solved without unexpected obstruction. \par\noindent Applications: projective modules generalize vector spaces and describe vector bundles, algebraic geometry, and homological calculations.
+
+\term{Projective Scheme}
+A projective scheme is an algebraic shape that can be described inside projective space by homogeneous polynomial equations. \par\noindent Applications: projective schemes provide a setting for complete algebraic shapes, families of solutions, and algebraic geometry.
+
+\term{Projective Space}
+Projective space is the collection of all directions through the origin. Vectors that differ only by nonzero scaling represent the same point. \par\noindent Applications: it describes perspective, points at infinity, camera images, and algebraic geometry.
+
+\term{Projective Variety}
+A projective variety is the set of projective points that satisfy a collection of homogeneous polynomial equations. \par\noindent Applications: projective varieties describe algebraic shapes, curves, surfaces, and families of polynomial solutions.
+
+\term{Proper Map}
+A proper map is a map for which bounded, closed pieces of the target pull back to bounded, closed pieces of the source. It prevents relevant parts of the source from escaping to infinity. \par\noindent Applications: proper maps support compactness, geometry, optimization, and the study of continuous solutions.
+
+\term{Proportionality}
+Two quantities are proportional when one is always a fixed multiple of the other: $y=kx$. \par\noindent Applications: proportionality models scale, cost, distance, speed, mixtures, and physical laws.
+
+\term{Proximal Operator}
+A proximal operator replaces a point by a nearby point that balances closeness with a desired objective. \par\noindent Applications: it solves constrained and nonsmooth optimization problems, including sparse-data and machine-learning models.
+
+\term{Pullback}
+A pullback brings a quantity on the target of a map back to the source by substituting the map into it. \par\noindent Applications: pullbacks transfer functions, measurements, differential forms, and geometric structures to new coordinates.
+
+\term{Purely Imaginary}
+A purely imaginary number has the form $bi$, with no real part. \par\noindent Applications: purely imaginary numbers describe rotations, waves, oscillations, and complex solutions of equations.
+
+\term{Pushforward}
+A pushforward carries a quantity along a map from the source to the target. For a smooth map, it carries tangent directions forward. \par\noindent Applications: pushforwards transfer vectors, measures, probabilities, and geometric data.
+
+\term{Pushout}
+A pushout is a way to glue two objects together along a shared part. For maps $B\leftarrow A\to C$, it joins $B$ and $C$ while identifying the two images of each element of $A$. \par\noindent Applications: pushouts build joined spaces, quotient objects, cell complexes, and constructions in algebraic topology.
+
+\term{P vs NP}
+The P versus NP problem asks whether every problem whose proposed solution can be checked in polynomial time can also be solved in polynomial time. Since $P\subseteq NP$, the question is whether this inclusion is strict. \par\noindent Applications: the problem affects optimization, scheduling, automated reasoning, cryptography, and the limits of efficient computation.

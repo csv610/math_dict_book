@@ -1,435 +1,443 @@
 \chapter*{C}
 \label{chap:c}
 
+\term{Adjacency Matrix}
+A square matrix $A=(a_{ij})$ represents a graph when $a_{ij}$ records whether vertices $i$ and $j$ are connected, or records an edge weight. Its eigenvalues form the graph spectrum. \par\noindent Applications: adjacency matrices support network ranking, community detection, graph clustering, and connectivity analysis.
+
 \term{Calculus}
-Calculus studies change and accumulation using limits, derivatives, integrals, and infinite series. Differential calculus describes instantaneous change, while integral calculus describes accumulation and area. \par\noindent\textbf{Applications:} calculus models motion, growth, optimization, fluid flow, finance, and the behavior of physical systems.
+Calculus is the mathematics of change and accumulation. Derivatives measure instantaneous change, while integrals add up infinitely many small contributions; both are connected by the fundamental theorem of calculus. For example, if position is $s(t)$, velocity is $s'(t)$ and distance can be recovered by integrating velocity. \par\noindent Applications: calculus models motion, growth, optimization, fluid flow, finance, and physical systems.
 
 \term{Calculus of Variations}
-The calculus of variations finds functions that minimize or maximize quantities such as $J(y)=\int_a^bF(x,y,y')\,dx$. Critical functions satisfy the Euler--Lagrange equation $\partial F/\partial y-d(\partial F/\partial y')/dx=0$. \par\noindent\textbf{Applications:} it models shortest paths, elastic shapes, optimal control, fluid flow, and variational forms of partial differential equations.
-
-\term{Coordinate Ring}
-The ring of polynomial functions on an algebraic variety $V$, defined as the quotient $k[x_1, \ldots, x_n] / I(V)$, where $I(V)$ is the ideal of polynomials vanishing on $V$. The variety is recovered as $\operatorname{Spec} A$ for the coordinate ring $A$. \par\noindent\textbf{Applications:} coordinate rings translate geometric questions into algebraic calculations and are used in algebraic geometry, robotics, and solving polynomial systems.
+The calculus of variations finds the best function rather than the best number. It optimizes a quantity such as $J(y)=\int_a^bF(x,y,y')\,dx$ over possible curves or functions. A smooth minimizing curve satisfies the Euler--Lagrange equation $\partial F/\partial y-d(\partial F/\partial y')/dx=0$. \par\noindent Applications: it models shortest paths, elastic shapes, optimal control, fluid flow, and variational PDEs.
 
 \term{C*-algebra}
-A C*-algebra is a complete algebra of complex-valued objects with an operation $*$ satisfying $\|a^*a\|=\|a\|^2$. For matrices, $*$ is the conjugate transpose. \par\noindent\textbf{Applications:} C*-algebras provide the mathematical language for observables in quantum mechanics and for operators in signal and harmonic analysis.
-
-\term{Cantor--Bernstein Theorem}
-If there is an injection from $A$ to $B$ and an injection from $B$ to $A$, then there is a bijection between $A$ and $B$. \par\noindent\textbf{Applications:} the theorem compares infinite sets and is useful in proofs about cardinality, data encodings, and the size of function spaces.
-
-\term{Cantor's Paradox}
-Assuming a set $V$ containing every set leads to a contradiction, because its power set would have larger cardinality while still supposedly belonging to $V$. \par\noindent\textbf{Applications:} the paradox motivates axioms that control set formation and underpin rigorous foundations for mathematics and computer science.
-
-\term{Cantor's Theorem}
-For every set $X$, the power set $\mathcal{P}(X)$ has strictly greater cardinality than $X$: there is no surjection $X \to \mathcal{P}(X)$. The proof is Cantor's diagonal argument, which shows that no list $x_1, x_2, \ldots$ of elements can cover $\mathcal{P}(X)$. Since $\mathbb{R}$ has the same cardinality as $\mathcal{P}(\mathbb{N})$, the uncountability of the reals follows as a corollary. \par\noindent\textbf{Applications:} Cantor's theorem establishes limits on enumeration and is central to computability, set theory, and the analysis of infinite data.
+A C*-algebra is an algebra of complex-valued operators that is complete and compatible with taking adjoints. Its norm satisfies $\|a^*a\|=\|a\|^2$; for matrices, $a^*$ is the conjugate transpose. This lets algebraic operations reflect geometric notions such as length and orthogonality. \par\noindent Applications: C*-algebras describe observables in quantum mechanics and operators in signal and harmonic analysis.
 
 \term{Canonical Bundle}
-The canonical bundle of a smooth complex manifold $X$ of dimension $n$ is the determinant line bundle $K_X = \det T^*X = \bigwedge^n T^*X$, whose sections are holomorphic $n$-forms. Positivity or negativity of $K_X$ governs Kodaira vanishing and the minimal model program: if $K_X$ is ample, the canonical ring is finitely generated and $X$ admits a canonical model. $K_X$ is holomorphically trivial precisely when $X$ is Calabi--Yau, as for complex tori, and the Kodaira dimension measures the growth of $H^0(X, K_X^{\otimes m})$.
+The canonical bundle records the objects that behave like volume forms on a complex manifold. For an $n$-dimensional manifold $X$, it is the line bundle $K_X=\bigwedge^nT^*X$, whose sections are holomorphic $n$-forms. Its positivity or negativity reveals important global features of $X$. \par\noindent Applications: canonical bundles are central in complex geometry, the classification of algebraic varieties, Kodaira vanishing, and the minimal model program.
+
+\term{Cantor--Bernstein Theorem}
+The Cantor--Bernstein theorem says that two sets have the same size if each can be injected into the other. If there is a one-to-one map $A\to B$ and another $B\to A$, then a bijection $A\to B$ exists. \par\noindent Applications: it compares infinite sets and proves results about cardinality, data encodings, and function spaces.
+
+\term{Cantor's Paradox}
+Cantor's paradox shows that there cannot be a set containing every set. If such a universal set $V$ existed, its power set $\mathcal P(V)$ would be larger than $V$ but would still have to be contained in $V$, a contradiction. \par\noindent Applications: the paradox motivates careful axioms for set formation and rigorous foundations of mathematics and computer science.
+
+\term{Cantor's Theorem}
+Cantor's theorem says that the collection of all subsets of a set is always strictly larger than the original set. There is no surjection $X\to\mathcal P(X)$: a diagonal construction produces a subset missing from any proposed list. Since $\mathbb R$ has the size of $\mathcal P(\mathbb N)$, the real numbers are uncountable. \par\noindent Applications: it establishes limits on enumeration and is central to computability, set theory, and infinite data.
 
 \term{Cardinality}
-The size of a set, measured by the number of its elements; two sets have equal cardinality when a bijection exists between them. \par\noindent\textbf{Applications:} cardinality compares finite and infinite data structures and underlies counting, probability, and the theory of computability.
+Cardinality is the notion of the size of a set. Two sets have the same cardinality when a bijection pairs their elements; for finite sets this is ordinary counting. For example, $\mathbb N$ and the even natural numbers have equal cardinality despite one being a proper subset. \par\noindent Applications: cardinality compares finite and infinite data structures and underlies counting, probability, and computability.
 
 \term{Cartesian Product}
-The set $A \times B = \{(a,b) : a \in A, b \in B\}$ of all ordered pairs with first coordinate in $A$ and second in $B$. \par\noindent\textbf{Applications:} Cartesian products build coordinate spaces, parameter spaces, databases, sample spaces, and the state spaces of dynamical systems.
+A Cartesian product lists every possible ordered pairing of two sets: $A\times B=\{(a,b):a\in A,\ b\in B\}$. The order matters, so $(a,b)$ and $(b,a)$ need not be the same. For example, $\mathbb R^2=\mathbb R\times\mathbb R$ is the plane. \par\noindent Applications: Cartesian products build coordinate spaces, parameter spaces, databases, sample spaces, and dynamical state spaces.
 
 \term{Casorati--Weierstrass Theorem}
-If $f$ has an isolated essential singularity at $z_0$, then the image of every punctured neighbourhood of $z_0$ is dense in $\mathbb{C}$: near an essential singularity the function comes arbitrarily close to every complex value. This contrasts sharply with removable singularities, where $f$ has a finite limit, and with poles, where $|f(z)| \to \infty$. \par\noindent\textbf{Applications:} the theorem helps classify complex singularities and analyze complex models near exceptional points.
+The Casorati--Weierstrass theorem says that near an essential singularity, a complex function comes arbitrarily close to every complex value. If $f$ has an essential singularity at $z_0$, then $f$ maps every punctured neighborhood of $z_0$ densely into $\mathbb C$. This contrasts with a removable singularity or a pole. \par\noindent Applications: it classifies complex singularities and analyzes complex models near exceptional points.
+
+\term{Categorical Product}
+The categorical product of $A$ and $B$ has projection maps to both and the property that any object mapping to $A$ and $B$ maps uniquely to the product. For sets it is the Cartesian product; for groups it is the direct product. \par\noindent Applications: categorical products unify ways of combining objects across algebra, topology, logic, and computer science.
 
 \term{Category}
-A category consists of objects, arrows between objects, a way to compose arrows, and an identity arrow for every object. Composition must be associative. \par\noindent\textbf{Applications:} categories organize relationships between sets, spaces, algebraic systems, programs, and transformations without depending on the internal details of each object.
+A category is a system of objects and structure-preserving arrows between them. Arrows can be composed associatively, and every object has an identity arrow that changes nothing. Sets with functions and groups with homomorphisms are examples. \par\noindent Applications: categories organize relationships between sets, spaces, algebraic systems, programs, and transformations.
 
 \term{Category Theory}
-Category theory studies objects through the maps between them. Its basic tools are categories, functors that translate between categories, and natural transformations between functors. \par\noindent\textbf{Applications:} it unifies constructions across algebra, topology, geometry, logic, and computer science.
-
-\term{Cauchy Problem}
-A Cauchy problem asks for a solution of a differential equation from data prescribed on an initial curve, surface, or time slice. For a wave equation, the initial data may be the starting displacement and velocity. \par\noindent\textbf{Applications:} Cauchy problems model time evolution in waves, heat flow, fluid motion, and electromagnetic fields.
-
-\term{Cauchy--Kovalevskaya Theorem}
-For a first-order PDE system with analytic coefficients and analytic initial data, written as $\partial_tu_i=F_i(x,t,u,\nabla u)$, there is a unique analytic solution near the initial surface under the theorem's noncharacteristic hypotheses. \par\noindent\textbf{Applications:} it provides a local existence benchmark for PDE models, even though it does not guarantee global solutions or regularity for non-analytic data.
-
-\term{Cauchy--Schwarz Inequality}
-In an inner-product space, $|\langle u,v\rangle|^2\le\langle u,u\rangle\langle v,v\rangle$, with equality exactly when $u$ and $v$ are linearly dependent. It includes the familiar vector and integral inequalities. \par\noindent\textbf{Applications:} it bounds correlations, proves the triangle inequality, and supports least squares, statistics, and signal analysis.
+Category theory studies mathematical objects by the maps between them rather than by their internal descriptions. Its main tools are categories, functors that translate between categories, and natural transformations that compare functors. \par\noindent Applications: it unifies constructions across algebra, topology, geometry, logic, and computer science.
 
 \term{Cauchy Integral Theorem}
-If $f$ is holomorphic on a simply connected domain $D$ and $\gamma$ is any closed curve in $D$, then $\oint_\gamma f(z)\,dz=0$. More generally, the integral is zero when $\gamma$ can be continuously shrunk to a point without leaving the domain. \par\noindent\textbf{Applications:} the theorem gives path independence for complex integrals and leads to the integral formula and residue theorem.
+The Cauchy integral theorem says that a holomorphic function has integral zero around any closed curve that can be shrunk to a point without crossing a singularity. Thus, on a suitable simply connected domain, $\oint_\gamma f(z)\,dz=0$. \par\noindent Applications: it gives path independence for complex integrals and leads to Cauchy's integral formula and the residue theorem.
+
+\term{Cauchy--Kovalevskaya Theorem}
+The Cauchy--Kovalevskaya theorem gives a local existence and uniqueness result for analytic partial differential equations. For an analytic system such as $\partial_tu_i=F_i(x,t,u,\nabla u)$ with analytic initial data and a noncharacteristic initial surface, there is a unique analytic solution nearby. \par\noindent Applications: it provides a benchmark for PDE models, although it does not guarantee global solutions or work for non-analytic data.
+
+\term{Cauchy Problem}
+A Cauchy problem predicts how a system evolves from data given at an initial time or surface. For a wave equation, one may prescribe both the starting displacement and velocity, then solve for the later motion. \par\noindent Applications: Cauchy problems model waves, heat flow, fluid motion, and electromagnetic fields.
+
+\term{Cauchy--Schwarz Inequality}
+The Cauchy--Schwarz inequality says that two vectors cannot have a larger inner product than the product of their lengths: $|\langle u,v\rangle|^2\le\langle u,u\rangle\langle v,v\rangle$. Equality occurs exactly when the vectors are linearly dependent. \par\noindent Applications: it bounds correlations, proves the triangle inequality, and supports least squares, statistics, and signal analysis.
 
 \term{Cauchy Sequence}
-A sequence $(x_n)$ is Cauchy if its terms eventually become arbitrarily close to one another: for every $\epsilon>0$, there is $N$ such that $d(x_n,x_m)<\epsilon$ whenever $m,n\ge N$. A metric space is complete when every Cauchy sequence has a limit in the space; $\mathbb Q$ is not complete, but $\mathbb R$ is. \par\noindent\textbf{Applications:} completeness guarantees that iterative numerical approximations converge to an available answer.
+A Cauchy sequence is one whose terms eventually become close to each other, whether or not a limit has already been identified. For every $\epsilon>0$, there is $N$ with $d(x_n,x_m)<\epsilon$ for $m,n\ge N$. The rationals have Cauchy sequences that converge only in $\mathbb R$, while $\mathbb R$ is complete. \par\noindent Applications: Cauchy sequences explain why iterative numerical approximations converge to an available answer.
 
 \term{Cauchy's Integral Formula}
-If $f$ is holomorphic on a simply connected domain $D$ and $\gamma$ is a positively oriented simple closed curve in $D$, then for any $a$ inside $\gamma$: $f(a) = \frac{1}{2\pi i} \oint_\gamma \frac{f(z)}{z-a}\,dz$. This formula shows that holomorphic functions are infinitely differentiable and completely determined by their values on any closed curve. All higher derivatives follow: $f^{(n)}(a) = \frac{n!}{2\pi i} \oint_\gamma \frac{f(z)}{(z-a)^{n+1}}\,dz$. \par\noindent\textbf{Applications:} the formula evaluates derivatives from boundary data and is used in contour integration, residue calculations, and complex potential theory.
+Cauchy's integral formula recovers the value of a holomorphic function from its values around a surrounding curve. If $a$ lies inside a positively oriented curve $\gamma$, then $f(a)=\frac{1}{2\pi i}\oint_\gamma\frac{f(z)}{z-a}\,dz$. Differentiating under the integral gives formulas for every derivative. \par\noindent Applications: it evaluates derivatives from boundary data and supports contour integration, residues, and complex potential theory.
 
 \term{Cauchy's Integral Theorem}
-See \term{Cauchy Integral Theorem}.
+This is another name for \termref{Cauchy Integral Theorem}: a holomorphic function integrates to zero around a closed curve that can be shrunk to a point. \par\noindent Applications: it supports path independence, contour integration, and residue calculations.
 
 \term{Cauchy's Theorem}
-See \term{Cauchy Integral Theorem}.
-
-\term{Cayley's Theorem}
-Every group $G$ is isomorphic to a subgroup of the permutation group of its underlying set, acting by left multiplication. If $G$ has $n$ elements, it therefore embeds in $S_n$. \par\noindent\textbf{Applications:} the theorem turns abstract group calculations into concrete permutations, which helps with symmetry, computation, and the construction of finite examples.
+This is another name for \termref{Cauchy Integral Theorem}, which says that the integral of a holomorphic function around a contractible closed curve is zero. \par\noindent Applications: it supports complex integration and the study of analytic functions.
 
 \term{Cayley--Hamilton Theorem}
-Every square matrix satisfies its own characteristic equation: if $p(\lambda)=\det(\lambda I-A)$, then $p(A)=0$. For a $2\times2$ matrix this reduces every higher power to a combination of $I$ and $A$. \par\noindent\textbf{Applications:} it computes matrix functions and helps solve systems of linear differential equations.
+The Cayley--Hamilton theorem says that a square matrix satisfies the polynomial equation whose roots are its eigenvalues. If $p(\lambda)=\det(\lambda I-A)$ is the characteristic polynomial, then $p(A)=0$. For a $2\times2$ matrix, every higher power reduces to a combination of $I$ and $A$. \par\noindent Applications: it computes matrix functions and helps solve systems of linear differential equations.
+
+\term{Cayley's Theorem}
+Cayley's theorem says that every group can be represented as a group of permutations. The group acts on itself by left multiplication, so a group with $n$ elements embeds in the symmetric group $S_n$. \par\noindent Applications: it turns abstract group calculations into concrete permutations and helps study symmetry and finite examples.
 
 \term{Center (Group Theory)}
-The center of a group $G$ is $Z(G) = \{g \in G : gh = hg \text{ for all } h \in G\}$. It is a normal subgroup of $G$. For a non-abelian group, the center may be trivial: $Z(S_n) = \{e\}$ for $n \geq 3$. The center measures how far a group is from being abelian. If $G/Z(G)$ is cyclic, then $G$ is abelian. \par\noindent\textbf{Applications:} centers help measure symmetry and classify groups, matrix algebras, and transformation systems.
-
-\term{Central Limit Theorem}
-If $X_1, X_2, \ldots, X_n$ are independent identically distributed random variables with mean $\mu$ and finite nonzero variance $\sigma^2$, then $\frac{\bar{X}_n - \mu}{\sigma/\sqrt{n}}$ converges in distribution to $\mathcal{N}(0,1)$ as $n\to\infty$. This explains why normal approximations arise for sums and averages. \par\noindent\textbf{Applications:} the theorem supports polling, measurement error, quality control, and statistical inference.
+The center of a group consists of the elements that commute with everything: $Z(G)=\{g\in G:gh=hg\text{ for all }h\in G\}$. It is a normal subgroup; for example, $Z(S_n)=\{e\}$ when $n\ge3$. A large center indicates behavior close to commutativity. \par\noindent Applications: centers help classify groups, matrix algebras, and transformation systems.
 
 \term{Centralizer}
-The centralizer of $a$ in a group $G$ is $C_G(a)=\{g\in G:ga=ag\}$, the set of symmetries that commute with $a$. \par\noindent\textbf{Applications:} centralizers reveal hidden symmetry and are used to classify groups, matrices, and transformations.
+The centralizer of an element is the collection of symmetries that leave it compatible with multiplication. For $a\in G$, $C_G(a)=\{g\in G:ga=ag\}$. It measures how much of the group commutes with $a$. \par\noindent Applications: centralizers reveal hidden symmetry and help classify groups, matrices, and transformations.
+
+\term{Central Limit Theorem}
+The central limit theorem explains why averages often look normally distributed, even when individual observations do not. For independent identically distributed variables with mean $\mu$ and variance $\sigma^2$, $\frac{\bar X_n-\mu}{\sigma/\sqrt n}$ converges in distribution to $\mathcal N(0,1)$. \par\noindent Applications: it supports polling, measurement error, quality control, and statistical inference.
 
 \term{Chain Complex}
-A sequence of abelian groups or modules $A_* = \cdots \to A_{n+1} \xrightarrow{d_{n+1}} A_n \xrightarrow{d_n} A_{n-1} \to \cdots$ with $d_n \circ d_{n+1} = 0$, so that $\operatorname{im} d_{n+1} \subseteq \ker d_n$. The homology $H_n(A_*) = \ker d_n / \operatorname{im} d_{n+1}$ measures how far the sequence is from exact. Exact sequences have vanishing homology; quasi-isomorphisms are chain maps inducing isomorphisms on homology, and the mapping cone encodes the homological features of a map. Chain complexes are the central objects of homological algebra, with complexes of sheaves arising in algebraic geometry.
+A chain complex is a sequence of algebraic objects linked by maps whose consecutive composition is zero: $\cdots\to A_{n+1}\xrightarrow{d_{n+1}}A_n\xrightarrow{d_n}A_{n-1}\to\cdots$, with $d_nd_{n+1}=0$. Its homology $H_n=\ker d_n/\operatorname{im}d_{n+1}$ measures the holes left by the sequence. \par\noindent Applications: chain complexes are central in homological algebra, algebraic topology, and complexes of sheaves in algebraic geometry.
 
 \term{Chain Rule}
-If $f$ and $g$ are differentiable, then $D(g\circ f)(x)=Dg(f(x))Df(x)$; in one variable, $(g\circ f)'=g'(f)f'$. \par\noindent\textbf{Applications:} the chain rule drives multivariable sensitivity analysis, backpropagation in machine learning, mechanics, and ordinary calculus.
+The chain rule differentiates a composition by multiplying the rates of change at each stage. In one variable, $(g\circ f)'(x)=g'(f(x))f'(x)$; in several variables, $D(g\circ f)=Dg\,Df$. \par\noindent Applications: it drives sensitivity analysis, backpropagation in machine learning, mechanics, and calculus.
 
 \term{Chaos}
-Chaos is complicated, apparently random behavior produced by a deterministic system. A key feature is sensitive dependence on initial conditions: tiny starting differences can grow rapidly. \par\noindent\textbf{Applications:} chaotic models describe weather, turbulence, population dynamics, encryption, and the limits of long-term prediction.
+Chaos is complicated, apparently random behavior produced by a deterministic system. A key feature is sensitive dependence on initial conditions: tiny starting differences can grow rapidly. \par\noindent Applications: chaotic models describe weather, turbulence, population dynamics, encryption, and the limits of long-term prediction.
 
 \term{Characteristic Class}
-A characteristic class assigns a cohomology class to a vector bundle in a way preserved by pullbacks. Chern, Pontryagin, Stiefel--Whitney, and Euler classes are standard examples. \par\noindent\textbf{Applications:} characteristic classes detect twisting, obstruct global sections, and connect geometry with topology and index theory.
+A characteristic class assigns a cohomology class to a vector bundle in a way preserved by pullbacks. Chern, Pontryagin, Stiefel--Whitney, and Euler classes are standard examples. \par\noindent Applications: characteristic classes detect twisting, obstruct global sections, and connect geometry with topology and index theory.
 
 \term{Characteristic Function}
-For a random variable $X$, its characteristic function is $\varphi_X(t)=\mathbb E[e^{itX}]$. It uniquely determines the distribution of $X$, and independent sums correspond to products of characteristic functions. \par\noindent\textbf{Applications:} characteristic functions simplify probability calculations, limit theorems, and the analysis of sums of random variables.
+For a random variable $X$, its characteristic function is $\varphi_X(t)=\mathbb E[e^{itX}]$. It uniquely determines the distribution of $X$, and independent sums correspond to products of characteristic functions. \par\noindent Applications: characteristic functions simplify probability calculations, limit theorems, and the analysis of sums of random variables.
 
 \term{Characteristic Polynomial}
-The characteristic polynomial of a square matrix $A$ is $p(\lambda)=\det(\lambda I-A)$. Its roots are the eigenvalues of $A$, and the Cayley--Hamilton theorem says that $p(A)=0$. \par\noindent\textbf{Applications:} it helps analyze stability, matrix powers, differential equations, and vibration modes.
+The characteristic polynomial of a square matrix $A$ is $p(\lambda)=\det(\lambda I-A)$. Its roots are the eigenvalues of $A$, and the Cayley--Hamilton theorem says that $p(A)=0$. \par\noindent Applications: it helps analyze stability, matrix powers, differential equations, and vibration modes.
 
 \term{Characteristic Variety}
-For a linear partial differential operator $P$ of order $m$ on a manifold $X$ with principal symbol $p_m(x, \xi)$, the characteristic variety is the zero set $\{p_m(x, \xi) = 0\}$ in the cotangent bundle $T^*X$. Solvability and uniqueness hold away from it: Holmgren's theorem gives unique continuation of analytic Cauchy problems across non-characteristic hypersurfaces, while microlocal analysis shows that singularities of solutions propagate along the bicharacteristic flow within the characteristic variety. For a coherent $D_X$-module, the characteristic variety is the support of the associated graded module, and its involutivity (Cauchy--Kovalevskaya--Kashiwara theorem) forces dimension at least $\dim X$.
+The characteristic variety marks the directions in which a partial differential equation can fail to determine a smooth solution. For an operator $P$ with principal symbol $p_m(x,\xi)$, it is the set $\{(x,\xi):p_m(x,\xi)=0\}\subseteq T^*X$. Away from it, Cauchy problems are typically well behaved; singularities can propagate along it. \par\noindent Applications: characteristic varieties guide PDE solvability, microlocal analysis, and the study of singularities.
 
 \term{Chebotarev Density Theorem}
-For a finite Galois extension $L/K$ of number fields with Galois group $G$, the Chebotarev density theorem asserts that the primes of $K$ unramified in $L$ whose Frobenius automorphism lies in a fixed conjugacy class $C \subseteq G$ have natural density $|C|/|G|$. It generalises Dirichlet's theorem on primes in arithmetic progressions, which is recovered for cyclotomic extensions of $\mathbb{Q}$, and determines the distribution of primes that split completely in $L$, which have density $1/|G|$. The theorem is foundational in algebraic number theory and arithmetic geometry, underlying the Brauer--Siegel theorem and results on Galois representations.
+The Chebotarev density theorem describes how prime numbers split in a finite Galois extension. If $L/K$ has Galois group $G$, the unramified primes whose Frobenius lies in a conjugacy class $C$ have density $|C|/|G|$. Thus primes splitting completely have density $1/|G|$. \par\noindent Applications: it generalizes primes in arithmetic progressions and supports algebraic number theory, arithmetic geometry, and Galois representations.
 
 \term{Chebyshev Polynomials}
-The Chebyshev polynomials satisfy $T_n(\cos\theta)=\cos(n\theta)$ and $T_{n+1}=2xT_n-T_{n-1}$. Their special spacing of extrema makes them excellent for approximation. \par\noindent\textbf{Applications:} they reduce interpolation error and are used in spectral numerical methods and differential equations.
+The Chebyshev polynomials satisfy $T_n(\cos\theta)=\cos(n\theta)$ and $T_{n+1}=2xT_n-T_{n-1}$. Their special spacing of extrema makes them excellent for approximation. \par\noindent Applications: they reduce interpolation error and are used in spectral numerical methods and differential equations.
 
 \term{Chebyshev's Inequality}
-For a random variable $X$ with mean $\mu$ and finite variance $\sigma^2$, $P(|X - \mu| \geq k\sigma) \leq \frac{1}{k^2}$ for any $k>0$. This gives a distribution-free bound on tail probabilities. For any distribution, at least 75\% of values lie within two standard deviations and at least $8/9$ within three. \par\noindent\textbf{Applications:} it provides error and risk bounds when the full probability model is unknown.
+For a random variable $X$ with mean $\mu$ and finite variance $\sigma^2$, $P(|X - \mu| \geq k\sigma) \leq \frac{1}{k^2}$ for any $k>0$. This gives a distribution-free bound on tail probabilities. For any distribution, at least 75\% of values lie within two standard deviations and at least $8/9$ within three. \par\noindent Applications: it provides error and risk bounds when the full probability model is unknown.
 
 \term{Chern Classes}
-The Chern classes $c_i(E)$ are cohomology classes that measure how a complex vector bundle twists. The total class is $c(E)=1+c_1(E)+c_2(E)+\cdots$. \par\noindent\textbf{Applications:} Chern classes classify bundles, detect topological twisting, and appear in geometry, topology, and mathematical physics.
+The Chern classes $c_i(E)$ are cohomology classes that measure how a complex vector bundle twists. The total class is $c(E)=1+c_1(E)+c_2(E)+\cdots$. \par\noindent Applications: Chern classes classify bundles, detect topological twisting, and appear in geometry, topology, and mathematical physics.
 
 \term{Chern--Weil Theory}
-A method for constructing characteristic classes (Chern, Pontryagin, Euler) of vector bundles using curvature forms. Given a connection $\nabla$ on a bundle $E$ with curvature $\Omega$, one forms invariant polynomials in $\Omega$ whose cohomology classes are independent of the connection. This bridges differential geometry and topology, realising topological invariants via geometric data. \par\noindent\textbf{Applications:} Chern--Weil theory connects local curvature measurements with global features of bundles in geometry and mathematical physics.
-
-\term{Chi-squared (\ensuremath{\chi^2}) Distribution}
-A continuous probability distribution that arises when summing the squares of $k$ independent standard normal random variables. It is widely used in hypothesis testing to determine "goodness of fit" between observed and expected data.
-
-\term{Chi-squared (\ensuremath{\chi^2}) Test}
-A statistical test used to determine if there is a significant difference between the expected frequencies and the observed frequencies in one or more categories of data.
+A method for constructing characteristic classes (Chern, Pontryagin, Euler) of vector bundles using curvature forms. Given a connection $\nabla$ on a bundle $E$ with curvature $\Omega$, one forms invariant polynomials in $\Omega$ whose cohomology classes are independent of the connection. This bridges differential geometry and topology, realising topological invariants via geometric data. \par\noindent Applications: Chern--Weil theory connects local curvature measurements with global features of bundles in geometry and mathematical physics.
 
 \term{Chinese Remainder Theorem}
-If the moduli $m_1,\ldots,m_k$ are pairwise coprime, the congruences $x\equiv a_i\pmod{m_i}$ have one solution modulo $m_1\cdots m_k$. \par\noindent\textbf{Applications:} it makes modular arithmetic faster by splitting a large computation into smaller ones and is used in number theory, cryptography, and computer arithmetic.
+If the moduli $m_1,\ldots,m_k$ are pairwise coprime, the congruences $x\equiv a_i\pmod{m_i}$ have one solution modulo $m_1\cdots m_k$. \par\noindent Applications: it makes modular arithmetic faster by splitting a large computation into smaller ones and is used in number theory, cryptography, and computer arithmetic.
+
+\term{Chi-squared (\ensuremath{\chi^2}) Distribution}
+A chi-squared distribution is the distribution of $X_1^2+\cdots+X_k^2$ when the $X_i$ are independent standard normal variables. It has $k$ degrees of freedom and is concentrated on nonnegative values. \par\noindent Applications: it underlies goodness-of-fit tests, tests of independence, confidence intervals, and variance estimates.
+
+\term{Chi-squared (\ensuremath{\chi^2}) Test}
+The chi-squared test compares observed category counts with counts predicted by a model. A common statistic is $\chi^2=\sum (O_i-E_i)^2/E_i$, where $O_i$ and $E_i$ are observed and expected frequencies. \par\noindent Applications: it tests goodness of fit, independence in contingency tables, and relationships between categorical variables.
 
 \term{Christoffel Symbols}
-Coefficients $\Gamma^k_{ij}$ describing the Levi--Civita connection on a Riemannian manifold with metric $g_{ij}$ are $\Gamma^k_{ij}=\frac12g^{kl}(\partial_i g_{jl}+\partial_jg_{il}-\partial_lg_{ij})$. They appear in the geodesic equation $\ddot{x}^k+\Gamma^k_{ij}\dot{x}^i\dot{x}^j=0$ and in covariant differentiation. They are not tensors but transform in a controlled way under coordinate changes. \par\noindent\textbf{Applications:} Christoffel symbols calculate geodesics, acceleration in curved coordinates, and gravitational motion in general relativity.
+Coefficients $\Gamma^k_{ij}$ describing the Levi--Civita connection on a Riemannian manifold with metric $g_{ij}$ are $\Gamma^k_{ij}=\frac12g^{kl}(\partial_i g_{jl}+\partial_jg_{il}-\partial_lg_{ij})$. They appear in the geodesic equation $\ddot{x}^k+\Gamma^k_{ij}\dot{x}^i\dot{x}^j=0$ and in covariant differentiation. They are not tensors but transform in a controlled way under coordinate changes. \par\noindent Applications: Christoffel symbols calculate geodesics, acceleration in curved coordinates, and gravitational motion in general relativity.
+
+\term{Chromatic Number}
+The chromatic number is the fewest colors needed to color a graph so that connected vertices have different colors. \origin{The concept grew from map-coloring problems and was formalized by graph theorists studying conflicts and adjacency.} \par\noindent Applications: chromatic numbers schedule conflicting tasks, assign frequencies, color maps, and allocate computer registers.
 
 \term{Church--Turing Thesis}
-The thesis that every function computable by an algorithm is computable by a Turing machine, and vice versa; equivalently, that effective computability coincides with computability by the lambda calculus or by general recursive functions. It pins down the informal notion of computability in a precise mathematical form. Since it identifies an intuitive concept with a formal one, it is a thesis rather than a proved theorem, although the equivalence among the various formal models is a theorem.
+The Church--Turing thesis says that every procedure that can be carried out mechanically can be simulated by a Turing machine. Equivalent models, including lambda calculus and recursive functions, compute the same class of functions. It is a thesis rather than a theorem because “effective procedure” is an informal idea. \par\noindent Applications: it provides the foundation for computability theory, programming languages, and the limits of algorithms.
 
 \term{Class Field Theory}
-The classification of abelian extensions of number fields and local fields: for a number field $K$, finite abelian extensions $L/K$ correspond to open subgroups of the idele class group, and the Galois group $G(L/K)$ is isomorphic, via the reciprocity map, to the corresponding quotient. Artin reciprocity generalizes quadratic and higher reciprocity laws; the Hilbert class field, the maximal abelian unramified extension of $K$, has Galois group isomorphic to the ideal class group. The Kronecker--Weber theorem, that every abelian extension of $\mathbb{Q}$ is cyclotomic, is the base case.
+Class field theory describes abelian extensions of number fields using arithmetic information from the original field. Artin reciprocity relates the Galois group of an abelian extension to a quotient of the idele class group; the Hilbert class field corresponds to the ideal class group. \par\noindent Applications: class field theory generalizes quadratic reciprocity and supports algebraic number theory, explicit field construction, and arithmetic geometry.
 
 \term{Classical Solution}
-A classical solution of a differential equation has the ordinary derivatives required by the equation and satisfies it point by point. This contrasts with a weak or distributional solution, which may have fewer derivatives. \par\noindent\textbf{Applications:} the distinction is essential when modeling physical systems and proving that approximate PDE solutions converge.
+A classical solution of a differential equation has the ordinary derivatives required by the equation and satisfies it point by point. This contrasts with a weak or distributional solution, which may have fewer derivatives. \par\noindent Applications: the distinction is essential when modeling physical systems and proving that approximate PDE solutions converge.
 
 \term{Classification of Finite Simple Groups}
-The complete classification, assembled over decades in tens of thousands of published pages, asserts that every finite simple group is one of: a cyclic group $\mathbb{Z}/p\mathbb{Z}$ of prime order, an alternating group $A_n$ ($n \geq 5$), a member of one of the infinite families of groups of Lie type, or one of the 26 sporadic groups culminating in the Monster. Its consequences are far-reaching: structural theorems for all finite groups, such as the Odd Order Theorem, follow from it, and the classification underpins much of modern group theory.
+The classification of finite simple groups lists the basic building blocks from which all finite groups are assembled. Every finite simple group is cyclic of prime order, an alternating group $A_n$ for $n\ge5$, a group of Lie type, or one of 26 sporadic groups. \par\noindent Applications: the classification organizes finite symmetry, representation theory, algebraic combinatorics, and modern group theory.
 
 \term{Classification of Surfaces}
-Every closed connected surface is homeomorphic to a sphere with $g$ handles (orientable case) or with $k$ crosscaps (non-orientable case). Thus a closed surface is determined up to homeomorphism by orientability and one integer, its genus. \par\noindent\textbf{Applications:} classification reduces complicated two-dimensional shapes to standard models in topology, geometry, and mesh analysis.
+Every closed connected surface is homeomorphic to a sphere with $g$ handles (orientable case) or with $k$ crosscaps (non-orientable case). Thus a closed surface is determined up to homeomorphism by orientability and one integer, its genus. \par\noindent Applications: classification reduces complicated two-dimensional shapes to standard models in topology, geometry, and mesh analysis.
 
 \term{Clebsch--Gordan Coefficients}
-Coefficients expressing the coupling of two angular momenta in quantum mechanics. The product of two irreducible representations of $SU(2)$ with spins $j_1$ and $j_2$ decomposes as $\bigoplus_{j=|j_1-j_2|}^{j_1+j_2}j$. The coefficients $\langle j_1m_1j_2m_2\mid jm\rangle$ convert between uncoupled and coupled basis states. \par\noindent\textbf{Applications:} they predict how angular momenta combine in atomic, nuclear, and particle physics.
+Coefficients expressing the coupling of two angular momenta in quantum mechanics. The product of two irreducible representations of $SU(2)$ with spins $j_1$ and $j_2$ decomposes as $\bigoplus_{j=|j_1-j_2|}^{j_1+j_2}j$. The coefficients $\langle j_1m_1j_2m_2\mid jm\rangle$ convert between uncoupled and coupled basis states. \par\noindent Applications: they predict how angular momenta combine in atomic, nuclear, and particle physics.
+
+\term{Clique}
+A clique is a group of vertices in a graph where every pair is directly connected. \origin{The idea grew from graph theory's study of complete relationships and was named to describe tightly connected groups.} \par\noindent Applications: cliques identify friend groups, compatible tasks, molecular interactions, and dense network communities.
 
 \term{Closed Graph Theorem}
-The closed graph theorem says that a linear map between Banach spaces is continuous if its graph is closed. The graph is the set of pairs $(x,Tx)$. \par\noindent\textbf{Applications:} the theorem proves continuity of operators defined indirectly, especially in functional analysis and differential equations.
+The closed graph theorem says that a linear map between Banach spaces is continuous if its graph is closed. The graph is the set of pairs $(x,Tx)$. \par\noindent Applications: the theorem proves continuity of operators defined indirectly, especially in functional analysis and differential equations.
 
 \term{Closed Map}
-A function $f:X\to Y$ is closed if the image of every closed set in $X$ is closed in $Y$. A continuous bijection from a compact space to a Hausdorff space is a homeomorphism because it is closed. \par\noindent\textbf{Applications:} closed maps help show that feasible sets, limits, and solution sets remain well behaved under transformations.
+A function $f:X\to Y$ is closed if the image of every closed set in $X$ is closed in $Y$. A continuous bijection from a compact space to a Hausdorff space is a homeomorphism because it is closed. \par\noindent Applications: closed maps help show that feasible sets, limits, and solution sets remain well behaved under transformations.
 
 \term{Closed Set}
-A subset $C$ is closed if its complement is open; in a metric space this is equivalent to containing all its limit points. In $\mathbb R$, intervals $[a,b]$, finite sets, and the Cantor set are closed. \par\noindent\textbf{Applications:} closed sets describe feasible regions, solution sets of equations, and limiting configurations in analysis and geometry.
+A subset $C$ is closed if its complement is open; in a metric space this is equivalent to containing all its limit points. In $\mathbb R$, intervals $[a,b]$, finite sets, and the Cantor set are closed. \par\noindent Applications: closed sets describe feasible regions, solution sets of equations, and limiting configurations in analysis and geometry.
 
 \term{Closure}
-The closure of a set $S$ is the smallest closed set containing $S$; in familiar spaces it consists of $S$ together with all of its limit points. For example, the closure of $(0,1)$ is $[0,1]$. \par\noindent\textbf{Applications:} closure describes boundaries, limits, feasible regions, and the completion of algebraic or geometric constructions.
+The closure of a set $S$ is the smallest closed set containing $S$; in familiar spaces it consists of $S$ together with all of its limit points. For example, the closure of $(0,1)$ is $[0,1]$. \par\noindent Applications: closure describes boundaries, limits, feasible regions, and the completion of algebraic or geometric constructions.
 
 \term{Closure Operator}
-A closure operator on a set $X$ is a function $\operatorname{cl}: \mathcal{P}(X) \to \mathcal{P}(X)$ satisfying: $A \subseteq \operatorname{cl}(A)$, $A \subseteq B \implies \operatorname{cl}(A) \subseteq \operatorname{cl}(B)$, and $\operatorname{cl}(\operatorname{cl}(A)) = \operatorname{cl}(A)$. The topological closure, the algebraic closure in field theory, and the subgroup generated by a set are all closure operators.
+A closure operator enlarges a set until it contains everything required by a chosen rule. It satisfies $A\subseteq\operatorname{cl}(A)$, preserves inclusion, and is idempotent: $\operatorname{cl}(\operatorname{cl}(A))=\operatorname{cl}(A)$. Topological closure and the subgroup generated by a set are examples. \par\noindent Applications: closure operators organize topology, algebra, logic, and the construction of generated structures.
 
 \term{Cluster Point (Accumulation Point)}
-A point $x$ is a cluster point of a sequence if every neighborhood of $x$ contains infinitely many terms. For a set, every neighborhood of a cluster point contains a different point of the set. \par\noindent\textbf{Applications:} cluster points describe accumulation in data, guarantee convergent subsequences, and support compactness arguments.
+A point $x$ is a cluster point of a sequence if every neighborhood of $x$ contains infinitely many terms. For a set, every neighborhood of a cluster point contains a different point of the set. \par\noindent Applications: cluster points describe accumulation in data, guarantee convergent subsequences, and support compactness arguments.
 
 \term{Coarea Formula}
-A generalisation of Fubini's theorem for integrals over level sets. If $f: \mathbb{R}^n \to \mathbb{R}^m$ is smooth with $n \geq m$ and $g: \mathbb{R}^n \to [0,\infty)$ is integrable, then $\int_{\mathbb{R}^n} g(x) J_m f(x)\,dx = \int_{\mathbb{R}^m} \left(\int_{f^{-1}(y)} g\,d\mathcal{H}^{n-m}\right) dy$, where $J_m f$ is the Jacobian determinant of $f$. Used in geometric measure theory and the study of Sobolev functions.
+The coarea formula breaks an integral over a space into integrals over level surfaces, much as Fubini's theorem breaks it into coordinate slices. For smooth $f:\mathbb R^n\to\mathbb R^m$, it has the form $\int gJ_mf=\int_{\mathbb R^m}\int_{f^{-1}(y)}g\,d\mathcal H^{n-m}\,dy$. \par\noindent Applications: it is used in geometric measure theory, image processing, and the analysis of Sobolev functions.
 
 \term{Coastline Paradox}
-The measured length of a coastline or other irregular boundary can increase as the measuring unit becomes smaller, because new detail appears at each scale. The measured length therefore depends on resolution. \par\noindent\textbf{Applications:} the paradox motivates fractal models of coastlines and explains scale-dependent measurements in geography and image analysis.
+The measured length of a coastline or other irregular boundary can increase as the measuring unit becomes smaller, because new detail appears at each scale. The measured length therefore depends on resolution. \par\noindent Applications: the paradox motivates fractal models of coastlines and explains scale-dependent measurements in geography and image analysis.
 
 \term{Cobordism}
-Two closed oriented manifolds $M$ and $N$ of dimension $n$ are cobordant if there exists a compact oriented manifold $W$ of dimension $n+1$ whose boundary is $M \sqcup (-N)$. Cobordism is an equivalence relation, and the cobordism classes form the cobordism ring $\Omega_n^{SO}$. Thom computed this ring, showing $\Omega_*^{SO} \otimes \mathbb{Q}$ is a polynomial algebra generated by complex projective spaces $\mathbb{CP}^{2k}$.
+Cobordism regards two shapes as equivalent when they form the two boundary components of one higher-dimensional object. Closed oriented $n$-manifolds $M$ and $N$ are cobordant if $\partial W=M\sqcup(-N)$ for a compact oriented $(n+1)$-manifold $W$. \par\noindent Applications: cobordism classifies manifolds and connects topology with geometry, characteristic classes, and mathematical physics.
 
 \term{Code (Error-Correcting)}
-A code is a set of allowed words $C\subseteq\Sigma^n$. The Hamming distance counts differing positions; if the minimum distance is $2t+1$, the code can correct up to $t$ errors. \par\noindent\textbf{Applications:} error-correcting codes protect data stored or transmitted in satellites, computers, mobile networks, and digital storage.
+A code is a set of allowed words $C\subseteq\Sigma^n$. The Hamming distance counts differing positions; if the minimum distance is $2t+1$, the code can correct up to $t$ errors. \par\noindent Applications: error-correcting codes protect data stored or transmitted in satellites, computers, mobile networks, and digital storage.
 
 \term{Coding Theory}
-The study of error-detecting and error-correcting codes, subsets $C$ of $\Sigma^n$ chosen so that distinct codewords stay far apart in Hamming distance. Linear codes over finite fields are vector subspaces with parameters $[n,k,d]$, and their minimum distance determines error-correcting capability. Bounds such as the Hamming, Singleton, and Gilbert--Varshamov bounds constrain the achievable parameters. Constructions over finite fields, including Reed--Solomon codes, connect coding theory to cryptography, design theory, and algebraic geometry.
+Coding theory studies how to represent messages so that errors can be detected or corrected. Codewords are chosen far apart in Hamming distance; a linear code with parameters $[n,k,d]$ can correct up to $\lfloor(d-1)/2\rfloor$ errors. \par\noindent Applications: coding theory protects data in satellites, mobile networks, computers, digital storage, and communication systems.
 
 \term{Codomain}
-The codomain of a function $f:A\to B$ is the declared target set $B$; the range is the subset of $B$ actually reached. Distinguishing them makes it possible to ask whether a function is surjective. \par\noindent\textbf{Applications:} codomains are important in modeling, type checking, inverse problems, and the precise composition of functions.
+The codomain of a function $f:A\to B$ is the declared target set $B$; the range is the subset of $B$ actually reached. Distinguishing them makes it possible to ask whether a function is surjective. \par\noindent Applications: codomains are important in modeling, type checking, inverse problems, and the precise composition of functions.
 
 \term{Coefficient of Variation}
-The coefficient of variation is $CV = \sigma/\mu$, the ratio of standard deviation to mean. It is a dimensionless measure of dispersion, useful for comparing variability across datasets with different units or scales. A $CV > 1$ indicates high relative variability; a $CV < 0.1$ indicates low relative variability.
-
-\term{Combination}
-A combination is a selection in which order does not matter. The number of ways to choose $k$ objects from $n$ is $\binom nk=n!/[k!(n-k)!]$. \par\noindent\textbf{Applications:} combinations count samples, possible teams, subsets in algorithms, and outcomes in probability.
+The coefficient of variation compares spread with the size of the mean. It is $CV=\sigma/|\mu|$ when $\mu\ne0$, so it has no units and can compare datasets measured on different scales. \par\noindent Applications: it compares relative variability in laboratory measurements, finance, biology, quality control, and risk analysis.
 
 \term{Cofibration}
-A cofibration is a map $i:A\to X$ with the homotopy extension property: a deformation already defined on $A$ can be extended to all of $X$. In model categories, cofibrations are one of the three distinguished classes of maps and are dual to fibrations. \par\noindent\textbf{Applications:} cofibrations provide well-behaved inclusions for building spaces in homotopy theory and algebraic topology.
+A cofibration is a map $i:A\to X$ with the homotopy extension property: a deformation already defined on $A$ can be extended to all of $X$. In model categories, cofibrations are one of the three distinguished classes of maps and are dual to fibrations. \par\noindent Applications: cofibrations provide well-behaved inclusions for building spaces in homotopy theory and algebraic topology.
 
 \term{Coherence (Category Theory)}
-Coherence theorems in category theory state that all diagrams built from the structural natural isomorphisms (associator, unitors, braiding) commute. Mac Lane's coherence theorem for monoidal categories asserts that any two parallel morphisms built from associators and unitors are equal. This justifies suppressing parentheses in monoidal categories without ambiguity.
+Coherence means that different ways of arranging the same categorical construction give the same result. Mac Lane's coherence theorem says that diagrams made from associators and unitors in a monoidal category commute, so parentheses can often be omitted without ambiguity. \par\noindent Applications: coherence simplifies tensor products, category-based algebra, topology, and computer-science semantics.
 
 \term{Coherent Sheaf}
-A coherent sheaf is a sheaf of functions or modules that is locally described by finitely many generators and relations. On a proper space, its cohomology groups are finite-dimensional; for a sufficiently positive line bundle, higher cohomology eventually vanishes. \par\noindent\textbf{Applications:} coherent sheaves encode algebraic families, constraints, and sections in algebraic geometry.
+A coherent sheaf is a sheaf of functions or modules that is locally described by finitely many generators and relations. On a proper space, its cohomology groups are finite-dimensional; for a sufficiently positive line bundle, higher cohomology eventually vanishes. \par\noindent Applications: coherent sheaves encode algebraic families, constraints, and sections in algebraic geometry.
 
 \term{Cohomology}
-Cohomology is the contravariant functor $H^n(X; G)$ associated to a topological space $X$ and coefficient group $G$, computed from the dual of the singular chain complex. Unlike homology, cohomology carries a natural ring structure (the cup product), making $H^*(X) = \bigoplus H^n(X)$ a graded ring. Cohomology is more computable than homology in many cases and carries richer structure.
+Cohomology assigns algebraic data that detects holes and global features of a space. Groups $H^n(X;G)$ are built from the dual of the chain complex, and their cup product makes $H^*(X)$ a graded ring. For example, cohomology distinguishes a circle from a disk. \par\noindent Applications: cohomology is used in topology, geometry, algebraic geometry, data analysis, and mathematical physics.
 
 \term{Colimit}
-A categorical construction dual to a limit: the colimit of a diagram $D: J \to \mathcal{C}$ is the universal cocone, an object $\operatorname{colim} D$ with maps $D_j \to \operatorname{colim} D$ through which every other cocone factors uniquely. Direct limits, pushouts, and coproducts are special cases. Colimits of sets and modules exist and are built from generators and relations. The construction is a left adjoint to the diagonal functor, and filtered colimits commute with finite limits in categories such as modules.
+A colimit combines a diagram of objects into one universal object. It comes with maps from each object, and every other compatible way of combining the diagram factors uniquely through it. Pushouts, coproducts, and direct limits are examples. \par\noindent Applications: colimits assemble spaces, algebraic structures, data types, and systems from smaller pieces.
+
+\term{Combination}
+A combination is a selection in which order does not matter. The number of ways to choose $k$ objects from $n$ is $\binom nk=n!/[k!(n-k)!]$. \par\noindent Applications: combinations count samples, possible teams, subsets in algorithms, and outcomes in probability.
 
 \term{Commutative Algebra}
-The study of commutative rings, their ideals, and modules, forming the algebraic foundation of algebraic geometry and number theory.
-
-\term{Compact Operator}
-A bounded linear operator $T: X \to Y$ between Banach spaces is compact if the image of the unit ball is relatively compact (its closure is compact). Equivalently, for every bounded sequence $(x_n)$, the sequence $(Tx_n)$ has a convergent subsequence. Compact operators generalise matrices to infinite dimensions; the spectral theory of compact operators closely mirrors finite-dimensional linear algebra.
-
-\term{Compact Space}
-A topological space is compact if every collection of open sets that covers it has a finite subcollection that still covers it. In $\mathbb{R}^n$, the Heine--Borel theorem says that compactness is equivalent to being closed and bounded. A continuous real-valued function on a compact space attains both a maximum and a minimum. \par\noindent\textbf{Applications:} compactness helps prove that optimization problems have solutions and that limits or subsequences exist.
+Commutative algebra studies rings in which multiplication satisfies $ab=ba$, together with their ideals and modules. Polynomial rings and the integers are basic examples. \par\noindent Applications: commutative algebra is the algebraic foundation of algebraic geometry, number theory, coding, and algebraic statistics.
 
 \term{Compactness Theorem}
-In first-order logic, a set of sentences has a model if and only if every finite subset of it has a model; the substantive direction is that finite satisfiability forces satisfiability of the whole set. It follows from Gödel's completeness theorem and implies the Löwenheim--Skolem theorems and the existence of nonstandard models of arithmetic. Compactness is widely used to transfer finite results to infinite settings, as when the four-colour theorem for finite planar graphs is extended to infinite graphs.
+The compactness theorem for first-order logic says that an infinite collection of statements is simultaneously satisfiable whenever every finite subcollection is satisfiable. In other words, no contradiction appears only at infinity. \par\noindent Applications: it transfers finite constructions to infinite settings and supports model theory, nonstandard models, and combinatorics.
+
+\term{Compact Operator}
+A compact operator turns bounded sets into sets whose behavior can be captured by convergent subsequences. Equivalently, every bounded sequence $(x_n)$ has a subsequence for which $(Tx_n)$ converges. Compact operators generalize the useful finiteness of matrices to infinite-dimensional spaces. \par\noindent Applications: they appear in integral equations, PDEs, approximation theory, and infinite-dimensional spectral analysis.
+
+\term{Compact Space}
+A topological space is compact if every collection of open sets that covers it has a finite subcollection that still covers it. In $\mathbb{R}^n$, the Heine--Borel theorem says that compactness is equivalent to being closed and bounded. A continuous real-valued function on a compact space attains both a maximum and a minimum. \par\noindent Applications: compactness helps prove that optimization problems have solutions and that limits or subsequences exist.
 
 \term{Completeness (Metric Space)}
-A metric space $(X,d)$ is complete if every Cauchy sequence in $X$ converges to a point of $X$. The real numbers are complete, while the rationals are not; completing a space adds the missing limits. \par\noindent\textbf{Applications:} completeness ensures that limiting numerical approximations remain meaningful in analysis, differential equations, and computation.
+A metric space $(X,d)$ is complete if every Cauchy sequence in $X$ converges to a point of $X$. The real numbers are complete, while the rationals are not; completing a space adds the missing limits. \par\noindent Applications: completeness ensures that limiting numerical approximations remain meaningful in analysis, differential equations, and computation.
 
 \term{Complexity Class}
-A set of decision problems solvable within prescribed resource bounds, such as time or space as functions of input length. Major classes include $\mathsf{P}$, $\mathsf{NP}$, $\mathsf{PSPACE}$, and $\mathsf{EXP}$. Reductions order problems by difficulty; a problem is complete for a class if it lies in the class and every member reduces to it, as in NP-completeness. Hierarchy theorems show the corresponding time and space classes are strictly increasing. Whether $\mathsf{P} = \mathsf{NP}$ remains open.
+A complexity class groups computational problems according to resources such as time or memory. For example, $\mathsf P$ contains problems solvable in polynomial time, while $\mathsf{NP}$ contains problems whose proposed solutions can be checked in polynomial time. Reductions compare the difficulty of problems. \par\noindent Applications: complexity classes guide algorithm design, cryptography, optimization, and the study of computational limits.
 
 \term{Complex Manifold}
-A real manifold of even dimension with an atlas whose transition functions are biholomorphic, modeled on open subsets of $\mathbb{C}^n$ with holomorphic coordinate changes. Complex manifolds carry a holomorphic tangent bundle and Dolbeault cohomology groups $H^{p,q}$. Riemann surfaces, the complex dimension-one case, and complex projective space $\mathbb{CP}^n$ are the primary examples. An almost-complex structure is a pointwise condition that is integrable exactly when the Nijenhuis tensor vanishes, by the Newlander--Nirenberg theorem.
+A complex manifold is a space that locally looks like $\mathbb C^n$ and whose coordinate changes are holomorphic. The complex plane, Riemann surfaces, and complex projective space are examples. This structure lets one use complex differentiation and holomorphic functions on curved spaces. \par\noindent Applications: complex manifolds support complex analysis, algebraic geometry, string theory, and geometric modeling.
 
 \term{Complex Number}
-A complex number is $z = a + bi$ where $a, b \in \mathbb{R}$ and $i^2 = -1$. The complex plane $\mathbb{C}$ is identified with $\mathbb{R}^2$. The modulus is $|z| = \sqrt{a^2+b^2}$ and the argument is $\arg(z) = \arctan(b/a)$. Complex numbers form an algebraically closed field: every non-constant polynomial has a root in $\mathbb{C}$ (Fundamental Theorem of Algebra).
+A complex number combines a real part and an imaginary part: $z=a+bi$ with $i^2=-1$. It can be viewed as the point $(a,b)$ in the plane, with modulus $|z|=\sqrt{a^2+b^2}$ and argument giving its direction. Every nonconstant polynomial has a complex root. \par\noindent Applications: complex numbers describe waves, rotations, electrical circuits, signal processing, and quantum mechanics.
 
 \term{Composition Series}
-A composition series of a group $G$ is a finite chain $G = G_0 \triangleright G_1 \triangleright \cdots \triangleright G_n = \{e\}$ where each $G_{i+1}$ is a maximal normal subgroup of $G_i$, so each factor $G_i/G_{i+1}$ is simple. The Jordan--Hölder theorem states that any two composition series have the same length and the same multiset of simple factors (up to isomorphism).
+A composition series breaks a finite group into its simplest normal quotients. It is a chain $G=G_0\triangleright\cdots\triangleright G_n=\{e\}$ whose factors $G_i/G_{i+1}$ are simple. The Jordan--Hölder theorem says the simple factors are unique up to order and isomorphism. \par\noindent Applications: composition series support the classification of finite groups and the analysis of symmetry structures.
 
 \term{Concave Function}
-A function $f$ is concave if $f(tx+(1-t)y)\ge tf(x)+(1-t)f(y)$ for $0\le t\le1$; its graph lies above its chords. \par\noindent\textbf{Applications:} concavity models diminishing returns and helps analyze utility, entropy, risk, and optimization problems.
+A function $f$ is concave if $f(tx+(1-t)y)\ge tf(x)+(1-t)f(y)$ for $0\le t\le1$; its graph lies above its chords. \par\noindent Applications: concavity models diminishing returns and helps analyze utility, entropy, risk, and optimization problems.
 
 \term{Concentration of Measure}
-In high-dimensional spaces, most of the volume (or measure) concentrates near the boundary or equator. For the unit sphere $S^{n-1} \subset \mathbb{R}^n$, the measure of an $\epsilon$-neighbourhood of the equator $\{x : |x_1| \leq \epsilon\}$ approaches 1 as $n \to \infty$. Lévy's lemma quantifies this: Lipschitz functions on $S^n$ are nearly constant. Concentration of measure is foundational in asymptotic geometric analysis and probability.
-
-\term{Condition Number}
-A condition number measures how sensitive a problem's output is to small changes in its input. For an invertible matrix, $\kappa(A)=\|A\|\|A^{-1}\|$; a large value indicates an ill-conditioned problem. \par\noindent\textbf{Applications:} condition numbers estimate lost numerical accuracy and guide the choice of stable algorithms and better measurements.
+In high-dimensional spaces, most points behave nearly alike or lie close to a typical region. On the unit sphere $S^{n-1}$, most points lie near the equator relative to any chosen axis as $n$ grows; Lévy's lemma makes this precise for Lipschitz functions. \par\noindent Applications: concentration supports probability, statistics, randomized algorithms, high-dimensional data analysis, and asymptotic geometry.
 
 \term{Conditional Expectation}
-The conditional expectation $\mathbb E[X\mid\mathcal F]$ is the best average prediction of $X$ using the information in the $\sigma$-algebra $\mathcal F$. It is itself a random variable determined by that information. \par\noindent\textbf{Applications:} conditional expectation is used in prediction, filtering, regression, finance, and stochastic processes.
+The conditional expectation $\mathbb E[X\mid\mathcal F]$ is the best average prediction of $X$ using the information in the $\sigma$-algebra $\mathcal F$. It is itself a random variable determined by that information. \par\noindent Applications: conditional expectation is used in prediction, filtering, regression, finance, and stochastic processes.
 
 \term{Conditional Probability}
-The conditional probability of $A$ given $B$ is $P(A|B) = \frac{P(A \cap B)}{P(B)}$ for $P(B) > 0$. Bayes' theorem relates conditional probabilities: $P(A|B) = \frac{P(B|A)P(A)}{P(B)}$. Conditional expectation $E[X|Y]$ is a random variable measurable with respect to $\sigma(Y)$ satisfying $\int_A X\,dP = \int_A E[X|Y]\,dP$ for all $A \in \sigma(Y)$.
+Conditional probability measures how likely $A$ is after learning that $B$ occurred. When $P(B)>0$, $P(A\mid B)=P(A\cap B)/P(B)$, and Bayes' theorem rewrites this using $P(B\mid A)$. \par\noindent Applications: conditional probability is essential in diagnosis, risk analysis, surveys, machine learning, and statistical inference.
 
 \term{Conditioning}
-Conditioning describes the sensitivity of a problem's exact answer to small changes in its input; the condition number measures this sensitivity. \par\noindent\textbf{Applications:} conditioning tells scientists whether uncertainty in measurements will be greatly amplified by a computation.
+Conditioning describes the sensitivity of a problem's exact answer to small changes in its input; the condition number measures this sensitivity. \par\noindent Applications: conditioning tells scientists whether uncertainty in measurements will be greatly amplified by a computation.
+
+\term{Condition Number}
+A condition number measures how sensitive a problem's output is to small changes in its input. For an invertible matrix, $\kappa(A)=\|A\|\|A^{-1}\|$; a large value indicates an ill-conditioned problem. \par\noindent Applications: condition numbers estimate lost numerical accuracy and guide the choice of stable algorithms and better measurements.
 
 \term{Condorcet Paradox}
-Even when each voter's preferences are transitive, majority voting can produce a cycle: A beats B, B beats C, and C beats A. \par\noindent\textbf{Applications:} the paradox matters in voting systems, preference aggregation, committee decisions, and ranking algorithms.
+Even when each voter's preferences are transitive, majority voting can produce a cycle: A beats B, B beats C, and C beats A. \par\noindent Applications: the paradox matters in voting systems, preference aggregation, committee decisions, and ranking algorithms.
 
 \term{Cone}
-A cone is a solid with a circular base and one vertex; in convex geometry it is a set closed under multiplication by nonnegative scalars. \par\noindent\textbf{Applications:} cones describe feasible directions, light cones, inequality constraints, optimization problems, and three-dimensional objects.
+A cone is a solid with a circular base and one vertex; in convex geometry it is a set closed under multiplication by nonnegative scalars. \par\noindent Applications: cones describe feasible directions, light cones, inequality constraints, optimization problems, and three-dimensional objects.
 
 \term{Conformal Map}
-A holomorphic function $f: D \to \mathbb{C}$ is conformal at $z_0$ if $f'(z_0) \neq 0$. Conformal maps preserve angles (in magnitude and orientation) between curves. By the Riemann Mapping Theorem, every simply connected proper open subset of $\mathbb{C}$ is conformally equivalent to the unit disk. Conformal maps are used in fluid dynamics, electrostatics, and cartography.
+A conformal map preserves angles and local shapes, although it may change lengths and sizes. A holomorphic function is conformal where $f'(z_0)\ne0$; suitable simply connected domains can be mapped to the unit disk. \par\noindent Applications: conformal maps are used in fluid dynamics, electrostatics, cartography, and complex analysis.
 
 \term{Conjugate}
-The complex conjugate of $z=x+iy$ is $\bar z=x-iy$. In a group, conjugate elements have the form $aga^{-1}$ and represent the same symmetry in a different coordinate frame. \par\noindent\textbf{Applications:} conjugation is used in signal processing, inner products, quantum mechanics, and group symmetry.
-
-\term{Connected Space}
-A space is connected if it cannot be split into two nonempty disjoint open pieces. It is path-connected if every two points can be joined by a continuous path; path-connectedness implies connectedness, but not conversely. \par\noindent\textbf{Applications:} connectedness identifies coherent regions in topology, geometry, image segmentation, and network models.
+The complex conjugate of $z=x+iy$ is $\bar z=x-iy$. In a group, conjugate elements have the form $aga^{-1}$ and represent the same symmetry in a different coordinate frame. \par\noindent Applications: conjugation is used in signal processing, inner products, quantum mechanics, and group symmetry.
 
 \term{Connectedness}
-A space is connected if it cannot be split into two nonempty disjoint open pieces. An interval is connected, whereas two separated intervals are not. \par\noindent\textbf{Applications:} connectedness identifies coherent regions in geometry, image analysis, materials science, and network models.
+A space is connected if it cannot be split into two nonempty disjoint open pieces. An interval is connected, whereas two separated intervals are not. \par\noindent Applications: connectedness identifies coherent regions in geometry, image analysis, materials science, and network models.
+
+\term{Connected Space}
+A space is connected if it cannot be split into two nonempty disjoint open pieces. It is path-connected if every two points can be joined by a continuous path; path-connectedness implies connectedness, but not conversely. \par\noindent Applications: connectedness identifies coherent regions in topology, geometry, image segmentation, and network models.
 
 \term{Connection}
-A connection is a rule for comparing vectors or other geometric data at different points of a curved space. It defines parallel transport and covariant differentiation. \par\noindent\textbf{Applications:} connections describe curvature and motion in differential geometry, general relativity, robotics, and gauge theory.
+A connection is a rule for comparing vectors or other geometric data at different points of a curved space. It defines parallel transport and covariant differentiation. \par\noindent Applications: connections describe curvature and motion in differential geometry, general relativity, robotics, and gauge theory.
+
+\term{Connectivity}
+Connectivity measures how difficult it is to split a network into separate pieces. \origin{Graph theorists developed connectivity to study the reliability and structure of networks.} \par\noindent Applications: connectivity measures resilience in roads, communication systems, power grids, and social networks.
 
 \term{Consistency}
-For a numerical differential-equation scheme, consistency means that its truncation error tends to zero as the mesh spacing tends to zero. Consistency alone does not guarantee stability or convergence. \par\noindent\textbf{Applications:} it is one of the basic checks used when designing reliable simulations of heat, waves, and fluid flow.
+For a numerical differential-equation scheme, consistency means that its truncation error tends to zero as the mesh spacing tends to zero. Consistency alone does not guarantee stability or convergence. \par\noindent Applications: it is one of the basic checks used when designing reliable simulations of heat, waves, and fluid flow.
 
 \term{Contact Manifold}
-A contact manifold is an odd-dimensional smooth manifold $M^{2n+1}$ with a contact structure: a maximally non-integrable hyperplane field locally the kernel of a 1-form $\alpha$ with $\alpha \wedge (d\alpha)^n$ nowhere vanishing. By Darboux's theorem every contact structure is locally equivalent to $\alpha = dz - \sum_{i=1}^n y_i\,dx_i$ in suitable coordinates. The Reeb vector field determined by $\alpha$ generates a flow preserving $\alpha$, the Reeb flow. Contact geometry is the odd-dimensional counterpart of symplectic geometry, with applications in Hamiltonian dynamics, low-dimensional topology, and geometric quantisation.
+A contact manifold is an odd-dimensional space with a maximally twisting hyperplane field. Locally it is described by a one-form $\alpha$ satisfying $\alpha\wedge(d\alpha)^n\ne0$. Contact geometry is the odd-dimensional counterpart of symplectic geometry. \par\noindent Applications: contact geometry models mechanical systems, fluid dynamics, low-dimensional topology, and geometric quantization.
 
 \term{Continuity}
-See \term{Continuous Function}. \par\noindent\textbf{Applications:} continuity is used to justify limits, optimization, numerical approximation, and the stable dependence of outputs on inputs.
+See \termref{Continuous Function}. \par\noindent Applications: continuity is used to justify limits, optimization, numerical approximation, and the stable dependence of outputs on inputs.
 
 \term{Continuous Function}
-A function $f:X\to Y$ is continuous if inverse images of open sets are open; in metric spaces this is the familiar $\epsilon$--$\delta$ condition. Informally, small changes in the input produce small changes in the output. \par\noindent\textbf{Applications:} continuity is required for stable modeling, optimization, numerical approximation, and physical laws.
+A function $f:X\to Y$ is continuous if inverse images of open sets are open; in metric spaces this is the familiar $\epsilon$--$\delta$ condition. Informally, small changes in the input produce small changes in the output. \par\noindent Applications: continuity is required for stable modeling, optimization, numerical approximation, and physical laws.
 
 \term{Continuum}
-A connected compact metric space; often used loosely for the real line as an uncountable continuum.
+A continuum is a connected compact metric space; informally, the word can also mean a continuous collection of points such as the real line. \par\noindent Applications: continua model continuous geometric objects in topology, analysis, dynamical systems, and physical models.
 
 \term{Continuum Hypothesis}
-The continuum hypothesis asserts that no set has cardinality strictly between that of $\mathbb N$ and that of $\mathbb R$. Gödel showed it is consistent with the usual ZFC axioms, while Cohen showed that its negation is also consistent; therefore ZFC neither proves nor disproves it. \par\noindent\textbf{Applications:} it illustrates the limits of axiomatic systems and the role of assumptions in set theory and logic.
+The continuum hypothesis asserts that no set has cardinality strictly between that of $\mathbb N$ and that of $\mathbb R$. Gödel showed it is consistent with the usual ZFC axioms, while Cohen showed that its negation is also consistent; therefore ZFC neither proves nor disproves it. \par\noindent Applications: it illustrates the limits of axiomatic systems and the role of assumptions in set theory and logic.
 
 \term{Contour Integral}
-A contour integral integrates a function along an oriented curve $\gamma$ in the complex plane: $\int_\gamma f(z)\,dz$. The value depends on both the function and the path unless additional conditions make it path-independent. \par\noindent\textbf{Applications:} contour integrals compute residues, solve complex integrals, and model two-dimensional potential and fluid flow.
+A contour integral integrates a function along an oriented curve $\gamma$ in the complex plane: $\int_\gamma f(z)\,dz$. The value depends on both the function and the path unless additional conditions make it path-independent. \par\noindent Applications: contour integrals compute residues, solve complex integrals, and model two-dimensional potential and fluid flow.
 
 \term{Contraction Mapping Principle}
-Also called the Banach Fixed-Point Theorem. If $(X,d)$ is a complete metric space and $T: X \to X$ satisfies $d(Tx, Ty) \leq c\, d(x,y)$ for some $0 \leq c < 1$, then $T$ has a unique fixed point, and the iterates $x_{n+1} = Tx_n$ converge to it for any starting point $x_0$. This is the foundation for existence-uniqueness proofs in ODEs, integral equations, and numerical analysis.
+The contraction mapping principle says that repeatedly applying a map that shrinks distances must settle at one point. If $d(Tx,Ty)\le c,d(x,y)$ with $c<1$ on a complete metric space, then $T$ has a unique fixed point and $x_{n+1}=T(x_n)$ converges to it. \par\noindent Applications: it proves existence and uniqueness in ODEs, integral equations, and numerical analysis.
 
 \term{Contradiction}
-A contradiction is a statement or pair of assumptions that cannot both be true. In proof by contradiction, one assumes the negation of the desired claim and derives an impossibility. \par\noindent\textbf{Applications:} contradiction is used to prove irrationality, uniqueness, impossibility results, and the correctness of algorithms.
-
-\term{Convergence in Distribution}
-Random variables $X_n$ converge in distribution to $X$ when their cumulative distribution functions converge at every continuity point of the distribution of $X$. This is weaker than convergence in probability or almost surely. \par\noindent\textbf{Applications:} it supports distributional approximations in statistics and the central limit theorem.
+A contradiction is a statement or pair of assumptions that cannot both be true. In proof by contradiction, one assumes the negation of the desired claim and derives an impossibility. \par\noindent Applications: contradiction is used to prove irrationality, uniqueness, impossibility results, and the correctness of algorithms.
 
 \term{Convergence Almost Everywhere}
-Also called almost sure convergence, this means $P(\{\omega:X_n(\omega)\to X(\omega)\})=1$. It is stronger than convergence in probability and implies it. \par\noindent\textbf{Applications:} it describes long-run sample behavior in probability, simulation, and stochastic modeling.
+Also called almost sure convergence, this means $P(\{\omega:X_n(\omega)\to X(\omega)\})=1$. It is stronger than convergence in probability and implies it. \par\noindent Applications: it describes long-run sample behavior in probability, simulation, and stochastic modeling.
+
+\term{Convergence in Distribution}
+Random variables $X_n$ converge in distribution to $X$ when their cumulative distribution functions converge at every continuity point of the distribution of $X$. This is weaker than convergence in probability or almost surely. \par\noindent Applications: it supports distributional approximations in statistics and the central limit theorem.
 
 \term{Convergence in Probability}
-Random variables $X_n$ converge in probability to $X$ if $P(|X_n-X|>\epsilon)\to0$ for every $\epsilon>0$. \par\noindent\textbf{Applications:} this notion formalizes the consistency of estimators and the reliability of repeated simulations.
+Random variables $X_n$ converge in probability to $X$ if $P(|X_n-X|>\epsilon)\to0$ for every $\epsilon>0$. \par\noindent Applications: this notion formalizes the consistency of estimators and the reliability of repeated simulations.
 
 \term{Convergence (Mode of)}
-Common modes include almost sure convergence, convergence in probability, convergence in $L^p$, and convergence in distribution. They have different strengths: almost sure convergence implies convergence in probability, which implies convergence in distribution; $L^p$ convergence also implies convergence in probability. \par\noindent\textbf{Applications:} choosing the right mode determines what can be concluded about statistical estimators and numerical approximations.
+Common modes include almost sure convergence, convergence in probability, convergence in $L^p$, and convergence in distribution. They have different strengths: almost sure convergence implies convergence in probability, which implies convergence in distribution; $L^p$ convergence also implies convergence in probability. \par\noindent Applications: choosing the right mode determines what can be concluded about statistical estimators and numerical approximations.
 
 \term{Convergent Series}
-An infinite series $\sum a_n$ converges when its partial sums $a_1+\cdots+a_n$ approach a finite limit. The limit is the sum of the series. \par\noindent\textbf{Applications:} convergent series represent functions, approximate numerical values, solve differential equations, and describe probabilities.
+An infinite series $\sum a_n$ converges when its partial sums $a_1+\cdots+a_n$ approach a finite limit. The limit is the sum of the series. \par\noindent Applications: convergent series represent functions, approximate numerical values, solve differential equations, and describe probabilities.
 
 \term{Convex Function}
-A function $f$ is convex if $f(tx+(1-t)y)\le tf(x)+(1-t)f(y)$ for $0\le t\le1$. Its graph lies below its chords; when twice differentiable, this is equivalent to $f''\ge0$. \par\noindent\textbf{Applications:} convexity supports global optimization and models costs, risk, energy, and diminishing returns.
+A function $f$ is convex if $f(tx+(1-t)y)\le tf(x)+(1-t)f(y)$ for $0\le t\le1$. Its graph lies below its chords; when twice differentiable, this is equivalent to $f''\ge0$. \par\noindent Applications: convexity supports global optimization and models costs, risk, energy, and diminishing returns.
 
 \term{Convex Hull}
-The convex hull of a set $S \subseteq \mathbb{R}^n$ is the smallest convex set containing $S$, equivalently the set of all convex combinations $\sum \lambda_i x_i$ with $x_i \in S$, $\lambda_i \geq 0$, $\sum \lambda_i = 1$. Carathéodory's theorem states that any point in the convex hull of $S \subset \mathbb{R}^n$ is a convex combination of at most $n+1$ points of $S$.
+The convex hull is the smallest shape containing a set and every straight line segment between its points. It consists of convex combinations $\sum\lambda_i x_i$ with $\lambda_i\ge0$ and $\sum\lambda_i=1$; for points in $\mathbb R^n$, at most $n+1$ points are needed. \par\noindent Applications: convex hulls support collision detection, computer vision, computational geometry, and optimization.
 
 \term{Convex Optimization}
-Convex optimization minimizes a convex function over a convex feasible set. Every local minimum is then a global minimum, although algorithms may still need conditions for existence and efficient computation. \par\noindent\textbf{Applications:} convex optimization is used in machine learning, portfolio design, signal recovery, control, and engineering.
+Convex optimization minimizes a convex function over a convex feasible set. Every local minimum is then a global minimum, although algorithms may still need conditions for existence and efficient computation. \par\noindent Applications: convex optimization is used in machine learning, portfolio design, signal recovery, control, and engineering.
 
 \term{Convex Polytope}
-The convex hull of finitely many points in $\mathbb{R}^n$, equivalently a bounded intersection of finitely many closed half-spaces by the Minkowski--Weyl theorem. Its faces form a lattice: vertices, edges, and facets are the 0-, 1-, and $(n-1)$-dimensional faces, encoded by the $f$-vector. The polar, or dual, polytope reverses the face lattice. Euler's formula $V - E + F = 2$ holds in three dimensions. Polytopes are central to linear programming and combinatorial geometry.
+A convex polytope is a bounded, flat-sided shape obtained as the convex hull of finitely many points. Its vertices, edges, and facets are its faces; in three dimensions they satisfy Euler's formula $V-E+F=2$. \par\noindent Applications: polytopes are central to linear programming, computer graphics, optimization, and combinatorial geometry.
 
 \term{Convex Set}
-A set $C$ in a vector space is convex if for any $x, y \in C$, the line segment $[x,y] = \{tx + (1-t)y : 0 \leq t \leq 1\}$ lies entirely in $C$. Examples: balls, half-spaces, simplices, the positive orthant. The intersection of convex sets is convex. A function is convex iff its epigraph is a convex set. Convex sets are central to optimisation and functional analysis.
+A convex set contains the whole straight line segment between any two of its points: $tx+(1-t)y\in C$ for $0\le t\le1$. Balls, half-spaces, and simplices are examples, and intersections of convex sets remain convex. \par\noindent Applications: convex sets are central to optimization, functional analysis, feasible-region modeling, and economics.
 
 \term{Coordinate Chart}
-A coordinate chart on a manifold $M$ is a pair $(U,\varphi)$ where $U$ is open and $\varphi:U\to\mathbb R^n$ gives local coordinates. An atlas is a collection of charts covering $M$, with smooth transition maps between overlapping charts. \par\noindent\textbf{Applications:} charts let scientists describe curved surfaces with local coordinates in robotics, relativity, computer graphics, and navigation.
+A coordinate chart on a manifold $M$ is a pair $(U,\varphi)$ where $U$ is open and $\varphi:U\to\mathbb R^n$ gives local coordinates. An atlas is a collection of charts covering $M$, with smooth transition maps between overlapping charts. \par\noindent Applications: charts let scientists describe curved surfaces with local coordinates in robotics, relativity, computer graphics, and navigation.
+
+\term{Coordinate Ring}
+A coordinate ring turns a geometric shape into algebra. For a variety $V$, it is the quotient $k[x_1,\ldots,x_n]/I(V)$, where $I(V)$ contains the polynomials that vanish on $V$. The equations describing the shape therefore become elements of one ring. \par\noindent Applications: coordinate rings translate geometry into algebraic calculations in algebraic geometry, robotics, and polynomial systems.
 
 \term{Copula}
-A copula is a multivariate distribution function whose one-dimensional margins are uniform on $[0,1]$. By Sklar's theorem, every joint distribution function $F$ with margins $F_1, \ldots, F_n$ admits the decomposition $F(x_1, \ldots, x_n) = C(F_1(x_1), \ldots, F_n(x_n))$ with $C$ unique when the margins are continuous, so the copula captures dependence independently of the marginal laws. Principal families include the Archimedean copulas (Clayton, Frank, Gumbel) and the Gaussian copula. Copulas are widely used in finance, risk management, and dependence modelling.
+A copula describes how random variables depend on one another separately from their individual distributions. It combines uniform one-dimensional margins; Sklar's theorem writes a joint distribution as $F(x_1,\ldots,x_n)=C(F_1(x_1),\ldots,F_n(x_n))$. \par\noindent Applications: copulas model dependence in finance, risk management, insurance, reliability, and multivariate statistics.
 
 \term{Corollary}
-A corollary is a result that follows quickly from a theorem or proposition, often by applying it to a special case. \par\noindent\textbf{Applications:} corollaries make a general theorem useful by recording consequences that can be cited directly in later proofs or models.
+A corollary is a result that follows quickly from a theorem or proposition, often by applying it to a special case. \par\noindent Applications: corollaries make a general theorem useful by recording consequences that can be cited directly in later proofs or models.
 
 \term{Correlation Coefficient}
-The Pearson correlation coefficient is $\rho_{XY}=\operatorname{Cov}(X,Y)/(\sigma_X\sigma_Y)$ and measures linear association, with values in $[-1,1]$. Values $1$ and $-1$ indicate perfect positive and negative linear relationships; zero means no linear relationship, not necessarily independence. \par\noindent\textbf{Applications:} correlation summarizes data relationships in statistics, finance, science, and machine learning.
+The Pearson correlation coefficient is $\rho_{XY}=\operatorname{Cov}(X,Y)/(\sigma_X\sigma_Y)$ and measures linear association, with values in $[-1,1]$. Values $1$ and $-1$ indicate perfect positive and negative linear relationships; zero means no linear relationship, not necessarily independence. \par\noindent Applications: correlation summarizes data relationships in statistics, finance, science, and machine learning.
 
 \term{Correspondence Theorem}
-For a homomorphism $f:G\to H$, subgroups of $G$ containing $\ker f$ correspond to subgroups of the image $f(G)$, preserving inclusion, normality, and quotients. Analogous results hold for ideals and modules. \par\noindent\textbf{Applications:} the theorem simplifies the classification of quotient groups, quotient rings, and quotient modules.
+For a homomorphism $f:G\to H$, subgroups of $G$ containing $\ker f$ correspond to subgroups of the image $f(G)$, preserving inclusion, normality, and quotients. Analogous results hold for ideals and modules. \par\noindent Applications: the theorem simplifies the classification of quotient groups, quotient rings, and quotient modules.
 
 \term{Coset}
-If $H$ is a subgroup of $G$ and $g \in G$, the left coset is $gH = \{gh : h \in H\}$ and the right coset is $Hg = \{hg : h \in H\}$. Left cosets partition $G$ into disjoint sets of equal size $|H|$. Lagrange's theorem states $[G:H] = |G|/|H|$. A subgroup is normal iff left and right cosets coincide.
+ A coset is a shifted copy of a subgroup. For $H\le G$, the left coset $gH=\{gh:h\in H\}$ partitions $G$ into equal-sized pieces; the number of pieces is the index $[G:H]$. \par\noindent Applications: cosets support quotient groups, modular arithmetic, symmetry classification, and error-correcting codes.
 
 \term{Cotangent Bundle}
-The cotangent bundle $T^*M$ is the union of all cotangent spaces $T_p^*M=(T_pM)^*$ over points $p$ of a manifold. It has dimension $2n$ when $M$ has dimension $n$ and carries a natural symplectic form. \par\noindent\textbf{Applications:} it combines position and momentum and is the natural phase space for Hamiltonian mechanics, control theory, and geometric optics.
+The cotangent bundle $T^*M$ is the union of all cotangent spaces $T_p^*M=(T_pM)^*$ over points $p$ of a manifold. It has dimension $2n$ when $M$ has dimension $n$ and carries a natural symplectic form. \par\noindent Applications: it combines position and momentum and is the natural phase space for Hamiltonian mechanics, control theory, and geometric optics.
 
 \term{Cotangent Complex}
-The cotangent complex $L_{B/A}$ is a complex of $B$-modules governing the deformation theory of a morphism of algebras (or schemes) $A \to B$; it is a derived replacement of the module of Kähler differentials $\Omega_{B/A} = H^0(L_{B/A})$. Its cohomology modules $H^i(L_{B/A})$ govern derivations and extensions: obstructions to lifting $B$ over square-zero extensions of $A$ live in $H^2(L_{B/A})$, which also computes André--Quillen homology. For smooth morphisms $L_{B/A}$ is concentrated in degree zero, and under étale localisation it behaves like classical differentials. It was constructed by Quillen and developed by Illusie.
+The cotangent complex records how an algebraic object can be infinitesimally changed. For a map $A\to B$, it extends ordinary differentials $\Omega_{B/A}$ and stores both possible deformations and obstructions to extending them. \par\noindent Applications: cotangent complexes are used in deformation theory, algebraic geometry, moduli spaces, and André--Quillen homology.
 
 \term{Cotangent Space}
-The cotangent space at a point is the dual of its tangent space; its elements are covectors that measure directional change. \par\noindent\textbf{Applications:} cotangent spaces contain gradients and differentials and are used in optimization, mechanics, and differential geometry.
+The cotangent space at a point is the dual of its tangent space; its elements are covectors that measure directional change. \par\noindent Applications: cotangent spaces contain gradients and differentials and are used in optimization, mechanics, and differential geometry.
 
 \term{Countable Set}
-A set is countable if it can be put in one-to-one correspondence with a subset of the natural numbers. Finite sets and $\mathbb N$ are countable, while $\mathbb R$ is not. \par\noindent\textbf{Applications:} countability distinguishes listable data from continua and is central to probability, computability, and analysis.
+A set is countable if it can be put in one-to-one correspondence with a subset of the natural numbers. Finite sets and $\mathbb N$ are countable, while $\mathbb R$ is not. \par\noindent Applications: countability distinguishes listable data from continua and is central to probability, computability, and analysis.
 
 \term{Counterexample}
-A counterexample is one valid example for which a proposed general statement fails. A single counterexample is enough to disprove a universal claim. \par\noindent\textbf{Applications:} counterexamples test algorithms, expose missing assumptions, and help refine mathematical models.
+A counterexample is one valid example for which a proposed general statement fails. A single counterexample is enough to disprove a universal claim. \par\noindent Applications: counterexamples test algorithms, expose missing assumptions, and help refine mathematical models.
 
 \term{Covariance}
-The covariance $\operatorname{Cov}(X,Y)=\mathbb E[(X-\mathbb EX)(Y-\mathbb EY)]$ measures how two random variables vary together. \par\noindent\textbf{Applications:} covariance is used in regression, portfolio risk, principal component analysis, and uncertainty propagation.
+The covariance $\operatorname{Cov}(X,Y)=\mathbb E[(X-\mathbb EX)(Y-\mathbb EY)]$ measures how two random variables vary together. \par\noindent Applications: covariance is used in regression, portfolio risk, principal component analysis, and uncertainty propagation.
 
 \term{Covariant Derivative}
-A covariant derivative differentiates vector fields and tensors on a curved space while respecting the geometry; it is linear and satisfies the product rule. \par\noindent\textbf{Applications:} it defines acceleration, curvature, geodesics, and field equations in differential geometry and physics.
+A covariant derivative differentiates vector fields and tensors on a curved space while respecting the geometry; it is linear and satisfies the product rule. \par\noindent Applications: it defines acceleration, curvature, geodesics, and field equations in differential geometry and physics.
+
+\term{Covariant Functor}
+A covariant functor translates objects and maps from one mathematical setting to another without reversing the direction of the maps. \origin{Category theorists introduced covariant functors to compare different mathematical settings while preserving composition.} \par\noindent Applications: covariant functors connect algebra, geometry, topology, logic, and computer science.
 
 \term{Covering Space}
-A covering space is a space $\widetilde X$ with a map $p:\widetilde X\to X$ such that each point of $X$ has a neighborhood whose preimage is a disjoint union of copies of that neighborhood. \par\noindent\textbf{Applications:} covering spaces compute fundamental groups and model periodic motion, wave phase, and multivalued functions.
+A covering space is a space $\widetilde X$ with a map $p:\widetilde X\to X$ such that each point of $X$ has a neighborhood whose preimage is a disjoint union of copies of that neighborhood. \par\noindent Applications: covering spaces compute fundamental groups and model periodic motion, wave phase, and multivalued functions.
 
 \term{Cramer's Rule}
-For a linear system $Ax = b$ with $\det(A) \neq 0$, the unique solution is $x_i = \frac{\det(A_i)}{\det(A)}$, where $A_i$ is $A$ with column $i$ replaced by $b$. Cramer's rule is theoretically important but numerically impractical for large systems due to the cost of computing determinants. It is useful for symbolic computation and proving theoretical results.
+Cramer's rule gives each unknown in a square linear system using determinants. If $Ax=b$ and $\det(A)\ne0$, then $x_i=\det(A_i)/\det(A)$, where $A_i$ replaces column $i$ by $b$. \par\noindent Applications: it is useful for small symbolic systems, formulas, and theoretical linear algebra, though not for large numerical systems.
 
 \term{Critical Point}
-A critical point is a point where the derivative or gradient is zero, or where the derivative does not exist. It is a candidate for a local maximum, local minimum, or saddle point. \par\noindent\textbf{Applications:} critical points are central to optimization, equilibrium analysis, bifurcation theory, and the study of physical energy landscapes.
+A critical point is a point where the derivative or gradient is zero, or where the derivative does not exist. It is a candidate for a local maximum, local minimum, or saddle point. \par\noindent Applications: critical points are central to optimization, equilibrium analysis, bifurcation theory, and the study of physical energy landscapes.
 
 \term{Crofton Formula}
-The Crofton formula relates the length of a curve to the measure of lines intersecting it. In the plane, the length of a rectifiable curve $\gamma$ is $\frac12\iint n(\gamma\cap\ell)\,d\mu(\ell)$. \par\noindent\textbf{Applications:} it estimates lengths and areas from intersections and is used in geometric probability, tomography, and image analysis.
+The Crofton formula relates the length of a curve to the measure of lines intersecting it. In the plane, the length of a rectifiable curve $\gamma$ is $\frac12\iint n(\gamma\cap\ell)\,d\mu(\ell)$. \par\noindent Applications: it estimates lengths and areas from intersections and is used in geometric probability, tomography, and image analysis.
 
 \term{Cross Product}
-For vectors $a,b\in\mathbb R^3$, the cross product $a\times b$ is perpendicular to both, has magnitude $\|a\|\|b\|\sin\theta$, and is oriented by the right-hand rule. Its magnitude is the area of the parallelogram spanned by the vectors. \par\noindent\textbf{Applications:} cross products calculate torque, angular momentum, surface normals, and areas in three-dimensional geometry.
+For vectors $a,b\in\mathbb R^3$, the cross product $a\times b$ is perpendicular to both, has magnitude $\|a\|\|b\|\sin\theta$, and is oriented by the right-hand rule. Its magnitude is the area of the parallelogram spanned by the vectors. \par\noindent Applications: cross products calculate torque, angular momentum, surface normals, and areas in three-dimensional geometry.
 
 \term{Cross Ratio}
-For four distinct points on the Riemann sphere, the cross ratio is $(z_1,z_2;z_3,z_4)=\frac{(z_1-z_3)(z_2-z_4)}{(z_1-z_4)(z_2-z_3)}$. It is invariant under Möbius transformations. \par\noindent\textbf{Applications:} it provides a projective invariant in geometry and is used in camera calibration, computer vision, and conformal mapping.
+For four distinct points on the Riemann sphere, the cross ratio is $(z_1,z_2;z_3,z_4)=\frac{(z_1-z_3)(z_2-z_4)}{(z_1-z_4)(z_2-z_3)}$. It is invariant under Möbius transformations. \par\noindent Applications: it provides a projective invariant in geometry and is used in camera calibration, computer vision, and conformal mapping.
 
 \term{Cubic Reciprocity}
-Cubic reciprocity is the reciprocity law governing solutions of $x^3 \equiv a \pmod{p}$ for rational primes $p \equiv 1 \pmod{3}$. Working in the Eisenstein integers $\mathbb{Z}[\omega]$, where $\omega$ is a primitive cube root of unity, one defines the cubic residue symbol $(\alpha/\beta)_3$ on primary elements; the reciprocity law states $(\alpha/\beta)_3 = (\beta/\alpha)_3$ for primary $\alpha, \beta$. It is an analogue of quadratic reciprocity and was used by Eisenstein in his proof that $x^3 + y^3 = z^3$ has no non-trivial integer solutions. The theory is due to Eisenstein and Jacobi.
+Cubic reciprocity is a number-theoretic rule relating whether numbers are cubic residues modulo different primes. In the Eisenstein integers $\mathbb Z[\omega]$, it takes the form $(\alpha/\beta)_3=(\beta/\alpha)_3$ for suitable primary elements. \par\noindent Applications: cubic reciprocity supports modular arithmetic, algebraic number theory, and the study of Diophantine equations.
 
 \term{Curry's Paradox}
-In a system with self-reference and ordinary logical rules, the sentence “If this sentence is true, then $X$” can force any proposition $X$. It shows that unrestricted self-reference and implication can make a logical system inconsistent. \par\noindent\textbf{Applications:} Curry's paradox informs formal logic, programming-language semantics, and automated reasoning.
+In a system with self-reference and ordinary logical rules, the sentence “If this sentence is true, then $X$” can force any proposition $X$. It shows that unrestricted self-reference and implication can make a logical system inconsistent. \par\noindent Applications: Curry's paradox informs formal logic, programming-language semantics, and automated reasoning.
 
 \term{Curvature}
-Curvature measures how rapidly a curve changes direction. For a plane curve, curvature is the reciprocal of the radius of its best-fitting osculating circle; surfaces have more general curvature measures. \par\noindent\textbf{Applications:} curvature describes bending in roads, robot paths, optics, fluid flow, and the geometry of spacetime.
+Curvature measures how rapidly a curve changes direction. For a plane curve, curvature is the reciprocal of the radius of its best-fitting osculating circle; surfaces have more general curvature measures. \par\noindent Applications: curvature describes bending in roads, robot paths, optics, fluid flow, and the geometry of spacetime.
 
 \term{Curvature Tensor}
-The Riemann curvature tensor $R^a_{\ bcd}$ measures the failure of parallel transport around a small loop to return a vector unchanged; Ricci and scalar curvature are derived from it. \par\noindent\textbf{Applications:} it describes intrinsic curvature in general relativity, geodesic deviation, and the geometry of curved spaces.
+The Riemann curvature tensor $R^a_{\ bcd}$ measures the failure of parallel transport around a small loop to return a vector unchanged; Ricci and scalar curvature are derived from it. \par\noindent Applications: it describes intrinsic curvature in general relativity, geodesic deviation, and the geometry of curved spaces.
+
+\term{Cut Vertex}
+A cut vertex is a vertex whose removal increases the number of connected components of a graph. It is also called an articulation point. \par\noindent Applications: identifying cut vertices reveals vulnerable points in communication, transport, power, and dependency networks.
 
 \term{CW Complex}
-A CW complex is a space built inductively by attaching cells $e^n_\alpha \cong D^n$ along their boundary spheres to the $(n-1)$-skeleton $X^{n-1}$, beginning with a discrete 0-skeleton, and equipped with the weak topology and the closure-finiteness condition. CW complexes form the natural combinatorial category for homotopy theory: by the Whitehead theorem a weak equivalence between CW complexes is a homotopy equivalence, and cellular approximation models maps between them. Cellular homology computes $H_*(X)$ from the attaching maps, and every space is weakly equivalent to a CW complex.
+A CW complex is a space built step by step by gluing disks to the boundaries of lower-dimensional disks. Starting with points, one attaches intervals, disks, and higher-dimensional cells; the resulting cell structure makes topology more combinatorial. \par\noindent Applications: CW complexes support homotopy theory, cellular homology, topological modeling, and computation of holes.
 
 \term{Cycle}
-A cycle is a closed path in a graph with no repeated vertices, or a homology class in $Z_n/B_n$. \par\noindent\textbf{Applications:} graph cycles detect loops in networks, while homology cycles detect holes in geometric data and support topological data analysis.
-
-\term{Cyclotomic Field}
-The $n$-th cyclotomic field is $\mathbb{Q}(\zeta_n)$ where $\zeta_n = e^{2\pi i/n}$ is a primitive $n$-th root of unity. It is a Galois extension of $\mathbb{Q}$ with Galois group $(\mathbb{Z}/n\mathbb{Z})^\times$, abelian of order $\varphi(n)$. Cyclotomic fields are central to algebraic number theory; Kummer used them to study Fermat's Last Theorem via cyclotomic units and ideal class groups.
-
-\term{Cyclotomic Polynomial}
-The $n$th cyclotomic polynomial $\Phi_n(x)$ is the polynomial whose roots are the primitive $n$th roots of unity. It satisfies $x^n-1=\prod_{d\mid n}\Phi_d(x)$ and has degree $\varphi(n)$. For a prime $p$, $\Phi_p(x)=x^{p-1}+\cdots+x+1$. \par\noindent\textbf{Applications:} cyclotomic polynomials construct regular polygons, study roots of unity, and support finite-field and cryptographic algorithms.
-
-\term{Cylinder (Topology)}
-The topological cylinder is $S^1 \times \mathbb{R}$, homeomorphic to $\mathbb{R}^2 \setminus \{0\}$. More generally, the cylinder over a space $X$ is $X \times [0,1]$. The cylinder is used to define homotopy: a homotopy between $f$ and $g$ is a continuous map $H: X \times [0,1] \to Y$ with $H(x,0) = f(x)$ and $H(x,1) = g(x)$.
+A cycle is a closed path in a graph with no repeated vertices, or a homology class in $Z_n/B_n$. \par\noindent Applications: graph cycles detect loops in networks, while homology cycles detect holes in geometric data and support topological data analysis.
 
 \term{Cyclic Group}
-A cyclic group is generated by one element: $G=\langle g\rangle=\{g^n:n\in\mathbb Z\}$. Every cyclic group is abelian, and a finite one of order $n$ is isomorphic to $\mathbb Z/n\mathbb Z$. \par\noindent\textbf{Applications:} cyclic groups model periodic phenomena, modular arithmetic, rotations, and the additive structure of integers.
+A cyclic group is generated by one element: $G=\langle g\rangle=\{g^n:n\in\mathbb Z\}$. Every cyclic group is abelian, and a finite one of order $n$ is isomorphic to $\mathbb Z/n\mathbb Z$. \par\noindent Applications: cyclic groups model periodic phenomena, modular arithmetic, rotations, and the additive structure of integers.
 
 \term{Cyclic Homology}
-Cyclic homology $HC_*(A)$ is a homology theory for associative algebras, introduced by Connes (1985). It is related to Hochschild homology via the Connes exact sequence: $\cdots \to HC_{n-2}(A) \to HH_n(A) \to HC_n(A) \to HC_{n-1}(A) \to \cdots$. Cyclic homology computes invariants of non-commutative spaces and appears in index theory and deformation quantisation.
+Cyclic homology is a way to extract topological information from an associative, possibly noncommutative, algebra. It is related to Hochschild homology by the Connes exact sequence and behaves like the homology of a noncommutative space. \par\noindent Applications: cyclic homology appears in index theory, noncommutative geometry, deformation quantization, and mathematical physics.
+
+\term{Cyclotomic Field}
+A cyclotomic field is obtained by adjoining a primitive root of unity to the rational numbers. It is $\mathbb Q(\zeta_n)$, where $\zeta_n=e^{2\pi i/n}$, and its Galois group is $(\mathbb Z/n\mathbb Z)^\times$. \par\noindent Applications: cyclotomic fields support algebraic number theory, regular polygons, reciprocity laws, and the study of Fermat's Last Theorem.
+
+\term{Cyclotomic Polynomial}
+The $n$th cyclotomic polynomial $\Phi_n(x)$ is the polynomial whose roots are the primitive $n$th roots of unity. It satisfies $x^n-1=\prod_{d\mid n}\Phi_d(x)$ and has degree $\varphi(n)$. For a prime $p$, $\Phi_p(x)=x^{p-1}+\cdots+x+1$. \par\noindent Applications: cyclotomic polynomials construct regular polygons, study roots of unity, and support finite-field and cryptographic algorithms.
 
 \term{Cylinder Set}
-In measure theory on product spaces, a cylinder set is a set of the form $\{x \in X^I : (x_{i_1}, \ldots, x_{i_n}) \in B\}$ where $B$ is measurable in the finite product. Cylinder sets generate the product $\sigma$-algebra. Kolmogorov's extension theorem uses cylinder sets to construct measures on infinite product spaces from consistent finite-dimensional distributions.
-\term{Adjacency Matrix}
-A square matrix $A=(a_{ij})$ represents a graph when $a_{ij}$ records whether vertices $i$ and $j$ are connected, or records an edge weight. Its eigenvalues form the graph spectrum. \par\noindent\textbf{Applications:} adjacency matrices support network ranking, community detection, graph clustering, and connectivity analysis.
-\term{Categorical Product}
-The categorical product of $A$ and $B$ has projection maps to both and the property that any object mapping to $A$ and $B$ maps uniquely to the product. For sets it is the Cartesian product; for groups it is the direct product. \par\noindent\textbf{Applications:} categorical products unify ways of combining objects across algebra, topology, logic, and computer science.
-\term{Clique}
-A subset of vertices in a graph such that every two distinct vertices are adjacent; equivalently, a complete subgraph. The clique number $\omega(G)$ is the maximum size of a clique in $G$. Finding maximum cliques is NP-hard, and cliques appear in extremal graph theory and in the study of perfect graphs.
-\term{Connectivity}
-A measure of how connected a graph is. The vertex connectivity $\kappa(G)$ is the minimum number of vertices whose removal disconnects the graph or leaves a trivial graph. The edge connectivity $\kappa'(G)$ is defined analogously for edges. A graph is $k$-connected if its connectivity is at least $k$. By Menger's theorem, $k$-connectivity is equivalent to the existence of $k$ internally vertex-disjoint paths between every pair of vertices.
-\term{Covariant Functor}
-A functor $F: \mathcal{C} \to \mathcal{D}$ that preserves the direction of morphisms: $F(f \circ g) = F(f) \circ F(g)$ and $F(\operatorname{id}_X) = \operatorname{id}_{F(X)}$. The hom-functor $\operatorname{Hom}(X, -): \mathcal{C} \to \mathbf{Set}$ is a fundamental example. Covariant functors are the default notion of functor.
-\term{Cut Vertex}
-A cut vertex is a vertex whose removal increases the number of connected components of a graph. It is also called an articulation point. \par\noindent\textbf{Applications:} identifying cut vertices reveals vulnerable points in communication, transport, power, and dependency networks.
+In a product of many spaces, a cylinder set is defined by restricting only finitely many coordinates and leaving the rest free. \origin{Cylinder sets were developed in measure theory and probability to describe finite observations inside systems with infinitely many coordinates.} \par\noindent Applications: they describe finite observations of random processes, sequences, and infinite-dimensional data.
+
+\term{Cylinder (Topology)}
+The cylinder over a space $X$ is the product $X\times[0,1]$, like stretching a space through time. It provides two ends, $X\times\{0\}$ and $X\times\{1\}$, which allow a continuous deformation between maps. \par\noindent Applications: cylinders define homotopy, mapping cylinders, deformation arguments, and constructions in algebraic topology.
+
 \term{Generating Function}
-A formal power series $\sum_{n=0}^\infty a_n x^n$ whose coefficients encode a sequence $a_n$. Generating functions transform combinatorial problems into analytic ones. Ordinary generating functions count objects by size; exponential generating functions $\sum a_n x^n/n!$ are natural for labelled structures. The method is due to Euler and de Moivre and is central to enumerative combinatorics.
-\term{Chromatic Number}
-The smallest number of colours needed to colour the vertices of a graph so that no adjacent vertices share a colour. It is denoted $\chi(G)$. A graph is $k$-chromatic if $\chi(G) = k$. By Brooks' theorem, $\chi(G) \leq \Delta(G)$ for connected graphs other than complete graphs and odd cycles, where $\Delta$ is the maximum degree.
+A generating function stores a sequence as the coefficients of a power series. \origin{Leonhard Euler and Abraham de Moivre developed early generating-function methods to turn counting problems into algebraic calculations.} \par\noindent Applications: generating functions count arrangements, solve recurrences, study probability distributions, and analyze algorithms.

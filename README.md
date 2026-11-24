@@ -1,6 +1,6 @@
 # Mathematical Dictionary
 
-A comprehensive LaTeX mathematical dictionary with **1,788 entries** covering topics from foundational concepts to advanced theory, including classical theorems, modern results, and paradoxes. Although some terms are graduate-level, explanations are written for undergraduates without becoming superficial: they explain the main idea, define essential vocabulary, retain important assumptions and formulas, and describe applications in science, engineering, computing, or data analysis.
+A comprehensive LaTeX mathematical dictionary with **1,786 entries** covering topics from foundational concepts to advanced theory, including classical theorems, modern results, and paradoxes. Although some terms are graduate-level, explanations are written for undergraduates without becoming superficial: they explain the main idea, define essential vocabulary, retain important assumptions and formulas, and describe applications in science, engineering, computing, or data analysis.
 
 ## Overview
 
@@ -22,7 +22,7 @@ Requires a TeX distribution (TeX Live recommended) and `latexmk`:
 latexmk -pdf math_dictionary.tex
 ```
 
-The output is `math_dictionary.pdf` (approximately 130 pages).
+The output is `math_dictionary.pdf` (approximately 210 pages).
 
 ## Project structure
 
